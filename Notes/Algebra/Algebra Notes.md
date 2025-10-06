@@ -15,3 +15,6 @@ Notes/Algebra Seminar 1 (1 oct 2025)_251002_201815.pdf
 
 
 ![[Algebra Seminar 1 (1 oct 2025)_251002_201815.pdf]]
+
+
+## Course 1 (6 oct 2025)
