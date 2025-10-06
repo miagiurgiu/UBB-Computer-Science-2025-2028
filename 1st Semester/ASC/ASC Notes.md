@@ -244,7 +244,8 @@ A=1010
 
 EX 7 ~~not~~ understood
 
-7 continued:
+7,8,9 continued:
+
 
 
 
