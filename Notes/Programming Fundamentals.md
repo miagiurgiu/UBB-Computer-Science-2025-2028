@@ -155,3 +155,7 @@ git push origin main
 13. ~~Determine the `n-th` element of the sequence `1,2,3,2,5,2,3,7,2,3,2,5,...` obtained from the sequence of natural numbers by replacing composed numbers with their prime divisors, without memorizing the elements of the sequence.~~
 14. ~~Determine the `n-th` element of the sequence `1,2,3,2,2,5,2,2,3,3,3,7,2,2,3,3,3,...` obtained from the sequence of natural numbers by replacing composed numbers with their prime divisors, each divisor `d` being written `d` times, without memorizing the elements of the sequence.~~
 15. ~~Generate the largest perfect number smaller than a given natural number `n`. If such a number does not exist, a message should be displayed. A number is perfect if it is equal to the sum of its divisors, except itself. (e.g.  `6 is a perfect number, as 6=1+2+3`).~~
+
+
+## Seminar 1
+
