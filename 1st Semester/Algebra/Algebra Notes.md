@@ -13,6 +13,7 @@
 
 Algebra Seminar 1 (1 oct 2025)_251002_201815.pdf
 
+1st Semester/Algebra/Algebra Seminar 1 (1 oct 2025)_251002_201815.pdf
 
 ![[obsidianubb/Note references/Algebra Seminar 1 (1 oct 2025)_251002_201815.pdf]]
 
