@@ -246,8 +246,7 @@ EX 7 ~~not~~ understood
 
 7,8,9 continued:
 
-
-
+![[A1 ex7,8,9 1.pdf]]
 
 
 
