@@ -159,3 +159,4 @@ git push origin main
 
 ## Seminar 1
 
+![[Pasted image 20251006093902.png]]
