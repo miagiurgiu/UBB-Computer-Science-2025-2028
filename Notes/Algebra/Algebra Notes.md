@@ -1,3 +1,5 @@
+## Seminar 1 (1 oct 2025)
+
 - Defining an operation
 - Defining a semigroup
 - defining a monoid
