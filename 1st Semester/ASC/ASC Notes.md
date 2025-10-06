@@ -7,17 +7,17 @@ $$
 1101101
 = 1*2^0 + 0*2^1 + 1*2^2 +1*2^3 +0*2^4 +1*2^5+1*2^6$$
 - Base 10 -> base 2
-![[Pasted image 20250930181920.png]]
+![[obsidianubb/Note references/Pasted image 20250930181920.png]]
 - Base 10 -> base 16
-![[Pasted image 20250930181807.png]]
+![[obsidianubb/Note references/Pasted image 20250930181807.png]]
 
 - Good to know:
-![[Screenshot 2025-09-30 at 18.20.43 1.png]]
+![[obsidianubb/Note references/Screenshot 2025-09-30 at 18.20.43 1.png]]
 - 1000...0 | -1 => 0111...1
 - How do we check if a number x is a power of 2? 
 We check if it has just one bit = 1. 
 How? We compare x and (x-1) bit by bit. 
-Using what? '&' = [[bitwise AND]]. 
+Using what? '&' = [[obsidianubb/Note references/bitwise AND]]. 
 Any power of 2 looks like 10000...0 in binary.
 
 1=0001 (2^0)
@@ -208,7 +208,7 @@ B-3=11-3=8
 
 7. complementarity methods
 
-![[Pasted image 20250930211635.png]]
+![[obsidianubb/Note references/Pasted image 20250930211635.png]]
 
 2 bytes = 16 bits -> 2^16 - 1 free
 
@@ -225,7 +225,7 @@ A + 5 + 1 carried = 16(10) = 10(16) -> F, carry 1
 9 + 7 + 1 carried = 16(10) = 10(16) -> F, carry 1 but we only have 16 bits
 
 
-![[Pasted image 20250930212902.png]]
+![[obsidianubb/Note references/Pasted image 20250930212902.png]]
 
 4 bytes = 32 bits -> 2^32 - 1 free
 (000F095D)16 = 000 1111 0 1001 0101 1101
