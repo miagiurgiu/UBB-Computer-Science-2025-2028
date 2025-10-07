@@ -25,4 +25,5 @@ in the first 7 weeks:
 
 Fourier - heat, fundamental frequencies, anything signals, Fourier transform, song, compressing signals
 
-ACM society
+ACM computer science society
+Nature paper important science paper
