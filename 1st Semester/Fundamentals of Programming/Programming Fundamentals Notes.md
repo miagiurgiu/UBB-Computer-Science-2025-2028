@@ -165,3 +165,7 @@ git push origin main
 
 
 ## Lecture 2
+
+#recursion
+#complexities
+
