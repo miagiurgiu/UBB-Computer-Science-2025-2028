@@ -159,6 +159,8 @@ git push origin main
 
 ## Seminar 1 (6 oct 2025)
 
+programming = a human activity ...
+
 
 
 ![[Pasted image 20251006093902.png]]
