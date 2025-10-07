@@ -27,3 +27,5 @@ Fourier - heat, fundamental frequencies, anything signals, Fourier transform, so
 
 ACM computer science society
 Nature paper important science paper
+
+![[MA Lecture 1 (7 oct 2025)_251007_193926.pdf]]
