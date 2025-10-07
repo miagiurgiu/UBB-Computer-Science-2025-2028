@@ -20,4 +20,9 @@ in the first 7 weeks:
 - series
 - Taylor
 - limits, continuity, differentiations
-- integ
+- integrations
+- extremum points
+
+Fourier - heat, fundamental frequencies, anything signals, Fourier transform, song, compressing signals
+
+ACM society
