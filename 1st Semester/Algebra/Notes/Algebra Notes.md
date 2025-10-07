@@ -16,3 +16,5 @@ https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/73e06dd1584023
 
 
 ## Course 1 (6 oct 2025)
+
+## Seminar 2 
