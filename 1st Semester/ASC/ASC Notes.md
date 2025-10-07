@@ -246,7 +246,7 @@ EX 7 ~~not~~ understood
 
 7,8,9 continued:
 
-![[A1 ex7,8,9 1.pdf]]
+![[A1 ex7,8,9 1 1.pdf]]
 
 https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/0b8e5d0fff0cb5b3734c9835a2511bca63c28cc0/1st%20Semester/ASC/A1%20ex7%2C8%2C9.pdf
 
