@@ -11,4 +11,13 @@ https://ubbcluj.sharepoint.com/sites/MathematicalAnalysisCS25-26/Class%20Materia
 
 ![[MA Seminar 1 (6 oct 2025)_251006_143231 (1).pdf]]
 
-## Lecture 1
+## Lecture 1 (7 oct 2025)
+
+week 8 - midterm exam
+in the first 7 weeks:
+- real numbers
+- sequences
+- series
+- Taylor
+- limits, continuity, differentiations
+- integ
