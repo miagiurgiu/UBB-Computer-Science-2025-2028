@@ -281,7 +281,7 @@ start:
 
 ```
 
-Operatii cu numere mici (< 256)? 
+Operatii cu numere mici (mai mici decat 256)? 
 db - byte - 1 byte
 
 Numere mai mari?
@@ -295,7 +295,7 @@ lucrezi cu al/bl? pe 8 biti
 lucrezi cu ax/bx? pe 16 biti
 lucrezi cu eax/ebx? pe 32 biti
 
-## 1) Tre’ să declar variabile în `segment data` sau pot lucra direct în `segment code`?
+### 1) Tre’ să declar variabile în `segment data` sau pot lucra direct în `segment code`?
 
 Profesional vorbind, **ambele variante sunt corecte**, depinde ce vrei:
 
