@@ -281,5 +281,10 @@ start:
 
 ```
 
+Operatii cu numere mici (<256)
 db - byte - 1 byte
 dw - word - 2 bytes
+dd - double word - 4 bytes
+
+
+ca sa imi dau seama de ce tip de declarare am nevoie trebuie de fiecare data sa calculez numerele in baza 2 si sa vad cat spatiu ocupa?
