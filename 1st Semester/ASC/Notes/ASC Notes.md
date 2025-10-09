@@ -280,3 +280,6 @@ start:
 
 
 ```
+
+db - byte - 1 byte
+dw - word - 2 bytes
