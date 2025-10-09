@@ -252,4 +252,15 @@ https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/0b8e5d0fff0cb5
 
 
 
-## Lab 
+## Lab 2
+
+```
+bits 32
+global start
+
+extern exit
+import exit msvcrt.dll
+
+segment data use32 class=data
+
+```
