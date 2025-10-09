@@ -290,3 +290,8 @@ dd - double word - 4 bytes
 
 
 ca sa imi dau seama de ce tip de declarare am nevoie trebuie de fiecare data sa calculez numerele in baza 2 si sa vad cat spatiu ocupa?
+
+lucrezi cu al/bl? pe 8 biti
+lucrezi cu ax/bx? pe 16 biti
+lucrezi cu eax/ebx? pe 32 biti
+
