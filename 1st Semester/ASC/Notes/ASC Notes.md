@@ -304,3 +304,9 @@ Profesional vorbind, **ambele variante sunt corecte**, depinde ce vrei:
 - Dacă vrei să **păstrezi rezultatele** (sau ai expresii cu a,b,c,d din temă), atunci **declari variabile** în `segment data`, le încarci în registre, calculezi și scrii rezultatul înapoi în memorie (ca să-l poți urmări ușor în Olly).
 
 
+1+9:
+```
+segment data use32 class=code
+a db 1
+b db
+```
