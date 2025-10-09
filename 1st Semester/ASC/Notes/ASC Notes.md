@@ -306,7 +306,14 @@ Profesional vorbind, **ambele variante sunt corecte**, depinde ce vrei:
 
 1+9:
 ```
-segment data use32 class=code
+segment data use32 class=data
 a db 1
-b db
+b db 9
+rez db 0
+
+segment code use32 class=code
+start:
+mov al, [a]
+add al, [b]
+mov rez, al
 ```
