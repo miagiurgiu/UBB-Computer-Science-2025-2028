@@ -262,5 +262,21 @@ extern exit
 import exit msvcrt.dll
 
 segment data use32 class=data
+    ; aici declari variabilele
+    a db 5       ; un byte cu valoarea 5
+    b dw 123     ; un word cu valoarea 123
+    c dd 1000    ; un double word (4 bytes)
+    d db ?       ; un byte neinițializat
+    x resb 1     ; rezervi 1 byte fără valoare
+
+segment code use32 class=code
+start:
+    mov eax, [c]    ; încarcă valoarea din variabila c
+    add eax, 10     ; adună 10
+    mov [c], eax    ; scrie rezultatul înapoi în memorie
+
+    push dword 0
+    call [exit]
+
 
 ```
