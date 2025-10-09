@@ -295,3 +295,12 @@ lucrezi cu al/bl? pe 8 biti
 lucrezi cu ax/bx? pe 16 biti
 lucrezi cu eax/ebx? pe 32 biti
 
+## 1) Tre’ să declar variabile în `segment data` sau pot lucra direct în `segment code`?
+
+Profesional vorbind, **ambele variante sunt corecte**, depinde ce vrei:
+
+- Dacă doar „testezi” 1+9, 3*4 etc., poți lucra **direct în registre** (fără variabile) și te uiți în registrele AL/AX/EAX în debugger.
+    
+- Dacă vrei să **păstrezi rezultatele** (sau ai expresii cu a,b,c,d din temă), atunci **declari variabile** în `segment data`, le încarci în registre, calculezi și scrii rezultatul înapoi în memorie (ca să-l poți urmări ușor în Olly).
+
+
