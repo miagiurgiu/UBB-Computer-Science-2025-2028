@@ -281,8 +281,10 @@ start:
 
 ```
 
-Operatii cu numere mici (<256)
+Operatii cu numere mici (< 256)? 
 db - byte - 1 byte
+
+Numere mai mari?
 dw - word - 2 bytes
 dd - double word - 4 bytes
 
