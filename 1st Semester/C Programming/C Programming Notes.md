@@ -108,3 +108,4 @@ test_e_prim();
 
 ## Seminar 2 (10 oct 2025)
 
+Turing machine
