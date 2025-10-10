@@ -171,3 +171,6 @@ programming = a human activity ...
 #recursion
 #complexities
 
+## Lab 2
+verify each input because it is not allowed to crash
+E,E,Shell
