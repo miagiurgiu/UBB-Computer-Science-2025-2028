@@ -118,4 +118,12 @@ Tautologie - un set de instante = ?
 Exemplu de tautologie esuata: axioma logicii lui Aristotel (axioma dihotomiei)
 ETER
 ASSUME
-Socrate - singurul intangibil in axio
+Socrate - singurul intangibil in axiomele sale
+Aristotel - logica - multimi, boolean, a compartimentat ai
+
+BOOKS & MOVIES:
+"The C programming Language"
+"The art of computer programming"
+"The sting"
+"La vita e bella"
+
