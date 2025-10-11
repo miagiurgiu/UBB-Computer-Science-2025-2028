@@ -113,4 +113,9 @@ Machine Van ...
 Alan Turing
 John von Neumann
 Divide et Impera
-MONOLIT (UNUM) -> DIHOTOMA
+MONOLIT (UNUM) ->D&C -> DIHOTOMA
+Tautologie - un set de instante = ?
+Exemplu de tautologie esuata: axioma logicii lui Aristotel (axioma dihotomiei)
+ETER
+ASSUME
+Socrate - singurul intangibil in axio
