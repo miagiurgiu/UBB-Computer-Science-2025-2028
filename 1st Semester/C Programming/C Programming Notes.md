@@ -144,4 +144,7 @@ B -> DECODE through f^-1 -> A
 (A, +, *)
 0 - origine
 1 - unitate identitate
+"define an algebra" CURS CRIVEI
 
+acel set care contine elementul netru al operatiei de adunare, respectiv de inmultire
+the only thing you have to be uptill 23 is yours
