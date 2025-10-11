@@ -147,4 +147,9 @@ B -> DECODE through f^-1 -> A
 "define an algebra" CURS CRIVEI
 
 acel set care contine elementul netru al operatiei de adunare, respectiv de inmultire
-the only thing you have to be uptill 23 is yours
+the only thing you have to be uptill 23 is yourself
+porti logica - full in ALU?
+
+CUM definim algebric un octet?
+un produs cartezian (comeniul de definitie a 2 biti)
+{0,1}x{0,1}={(0,0), (0,1), (1,0), (1,1)}
