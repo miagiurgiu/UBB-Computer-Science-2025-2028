@@ -119,11 +119,17 @@ Exemplu de tautologie esuata: axioma logicii lui Aristotel (axioma dihotomiei)
 ETER
 ASSUME
 Socrate - singurul intangibil in axiomele sale
-Aristotel - logica - multimi, boolean, a compartimentat ai
+Aristotel - logica - multimi, boolean, axioma dihotomiei
+Boole
+in c there is no bool
+
+the world: half tech, half philosophy
 
 BOOKS & MOVIES:
 "The C programming Language"
 "The art of computer programming"
 "The sting"
 "La vita e bella"
+"The last dance"
 
+cel maimic tip
