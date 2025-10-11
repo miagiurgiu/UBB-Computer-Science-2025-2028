@@ -145,7 +145,26 @@ Deci fiecare instrucțiune C se traduce în mai multe instrucțiuni ASM.
 
 ## 7️⃣ Exercițiu exemplu: verificarea numerelor prime
 
-`#include <assert.h>  int e_prim(int x) {     if (x < 2) return 0;     if (x == 2) return 1;     if (x % 2 == 0) return 0;     for (int d = 3; d * d <= x; d += 2)         if (x % d == 0) return 0;     return 1; }  void test_e_prim() {     assert(e_prim(-7) == 0);     assert(e_prim(2) == 1);     assert(e_prim(25) == 0);     assert(e_prim(3) == 1); }  int main() {     test_e_prim(); }`
+```
+
+#include <assert.h>  
+int e_prim(int x) 
+{     
+	if (x < 2) return 0; 
+	if (x == 2) return 1;     
+	if (x % 2 == 0) return 0;     
+	for (int d = 3; d * d <= x; d += 2)         
+		if (x % d == 0) return 0;     
+			return 1; 
+}  
+void test_e_prim() 
+{     
+	assert(e_prim(-7) == 0);     
+	assert(e_prim(2) == 1);     
+	assert(e_prim(25) == 0);     
+	assert(e_prim(3) == 1); }  
+	int main() {     test_e_prim(); }`
+```
 
 🧩 `assert()` = test logic → verifică automat că rezultatele sunt corecte.  
 Dacă ceva pică, programul se oprește → debugging mai ușor.
