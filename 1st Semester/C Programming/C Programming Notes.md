@@ -132,4 +132,8 @@ BOOKS & MOVIES:
 "La vita e bella"
 "The last dance"
 
-cel maimic tip
+cel mai mic tip intreg: 1 char = 1 byte (int pe 8 biti)
+codul ascii = functie bijectiva
+
+A (1 CHAR) -> ENCODE through f -> B
+B -> DECODE through f^-1 -> A
