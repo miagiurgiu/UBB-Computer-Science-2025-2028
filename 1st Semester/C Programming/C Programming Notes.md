@@ -162,3 +162,6 @@ un produs cartezian (comeniul de definitie a 2 biti)
 
 this is in 2d:
 
+
+orice subset al produsului cartezian
+ax
