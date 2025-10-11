@@ -109,3 +109,8 @@ test_e_prim();
 ## Seminar 2 (10 oct 2025)
 
 Turing machine
+Machine Van ...
+Alan Turing
+John von Neumann
+Divide et Impera
+MONOLIT (UNUM) -> DIHOTOMA
