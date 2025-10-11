@@ -174,3 +174,4 @@ programming = a human activity ...
 ## Lab 2
 verify each input because it is not allowed to crash
 E,E,Shell
+Assignment 2 started
