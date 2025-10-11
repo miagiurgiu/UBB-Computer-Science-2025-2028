@@ -164,4 +164,9 @@ this is in 2d:
 
 
 orice subset al produsului cartezian
-ax
+AxB inclus in R inclus in f inclus in coduri?
+
+SYSTEM = CPU+MEMORY in el intra 1 iese 0
+caprula e un sistem inchis , separa dihotomia, intrerfata sageata catre system = environment
+
+
