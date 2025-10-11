@@ -167,6 +167,15 @@ orice subset al produsului cartezian
 AxB inclus in R inclus in f inclus in coduri?
 
 SYSTEM = CPU+MEMORY in el intra 1 iese 0
-caprula e un sistem inchis , separa dihotomia, intrerfata sageata catre system = environment
+capsula e un sistem inchis , separa dihotomia, intrerfata sageata catre system = environment
 
 
+50's
+ENIAC calculus machine
+caught segmentation fault
+Donalt Knuth
+MOV 1/0
+
+cpu -> Ax ..... eu
+bx .... biu
+cx. alu
