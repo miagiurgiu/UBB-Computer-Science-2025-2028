@@ -157,4 +157,6 @@ un produs cartezian (comeniul de definitie a 2 biti)
 (0,0), (1,1) =
 (0,1) <
 (1,0) >
-
+(0,0), (0,1) <=
+(1,0), (1,1) >=
+ this is
