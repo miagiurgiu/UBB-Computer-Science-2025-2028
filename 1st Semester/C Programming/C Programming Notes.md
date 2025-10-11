@@ -135,5 +135,13 @@ BOOKS & MOVIES:
 cel mai mic tip intreg: 1 char = 1 byte (int pe 8 biti)
 codul ascii = functie bijectiva
 
-A (1 CHAR) -> ENCODE through f -> B
+A (1 CHAR=1BYTE) -> ENCODE through f -> B
 B -> DECODE through f^-1 -> A
+
+{S0, S1} Occam's razor
+{0,1} bit
+
+(A, +, *)
+0 - origine
+1 - unitate identitate
+
