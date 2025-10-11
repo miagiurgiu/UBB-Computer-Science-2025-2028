@@ -163,7 +163,11 @@ void test_e_prim()
 	assert(e_prim(2) == 1);     
 	assert(e_prim(25) == 0);     
 	assert(e_prim(3) == 1); }  
-	int main() {     test_e_prim(); }`
+	int main() 
+	{     
+		test_e_prim(); 
+		
+	}
 ```
 
 🧩 `assert()` = test logic → verifică automat că rezultatele sunt corecte.  
