@@ -131,6 +131,7 @@ BOOKS & MOVIES:
 "The sting"
 "La vita e bella"
 "The last dance"
+"A beautiful mind"
 
 cel mai mic tip intreg: 1 char = 1 byte (int pe 8 biti)
 codul ascii = functie bijectiva
@@ -179,3 +180,11 @@ MOV 1/0
 cpu -> Ax ..... eu
 bx .... biu
 cx. alu
+
+Ada lovelace
+
+Memorie - > ram + storage
+
+1 1 intors - spin
+3 cerculete -> culoare
+pitagora -> 2,3 e universul masculin feminin
