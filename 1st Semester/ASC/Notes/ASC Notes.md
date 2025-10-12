@@ -390,3 +390,9 @@ variables = adresses in memory
 little endian (intel): 12345678h -> 78 56 34 12
 big endian: -> 12 34 56 78
 
+[a] the value
+a the adress
+
+mov eax, [a] takes the value
+mov eax, a takes the adress
+
