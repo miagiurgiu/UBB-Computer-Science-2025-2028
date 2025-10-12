@@ -334,7 +334,7 @@ b dw 100 // b has 2 bytes
 
 ### Defining in processor
 
-These REGISTERS take up space in the processor:
+These REGISTERS take up space in the CPU
 the processor has a fixed set of registers
 
 eax
@@ -345,10 +345,12 @@ edx
 ```
 a db 5
 ...
-mov al, [a]
+mov al, [a] // a e db, deci merge cu al
 add al, 3
 mov [a], al
 ```
 
 al ~ db (1 byte)
+eax ~ dd (2 bytes)
+
 
