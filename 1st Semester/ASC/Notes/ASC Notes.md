@@ -359,4 +359,13 @@ eax, ebx, ecx, edx ~ dd (4 bytes) -> 32-bit program
 
 
 ### Take up space without initialisation
+when you want an empty memory zone
 
+resb
+resw
+resd
+resq
+
+```
+resb
+```
