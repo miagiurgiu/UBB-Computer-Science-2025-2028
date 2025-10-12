@@ -343,5 +343,7 @@ ecx
 edx
 
 ```
-
+mov al, [a]
+add al,3
+mov [a], al
 ```
