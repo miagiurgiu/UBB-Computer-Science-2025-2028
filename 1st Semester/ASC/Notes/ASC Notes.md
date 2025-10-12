@@ -322,10 +322,10 @@ mov rez, al
 
 These LABELS create space in RAM:
 
-db
-dw
-dd
-dq
+db (1 byte)
+dw (2 bytes)
+dd (4 bytes)
+dq (8 bytes)
 
 ```
 a db 5 // a has 1 byte
