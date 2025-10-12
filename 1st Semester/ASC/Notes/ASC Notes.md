@@ -343,7 +343,12 @@ ecx
 edx
 
 ```
+a db 5
+...
 mov al, [a]
-add al,3
+add al, 3
 mov [a], al
 ```
+
+al ~ db (1 byte)
+
