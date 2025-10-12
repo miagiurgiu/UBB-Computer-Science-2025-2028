@@ -318,9 +318,9 @@ add al, [b]
 mov rez, al
 ```
 
-## Defining data in memory
+### Defining data in memory
 
-creates space in RAM:
+These LABELS creates space in RAM:
 
 db
 dw
@@ -331,3 +331,6 @@ dq
 a db 5 // a has 1 byte
 b dw 100 // b has 2 bytes
 ```
+
+### Defining in processor
+
