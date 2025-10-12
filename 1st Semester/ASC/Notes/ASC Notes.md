@@ -327,3 +327,7 @@ dw
 dd
 dq
 
+```
+a db 5 // a has 1 byte
+b dw 100 // b has 2 bytes
+```
