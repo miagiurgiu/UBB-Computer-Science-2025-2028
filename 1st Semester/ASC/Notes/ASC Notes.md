@@ -320,7 +320,7 @@ mov rez, al
 
 ### Defining data in memory
 
-These LABELS creates space in RAM:
+These LABELS create space in RAM:
 
 db
 dw
@@ -334,3 +334,4 @@ b dw 100 // b has 2 bytes
 
 ### Defining in processor
 
+These REGISTERS take up space in the processor:
