@@ -371,3 +371,8 @@ resb 10 // reserves 10*1 byte = 10 bytes
 resd 4 // reserves 4*4 bytes = 16 bytes
 
 ```
+ax, ah, al - inferior part of eax
+ax - 2 bytes of eax
+	ah - superior byte of ax
+	al - inferior byte of ax
+
