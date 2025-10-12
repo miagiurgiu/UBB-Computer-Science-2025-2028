@@ -321,6 +321,7 @@ mov rez, al
 ### Defining data in memory
 
 These LABELS create space in RAM:
+they are used depending on their size
 
 db (1 byte)
 dw (2 bytes)
