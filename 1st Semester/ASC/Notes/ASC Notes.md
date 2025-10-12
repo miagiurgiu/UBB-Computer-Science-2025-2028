@@ -338,10 +338,12 @@ b dw 100 // b has 2 bytes
 These REGISTERS take up space in the CPU
 the processor has a fixed set of registers
 
-eax
-ebx
-ecx
-edx
+eax - arithmetic operations
+ebx - basic register
+ecx - contor
+edx - extension for eax (mul, div)
+esi - string source
+edi - string destinatio
 
 ```
 a db 5
