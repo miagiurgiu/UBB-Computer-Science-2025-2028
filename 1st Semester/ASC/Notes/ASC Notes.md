@@ -317,3 +317,6 @@ mov al, [a]
 add al, [b]
 mov rez, al
 ```
+
+## Definirea datelor in memorie
+
