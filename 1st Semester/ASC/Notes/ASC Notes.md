@@ -318,5 +318,12 @@ add al, [b]
 mov rez, al
 ```
 
-## Definirea datelor in memorie
+## Defining data in memory
+
+creates space in RAM:
+
+db
+dw
+dd
+dq
 
