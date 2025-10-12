@@ -351,7 +351,7 @@ mov [a], al
 ```
 
 al, bl, cl, dl ~ db (1 byte)
-ax, bx, cx, dx ~ dw (2 bytes)
-eax ~ dd (2 bytes)
+ax, bx, cx, dx ~ dw (2 bytes) -> old
+eax, ebx, ecx, edx ~ dd (4 bytes) -> 32-bit program
 
 
