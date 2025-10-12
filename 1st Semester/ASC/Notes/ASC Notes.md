@@ -397,5 +397,6 @@ mov eax, [a] takes the value
 mov eax, a takes the adress
 
 operands need to have the same size:
-mov eax, ebx
-mov al, 
+mov eax, ebx yep
+mov al, bx nope
+
