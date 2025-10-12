@@ -403,3 +403,4 @@ mov al, bx nope
 eax, ebx... - doubleword (32 bit = 4 byte)
 eax -> ax -> ah+al
 
+movzx = move with zero-extend = converts an 8-bit value to a 32-bit value (automatically fills with zeroes)
