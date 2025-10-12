@@ -387,4 +387,4 @@ xor - the fastest way to put 0 in a register
 
 variables = adresses in memory
 
-little endian (i)
+little endian (intel): 12345678h -> 78 56 34 12
