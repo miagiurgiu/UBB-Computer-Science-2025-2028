@@ -400,3 +400,5 @@ operands need to have the same size:
 mov eax, ebx yep
 mov al, bx nope
 
+eax, ebx... - doubleword (32 bit = 4 byte)
+eax -> ax -> ah+al
