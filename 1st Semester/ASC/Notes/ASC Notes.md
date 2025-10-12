@@ -350,7 +350,8 @@ add al, 3
 mov [a], al
 ```
 
-al ~ db (1 byte)
+al, bl, cl, dl ~ db (1 byte)
+ax, bx, cx, dx ~ dw (2 bytes)
 eax ~ dd (2 bytes)
 
 
