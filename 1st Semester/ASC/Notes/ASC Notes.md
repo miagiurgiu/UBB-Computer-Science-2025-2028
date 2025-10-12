@@ -383,3 +383,8 @@ eip - instruction pointer
 eflags - biti de stare
 
 sp = inferior part of esp
+xor - the fastest way to put 0 in a register
+
+variables = adresses in memory
+
+little endian (i)
