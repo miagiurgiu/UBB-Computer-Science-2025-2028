@@ -367,5 +367,6 @@ resd
 resq
 
 ```
-resb
+resb 10 // reserves 10 bytes
+resd 4 // reserved
 ```
