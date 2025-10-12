@@ -335,3 +335,13 @@ b dw 100 // b has 2 bytes
 ### Defining in processor
 
 These REGISTERS take up space in the processor:
+the processor has a fixed set of registers
+
+eax
+ebx
+ecx
+edx
+
+```
+
+```
