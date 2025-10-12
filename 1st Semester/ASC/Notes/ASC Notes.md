@@ -375,4 +375,4 @@ ax, ah, al - inferior part of eax
 ax - 2 bytes of eax
 	ah - superior byte of ax
 	al - inferior byte of ax
-
+example: eax = 0x12345678 => ax = 0x5678, ah = 0x56
