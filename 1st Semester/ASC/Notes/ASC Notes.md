@@ -343,7 +343,7 @@ ebx - basic register
 ecx - contor
 edx - extension for eax (mul, div)
 esi - string source
-edi - string destinatio
+edi - string destination
 
 ```
 a db 5
@@ -358,5 +358,5 @@ ax, bx, cx, dx ~ dw (2 bytes) -> old
 eax, ebx, ecx, edx ~ dd (4 bytes) -> 32-bit program
 
 
-
+### Take up space without initialisation
 
