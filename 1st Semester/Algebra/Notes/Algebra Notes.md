@@ -15,6 +15,11 @@ https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/73e06dd1584023
 ![[obsidianubb/Note references/Algebra Seminar 1 (1 oct 2025)_251002_201815.pdf]]
 
 
-## Course 1 (6 oct 2025)
+## Lecture 1 (6 oct 2025)
+-
 
 ## Seminar 2 (8 oct 2025)
+Abel
+
+## Lecture 2 
+#reading 
