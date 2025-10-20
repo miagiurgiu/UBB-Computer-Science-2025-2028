@@ -215,4 +215,5 @@ sort() can be applied on both sets and lists?
 16) print(type(user_input)) always specify the type when printing?
 17) try functions?
 18) PULL vs PUSH vs COMMIT
-make changes on both devices simultaneously -> error
+make changes on both computers -> error
+19) datatypes
