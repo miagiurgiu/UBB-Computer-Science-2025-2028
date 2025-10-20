@@ -29,3 +29,7 @@ ACM computer science society
 Nature paper important science paper
 
 ![[MA Lecture 1 (7 oct 2025)_251007_193926.pdf]]
+
+## Lecture 2
+
+even though supA is not part of A, we can still find elements of A that
