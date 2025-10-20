@@ -267,6 +267,20 @@ print(1,2,3,sep="\n")
 `
 ```
 
+```
+print("a")
+print("b")
+`
+a
+b
+`
+```
+
+```
+print("a", end=' ')
+print("b")
+# a b
+```
 
 
 6) always value val = function() before printing out the result? No.
