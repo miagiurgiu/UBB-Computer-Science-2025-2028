@@ -185,3 +185,5 @@ adc, cwb ...
 ## Python Q & A
 
 1) when / and when // as division?
+/ - float
+2) 
