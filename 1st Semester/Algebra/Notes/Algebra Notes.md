@@ -31,3 +31,4 @@ Abel
 #subgroup
 
 Questions:
+1) The actual definition of a ring is group + semigroup? Then why did we study at school that a ring is a group + monoid? That one is a unitary ring. 
