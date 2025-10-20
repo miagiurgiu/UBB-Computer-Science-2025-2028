@@ -207,5 +207,10 @@ p1,p2=...(n)
 ```
 13) list vs array vs set
 LIST - allows duplicates
-SET - automaticall
-14) 
+SET - automatically eliminates duplicates
+sort() can be applied on both sets and lists?
+
+14) for loops
+15) def is_prime(n:int)
+16) print(type(user_input)) always specify the type when printing?
+17) tr
