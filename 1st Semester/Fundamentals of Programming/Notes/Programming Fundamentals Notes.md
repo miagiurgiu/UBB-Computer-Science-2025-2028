@@ -233,14 +233,6 @@ print(nums[1]) # 4
 5) printing
 ```
 print("The value is: ", x) # x
-print("Numbers are: ", a,b,c) # a,b,c
-print("Numbers are: ", a,b,c, sep=",") # a,b,c
-print("a=",a," hot") # a=a hot
-
-print("a=", a, end=' ')
-print("b=", b, end=' ')
-print("c=", c, end=' ')
-# a=1 b=2 c=3
 
 print(1,2,3,sep="\n")
 `
@@ -251,13 +243,24 @@ print(1,2,3,sep="\n")
 ```
 
 ```
-
+print("Numbers are: ", a,b,c) # a,b,c
 ```
 
 ```
-
+print("Numbers are: ", a,b,c, sep=",") # a,b,c
 ```
 
+```
+print("a=",a," hot") # a=a hot
+```
+
+```
+print("a=", a, end=' ')
+print("b=", b, end=' ')
+print("c=", c, end=' ')
+# a=1 b=2 c=3
+
+```
 6) always value val = function() before printing out the result? No.
 7) don't need a copy when palindrome? 
 8) printing multiple things on the same line
