@@ -197,9 +197,15 @@ adc, cwb ...
 9) endl on a new line or after printing stuff on the same line?
 10) while True, while False, while not
 11) for token in tokens
+12) 
 ```
 pairs = all_pairs(n)
 if pairs: # if len(pairs)>0 checks if the list is empty
 	for p1,p2 in pairs:
-		return p1,p2
+		return p1,p2 # first pair
+p1,p2=...(n)
 ```
+13) list vs array vs set
+LIST - allows duplicates
+SET - automaticall
+14) 
