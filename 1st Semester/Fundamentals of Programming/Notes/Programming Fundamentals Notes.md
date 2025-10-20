@@ -213,4 +213,6 @@ sort() can be applied on both sets and lists?
 14) for loops
 15) def is_prime(n:int)
 16) print(type(user_input)) always specify the type when printing?
-17) tr
+17) try functions?
+18) PULL vs PUSH vs COMMIT
+make changes on
