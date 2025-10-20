@@ -22,4 +22,12 @@ https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/73e06dd1584023
 Abel
 
 ## Lecture 2 
-#reading 
+#ring 
+#subring
+#subfield
+#field 
+#unitaryring
+#group
+#subgroup
+
+Questions:
