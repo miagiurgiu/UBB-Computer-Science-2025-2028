@@ -44,4 +44,5 @@ Questions:
 6) Matrices 
 7) Permutations
 8) Polynomials
-9) circle group - which one from (C*, *) and (C, +) and H={}
+9) circle group - which one from (C*, *) and (C, +) and H={z from C | |z|=1}
+10) 
