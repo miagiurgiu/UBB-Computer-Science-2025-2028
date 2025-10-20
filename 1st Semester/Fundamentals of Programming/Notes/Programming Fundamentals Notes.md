@@ -220,6 +220,13 @@ def f():
 print(f())
 ```
 
+returning an array function:
+```
+def get_numbers()
+	return [2,4,6,8]
+nums=get_numbers()
+print(nums) # []
+```
 5) printing
 6) always value val = function() before printing out the result? No.
 7) don't need a copy when palindrome? 
