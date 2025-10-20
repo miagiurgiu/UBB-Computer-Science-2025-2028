@@ -188,8 +188,11 @@ adc, cwb ...
 / - float division (5/2=2.5)
 // - int division (5//2=2)
 2) local vs global declaration
-local declaration - defined in a function - it exists only inside it
+local declaration - defined in a function - the variable exists only inside it
+global declaration - outside a function - the variable is available anywhere
+global variable in a function: 
 
+global x
 3) initialisation
 4) functions that return multiple values; void vs return functions; returning an array functions
 5) printing
