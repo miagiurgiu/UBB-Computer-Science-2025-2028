@@ -175,3 +175,7 @@ programming = a human activity ...
 verify each input because it is not allowed to crash
 E,E,Shell
 Assignment 2 started
+
+## Lecture 3
+complexity, recursion, Hanoi
+
