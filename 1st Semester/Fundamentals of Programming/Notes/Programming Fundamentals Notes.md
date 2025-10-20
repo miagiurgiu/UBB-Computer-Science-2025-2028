@@ -191,10 +191,14 @@ adc, cwb ...
 local declaration - defined in a function - the variable exists only inside it
 global declaration - outside a function - the variable is available anywhere
 global variable in a function: 
-
+```
 global x
+```
 3) initialisation
+initialisation = declaration
+the variable exists only when it has an assigned value
 4) functions that return multiple values; void vs return functions; returning an array functions
+def f()
 5) printing
 6) always value val = function() before printing out the result? No.
 7) don't need a copy when palindrome? 
