@@ -189,4 +189,9 @@ adc, cwb ...
 // - int division (5//2=2)
 2) local vs global declaration
 3) initialisation
-4) functions that return multiple values; void vs return functions; returning an 
+4) functions that return multiple values; void vs return functions; returning an array functions
+5) printing
+6) always value val = function() before printing out the result? No.
+7) don't need a copy when palindrome? 
+8) printing multiple things on the same line
+9) endl on a new line or af
