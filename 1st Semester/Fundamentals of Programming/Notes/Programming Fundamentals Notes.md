@@ -188,6 +188,8 @@ adc, cwb ...
 / - float division (5/2=2.5)
 // - int division (5//2=2)
 2) local vs global declaration
+local declaration - defined in a function - it exists only inside it
+
 3) initialisation
 4) functions that return multiple values; void vs return functions; returning an array functions
 5) printing
@@ -208,7 +210,7 @@ p1,p2=...(n)
 13) list vs array vs set
 LIST - allows duplicates
 SET - automatically eliminates duplicates
-sort() can be applied on both sets and lists?
+sort() can be applied on both sets and lists? only on lists, not on sets.
 
 14) for loops
 15) def is_prime(n:int)
