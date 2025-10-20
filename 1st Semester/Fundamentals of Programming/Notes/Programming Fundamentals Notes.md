@@ -203,15 +203,22 @@ function that returns multiple values:
 ```
 def f()
 	return 1,2,3
-a,,b,c=f()
+a,b,c=f()
 ```
 
 void function:
 ```
 def f():
-	print
+	print("hey")
+x=f()
 ```
 
+return function:
+```
+def f():
+	return 10
+print(f())
+```
 
 5) printing
 6) always value val = function() before printing out the result? No.
