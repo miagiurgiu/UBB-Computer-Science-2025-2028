@@ -199,9 +199,17 @@ initialisation = declaration
 the variable exists only when it has an assigned value
 4) functions that return multiple values; void vs return functions; returning an array functions
 
+function that returns multiple values:
 ```
 def f()
-	
+	return 1,2,3
+a,,b,c=f()
+```
+
+void function:
+```
+def f():
+	print
 ```
 
 
