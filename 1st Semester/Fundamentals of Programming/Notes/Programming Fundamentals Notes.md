@@ -194,4 +194,7 @@ adc, cwb ...
 6) always value val = function() before printing out the result? No.
 7) don't need a copy when palindrome? 
 8) printing multiple things on the same line
-9) endl on a new line or af
+9) endl on a new line or after printing stuff on the same line?
+10) while True, while False, while not
+11) for token in tokens
+12) pairs = all_pairs(n)
