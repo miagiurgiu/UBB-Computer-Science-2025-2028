@@ -234,13 +234,16 @@ print(nums[1]) # 4
 ```
 print("The value is: ", x) # x
 print("Numbers are: ", a,b,c) # a,b,c
-print("Numbers are: ",)
+print("Numbers are: ", a,b,c, sep=",") # a,b,c
+
 ```
 
 6) always value val = function() before printing out the result? No.
 7) don't need a copy when palindrome? 
 8) printing multiple things on the same line
 9) endl on a new line or after printing stuff on the same line?
+endl by default
+if you want sth.else -> sep="sth.else"
 10) while True, while False, while not
 11) for token in tokens
 12) 
