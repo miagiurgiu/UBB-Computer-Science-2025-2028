@@ -32,4 +32,4 @@ Nature paper important science paper
 
 ## Lecture 2
 
-even though supA is not part of A, we can still find elements of A that
+even though supA is not part of A, we can still find elements of A that are close to supA
