@@ -229,7 +229,14 @@ print(nums) # [2,4,6,8]
 print(get_numbers()) # [2,4,6,8]
 print(nums[1]) # 4
 ```
+
 5) printing
+```
+print("The value is: ", x) # x
+print("Numbers are: ", a,b,c) # a,b,c
+print("Numbers are: ",)
+```
+
 6) always value val = function() before printing out the result? No.
 7) don't need a copy when palindrome? 
 8) printing multiple things on the same line
