@@ -237,7 +237,10 @@ print("Numbers are: ", a,b,c) # a,b,c
 print("Numbers are: ", a,b,c, sep=",") # a,b,c
 print("a=",a," hot") # a=a hot
 
-print(")
+print("a=", a, end=' ')
+print("b=", b, end=' ')
+print("c=", c, end=' ')
+# a=1 b=2 c=3
 
 ```
 
