@@ -235,6 +235,9 @@ print(nums[1]) # 4
 print("The value is: ", x) # x
 print("Numbers are: ", a,b,c) # a,b,c
 print("Numbers are: ", a,b,c, sep=",") # a,b,c
+print("a=",a," hot") # a=a hot
+
+print(")
 
 ```
 
