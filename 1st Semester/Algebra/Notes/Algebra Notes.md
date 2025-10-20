@@ -38,3 +38,5 @@ Parralels:
 Questions:
 1) The actual definition of a ring is group + semigroup? Then why did we study at school that a ring is a group + monoid? That one is a unitary ring. Therefore we only studied unitary rings for the admission? Is it the same with saying that 1!=0 - that one is a unitary ring or it is in the context of subfields?
 2) Klein's group - how exactly can I view the transformations for each coordinate (e,a,b,c)?
+3) semigroup (assoc) vs subgroup (stable subset + group)
+4) 
