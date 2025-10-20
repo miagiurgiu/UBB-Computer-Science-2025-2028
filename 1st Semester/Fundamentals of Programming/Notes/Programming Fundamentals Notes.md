@@ -185,5 +185,8 @@ adc, cwb ...
 ## Python Q & A
 
 1) when / and when // as division?
-/ - float
-2) 
+/ - float division (5/2=2.5)
+// - int division (5//2=2)
+2) local vs global declaration
+3) initialisation
+4) functions that return multiple values; void vs return functions; returning an 
