@@ -323,10 +323,17 @@ print(1,2,3,sep='\n')
 10) while True, while False, while not
 ```
 while True:
-
-
+	....
+	break
+# infinite steps until breaks
 ```
 
+```
+while False:
+	...
+# 0 steps (never en)
+
+```
 11) for token in tokens
 12) 
 ```
