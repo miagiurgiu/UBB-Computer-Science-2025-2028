@@ -374,6 +374,7 @@ if pairs: # if len(pairs)>0 checks if the list is empty
 		return p1,p2 # first pair
 p1,p2=...(n)
 ```
+
 13) list vs array vs set
 LIST - [ ]
 	 - allows duplicates
@@ -403,8 +404,8 @@ sorted() - on sets, strings etc -> new list
 set={1,2,3}
 new_set=sorted(set)
 ```
-14) for loops
 
+14) for loops
 ```
 for i in range (n)
 
@@ -419,6 +420,13 @@ A
 l
 e
 x
+'
+
+for i, name in enumerate(names)
+'
+0 Alex
+1 Bob
+2 Mia
 '
 ```
 
