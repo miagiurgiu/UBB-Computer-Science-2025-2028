@@ -291,8 +291,14 @@ print (f"a={a}, b={b}, c={c}")
 for i in range (1,6)
 	print(i, end=' ')
 # 1 2 3 4 5
+# end = '\n ' by default
 ```
 
+```
+for i in range (1,6)
+	print(i, end=',')
+# 1, 2, 3, 4, 5
+```
 
 
 6) always value val = function() before printing out the result? No.
