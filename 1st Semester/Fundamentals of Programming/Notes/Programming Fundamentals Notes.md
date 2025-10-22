@@ -392,6 +392,11 @@ ARRAY - efficient
 	    - NumPy
 
 sort() can be applied on both sets and lists? only on lists, not on sets.
+list.sort() - just on lists
+```
+nums=[1,2,3]
+nums.sort()
+```
 
 14) for loops
 15) def is_prime(n:int)
