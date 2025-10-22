@@ -315,8 +315,18 @@ for i in range (1,6)
 9) endl on a new line or after printing stuff on the same line?
 endl by default
 if you want sth.else -> sep="sth.else"
+```
+print(1,2,3,sep='\n')
+
+```
 
 10) while True, while False, while not
+```
+while True:
+
+
+```
+
 11) for token in tokens
 12) 
 ```
