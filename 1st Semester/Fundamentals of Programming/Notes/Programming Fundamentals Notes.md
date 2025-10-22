@@ -460,6 +460,9 @@ except ZeroDivisionError:
 ```
 
 18) PULL vs PUSH vs COMMIT
-pull - from c
+pull - from github to computer
+push - from computer to github
+commit - save changes made on computer
+
 make changes on both computers -> error
 19) datatypes
