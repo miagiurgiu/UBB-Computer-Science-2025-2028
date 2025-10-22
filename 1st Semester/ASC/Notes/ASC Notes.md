@@ -407,4 +407,6 @@ movzx = move with zero-extend = converts an 8-bit value to a 32-bit value (autom
 
 ## ASC Clarifications
 
-Fiecare cifra in hexa = 
+General:
+	- Fiecare cifra in hexa = 4 cifre in binar (a DB 12h  - - - - - - - - 1 byte)
+	- 
