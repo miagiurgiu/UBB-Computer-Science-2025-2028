@@ -331,9 +331,15 @@ while True:
 ```
 while False:
 	...
-# 0 steps (never en)
+# 0 steps (never enters)
+```
 
 ```
+while a==False <= > while not a
+
+while not (x>10 and y<5)
+```
+
 11) for token in tokens
 12) 
 ```
