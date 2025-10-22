@@ -338,9 +338,15 @@ while False:
 while a==False <= > while not a
 
 while not (x>10 and y<5)
+# repeats until the condition becomes True
 ```
 
 11) for token in tokens
+```
+tokens = ["55", "-6",]
+
+```
+
 12) 
 ```
 pairs = all_pairs(n)
