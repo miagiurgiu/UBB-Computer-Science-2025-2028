@@ -449,4 +449,4 @@ movzx = move with zero-extend = converts an 8-bit value to a 32-bit value (autom
 39) din word in doubleword nu merge numai din ax in dx:ax, nu in eax
 40) cbw, signed, intotdeauna al -> ax. conversia consta in completarea cu bitul de semn in fata byte-ului initial. aia nu ar veni numai un bit in plus? nu pare a fi suficient pana la a atinge un word.
 41) cwd, signed, intotdeauna ax -> dx:ax. conversia consta in completarea cu bitul de semn in fata byte-ului initial. again, nu pare a fi suficient pana la a atinge un word.
-42) cwde, signed, ax -> eax. what is th
+42) cwde, signed, ax -> eax. care e diferenta intre asta si cwd?
