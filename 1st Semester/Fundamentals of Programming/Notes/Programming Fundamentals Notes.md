@@ -284,9 +284,16 @@ print("b")
 
 ```
 print (f"a={a}, b={b}, c={c}")
-a=1, b=2, 
+# a=1, b=2, c=3
+```
 
 ```
+for i in range (1,6)
+	print(i, end=' ')
+# 1 2 3 4 5
+```
+
+
 
 6) always value val = function() before printing out the result? No.
 7) don't need a copy when palindrome? 
