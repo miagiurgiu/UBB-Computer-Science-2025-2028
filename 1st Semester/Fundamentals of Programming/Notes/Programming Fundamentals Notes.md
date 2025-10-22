@@ -428,12 +428,16 @@ for i, name in enumerate(names)
 1 Bob
 2 Mia
 '
+
+for i in range(n)
+	if i==2:
+		continue # salt
 ```
 
+15) def is_prime(n:int) - just a hint, does not do any conversion
 
-14) def is_prime(n:int)
-15) print(type(user_input)) always specify the type when printing?
-16) try functions?
-17) PULL vs PUSH vs COMMIT
+16) print(type(user_input)) always specify the type when printing?
+17) try functions?
+18) PULL vs PUSH vs COMMIT
 make changes on both computers -> error
-18) datatypes
+19) datatypes
