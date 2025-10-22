@@ -343,7 +343,15 @@ while not (x>10 and y<5)
 
 11) for token in tokens
 ```
-tokens = ["55", "-6",]
+tokens = ["55", "-6", "67", "90"]
+for token in tokens:
+	print(token)
+'
+55
+-6
+67
+90
+'
 
 ```
 
