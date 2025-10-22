@@ -447,4 +447,5 @@ movzx = move with zero-extend = converts an 8-bit value to a 32-bit value (autom
 37) cum adica nu exista instructiuni de conversie fara semn. din ce in ce ar trebui sa converteasca? in ce consta convertirea? in zeroizare? se tot adauga zerouri pana ajunge la nr de biti corespunzator unui word/doubleword etc?
 38) a+b, unde a=10 e byte si b=1122h e word, mutam [a] in al (16 biti), completam cu 0 byte-ul high, apoi adaugam [b] la ax; 
 39) din word in doubleword nu merge numai din ax in dx:ax, nu in eax
-40) cbw, signed, intotdeauna al -> ax. conversia consta in completarea cu bitul de semn in fata byte-ului initial? 
+40) cbw, signed, intotdeauna al -> ax. conversia consta in completarea cu bitul de semn in fata byte-ului initial? aia nu ar veni numai un bit in plus? nu pare a fi suficient pana la a atinge un word.
+41) cwd, signed, intotdeauna ax -> dx:ax
