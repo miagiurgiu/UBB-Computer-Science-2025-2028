@@ -448,14 +448,18 @@ else
 finally
 	# it's over, runs anyway
 	
+# Example:
 try:
 	x=int(input("Nr: "))
 	print(10/x)
 except ValueError:
-	print()
+	print("Should be a number")
+except ZeroDivisionError:
+	print("You can't divide by 0")
 
 ```
 
 18) PULL vs PUSH vs COMMIT
+pull - from c
 make changes on both computers -> error
 19) datatypes
