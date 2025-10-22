@@ -305,12 +305,17 @@ for i in range (1,6)
 if by palindrome you mean "oglindit", no. 
 if you mean palindrome = n whose "oglindit" = n, yes.
 8) printing multiple things on the same line
-
-
+```
+for i in range (1,6)
+	print(i, end=' ')
+# 1 2 3 4 5
+# end = '\n ' by default
+```
 
 9) endl on a new line or after printing stuff on the same line?
 endl by default
 if you want sth.else -> sep="sth.else"
+
 10) while True, while False, while not
 11) for token in tokens
 12) 
