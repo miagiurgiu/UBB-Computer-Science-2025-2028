@@ -422,5 +422,5 @@ movzx = move with zero-extend = converts an 8-bit value to a 32-bit value (autom
 13) unsigned vs signed
  Fiecare cifra in hexa = 4 cifre in binar (a DB 12h  - - - - - - - - 1 byte)
  14) de ce as folosi de exemplu dx in loc de bx daca tot 16 biti are?
- 15) dx:ax
+ 15) a, b - daca in operatii se obtin 
 
