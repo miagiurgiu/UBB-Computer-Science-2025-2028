@@ -378,8 +378,16 @@ p1,p2=...(n)
 LIST - [ ]
 	 - allows duplicates
 	 - order counts
-	 - indexable
-SET - automatically eliminates duplicates
+	 - indexabile
+	 - modifyable
+	 - numbers=[1,2,2,3]
+
+SET - { }
+	- no duplicates
+	- no order
+	- non-indexabile
+	- eliminates duplicates
+automatically eliminates duplicates
 sort() can be applied on both sets and lists? only on lists, not on sets.
 
 14) for loops
