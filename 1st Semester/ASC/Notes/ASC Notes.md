@@ -423,5 +423,6 @@ movzx = move with zero-extend = converts an 8-bit value to a 32-bit value (autom
  Fiecare cifra in hexa = 4 cifre in binar (a DB 12h  - - - - - - - - 1 byte)
  14) de ce as folosi de exemplu dx in loc de bx daca tot 16 biti are?
  15) a, b - daca in operatii se obtin valori negative acelea cum se reprezinta? de exemplu  a - b, unde a, b – byte. sa zicem ca in data segment dau a=1 si b=9. rezultatul va fi negativ. cum urmaresc in ollydbg rezultatul negativ? trebuie sa stiu dinainte ca va fi negativ pentru a face sbb? are legatura sbb cu asta sau nu? valoarea de minus cum e reprezentata in memorie? primul bit de la stanga la dreapta sa fie 1? si daca nu incape valoarea in bitul acela?
- 16) 
+ 16) daca adun doua doubleword-uri a + b, unde a, b – dword atunci o sa dea ceva mai mare gen quadword? si trebuie rezultatul sa stiu de dinainte ca trebuie sa il declar ca fiind quadword? si daca fac a-b rezultatul ramane doubleword sau poate trece 
+ 17) 
 
