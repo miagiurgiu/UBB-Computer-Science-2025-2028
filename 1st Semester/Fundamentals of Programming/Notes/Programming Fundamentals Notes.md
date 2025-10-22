@@ -397,11 +397,24 @@ list.sort() - just on lists
 nums=[1,2,3]
 nums.sort()
 ```
+sorted() - on sets, strings etc -> new list
 
+```
+set={1,2,3}
+new_set=sorted(set)
+```
 14) for loops
-15) def is_prime(n:int)
-16) print(type(user_input)) always specify the type when printing?
-17) try functions?
-18) PULL vs PUSH vs COMMIT
+
+```
+
+
+
+```
+
+
+14) def is_prime(n:int)
+15) print(type(user_input)) always specify the type when printing?
+16) try functions?
+17) PULL vs PUSH vs COMMIT
 make changes on both computers -> error
-19) datatypes
+18) datatypes
