@@ -406,9 +406,20 @@ new_set=sorted(set)
 14) for loops
 
 ```
+for i in range (n)
 
+for i in range(start, stop, pas)
 
+for i in [1,2,3]
 
+for ch in "Alex"
+	print(ch)
+'
+A
+l
+e
+x
+'
 ```
 
 
