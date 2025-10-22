@@ -443,5 +443,5 @@ movzx = move with zero-extend = converts an 8-bit value to a 32-bit value (autom
 33) ca sa folosesc imul si idiv inseamna ca stiu de dinainte ca rezultatul va fi signed?
 34) ![[Pasted image 20251022203016.png]] 0180h e doubleword. prin mul ah facem mul de partea high a lui 0180h adica 01h. fiindca 01h e db, se inmulteste la registrul al. si acolo cum are loc conversia aia 128*1=128=0080h?
 35) ![[Pasted image 20251022203414.png]] -la imul cum si-a dat seama ca 80h e -128? mai inainte era +128. analog pentru idiv de ce -128?
-36) ![[Pasted image 20251022203702.png]] - putem explica asta?
+36) ![[Pasted image 20251022203702.png]] - putem explica asta? incearca sa imparta ax (16 biti) la bl (8 biti) - tipuri di
 37) 
