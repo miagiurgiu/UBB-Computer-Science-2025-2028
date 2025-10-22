@@ -283,6 +283,7 @@ print("b")
 ```
 
 
+
 6) always value val = function() before printing out the result? No.
 7) don't need a copy when palindrome? 
 8) printing multiple things on the same line
