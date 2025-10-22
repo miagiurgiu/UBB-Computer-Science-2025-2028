@@ -425,5 +425,6 @@ movzx = move with zero-extend = converts an 8-bit value to a 32-bit value (autom
  15) a, b - daca in operatii se obtin valori negative acelea cum se reprezinta? de exemplu  a - b, unde a, b – byte. sa zicem ca in data segment dau a=1 si b=9. rezultatul va fi negativ. cum urmaresc in ollydbg rezultatul negativ? trebuie sa stiu dinainte ca va fi negativ pentru a face sbb? are legatura sbb cu asta sau nu? valoarea de minus cum e reprezentata in memorie? primul bit de la stanga la dreapta sa fie 1? si daca nu incape valoarea in bitul acela?
  16) daca adun doua doubleword-uri a + b, unde a, b – dword atunci o sa dea ceva mai mare gen quadword? si trebuie rezultatul sa stiu de dinainte ca trebuie sa il declar ca fiind quadword? si daca fac a-b rezultatul ramane doubleword sau poate trece la un rang mai mic daca am zerouri in fata?
  17) (a + b) – (c + 10), unde a, b, c – byte pot lucra pe acelasi registru pentru aceasta operatie sau trebuie pus separat a+b, separat c+10 si la final scazute registrele?
- 18) 
+ 18) a adresa, [a] valoare. in lucrul cu registrii/ce or fi in ce situatii ne trebuie adresa si nu valoarea? si in ce situatii ne trebuie valoarea si nu adresa?
+ 19) 
 
