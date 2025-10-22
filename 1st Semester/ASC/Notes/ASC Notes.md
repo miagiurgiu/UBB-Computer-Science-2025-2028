@@ -451,3 +451,4 @@ movzx = move with zero-extend = converts an 8-bit value to a 32-bit value (autom
 41) cwd, signed, intotdeauna ax -> dx:ax. conversia consta in completarea cu bitul de semn in fata byte-ului initial. again, nu pare a fi suficient pana la a atinge un word.
 42) cwde, signed, ax -> eax. care e diferenta intre asta si cwd?
 43) cdq, signed, eax -> edx:eax
+44) ![[Pasted image 20251022212254.png]] - 
