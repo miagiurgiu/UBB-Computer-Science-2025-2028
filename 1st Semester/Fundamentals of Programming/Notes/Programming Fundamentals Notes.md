@@ -282,7 +282,11 @@ print("b")
 # a b
 ```
 
+```
+print (f"a={a}, b={b}, c={c}")
+a=1, b=2, 
 
+```
 
 6) always value val = function() before printing out the result? No.
 7) don't need a copy when palindrome? 
