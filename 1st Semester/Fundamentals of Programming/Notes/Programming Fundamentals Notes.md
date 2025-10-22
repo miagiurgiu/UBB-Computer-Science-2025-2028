@@ -360,10 +360,12 @@ for token in enumerate(tokens):
 	print(i,token)
 '
 0 55
-1
+1 -6
+2 67
+3 90
 '
-
 ```
+
 12) 
 ```
 pairs = all_pairs(n)
@@ -373,7 +375,10 @@ if pairs: # if len(pairs)>0 checks if the list is empty
 p1,p2=...(n)
 ```
 13) list vs array vs set
-LIST - allows duplicates
+LIST - [ ]
+	 - allows duplicates
+	 - order counts
+	 - indexable
 SET - automatically eliminates duplicates
 sort() can be applied on both sets and lists? only on lists, not on sets.
 
