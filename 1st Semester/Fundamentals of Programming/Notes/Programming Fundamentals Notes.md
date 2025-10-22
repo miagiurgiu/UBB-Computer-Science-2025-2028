@@ -352,9 +352,18 @@ for token in tokens:
 67
 90
 '
-
 ```
 
+```
+tokens = ["55", "-6", "67", "90"]
+for token in enumerate(tokens):
+	print(i,token)
+'
+0 55
+1
+'
+
+```
 12) 
 ```
 pairs = all_pairs(n)
