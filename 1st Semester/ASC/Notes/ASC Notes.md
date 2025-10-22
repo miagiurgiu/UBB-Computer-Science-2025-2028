@@ -414,11 +414,13 @@ movzx = move with zero-extend = converts an 8-bit value to a 32-bit value (autom
 5) ce fac esp, ebp, eip, eflags?
 6) sp ce face?
 7) xor ce face?
-8) memorie - variabilele arata catre array-ul de memorie? cum arata in memorie variabilele? sunt una dupa cealalta? cum sunt valori
+8) memorie - variabilele arata catre array-ul de memorie? cum arata in memorie variabilele? sunt una dupa cealalta? cum sunt valorile adaugate in adresa?
 9) little endian vs big endian
 10) cand adresa, cand valoare
 11) mov [a], 5 e bine?
 12) subregisters?
 13) unsigned vs signed
  Fiecare cifra in hexa = 4 cifre in binar (a DB 12h  - - - - - - - - 1 byte)
+ 14) de ce as folosi de exemplu dx in loc de bx daca tot 16 biti are?
+ 15) dx:ax
 
