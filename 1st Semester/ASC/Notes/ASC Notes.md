@@ -452,4 +452,5 @@ movzx = move with zero-extend = converts an 8-bit value to a 32-bit value (autom
 42) cwde, signed, ax -> eax. care e diferenta intre asta si cwd?
 43) cdq, signed, eax -> edx:eax
 44) ![[Pasted image 20251022212254.png]] - 
-45) de unde stiu cand e cu carry si cand nu? asta implica sa fac eu operatia pe foaie de dinainte? 
+45) adc, sbb, de unde stiu cand e cu carry si cand nu? asta implica sa fac eu operatia pe foaie de dinainte? 
+46) 
