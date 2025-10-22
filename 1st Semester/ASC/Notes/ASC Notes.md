@@ -441,4 +441,4 @@ movzx = move with zero-extend = converts an 8-bit value to a 32-bit value (autom
 31) mul a , daca a e db atunci se inmulteste a la registrul al si rezultatul va fi in ax ? si cum mai exact arata acum ax dupa inmultire? aici trebuie impartite cazurile cu signed si unsigned? mul b, daca b e dw, atunci se inmulteste b la registrul ax si rezultatul va fi in dx: ax. de ce dx:ax si nu bx:ax sau cx:ax? dx e special pentru asta? mul c, daca c e dd, atunci se inmulteste c la registrul eax si rezultatul va fi in edx:eax? o reprezentare concreta, un exemplu?
 32) div a, daca a e db atunci se imparte ax la a si catul va fi in al, restul in ah (deci restul inaintea catului in memorie); div b, daca b e dw atunci se imparte dx:ax la b si catul va fi in ax, iar restul in dx; div c, daca c e dd atunci se imparte edx:eax la c si catul va fi in eax, iar restul in edx
 33) ca sa folosesc imul si idiv inseamna ca stiu de dinainte ca rezultatul va fi signed?
-34) ![[Pasted image 20251022203016.png]] 0180h e doubleword. din el am luat doar 
+34) ![[Pasted image 20251022203016.png]] 0180h e doubleword. prin mul ah facem mul de partea high a lui 0180h adica 01h. fiindca 01h e
