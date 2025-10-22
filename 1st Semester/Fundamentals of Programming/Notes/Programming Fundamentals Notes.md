@@ -300,9 +300,8 @@ for i in range (1,6)
 # 1, 2, 3, 4, 5
 ```
 
-
 6) always value val = function() before printing out the result? No.
-7) don't need a copy when palindrome? 
+7) don't need a copy when palindrome? if by palindrome you mean "oglindit", no.
 8) printing multiple things on the same line
 9) endl on a new line or after printing stuff on the same line?
 endl by default
