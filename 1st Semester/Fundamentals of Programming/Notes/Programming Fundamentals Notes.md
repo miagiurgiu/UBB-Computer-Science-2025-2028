@@ -435,9 +435,12 @@ for i in range(n)
 ```
 
 15) def is_prime(n:int) - just a hint, does not do any conversion
-
 16) print(type(user_input)) always specify the type when printing?
+it shows us the type (string/char...)
 17) try functions?
+
+
+
 18) PULL vs PUSH vs COMMIT
 make changes on both computers -> error
 19) datatypes
