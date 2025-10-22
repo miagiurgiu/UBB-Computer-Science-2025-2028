@@ -405,8 +405,8 @@ eax -> ax -> ah+al
 
 movzx = move with zero-extend = converts an 8-bit value to a 32-bit value (automatically fills with zeroes)
 
-## ASC Clarifications
+## ASC Questions
 
-General:
-	- Fiecare cifra in hexa = 4 cifre in binar (a DB 12h  - - - - - - - - 1 byte)
-	- 
+1) pentru a sti folosesc db, dw, dd, dq
+ Fiecare cifra in hexa = 4 cifre in binar (a DB 12h  - - - - - - - - 1 byte)
+
