@@ -430,4 +430,5 @@ movzx = move with zero-extend = converts an 8-bit value to a 32-bit value (autom
 20) ![[Pasted image 20251022195430.png]] - unde e cea mai mica adresa si cea mai mare adresa 
 21) ![[Pasted image 20251022195628.png]] - cum a facut conversia din 10 in 16\
 22) ![[Pasted image 20251022195739.png]] - de ce sunt mai multe valori bagate in acelasi registru
-23) 
+23) ![[Pasted image 20251022195907.png]] - rezervarea de spatiu nu se facea cu resb, resq etc?
+24) 
