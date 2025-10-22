@@ -428,3 +428,4 @@ movzx = move with zero-extend = converts an 8-bit value to a 32-bit value (autom
  18) a adresa, [a] valoare. in lucrul cu registrii/ce or fi in ce situatii ne trebuie adresa si nu valoarea? si in ce situatii ne trebuie valoarea si nu adresa?
  19) ![[Pasted image 20251022195218.png]] - pai daca depaseste un octet nu pot lua un resgistru din ala mai mare? de ce ne mai trebuie
 20) ![[Pasted image 20251022195430.png]] - unde e cea mai mica adresa si cea mai mare adresa 
+21) ![[Pasted image 20251022195628.png]] - cum a facut conversia din 10 in 16
