@@ -438,8 +438,17 @@ for i in range(n)
 16) print(type(user_input)) always specify the type when printing?
 it shows us the type (string/char...)
 17) try functions?
+```
+try:
+	# code that might cause errors
+except:
+	# what to do if an error occurs
+else
+	# no problem, it runs, what do do if there is no error
+finally
 
 
+```
 
 18) PULL vs PUSH vs COMMIT
 make changes on both computers -> error
