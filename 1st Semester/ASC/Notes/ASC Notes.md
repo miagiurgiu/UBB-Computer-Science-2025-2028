@@ -434,3 +434,4 @@ movzx = move with zero-extend = converts an 8-bit value to a 32-bit value (autom
 24) daca eu vreau sa fac operatii cu a si b si nu stiu daca rezultatul va fi pozitiv sau negativ atunci e mai safe sa fac rezultatul de tip signed? si cum fac asta? trebuie aplicat signed peste toate operatiile, chiar daca unele vor fi unsigned? adica daca de exemplu fac (a+b)+(a-b) e ok daca fac adunarea normala a+b cu "add", dar fac a-b cu "?" pentru ca poate e negativ? dar daca a, b sunt negative din start? atunci fac doar cu "?"
 25) ![[Pasted image 20251022200434.png]] - de ce e incorecta logic?
 26) fisierul executabil ce este?
+27) cand trebuie pus tipul de data (byte,)
