@@ -438,3 +438,4 @@ movzx = move with zero-extend = converts an 8-bit value to a 32-bit value (autom
 28) ![[Pasted image 20251022200713.png]] - de ce a si a+1? se stocheaza a si b unul in continuarea celuilalt? de ce b e inainte de a? pentru ca e little-endian? little-endian e valabil si la adunare? adica baga valoarea pe care o adun inainte la ce era deja acolo?
 29) ![[Pasted image 20251022201004.png]] - care-i faza cu b+1?
 30) ![[Pasted image 20251022201103.png]] - de ce e corect in al si nu in ax?
+31) mul a , daca a e db atunci se inmulteste a la registrul al 
