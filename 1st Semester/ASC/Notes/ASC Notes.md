@@ -435,5 +435,5 @@ movzx = move with zero-extend = converts an 8-bit value to a 32-bit value (autom
 25) ![[Pasted image 20251022200434.png]] - de ce e incorecta logic?
 26) fisierul executabil ce este?
 27) cand trebuie pus tipul de data (byte, word, dword, qword) inainte de sursa?
-28) ![[Pasted image 20251022200713.png]] - de ce a si a+1? se stocheaza a si b unul in continuare
+28) ![[Pasted image 20251022200713.png]] - de ce a si a+1? se stocheaza a si b unul in continuarea celuilalt? de ce b e inainte de a? pentru ca e little-endian? little-endian e valabil si la adunare? adica baga valoarea pe care o adun inainte la ce era deja acolo?
 29) 
