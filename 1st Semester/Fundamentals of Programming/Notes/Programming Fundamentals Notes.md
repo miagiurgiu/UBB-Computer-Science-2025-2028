@@ -446,7 +446,13 @@ except:
 else
 	# no problem, it runs, what do do if there is no error
 finally
-
+	# it's over, runs anyway
+	
+try:
+	x=int(input("Nr: "))
+	print(10/x)
+except ValueError:
+	print()
 
 ```
 
