@@ -387,7 +387,10 @@ SET - { }
 	- no order
 	- non-indexabile
 	- eliminates duplicates
-automatically eliminates duplicates
+
+ARRAY - efficient
+	    - NumPy
+
 sort() can be applied on both sets and lists? only on lists, not on sets.
 
 14) for loops
