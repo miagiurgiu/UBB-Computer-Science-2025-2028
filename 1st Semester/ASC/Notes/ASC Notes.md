@@ -427,4 +427,4 @@ movzx = move with zero-extend = converts an 8-bit value to a 32-bit value (autom
  17) (a + b) – (c + 10), unde a, b, c – byte pot lucra pe acelasi registru pentru aceasta operatie sau trebuie pus separat a+b, separat c+10 si la final scazute registrele?
  18) a adresa, [a] valoare. in lucrul cu registrii/ce or fi in ce situatii ne trebuie adresa si nu valoarea? si in ce situatii ne trebuie valoarea si nu adresa?
  19) ![[Pasted image 20251022195218.png]] - pai daca depaseste un octet nu pot lua un resgistru din ala mai mare? de ce ne mai trebuie
-
+20) ![[Pasted image 20251022195430.png]] - unde e cea mai mica adresa si cea mai mare 
