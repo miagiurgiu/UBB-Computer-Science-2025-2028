@@ -470,7 +470,8 @@ AX: 0205h
 
 5) ce fac eip, eflags?
 
-EIP - 
+EIP - extended instruction pointer (adresa urmatoarei instructiuni)
+EFLAGS - extedned flags register ()
 
 
 6) sp ce face?
