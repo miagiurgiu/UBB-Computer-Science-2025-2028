@@ -471,7 +471,10 @@ AX: 0205h
 5) ce fac eip, eflags?
 
 EIP - extended instruction pointer (adresa urmatoarei instructiuni)
-EFLAGS - extedned flags register ()
+EFLAGS - extedned flags register (starea procesorului)
+
+push eax ; ESP=ESP-4
+pop ebx ; ESP=ESP+4
 
 
 6) sp ce face?
