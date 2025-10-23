@@ -405,7 +405,7 @@ eax -> ax -> ah+al
 
 movzx = move with zero-extend = converts an 8-bit value to a 32-bit value (automatically fills with zeroes)
 
-## ASC Questions
+## ASC TEST PREP Questions
 
 1) pentru a sti care dintre db, dw, dd, dq sa folosesc trebuie mereu convertit in b2? sau aplic [-127, 128] pt byte? invat intervalele pt fiecare? 
 
@@ -424,11 +424,11 @@ dq pentru nr foarte mari
 
 EAX - acumulator (calcule) - cand faci calcule sau vrei rezultatul unei functii
 EBX - base (pointer la date) - cand ai nevoie de un registru auxiliar
-ECX - counter (for loops, counting) - cand ai bucle/s
-EDX - data (extensie pentru EAX)
-ESI - source index (sursa, stringuri)
-EDI - dest index (destinatie, stringuri)
-EBP - base pointer (baza stiva)
+ECX - counter (for loops, counting) - cand ai bucle/shift-uri/repetitii
+EDX - data (extensie pentru EAX) - cand ai nevoie de extensie de 64 bits (mul/div)
+ESI - source index (sursa, stringuri) - copieri, citiri din memorie
+EDI - dest index (destinatie, stringuri) - scrieri in memorie
+EBP - base pointer (baza stiva) - 
 ESP - stack pointer (varf stiva)
 
 
