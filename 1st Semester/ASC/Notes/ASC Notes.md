@@ -447,10 +447,15 @@ Generalizare:
 - cand vrem variabile care vor fi umplute in timpul executiei
 
 resb n vs n db 0
+- dacă ai nevoie de **o valoare inițială → `db/dw/dd/dq`**
+    
+- dacă ai nevoie de **spațiu pentru date care se vor completa ulterior → `resb/resw/resd/resq`**
 n db 0 
 - definesc si initializez 
 - memoria contine deja 0
-- 
+
+resb n
+- rezerv spatiu
 
 2) cum operez cu ax, ah, al?
 3) ce fac esp, ebp, eip, eflags?
