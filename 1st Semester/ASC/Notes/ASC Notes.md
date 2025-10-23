@@ -414,6 +414,12 @@ dw - define word - 16 bits - [-32768, 32767] signed - [0, 65535] unsigned
 dd - define doubleword - 32 bits
 dq - define quadword - 64 bits
 
+Generalizare: 
+db pentru valori mici
+dw pt valori medii
+dd pt nr mari sau adrese
+dq pentru nr foarte mari
+
 2) cand folosesc eax si cand ebx, ecx, edx, esi, edi ?
 3) in ce situatii concrete am nevoie de resb, resw, resd, resq?
 4) cum operez cu ax, ah, al?
