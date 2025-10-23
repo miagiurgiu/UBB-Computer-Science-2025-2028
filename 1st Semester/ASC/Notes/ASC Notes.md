@@ -459,7 +459,7 @@ resb n
 
 4) cum operez cu ax, ah, al?
 
-32 bits = EAX = ceva + AX = 16 + 16 = ceva + (AH + AL) = 16 + 8 + 8
+32 bits = EAX = partea HIGH + partea LOW = ceva + AX = 16 + 16 = ceva + (AH + AL) = 16 + 8 + 8
 
 
 
