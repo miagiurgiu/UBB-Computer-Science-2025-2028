@@ -464,7 +464,9 @@ resb n
 MOV AL, 5
 MOV AH, 2
 
-AX: 0x
+2 in hexa: 02h -> AL
+5 in hexa: 05h -> AH
+AX: 0205h
 
 
 5) ce fac esp, ebp, eip, eflags?
