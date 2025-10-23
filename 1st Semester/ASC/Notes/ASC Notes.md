@@ -408,6 +408,12 @@ movzx = move with zero-extend = converts an 8-bit value to a 32-bit value (autom
 ## ASC Questions
 
 1) pentru a sti care dintre db, dw, dd, dq sa folosesc trebuie mereu convertit in b2? sau aplic [-127, 128] pt byte? invat intervalele pt fiecare?
+
+|     |     |
+| --- | --- |
+|     |     |
+
+
 2) cand folosesc eax si cand ebx, ecx, edx, esi, edi ?
 3) in ce situatii concrete am nevoie de resb, resw, resd, resq?
 4) cum operez cu ax, ah, al?
