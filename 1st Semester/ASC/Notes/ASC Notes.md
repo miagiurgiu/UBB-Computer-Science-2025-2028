@@ -477,7 +477,7 @@ push eax ; ESP=ESP-4
 pop ebx ; ESP=ESP+4
 
 6) sp ce face?
-
+sp e "ax"-ul lui ESP
 
 7) xor ce face?
 8) memorie - variabilele arata catre array-ul de memorie? cum arata in memorie variabilele? sunt una dupa cealalta? cum sunt valorile adaugate in adresa?
