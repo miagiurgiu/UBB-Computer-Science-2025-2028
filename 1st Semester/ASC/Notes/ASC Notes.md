@@ -488,6 +488,9 @@ xor e folosit in adder (vezi gabi mircea):
 sum = a xor b
 carry = a and b
 
+mov eax, 5
+xor eax, 3
+
 6) memorie - variabilele arata catre array-ul de memorie? cum arata in memorie variabilele? sunt una dupa cealalta? cum sunt valorile adaugate in adresa?
 7) little endian vs big endian
 8) cand adresa, cand valoare
