@@ -446,7 +446,11 @@ resq n - rezerva n quadwords
 Generalizare:
 - cand vrem variabile care vor fi umplute in timpul executiei
 
-resb n vs n db 
+resb n vs n db 0
+n db 0 
+- definesc si initializez 
+- memoria contine deja 0
+- 
 
 2) cum operez cu ax, ah, al?
 3) ce fac esp, ebp, eip, eflags?
