@@ -428,11 +428,12 @@ ECX - counter (for loops, counting) - cand ai bucle/shift-uri/repetitii
 EDX - data (extensie pentru EAX) - cand ai nevoie de extensie de 64 bits (mul/div)
 ESI - source index (sursa, stringuri) - copieri, citiri din memorie
 EDI - dest index (destinatie, stringuri) - scrieri in memorie
-EBP - base pointer (baza stiva) - 
-ESP - stack pointer (varf stiva)
+EBP - base pointer (baza stiva) - stack only
+ESP - stack pointer (varf stiva) - stack only
 
 
 2) in ce situatii concrete am nevoie de resb, resw, resd, resq?
+
 3) cum operez cu ax, ah, al?
 4) ce fac esp, ebp, eip, eflags?
 5) sp ce face?
