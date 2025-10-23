@@ -407,12 +407,12 @@ movzx = move with zero-extend = converts an 8-bit value to a 32-bit value (autom
 
 ## ASC TEST PREP Questions
 
-1) pentru a sti care dintre db, dw, dd, dq sa folosesc trebuie mereu convertit in b2? sau aplic [-127, 128] pt byte? invat intervalele pt fiecare? 
+1) pentru a sti care dintre db, dw, dd, dq sa folosesc trebuie mereu convertit in b2? sau aplic [-127, 128] pt byte? invat intervalele pt fiecare? Nu trebuie mereu convertit in b2, dar trebui stiute intervalele.
 
 db - define byte - 8 bits - [-128, 127] signed - [0,255] unsigned
 dw - define word - 16 bits - [-32768, 32767] signed - [0, 65535] unsigned
 dd - define doubleword - 32 bits
-dq - define quadword - 64 bits
+dq - define quadword -~={red} 64 bits=~
 
 Generalizare: 
 db pentru valori mici
