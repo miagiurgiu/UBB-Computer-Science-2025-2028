@@ -469,4 +469,5 @@ make changes on both computers -> error
 
 
 ## Assignment 4
-ex 14 - backtra
+ex 14 - backtracking
+ex 4 - dinamic programming
