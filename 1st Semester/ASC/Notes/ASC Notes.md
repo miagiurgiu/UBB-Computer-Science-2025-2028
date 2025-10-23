@@ -493,16 +493,19 @@ xor eax, 3  #  3=0000 0011
 
 0 0 0 0 0 1 0 1
 0 0 0 0 0 0 1 1
+________________
+0 0 0 0 0 1 1 0 = 6
 
 pune 1 daca bitii sunt diferiti
 0 daca sunt la fel
 xor eax, eax mai rapid decat mov eax, 0 pt ca nu ocupa spatiu in cod
 
 Generalizare:
-xor => 1 daca sunt diferiti bitii, o daca nu sunt diferiti bit
+xor => 1 daca sunt diferiti bitii intre ei, o daca nu sunt diferiti bitii intre ei
 assembly: zero rapid
 
 6) memorie - variabilele arata catre array-ul de memorie? cum arata in memorie variabilele? sunt una dupa cealalta? cum sunt valorile adaugate in adresa?
+
 7) little endian vs big endian
 8) cand adresa, cand valoare
 9) mov [a], 5 e bine?
