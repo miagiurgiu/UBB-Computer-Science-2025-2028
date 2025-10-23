@@ -454,3 +454,4 @@ movzx = move with zero-extend = converts an 8-bit value to a 32-bit value (autom
 44) ![[Pasted image 20251022212254.png]] - 
 45) adc, sbb, de unde stiu cand e cu carry si cand nu? asta implica sa fac eu operatia pe foaie de dinainte? 
 46) stivele 
+47) ![[Pasted image 20251023071333.png]] - de
