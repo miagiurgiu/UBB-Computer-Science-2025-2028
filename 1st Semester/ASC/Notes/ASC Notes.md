@@ -437,6 +437,12 @@ ESP - stack pointer (varf stiva) - stack only
 2) in ce situatii concrete am nevoie de resb, resw, resd, resq?
 
 Directivele astea rezerva spatiu in memorie, fara a initializa valoarea.
+
+resb n - rezerva n bytes
+resw n - rezerva n words
+resd n - rezerva n doublewords
+resq n - rezerva n quadwords
+
 2) cum operez cu ax, ah, al?
 3) ce fac esp, ebp, eip, eflags?
 4) sp ce face?
