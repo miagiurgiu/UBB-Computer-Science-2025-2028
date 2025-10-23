@@ -422,14 +422,15 @@ dq pentru nr foarte mari
 
 2) cand folosesc eax si cand ebx, ecx, edx, esi, edi ?
 
-EAX - acumulator (calcule)
-EBX - base (pointer la date)
-ECX - counter (for loops, counting)
+EAX - acumulator (calcule) - cand faci calcule sau vrei rezultatul unei functii
+EBX - base (pointer la date) - cand ai nevoie de un registru auxiliar
+ECX - counter (for loops, counting) - cand ai bucle/s
 EDX - data (extensie pentru EAX)
 ESI - source index (sursa, stringuri)
 EDI - dest index (destinatie, stringuri)
 EBP - base pointer (baza stiva)
 ESP - stack pointer (varf stiva)
+
 
 2) in ce situatii concrete am nevoie de resb, resw, resd, resq?
 3) cum operez cu ax, ah, al?
