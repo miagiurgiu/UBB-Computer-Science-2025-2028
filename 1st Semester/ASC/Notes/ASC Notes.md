@@ -468,8 +468,8 @@ MOV AH, 2
 5 in hexa: 05h -> AH
 AX: 0205h
 
-MOV AX, 1234h - modifica doar AX
-MOV EAX, 100000h
+
+
 
 5) ce fac esp, ebp, eip, eflags?
 
