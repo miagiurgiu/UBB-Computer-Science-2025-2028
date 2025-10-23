@@ -444,7 +444,10 @@ resd n - rezerva n doublewords
 resq n - rezerva n quadwords
 
 Generalizare:
-- cand vrem
+- cand vrem variabile care vor fi umplute in timpul executiei
+
+resb n vs n db 
+
 2) cum operez cu ax, ah, al?
 3) ce fac esp, ebp, eip, eflags?
 4) sp ce face?
