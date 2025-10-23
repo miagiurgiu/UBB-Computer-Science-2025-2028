@@ -489,13 +489,17 @@ sum = a xor b
 carry = a and b
 
 mov eax, 5 # 5=0000 0101
-xor eax, 3 # 00
+xor eax, 3  #  3=0000 0011
+
+0 0 0 0 0 1 0 1
+0 0 0 0 0 0 1 1
+
 pune 1 daca bitii sunt diferiti
 0 daca sunt la fel
 xor eax, eax mai rapid decat mov eax, 0 pt ca nu ocupa spatiu in cod
 
 Generalizare:
-xor => diferit = 1
+xor => 1 daca sunt diferiti bitii, o daca nu sunt diferiti bit
 assembly: zero rapid
 
 6) memorie - variabilele arata catre array-ul de memorie? cum arata in memorie variabilele? sunt una dupa cealalta? cum sunt valorile adaugate in adresa?
