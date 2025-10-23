@@ -409,7 +409,10 @@ movzx = move with zero-extend = converts an 8-bit value to a 32-bit value (autom
 
 1) pentru a sti care dintre db, dw, dd, dq sa folosesc trebuie mereu convertit in b2? sau aplic [-127, 128] pt byte? invat intervalele pt fiecare?
 
-%%  %%
+```tabs
+tab: New tab
+New tab content
+```
 1) cand folosesc eax si cand ebx, ecx, edx, esi, edi ?
 2) in ce situatii concrete am nevoie de resb, resw, resd, resq?
 3) cum operez cu ax, ah, al?
