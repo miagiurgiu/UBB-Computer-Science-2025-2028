@@ -493,6 +493,9 @@ xor eax, 3
 
 xor eax, eax mai rapid decat mov eax, 0 pt ca nu ocupa spatiu in cod
 
+Generalizare:
+xor =>
+
 6) memorie - variabilele arata catre array-ul de memorie? cum arata in memorie variabilele? sunt una dupa cealalta? cum sunt valorile adaugate in adresa?
 7) little endian vs big endian
 8) cand adresa, cand valoare
