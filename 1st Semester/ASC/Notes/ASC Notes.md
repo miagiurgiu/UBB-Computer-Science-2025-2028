@@ -470,7 +470,7 @@ AX: 0205h
 
 5) ce fac eip, eflags?
 
-EIP 0
+EIP - 
 
 
 6) sp ce face?
