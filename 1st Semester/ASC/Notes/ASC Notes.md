@@ -438,11 +438,13 @@ ESP - stack pointer (varf stiva) - stack only
 
 Directivele astea rezerva spatiu in memorie, fara a initializa valoarea.
 
-resb n - rezerva n bytes
+resb n - rezerva n bytes (resb 10 => rezerva 10 bytes => 10*8 = 80 bits)
 resw n - rezerva n words
 resd n - rezerva n doublewords
 resq n - rezerva n quadwords
 
+Generalizare:
+- cand vrem
 2) cum operez cu ax, ah, al?
 3) ce fac esp, ebp, eip, eflags?
 4) sp ce face?
