@@ -554,6 +554,10 @@ EAX - AX - AH - AL
 8) unsigned vs signed
  Fiecare cifra in hexa = 4 cifre in binar (a DB 12h  - - - - - - - - 1 byte)
 
+unsigned: [0,255]
+signed: [-128, 127]
+
+
 
 
  9) de ce as folosi de exemplu dx in loc de bx daca tot 16 biti are?
