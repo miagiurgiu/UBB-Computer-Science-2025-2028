@@ -519,8 +519,6 @@ b dw 40
 7) little endian vs big endian
 
 100 = 00000064h
-
-
 7) cand adresa, cand valoare
 8) mov [a], 5 e bine?
 9) subregisters?
