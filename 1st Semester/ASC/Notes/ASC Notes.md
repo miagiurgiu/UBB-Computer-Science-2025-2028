@@ -589,6 +589,8 @@ verificare: FFF8h + 0008h = 0000h -> totul bine.
 Generalizare: 
 Vreau sa scriu un nr negativ pe N biti
 -x = (2^n - x)
+signed -> extindere cu bitul de semn
+unsigned -> extindere cu zerouri 
 
 Sign extension:
 Cand copiez un nr mai mic intr-un registru mai mare, daca sunt in interpretarea signed atunci se copiaza bitul de semn in toti bitii superiori.
