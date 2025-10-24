@@ -576,7 +576,7 @@ E la latitudinea mea daca vreau sa reprezint signed sau unsigned. Daca cere ceri
 a=1 = 0000 0001
 b=9 = 0000 1001
 a-b = 1111 1000 = -8
-
+-> am calculat valoarea absoluta cu 2's complement:
 
  11) daca adun doua doubleword-uri a + b, unde a, b – dword atunci o sa dea ceva mai mare gen quadword? si trebuie rezultatul sa stiu de dinainte ca trebuie sa il declar ca fiind quadword? si daca fac a-b rezultatul ramane doubleword sau poate trece la un rang mai mic daca am zerouri in fata?
  12) (a + b) – (c + 10), unde a, b, c – byte pot lucra pe acelasi registru pentru aceasta operatie sau trebuie pus separat a+b, separat c+10 si la final scazute registrele?
