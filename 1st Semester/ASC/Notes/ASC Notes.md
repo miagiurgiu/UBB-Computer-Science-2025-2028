@@ -509,8 +509,9 @@ assembly: zero rapid
 a db 10
 b dw 40
 
-# 10=0Ah
-# 40 = 28h = 0028h
+# 10=0Ah -> ocupa 1 byte (adresa 1000h)
+# 40 = 28h = 0028h -> ocupa 2 bytes (1001h-1002h)
+
 ```
 ![[arrayofmemory.excalidraw]]
 
