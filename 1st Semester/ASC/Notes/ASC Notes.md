@@ -533,6 +533,8 @@ a dw 256 ; 2 bytes -> 00 01
 ; [a]=00
 ; [a+1] = 01
 
+mov ax, [a] ; 
+
 ```
 7) mov [a], 5 e bine?
 8) subregisters?
