@@ -557,7 +557,8 @@ EAX - AX - AH - AL
 unsigned: [0,255]
 signed: [-128, 127]
 
-
+10000000b = 128 signed
+10000000b = -128 unsigned (2's complement)
 
 
  9) de ce as folosi de exemplu dx in loc de bx daca tot 16 biti are?
