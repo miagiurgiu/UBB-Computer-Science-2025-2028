@@ -508,6 +508,9 @@ assembly: zero rapid
 ```
 a db 10
 b dw 40
+
+# 10=0Ah
+# 40 = 28h = 0028h
 ```
 ![[arrayofmemory.excalidraw]]
 
