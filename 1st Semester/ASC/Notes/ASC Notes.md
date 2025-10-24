@@ -545,11 +545,11 @@ mov [a], 5 ; 5 are un byte si a are un byte, deci 5 incape in a
 
 ```
 ```
-mov [a], 5 ; 5 are un byte dar nu stiu ce dimensiune are a, deci nu st
+mov [a], 59 ; 59 are un byte dar nu stiu ce dimensiune are a, deci nu stiu daca 59 incape in a
 
 ```
 7) subregisters?
-
+EAX - AX - AH - AL
 
 8) unsigned vs signed
  Fiecare cifra in hexa = 4 cifre in binar (a DB 12h  - - - - - - - - 1 byte)
