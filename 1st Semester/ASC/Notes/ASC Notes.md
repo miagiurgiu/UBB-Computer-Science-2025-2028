@@ -518,42 +518,43 @@ b dw 40
 
 7) little endian vs big endian
 
-8) cand adresa, cand valoare
-9) mov [a], 5 e bine?
-10) subregisters?
-11) unsigned vs signed
+100 = 00000064
+7) cand adresa, cand valoare
+8) mov [a], 5 e bine?
+9) subregisters?
+10) unsigned vs signed
  Fiecare cifra in hexa = 4 cifre in binar (a DB 12h  - - - - - - - - 1 byte)
- 12) de ce as folosi de exemplu dx in loc de bx daca tot 16 biti are?
- 13) a, b - daca in operatii se obtin valori negative acelea cum se reprezinta? de exemplu  a - b, unde a, b – byte. sa zicem ca in data segment dau a=1 si b=9. rezultatul va fi negativ. cum urmaresc in ollydbg rezultatul negativ? trebuie sa stiu dinainte ca va fi negativ pentru a face sbb? are legatura sbb cu asta sau nu? valoarea de minus cum e reprezentata in memorie? primul bit de la stanga la dreapta sa fie 1? si daca nu incape valoarea in bitul acela?
- 14) daca adun doua doubleword-uri a + b, unde a, b – dword atunci o sa dea ceva mai mare gen quadword? si trebuie rezultatul sa stiu de dinainte ca trebuie sa il declar ca fiind quadword? si daca fac a-b rezultatul ramane doubleword sau poate trece la un rang mai mic daca am zerouri in fata?
- 15) (a + b) – (c + 10), unde a, b, c – byte pot lucra pe acelasi registru pentru aceasta operatie sau trebuie pus separat a+b, separat c+10 si la final scazute registrele?
- 16) a adresa, [a] valoare. in lucrul cu registrii/ce or fi in ce situatii ne trebuie adresa si nu valoarea? si in ce situatii ne trebuie valoarea si nu adresa?
- 17) ![[Pasted image 20251022195218.png]] - pai daca depaseste un octet nu pot lua un resgistru din ala mai mare? de ce ne mai trebuie
-18) ![[Pasted image 20251022195430.png]] - unde e cea mai mica adresa si cea mai mare adresa 
-19) ![[Pasted image 20251022195628.png]] - cum a facut conversia din 10 in 16\
-20) ![[Pasted image 20251022195739.png]] - de ce sunt mai multe valori bagate in acelasi registru
-21) ![[Pasted image 20251022195907.png]] - rezervarea de spatiu nu se facea cu resb, resq etc?
-22) daca eu vreau sa fac operatii cu a si b si nu stiu daca rezultatul va fi pozitiv sau negativ atunci e mai safe sa fac rezultatul de tip signed? si cum fac asta? trebuie aplicat signed peste toate operatiile, chiar daca unele vor fi unsigned? adica daca de exemplu fac (a+b)+(a-b) e ok daca fac adunarea normala a+b cu "add", dar fac a-b cu "?" pentru ca poate e negativ? dar daca a, b sunt negative din start? atunci fac doar cu "?"
-23) ![[Pasted image 20251022200434.png]] - de ce e incorecta logic?
-24) fisierul executabil ce este?
-25) cand trebuie pus tipul de data (byte, word, dword, qword) inainte de sursa?
-26) ![[Pasted image 20251022200713.png]] - de ce a si a+1? se stocheaza a si b unul in continuarea celuilalt? de ce b e inainte de a? pentru ca e little-endian? little-endian e valabil si la adunare? adica baga valoarea pe care o adun inainte la ce era deja acolo?
-27) ![[Pasted image 20251022201004.png]] - care-i faza cu b+1?
-28) ![[Pasted image 20251022201103.png]] - de ce e corect in al si nu in ax?
-29) mul a , daca a e db atunci se inmulteste a la registrul al si rezultatul va fi in ax ? si cum mai exact arata acum ax dupa inmultire? aici trebuie impartite cazurile cu signed si unsigned? mul b, daca b e dw, atunci se inmulteste b la registrul ax si rezultatul va fi in dx: ax. de ce dx:ax si nu bx:ax sau cx:ax? dx e special pentru asta? mul c, daca c e dd, atunci se inmulteste c la registrul eax si rezultatul va fi in edx:eax? o reprezentare concreta, un exemplu?
-30) div a, daca a e db atunci se imparte ax la a si catul va fi in al, restul in ah (deci restul inaintea catului in memorie); div b, daca b e dw atunci se imparte dx:ax la b si catul va fi in ax, iar restul in dx; div c, daca c e dd atunci se imparte edx:eax la c si catul va fi in eax, iar restul in edx
-31) ca sa folosesc imul si idiv inseamna ca stiu de dinainte ca rezultatul va fi signed?
-32) ![[Pasted image 20251022203016.png]] 0180h e doubleword. prin mul ah facem mul de partea high a lui 0180h adica 01h. fiindca 01h e db, se inmulteste la registrul al. si acolo cum are loc conversia aia 128*1=128=0080h?
-33) ![[Pasted image 20251022203414.png]] -la imul cum si-a dat seama ca 80h e -128? mai inainte era +128. analog pentru idiv de ce -128?
-34) ![[Pasted image 20251022203702.png]] - putem explica asta? incearca sa imparta ax (16 biti) la bl (8 biti) si ar trebui catul sa fie in al si restul in ah. dar pentru ca se imparte exact, restul e 0 si ramane 512 sa il reprezentam pe un singur byte, ceea ce nu e posibil. asta se numeste "division overflow"
-35) cum adica nu exista instructiuni de conversie fara semn. din ce in ce ar trebui sa converteasca? in ce consta convertirea? in zeroizare? se tot adauga zerouri pana ajunge la nr de biti corespunzator unui word/doubleword etc?
-36) a+b, unde a=10 e byte si b=1122h e word, mutam [a] in al (16 biti), completam cu 0 byte-ul high, apoi adaugam [b] la ax; 
-37) din word in doubleword nu merge numai din ax in dx:ax, nu in eax
-38) cbw, signed, intotdeauna al -> ax. conversia consta in completarea cu bitul de semn in fata byte-ului initial. aia nu ar veni numai un bit in plus? nu pare a fi suficient pana la a atinge un word.
-39) cwd, signed, intotdeauna ax -> dx:ax. conversia consta in completarea cu bitul de semn in fata byte-ului initial. again, nu pare a fi suficient pana la a atinge un word.
-40) cwde, signed, ax -> eax. care e diferenta intre asta si cwd?
-41) cdq, signed, eax -> edx:eax
-42) ![[Pasted image 20251022212254.png]] - 
-43) adc, sbb, de unde stiu cand e cu carry si cand nu? asta implica sa fac eu operatia pe foaie de dinainte? 
-44) stivele 
-45) ![[Pasted image 20251023071333.png]] - de explicat linie cu linie
+ 11) de ce as folosi de exemplu dx in loc de bx daca tot 16 biti are?
+ 12) a, b - daca in operatii se obtin valori negative acelea cum se reprezinta? de exemplu  a - b, unde a, b – byte. sa zicem ca in data segment dau a=1 si b=9. rezultatul va fi negativ. cum urmaresc in ollydbg rezultatul negativ? trebuie sa stiu dinainte ca va fi negativ pentru a face sbb? are legatura sbb cu asta sau nu? valoarea de minus cum e reprezentata in memorie? primul bit de la stanga la dreapta sa fie 1? si daca nu incape valoarea in bitul acela?
+ 13) daca adun doua doubleword-uri a + b, unde a, b – dword atunci o sa dea ceva mai mare gen quadword? si trebuie rezultatul sa stiu de dinainte ca trebuie sa il declar ca fiind quadword? si daca fac a-b rezultatul ramane doubleword sau poate trece la un rang mai mic daca am zerouri in fata?
+ 14) (a + b) – (c + 10), unde a, b, c – byte pot lucra pe acelasi registru pentru aceasta operatie sau trebuie pus separat a+b, separat c+10 si la final scazute registrele?
+ 15) a adresa, [a] valoare. in lucrul cu registrii/ce or fi in ce situatii ne trebuie adresa si nu valoarea? si in ce situatii ne trebuie valoarea si nu adresa?
+ 16) ![[Pasted image 20251022195218.png]] - pai daca depaseste un octet nu pot lua un resgistru din ala mai mare? de ce ne mai trebuie
+17) ![[Pasted image 20251022195430.png]] - unde e cea mai mica adresa si cea mai mare adresa 
+18) ![[Pasted image 20251022195628.png]] - cum a facut conversia din 10 in 16\
+19) ![[Pasted image 20251022195739.png]] - de ce sunt mai multe valori bagate in acelasi registru
+20) ![[Pasted image 20251022195907.png]] - rezervarea de spatiu nu se facea cu resb, resq etc?
+21) daca eu vreau sa fac operatii cu a si b si nu stiu daca rezultatul va fi pozitiv sau negativ atunci e mai safe sa fac rezultatul de tip signed? si cum fac asta? trebuie aplicat signed peste toate operatiile, chiar daca unele vor fi unsigned? adica daca de exemplu fac (a+b)+(a-b) e ok daca fac adunarea normala a+b cu "add", dar fac a-b cu "?" pentru ca poate e negativ? dar daca a, b sunt negative din start? atunci fac doar cu "?"
+22) ![[Pasted image 20251022200434.png]] - de ce e incorecta logic?
+23) fisierul executabil ce este?
+24) cand trebuie pus tipul de data (byte, word, dword, qword) inainte de sursa?
+25) ![[Pasted image 20251022200713.png]] - de ce a si a+1? se stocheaza a si b unul in continuarea celuilalt? de ce b e inainte de a? pentru ca e little-endian? little-endian e valabil si la adunare? adica baga valoarea pe care o adun inainte la ce era deja acolo?
+26) ![[Pasted image 20251022201004.png]] - care-i faza cu b+1?
+27) ![[Pasted image 20251022201103.png]] - de ce e corect in al si nu in ax?
+28) mul a , daca a e db atunci se inmulteste a la registrul al si rezultatul va fi in ax ? si cum mai exact arata acum ax dupa inmultire? aici trebuie impartite cazurile cu signed si unsigned? mul b, daca b e dw, atunci se inmulteste b la registrul ax si rezultatul va fi in dx: ax. de ce dx:ax si nu bx:ax sau cx:ax? dx e special pentru asta? mul c, daca c e dd, atunci se inmulteste c la registrul eax si rezultatul va fi in edx:eax? o reprezentare concreta, un exemplu?
+29) div a, daca a e db atunci se imparte ax la a si catul va fi in al, restul in ah (deci restul inaintea catului in memorie); div b, daca b e dw atunci se imparte dx:ax la b si catul va fi in ax, iar restul in dx; div c, daca c e dd atunci se imparte edx:eax la c si catul va fi in eax, iar restul in edx
+30) ca sa folosesc imul si idiv inseamna ca stiu de dinainte ca rezultatul va fi signed?
+31) ![[Pasted image 20251022203016.png]] 0180h e doubleword. prin mul ah facem mul de partea high a lui 0180h adica 01h. fiindca 01h e db, se inmulteste la registrul al. si acolo cum are loc conversia aia 128*1=128=0080h?
+32) ![[Pasted image 20251022203414.png]] -la imul cum si-a dat seama ca 80h e -128? mai inainte era +128. analog pentru idiv de ce -128?
+33) ![[Pasted image 20251022203702.png]] - putem explica asta? incearca sa imparta ax (16 biti) la bl (8 biti) si ar trebui catul sa fie in al si restul in ah. dar pentru ca se imparte exact, restul e 0 si ramane 512 sa il reprezentam pe un singur byte, ceea ce nu e posibil. asta se numeste "division overflow"
+34) cum adica nu exista instructiuni de conversie fara semn. din ce in ce ar trebui sa converteasca? in ce consta convertirea? in zeroizare? se tot adauga zerouri pana ajunge la nr de biti corespunzator unui word/doubleword etc?
+35) a+b, unde a=10 e byte si b=1122h e word, mutam [a] in al (16 biti), completam cu 0 byte-ul high, apoi adaugam [b] la ax; 
+36) din word in doubleword nu merge numai din ax in dx:ax, nu in eax
+37) cbw, signed, intotdeauna al -> ax. conversia consta in completarea cu bitul de semn in fata byte-ului initial. aia nu ar veni numai un bit in plus? nu pare a fi suficient pana la a atinge un word.
+38) cwd, signed, intotdeauna ax -> dx:ax. conversia consta in completarea cu bitul de semn in fata byte-ului initial. again, nu pare a fi suficient pana la a atinge un word.
+39) cwde, signed, ax -> eax. care e diferenta intre asta si cwd?
+40) cdq, signed, eax -> edx:eax
+41) ![[Pasted image 20251022212254.png]] - 
+42) adc, sbb, de unde stiu cand e cu carry si cand nu? asta implica sa fac eu operatia pe foaie de dinainte? 
+43) stivele 
+44) ![[Pasted image 20251023071333.png]] - de explicat linie cu linie
