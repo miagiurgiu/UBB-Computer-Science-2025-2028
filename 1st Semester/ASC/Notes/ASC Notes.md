@@ -519,6 +519,7 @@ b dw 40
 7) little endian vs big endian
 
 100 = 00000064h
+Little endian:
 ![[Drawing 2025-10-24 05.51.12.excalidraw]]
 
 7) cand adresa, cand valoare
