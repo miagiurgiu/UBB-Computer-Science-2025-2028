@@ -583,6 +583,7 @@ a-b = -8 (ar trebui)
 
 ex2:
 8 = 0000 0000 0000 1000b -> 2's: 1111 1111 1111 1000 = FFF8h
+verificare: FFF8h + 0008h = 0000h -> totul bine.
 
 
 Generalizare: 
