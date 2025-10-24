@@ -505,6 +505,7 @@ xor => 1 daca sunt diferiti bitii intre ei, o daca nu sunt diferiti bitii intre 
 assembly: zero rapid
 
 6) memorie - variabilele arata catre array-ul de memorie? cum arata in memorie variabilele? sunt una dupa cealalta? cum sunt valorile adaugate in adresa?
+Memorie = vector urias de bytes
 ```
 a db 10
 b dw 40
@@ -516,6 +517,7 @@ b dw 40
 ![[arrayofmemory.excalidraw]]
 
 7) little endian vs big endian
+
 8) cand adresa, cand valoare
 9) mov [a], 5 e bine?
 10) subregisters?
