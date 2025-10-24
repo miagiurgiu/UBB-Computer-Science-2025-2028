@@ -524,8 +524,10 @@ Little endian:
 
 7) cand adresa, cand valoare
 
-a - adresa
-[a] - valoare
+a -> adresa
+[a] -> valoare
+
+a+1 -> urmatorul byte din memorie
 7) mov [a], 5 e bine?
 8) subregisters?
 9) unsigned vs signed
