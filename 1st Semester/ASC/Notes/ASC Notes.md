@@ -533,7 +533,8 @@ a dw 256 ; 2 bytes -> 00 01
 ; [a]=00
 ; [a+1] = 01
 
-mov ax, [a] ; 
+mov ax, [a] ; ax=0100h
+mov al, [a+1]
 
 ```
 7) mov [a], 5 e bine?
