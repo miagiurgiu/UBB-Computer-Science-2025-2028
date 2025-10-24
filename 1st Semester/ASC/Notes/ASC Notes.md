@@ -529,7 +529,9 @@ a -> adresa
 
 a+1 -> urmatorul byte din memorie
 ```
-a dw 256 ; 2 bytes -
+a dw 256 ; 2 bytes -> 00 01
+; [a]=00
+; [a+1] = 01
 
 ```
 7) mov [a], 5 e bine?
