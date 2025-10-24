@@ -572,7 +572,7 @@ dx - il completeaza pe ax la operatii pe 32 biti
 
 E la latitudinea mea daca vreau sa reprezint signed sau unsigned. Daca cere cerinta signed, am grija la semne. Daca nu, fac clasic cu add/sub etc si e ok.
 
-2's complement
+ex1:
 a=1 = 0000 0001
 b=9 = 0000 1001
 a-b = 1111 1000
@@ -580,6 +580,10 @@ a-b = -8 (ar trebui)
 -> am calculat valoarea absoluta a lui 8 cu 2's complement: 0000 1000 -> 1111 1000 = -8
 -> valoarea calculata manual (2's) corespunde cu cea pe biti (a-b)
 -> verificare: -8 (1111 1000) + 8 (0000 1000) = 1 00000000 -> overflow situation -> ignor 1 -> 00000000 -> totul bine.
+
+ex2:
+8 = 0000 0000 0000 1000b -> 2's: 1111 1111 1111 1000 = FFF8h
+
 
 Generalizare: 
 Vreau sa scriu un nr negativ pe N biti
