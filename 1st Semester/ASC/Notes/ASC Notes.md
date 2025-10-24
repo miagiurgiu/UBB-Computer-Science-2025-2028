@@ -510,8 +510,8 @@ Memorie = vector urias de bytes
 a db 10
 b dw 40
 
-# 10=0Ah -> ocupa 1 byte (adresa 1000h)
-# 40 = 28h = 0028h -> ocupa 2 bytes (1001h-1002h)
+; 10=0Ah -> ocupa 1 byte (adresa 1000h)
+; 40 = 28h = 0028h -> ocupa 2 bytes (1001h-1002h)
 
 ```
 ![[arrayofmemory.excalidraw]]
@@ -528,6 +528,10 @@ a -> adresa
 [a] -> valoare
 
 a+1 -> urmatorul byte din memorie
+```
+a dw 256 ; 2 bytes -
+
+```
 7) mov [a], 5 e bine?
 8) subregisters?
 9) unsigned vs signed
@@ -566,3 +570,5 @@ a+1 -> urmatorul byte din memorie
 41) adc, sbb, de unde stiu cand e cu carry si cand nu? asta implica sa fac eu operatia pe foaie de dinainte? 
 42) stivele 
 43) ![[Pasted image 20251023071333.png]] - de explicat linie cu linie
+
+[^1]: 
