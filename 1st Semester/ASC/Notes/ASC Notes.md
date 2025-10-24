@@ -541,11 +541,11 @@ mov al, [a+1] ; al=01h
 
 ```
 a db 0
-mov [a], 5 ; 5 are un byte, deci incape in a
+mov [a], 5 ; 5 are un byte si a are un byte, deci 5 incape in a
 
 ```
 ```
-mov [a],
+mov [a], 5 ; 5 are un byte dar nu stiu ce dimensiune are a, deci nu st
 
 ```
 7) subregisters?
