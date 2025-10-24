@@ -562,7 +562,8 @@ signed: [-128, 127]
 
 
  9) de ce as folosi de exemplu dx in loc de bx daca tot 16 biti are?
-
+mul bx ; dx:ax = ax*bx
+div bx ; ax = (dx:ax)/bx
 
  10) a, b - daca in operatii se obtin valori negative acelea cum se reprezinta? de exemplu  a - b, unde a, b – byte. sa zicem ca in data segment dau a=1 si b=9. rezultatul va fi negativ. cum urmaresc in ollydbg rezultatul negativ? trebuie sa stiu dinainte ca va fi negativ pentru a face sbb? are legatura sbb cu asta sau nu? valoarea de minus cum e reprezentata in memorie? primul bit de la stanga la dreapta sa fie 1? si daca nu incape valoarea in bitul acela?
 
