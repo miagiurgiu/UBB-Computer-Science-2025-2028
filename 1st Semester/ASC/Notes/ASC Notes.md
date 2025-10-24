@@ -578,7 +578,8 @@ b=9 = 0000 1001
 a-b = 1111 1000
 a-b = -8 (ar trebui)
 -> am calculat valoarea absoluta a lui 8 cu 2's complement: 0000 1000 -> 1111 1000 = -8
--> valoarea calculata manual (2's) corespune cu cea pe biti
+-> valoarea calculata manual (2's) corespunde cu cea pe biti (a-b)
+-> verificare: -8 ()
 
  11) daca adun doua doubleword-uri a + b, unde a, b – dword atunci o sa dea ceva mai mare gen quadword? si trebuie rezultatul sa stiu de dinainte ca trebuie sa il declar ca fiind quadword? si daca fac a-b rezultatul ramane doubleword sau poate trece la un rang mai mic daca am zerouri in fata?
  12) (a + b) – (c + 10), unde a, b, c – byte pot lucra pe acelasi registru pentru aceasta operatie sau trebuie pus separat a+b, separat c+10 si la final scazute registrele?
