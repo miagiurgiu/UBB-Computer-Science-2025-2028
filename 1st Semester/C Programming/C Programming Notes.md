@@ -332,13 +332,15 @@ Toți pointerii au **aceeași dimensiune**, care depinde de procesor:
 * pe **sisteme x86 (32-bit)**: o adresă are 4 octeți (ex: `0x0040AF22`)
 * pe **sisteme x64 (64-bit)**: o adresă are 8 octeți (ex: `0x00007FFDC3B2A890`)
 
-Fiecare cifră hexa = **4 biți**, deci o adresă pe 32-bit are 8 cifre hexa (4×8=32 biți), iar pe 64-bit are 16 cifre hexa (4×16=64 biți).
+Fiecare cifră hexa = **4 biți**
+o adresă pe 32-bit are 8 cifre hexa (4×8=32 biți)
+o adresa pe 64-bit are 16 cifre hexa (4×16=64 biți).
 
 ---
 
 ### 5. Little endian vs Big endian
 
-**Little endian** = forma predominantă azi.
+**Little endian**  - azi.
 În memorie, octetul cel mai mic (least significant byte) e stocat primul (la adresa cea mai mică).
 
 ```
