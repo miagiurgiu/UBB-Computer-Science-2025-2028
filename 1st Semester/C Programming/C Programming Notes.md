@@ -279,7 +279,7 @@ am ordonat, completat și clarificat totul, pas cu pas, ca să fie **100% corect
 
 ---
 
-### 1️⃣ Ce sunt RAM-ii
+### 1. Ce sunt RAM-ii
 
 RAM (Random Access Memory) este memoria volatilă a calculatorului, unde sunt stocate temporar datele și instrucțiunile în timpul execuției unui program.
 Unitatea de măsură a memoriei este **byte-ul** (nu bitul).
@@ -289,7 +289,7 @@ Adresa unui byte depinde de **câți octeți se află înaintea lui** în memori
 
 ---
 
-### 2️⃣ Variabile și dimensiuni
+### 2. Variabile și dimensiuni
 
 O variabilă ocupă un număr fix de **octeți**, în funcție de tipul ei de date.
 Aceste dimensiuni sunt puteri ale lui 2:
