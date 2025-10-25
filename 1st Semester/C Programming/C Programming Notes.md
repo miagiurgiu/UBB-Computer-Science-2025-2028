@@ -253,7 +253,7 @@ int *pointer_la_nr = &nr
 // int* se schimba efectiv tipul de data
 char* pointer_la_octetul_0 = &nr
 char* pointer_la_octetul_1 = pointer_la_octetul_0 + 1
-
+// -16776953 idk what is 
 ```
 
 operatii cu pointeri:
@@ -261,4 +261,9 @@ operatii cu pointeri:
 "+1": adresa + 1 => creste adresa, nu valoarea
 
 pointer la int - iei 4 octeti - convert la ceva mai mic? la ce? la char?
-pointer la char - iei un oct
+pointer la char - iei un octet 
+dupa cum am spus mai devreme, pointer la int si pointer la char ocupa la fel de mult
+
+=> little endian (cam toate acum)
+
+int
