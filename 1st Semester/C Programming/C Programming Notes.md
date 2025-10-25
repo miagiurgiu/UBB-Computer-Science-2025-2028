@@ -226,6 +226,7 @@ int main()
 {
 	int numar = 247777216;
 	void* pointer_la_numar = &numar // asta retine defapt adresa, in hexa
-		
+	// alegem pointer la char pt ca un char = 2^0 = 1 si ne permite sa vedem adresa fiecarui ?byte? bit? numar? idk
+	char* pointer_la_octetul_1 = &numar	
 }
 ```
