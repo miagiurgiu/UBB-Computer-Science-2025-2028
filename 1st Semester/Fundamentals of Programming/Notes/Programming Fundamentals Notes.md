@@ -479,6 +479,8 @@ ex 4 - dinamic programming
 
 ## BACKTRACKING RECALL
 
+"GENERARE"
+
 Helps us generate all (or most of) the solutions of a problem
 Time complexity: exponential/factorial
 Time complexity: O(nr_of_elements ^ nr_of_positions)
@@ -500,5 +502,7 @@ void btrack(int gap, int sum,...)
 		# optional: some instructions related to adding the element to the current gap
 		# for example we might need the current sum of the elements: sum+=element_in_the_set
 		if(valid) # check if the solution build by now is valid
-			if(final_of_solution) # if we have a final solution, we print it and continue generating
+			if(final_of_solution) # if we have a final solution, we print it and keep on generating
+				#printing
+			
 ```
