@@ -245,3 +245,9 @@ int main()
 *void - inseamna orice, ia oricat.
 *nr e diferit de int * pentru ca inseamna dereferentiere. ce e dereferentierea unui pointer? vede adresa -> ia de acolo 4 octeti (ca int ul are 2^2 bytes) -> interpreteaza. cum? explicit: mergi la adresa - cat e tipul pointerului?
 
+```
+int nr=7
+int *pointer_la_nr = &nr
+// & pt ca altfel ar baga valoarea in memorie
+// & pt ca altfel ar fi segmentation error
+```
