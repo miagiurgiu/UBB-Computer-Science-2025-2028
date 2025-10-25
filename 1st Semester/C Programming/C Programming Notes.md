@@ -457,7 +457,7 @@ printf("%p\n", (void*)p_char);          // afișează adresa reală în hex
 
 * RAM = zonă temporară de memorie, acces direct prin adrese.
 * Adresele sunt numere în hex, dimensiunea depinde de arhitectura procesorului (x86 vs x64).
-* Pointerul **ține o adresă**, nu valoarea.
+* Pointerul **ține o adresă**, nu o valoare.
 * `*` (dereferențiere) → accesează valoarea la acea adresă.
 * `&` (adresa) → obține adresa unei variabile.
 * `char*` e util pentru vizualizarea byte cu byte.
