@@ -1,8 +1,8 @@
 
 ---
 
-## First course
-## 1️⃣ Fundamente istorice și filosofice
+## 3.10.2025
+## 1. Fundamente istorice și filosofice
 
 **„The world: half tech, half philosophy.”**
 
@@ -27,7 +27,7 @@
 
 ---
 
-## 2️⃣ De la logică la C
+## 2. De la logică la C
 
 ### Logica și filosofia calculului
 
@@ -49,7 +49,7 @@
 
 ---
 
-## 3️⃣ Arhitectura sistemului de calcul (ASC)
+## 3. Arhitectura sistemului de calcul (ASC)
 
 ### Structura generală
 
@@ -87,7 +87,7 @@ Deci fiecare instrucțiune C se traduce în mai multe instrucțiuni ASM.
 
 ---
 
-## 4️⃣ Asamblor vs. Compilator
+## 4. Asamblor vs. Compilator
 
 |Concept|Rol|Avantaje|Dezavantaje|
 |---|---|---|---|
@@ -99,7 +99,7 @@ Deci fiecare instrucțiune C se traduce în mai multe instrucțiuni ASM.
 
 ---
 
-## 5️⃣ UNIX, C și filosofia minimalismului
+## 5. UNIX, C și filosofia minimalismului
 
 - C a fost creat odată cu sistemul **UNIX** → ideea: _„Do one thing, and do it well.”_
     
