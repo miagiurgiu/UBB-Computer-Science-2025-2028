@@ -230,6 +230,6 @@ int main()
 	// alegem pointer la char pt ca un char = 2^0 = 1 si ne permite sa vedem adresa fiecarui ?byte? bit? numar? idk, clarify this
 	char* pointer_la_octetul_0 = &numar	
 	char* pointer_la_octetul_1 = char* pointer_la_octetul_0 + 1
-	// atentie, e +1, nu ++. daca faceam ++ atunci
+	// atentie, e +1, nu ++. daca faceam ++ atunci la adresa se adunau cati biti are un int, adica 4 si crestea valoarea, dar scopul nostru e sa vedem bitii? byte-ii? adresele fiecarui byte? deci facem adresa + 1 ca sa creasca valoarea; primeam code segmentation error daca faceam 
 }
 ```
