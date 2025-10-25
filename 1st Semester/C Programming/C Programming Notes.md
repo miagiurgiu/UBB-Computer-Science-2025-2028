@@ -445,7 +445,7 @@ printf("%p\n", (void*)p_char);          // afișează adresa reală în hex
 * `void` singur → funcția nu returnează nimic.
 * `void*` → pointer generic, poate ține adresa oricărui tip, dar trebuie convertit (cast) înainte de dereferențiere.
 
----
+
 
 ### 12. Conclusions
 
