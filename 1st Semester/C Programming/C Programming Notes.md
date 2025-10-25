@@ -250,4 +250,5 @@ int nr=7
 int *pointer_la_nr = &nr
 // & pt ca altfel ar baga valoarea in memorie
 // & pt ca altfel ar fi segmentation error
+
 ```
