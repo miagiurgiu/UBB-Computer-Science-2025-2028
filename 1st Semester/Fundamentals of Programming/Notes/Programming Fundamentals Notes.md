@@ -507,7 +507,9 @@ def btrack(int gap, int sum,...):
 			else: # keep on generating
 				btrack(gap+1, sum+element_in_the_set, ...)
 		# (*)	if we had such instructions, we need to cancel them
-		# for example might have to do: sum-=
+		# for example might have to do: sum-=element_in_the_set
+		# the element is no longer on the current gap, so we have to make sure of this
+		
 			
 			
 ```
