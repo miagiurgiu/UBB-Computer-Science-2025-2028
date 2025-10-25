@@ -444,7 +444,7 @@ printf("%p\n", (void*)p_char);          // afișează adresa reală în hex
 
 ---
 
-### 11. `void`
+### 11.  `void`
 
 `void` = „nimic” / „tip generic”.
 
@@ -453,7 +453,7 @@ printf("%p\n", (void*)p_char);          // afișează adresa reală în hex
 
 ---
 
-### 12. Scurt recap general
+### 12. Conclusions
 
 * RAM = zonă temporară de memorie, acces direct prin adrese.
 * Adresele sunt numere în hex, dimensiunea depinde de arhitectura procesorului (x86 vs x64).
