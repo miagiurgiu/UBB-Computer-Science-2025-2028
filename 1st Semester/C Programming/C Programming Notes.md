@@ -255,3 +255,6 @@ char* pointer_la_octetul_0 = &nr
 char* pointer_la_octetul_1 = pointer_la_octetul_0 + 1
 
 ```
+
+operatii cu pointeri:
+"++": adresa + cati octeti are un int
