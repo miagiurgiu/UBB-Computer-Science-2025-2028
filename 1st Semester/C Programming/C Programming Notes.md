@@ -250,5 +250,8 @@ int nr=7
 int *pointer_la_nr = &nr
 // & pt ca altfel ar baga valoarea in memorie
 // & pt ca altfel ar fi segmentation error
+// int* se schimba efectiv tipul de data
+char* pointer_la_octetul_0 = &nr
+char* pointer_la_octetul_1 = pointer_la_octetul_0 + 1
 
 ```
