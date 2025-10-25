@@ -482,10 +482,13 @@ ex 4 - dinamic programming
 Helps us generate all (or most of) the solutions of a problem
 Time complexity: exponential/factorial
 Time complexity: O(nr_of_elements ^ nr_of_positions)
+Backtracking is as efficient as you make it
+Not b
 
 Optimisations:
 - we don't continue to generate using the current solution if we cannot get to a final solution that is correct
 - validations - at each step, we make some validations which assure us that we could continue generating in order to obtain a correct final solution
 - if the current solution is invalid (it cannot help us get to a correct solution), there is no point in continuing the generating process
-- recursive backtracking - at each step, we try to occupy a position in the solution using the elements of the set
+
+ Recursive backtracking - at each step, we try to occupy a position in the solution using the elements of the set
 
