@@ -275,7 +275,7 @@ am ordonat, completat și clarificat totul, pas cu pas, ca să fie **100% corect
 
 ---
 
-## 🧠 24.10.2025 — Lecture Flow (C Fundamentals, RAM & Pointers)
+## 24.10.2025 C programming
 
 ---
 
@@ -339,7 +339,6 @@ Fiecare cifră hexazecimală = **4 biți**, deci o adresă pe 32-bit are 8 cifre
 
 **Little endian** = forma predominantă azi.
 În memorie, octetul cel mai mic (least significant byte) e stocat primul (la adresa cea mai mică).
-Ex:
 
 ```
 int x = 0x12345678;
@@ -374,7 +373,6 @@ int main() {
 }
 ```
 
-🧩 Explicații:
 
 * `char` are 1 byte ⇒ ne permite să vedem fiecare octet dintr-un `int`.
 * `+1` pe pointer crește **adresa** cu 1 byte.
