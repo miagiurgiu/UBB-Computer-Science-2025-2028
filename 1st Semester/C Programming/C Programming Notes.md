@@ -438,9 +438,9 @@ printf("%p\n", (void*)p_char);          // afișează adresa reală în hex
 
 ### 10. Flash și Segmentation Fault
 
-„**Flash**” (în textul original) se referea probabil la faptul că dacă nu închei cu `\n`, `printf` nu trimite imediat textul spre ecran — outputul e *buffered*.
-`"\n"` golește bufferul, de aceea vezi rezultatul instant.
-„**Segmentation fault**” apare când un pointer accesează o zonă de memorie **interzisă** sau **neinițializată** (în afara zonei alocate programului).
+„**Flash**”: dacă nu închei cu `\n`, `printf` nu trimite imediat textul spre ecran — outputul e *buffered*.
+`"\n"` golește bufferul, de aceea se vede rezultatul instant.
+„**Segmentation fault**”: când un pointer accesează o zonă de memorie "**interzisă**" sau **neinițializată** (în afara zonei alocate programului).
 
 ---
 
