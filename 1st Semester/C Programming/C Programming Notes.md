@@ -304,7 +304,6 @@ Aceste dimensiuni sunt puteri ale lui 2:
 | `long long` / `double` | 8                               | 2³      |
 | `long double`          | 12 / 16 (depinde de compilator) | —       |
 
-`float` are 32 de biți (4 bytes) și `double` are 64 de biți (8 bytes).
 
 ---
 
@@ -312,6 +311,7 @@ Aceste dimensiuni sunt puteri ale lui 2:
 
 Un **pointer** este o zona de memorie care contine in interiorul ei o variabila care e interpretata la alta adresa de memorie. Deci o **variabilă specială** care conține **adresa de memorie** a unei alte variabile.
 Un pointer nu este o adresă*, ci **are o adresă** și **conține o altă adresă**.
+Numar - labelul as
 
 ```c
 int nr = 10;
