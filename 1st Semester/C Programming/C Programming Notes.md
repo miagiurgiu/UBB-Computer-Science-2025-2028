@@ -381,7 +381,7 @@ int main() {
 
 ---
 
-### 7️⃣ Dereferențierea (`*`)
+### 7. Dereferențierea (`*`)
 
 „Dereferențierea” unui pointer înseamnă **accesarea valorii de la adresa pe care o conține**.
 
@@ -392,7 +392,7 @@ int* p = &nr;
 printf("%d\n", *p); // afișează valoarea de la adresa stocată în p (adică 7)
 ```
 
-Când dereferențiezi, procesorul:
+Când dereferențiem, procesorul:
 
 1. ia adresa din pointer,
 2. citește din memorie **câți octeți are tipul pointerului**,
@@ -400,7 +400,7 @@ Când dereferențiezi, procesorul:
 
 ---
 
-### 8️⃣ Exemple cu `char*` și `int*`
+### 8. Exemple cu `char*` și `int*`
 
 ```c
 int nr = 7;
