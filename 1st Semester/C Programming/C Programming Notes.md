@@ -402,8 +402,8 @@ Memoria pentru `nr = 7` (pe little endian, 4 octeți):
 
 * `p_char` → arată spre primul byte (07)
 * `p_char + 1` → arată spre al doilea byte (00)
-* dacă faci `(*p_char2)++`, devine `07 01 00 00`
-  → valoarea lui `nr` se schimbă (devine 256*1 + 7 = 263)
+*  `(*p_char2)++` => `07 01 00 00`
+  → valoarea lui `nr` se schimbă 
 
 ---
 
@@ -424,7 +424,7 @@ printf("%p\n", (void*)p_char);          // afișează adresa reală în hex
 
 ---
 
-### 9️⃣ Operatori pe pointeri
+### 9. Operatori pe pointeri
 
 | Operator | Ce face                                                                  | Explicație                            |
 | -------- | ------------------------------------------------------------------------ | ------------------------------------- |
