@@ -225,8 +225,11 @@ unitatea de masura a memoriei: BYTE, nu bit. fiecare byte are un index. acel ind
 int main()
 {
 	int numar = 247777216;
+	// tipul de data = pointer la void
 	void* pointer_la_numar = &numar // asta retine defapt adresa, in hexa
-	// alegem pointer la char pt ca un char = 2^0 = 1 si ne permite sa vedem adresa fiecarui ?byte? bit? numar? idk
-	char* pointer_la_octetul_1 = &numar	
+	// alegem pointer la char pt ca un char = 2^0 = 1 si ne permite sa vedem adresa fiecarui ?byte? bit? numar? idk, clarify this
+	char* pointer_la_octetul_0 = &numar	
+	char* pointer_la_octetul_1 = char* pointer_la_octetul_0 + 1
+	// atentie, e +1, nu ++. daca faceam ++ atunci
 }
 ```
