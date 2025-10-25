@@ -253,7 +253,8 @@ int *pointer_la_nr = &nr
 // int* se schimba efectiv tipul de data
 char* pointer_la_octetul_0 = &nr
 char* pointer_la_octetul_1 = pointer_la_octetul_0 + 1
-// -16776953 idk what is 
+// -16776953 idk what is this supposed to mean? 7 in hexa? the adress? in binay this number is 11111111.... complete with the rest - calculul with 7 + 2^16+... complete with the rest based on the context
+// ne ducem in int care e little endian, aveam 
 ```
 
 operatii cu pointeri:
