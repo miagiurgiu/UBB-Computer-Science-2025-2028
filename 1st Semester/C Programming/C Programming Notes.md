@@ -454,7 +454,7 @@ printf("%p\n", (void*)p_char);          // afișează adresa reală în hex
 
 ---
 
-### 12️⃣ Scurt recap general
+### 12. Scurt recap general
 
 * RAM = zonă temporară de memorie, acces direct prin adrese.
 * Adresele sunt numere în hex, dimensiunea depinde de arhitectura procesorului (x86 vs x64).
@@ -467,6 +467,3 @@ printf("%p\n", (void*)p_char);          // afișează adresa reală în hex
 * `printf` fără `\n` poate să nu afișeze imediat.
 * „Segmentation fault” = acces ilegal la memorie.
 
----
-
-vrei să ți le fac și în format frumos de notițe PDF (cu colorări de tip keyword / code block / tabele) pentru printat?
