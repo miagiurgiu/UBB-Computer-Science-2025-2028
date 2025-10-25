@@ -464,5 +464,5 @@ printf("%p\n", (void*)p_char);          // afișează adresa reală în hex
 * Endianness = ordinea de stocare a byte-ilor în memorie.
 * `void*` e universal, dar trebuie convertit.
 * `printf` fără `\n` poate să nu afișeze imediat.
-* „Segmentation fault” = acces ilegal la memorie.
+* „Segmentation fault” = acces la o parte din memorie care nu e dedicata programului
 
