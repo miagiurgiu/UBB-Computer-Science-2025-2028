@@ -436,7 +436,7 @@ printf("%p\n", (void*)p_char);          // afișează adresa reală în hex
 
 ---
 
-### 🔟 Flash și Segmentation Fault
+### 10. Flash și Segmentation Fault
 
 „**Flash**” (în textul original) se referea probabil la faptul că dacă nu închei cu `\n`, `printf` nu trimite imediat textul spre ecran — outputul e *buffered*.
 `"\n"` golește bufferul, de aceea vezi rezultatul instant.
