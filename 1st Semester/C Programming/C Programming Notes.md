@@ -215,3 +215,4 @@ Asta e tot spațiul de stări posibile pentru un byte (256 combinații).
     
 
 ---
+
