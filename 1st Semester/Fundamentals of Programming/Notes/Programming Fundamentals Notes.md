@@ -497,9 +497,9 @@ Optimisations:
 TEMPLATE FOR BACKTRACKING:
 
 ```
-bool valid()
+def valid():
 {
-
+	# return 0 for each contidion that might cancel the validity 
 }
 def btrack(int gap, (2) int sum,...):
 	for(element_in_the_set) # we go through the set

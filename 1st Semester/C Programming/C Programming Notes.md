@@ -460,3 +460,4 @@ printf("%p\n", (void*)p_char);          // afișează adresa reală în hex
 * `printf` fără `\n` poate să nu afișeze imediat.
 * „Segmentation fault” = acces la o parte din memorie care nu e dedicata programului
 
+why don't we have bool in c?
