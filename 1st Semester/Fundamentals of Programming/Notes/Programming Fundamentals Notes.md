@@ -484,4 +484,5 @@ Time complexity: exponential/factorial
 Time complexity: O(nr_of_elements ^ nr_of_positions)
 
 Optimisations:
-- we don't continue to generate using the curr
+- we don't continue to generate using the current solution if we cannot get to a final solution that is correct
+- validations - at each step, we make some validations which assure us that we cou
