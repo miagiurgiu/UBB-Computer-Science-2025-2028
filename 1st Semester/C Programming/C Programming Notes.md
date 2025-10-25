@@ -216,3 +216,7 @@ Asta e tot spațiul de stări posibile pentru un byte (256 combinații).
 
 ---
 
+24.10.2025 Lecture Flow
+
+1. Ce sunt RAM-ii?
+unitatea de masura a memoriei: BYTE, nu bit
