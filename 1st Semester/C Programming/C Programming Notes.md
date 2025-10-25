@@ -269,7 +269,7 @@ char* pointer_la_octetul_1 = pointer_la_octetul_0 + 1
 ~~=> little endian (cam toate acum)~~
 
 ---
-
+## 17.10.2025
 ## 24.10.2025
 
 ---
