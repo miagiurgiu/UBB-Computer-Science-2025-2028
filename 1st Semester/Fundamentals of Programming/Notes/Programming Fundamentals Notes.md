@@ -499,5 +499,6 @@ void btrack(int gap, int sum,...)
 		# we add the element_in_the_set to the current gap
 		# optional: some instructions related to adding the element to the current gap
 		# for example we might need the current sum of the elements: sum+=element_in_the_set
-		if(valid)
+		if(valid) # check if the solution build by now is valid
+			if(final_of_solution) # if we have a final solution, we print it and continue generating
 ```
