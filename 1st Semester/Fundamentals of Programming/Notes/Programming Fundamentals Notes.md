@@ -509,5 +509,5 @@ def btrack(int gap, (2) int sum,...):
 		# (1)	if we had such instructions, we need to cancel them
 		# for example might have to do: sum-=element_in_the_set
 		# the element is no longer on the current gap, so we have to make sure of this
-		# (2) 
+		# (2) if we don't want to cancel every time, we could use local parameters
 ```
