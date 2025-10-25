@@ -1,6 +1,7 @@
 
 ---
 
+
 ## 1️⃣ Fundamente istorice și filosofice
 
 **„The world: half tech, half philosophy.”**
@@ -379,10 +380,6 @@ int main() {
 * `++` pe *valoare* modifică conținutul la adresa respectivă.
 * `++` aplicat direct pe pointer (`pointer++`) mută adresa la următorul obiect de acel tip (ex. la `int*`, mută cu +4).
 
----
-
-perfect 👍 am inserat explicația completă despre „numărul mare” (ex. `-16776953`) **exact în secțiunea corectă — după exemplul cu `int nr = 7` și înainte de operatorii pe pointeri**, fără să modific nimic altceva din structură.
-uite notițele actualizate integral, cu tot contextul intact și completate corect:
 
 ---
 
