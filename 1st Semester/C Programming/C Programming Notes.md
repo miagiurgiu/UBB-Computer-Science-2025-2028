@@ -109,7 +109,7 @@ Deci fiecare instrucțiune C se traduce în mai multe instrucțiuni ASM.
 
 ---
 
-## 6️⃣ Introducere practică în C
+## 6. Introducere practică în C
 
 ### Fișiere și compilare
 
@@ -144,7 +144,7 @@ Deci fiecare instrucțiune C se traduce în mai multe instrucțiuni ASM.
 
 ---
 
-## 7️⃣ Exercițiu exemplu: verificarea numerelor prime
+## 7. Exercițiu exemplu: verificarea numerelor prime
 
 ```
 
@@ -176,7 +176,7 @@ Dacă ceva pică, programul se oprește → debugging mai ușor.
 
 ---
 
-## 8️⃣ De la matematică la informatică
+## 8. De la matematică la informatică
 
 - „Define an algebra” (Crivei):  
     Un sistem algebric e un set + două operații (ex: {0,1}, +, *).  
@@ -191,7 +191,7 @@ Asta e tot spațiul de stări posibile pentru un byte (256 combinații).
 
 ---
 
-## 9️⃣ Recomandări de cultură generală (din curs)
+## 9. Recomandări de cultură generală (din curs)
 
 🎬 Filme & Cărți:
 
@@ -206,7 +206,7 @@ Asta e tot spațiul de stări posibile pentru un byte (256 combinații).
 
 ---
 
-## 🔟 Alte informații utile
+## 10. Alte informații utile
 
 - **Cenaclul de mate-info** – sâmbăta, 14:00, sala 439
     
@@ -217,10 +217,10 @@ Asta e tot spațiul de stări posibile pentru un byte (256 combinații).
 
 ---
 
-24.10.2025 Lecture Flow
+~~24.10.2025 Lecture Flow~~
 
-1. Ce sunt RAM-ii?
-unitatea de masura a memoriei: BYTE, nu bit. fiecare byte are un index. acel index e defapt adresa. adresa e un numar. adresa e relativa la cati octeti sunt inaintea mea in memorie. aici intervine notiunea de variabila. unde? cati octeti ocup? astea sunt defapt puteri ale lui 2: char: 2^0 bytes, short int 2^1 bytes, int 2^2 bytes, long(long) 2^3 bytes, float is 32 bits, and double in 64 bits. how much is void though?aici intervine notiunea de pointer. un pointer e o zona de memorie care contine in interiorul ei o variabila care e interpretata la alta adresa de memorie. which is basically a loop? idk, answer this. void e un pointer la orice. nu ne pasa deloc ce e acolo. e o alta variabila de tipul pointer? numarul acela e labelul asignat unei adrese.un pointer nu este, ci ARE o adresa, deci are in el un numar care e defapt o adresa.variabila poate fi reprezentata cu little endian sau big endian. datatype - abstract datatype dar asta vom discuta mai incolo. care a fost the first OS? UNIX, fondat de compania AT&T. fondatorii limbajului c: Denis Richie si Ken Thomson. tips: facem o variabila locala, nu globala, dam denumiri dugestive, la printf mereu incheiem cu \n sau \0, altfel nu da flash. ce inseamna flash? answer this. intrebare: int*, char*, void*, a* ce dimensiuni au? au aceeasi dimensiune care depinde de procesor. gen o adresa are forma asta daca e x32 procesorul 0x23555i89? si 0x123456789jghgh4d daca e x64 procesorul? fiecare cifra hexa e 4 cifre nu? sau 0x sau adresa de memorie are aceeasi dimensiune? sau dimmensiunea adresei? clarify this. tips: intotdeauna initializam variabilele. int*val=&nr . prin asta lui nr ii luam adresa de unde se afla in memorie.
+1. ~~Ce sunt RAM-ii?~~
+~~unitatea de masura a memoriei: BYTE, nu bit. fiecare byte are un index. acel index e defapt adresa. adresa e un numar. adresa e relativa la cati octeti sunt inaintea mea in memorie. aici intervine notiunea de variabila. unde? cati octeti ocup? astea sunt defapt puteri ale lui 2: char: 2^0 bytes, short int 2^1 bytes, int 2^2 bytes, long(long) 2^3 bytes, float is 32 bits, and double in 64 bits. how much is void though?aici intervine notiunea de pointer. un pointer e o zona de memorie care contine in interiorul ei o variabila care e interpretata la alta adresa de memorie. which is basically a loop? idk, answer this. void e un pointer la orice. nu ne pasa deloc ce e acolo. e o alta variabila de tipul pointer? numarul acela e labelul asignat unei adrese.un pointer nu este, ci ARE o adresa, deci are in el un numar care e defapt o adresa.variabila poate fi reprezentata cu little endian sau big endian. datatype - abstract datatype dar asta vom discuta mai incolo. care a fost the first OS? UNIX, fondat de compania AT&T. fondatorii limbajului c: Denis Richie si Ken Thomson. tips: facem o variabila locala, nu globala, dam denumiri dugestive, la printf mereu incheiem cu \n sau \0, altfel nu da flash. ce inseamna flash? answer this. intrebare: int*, char*, void*, a* ce dimensiuni au? au aceeasi dimensiune care depinde de procesor. gen o adresa are forma asta daca e x32 procesorul 0x23555i89? si 0x123456789jghgh4d daca e x64 procesorul? fiecare cifra hexa e 4 cifre nu? sau 0x sau adresa de memorie are aceeasi dimensiune? sau dimmensiunea adresei? clarify this. tips: intotdeauna initializam variabilele. int*val=&nr . prin asta lui nr ii luam adresa de unde se afla in memorie.~~
 
 ```
 int main()
@@ -243,8 +243,8 @@ int main()
 }
 ```
 
-*void - inseamna orice, ia oricat.
-*nr e diferit de int * pentru ca inseamna dereferentiere. ce e dereferentierea unui pointer? vede adresa -> ia de acolo 4 octeti (ca int ul are 2^2 bytes) -> interpreteaza. cum? explicit: mergi la adresa - cat e tipul pointerului?
+~~*void - inseamna orice, ia oricat.~~
+~~*nr e diferit de int * pentru ca inseamna dereferentiere. ce e dereferentierea unui pointer? vede adresa -> ia de acolo 4 octeti (ca int ul are 2^2 bytes) -> interpreteaza. cum? explicit: mergi la adresa - cat e tipul pointerului?~~
 
 ```
 int nr=7
@@ -258,25 +258,19 @@ char* pointer_la_octetul_1 = pointer_la_octetul_0 + 1
 // ne ducem in int care e little endian, aveam initial 7 0 0 0, unde 0 de la dr la stanga e octet 3 sau octet 0? octetul 2 e ..., octetul 1 e ... octetul 0 e... -> acest 7 0 0 0 e pointer la char - dereferentiem => char* pointer la octetul 1 = char => adresa la acest octet => acum avem 7 1 0 0 (ca am incrementat)
 ```
 
-operatii cu pointeri:
-"++": adresa + cati octeti are tipul ala de data => creste valoarea, nu adresa
-"+1": adresa + 1 => creste adresa, nu valoarea
+~~operatii cu pointeri:~~
+~~"++": adresa + cati octeti are tipul ala de data => creste valoarea, nu adresa~~
+~~"+1": adresa + 1 => creste adresa, nu valoarea~~
 
-pointer la int - iei 4 octeti - convert la ceva mai mic? la ce? la char?
-pointer la char - iei un octet 
-dupa cum am spus mai devreme, pointer la int si pointer la char ocupa la fel de mult
+~~pointer la int - iei 4 octeti - convert la ceva mai mic? la ce? la char?~~
+~~pointer la char - iei un octet~~ 
+~~dupa cum am spus mai devreme, pointer la int si pointer la char ocupa la fel de mult~~
 
-=> little endian (cam toate acum)
-
-int
-
-
-perfect, asta e o bază foarte bună — doar că e haotică și are câteva confuzii între *adrese*, *valori*, *byte*, *bit* și *incrementări de pointeri*.
-am ordonat, completat și clarificat totul, pas cu pas, ca să fie **100% corect, coerent și logic pentru recitire viitoare.**
+~~=> little endian (cam toate acum)~~
 
 ---
 
-## 24.10.2025 C programming
+## 24.10.2025
 
 ---
 
