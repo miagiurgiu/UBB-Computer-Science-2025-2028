@@ -496,5 +496,7 @@ TEMPLATE FOR BACKTRACKING:
 ```
 void btrack(int gap, int sum,...)
 	for(element_in_the_set) # we go through the set
-		# we add the element_in_the_set on the current gap
+		# we add the element_in_the_set to the current gap
+		# optional: some instructions related to adding the element to the current gap
+		# example of "optiowe need the current sum of the elements
 ```
