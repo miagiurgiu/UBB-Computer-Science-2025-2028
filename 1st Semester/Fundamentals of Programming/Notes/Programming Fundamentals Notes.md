@@ -478,3 +478,6 @@ ex 4 - dinamic programming
 
 
 BACKTRACKING RECALL
+
+Helps us generate all (or most of) the solutions of a problem
+Time complexity: exponential/factorial
