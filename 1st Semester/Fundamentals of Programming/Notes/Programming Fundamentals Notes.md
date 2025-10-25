@@ -495,7 +495,12 @@ Optimisations:
  Recursive backtracking - at each step, we try to occupy a position in the solution using the elements of the set
 
 TEMPLATE FOR BACKTRACKING:
+
 ```
+bool valid()
+{
+
+}
 def btrack(int gap, (2) int sum,...):
 	for(element_in_the_set) # we go through the set
 		# we add the element_in_the_set to the current gap
