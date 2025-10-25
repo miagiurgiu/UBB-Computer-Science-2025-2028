@@ -496,20 +496,18 @@ Optimisations:
 
 TEMPLATE FOR BACKTRACKING:
 ```
-def btrack(int gap, int sum,...):
+def btrack(int gap, (2) int sum,...):
 	for(element_in_the_set) # we go through the set
 		# we add the element_in_the_set to the current gap
-		# (*) optional: some instructions related to adding the element to the current gap
+		# (1) optional: some instructions related to adding the element to the current gap
 		# for example we might need the current sum of the elements: sum+=element_in_the_set
 		if(valid): # check if the solution build by now is valid
 			if(final_of_solution): # if we have a final solution, we print it and stop generating
 				# printing
 			else: # keep on generating
-				btrack(gap+1, sum+element_in_the_set, ...)
-		# (*)	if we had such instructions, we need to cancel them
+				btrack(gap+1, (2) sum+element_in_the_set, ...)
+		# (1)	if we had such instructions, we need to cancel them
 		# for example might have to do: sum-=element_in_the_set
 		# the element is no longer on the current gap, so we have to make sure of this
-		
-			
-			
+		# (2) 
 ```
