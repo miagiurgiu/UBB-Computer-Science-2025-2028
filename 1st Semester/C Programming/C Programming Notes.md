@@ -219,4 +219,4 @@ Asta e tot spațiul de stări posibile pentru un byte (256 combinații).
 24.10.2025 Lecture Flow
 
 1. Ce sunt RAM-ii?
-unitatea de masura a memoriei: BYTE, nu bit. fiecare byte are un index. acel index e defapt adresa. adresa e un numar. adresa e relativa la cati octeti sunt inaintea mea in memorie. aici intervine notiunea de variabila. unde? cati octeti ocup? astea sunt defapt puteri ale lui 2: char: 2^0 bytes, short int 2^1 bytes, int 2^2 bytes, long(long) 2^3 bytes, float is 32 bits, and double in 64 bits. how much is void though?
+unitatea de masura a memoriei: BYTE, nu bit. fiecare byte are un index. acel index e defapt adresa. adresa e un numar. adresa e relativa la cati octeti sunt inaintea mea in memorie. aici intervine notiunea de variabila. unde? cati octeti ocup? astea sunt defapt puteri ale lui 2: char: 2^0 bytes, short int 2^1 bytes, int 2^2 bytes, long(long) 2^3 bytes, float is 32 bits, and double in 64 bits. how much is void though?aici intervine notiunea de pointer. un pointer e o zona de memorie care contine in interiorul ei o variabila care e interpretata la alta adresa de memorie. which is basically a loop? idk, answer this. void e 
