@@ -233,6 +233,8 @@ int main()
 	// atentie, e +1, nu ++. daca faceam ++ atunci la adresa se adunau cati biti are un int, adica 4 si crestea valoarea, dar scopul nostru e sa vedem bitii? byte-ii? adresele fiecarui byte? deci facem adresa + 1 ca sa creasca valoarea; primeam code segmentation error daca faceam ++ pt ca atunci se trecea la o zona de memorie "interzisa" din ram, gen "groapa marianelor" , si acea zona interzisa e practic sistemuld e operare i guess?
 	char* pointer_la_octetul_2 = char* pointer_la_octetul_1 + 1
 	char* pointer_la_octetul_3 = char* pointer_la_octetul_2 + 1
-	printf("%p\)
+	printf("%p\n", *pointer_la_numar);//arata unde e 247777216 in adresa
+	printf(format: "%p\n", &numar)
+	*(pointer_la_octetul_1)++
 }
 ```
