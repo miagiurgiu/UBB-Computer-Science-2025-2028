@@ -486,4 +486,5 @@ Time complexity: O(nr_of_elements ^ nr_of_positions)
 Optimisations:
 - we don't continue to generate using the current solution if we cannot get to a final solution that is correct
 - validations - at each step, we make some validations which assure us that we could continue generating in order to obtain a correct final solution
-- if the current solution is invalid (it cannot help)
+- if the current solution is invalid (it cannot help us get to a correct solution), there is no point in continuing the generating process
+- recursive backtracking - at each step, we try to 
