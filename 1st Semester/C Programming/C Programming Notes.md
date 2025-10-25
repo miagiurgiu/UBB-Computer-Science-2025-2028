@@ -310,7 +310,7 @@ Aceste dimensiuni sunt puteri ale lui 2:
 ### 3. Ce este un pointer
 
 Un **pointer** este o zona de memorie care contine in interiorul ei o variabila care e interpretata la alta adresa de memorie. Deci o **variabilă specială** care conține **adresa de memorie** a unei alte variabile.
-Un pointer nu este o adresă**, ci **are o adresă** și **conține o altă adresă**.
+Un pointer nu este o adresă*, ci **are o adresă** și **conține o altă adresă**.
 
 ```c
 int nr = 10;
@@ -319,7 +319,7 @@ int* p = &nr; // p conține adresa lui nr
 
 ---
 
-### 4️⃣ Tipuri de pointeri
+### 4. Tipuri de pointeri
 
 * `int*` → pointer la un `int` (ia 4 octeți din memorie)
 * `char*` → pointer la un `char` (ia 1 octet)
@@ -335,7 +335,7 @@ Fiecare cifră hexazecimală = **4 biți**, deci o adresă pe 32-bit are 8 cifre
 
 ---
 
-### 5️⃣ Little endian vs Big endian
+### 5. Little endian vs Big endian
 
 **Little endian** = forma predominantă azi.
 În memorie, octetul cel mai mic (least significant byte) e stocat primul (la adresa cea mai mică).
@@ -350,7 +350,7 @@ Memorie: 78 56 34 12
 
 ---
 
-### 6️⃣ Pointerii în acțiune
+### 6. Pointerii în acțiune
 
 ```c
 int main() {
