@@ -483,7 +483,7 @@ Helps us generate all (or most of) the solutions of a problem
 Time complexity: exponential/factorial
 Time complexity: O(nr_of_elements ^ nr_of_positions)
 Backtracking is as efficient as you make it
-Not b
+Not backtracking, but brute force is inefficient
 
 Optimisations:
 - we don't continue to generate using the current solution if we cannot get to a final solution that is correct
@@ -492,3 +492,7 @@ Optimisations:
 
  Recursive backtracking - at each step, we try to occupy a position in the solution using the elements of the set
 
+TEMPLATE FOR BACKTRACKING:
+```
+voi
+```
