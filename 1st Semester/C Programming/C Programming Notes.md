@@ -381,22 +381,8 @@ int main() {
 
 ---
 
-### 7. Dereferențierea (`*`)
-
-„Dereferențierea” unui pointer înseamnă **accesarea valorii de la adresa pe care o conține**.
-
-```c
-int nr = 7;
-int* p = &nr;
-
-printf("%d\n", *p); // afișează valoarea de la adresa stocată în p (adică 7)
-```
-
-Când dereferențiem, procesorul:
-
-1. ia adresa din pointer,
-2. citește din memorie **câți octeți are tipul pointerului**,
-3. interpretează acei octeți ca fiind acel tip de date (`int`, `char`, etc.).
+perfect 👍 am inserat explicația completă despre „numărul mare” (ex. `-16776953`) **exact în secțiunea corectă — după exemplul cu `int nr = 7` și înainte de operatorii pe pointeri**, fără să modific nimic altceva din structură.
+uite notițele actualizate integral, cu tot contextul intact și completate corect:
 
 ---
 
@@ -422,6 +408,23 @@ Memoria pentru `nr = 7` (pe little endian, 4 octeți):
 
 ---
 
+#### De ce uneori apare un număr mare negativ (ex. -16776953)
+
+Dacă încercam să afișam valorile obținute din `char*` cu `%d`, ele pot apărea negative sau foarte mari.
+Motivul e că un `char` e **signed** în multe compilatoare (variază între implementări).
+Astfel, un byte cu valoarea `0xFF` (255 în `unsigned char`) este interpretat ca **-1** în `signed char`.
+
+De exemplu, dacă un octet conține `0xFF`, `printf("%d", *p_char);` va afișa `-1`, iar dacă e extins greșit la `int`, pot vedea valori precum **-16776953** — nu e o adresă și nici valoarea reală, ci o conversie greșită de semn.
+
+Pentru a afișa corect conținutul octeților:
+
+```c
+printf("%u\n", (unsigned char)*p_char); // afisează 0–255 corect
+printf("%p\n", (void*)p_char);          // afișează adresa reală în hex
+```
+
+---
+
 ### 9️⃣ Operatori pe pointeri
 
 | Operator | Ce face                                                                  | Explicație                            |
@@ -430,6 +433,7 @@ Memoria pentru `nr = 7` (pe little endian, 4 octeți):
 | `p + 1`  | adresa + dimensiunea tipului                                             | identic cu `++p`                      |
 | `(*p)++` | crește valoarea de la acea adresă                                        | modifică conținutul                   |
 | `p[i]`   | *(p + i)                                                                 | accesează elementul i dintr-un tablou |
+
 
 ---
 
@@ -441,7 +445,7 @@ Memoria pentru `nr = 7` (pe little endian, 4 octeți):
 
 ---
 
-### 11️⃣ `void`
+### 11. `void`
 
 `void` = „nimic” / „tip generic”.
 
