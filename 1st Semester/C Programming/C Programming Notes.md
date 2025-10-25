@@ -235,8 +235,12 @@ int main()
 	char* pointer_la_octetul_3 = char* pointer_la_octetul_2 + 1
 	printf("%p\n", *pointer_la_numar);//arata unde e 247777216 in adresa
 	printf(format: "%p\n", &numar)
-	//
+	// experimentam:
 	*(pointer_la_octetul_1)++
 	*(pointer_la_octetul_3)--
+	return 0;
 }
 ```
+
+*void - inseamna orice, ia oricat.
+*nr e diferit de vo
