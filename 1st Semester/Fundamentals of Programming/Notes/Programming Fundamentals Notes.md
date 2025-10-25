@@ -477,7 +477,11 @@ ex 4 - dinamic programming
 4.Given an `n * n` square matrix with integer values, find the maximum length of a snake sequence. A snake sequence begins on the matrix's top row (coordinate `(0, i), 0 <= i < n`). Each element of the sequence, except the first one, must have a value `±1` from the previous one and be located directly below, or directly to the right of the previous element. For example, element `(i, j)` can be succeded by one of the `(i, j + 1)` or `(i + 1, j)` elements. Display the length as well as the sequence of coordinates for one sequence of maximum length.
 
 
-BACKTRACKING RECALL
+## BACKTRACKING RECALL
 
 Helps us generate all (or most of) the solutions of a problem
 Time complexity: exponential/factorial
+Time complexity: O(nr_of_elements ^ nr_of_positions)
+
+Optimisations:
+- we don't continue to generate using the curr
