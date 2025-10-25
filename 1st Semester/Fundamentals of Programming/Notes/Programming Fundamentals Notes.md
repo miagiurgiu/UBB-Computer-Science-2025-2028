@@ -182,6 +182,7 @@ complexity, recursion, Hanoi
 ## Lab 3
 adc, cwb ...
 
+## 
 ## Python Q & A
 
 1) when / and when // as division?
