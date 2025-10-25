@@ -268,3 +268,203 @@ dupa cum am spus mai devreme, pointer la int si pointer la char ocupa la fel de 
 => little endian (cam toate acum)
 
 int
+
+
+perfect, asta e o bază foarte bună — doar că e haotică și are câteva confuzii între *adrese*, *valori*, *byte*, *bit* și *incrementări de pointeri*.
+am ordonat, completat și clarificat totul, pas cu pas, ca să fie **100% corect, coerent și logic pentru recitire viitoare.**
+
+---
+
+## 🧠 24.10.2025 — Lecture Flow (C Fundamentals, RAM & Pointers)
+
+---
+
+### 1️⃣ Ce sunt RAM-ii
+
+RAM (Random Access Memory) este memoria volatilă a calculatorului, unde sunt stocate temporar datele și instrucțiunile în timpul execuției unui program.
+Unitatea de măsură a memoriei este **byte-ul** (nu bitul).
+Fiecare byte are un **index unic** — adică **o adresă de memorie**, care este un număr.
+
+Adresa unui byte depinde de **câți octeți se află înaintea lui** în memorie.
+
+---
+
+### 2️⃣ Variabile și dimensiuni
+
+O variabilă ocupă un număr fix de **octeți**, în funcție de tipul ei de date.
+Aceste dimensiuni sunt puteri ale lui 2:
+
+| Tip de date            | Dimensiune (octeți)             | Formula |
+| ---------------------- | ------------------------------- | ------- |
+| `char`                 | 1                               | 2⁰      |
+| `short int`            | 2                               | 2¹      |
+| `int`                  | 4                               | 2²      |
+| `long` / `float`       | 4                               | 2²      |
+| `long long` / `double` | 8                               | 2³      |
+| `long double`          | 12 / 16 (depinde de compilator) | —       |
+
+`float` are 32 de biți (4 bytes) și `double` are 64 de biți (8 bytes).
+
+---
+
+### 3️⃣ Ce este un pointer
+
+Un **pointer** este o **variabilă specială** care conține **adresa de memorie** a unei alte variabile.
+👉 deci **un pointer nu este o adresă**, ci **are o adresă** și **conține o altă adresă**.
+
+```c
+int nr = 10;
+int* p = &nr; // p conține adresa lui nr
+```
+
+---
+
+### 4️⃣ Tipuri de pointeri
+
+* `int*` → pointer la un `int` (ia 4 octeți din memorie)
+* `char*` → pointer la un `char` (ia 1 octet)
+* `void*` → pointer generic (poate pointa la orice tip, dar nu poate fi dereferențiat direct)
+* `a*` (unde `a` e un tip de date) → pointer la acel tip.
+
+Toți pointerii au **aceeași dimensiune**, care depinde de procesor:
+
+* pe **sisteme x86 (32-bit)**: o adresă are 4 octeți (ex: `0x0040AF22`)
+* pe **sisteme x64 (64-bit)**: o adresă are 8 octeți (ex: `0x00007FFDC3B2A890`)
+
+Fiecare cifră hexazecimală = **4 biți**, deci o adresă pe 32-bit are 8 cifre hexa (4×8=32 biți), iar pe 64-bit are 16 cifre hexa (4×16=64 biți).
+
+---
+
+### 5️⃣ Little endian vs Big endian
+
+**Little endian** = forma predominantă azi.
+În memorie, octetul cel mai mic (least significant byte) e stocat primul (la adresa cea mai mică).
+Ex:
+
+```
+int x = 0x12345678;
+Memorie: 78 56 34 12
+```
+
+**Big endian** = octetul cel mai mare e primul (folosit rar, ex. rețelistică).
+
+---
+
+### 6️⃣ Pointerii în acțiune
+
+```c
+int main() {
+    int numar = 247777216;
+    void* pointer_la_numar = &numar; // adresa în memorie (în hexazecimal)
+
+    // Alegem un pointer la char pentru a parcurge byte cu byte
+    char* pointer_la_octetul_0 = (char*)&numar;
+    char* pointer_la_octetul_1 = pointer_la_octetul_0 + 1;
+    char* pointer_la_octetul_2 = pointer_la_octetul_1 + 1;
+    char* pointer_la_octetul_3 = pointer_la_octetul_2 + 1;
+
+    printf("%p\n", pointer_la_numar); // adresa lui numar
+    printf("%p\n", &numar);           // identic cu linia de mai sus
+
+    // Experimentăm modificarea fiecărui byte
+    (*pointer_la_octetul_1)++;
+    (*pointer_la_octetul_3)--;
+
+    return 0;
+}
+```
+
+🧩 Explicații:
+
+* `char` are 1 byte ⇒ ne permite să vedem fiecare octet dintr-un `int`.
+* `+1` pe pointer crește **adresa** cu 1 byte.
+* `++` pe *valoare* modifică conținutul la adresa respectivă.
+* `++` aplicat direct pe pointer (`pointer++`) mută adresa la următorul obiect de acel tip (ex. la `int*`, mută cu +4).
+
+---
+
+### 7️⃣ Dereferențierea (`*`)
+
+„Dereferențierea” unui pointer înseamnă **accesarea valorii de la adresa pe care o conține**.
+
+```c
+int nr = 7;
+int* p = &nr;
+
+printf("%d\n", *p); // afișează valoarea de la adresa stocată în p (adică 7)
+```
+
+Când dereferențiezi, procesorul:
+
+1. ia adresa din pointer,
+2. citește din memorie **câți octeți are tipul pointerului**,
+3. interpretează acei octeți ca fiind acel tip de date (`int`, `char`, etc.).
+
+---
+
+### 8️⃣ Exemple cu `char*` și `int*`
+
+```c
+int nr = 7;
+int* p_int = &nr;
+char* p_char = (char*)&nr;
+char* p_char2 = p_char + 1;
+```
+
+Memoria pentru `nr = 7` (pe little endian, 4 octeți):
+
+```
+07 00 00 00
+```
+
+* `p_char` → arată spre primul byte (07)
+* `p_char + 1` → arată spre al doilea byte (00)
+* dacă faci `(*p_char2)++`, devine `07 01 00 00`
+  → valoarea lui `nr` se schimbă (devine 256*1 + 7 = 263)
+
+---
+
+### 9️⃣ Operatori pe pointeri
+
+| Operator | Ce face                                                                  | Explicație                            |
+| -------- | ------------------------------------------------------------------------ | ------------------------------------- |
+| `++p`    | crește adresa cu dimensiunea tipului (4 pentru `int*`, 1 pentru `char*`) | mută pointerul                        |
+| `p + 1`  | adresa + dimensiunea tipului                                             | identic cu `++p`                      |
+| `(*p)++` | crește valoarea de la acea adresă                                        | modifică conținutul                   |
+| `p[i]`   | *(p + i)                                                                 | accesează elementul i dintr-un tablou |
+
+---
+
+### 🔟 Flash și Segmentation Fault
+
+„**Flash**” (în textul original) se referea probabil la faptul că dacă nu închei cu `\n`, `printf` nu trimite imediat textul spre ecran — outputul e *buffered*.
+`"\n"` golește bufferul, de aceea vezi rezultatul instant.
+„**Segmentation fault**” apare când un pointer accesează o zonă de memorie **interzisă** sau **neinițializată** (în afara zonei alocate programului).
+
+---
+
+### 11️⃣ `void`
+
+`void` = „nimic” / „tip generic”.
+
+* `void` singur → funcția nu returnează nimic.
+* `void*` → pointer generic, poate ține adresa oricărui tip, dar trebuie convertit (cast) înainte de dereferențiere.
+
+---
+
+### 12️⃣ Scurt recap general
+
+* RAM = zonă temporară de memorie, acces direct prin adrese.
+* Adresele sunt numere în hex, dimensiunea depinde de arhitectura procesorului (x86 vs x64).
+* Pointerul **ține o adresă**, nu valoarea.
+* `*` (dereferențiere) → accesează valoarea la acea adresă.
+* `&` (adresa) → obține adresa unei variabile.
+* `char*` e util pentru vizualizarea byte cu byte.
+* Endianness = ordinea de stocare a byte-ilor în memorie.
+* `void*` e universal, dar trebuie convertit.
+* `printf` fără `\n` poate să nu afișeze imediat.
+* „Segmentation fault” = acces ilegal la memorie.
+
+---
+
+vrei să ți le fac și în format frumos de notițe PDF (cu colorări de tip keyword / code block / tabele) pentru printat?
