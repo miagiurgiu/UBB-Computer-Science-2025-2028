@@ -219,4 +219,4 @@ Asta e tot spațiul de stări posibile pentru un byte (256 combinații).
 24.10.2025 Lecture Flow
 
 1. Ce sunt RAM-ii?
-unitatea de masura a memoriei: BYTE, nu bit
+unitatea de masura a memoriei: BYTE, nu bit. fiecare byte are un index. acel index e defapt adresa. adresa e un numar. adresa e relativa la cati octeti sunt inaintea mea in memorie
