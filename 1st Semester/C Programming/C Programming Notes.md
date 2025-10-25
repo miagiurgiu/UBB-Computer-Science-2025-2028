@@ -257,4 +257,8 @@ char* pointer_la_octetul_1 = pointer_la_octetul_0 + 1
 ```
 
 operatii cu pointeri:
-"++": adresa + cati octeti are un int
+"++": adresa + cati octeti are tipul ala de data => creste valoarea, nu adresa
+"+1": adresa + 1 => creste adresa, nu valoarea
+
+pointer la int - iei 4 octeti - convert la ceva mai mic? la ce? la char?
+pointer la char - iei un oct
