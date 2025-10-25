@@ -494,5 +494,7 @@ Optimisations:
 
 TEMPLATE FOR BACKTRACKING:
 ```
-voi
+void btrack(int gap, int sum,...)
+	for(element_in_the_set)
+		# we go through the set
 ```
