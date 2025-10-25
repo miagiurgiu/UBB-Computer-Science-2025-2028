@@ -307,10 +307,10 @@ Aceste dimensiuni sunt puteri ale lui 2:
 
 ---
 
-### 3️⃣ Ce este un pointer
+### 3. Ce este un pointer
 
-Un **pointer** este o **variabilă specială** care conține **adresa de memorie** a unei alte variabile.
-👉 deci **un pointer nu este o adresă**, ci **are o adresă** și **conține o altă adresă**.
+Un **pointer** este o zona de memorie care contine in interiorul ei o variabila care e interpretata la alta adresa de memorie. Deci o **variabilă specială** care conține **adresa de memorie** a unei alte variabile.
+Un pointer nu este o adresă**, ci **are o adresă** și **conține o altă adresă**.
 
 ```c
 int nr = 10;
