@@ -243,4 +243,4 @@ int main()
 ```
 
 *void - inseamna orice, ia oricat.
-*nr e diferit de vo
+*nr e diferit de int * pentru ca inseamna dereferentiere. ce e dereferentierea unui pointer? vede adresa -> ia de acolo 4 octeti (ca i)
