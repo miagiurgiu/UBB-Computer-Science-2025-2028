@@ -484,6 +484,31 @@ WC: search key is not found, so T (n) = n ∈ Θ(n)
 AC: let’s assume 50% of searches end with the element not found, and when the element is found, it has the same probability of being on any position in the list. This time, we simulate 2 ∗ n runs; during n runs, the element is not found, and during the remaining runs, it is found on each of the list’s n positions; 
 ![[Pasted image 20251026173704.png]]
 
+**Binary search, iterative**
+```
+def binary_search_iter(data: list, key):
+    left = 0
+    right = len(data) - 1
+
+    while left <= right:
+        middle = (left + right) // 2
+        if data[middle] > key:
+            right = middle - 1
+        if data[middle] < key:
+            left = middle + 1
+        if data[middle] == key:
+            return middle
+    return -1
+
+```
+
+
+**Binary search, recursive**
+```
+
+
+```
+
 Lecture 4 handwritten notes:
 needs to be updated
 
