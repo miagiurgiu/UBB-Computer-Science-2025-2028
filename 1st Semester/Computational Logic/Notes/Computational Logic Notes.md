@@ -13,6 +13,12 @@ Next seminars: individual hw (20%)
 Exam semester: final exam (60%)
 Optional hw (10%)
 
+Seminar 1 exercises:
+
+Seminar 1 Handwritten notes:
+
+Seminar 1 written solutions:
+
 
 
 
@@ -31,4 +37,11 @@ https://ubbcluj.sharepoint.com/:p:/r/sites/LogicIE2025-2026/_layouts/15/Doc.aspx
 
 https://ubbcluj.sharepoint.com/:p:/r/sites/LogicIE2025-2026/_layouts/15/Doc.aspx?sourcedoc=%7B7DE914CB-0B61-468E-BBD3-3EF6A4B498D4%7D&file=IE_Overview_Computational%20Logic.pptx&action=edit&mobileredirect=true
 
-![[obsidianubb/Note references/Logic Lecture 1 (2 oct 2025)_251002_135954.pdf]]
+Seminar 1 exercises:
+
+Seminar 1 Handwritten notes:
+
+Seminar 1 written solutions:
+
+## Seminar 2
+## L
