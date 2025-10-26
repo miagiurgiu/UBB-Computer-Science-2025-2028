@@ -37,11 +37,11 @@ https://ubbcluj.sharepoint.com/:p:/r/sites/LogicIE2025-2026/_layouts/15/Doc.aspx
 
 https://ubbcluj.sharepoint.com/:p:/r/sites/LogicIE2025-2026/_layouts/15/Doc.aspx?sourcedoc=%7B7DE914CB-0B61-468E-BBD3-3EF6A4B498D4%7D&file=IE_Overview_Computational%20Logic.pptx&action=edit&mobileredirect=true
 
-Seminar 1 exercises:
+Lecture 1 slides:
 
-Seminar 1 Handwritten notes:
+Lecture 1 Handwritten notes:
 
-Seminar 1 written solutions:
+Lecture 1 written solutions:
 
 ## Seminar 2
 
