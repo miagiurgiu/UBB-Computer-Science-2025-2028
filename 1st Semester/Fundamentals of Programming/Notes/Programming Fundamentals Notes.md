@@ -138,12 +138,18 @@ Lecture 2 handwritten notes: none.
 
 ## Lab 2
 **Assignment 2** started
-verify each input because it is not allowed to crash
+
 Exchange Sort, Exponential Sort, Shell Sort
 
 ## Lecture 3
-complexity, recursion, Hanoi
+#complexity
+#recursion 
+#Hanoi
 
+Lecture 3 slides:
+
+
+Lecture 3 handwritten notes:
 ## Lab 3
 adc, cwb ...
 
