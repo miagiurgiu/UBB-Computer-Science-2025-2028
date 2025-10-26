@@ -553,8 +553,20 @@ WC: search key is not found. Each time halving the array in O(1) time. Since we 
 
 **Exponential search**
 ```
-from ex10_binary_search import binary_search_impl
-
+def binary_search_impl(data: list, key, left: int, right: int):
+    """
+    This is an implementation method. _ means that the method should not be called from other modules.
+    """
+    if right < left:
+        return -1
+    m = (left + right) // 2
+    if data[m] > key:
+        return binary_search_impl(data, key, left, m - 1)
+    if data[m] < key:
+        return binary_search_impl(data, key, m + 1, right)
+    if data[m] == key:
+        return m
+# ?? from ex10_binary_search import binary_search_impl 
 
 def exponential_search(data: list, key):
     if len(data) == 0 or data[0] > key or data[-1] < key:
@@ -567,9 +579,12 @@ def exponential_search(data: list, key):
     while i < len(data) and data[i] <= key:
         i = i * 2
 
-    return binary_search_impl(data, key, i // 2, min(i, l
+    return binary_search_impl(data, key, i // 2, min(i, len(data)-1)
 
 ```
+
+
+
 Lecture 4 handwritten notes:
 needs to be updated
 
