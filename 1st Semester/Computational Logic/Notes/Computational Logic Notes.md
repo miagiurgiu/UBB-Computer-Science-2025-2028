@@ -44,7 +44,7 @@ Lecture 1 Handwritten notes:
 
 Lecture 1 written solutions:
 
-## Seminar 2
+## Seminar 2 (8 oct 2025)
 
 Seminar 2 exercises:
 
@@ -52,12 +52,12 @@ Seminar 2 Handwritten notes:
 ![[Logic Seminar 2 (8 oct 2025)_251008_174223.pdf]]
 
 Seminar 2 written solutions:
-## Lecture 2
+## Lecture 2 (9 oct 2025)
 
 Lecture 2 slides:
 
 Lecture 2 Handwritten notes:
-
+![[Logic Lecture 2 (9 oct 2025)_251019_082701.pdf]]
 Lecture 2 written solutions:
 
 ## Seminar 3
@@ -65,7 +65,7 @@ Lecture 2 written solutions:
 Seminar 3 exercises:
 
 Seminar 3 Handwritten notes:
-
+![[Logic Seminar 3 (15 oct 2025)_251018_143630.pdf]]
 Seminar 3 written solutions:
 
 ## Lecture 3
@@ -73,7 +73,7 @@ Seminar 3 written solutions:
 Lecture 3 slides:
 
 Lecture 3 Handwritten notes:
-
+![[Logic]]
 Lecture 3 written solutions:
 
 ## Seminar 4
