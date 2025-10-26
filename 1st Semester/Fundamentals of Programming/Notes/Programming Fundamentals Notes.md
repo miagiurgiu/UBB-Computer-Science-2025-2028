@@ -477,6 +477,10 @@ def search_rec(data: list, key, pos: int = 0):
     return search_rec(data, key, pos + 1)
 
 ```
+
+**Complexity for sequential search**
+Best case: search key is the first element checked, so T (n) = 1 ∈ Θ(1)
+
 Lecture 4 handwritten notes:
 needs to be updated
 
