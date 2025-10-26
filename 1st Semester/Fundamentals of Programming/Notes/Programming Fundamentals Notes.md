@@ -133,13 +133,13 @@ programming = a human activity ...
 #complexities
 
 Lecture 2 slides:
-
-Lecture 2 handwritten notes:
+![[L02.Recursion. Computational complexity (1).pdf]]
+Lecture 2 handwritten notes: none.
 
 ## Lab 2
+**Assignment 2** started
 verify each input because it is not allowed to crash
-E,E,Shell
-Assignment 2 started
+Exchange Sort, Exponential Sort, Shell Sort
 
 ## Lecture 3
 complexity, recursion, Hanoi
