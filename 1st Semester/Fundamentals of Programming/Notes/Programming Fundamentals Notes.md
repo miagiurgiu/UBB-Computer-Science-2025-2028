@@ -670,6 +670,10 @@ divide and conquer:
 
 ![[Pasted image 20251026180501.png]]
 
+The most efficient sorting algorithms are generally hybrid versions that combine 
+**Intro sort**
+- An optimization of quicksort’s worst case - when pivot selection leads to worst case behavior
+- hybrid sorting algorithm
 
 
 Lecture 4 handwritten notes:
