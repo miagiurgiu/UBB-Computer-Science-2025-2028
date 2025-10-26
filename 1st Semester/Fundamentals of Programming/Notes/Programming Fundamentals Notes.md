@@ -105,7 +105,7 @@ print("other ",other_numbers)
 ```
 
 ## Lab 1 
-Assignment in git for next time (choose one problem from each set)
+**Assignment 1** in git for next time (choose one problem from each set)
 
 GitHub commands:
 ```
