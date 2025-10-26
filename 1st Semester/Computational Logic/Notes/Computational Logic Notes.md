@@ -52,15 +52,43 @@ Seminar 2 Handwritten notes:
 Seminar 2 written solutions:
 ## Lecture 2
 
-Seminar 2 exercises:
+Lecture 2 slides:
 
-Seminar 1 Handwritten notes:
+Lecture 2 Handwritten notes:
 
-Seminar 1 written solutions:
+Lecture 2 written solutions:
+
 ## Seminar 3
+
+Seminar 3 exercises:
+
+Seminar 3 Handwritten notes:
+
+Seminar 3 written solutions:
 
 ## Lecture 3
 
+Lecture 3 slides:
+
+Lecture 3 Handwritten notes:
+
+Lecture 3 written solutions:
+
 ## Seminar 4
 
+Seminar 4 exercises:
+
+Seminar 4 Handwritten notes:
+
+Seminar 4 written solutions:
+
 ## Lecture 4
+
+Lecture 4 slides:
+
+Lecture 4 Handwritten notes:
+
+Lecture 4 written solutions:
+
+## Lecture 5
+
