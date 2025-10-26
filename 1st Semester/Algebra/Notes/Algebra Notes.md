@@ -40,7 +40,7 @@ https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Sem
 Seminar 2 Handwritten notes:
 https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Semester/Algebra/Notes/Algebra%20Seminar%202%20(8%20oct%202025)_251008_193518%20(1).pdf
 
-## Lecture 2 
+## Lecture 2 ()
 #ring 
 #subring
 #subfield
@@ -72,7 +72,7 @@ Questions:
 9) circle group - which one from (C*, *) and (C, +) and H={z from C | |z|=1}
 10) x+y from A, x*y from A to prove A is a subset of (k,+,*)
 
-## Seminar 3
+## Seminar 3 (15 oct 2025)
  #groups
  #subgroups
  #rings
@@ -97,7 +97,7 @@ https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Sem
 Lecture 3 handwritten notes:
 https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Semester/Algebra/Notes/Algebra%20Lecture%203%20(20%20oct%202025)_251022_002517.pdf
 
-## Seminar 4
+## Seminar 4 (22 oct 2025)
 #vectorspaces 
 #subspaces 
 #degreeofapolynomial 
@@ -105,4 +105,6 @@ https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Sem
 Seminar 4 exercises:
 https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Semester/Algebra/Seminars/Algebra-S04.pdf
 
-Seminar 4 handw
+Seminar 4 handwritten notes:
+https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Semester/Algebra/Notes/Algebra%20Seminar%204%20(22%20oct%202025)_251026_082145.pdf
+
