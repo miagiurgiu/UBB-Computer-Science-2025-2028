@@ -450,6 +450,9 @@ Lecture 4 slides:
 ![[L03.Searching.Sorting.pdf]]
 ![[L04.Problem solving methods.pdf]]
 
+## Algorithms:
+
+
 Lecture 4 handwritten notes:
 needs to be updated
 
