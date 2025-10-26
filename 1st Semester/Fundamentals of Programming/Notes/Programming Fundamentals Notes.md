@@ -650,7 +650,9 @@ def binary_insertion_sort(data: list):
 **Quick sort**
 - based on divide and conquer
 divide and conquer:
-- partition array into 2 sub-arrays such that elements in the lower part ≤ elements in the higher part.
+- divide: partition array into 2 sub-arrays such that elements in the lower part ≤ elements in the higher part.
+- conquer: recursively sort the 2 sub-arrays.
+- combine: trivial since sorting is done in place.
 
 
 
