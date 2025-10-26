@@ -450,7 +450,7 @@ Lecture 4 slides:
 ![[L03.Searching.Sorting.pdf]]
 ![[L04.Problem solving methods.pdf]]
 
-## Algorithms:
+## Searching Algorithms:
 
 **Sequential search, iterative**:
 ```
@@ -462,7 +462,21 @@ def search_iter(data: list, key):
 ```
 
 **Sequential search, recursive**
+```
+def search_rec(data: list, key, pos: int = 0):
+    if len(data) > 997:
+        # The initial execution of the current module and
+        # initial method call are already on the stack, so we have fewer than
+        # 1000 recursive calls available in the default Python implementation ;)
+        raise ValueError("Will overflow the Python stack")
 
+    if 0 > pos or pos >= len(data):
+        return -1
+    if data[pos] == key:
+        return key
+    return search_rec(data, key, pos + 1)
+
+```
 Lecture 4 handwritten notes:
 needs to be updated
 
