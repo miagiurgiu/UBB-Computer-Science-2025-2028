@@ -687,7 +687,7 @@ source code (https://github.com/python/cpython/blob/main/Objects/listobject.c)
 
 ![[Pasted image 20251026181101.png]]
 Lecture 4 handwritten notes:
-needs to be updated
+![[FP Lecture 4 (23 oct 2025)_251023_114828.pdf]]
 
 ## Lab 4
 **Assignment 45**
