@@ -1,4 +1,9 @@
 ## Seminar 1 (1 oct 2025)
+#operations
+#monoids
+#semigroups
+#groups
+#lawsofcompositions
 
 - Defining an operation
 - Defining a semigroup
@@ -9,6 +14,7 @@
 - Andrea's problem as homework (b)
 - how to solve (a)?
 
+Seminar 1 
 Seminar 1 handwritten notes:
 https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/73e06dd1584023d1db8e36694431e8699669647e/1st%20Semester/Algebra/Algebra%20Seminar%201%20(1%20oct%202025)_251002_201815.pdf
 
@@ -75,6 +81,9 @@ https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Sem
 
 #vectorspaces
 #subspaces
+
+Lecture 3 slides:
+https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Semester/Algebra/Lectures/Algebra-C03-slides.pdf
 
 Lecture 3 handwritten notes:
 https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Semester/Algebra/Notes/Algebra%20Lecture%203%20(20%20oct%202025)_251022_002517.pdf
