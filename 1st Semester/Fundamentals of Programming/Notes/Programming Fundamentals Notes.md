@@ -479,7 +479,8 @@ def search_rec(data: list, key, pos: int = 0):
 ```
 
 **Complexity for sequential search**
-Best case: search key is the first element checked, so T (n) = 1 ∈ Θ(1)
+BC: search key is the first element checked, so T (n) = 1 ∈ Θ(1)
+WC: search key is not found, so T (n) = n ∈ Θ(n)
 
 Lecture 4 handwritten notes:
 needs to be updated
