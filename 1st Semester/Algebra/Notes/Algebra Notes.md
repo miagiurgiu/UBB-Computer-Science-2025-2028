@@ -35,6 +35,9 @@ https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Sem
 #group
 #subgroup
 
+Lecture 2 handwritten notes:
+
+
 Parralels:
 ![[Pasted image 20251020075028.png]]
 ![[Pasted image 20251020075048.png]]
@@ -65,3 +68,8 @@ https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Sem
 
 ## Lecture 3
 
+#vectorspaces
+#subspaces
+
+Lecture 3 handwritten notes:
+https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Semester/Algebra/Notes/Algebra%20Lecture%203%20(20%20oct%202025)_251022_002517.pdf
