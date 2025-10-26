@@ -591,15 +591,15 @@ def exponential_search(data: list, key):
 Notions:
 streaming sort = data becomes available sequentially
 in-place sort = transforms the input data into the output, uses small additional space
-stable sort = 
-space sort = 
+stable sort = ?
+space = memory complexity
 
 **Insertion sort**
 - everything on the left of our current index is sorted already
 - Very good for short lists, or lists that are nearly sorted (with only a few elements out of place)
 ![[Pasted image 20251026175049.png]]
 
-
+**Binary Insertion sort - optimised Insertion Sort**
 
 
 
