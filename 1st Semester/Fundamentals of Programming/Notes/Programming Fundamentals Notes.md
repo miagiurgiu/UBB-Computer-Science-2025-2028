@@ -472,7 +472,8 @@ make changes on both computers -> error
 ## Lecture 4
 
 ## Lab 4
-### Assignment 4
+**Assignment 45**
+
 ex 14 - backtracking
 14. Generate all numbers of `n` digits with the property that no number has two identical neighboring subsequences. For example, for `n=6`, `121312` is correct, and `121313` and `132132` are not correct.
 ex 4 - dinamic programming   
