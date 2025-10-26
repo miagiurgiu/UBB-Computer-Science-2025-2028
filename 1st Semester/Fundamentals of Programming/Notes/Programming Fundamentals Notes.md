@@ -481,6 +481,8 @@ def search_rec(data: list, key, pos: int = 0):
 **Complexity for sequential search**
 BC: search key is the first element checked, so T (n) = 1 ∈ Θ(1)
 WC: search key is not found, so T (n) = n ∈ Θ(n)
+AC: let’s assume 50% of searches end with the element not found, and when the element is found, it has the same probability of being on any position in the list. This time, we simulate 2 ∗ n runs; during n runs, the element is not found, and during the remaining runs, it is found on each of the list’s n positions; 
+![[Pasted image 20251026173704.png]]
 
 Lecture 4 handwritten notes:
 needs to be updated
