@@ -13,7 +13,8 @@ Next seminars: individual hw (20%)
 Exam semester: final exam (60%)
 Optional hw (10%)
 
-![[obsidianubb/Note references/Logic Seminar 1 (1 oct 2025)_251002_125740.pdf]]
+
+
 
 
 ## Lecture 1 (2 oct 2025)
@@ -21,7 +22,6 @@ Optional hw (10%)
 #numerationsystems
 #computationallogic
 #fractionalconversions
-#
 
 Week 6: midterm exam (20%)
 Seminar's activity (20%)
