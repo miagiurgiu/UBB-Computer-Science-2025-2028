@@ -156,13 +156,13 @@ adc, cwb ...
 **Assignment 3 started**
 - print out execution time in tables
 - calculate the complexity mathematically
-## Assignment 3
 
-## Python Q & A
+##### Python Q & A
 
 1) when / and when // as division?
 / - float division (5/2=2.5)
 // - int division (5//2=2)
+
 2) local vs global declaration
 local declaration - defined in a function - the variable exists only inside it
 global declaration - outside a function - the variable is available anywhere
@@ -444,6 +444,7 @@ make changes on both computers -> error
 19) datatypes
 
 ## Lecture 4
+
 
 ## Lab 4
 **Assignment 45**
