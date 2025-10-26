@@ -153,7 +153,9 @@ Lecture 3 slides:
 Lecture 3 handwritten notes:
 ## Lab 3
 adc, cwb ...
-*Assignment 3 started*
+**Assignment 3 started**
+- print out execution time in tables
+- calculate the complexity mathematically
 ## Assignment 3
 
 ## Python Q & A
