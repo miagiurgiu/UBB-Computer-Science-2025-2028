@@ -660,6 +660,8 @@ divide and conquer:
 
 **Merge sort**
 - based on divide and conquer
+- The list to be sorted is divided in two sub-lists that are sorted separately. The sorted sub-lists are then merged
+- Each sub-list is sorted using the same approach until we get to sub-lists of length 1, which we know are sorted.
 - 
 
 
