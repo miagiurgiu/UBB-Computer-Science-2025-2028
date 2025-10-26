@@ -90,5 +90,20 @@ Lecture 4 Handwritten notes:
 
 Lecture 4 written solutions:
 
+## Seminar 5
+
+Seminar 5 exercises:
+
+Seminar 5 Handwritten notes:
+
+Seminar 5 written solutions:
+
 ## Lecture 5
+
+Lecture 5 slides:
+
+Lecture 5 Handwritten notes:
+
+Lecture 5 written solutions:
+
 
