@@ -654,6 +654,9 @@ divide and conquer:
 - conquer: recursively sort the 2 sub-arrays.
 - combine: trivial since sorting is done in place.
 
+**Quick sort complexity**
+- need to update
+
 
 
 
