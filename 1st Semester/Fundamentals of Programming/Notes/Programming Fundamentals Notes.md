@@ -445,6 +445,12 @@ make changes on both computers -> error
 
 ## Lecture 4
 
+Lecture 4 slides:
+![[L03.Searching.Sorting.pdf]]
+![[L04.Problem solving methods.pdf]]
+
+Lecture 4 handwritten notes:
+needs to be updated
 
 ## Lab 4
 **Assignment 45**
