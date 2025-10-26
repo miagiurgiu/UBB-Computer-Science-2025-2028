@@ -505,10 +505,33 @@ def binary_search_iter(data: list, key):
 
 **Binary search, recursive**
 ```
+def binary_search_rec(data: list, key):
+    """
+    Binary search, recursive implementation
+    :param data: List in which search is performed in
+    :param key: Search key
+    :return: Position of element, -1 if element was not found
+    """
+    return binary_search_impl(data, key, 0, len(data) - 1)
 
+
+def binary_search_impl(data: list, key, left: int, right: int):
+    """
+    This is an implementation method. _ means that the method should not be called from other modules.
+    """
+    if right < left:
+        return -1
+    m = (left + right) // 2
+    if data[m] > key:
+        return binary_search_impl(data, key, left, m - 1)
+    if data[m] < key:
+        return binary_search_impl(data, key, m + 1, right)
+    if data[m] == key:
+        return m
 
 ```
 
+****
 Lecture 4 handwritten notes:
 needs to be updated
 
