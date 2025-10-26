@@ -40,7 +40,7 @@ https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Sem
 Seminar 2 Handwritten notes:
 https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Semester/Algebra/Notes/Algebra%20Seminar%202%20(8%20oct%202025)_251008_193518%20(1).pdf
 
-## Lecture 2 ()
+## Lecture 2 (13 oct 2025)
 #ring 
 #subring
 #subfield
@@ -86,7 +86,7 @@ https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Sem
 Seminar 3 handwritten notes:
 https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Semester/Algebra/Notes/Algebra%20Seminar%203%20(15%20oct%202025)_251018_160500.pdf
 
-## Lecture 3
+## Lecture 3 (20 oct 2025)
 
 #vectorspaces
 #subspaces
@@ -108,3 +108,7 @@ https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Sem
 Seminar 4 handwritten notes:
 https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Semester/Algebra/Notes/Algebra%20Seminar%204%20(22%20oct%202025)_251026_082145.pdf
 
+## Lecture 4 (27 oct 2025)
+
+
+## Seminar 5 ()
