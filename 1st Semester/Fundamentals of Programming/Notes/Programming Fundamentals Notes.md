@@ -599,7 +599,7 @@ space = memory complexity
 - Very good for short lists, or lists that are nearly sorted (with only a few elements out of place)
 ![[Pasted image 20251026175049.png]]
 
-**Binary Insertion sort - optimised Insertion Sort**
+**Binary Insertion sort - optimised Insertion sort**
 
 
 
