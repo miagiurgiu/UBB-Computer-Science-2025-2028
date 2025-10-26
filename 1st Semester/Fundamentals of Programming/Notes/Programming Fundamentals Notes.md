@@ -584,10 +584,8 @@ def exponential_search(data: list, key):
 ```
  
  **Exponential search complexity**
-```
-We need log2n steps to determine whether the element is in the list; we apply further log2n steps to find its position between indices i, 2 ∗ i (complexity can be determined based on indices i, but for ease of understanding we used n as upper bound, so complexity is O(log2n) 
+ We need log2n steps to determine whether the element is in the list; we apply further log2n steps to find its position between indices i, 2 ∗ i (complexity can be determined based on indices i, but for ease of understanding we used n as upper bound, so complexity is O(log2n)
 
-```
 
 Lecture 4 handwritten notes:
 needs to be updated
