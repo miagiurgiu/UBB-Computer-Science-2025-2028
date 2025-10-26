@@ -55,4 +55,13 @@ Questions:
 ## Seminar 3
  #groups
  #subgroups
- 
+ #rings
+ #subrings
+ #isomorphism
+ #homomorphism
+
+Seminar 3 handwritten notes:
+https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Semester/Algebra/Notes/Algebra%20Seminar%203%20(15%20oct%202025)_251018_160500.pdf
+
+## Lecture 3
+
