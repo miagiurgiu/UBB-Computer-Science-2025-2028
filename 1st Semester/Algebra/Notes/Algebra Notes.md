@@ -17,6 +17,8 @@ https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/73e06dd1584023
 ## Lecture 1 (6 oct 2025)
 -
 
+Lecture 1 slides:
+https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Semester/Algebra/Lectures/Algebra-C01-slides.pdf
 ## Seminar 2 (8 oct 2025)
 #relations
 #partitions
@@ -35,8 +37,11 @@ https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Sem
 #group
 #subgroup
 
-Lecture 2 handwritten notes:
+Lecture 2 slides:
+https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Semester/Algebra/Lectures/Algebra-C02-slides.pdf
 
+Lecture 2 handwritten notes:
+https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Semester/Algebra/Notes/Algebra%20Lecture%202%20(13%20oct%202025)_251014_205924.pdf
 
 Parralels:
 ![[Pasted image 20251020075028.png]]
