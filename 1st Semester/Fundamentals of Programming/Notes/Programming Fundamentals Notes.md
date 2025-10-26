@@ -589,8 +589,8 @@ def exponential_search(data: list, key):
 ## Sorting algorithms:
 
 Notions:
-streaming sort = 
-in-place sort = 
+streaming sort = data becomes available sequentially
+in-place sort = transforms the input data into the output, uses small additional space
 stable sort = 
 space sort = 
 
