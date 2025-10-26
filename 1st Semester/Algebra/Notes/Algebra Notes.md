@@ -174,4 +174,18 @@ Seminar 9 written solutions:
 https://github.com/mirceamaierean/ubb/blob/main/1st%20Semester/Algebra/Seminars/Written%20Solutions/seminar%209.pdf
 
 ## Seminar 10()
-## Seminar 
+
+Seminar 10 exercises:
+https://github.com/FintinaOlivia/UBB-Computer-Science/blob/main/Semester%201/Linear%20Algebra/Seminars/Algebra-S10.pdf
+## Seminar 11()
+
+Seminar 11 exercises:
+https://github.com/FintinaOlivia/UBB-Computer-Science/blob/main/Semester%201/Linear%20Algebra/Seminars/Algebra-S11.pdf
+## Seminar 12()
+
+Seminar 12 exercises:
+https://github.com/FintinaOlivia/UBB-Computer-Science/blob/main/Semester%201/Linear%20Algebra/Seminars/Algebra-S12.pdf
+## Seminar 13()
+
+Seminar 13 exercises:
+https://github.com/FintinaOlivia/UBB-Computer-Science/blob/main/Semester%201/Linear%20Algebra/Seminars/Algebra-S13.pdf
