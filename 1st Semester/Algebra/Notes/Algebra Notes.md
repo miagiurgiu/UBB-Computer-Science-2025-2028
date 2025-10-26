@@ -126,6 +126,7 @@ Lecture 4 handwritten notes:
 ## Seminar 5 ()
 
 Seminar 5 exercises:
+https://github.com/FintinaOlivia/UBB-Computer-Science/blob/main/Semester%201/Linear%20Algebra/Seminars/Algebra-S05.pdf
 
 Seminar 5 handwritten notes:
 
@@ -135,6 +136,7 @@ https://github.com/mirceamaierean/ubb/blob/main/1st%20Semester/Algebra/Seminars/
 ## Seminar 6()
 
 Seminar 6 exercises:
+https://github.com/FintinaOlivia/UBB-Computer-Science/blob/main/Semester%201/Linear%20Algebra/Seminars/Algebra-S06.pdf
 
 Seminar 6 handwritten notes:
 
@@ -142,7 +144,9 @@ Seminar 6 written solutions:
 https://github.com/mirceamaierean/ubb/blob/main/1st%20Semester/Algebra/Seminars/Written%20Solutions/seminar%206.pdf
 
 ## Seminar 7 ()
+
 Seminar 7 exercises:
+https://github.com/FintinaOlivia/UBB-Computer-Science/blob/main/Semester%201/Linear%20Algebra/Seminars/Algebra-S07.pdf
 
 Seminar 7 handwritten notes:
 
@@ -152,6 +156,7 @@ https://github.com/mirceamaierean/ubb/blob/main/1st%20Semester/Algebra/Seminars/
 ## Seminar 8()
 
 Seminar 8 exercises:
+https://github.com/FintinaOlivia/UBB-Computer-Science/blob/main/Semester%201/Linear%20Algebra/Seminars/Algebra-S08.pdf
 
 Seminar 8 handwritten notes:
 
@@ -161,8 +166,12 @@ https://github.com/mirceamaierean/ubb/blob/main/1st%20Semester/Algebra/Seminars/
 ## Seminar 9()
 
 Seminar 9 exercises:
+https://github.com/FintinaOlivia/UBB-Computer-Science/blob/main/Semester%201/Linear%20Algebra/Seminars/Algebra-S09.pdf
 
 Seminar 9 handwritten notes:
 
 Seminar 9 written solutions:
 https://github.com/mirceamaierean/ubb/blob/main/1st%20Semester/Algebra/Seminars/Written%20Solutions/seminar%209.pdf
+
+## Seminar 10()
+## Seminar 
