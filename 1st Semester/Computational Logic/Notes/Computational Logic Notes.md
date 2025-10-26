@@ -73,7 +73,7 @@ Seminar 3 written solutions:
 Lecture 3 slides:
 
 Lecture 3 Handwritten notes:
-![[Logic]]
+![[Logic Lecture 3 (16 oct 2025)_251016_182703.pdf]]
 Lecture 3 written solutions:
 
 ## Seminar 4
@@ -81,7 +81,7 @@ Lecture 3 written solutions:
 Seminar 4 exercises:
 
 Seminar 4 Handwritten notes:
-
+![[Logic Seminar 4 (22 oct 2025)_251022_184727.pdf]]
 Seminar 4 written solutions:
 
 ## Lecture 4
@@ -89,7 +89,7 @@ Seminar 4 written solutions:
 Lecture 4 slides:
 
 Lecture 4 Handwritten notes:
-
+![[Logic Lecture 4 (23 oct 2025)_251026_075149.pdf]]
 Lecture 4 written solutions:
 
 ## Seminar 5
