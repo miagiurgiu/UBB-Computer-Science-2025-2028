@@ -14,7 +14,9 @@
 - Andrea's problem as homework (b)
 - how to solve (a)?
 
-Seminar 1 
+Seminar 1 exercises:
+https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Semester/Algebra/Seminars/Algebra-S01.pdf
+
 Seminar 1 handwritten notes:
 https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/73e06dd1584023d1db8e36694431e8699669647e/1st%20Semester/Algebra/Algebra%20Seminar%201%20(1%20oct%202025)_251002_201815.pdf
 
@@ -25,11 +27,15 @@ https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/73e06dd1584023
 
 Lecture 1 slides:
 https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Semester/Algebra/Lectures/Algebra-C01-slides.pdf
+
+No handwritten notes for Lecture 1.
 ## Seminar 2 (8 oct 2025)
 #relations
 #partitions
 #graphsofrelations
 
+Seminar 2 exercises:
+https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Semester/Algebra/Seminars/Algebra-S02.pdf
 
 Seminar 2 Handwritten notes:
 https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Semester/Algebra/Notes/Algebra%20Seminar%202%20(8%20oct%202025)_251008_193518%20(1).pdf
@@ -74,6 +80,7 @@ Questions:
  #isomorphism
  #homomorphism
 
+Seminar 3 exercises:
 Seminar 3 handwritten notes:
 https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Semester/Algebra/Notes/Algebra%20Seminar%203%20(15%20oct%202025)_251018_160500.pdf
 
