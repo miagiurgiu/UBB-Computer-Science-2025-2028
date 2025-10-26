@@ -647,6 +647,10 @@ def binary_insertion_sort(data: list):
 ```
 ![[Pasted image 20251026175752.png]]
 
+**Quick sort**
+- based on divide and conquer
+divide and conquer:
+- partition array into 2 sub-arrays such that elements in the lower part ≤ elements in the higher part.
 
 
 
