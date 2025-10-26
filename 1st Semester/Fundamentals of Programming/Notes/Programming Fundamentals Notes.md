@@ -679,11 +679,13 @@ divide and conquer:
 **Tim sort**
 - Built on merge sort, it uses binary insertion sort for small sections of the list
 - takes advantage of cache
+- the newest (2002)
 
 The original TimSort: 
 https://svn.python.org/projects/python/trunk/Objects/listsort.txt)
 source code (https://github.com/python/cpython/blob/main/Objects/listobject.c)
 
+![[Pasted image 20251026181101.png]]
 Lecture 4 handwritten notes:
 needs to be updated
 
