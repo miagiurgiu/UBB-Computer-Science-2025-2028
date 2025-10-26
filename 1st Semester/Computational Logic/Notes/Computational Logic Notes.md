@@ -44,4 +44,23 @@ Seminar 1 Handwritten notes:
 Seminar 1 written solutions:
 
 ## Seminar 2
-## L
+
+Seminar 2 exercises:
+
+Seminar 2 Handwritten notes:
+
+Seminar 2 written solutions:
+## Lecture 2
+
+Seminar 2 exercises:
+
+Seminar 1 Handwritten notes:
+
+Seminar 1 written solutions:
+## Seminar 3
+
+## Lecture 3
+
+## Seminar 4
+
+## Lecture 4
