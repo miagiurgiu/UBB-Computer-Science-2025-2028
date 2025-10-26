@@ -662,7 +662,12 @@ divide and conquer:
 - based on divide and conquer
 - The list to be sorted is divided in two sub-lists that are sorted separately. The sorted sub-lists are then merged
 - Each sub-list is sorted using the same approach until we get to sub-lists of length 1, which we know are sorted.
-- 
+- pros: Merge sort has good time complexity and it’s easy to write an implementation that works well..
+- cons: 
+	- It has non-constant extra-space complexity 
+	- Time is wasted when merging very short lists (length 1, 2,4...)
+
+![[Pasted image 20251026180501.png]]
 
 
 
