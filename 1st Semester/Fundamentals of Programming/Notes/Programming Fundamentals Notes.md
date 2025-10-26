@@ -587,6 +587,7 @@ def exponential_search(data: list, key):
  We need log2n steps to determine whether the element is in the list; we apply further log2n steps to find its position between indices i, 2 ∗ i (complexity can be determined based on indices i, but for ease of understanding we used n as upper bound, so complexity is O(log2n)
 
 ## Sorting algorithms:
+https://www.toptal.com/developers/sorting-algorithms
 
 Notions:
 streaming sort = data becomes available sequentially
