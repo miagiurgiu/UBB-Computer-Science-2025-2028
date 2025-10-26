@@ -549,7 +549,10 @@ test_binary_search()
 ```
 
 BC: search key is the first element checked, so T (n) = 1 ∈ Θ(1)
-Worst : search key is not found.
+WC: search key is not found. Each time halving the array in O(1) time. Since we can do this log2n times, the complexity in the average and worst cases is Θ(log2n)
+
+**Exponential search**
+
 
 Lecture 4 handwritten notes:
 needs to be updated
