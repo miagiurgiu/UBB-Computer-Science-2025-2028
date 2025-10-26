@@ -452,7 +452,17 @@ Lecture 4 slides:
 
 ## Algorithms:
 
-*Sequential search**
+**Sequential search, iterative**:
+```
+def search_iter(data: list, key):
+    for i in range(len(data)):
+        if data[i] == key:
+            return i
+    return -1
+```
+
+**Sequential search, recursive**
+
 Lecture 4 handwritten notes:
 needs to be updated
 
