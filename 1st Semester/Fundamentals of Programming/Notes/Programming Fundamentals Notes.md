@@ -452,7 +452,7 @@ Lecture 4 slides:
 
 ## Algorithms:
 
-
+*Sequential search**
 Lecture 4 handwritten notes:
 needs to be updated
 
