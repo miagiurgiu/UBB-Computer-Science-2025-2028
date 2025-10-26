@@ -531,7 +531,26 @@ def binary_search_impl(data: list, key, left: int, right: int):
 
 ```
 
-****
+**Another binary search??**
+```
+# NOTE Take a look at this method
+def test_binary_search():
+    binary_search_alg = [binary_search_iter, binary_search_rec]
+
+    for bs_alg in binary_search_alg:
+        data = list(range(1000))
+        for i in range(0, 1000):
+            assert i == bs_alg(data, i)
+        assert -1 == bs_alg(list(range(100)), 101)
+        assert -1 == bs_alg(list(range(100)), -1)
+
+test_binary_search()
+
+```
+
+BC: search key is the first element checked, so T (n) = 1 ∈ Θ(1)
+Worst : search key is not found.
+
 Lecture 4 handwritten notes:
 needs to be updated
 
