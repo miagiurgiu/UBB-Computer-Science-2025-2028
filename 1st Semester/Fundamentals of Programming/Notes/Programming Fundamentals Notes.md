@@ -678,7 +678,8 @@ divide and conquer:
 
 **Tim sort**
 - Built on merge sort, it uses binary insertion sort for small sections of the list
-- 
+- takes advantage of cache
+
 
 Lecture 4 handwritten notes:
 needs to be updated
