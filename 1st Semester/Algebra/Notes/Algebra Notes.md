@@ -133,15 +133,36 @@ Seminar 5 written solutions:
 https://github.com/mirceamaierean/ubb/blob/main/1st%20Semester/Algebra/Seminars/Written%20Solutions/seminar%205.pdf
 
 ## Seminar 6()
+
+Seminar 6 exercises:
+
+Seminar 6 handwritten notes:
+
 Seminar 6 written solutions:
 https://github.com/mirceamaierean/ubb/blob/main/1st%20Semester/Algebra/Seminars/Written%20Solutions/seminar%206.pdf
 
 ## Seminar 7 ()
+Seminar 7 exercises:
+
+Seminar 7 handwritten notes:
+
 Seminar 7 written solutions:
 https://github.com/mirceamaierean/ubb/blob/main/1st%20Semester/Algebra/Seminars/Written%20Solutions/seminar%207.pdf
 
+## Seminar 8()
+
+Seminar 8 exercises:
+
+Seminar 8 handwritten notes:
+
 Seminar 8 written solutions:
 https://github.com/mirceamaierean/ubb/blob/main/1st%20Semester/Algebra/Seminars/Written%20Solutions/seminar%208.pdf
+
+## Seminar 9()
+
+Seminar 9 exercises:
+
+Seminar 9 handwritten notes:
 
 Seminar 9 written solutions:
 https://github.com/mirceamaierean/ubb/blob/main/1st%20Semester/Algebra/Seminars/Written%20Solutions/seminar%209.pdf
