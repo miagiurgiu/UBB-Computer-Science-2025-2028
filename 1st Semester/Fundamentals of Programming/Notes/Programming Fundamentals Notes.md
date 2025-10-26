@@ -531,7 +531,7 @@ def binary_search_impl(data: list, key, left: int, right: int):
 
 ```
 
-**Another binary search??**
+**Another binary search?? - binary search adapted for exponential search**
 ```
 # NOTE Take a look at this method
 def test_binary_search():
@@ -552,8 +552,24 @@ BC: search key is the first element checked, so T (n) = 1 ∈ Θ(1)
 WC: search key is not found. Each time halving the array in O(1) time. Since we can do this log2n times, the complexity in the average and worst cases is Θ(log2n)
 
 **Exponential search**
+```
+from ex10_binary_search import binary_search_impl
 
 
+def exponential_search(data: list, key):
+    if len(data) == 0 or data[0] > key or data[-1] < key:
+        return -1
+
+    if data[0] == key:
+        return 0
+
+    i = 1
+    while i < len(data) and data[i] <= key:
+        i = i * 2
+
+    return binary_search_impl(data, key, i // 2, min(i, l
+
+```
 Lecture 4 handwritten notes:
 needs to be updated
 
