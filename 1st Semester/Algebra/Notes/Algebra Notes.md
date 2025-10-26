@@ -41,6 +41,8 @@ https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Sem
 Seminar 2 Handwritten notes:
 https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Semester/Algebra/Notes/Algebra%20Seminar%202%20(8%20oct%202025)_251008_193518%20(1).pdf
 
+Seminar 2 written solutions:
+https://github.com/mirceamaierean/ubb/blob/main/1st%20Semester/Algebra/Seminars/Written%20Solutions/seminar%202.pdf
 ## Lecture 2 (13 oct 2025)
 #ring 
 #subring
@@ -87,6 +89,9 @@ https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Sem
 Seminar 3 handwritten notes:
 https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Semester/Algebra/Notes/Algebra%20Seminar%203%20(15%20oct%202025)_251018_160500.pdf
 
+Seminar 3 written solutions:
+https://github.com/mirceamaierean/ubb/blob/main/1st%20Semester/Algebra/Seminars/Written%20Solutions/seminar%203.pdf
+
 ## Lecture 3 (20 oct 2025)
 
 #vectorspaces
@@ -109,6 +114,9 @@ https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Sem
 Seminar 4 handwritten notes:
 https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Semester/Algebra/Notes/Algebra%20Seminar%204%20(22%20oct%202025)_251026_082145.pdf
 
+Seminar 4 written solutions:
+https://github.com/mirceamaierean/ubb/blob/main/1st%20Semester/Algebra/Seminars/Written%20Solutions/seminar%204.pdf
+
 ## Lecture 4 (27 oct 2025)
 
 Lecture 4 slides:
@@ -120,3 +128,9 @@ Lecture 4 handwritten notes:
 Seminar 5 exercises:
 
 Seminar 5 handwritten notes:
+
+Seminar 5 written solutions:
+https://github.com/mirceamaierean/ubb/blob/main/1st%20Semester/Algebra/Seminars/Written%20Solutions/seminar%205.pdf
+
+
+Semi
