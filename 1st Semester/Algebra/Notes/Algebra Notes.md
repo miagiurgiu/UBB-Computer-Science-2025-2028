@@ -18,7 +18,13 @@ https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/73e06dd1584023
 -
 
 ## Seminar 2 (8 oct 2025)
-Abel
+#relations
+#partitions
+#graphsofrelations
+
+
+Seminar 2 Handwritten notes:
+https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Semester/Algebra/Notes/Algebra%20Seminar%202%20(8%20oct%202025)_251008_193518%20(1).pdf
 
 ## Lecture 2 
 #ring 
