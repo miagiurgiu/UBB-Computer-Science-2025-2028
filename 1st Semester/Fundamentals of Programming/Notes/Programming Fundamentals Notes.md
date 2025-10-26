@@ -588,10 +588,16 @@ def exponential_search(data: list, key):
 
 ## Sorting algorithms:
 
+Notions:
+streaming sort = 
+in-place sort = 
+stable sort = 
+space sort = 
+
 **Insertion sort**
 - everything on the left of our current index is sorted already
 - Very good for short lists, or lists that are nearly sorted (with only a few elements out of place)
-
+![[Pasted image 20251026175049.png]]
 
 
 
