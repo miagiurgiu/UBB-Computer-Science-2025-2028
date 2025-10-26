@@ -134,6 +134,7 @@ programming = a human activity ...
 
 Lecture 2 slides:
 ![[L02.Recursion. Computational complexity (1).pdf]]
+
 Lecture 2 handwritten notes: none.
 
 ## Lab 2
@@ -147,12 +148,12 @@ Exchange Sort, Exponential Sort, Shell Sort
 #Hanoi
 
 Lecture 3 slides:
-
+![[L03.Searching.Sorting.pdf]]
 
 Lecture 3 handwritten notes:
 ## Lab 3
 adc, cwb ...
-
+*Assignment 3 started*
 ## Assignment 3
 
 ## Python Q & A
