@@ -656,8 +656,11 @@ divide and conquer:
 
 **Quick sort complexity**
 - need to update
+![[Pasted image 20251026180239.png]]
 
-
+**Merge sort**
+- based on divide and conquer
+- 
 
 
 
