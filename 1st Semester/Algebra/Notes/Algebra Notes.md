@@ -110,5 +110,12 @@ https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Sem
 
 ## Lecture 4 (27 oct 2025)
 
+Lecture 4 slides:
+
+Lecture 4 handwritten notes:
 
 ## Seminar 5 ()
+
+Seminar 5 exercises:
+
+Seminar 5 handwritten notes:
