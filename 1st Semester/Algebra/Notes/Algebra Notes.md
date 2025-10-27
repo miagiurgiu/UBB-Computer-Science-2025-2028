@@ -30,6 +30,7 @@ https://github.com/mirceamaierean/ubb/blob/main/1st%20Semester/Algebra/Seminars/
 -
 
 Lecture 1 slides:
+![[Algebra-C01-slides.pdf]]
 https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Semester/Algebra/Lectures/Algebra-C01-slides.pdf
 
 No handwritten notes for Lecture 1.
@@ -59,7 +60,7 @@ https://github.com/mirceamaierean/ubb/blob/main/1st%20Semester/Algebra/Seminars/
 #subgroup
 
 Lecture 2 slides:
-![[algebrac0]]
+![[Algebra-C02-slides.pdf]]
 https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Semester/Algebra/Lectures/Algebra-C02-slides.pdf
 
 Lecture 2 handwritten notes:
