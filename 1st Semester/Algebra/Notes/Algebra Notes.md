@@ -59,6 +59,7 @@ https://github.com/mirceamaierean/ubb/blob/main/1st%20Semester/Algebra/Seminars/
 #subgroup
 
 Lecture 2 slides:
+![[algebrac0]]
 https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Semester/Algebra/Lectures/Algebra-C02-slides.pdf
 
 Lecture 2 handwritten notes:
@@ -91,6 +92,7 @@ Questions:
  #homomorphism
 
 Seminar 3 exercises:
+![[Algebra-S03.pdf]]
 https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Semester/Algebra/Seminars/Algebra-S03.pdf
 
 Seminar 3 handwritten notes:
@@ -100,8 +102,6 @@ Seminar 3 handwritten notes:
 https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Semester/Algebra/Notes/Algebra%20Seminar%203%20(15%20oct%202025)_251018_160500.pdf
 
 Seminar 3 written solutions:
-
-![[Algebra-S03.pdf]]
 https://github.com/mirceamaierean/ubb/blob/main/1st%20Semester/Algebra/Seminars/Written%20Solutions/seminar%203.pdf
 
 ## Lecture 3 (20 oct 2025)
@@ -110,6 +110,7 @@ https://github.com/mirceamaierean/ubb/blob/main/1st%20Semester/Algebra/Seminars/
 #subspaces
 
 Lecture 3 slides:
+![[Algebra-C03-slides.pdf]]
 https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Semester/Algebra/Lectures/Algebra-C03-slides.pdf
 
 Lecture 3 handwritten notes:
