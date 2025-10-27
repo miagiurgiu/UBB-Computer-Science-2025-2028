@@ -39,10 +39,11 @@ No handwritten notes for Lecture 1.
 
 Seminar 2 exercises:
 
-![[algebra seminar]]
+![[algebra semi]]
 https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Semester/Algebra/Seminars/Algebra-S02.pdf
 
 Seminar 2 Handwritten notes:
+
 https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Semester/Algebra/Notes/Algebra%20Seminar%202%20(8%20oct%202025)_251008_193518%20(1).pdf
 
 Seminar 2 written solutions:
@@ -99,7 +100,7 @@ https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Sem
 
 Seminar 3 written solutions:
 
-![[al]]
+![[Algebra-S03.pdf]]
 https://github.com/mirceamaierean/ubb/blob/main/1st%20Semester/Algebra/Seminars/Written%20Solutions/seminar%203.pdf
 
 ## Lecture 3 (20 oct 2025)
