@@ -121,6 +121,9 @@ Seminar 4 exercises:
 https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Semester/Algebra/Seminars/Algebra-S04.pdf
 
 Seminar 4 handwritten notes:
+
+![[Algebra Seminar 4 (22 oct 2025)_251026_082145.pdf]]
+
 https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Semester/Algebra/Notes/Algebra%20Seminar%204%20(22%20oct%202025)_251026_082145.pdf
 
 Seminar 4 written solutions:
