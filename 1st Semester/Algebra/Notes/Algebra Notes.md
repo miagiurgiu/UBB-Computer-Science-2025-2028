@@ -98,6 +98,8 @@ Seminar 3 handwritten notes:
 https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Semester/Algebra/Notes/Algebra%20Seminar%203%20(15%20oct%202025)_251018_160500.pdf
 
 Seminar 3 written solutions:
+
+![[al]]
 https://github.com/mirceamaierean/ubb/blob/main/1st%20Semester/Algebra/Seminars/Written%20Solutions/seminar%203.pdf
 
 ## Lecture 3 (20 oct 2025)
@@ -118,6 +120,8 @@ https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Sem
 #degreeofapolynomial 
 
 Seminar 4 exercises:
+
+![[Algebra-S04.pdf]]
 https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Semester/Algebra/Seminars/Algebra-S04.pdf
 
 Seminar 4 handwritten notes:
