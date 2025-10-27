@@ -60,7 +60,7 @@ Lecture 2 slides:
 https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Semester/Algebra/Lectures/Algebra-C02-slides.pdf
 
 Lecture 2 handwritten notes:
-![[se]]
+![[Algebra Seminar 2 (8 oct 2025)_251008_193518 (1).pdf]]
 https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Semester/Algebra/Notes/Algebra%20Lecture%202%20(13%20oct%202025)_251014_205924.pdf
 
 Parralels:
@@ -92,6 +92,9 @@ Seminar 3 exercises:
 https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Semester/Algebra/Seminars/Algebra-S03.pdf
 
 Seminar 3 handwritten notes:
+
+![[Algebra Seminar 3 (15 oct 2025)_251018_160500.pdf]]
+
 https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Semester/Algebra/Notes/Algebra%20Seminar%203%20(15%20oct%202025)_251018_160500.pdf
 
 Seminar 3 written solutions:
