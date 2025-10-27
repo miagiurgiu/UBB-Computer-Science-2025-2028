@@ -15,6 +15,7 @@
 - how to solve (a)?
 
 Seminar 1 exercises:
+![[Algebra-S01.pdf]]
 https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Semester/Algebra/Seminars/Algebra-S01.pdf
 
 Seminar 1 handwritten notes:
@@ -39,11 +40,11 @@ No handwritten notes for Lecture 1.
 
 Seminar 2 exercises:
 
-![[algebra semi]]
+![[Algebra-S02.pdf]]
 https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Semester/Algebra/Seminars/Algebra-S02.pdf
 
 Seminar 2 Handwritten notes:
-
+![[Algebra Seminar 2 (8 oct 2025)_251008_193518 (1).pdf]]
 https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Semester/Algebra/Notes/Algebra%20Seminar%202%20(8%20oct%202025)_251008_193518%20(1).pdf
 
 Seminar 2 written solutions:
