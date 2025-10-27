@@ -109,6 +109,7 @@ Lecture 3 slides:
 https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Semester/Algebra/Lectures/Algebra-C03-slides.pdf
 
 Lecture 3 handwritten notes:
+![[Algebra Lecture 3 (20 oct 2025)_251022_002517.pdf]]
 https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Semester/Algebra/Notes/Algebra%20Lecture%203%20(20%20oct%202025)_251022_002517.pdf
 
 ## Seminar 4 (22 oct 2025)
