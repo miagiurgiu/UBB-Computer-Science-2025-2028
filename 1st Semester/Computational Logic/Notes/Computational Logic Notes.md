@@ -49,7 +49,8 @@ Lecture 1 written solutions:
 ## Seminar 2 (8 oct 2025)
 #conversions 
 #substitution
-#successive
+#successive_divisions/multiplications
+
 Seminar 2 exercises:
 
 Seminar 2 Handwritten notes:
