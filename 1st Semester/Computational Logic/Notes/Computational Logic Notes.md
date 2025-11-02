@@ -50,6 +50,7 @@ Lecture 1 written solutions:
 #conversions 
 #substitution
 #successive_divisions/multiplications
+#rapidconversions
 
 Seminar 2 exercises:
 
@@ -58,6 +59,11 @@ Seminar 2 Handwritten notes:
 
 Seminar 2 written solutions:
 ## Lecture 2 (9 oct 2025)
+#representations
+#directcode
+#inversecode
+#complementcode
+#mantissa
 
 Lecture 2 slides:
 https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Semester/Computational%20Logic/Lectures/Lecture2_2025-2026.pptx
@@ -67,6 +73,7 @@ Lecture 2 Handwritten notes:
 Lecture 2 written solutions:
 
 ## Seminar 3
+#codes
 
 Seminar 3 exercises:
 
