@@ -47,7 +47,9 @@ Lecture 1 Handwritten notes:
 Lecture 1 written solutions:
 
 ## Seminar 2 (8 oct 2025)
-
+#conversions 
+#substitution
+#successive
 Seminar 2 exercises:
 
 Seminar 2 Handwritten notes:
@@ -102,14 +104,17 @@ Lecture 4 written solutions:
 Seminar 5 exercises:
 
 Seminar 5 Handwritten notes:
+![[Logic Seminar 5 (29 oct 2025)_251101_162728.pdf]]
 
 Seminar 5 written solutions:
 
 ## Lecture 5
 
 Lecture 5 slides:
+https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Semester/Computational%20Logic/Lectures/Lecture5_Predicate_logic_2025-2026.pptx
 
 Lecture 5 Handwritten notes:
+none
 
 Lecture 5 written solutions:
 
