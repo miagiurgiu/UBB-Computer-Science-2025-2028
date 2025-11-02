@@ -111,4 +111,7 @@ Lecture 5 written solutions:
 
 ## Midterm prep:
 
-/Users/Maria/Documents/Obsidian Vault/Excalidraw/Drawing 2025-11-02 13.55.32.excalidraw.md
+Operations
+![[Drawing 2025-11-02 13.55.32.excalidraw.md]]
+
+Conversions:
