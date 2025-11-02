@@ -107,7 +107,10 @@ Lecture 3 written solutions:
 
 ## Seminar 4
 #mantissa 
-#floatingpointrepresentation
+#floatingpoint
+#fixedpoint 
+#propositionallogic 
+#truthtables 
 Seminar 4 exercises:
 
 Seminar 4 Handwritten notes:
@@ -115,6 +118,8 @@ Seminar 4 Handwritten notes:
 Seminar 4 written solutions:
 
 ## Lecture 4
+#modusponens
+#modustollens
 
 Lecture 4 slides:
 https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Semester/Computational%20Logic/Lectures/Lecture4_Propositional_logic_2025-2026.pptx
