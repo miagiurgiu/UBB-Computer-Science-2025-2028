@@ -143,10 +143,11 @@ Lecture 4 slides:
 ![[Algebra Lecture 4 (27 oct 2025).pdf]]
 
 Lecture 4 handwritten notes:
-I adnotated directly on the slides.
-## Seminar 5 ()
+I addnotated directly on the slides (see above)
+## Seminar 5 (29 oct 2025)
 
 Seminar 5 exercises:
+![[Algebra-S05.pdf]]
 https://github.com/FintinaOlivia/UBB-Computer-Science/blob/main/Semester%201/Linear%20Algebra/Seminars/Algebra-S05.pdf
 
 Seminar 5 handwritten notes:
@@ -180,6 +181,7 @@ Seminar 8 exercises:
 https://github.com/FintinaOlivia/UBB-Computer-Science/blob/main/Semester%201/Linear%20Algebra/Seminars/Algebra-S08.pdf
 
 Seminar 8 handwritten notes:
+![[Algebra Seminar 5 (29 oct 2025).pdf]]
 
 Seminar 8 written solutions:
 https://github.com/mirceamaierean/ubb/blob/main/1st%20Semester/Algebra/Seminars/Written%20Solutions/seminar%208.pdf
