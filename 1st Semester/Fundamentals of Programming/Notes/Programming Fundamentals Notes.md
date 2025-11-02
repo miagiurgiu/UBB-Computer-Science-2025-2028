@@ -739,7 +739,7 @@ def btrack(int gap, (2) int sum,...):
 ```
 
 ## Seminar 4 
-
+![[FP Seminar 4 (24 oct 2025)_251031_145252.pdf]]
 
 ## Lab5
 **Assignment 5**
@@ -753,7 +753,9 @@ ex 4 - dinamic programming
 
 
 ## Lecture 5 
+![[L04.Problem solving methods.pdf]]
 
 ## Seminar 5
+![[FP Seminar 5 (31 oct 2025)_251102_171225.pdf]]
 
 ## Lab 5
