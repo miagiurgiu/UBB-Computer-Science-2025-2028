@@ -141,6 +141,8 @@ https://github.com/mirceamaierean/ubb/blob/main/1st%20Semester/Algebra/Seminars/
 
 Lecture 4 slides:
 
+![[Algebra-C04-slides.pdf]]
+
 Lecture 4 handwritten notes:
 
 ## Seminar 5 ()
