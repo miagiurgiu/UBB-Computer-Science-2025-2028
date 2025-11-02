@@ -147,7 +147,10 @@ Lecture 4 slides:
 Lecture 4 handwritten notes:
 I addnotated directly on the slides (see above)
 ## Seminar 5 (29 oct 2025)
-
+#generatedsubspace 
+#vectorspaces 
+#subspaces 
+#endomorphismsofvector
 Seminar 5 exercises:
 ![[Algebra-S05.pdf]]
 https://github.com/FintinaOlivia/UBB-Computer-Science/blob/main/Semester%201/Linear%20Algebra/Seminars/Algebra-S05.pdf
