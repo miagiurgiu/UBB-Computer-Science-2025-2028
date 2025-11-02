@@ -140,11 +140,10 @@ https://github.com/mirceamaierean/ubb/blob/main/1st%20Semester/Algebra/Seminars/
 ## Lecture 4 (27 oct 2025)
 
 Lecture 4 slides:
-
-![[Algebra-C04-slides.pdf]]
+![[Algebra Lecture 4 (27 oct 2025).pdf]]
 
 Lecture 4 handwritten notes:
-
+I adnotated directly on the slides.
 ## Seminar 5 ()
 
 Seminar 5 exercises:
