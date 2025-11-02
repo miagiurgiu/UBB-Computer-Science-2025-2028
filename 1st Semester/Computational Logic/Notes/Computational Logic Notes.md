@@ -79,7 +79,7 @@ Lecture 2 written solutions:
 #additionofcomplements
 #overflow
 #fixedpoint 
-
+#signedsubunitary
 
 Seminar 3 exercises:
 
@@ -89,6 +89,10 @@ Seminar 3 written solutions:
 
 ## Lecture 3
 
+#propositionallogic
+#nand 
+#nor 
+#xo
 Lecture 3 slides:
 https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Semester/Computational%20Logic/Lectures/Lecture3_Propositional_logic_2025-2026.pptx
 
