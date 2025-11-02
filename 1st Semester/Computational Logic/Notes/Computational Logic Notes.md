@@ -57,6 +57,7 @@ Seminar 2 written solutions:
 ## Lecture 2 (9 oct 2025)
 
 Lecture 2 slides:
+https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Semester/Computational%20Logic/Lectures/Lecture2_2025-2026.pptx
 
 Lecture 2 Handwritten notes:
 ![[Logic Lecture 2 (9 oct 2025)_251019_082701.pdf]]
@@ -73,6 +74,7 @@ Seminar 3 written solutions:
 ## Lecture 3
 
 Lecture 3 slides:
+https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Semester/Computational%20Logic/Lectures/Lecture3_Propositional_logic_2025-2026.pptx
 
 Lecture 3 Handwritten notes:
 ![[Logic Lecture 3 (16 oct 2025)_251016_182703.pdf]]
@@ -89,6 +91,7 @@ Seminar 4 written solutions:
 ## Lecture 4
 
 Lecture 4 slides:
+https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Semester/Computational%20Logic/Lectures/Lecture4_Propositional_logic_2025-2026.pptx
 
 Lecture 4 Handwritten notes:
 ![[Logic Lecture 4 (23 oct 2025)_251026_075149.pdf]]
