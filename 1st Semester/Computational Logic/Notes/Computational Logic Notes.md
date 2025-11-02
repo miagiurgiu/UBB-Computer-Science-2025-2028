@@ -129,6 +129,7 @@ Lecture 4 Handwritten notes:
 Lecture 4 written solutions:
 
 ## Seminar 5
+#propositionallogic 
 
 Seminar 5 exercises:
 
@@ -138,7 +139,6 @@ Seminar 5 Handwritten notes:
 Seminar 5 written solutions:
 
 ## Lecture 5
-
 Lecture 5 slides:
 https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/blob/main/1st%20Semester/Computational%20Logic/Lectures/Lecture5_Predicate_logic_2025-2026.pptx
 
