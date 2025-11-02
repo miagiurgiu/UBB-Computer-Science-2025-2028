@@ -177,9 +177,10 @@ https://github.com/mirceamaierean/ubb/blob/main/1st%20Semester/Algebra/Seminars/
 
 ## Lecture 7 ()
 
-Lecture slides:
+Lecture 7 slides:
 
-Lecture
+Lecture 7 handwritten notes:
+
 ## Seminar 7 ()
 
 Seminar 7 exercises:
@@ -190,6 +191,11 @@ Seminar 7 handwritten notes:
 Seminar 7 written solutions:
 https://github.com/mirceamaierean/ubb/blob/main/1st%20Semester/Algebra/Seminars/Written%20Solutions/seminar%207.pdf
 
+## Lecture 8 ()
+
+Lecture 8 slides:
+
+Lecture 8 handwritten notes:
 ## Seminar 8()
 
 Seminar 8 exercises:
@@ -199,6 +205,9 @@ Seminar 8 handwritten notes:
 
 Seminar 8 written solutions:
 https://github.com/mirceamaierean/ubb/blob/main/1st%20Semester/Algebra/Seminars/Written%20Solutions/seminar%208.pdf
+
+## Lecture 9 ()
+
 
 ## Seminar 9()
 
