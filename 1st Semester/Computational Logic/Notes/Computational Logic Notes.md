@@ -116,3 +116,6 @@ Operations
 
 Conversions:
 ![[Drawing 2025-11-02 14.56.17.excalidraw.md]]
+
+Midterm model:
+![[]]
