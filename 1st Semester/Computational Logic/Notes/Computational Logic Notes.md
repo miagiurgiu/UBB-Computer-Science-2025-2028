@@ -115,3 +115,4 @@ Operations
 ![[Drawing 2025-11-02 13.55.32.excalidraw.md]]
 
 Conversions:
+![[Drawing 2025-11-02 14.56.17.excalidraw.md]]
