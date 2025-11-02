@@ -58,7 +58,6 @@ Seminar 2 written solutions:
 
 Lecture 2 slides:
 
-
 Lecture 2 Handwritten notes:
 ![[Logic Lecture 2 (9 oct 2025)_251019_082701.pdf]]
 Lecture 2 written solutions:
