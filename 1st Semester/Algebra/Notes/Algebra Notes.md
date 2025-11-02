@@ -208,8 +208,11 @@ https://github.com/mirceamaierean/ubb/blob/main/1st%20Semester/Algebra/Seminars/
 
 ## Lecture 9 ()
 
+Lecture 9 slides:
 
-## Seminar 9()
+Lecture 9 handwritten notes:
+
+## Seminar 9 ()
 
 Seminar 9 exercises:
 https://github.com/FintinaOlivia/UBB-Computer-Science/blob/main/Semester%201/Linear%20Algebra/Seminars/Algebra-S09.pdf
@@ -219,14 +222,30 @@ Seminar 9 handwritten notes:
 Seminar 9 written solutions:
 https://github.com/mirceamaierean/ubb/blob/main/1st%20Semester/Algebra/Seminars/Written%20Solutions/seminar%209.pdf
 
-## Seminar 10()
+## Lecture 10 ()
+Lecture 10 slides:
+
+Lecture 10 handwritten notes:
+## Seminar 10 ()
 
 Seminar 10 exercises:
 https://github.com/FintinaOlivia/UBB-Computer-Science/blob/main/Semester%201/Linear%20Algebra/Seminars/Algebra-S10.pdf
-## Seminar 11()
+
+## Lecture 11 ()
+
+Lecture 11 slides:
+
+Lecture 11 handwritten notes:
+## Seminar 11 ()
 
 Seminar 11 exercises:
 https://github.com/FintinaOlivia/UBB-Computer-Science/blob/main/Semester%201/Linear%20Algebra/Seminars/Algebra-S11.pdf
+
+## Lecture 12 ()
+
+Lecture 12 slides:
+
+Lecture 12 handwritten notes:
 ## Seminar 12()
 
 Seminar 12 exercises:
