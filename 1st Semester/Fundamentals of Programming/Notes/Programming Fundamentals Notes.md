@@ -740,6 +740,6 @@ def btrack(int gap, (2) int sum,...):
 		# (2) if we don't want to cancel every time, we could use local parameters
 ```
 
-EXAMPLE:
+## DYNAMIC PROGRAMMING RECALL for lab4
 
 ## Seminar 4 

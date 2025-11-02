@@ -118,4 +118,4 @@ Conversions:
 ![[Drawing 2025-11-02 14.56.17.excalidraw.md]]
 
 Midterm model:
-![[]]
+![[Drawing 2025-11-02 14.05.51.excalidraw.md]]
