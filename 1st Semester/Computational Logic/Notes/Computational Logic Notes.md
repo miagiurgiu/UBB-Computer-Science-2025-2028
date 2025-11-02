@@ -73,7 +73,13 @@ Lecture 2 Handwritten notes:
 Lecture 2 written solutions:
 
 ## Seminar 3
-#codes
+#directcode 
+#inversecode 
+#complementcode 
+#additionofcomplements
+#overflow
+#fixedpoint 
+
 
 Seminar 3 exercises:
 
