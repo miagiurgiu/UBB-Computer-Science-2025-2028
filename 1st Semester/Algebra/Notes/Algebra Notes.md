@@ -250,6 +250,11 @@ Lecture 12 handwritten notes:
 
 Seminar 12 exercises:
 https://github.com/FintinaOlivia/UBB-Computer-Science/blob/main/Semester%201/Linear%20Algebra/Seminars/Algebra-S12.pdf
+
+## Lecture 13 ()
+Lecture 13 slides:
+
+Lecture 13 handwritten notes:
 ## Seminar 13()
 
 Seminar 13 exercises:
