@@ -17,6 +17,8 @@ Seminar 1 exercises:
 
 Seminar 1 Handwritten notes:
 
+![[Logic Seminar 1 (1 oct 2025)_251002_125740.pdf]]
+
 Seminar 1 written solutions:
 
 
