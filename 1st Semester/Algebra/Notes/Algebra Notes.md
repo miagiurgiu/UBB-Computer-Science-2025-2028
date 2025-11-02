@@ -156,7 +156,7 @@ Seminar 5 handwritten notes:
 Seminar 5 written solutions:
 https://github.com/mirceamaierean/ubb/blob/main/1st%20Semester/Algebra/Seminars/Written%20Solutions/seminar%205.pdf
 
-## Lecture 5 ()
+## Lecture 5 (3 nov 2025)
 
 Lecture 5 slides:
 ![[Algebra-C05-slides.pdf]]
@@ -164,7 +164,7 @@ Lecture 5 slides:
 Lecture 5 handwritten notes:
 
 
-## Seminar 6()
+## Seminar 6 (5 nov 2025)
 
 Seminar 6 exercises:
 ![[Algebra-S06.pdf]]
@@ -175,6 +175,11 @@ Seminar 6 handwritten notes:
 Seminar 6 written solutions:
 https://github.com/mirceamaierean/ubb/blob/main/1st%20Semester/Algebra/Seminars/Written%20Solutions/seminar%206.pdf
 
+## Lecture 7 ()
+
+Lecture slides:
+
+Lecture
 ## Seminar 7 ()
 
 Seminar 7 exercises:
