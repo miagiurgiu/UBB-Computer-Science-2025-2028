@@ -150,7 +150,10 @@ I addnotated directly on the slides (see above)
 #generatedsubspace 
 #vectorspaces 
 #subspaces 
-#endomorphismsofvector
+#endomorphisms 
+#kernel
+#image
+
 Seminar 5 exercises:
 ![[Algebra-S05.pdf]]
 https://github.com/FintinaOlivia/UBB-Computer-Science/blob/main/Semester%201/Linear%20Algebra/Seminars/Algebra-S05.pdf
@@ -162,6 +165,8 @@ Seminar 5 written solutions:
 https://github.com/mirceamaierean/ubb/blob/main/1st%20Semester/Algebra/Seminars/Written%20Solutions/seminar%205.pdf
 
 ## Lecture 5 (3 nov 2025)
+#linearindependence
+#bases
 
 Lecture 5 slides:
 ![[Algebra-C05-slides.pdf]]
