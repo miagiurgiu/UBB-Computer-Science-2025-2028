@@ -151,13 +151,16 @@ Seminar 5 exercises:
 https://github.com/FintinaOlivia/UBB-Computer-Science/blob/main/Semester%201/Linear%20Algebra/Seminars/Algebra-S05.pdf
 
 Seminar 5 handwritten notes:
+![[Algebra Seminar 5 (29 oct 2025).pdf]]
 
 Seminar 5 written solutions:
 https://github.com/mirceamaierean/ubb/blob/main/1st%20Semester/Algebra/Seminars/Written%20Solutions/seminar%205.pdf
 
+##
 ## Seminar 6()
 
 Seminar 6 exercises:
+![[Algebra-S06.pdf]]
 https://github.com/FintinaOlivia/UBB-Computer-Science/blob/main/Semester%201/Linear%20Algebra/Seminars/Algebra-S06.pdf
 
 Seminar 6 handwritten notes:
@@ -181,7 +184,6 @@ Seminar 8 exercises:
 https://github.com/FintinaOlivia/UBB-Computer-Science/blob/main/Semester%201/Linear%20Algebra/Seminars/Algebra-S08.pdf
 
 Seminar 8 handwritten notes:
-![[Algebra Seminar 5 (29 oct 2025).pdf]]
 
 Seminar 8 written solutions:
 https://github.com/mirceamaierean/ubb/blob/main/1st%20Semester/Algebra/Seminars/Written%20Solutions/seminar%208.pdf
