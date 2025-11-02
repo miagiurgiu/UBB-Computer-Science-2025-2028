@@ -758,4 +758,4 @@ ex 4 - dinamic programming
 ## Seminar 5
 ![[FP Seminar 5 (31 oct 2025)_251102_171225.pdf]]
 
-## Lab 5
+
