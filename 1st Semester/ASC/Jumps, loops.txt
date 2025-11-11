@@ -1,0 +1,215 @@
+1. Given an array of words s, compute in d an array where d[i]=s[i]+s[i+1].
+
+bits 32
+global start
+extern exit
+import exit msvcrt.dll
+segment data use32 class=data:
+	s dw 10,11,2,3,4
+	l equ ($-s)/2
+	d times (l-1) dw 0 # !
+segment code use32 class=code:
+	mov ecx, l-1 # !
+	mov edi,0
+	mov esi,0
+	jecxz end_loop
+	start_loop:
+		mov ax, [s+esi]
+		add ax, [s+esi+2]
+		mov [d+edi], ax
+		add edi, 2
+		add esi, 2
+	loop start_loop
+	end_loop:
+	push dword 0
+	call [exit]
+
+2. Given an array of dwords s, build d such that d[i] = s[i] / s[i+1] (signed).
+
+bits 32
+global start
+extern exit
+import exit msvcrt.dll # !
+segment data use32 class=data:
+	s dd 10,5,5,4,2
+	l equ ($-s)/4
+	d times (l-1) dd 0
+segment code use32 class=code:
+	mov ecx, l-1
+	mov edi,0
+	mov esi,0
+	jecxz end_loop
+	start_loop:
+		mov eax, [s+esi]
+		cdq # !
+		idiv dword[s+esi+4] # !
+		mov [d+edi], eax
+		add edi, 4
+		add esi, 4
+	loop start_loop
+	end_loop:
+	push dword 0
+	call [exit]
+	
+daca am de facut atat de multe iteratii incat depaseste lungimea registrului index?
+
+3. Given a string of bytes s, copy into d only the even numbers, keeping their original order.
+
+jpe , jpo
+
+bits 32
+global start
+extern exit
+import exit msvcrt.dll
+segment data use32 class=data:
+	s db 2,3,7,8,10
+	l equ ($-s)
+	d times l db 0
+segment code use32 class=code:
+	mov esi, 0
+	mov edi, 0
+	mov ecx, l
+	jecxz end_loop
+	start_loop:
+		mov al, [s+esi]
+		test al, 1
+		jpo skip
+			mov [d+edi], al
+			inc edi
+		skip:
+		inc esi
+	loop start_loop
+	end_loop:
+	push dword 0
+	call [exit]
+			
+4. Given an array of dwords s, compute the sum of elements that are negative (signed). 
+
+bits 32 
+global start 
+extern exit 
+import exit msvcrt.dll 
+segment data use32 class=data: 
+	s dd 10,-20,-4,5,-1 
+	l equ ($-s)/4 
+	sum dd 0
+segment code use32 class=code: 
+	mov esi,0 
+	mov ecx, l 
+	jecxz end_loop
+	start_loop: 
+		mov eax, [s+esi]
+		cmp eax, 0
+		jge skip 
+			add [sum], eax
+		skip: 
+		add esi,4 
+	loop start_loop 
+	end_loop: 
+	push dword 0 
+	call [exit]	
+
+5. Given an array of bytes s, create d containing only elements that are greater than 100, in reverse order (signed).
+
+bits 32
+global start
+extern exit
+import exit msvcrt.dll
+segment data use32 class=data:
+	s db 101, 254, 34, -9, 129
+	l equ ($-s)
+	d times l db 0
+segment code use32 class=code:
+	mov edi,0	
+	mov esi,l-1
+	mov ecx, l
+	jecxz end_loop
+	start_loop:
+		mov al, [s+esi]
+		cmp al, 100
+		jle skip
+			mov [d+edi], al
+			inc edi
+		skip
+		dec esi
+	loop start_loop
+	end_loop:
+	push dword 0
+	call [exit]	
+
+6. teacher's lab example 1:
+
+; se dau 2 siruri de caractere s1 si s2.
+; sa se construiasca sirul D ce contine toate elementele din s1 care nu apar in s2
+bits 32
+global start
+extern exit
+import exit msvcrt.dll
+segment data use32 class=data
+    s1 db '+', '4', '2', 'a', '8', '4', 'X', '5'
+    l1 equ $-s1
+    s2 db 'a', '4', '5'
+    l2 equ $-s2
+    D times l1 db 0
+    
+segment code use32 class=code
+    start:
+        mov ecx, l1; punem lungimea in ecx pt a putea realiza bucla loop de ecx ori
+        mov esi, 0
+        mov edi, 0
+        jecxz Sfarsit
+        Repeta:
+            mov al, [s1+esi] ; in al avem informatia curenta din S1
+            ; parcurgem sirul S2 si verificam 
+            mov edx, 1 ; 1 daca nu apare in s2, 0 daca apare
+            mov ebx, 0 ; index in s2
+            startLoop:
+                ; verificam daca al = valoarea din s2
+                cmp al, byte[s2+ebx]
+                jne okay 
+                    xor edx, edx ; gasit
+                okay:
+                ; continui pana la capatul s2
+                inc ebx
+                cmp ebx, l2
+                jl startLoop
+            cmp edx, 1 ; nu l-am gasit in s2 => bagam in d
+            jne final
+            mov [D+edi], al
+            inc edi
+            final:
+            inc esi ; urmatorul din s1
+        loop Repeta
+        Sfarsit:
+        push dword 0
+        call [exit]
+
+7. teacher's lab example 2:
+
+;Se da un sir de caractere format din litere mici
+;Sa se transforme acest sir in sirul literelor mari corespunzator
+bits 32
+global start
+extern exit, printf
+import exit msvcrt.dll
+segment data use32 class=data
+    s db 'a', 'b', 'c', 'm', 'n'
+    l equ $-se
+    d times l db 0
+    
+segment code use32 class=code
+    start:
+        mov ecx, 5
+        mov esi,0
+        jecxz Sfarsit
+        Repeta:
+            mov  al, [s+esi]
+            mov bl, 'a'-'A'
+            sub al, bl
+            mov [d+esi], al
+            inc esi
+        loop Repeta
+        Sfarsit
+        
+        push dword 0
+        call [exit]
