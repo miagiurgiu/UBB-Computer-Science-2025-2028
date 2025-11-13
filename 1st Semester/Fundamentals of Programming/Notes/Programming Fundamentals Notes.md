@@ -919,6 +919,9 @@ def is_full_board(board) -> bool:
 	
 	"""
 	 verify if the board is full
+	 valid move -> decrease 
+	 if 0 -> return false
 	"""
 
+def move_board(board, symbol: str, row:)
 ```
