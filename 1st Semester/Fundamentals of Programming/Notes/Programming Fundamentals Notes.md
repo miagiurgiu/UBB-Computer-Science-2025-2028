@@ -900,6 +900,12 @@ def create_board():
 	the board is represented as  a list of lists (matrix)
 	 
 	 board cells:
-	 0 - emp
+	 0 - empty cell
+	 1 - 'x' played
+	 2 - '0' played
+	 
+	 function must return an empty board
 	"""
+
+def is_won_board(board)
 ```
