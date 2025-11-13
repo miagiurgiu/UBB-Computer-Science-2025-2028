@@ -855,7 +855,7 @@ from rational_as_list import *
 import rational_as_list
 import rational_as_dict
 import rational_as_list as rl # with alias 
-import rational_as_list import create_rational as newq, to_str # recommended
+import rational_as_list import create_rational as newq, to_str # recommended, the added modules are automatically put in a dictionary
 import *
 
 # we use these with dot "."
