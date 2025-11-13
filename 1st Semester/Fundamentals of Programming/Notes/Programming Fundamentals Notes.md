@@ -816,5 +816,7 @@ Packages in PyCharm:
 - from lecture.examples.ex30_modules.rational.rational_dict import create_rational, get_numerator, get_denominator (example from FP repo)
 - numpy - used to working with arrays
 
+Documentation should live next to the code
+
 IDE's: a set of rules -> need linker/compiler/interpreter to run it
 compiler for python? interpreter for python?
