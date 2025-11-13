@@ -896,6 +896,10 @@ board.py:
 
 def create_board():
 	"""
-		create an empty tic tac toes board
+	create an empty tic tac toe board
+	the board is represented as  a list of lists (matrix)
+	 
+	 board cells:
+	 0 - emp
 	"""
 ```
