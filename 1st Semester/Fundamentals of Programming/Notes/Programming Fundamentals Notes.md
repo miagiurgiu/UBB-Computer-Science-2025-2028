@@ -796,6 +796,10 @@ Modules in Python:
 - default implementation of Python: CPython -> calls the C code behind Python
 - sorted() much faster because we called a function that is written in C
 
+```
+from pdoc import pdoc
+
+```
 How to define a Python module:
 1) write a .py file
 2) write it in c
