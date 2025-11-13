@@ -867,5 +867,5 @@ MAIN GUARD in python
 If we don't want our function to be accessed by other modules (private):
 ```
 def _super_secret_function():
+# those functions won't be visible in the documentation or in the generic import
 ```
-those 
