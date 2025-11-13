@@ -850,11 +850,15 @@ calc.py
 -> new "main" module
 -> we can import rational_as_dict.py, rational_as_list.py in != ways
 
-
+```
 from rational_as_list import *
-
+import 
+```
 
 ```
 __main__ -> the module used to start the python program
 MAIN GUARD in python
 ```
+
+If we don't want our function to be accessed by other modules:
+def _super_se
