@@ -853,6 +853,10 @@ calc.py
 ```
 from rational_as_list import *
 import rational_as_list
+import rational_as_dict
+import rational_as_list as rl # with alias 
+
+# we use these with dot "."
 ```
 
 ```
@@ -864,3 +868,4 @@ If we don't want our function to be accessed by other modules (private):
 ```
 def _super_secret_function():
 ```
+those 
