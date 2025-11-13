@@ -817,6 +817,7 @@ Packages in PyCharm:
 - numpy - used to working with arrays
 
 Documentation should live next to the code
+"add parameters to docstring"
 
 ```
 def add_rational(q1, q2):  
