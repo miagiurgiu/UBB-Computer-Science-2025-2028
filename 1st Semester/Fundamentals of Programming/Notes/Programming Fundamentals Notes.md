@@ -881,4 +881,4 @@ when running the program -> we can run != things -> choose "run ui"
 
 take a look at how history works!
 
-## Seminar 
+## Seminar 7 (13 nov 2025)
