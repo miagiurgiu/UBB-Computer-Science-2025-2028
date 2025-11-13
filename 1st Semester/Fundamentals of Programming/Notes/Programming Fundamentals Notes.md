@@ -809,7 +809,7 @@ How to import modules:
 - catch ImportError is dangerous
 
 Packages in PyCharm:
-
+- venv - virtual
 
 IDE's: a set of rules -> need linker/compiler/interpreter to run it
 compiler for python? interpreter for python?
