@@ -792,3 +792,5 @@ Modules in Python:
 - has a name
 - docstring (""" """)
 - ?
+
+IDE's: a set of rules
