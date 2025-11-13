@@ -842,3 +842,7 @@ def add_rational(q1, q2):
 ```
 IDE's: a set of rules -> need linker/compiler/interpreter to run it
 compiler for python? interpreter for python?
+
+calc.py -> new "main" module
+rational_as_dict.py
+rational_as_list.py
