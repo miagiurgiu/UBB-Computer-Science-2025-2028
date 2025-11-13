@@ -783,4 +783,5 @@ programming in the large - syntax made for humans
 Modules in C/C++:
 - header files: .h
 - want a list? list.h and list.c
+- c is much older -> separate stuff from program implementation
 .cpp 
