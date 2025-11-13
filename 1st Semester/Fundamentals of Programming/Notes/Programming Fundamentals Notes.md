@@ -786,3 +786,7 @@ Modules in C/C++:
 - c is much older -> separate stuff from program implementation
 .cpp 
 parallel: masina cu servo-directie
+
+Modules in Python:
+- one module = one file
+- has a name
