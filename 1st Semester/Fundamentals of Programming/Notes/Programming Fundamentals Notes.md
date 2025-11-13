@@ -816,7 +816,7 @@ Packages in PyCharm:
 - from lecture.examples.ex30_modules.rational.rational_dict import create_rational, get_numerator, get_denominator (example from FP repo)
 - numpy - used to working with arrays
 
-Documentation should live next to the code so that they are updated and work together + tools that allow to export to huma-readable formats like pdf -> see how the program works
+Documentation (""" """ block in the function) should live next to the code so that they are updated and work together + tools that allow to export to huma-readable formats like pdf/html -> markdown -> see how the program works
 "add parameters to docstring"
 
 ```
