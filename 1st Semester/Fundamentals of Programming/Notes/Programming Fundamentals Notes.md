@@ -765,4 +765,8 @@ ex 4 - dinamic programming
 #packages
 #calculator
 
-Modular programming - continuation of procedural programming
+Modular programming 
+- continuation of procedural programming
+- independent + interchangeable
+
+A
