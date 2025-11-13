@@ -880,3 +880,5 @@ when running the program -> we can run != things -> choose "run ui"
 "raise" and "return" aren't actual "printing functions", you can have them in other modules
 
 take a look at how history works!
+
+## Seminar 
