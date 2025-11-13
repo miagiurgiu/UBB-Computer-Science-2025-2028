@@ -792,9 +792,15 @@ Modules in Python:
 - one module = one file
 - has a name
 - docstring (""" """)
-- ?
 - default implementation of Python: CPython -> calls the C code behind Python
 - sorted() much faster because we called a function that is written in C
+
+How to define a Python module:
+1) write a .py file
+2) write it in c
+3) some modules are called build-in
+
+
 
 IDE's: a set of rules -> need linker/compiler/interpreter to run it
 compiler for python? interpreter for python?
