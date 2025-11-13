@@ -943,5 +943,7 @@ def computer_move(board):
 ```
 
 ```
-ui.
+ui.py
+
+
 ```
