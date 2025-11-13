@@ -925,6 +925,9 @@ def is_full_board(board) -> bool:
 
 def move_board(board: list, symbol: str, row:int, col:int):
 
+def get_cell_board(board: list, row:int, col:int):
+
+
 ```
 
 ```
