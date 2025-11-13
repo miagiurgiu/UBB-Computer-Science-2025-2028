@@ -782,6 +782,7 @@ programming in the large - syntax made for humans
 
 Modules in C/C++:
 - header files: .h
-- want a list? list.h and list.c
+- want a list? list.h (stuff) and list.c (implementation) 
 - c is much older -> separate stuff from program implementation
 .cpp 
+parallel: masina cu servodire
