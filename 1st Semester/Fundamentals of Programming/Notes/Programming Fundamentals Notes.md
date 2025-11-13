@@ -818,5 +818,16 @@ Packages in PyCharm:
 
 Documentation should live next to the code
 
+```
+def add_rational(q1, q2):  
+    """  
+    Return the sum of rational numbers q1 and q2    #DOCSTRING
+    """    
+    gn = get_numerator  # Python functions are first-class citizens :)  
+    gd = get_denominator  
+    # first-class citizens == can be used just like variables (send as parameters, return, assignment)  
+    # type of gn after the assignment is function    # gn is not called unless we use the call operator ->  ()    return create_rational(gn(q1) * gd(q2) + gn(q2) * gd(q1), gd(q1) * gd(q2))
+
+```
 IDE's: a set of rules -> need linker/compiler/interpreter to run it
 compiler for python? interpreter for python?
