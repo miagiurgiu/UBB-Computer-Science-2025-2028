@@ -891,3 +891,11 @@ game.py
 ui.py
 - handle the program's user interaction
 
+```
+board.py:
+
+def create_board():
+	"""
+		create an empty tic tac toes board
+	"""
+```
