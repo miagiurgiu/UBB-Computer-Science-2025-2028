@@ -771,3 +771,6 @@ Modular programming
 
 Pros:
 - 
+
+commit - local operation
+two programmers working on the same project -> push -> conflict
