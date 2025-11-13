@@ -918,7 +918,7 @@ def is_won_board(board) -> bool:
 def is_full_board(board) -> bool:
 	
 	"""
-	
+	 verify if the board is full
 	"""
 
 ```
