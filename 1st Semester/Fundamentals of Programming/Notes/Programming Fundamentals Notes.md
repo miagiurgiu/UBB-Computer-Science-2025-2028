@@ -848,3 +848,8 @@ calc.py
 -> we can import rational_as_dict.py, rational_as_list.py in != ways
 rational_as_dict.py
 rational_as_list.py
+
+```
+__main__ -> the module used to start the python program
+MAIN GUARD in python
+```
