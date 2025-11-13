@@ -883,7 +883,10 @@ take a look at how history works!
 
 ## Seminar 7 (13 nov 2025)
 
+Modules:
 board.py 
--  handles the board entity for our tic tac toe game 
+- handles the board entity for our tic tac toe game 
 game.py
-- docstring - handle the human player's and the computer's moves on the board
+- handles the human player's and the computer's moves on the board
+ui.py
+- HANDLE THE PROGRAM'
