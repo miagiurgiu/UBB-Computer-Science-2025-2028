@@ -874,3 +874,5 @@ def _super_secret_function():
 # those functions won't be visible in the documentation or in the generic import
 ```
 pdoc interpreter
+
+when running the program -> we can run != things -> choose "run ui"
