@@ -806,8 +806,9 @@ How to import modules:
 - import span
 - import ... as  -> alias
 - you can import anywhere you want, but not recommended
-- 
--
+- catch ImportError is dangerous
+
+
 
 IDE's: a set of rules -> need linker/compiler/interpreter to run it
 compiler for python? interpreter for python?
