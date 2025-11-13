@@ -911,5 +911,14 @@ def is_won_board(board) -> bool:
 	 """
 	 return type bool: True if the board is won, False otherwise
 	 param board: the game board
+	 
+	 check if the same symbol appears 3 times on the same rorw/column/diagonal
 	 """
+
+def is_full_board(board) -> bool:
+	
+	"""
+	
+	"""
+
 ```
