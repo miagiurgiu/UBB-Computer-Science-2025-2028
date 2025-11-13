@@ -927,6 +927,70 @@ def move_board(board: list, symbol: str, row:int, col:int):
 
 def get_cell_board(board: list, row:int, col:int) -> int:
 
+Modules:
+board.py 
+- handles the board entity for our tic tac toe game 
+game.py
+- handles the human player's and the computer's moves on the board
+ui.py
+- handle the program's user interaction
+
+```
+board.py:
+
+def create_board():
+	"""
+	create an empty tic tac toe board
+	the board is represented as  a list of lists (matrix)
+	 
+	 board cells:
+	 0 - empty cell
+	 1 - 'x' played
+	 2 - '0' played
+	 
+	 function must return an empty board
+	"""
+
+def is_won_board(board) -> bool:
+	 """
+	 return type bool: True if the board is won, False otherwise
+	 param board: the game board
+	 
+	 check if the same symbol appears 3 times on the same rorw/column/diagonal
+	 """
+
+def is_full_board(board) -> bool:
+	
+	"""
+	 verify if the board is full
+	 valid move -> decrease 
+	 if 0 -> return false faster way, not O(n^2)
+	"""
+
+def move_board(board: list, symbol: str, row:int, col:int):
+
+def get_cell_board(board: list, row:int, col:int) -> int:
+
+
+
+```
+
+```
+game.py
+
+where to place the computer symbol?
+
+def human_move(board, row:int, col:int):
+
+def computer_move(board):
+
+```
+
+```
+ui.py
+
+message if beated
+```
 
 
 ```
