@@ -808,6 +808,7 @@ How to import modules:
 - you can import anywhere you want, but not recommended
 - catch ImportError is dangerous
 
+Packages in PyCharm:
 
 
 IDE's: a set of rules -> need linker/compiler/interpreter to run it
