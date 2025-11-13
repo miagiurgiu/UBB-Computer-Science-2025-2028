@@ -784,7 +784,7 @@ Modules in C/C++:
 - header files: .h (signatures, documentation for all the methods, not compiled)
 - want a list? list.h (stuff) and list.c (implementation) 
 - c is much older -> separate stuff from program implementation
-- include take shte header 
+- **include** take the header file and copy pastes-in into the current file
 .cpp ?
 
 parallel: masina cu servo-directie
@@ -805,6 +805,8 @@ How to import modules:
 - **import**
 - import span
 - import ... as  -> alias
+- you can import anywhere you want, but not recommended
+- 
 -
 
 IDE's: a set of rules -> need linker/compiler/interpreter to run it
