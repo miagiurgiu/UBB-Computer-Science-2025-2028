@@ -770,7 +770,7 @@ Modular programming
 - independent + interchangeable
 
 Pros:
-- 
+- allows working on programs by > programmers without github conflicts
 
 commit - local operation
 two programmers working on the same project -> push -> conflict
