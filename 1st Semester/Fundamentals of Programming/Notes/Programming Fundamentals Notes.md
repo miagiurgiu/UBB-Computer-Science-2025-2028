@@ -784,7 +784,8 @@ Modules in C/C++:
 - header files: .h (signatures, documentation for all the methods, not compiled)
 - want a list? list.h (stuff) and list.c (implementation) 
 - c is much older -> separate stuff from program implementation
-.cpp 
+.cpp ?
+
 parallel: masina cu servo-directie
 
 Modules in Python:
@@ -792,5 +793,7 @@ Modules in Python:
 - has a name
 - docstring (""" """)
 - ?
+- default implementation of Python: CPython
 
-IDE's: a set of rules
+IDE's: a set of rules -> need linker/compiler/interpreter to run it
+compiler for python
