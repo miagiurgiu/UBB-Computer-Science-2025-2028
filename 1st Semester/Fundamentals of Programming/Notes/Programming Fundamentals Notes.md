@@ -781,7 +781,7 @@ interpreter - runs the last function
 programming in the large - syntax made for humans
 
 Modules in C/C++:
-- header files: .h (signatures, documentation for all the methods)
+- header files: .h (signatures, documentation for all the methods, not compiled)
 - want a list? list.h (stuff) and list.c (implementation) 
 - c is much older -> separate stuff from program implementation
 .cpp 
