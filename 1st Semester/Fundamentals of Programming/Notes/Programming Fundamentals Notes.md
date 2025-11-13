@@ -800,6 +800,10 @@ Modules in Python:
 from pdoc import pdoc
 # allows us to get a html -> html file in pycharm -> open in browser
 
+"""
+>>> add_rational(create_rational(1), create_rational(3))
+"""
+
 ```
 How to define a Python module:
 1) write a .py file
