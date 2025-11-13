@@ -759,5 +759,8 @@ ex 4 - dinamic programming
 ![[FP Seminar 5 (31 oct 2025)_251102_171225.pdf]]
 
 
-## Lecture 7 (13 nov 2025)
+## Lecture 6/7 (13 nov 2025)
 ### Modular Programming
+#modules 
+#packages
+#calculator
