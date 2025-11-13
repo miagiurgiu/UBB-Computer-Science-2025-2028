@@ -813,6 +813,8 @@ Packages in PyCharm:
 - faker -> create random data, cities, names
 - they group modules in order to avoid name conflicts
 - like an address -> country.city.street.nr.person_name
+- from lecture.examples.ex30_modules.rational.rational_dict import create_rational, get_numerator, get_denominator (example from FP repo)
+- 
 
 IDE's: a set of rules -> need linker/compiler/interpreter to run it
 compiler for python? interpreter for python?
