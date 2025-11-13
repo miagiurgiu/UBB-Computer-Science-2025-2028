@@ -767,7 +767,7 @@ ex 4 - dinamic programming
 
 Modular programming 
 - continuation of procedural programming
-- independent + interchangeable
+- independent + interchangeable - the ui should work in the same way even if ... ?
 
 Pros:
 - allows working on programs by > programmers without github conflicts
@@ -877,4 +877,4 @@ pdoc interpreter
 
 when running the program -> we can run != things -> choose "run ui"
 
-;
+"raise" and "return"
