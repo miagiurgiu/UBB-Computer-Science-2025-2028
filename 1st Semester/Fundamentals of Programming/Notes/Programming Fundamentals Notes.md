@@ -773,6 +773,7 @@ Pros:
 - allows working on programs by > programmers without github conflicts
 - break down in smaller pieces
 
-commit - local operation
+commit - local operation on my computer
 two programmers working on the same project -> push -> conflict
 interpreter - runs the last function
+programming in the large - syntax made for humans
