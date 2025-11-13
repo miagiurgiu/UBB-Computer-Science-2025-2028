@@ -781,8 +781,8 @@ interpreter - runs the last function
 programming in the large - syntax made for humans
 
 Modules in C/C++:
-- header files: .h
+- header files: .h (signatures, documentation for all the methods)
 - want a list? list.h (stuff) and list.c (implementation) 
 - c is much older -> separate stuff from program implementation
 .cpp 
-parallel: masina cu servodire
+parallel: masina cu servo-directie
