@@ -920,7 +920,7 @@ def is_full_board(board) -> bool:
 	"""
 	 verify if the board is full
 	 valid move -> decrease 
-	 if 0 -> return false
+	 if 0 -> return false faster way, not O(n^2)
 	"""
 
 def move_board(board: list, symbol: str, row:int, col:int):
@@ -929,5 +929,9 @@ def move_board(board: list, symbol: str, row:int, col:int):
 
 ```
 game.py
+
+where to place the computer symbol?
+
+def human_move(board, row:int, col:int):
 
 ```
