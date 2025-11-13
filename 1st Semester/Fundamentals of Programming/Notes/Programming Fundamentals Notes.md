@@ -798,6 +798,7 @@ Modules in Python:
 
 ```
 from pdoc import pdoc
+# allows us to get a html -> html file in pycharm -> open in browser
 
 ```
 How to define a Python module:
