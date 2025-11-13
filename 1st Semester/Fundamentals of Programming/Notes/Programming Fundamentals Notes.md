@@ -852,7 +852,7 @@ calc.py
 
 ```
 from rational_as_list import *
-import 
+import rational_as_list
 ```
 
 ```
@@ -860,5 +860,7 @@ __main__ -> the module used to start the python program
 MAIN GUARD in python
 ```
 
-If we don't want our function to be accessed by other modules:
-def _super_se
+If we don't want our function to be accessed by other modules (private):
+```
+def _super_secret_function():
+```
