@@ -800,7 +800,9 @@ How to define a Python module:
 2) write it in c
 3) some modules are called build-in
 
-
+How to import modules:
+- **import**
+- 
 
 IDE's: a set of rules -> need linker/compiler/interpreter to run it
 compiler for python? interpreter for python?
