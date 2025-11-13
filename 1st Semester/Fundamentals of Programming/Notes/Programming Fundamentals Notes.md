@@ -790,3 +790,5 @@ parallel: masina cu servo-directie
 Modules in Python:
 - one module = one file
 - has a name
+- docstring (""" """)
+- ?
