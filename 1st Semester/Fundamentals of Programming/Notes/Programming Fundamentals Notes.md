@@ -941,3 +941,7 @@ def human_move(board, row:int, col:int):
 def computer_move(board):
 
 ```
+
+```
+ui.
+```
