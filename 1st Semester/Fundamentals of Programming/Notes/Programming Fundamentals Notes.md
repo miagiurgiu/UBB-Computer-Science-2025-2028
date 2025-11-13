@@ -907,5 +907,9 @@ def create_board():
 	 function must return an empty board
 	"""
 
-def is_won_board(board)
+def is_won_board(board) -> bool:
+	 """
+	 return type bool: True if the board is won, False otherwise
+	 param board: the game board
+	 """
 ```
