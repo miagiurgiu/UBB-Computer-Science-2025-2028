@@ -889,4 +889,4 @@ board.py
 game.py
 - handles the human player's and the computer's moves on the board
 ui.py
-- HANDLE THE PROGRAM'
+- handle the program's user interaction
