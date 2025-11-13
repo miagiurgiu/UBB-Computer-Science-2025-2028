@@ -782,4 +782,5 @@ programming in the large - syntax made for humans
 
 Modules in C/C++:
 - header files: .h
+- want a list? list.h and list.c
 .cpp 
