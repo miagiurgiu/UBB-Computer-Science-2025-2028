@@ -811,7 +811,8 @@ How to import modules:
 Packages in PyCharm:
 - venv - virtual
 - faker -> create random data, cities, names
-- they group
+- they group modules in order to avoid name conflicts
+- like an address -> country.city.street.nr.person_name
 
 IDE's: a set of rules -> need linker/compiler/interpreter to run it
 compiler for python? interpreter for python?
