@@ -859,6 +859,8 @@ import rational_as_list import create_rational as newq, to_str # recommended, th
 import *
 
 # we use these with dot "."
+rational_as_list.create_rational
+rational_as_dict.create_rational
 ```
 
 ```
