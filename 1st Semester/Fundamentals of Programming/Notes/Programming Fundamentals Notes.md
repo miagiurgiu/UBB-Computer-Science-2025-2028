@@ -923,5 +923,6 @@ def is_full_board(board) -> bool:
 	 if 0 -> return false
 	"""
 
-def move_board(board, symbol: str, row:)
+def move_board(board: list, symbol: str, row:int, col:int):
+
 ```
