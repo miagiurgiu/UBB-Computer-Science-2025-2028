@@ -794,7 +794,7 @@ Modules in Python:
 - docstring (""" """)
 - ?
 - default implementation of Python: CPython -> calls the C code behind Python
-- sorted() much faster because i
+- sorted() much faster because we called a function that is written in C
 
 IDE's: a set of rules -> need linker/compiler/interpreter to run it
 compiler for python? interpreter for python?
