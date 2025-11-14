@@ -838,18 +838,15 @@ def add_rational(q1, q2):
 ```
 
 How to import a python module?
-How to import modules:
-- **import**
-- import span
-- import ... as  -> alias
 - you can import anywhere you want, but not recommended
 - catch ImportError is dangerous
 ```
 import spam
 from spam import is_prime
-from
-
+from spam import is_prime as p # as alias
+from spam import **
 ```
+
 Modules in C/C++:
 - header files: .h (signatures, documentation for all the methods, not compiled)
 - want a list? list.h (stuff) and list.c (implementation) 
