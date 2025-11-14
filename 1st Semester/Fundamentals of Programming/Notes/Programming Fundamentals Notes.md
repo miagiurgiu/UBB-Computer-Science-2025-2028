@@ -901,8 +901,9 @@ from mypackage.moduleB import foo
 
 ```
 
-Virtual environments & Packages in PyCha
-- venv - virtual
+Virtual environments & Packages in PyCharm:
+- venv - virtual environment to isolate dependencies (pycharm can automatically create venvs)
+- != projects => != package versions
 - faker -> create random data, cities, names
 - they group modules in order to avoid name conflicts
 - like an address -> country.city.street.nr.person_name
