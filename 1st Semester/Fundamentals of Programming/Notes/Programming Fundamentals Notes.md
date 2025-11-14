@@ -841,6 +841,7 @@ How to import a python module?
 - you can import anywhere you want, but not recommended inside functions
 - catch ImportError is dangerous
 - **import** does the following: loads the module -> adds names into local symbol table -> accessible via **spam.something**
+
 ```
 import spam
 from spam import is_prime
@@ -859,17 +860,24 @@ from pdoc import pdoc
 
 """
 >>> add_rational(create_rational(1), create_rational(3))
-
-```
-
 """
-
 ```
 
 
 
+Modules in C/C++:
+- header files: .h (signatures, documentation for all the methods, not compiled)
+- want a list? list.h (stuff) and list.c (implementation) 
+- c is much older -> separate stuff from program implementation
+- **include** take the header file and copy pastes-in into the current file
+.cpp ?
 
-```
+parallel: masina cu servo-directie
+
+
+
+
+
 
 Packages in PyCharm:
 A package is a directory containing:
