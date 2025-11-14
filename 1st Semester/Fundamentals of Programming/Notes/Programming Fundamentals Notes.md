@@ -766,8 +766,12 @@ ex 4 - dinamic programming
 #calculator
 
 Modules & Packages overview
-Modules, packages and functions 
-Modular programming 
+Modules, packages and functions help break programs into smaller, easier, reusable pieces.
+
+Programming paradigms:
+1. PROCEDURAL programming
+	- program = functions calling each other
+2. Modula programming 
 - continuation of procedural programming
 - independent + interchangeable - the ui should work in the same way even if ... ?
 
