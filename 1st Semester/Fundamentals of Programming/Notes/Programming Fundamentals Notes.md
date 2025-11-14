@@ -837,6 +837,19 @@ def add_rational(q1, q2):
 
 ```
 
+How to import a python module?
+How to import modules:
+- **import**
+- import span
+- import ... as  -> alias
+- you can import anywhere you want, but not recommended
+- catch ImportError is dangerous
+```
+import spam
+from spam import is_prime
+from
+
+```
 Modules in C/C++:
 - header files: .h (signatures, documentation for all the methods, not compiled)
 - want a list? list.h (stuff) and list.c (implementation) 
@@ -858,17 +871,8 @@ from pdoc import pdoc
 """
 
 ```
-How to define a Python module:
-1) write a .py file
-2) write it in c
-3) some modules are called build-in
 
-How to import modules:
-- **import**
-- import span
-- import ... as  -> alias
-- you can import anywhere you want, but not recommended
-- catch ImportError is dangerous
+
 
 Packages in PyCharm:
 - venv - virtual
