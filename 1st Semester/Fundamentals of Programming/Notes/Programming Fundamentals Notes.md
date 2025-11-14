@@ -845,7 +845,7 @@ How to import a python module?
 import spam
 from spam import is_prime
 from spam import is_prime as p # as alias
-from spam import * # not recommended because it could cause nam
+from spam import * # not recommended because it could cause name collisions
 
 # examine imported names:
 dir(spam)
@@ -876,18 +876,19 @@ from pdoc import pdoc
 
 
 
+
+```
+
 Packages in PyCharm:
+A package is a directory containing:
+1. modules
+2. 
 - venv - virtual
 - faker -> create random data, cities, names
 - they group modules in order to avoid name conflicts
 - like an address -> country.city.street.nr.person_name
 - from lecture.examples.ex30_modules.rational.rational_dict import create_rational, get_numerator, get_denominator (example from FP repo)
 - numpy - used to working with arrays
-
-
-```
-
-
 
 IDE's: a set of rules -> need linker/compiler/interpreter to run it
 compiler for python? interpreter for python?
