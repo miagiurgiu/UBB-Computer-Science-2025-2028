@@ -848,18 +848,10 @@ from spam import is_prime as p # as alias
 from spam import * # not recommended because it could cause name collisions
 
 # examine imported names:
-dir(spam)
-help(spam)
+dir(spam) # names
+help(spam) # documentation
+pydoc/pdoc # generates HTML docs
 ```
-
-Modules in C/C++:
-- header files: .h (signatures, documentation for all the methods, not compiled)
-- want a list? list.h (stuff) and list.c (implementation) 
-- c is much older -> separate stuff from program implementation
-- **include** take the header file and copy pastes-in into the current file
-.cpp ?
-
-parallel: masina cu servo-directie
 
 ```
 from pdoc import pdoc
@@ -904,6 +896,9 @@ from mypackage.moduleB import foo
 Virtual environments & Packages in PyCharm:
 - venv - virtual environment to isolate dependencies (pycharm can automatically create venvs)
 - != projects => != package versions
+
+Explore modules:
+
 - faker -> create random data, cities, names
 - they group modules in order to avoid name conflicts
 - like an address -> country.city.street.nr.person_name
