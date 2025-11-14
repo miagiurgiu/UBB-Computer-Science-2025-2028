@@ -905,7 +905,6 @@ Virtual environments & Packages in PyCharm:
 - venv - virtual environment to isolate dependencies (pycharm can automatically create venvs)
 - != projects => != package versions
 
-
 - faker -> create random data, cities, names
 - they group modules in order to avoid name conflicts
 - like an address -> country.city.street.nr.person_name
@@ -922,6 +921,7 @@ calc.py
 -> new "main" module
 -> we can import modules like rational_as_dict.py, rational_as_list.py in != ways
 
+
 ```
 from rational_as_list import *
 import rational_as_list
@@ -935,12 +935,16 @@ rational_as_list.create_rational
 rational_as_dict.create_rational
 ```
 
+The _____main_____ guard
+prevents code from executing when module is imported
 ```
 __main__ -> the module used to start the python program
 MAIN GUARD in python
 ```
 
-If we don't want our function to be accessed by other modules (kind of private, good practice not to use):
+"Private functions"
+prefix
+If we don't want our function to be accessed by other modules (kind of private, good practice not to use)
 ```
 def _super_secret_function():
 # those functions won't be visible in the documentation or in the generic import
