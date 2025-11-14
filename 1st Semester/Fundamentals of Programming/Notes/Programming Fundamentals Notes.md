@@ -957,8 +957,25 @@ when running the program -> we can run != things -> choose "run ui"
 
 take a look at how history works!
 
-## Seminar 7 (13 nov 2025)
+### 
 
+## Seminar 7 (13 nov 2025) Tic Tac Toe game
+
+1) board.py
+- handles the game board
+- NO `input()` or `print()` here
+- functions:
+    
+    - `create_board`
+    - `move_board`
+        
+    - `is_won_board`
+        
+    - `is_full_board`
+        
+    - `get_cell_board`
+        
+    - `to_str`
 Modules:
 board.py 
 - handles the board entity for our tic tac toe game 
