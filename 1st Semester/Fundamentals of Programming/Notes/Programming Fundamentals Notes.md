@@ -838,14 +838,18 @@ def add_rational(q1, q2):
 ```
 
 How to import a python module?
-- you can import anywhere you want, but not recommended
+- you can import anywhere you want, but not recommended inside functions
 - catch ImportError is dangerous
 - **import** does the following: loads the module -> adds names into local symbol table -> accessible via **spam.something**
 ```
 import spam
 from spam import is_prime
 from spam import is_prime as p # as alias
-from spam import **
+from spam import * # not recommended because it could cause nam
+
+# examine imported names:
+dir(spam)
+help(spam)
 ```
 
 Modules in C/C++:
