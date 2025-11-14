@@ -817,8 +817,10 @@ How to create a python module?
 commit - local operation on my computer
 two programmers working on the same project -> push -> conflict
 interpreter - runs the last function
-3. built-in modules (python -> settings -> interpr)
+3. built-in modules (python -> settings -> interpreter -> install numpy/texttable etc.)
 
+Module Docstring
+- lives at the top 
 Modules in C/C++:
 - header files: .h (signatures, documentation for all the methods, not compiled)
 - want a list? list.h (stuff) and list.c (implementation) 
