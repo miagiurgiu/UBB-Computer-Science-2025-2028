@@ -813,11 +813,11 @@ A module is a .py file containing:
 - executable statements (function definitions, constants, init code)
 How to create a python module?
 1. write a .py file
-2. (optional) write a C extension module (CPython) -> CPython is the default implementation of Python. This module calls the C code behind Python -> THIS IS WHY when we tested runtime for sorting algorithms the sorted() function performed much faster (because we called a function that is written in C)
+2. (optional) write a C extension module (CPython) -> CPython is the default implementation of Python. This module calls the C code behind Python -> THIS IS WHY when we tested runtime for sorting algorithms the sorted() function performed much faster (because we called a function that is written in C and that is FAST)
 commit - local operation on my computer
 two programmers working on the same project -> push -> conflict
 interpreter - runs the last function
-
+3. built-in modules (python -> settings -> interpr)
 
 Modules in C/C++:
 - header files: .h (signatures, documentation for all the methods, not compiled)
@@ -828,12 +828,7 @@ Modules in C/C++:
 
 parallel: masina cu servo-directie
 
-Modules in Python:
-- one module = one file
-- has a name
-- docstring (""" """)
-- default implementation of Python: CPython -> calls the C code behind Python
-- sorted() much faster because we called a function that is written in C
+
 
 ```
 from pdoc import pdoc
