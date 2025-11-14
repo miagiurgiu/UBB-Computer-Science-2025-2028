@@ -820,9 +820,8 @@ interpreter - runs the last function
 3. built-in modules (python -> settings -> interpreter -> install numpy/texttable etc.)
 
 Module Docstring (Documentation)
-- lives Documentation (""" """ block in the function) should live next to the code in the same module, so that they are updated and can work together + tools that allow to export to human-readable formats like pdf/html -> markdown -> see how the program works
-
-"add parameters to docstring"
+- Documentation (""" """ block in the function or press "add parameters to docstring" on the name of the function) should live next to the code in the same module, so that they are updated and can work together
+- there are tools that allow to export to human-readable formats like pdf/html -> markdown -> see how the program works
 
 ```
 def add_rational(q1, q2):  
@@ -834,6 +833,7 @@ def add_rational(q1, q2):
     # first-class citizens == can be used just like variables (send as parameters, return, assignment)  
     # type of gn after the assignment is function    # gn is not called unless we use the call operator ->  ()    return create_rational(gn(q1) * gd(q2) + gn(q2) * gd(q1), gd(q1) * gd(q2))
 
+```
 
 Modules in C/C++:
 - header files: .h (signatures, documentation for all the methods, not compiled)
@@ -844,11 +844,8 @@ Modules in C/C++:
 
 parallel: masina cu servo-directie
 
-
-
-```
 from pdoc import pdoc
-# allows us to get a html -> html file in pycharm -> open in browser
+ allows us to get a html -> html file in pycharm -> open in browser
 
 """
 >>> add_rational(create_rational(1), create_rational(3))
