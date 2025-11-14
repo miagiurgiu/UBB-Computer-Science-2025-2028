@@ -808,7 +808,11 @@ Cons:
 - requires knowledge to keep modules independent
 
 Modules in python:
-A m
+A module is a .py file containing:
+- module docstring (""" """)
+- executable statements (function definitions, constants, init code)
+How to create a python module?
+
 commit - local operation on my computer
 two programmers working on the same project -> push -> conflict
 interpreter - runs the last function
