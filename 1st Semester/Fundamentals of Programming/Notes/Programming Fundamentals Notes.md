@@ -797,7 +797,10 @@ MODULAR Programming:
 
 Pros:
 - allows working on programs by > programmers without github conflicts
-- break down in smaller pieces
+- breaks down large programs into smaller pieces
+- easy reuse across projects
+- helps avoid name conflicts
+- makes reading the progr
 Cons:
 - issues with imports?
 
