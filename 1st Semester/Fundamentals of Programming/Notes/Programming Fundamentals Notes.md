@@ -800,9 +800,12 @@ Pros:
 - breaks down large programs into smaller pieces
 - easy reuse across projects
 - helps avoid name conflicts
-- makes reading the progr
+- makes reading the program structure easier (IDE, GitHub, Finder, Explorer)
+- many programmers can work on the same code -> fewer merge conflicts
 Cons:
 - issues with imports?
+- requires knowledge to keep modules independent
+- 
 
 commit - local operation on my computer
 two programmers working on the same project -> push -> conflict
