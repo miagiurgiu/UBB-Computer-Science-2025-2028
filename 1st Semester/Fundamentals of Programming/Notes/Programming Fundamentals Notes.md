@@ -765,6 +765,8 @@ ex 4 - dinamic programming
 #packages
 #calculator
 
+Modules & Packages overview
+Modules, packages and functions 
 Modular programming 
 - continuation of procedural programming
 - independent + interchangeable - the ui should work in the same way even if ... ?
