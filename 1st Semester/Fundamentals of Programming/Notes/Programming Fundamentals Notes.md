@@ -812,7 +812,8 @@ A module is a .py file containing:
 - module docstring (""" """)
 - executable statements (function definitions, constants, init code)
 How to create a python module?
-
+1. write a .py file
+2. (optional) write a C extension module (CPython) -> CPython is the default implementation of Python -> this
 commit - local operation on my computer
 two programmers working on the same project -> push -> conflict
 interpreter - runs the last function
