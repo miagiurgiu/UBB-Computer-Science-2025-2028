@@ -883,6 +883,16 @@ Packages in PyCharm:
 A package is a directory containing:
 1. modules
 2. an _____init_____.py   file
+
+Packages solve name-collision between modules, not inside them.
+
+```
+mypackage/
+__init__.py
+moduleA.py
+moduleB.py
+
+```
 - venv - virtual
 - faker -> create random data, cities, names
 - they group modules in order to avoid name conflicts
