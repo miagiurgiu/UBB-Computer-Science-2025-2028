@@ -921,7 +921,6 @@ calc.py
 -> new "main" module
 -> we can import modules like rational_as_dict.py, rational_as_list.py in != ways
 
-
 ```
 from rational_as_list import *
 import rational_as_list
@@ -943,12 +942,13 @@ MAIN GUARD in python
 ```
 
 "Private functions"
-prefix
+prefix with _ to signal they are internal
 If we don't want our function to be accessed by other modules (kind of private, good practice not to use)
 ```
 def _super_secret_function():
 # those functions won't be visible in the documentation or in the generic import
 ```
+
 pdoc interpreter
 
 when running the program -> we can run != things -> choose "run ui"
