@@ -777,7 +777,7 @@ Assignment 6 started.
 #packages
 #calculator
 
-Programming in 
+A section of programming in the large - syntax made for humans, not computers
 Modules & Packages overview
 Modules, packages and functions help break programs into smaller, easier, reusable pieces.
 
@@ -807,7 +807,8 @@ Cons:
 - issues with circular imports, unclear namespaces, duplicate imports, overwriting names
 - requires knowledge to keep modules independent
 
-
+Modules in python:
+A m
 commit - local operation on my computer
 two programmers working on the same project -> push -> conflict
 interpreter - runs the last function
