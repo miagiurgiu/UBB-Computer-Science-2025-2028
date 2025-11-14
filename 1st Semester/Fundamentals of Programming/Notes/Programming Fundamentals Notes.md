@@ -753,13 +753,17 @@ ex 4 - dinamic programming
 
 
 ## Lecture 5 
+#dynamicprogramming
 ![[L04.Problem solving methods.pdf]]
 
 ## Seminar 5
 ![[FP Seminar 5 (31 oct 2025)_251102_171225.pdf]]
 
+## Lecture 6 (14 nov 2025)
 
-## Lecture 6/7 (13 nov 2025)
+### Procedural
+
+## Lecture 7 (13 nov 2025)
 ### Modular Programming
 #modules 
 #packages
@@ -778,6 +782,8 @@ Programming paradigms:
 	- independent + interchangeable - the ui should work in the same way even if ... ?
 3. OOP
 	- program = interacting objects
+
+ 
 
 Pros:
 - allows working on programs by > programmers without github conflicts
