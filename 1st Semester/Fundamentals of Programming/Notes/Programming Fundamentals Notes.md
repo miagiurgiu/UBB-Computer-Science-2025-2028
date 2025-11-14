@@ -968,14 +968,18 @@ take a look at how history works!
     
     - `create_board`
     - `move_board`
-        
     - `is_won_board`
-        
     - `is_full_board`
-        
-    - `get_cell_board`
-        
+    - `get_cell_board'
     - `to_str`
+2) game.py
+- logic for using board functions
+- handles _moves_:
+    - `human_move`
+    - `computer_move`
+- also NO `print()` / `input()`
+1) ui.py
+
 Modules:
 board.py 
 - handles the board entity for our tic tac toe game 
