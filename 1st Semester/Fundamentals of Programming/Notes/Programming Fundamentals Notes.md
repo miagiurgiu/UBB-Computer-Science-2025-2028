@@ -769,7 +769,8 @@ ex 4 - dinamic programming
 
 ## Lab 6
 
-Assignment 6
+Assignment 6 started.
+
 ## Lecture 7 (13 nov 2025)
 ### Modular Programming
 #modules 
@@ -784,13 +785,15 @@ Programming paradigms:
 	- program = functions calling each other
 	- handling exceptions gracefully (try... except)
 2. MODULAR programming 
-	- program split into interchangeable modules (.py files)
+	- program split into interchangeable modules (one module = one .py file)
+	- each module is responsible for one aspect of the program
 	- continuation of procedural programming
 	- independent + interchangeable - the ui should work in the same way even if ... ?
 3. OOP
 	- program = interacting objects
 
  
+MODULAR Programming:
 
 Pros:
 - allows working on programs by > programmers without github conflicts
