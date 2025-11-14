@@ -819,8 +819,22 @@ two programmers working on the same project -> push -> conflict
 interpreter - runs the last function
 3. built-in modules (python -> settings -> interpreter -> install numpy/texttable etc.)
 
-Module Docstring
-- lives at the top 
+Module Docstring (Documentation)
+- lives Documentation (""" """ block in the function) should live next to the code in the same module, so that they are updated and can work together + tools that allow to export to human-readable formats like pdf/html -> markdown -> see how the program works
+
+"add parameters to docstring"
+
+```
+def add_rational(q1, q2):  
+    """  
+    Return the sum of rational numbers q1 and q2    #DOCSTRING
+    """    
+    gn = get_numerator  # Python functions are first-class citizens :)  
+    gd = get_denominator  
+    # first-class citizens == can be used just like variables (send as parameters, return, assignment)  
+    # type of gn after the assignment is function    # gn is not called unless we use the call operator ->  ()    return create_rational(gn(q1) * gd(q2) + gn(q2) * gd(q1), gd(q1) * gd(q2))
+
+
 Modules in C/C++:
 - header files: .h (signatures, documentation for all the methods, not compiled)
 - want a list? list.h (stuff) and list.c (implementation) 
@@ -861,21 +875,11 @@ Packages in PyCharm:
 - from lecture.examples.ex30_modules.rational.rational_dict import create_rational, get_numerator, get_denominator (example from FP repo)
 - numpy - used to working with arrays
 
-Documentation (""" """ block in the function) should live next to the code in the same module, so that they are updated and can work together + tools that allow to export to human-readable formats like pdf/html -> markdown -> see how the program works
-
-"add parameters to docstring"
 
 ```
-def add_rational(q1, q2):  
-    """  
-    Return the sum of rational numbers q1 and q2    #DOCSTRING
-    """    
-    gn = get_numerator  # Python functions are first-class citizens :)  
-    gd = get_denominator  
-    # first-class citizens == can be used just like variables (send as parameters, return, assignment)  
-    # type of gn after the assignment is function    # gn is not called unless we use the call operator ->  ()    return create_rational(gn(q1) * gd(q2) + gn(q2) * gd(q1), gd(q1) * gd(q2))
 
-```
+
+
 IDE's: a set of rules -> need linker/compiler/interpreter to run it
 compiler for python? interpreter for python?
 
