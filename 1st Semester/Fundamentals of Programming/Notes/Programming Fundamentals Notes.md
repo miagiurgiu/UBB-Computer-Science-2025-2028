@@ -761,8 +761,15 @@ ex 4 - dinamic programming
 
 ## Lecture 6 (14 nov 2025)
 
-### Procedural
+### Procedural Programming
 
+## Seminar 6 (7 nov 2025)
+#dictionaries
+#proceduralprogramming
+
+## Lab 6
+
+Assignment 6
 ## Lecture 7 (13 nov 2025)
 ### Modular Programming
 #modules 
