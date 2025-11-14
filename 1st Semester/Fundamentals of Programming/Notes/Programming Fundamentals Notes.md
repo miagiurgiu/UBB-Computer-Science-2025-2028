@@ -831,7 +831,9 @@ def add_rational(q1, q2):
     gn = get_numerator  # Python functions are first-class citizens :)  
     gd = get_denominator  
     # first-class citizens == can be used just like variables (send as parameters, return, assignment)  
-    # type of gn after the assignment is function    # gn is not called unless we use the call operator ->  ()    return create_rational(gn(q1) * gd(q2) + gn(q2) * gd(q1), gd(q1) * gd(q2))
+    # type of gn after the assignment is function    
+    # gn is not called unless we use the call operator ->  ()    
+    return create_rational(gn(q1) * gd(q2) + gn(q2) * gd(q1), gd(q1) * gd(q2))
 
 ```
 
@@ -844,11 +846,15 @@ Modules in C/C++:
 
 parallel: masina cu servo-directie
 
+```
 from pdoc import pdoc
  allows us to get a html -> html file in pycharm -> open in browser
 
 """
 >>> add_rational(create_rational(1), create_rational(3))
+
+```
+
 """
 
 ```
