@@ -905,7 +905,6 @@ Virtual environments & Packages in PyCharm:
 - venv - virtual environment to isolate dependencies (pycharm can automatically create venvs)
 - != projects => != package versions
 
-Explore modules:
 
 - faker -> create random data, cities, names
 - they group modules in order to avoid name conflicts
