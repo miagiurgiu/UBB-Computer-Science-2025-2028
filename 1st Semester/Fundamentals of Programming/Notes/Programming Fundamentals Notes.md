@@ -893,6 +893,15 @@ moduleA.py
 moduleB.py
 
 ```
+
+How to import packages?
+```
+import mypackage.moduleA
+from mypackage.moduleB import foo
+
+```
+
+Virtual environments & Packages in PyCha
 - venv - virtual
 - faker -> create random data, cities, names
 - they group modules in order to avoid name conflicts
