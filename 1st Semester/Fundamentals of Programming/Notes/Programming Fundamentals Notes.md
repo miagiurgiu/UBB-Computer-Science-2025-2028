@@ -882,7 +882,7 @@ from pdoc import pdoc
 Packages in PyCharm:
 A package is a directory containing:
 1. modules
-2. 
+2. an _____init_____.py   file
 - venv - virtual
 - faker -> create random data, cities, names
 - they group modules in order to avoid name conflicts
