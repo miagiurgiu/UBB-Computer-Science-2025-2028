@@ -773,9 +773,11 @@ Programming paradigms:
 	- program = functions calling each other
 	- handling exceptions gracefully (try... except)
 2. MODULAR programming 
-	- program split into interchangeable modules ()
-- continuation of procedural programming
-- independent + interchangeable - the ui should work in the same way even if ... ?
+	- program split into interchangeable modules (.py files)
+	- continuation of procedural programming
+	- independent + interchangeable - the ui should work in the same way even if ... ?
+3. OOP
+	- program = interacting objects
 
 Pros:
 - allows working on programs by > programmers without github conflicts
