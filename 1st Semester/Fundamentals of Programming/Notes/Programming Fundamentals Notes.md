@@ -931,6 +931,7 @@ import create_rational as newq, to_str, add_rational # recommended, the added mo
 import *
 
 # we use these with dot "."
+import rational
 rational_as_list.create_rational
 rational_as_dict.create_rational
 ```
