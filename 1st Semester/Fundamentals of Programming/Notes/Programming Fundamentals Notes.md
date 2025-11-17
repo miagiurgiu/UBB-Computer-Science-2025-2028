@@ -931,9 +931,15 @@ import create_rational as newq, to_str, add_rational # recommended, the added mo
 import *
 
 # we use these with dot "."
-import rational
+import rational_as_list
+...
 rational_as_list.create_rational
 rational_as_dict.create_rational
+
+# from rational_as_list import create_rational
+...
+
+
 ```
 
 The _____main_____ guard
