@@ -936,9 +936,10 @@ import rational_as_list
 rational_as_list.create_rational
 rational_as_dict.create_rational
 
-# from rational_as_list import create_rational
+# 
+from rational_as_list import create_rational
 ...
-
+create_rational()
 
 ```
 
