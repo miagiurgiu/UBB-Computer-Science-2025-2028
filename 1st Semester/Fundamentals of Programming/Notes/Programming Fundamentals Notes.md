@@ -1022,6 +1022,11 @@ What is a CLASS?
 
 In python - only one "init" function called with "init"
 Java/c++ - the name of the constructor: "Rational"
+
+3 keywords:
+- private
+- protected
+- public
 ```
 """
 simplest class that we can write in python
