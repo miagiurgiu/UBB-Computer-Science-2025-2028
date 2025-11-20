@@ -1011,3 +1011,14 @@ ex31_modular_calculator
 has a feature add numbers
 has a feature to undo -> until it gets to the initial values
 
+livecoding -> rational.py
+
+```
+"""
+simplest class that we can write in python
+
+"""
+class Rational:
+	pass
+
+```
