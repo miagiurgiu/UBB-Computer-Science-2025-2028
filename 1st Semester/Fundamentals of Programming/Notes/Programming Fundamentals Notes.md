@@ -1189,8 +1189,10 @@ def test_calculator():
 		c.undo()
 		assert False # if we dont rise and exception
 	except CalculatorError:
+		# we 
 		assert True
 	except Exception
+		# we expect a CalculatorError, not any kind of error
 		assert False
 	
 ```
