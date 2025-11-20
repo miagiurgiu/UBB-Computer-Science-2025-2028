@@ -1014,6 +1014,8 @@ has a feature to undo -> until it gets to the initial values
 livecoding -> rational.py
 
 What is an OBJECT?
+- a thing created from a class
+- 
 
 What is a CLASS?
 - a template/blueprint/plan used to create objects
