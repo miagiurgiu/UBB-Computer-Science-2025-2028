@@ -1013,9 +1013,12 @@ has a feature to undo -> until it gets to the initial values
 
 livecoding -> rational.py
 
+What is an OBJECT?
+
 What is a CLASS?
-- a template
-- a definition
+- a template/blueprint/plan used to create objects
+- a definition for a data type
+- 
 
 ```
 """
