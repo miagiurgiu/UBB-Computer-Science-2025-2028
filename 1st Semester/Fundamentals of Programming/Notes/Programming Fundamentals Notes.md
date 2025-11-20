@@ -1007,189 +1007,202 @@ take a look at how history works!
 #classes
 #objects
 
-## **Classes & Objects**
+ex31_modular_calculator
+has a feature add numbers
+has a feature to undo -> until it gets to the initial values
 
----
+livecoding -> rational.py
 
- **Example: ex31_modular_calculator**
-
-- Feature: add numbers
-    
-- Feature: undo → revert operations until returning to initial value
-    
-
----
-
-## **Live coding → `rational.py`**
-
----
-
-# **OBJECT**
-
-**Definition:**  
-An _object_ is:
-
+What is an OBJECT?
 - a thing created from a class
-    
-- it has **state** (attributes/data) and **behaviour** (methods/functions)
-    
+- it has a state(attributes/data) and behaviour (methods/functions)
 - it occupies memory
-    
 
----
-
-# **CLASS**
-
-**Definition:**  
-A _class_ is:
-
+What is a CLASS?
 - a template/blueprint/plan used to create objects
-    
 - a definition for a data type
-    
-- a collection of:
-    
-    - **state** (attributes/fields)
-        
-    - **behavior** (functions/methods)
-        
+- a collection of state (attributes/fields) and behaviour (functions, methods)
 
-Example:
+```
+class Rational:
+    ...
+=> Rational becomes a new data type
 
-`class Rational:     ... # Rational becomes a new data type`
+```
+What is a CONSTRUCTOR?
+- allocates memory -> calls the original one -> **create an instance called "self"**
+- in python, the constructor is always ____init____
+- with constructors, we are not allowed to the return sth, its job is to return a reference/pointer from the original object. if you return "none", you destroy the way the constructor works
+- it implicitly returns a reference to the new created object (you should not write return here)
 
----
+```
+class Rational:
+    def __init__(self, numerator: int, denominator: int = 1):
+        if denominator == 0:
+            raise ValueError("Cannot have 0 denominator")
+        self.numerator = numerator
+        self.denominator = denominator
 
-# **CONSTRUCTOR**
 
-- allocates memory → calls the original one → **creates an instance called `self`**
-    
-- in Python, the constructor is always `__init__`
-    
-- constructors **must not explicitly return anything**  
-    If you `return None`, you break the constructor mechanism
-    
-- implicitly returns a reference/pointer to the newly created object
-    
+```
 
-Example:
+usage:
 
-`class Rational:     def __init__(self, numerator: int, denominator: int = 1):         if denominator == 0:             raise ValueError("Cannot have 0 denominator")         self.numerator = numerator         self.denominator = denominator`
+```
+q = Rational(5)
+print(type(q))
+print(q.numerator, q.denominator)
 
-Usage:
+q.denominator = 0  # BAD – should not modify directly
 
-`q = Rational(5) print(type(q)) print(q.numerator, q.denominator)  q.denominator = 0  # BAD — should not modify directly`
 
----
+```
 
-# **How to improve class usage**
+How to better use a class:
 
-Define a string representation:
+```
+def to_str(self) => str:
+	return str(self.numerator) + "/" + str(self.denominator)
 
-`def to_str(self) -> str:     return str(self.numerator) + "/" + str(self.denominator)  def __str__(self):     return str(self.numerator) + "/" + str(self.denominator)  print(q)`
+def __str__(self):
+	return str(self.numerator) + "/" + str(self.denominator)
 
-Notes:
+print(q)
 
-- Python: only one `__init__`
-    
-- Java/C++: constructor named after the class (`Rational()`)
-    
+```
+In python - only one "init" function called with "init"
+Java/c++ - the name of the constructor: "Rational"
 
----
+3 keywords:
+- private (by convention, you should not modify them from outside the class)
+- protected
+- public (accessible from anywhere)
+-
 
-# **Access Modifiers (Python Style)**
+PUBLIC attributes:
 
-Python has:
+```
 
-- **public**
-    
-- **protected** (convention)
-    
-- **private** (name-mangling)
-    
 
-### 1. **Public attributes**
+```
 
-`self.numerator = numerator self.denominator = denominator`
+the attributes are public:
+```
+"""
+simplest class that we can write in python
 
-Example:
+"""
+class Rational:
+	def __init__(self,numerator:int, denominator: int=1): # constructor
+	self.numerator = numerator
+	if denominator == 0:
+		raise ValueError("Cannot have 0 denominator")
+	self.denominator = denominator
 
-`class Rational:     def __init__(self,numerator:int, denominator: int=1):         self.numerator = numerator         if denominator == 0:             raise ValueError("Cannot have 0 denominator")         self.denominator = denominator`
+q = Rational(5) # returns the object that was created, not none
+print(type(q))
+print(q.numerator, q.denominator)
+q.denominator = 0 # not good
+```
 
-Problem:
+What if someone tries to change the denominator to 0? -> BAD -> private/protected/private
 
-`q.denominator = 0  # BAD`
+the next atributes are public
+```
 
----
+self.numerator = numerator
+self.denominator = denominator
+```
 
-### 2. **Protected attributes** (convention: single underscore)
 
-`self._numerator = numerator self._denominator = denominator  print(q._numerator, q._denominator)`
+the next attributes are private:
+```
+...
+self._numerator = numerator
+self._denominator = denominator
+...
+print(q._numerator, q._denominator)
 
-Also:  
-`from module import *` → imports everything **except underscored names**
+```
 
----
+from .... import ...  * -> import everything except what is with underscore
 
-### 3. **Private attributes** (name‐mangling: double underscore)
 
-`self.__numerator = numerator self.__denominator = denominator print(q.__numerator)  # fails`
+the next attributes are still private, but mangling
+```
+self.__numerator = numerator
+self.__denominator = denominator
+...
+print(q.__numerator, q.__denominator)
 
----
+```
 
-# **Accessing Methods**
+How to access python class methods:
+print(q.get_numerator())
+print(Rational.get_numerator(q)) # we assume q is rational
+q.set_numerator(q.get_numerator()+1)
 
-`print(q.get_numerator()) print(Rational.get_numerator(q))  # Treat q as a Rational q.set_numerator(q.get_numerator() + 1)`
+@property - combine getters and setters
 
----
+the setting method on class Rational
+- count how many rational numbers we created
 
-# **@property**
 
-- Combines getters and setters in a Pythonic way
-    
-- Used for encapsulation
-    
+```
+from ... import Rational
 
----
+class CalculatorError(Exception):
+	"""
+	a kind of exception
+	Exception is the error that python returns implicitly
+	"""
 
-# **Counting number of Rational objects**
+class Calculator:
+	def __init__(self):
+		self._value = Rational(0)
+		# history of the calculator's operations
+		self._history = []
+    def add_number(self, value):
+	     #record the value in the undo list
+	     self._history.append(self.value)
+	     #update calculator value
+	     self._value + = value
+	     
+	# a value to print
+	
+	@property
+	def value(self):
+		return self._value
+	def undo(self):
+		if len(self._history)==0:
+			raise calculatorError("No operations to undo")
+		self._value = self._history.pop() # removes and returns the last element from a list
 
-- done via class-level attributes (not shown)
-    
 
----
+c= Calculator()
+print(c.value)
 
-# **Calculator Example**
+# outside the class, so it does not need self
+def test_calculator():
+	c = Calculator()
+	try:
+		c.undo()
+		assert False # if we dont rise and exception
+	except CalculatorError:
+		# what we expected
+		assert True
+	except Exception
+		# we expect a CalculatorError, not any kind of error
+		assert False
+	
+```
 
-`from ... import Rational  class CalculatorError(Exception):     """     a kind of exception     Exception is the base error python returns     """  class Calculator:     def __init__(self):         self._value = Rational(0)         # history of the calculator's operations         self._history = []      def add_number(self, value):         # record value in undo list         self._history.append(self.value)         # update calculator value         self._value += value    @property     def value(self):         return self._value      def undo(self):         if len(self._history) == 0:             raise CalculatorError("No operations to undo")         self._value = self._history.pop()`
+1. Call the rational class constructor
+	- raises an exception => steps 2, 3 no longer take place
+2. Type of rational object transfered to q0
+3. Value of rational object transfered to q0
 
-Usage:
-
-`c = Calculator() print(c.value)`
-
-Test:
-
-`def test_calculator():     c = Calculator()     try:         c.undo()         assert False  # should raise exception     except CalculatorError:         assert True     except Exception:         # expected CalculatorError, not anything else         assert False`
-
----
-
-# **Steps When Calling a Constructor**
-
-1. Call the Rational class constructor
-    
-    - If it raises an exception → exit immediately
-        
-2. Type of Rational object is transferred to q0
-    
-3. Value of Rational object is transferred to q0
-    
-
----
-
-# **Why use custom exception classes instead of ValueError?**
-
-- easier to check **what type of error** occurred using `except CalculatorError`
-    
-- localization / translation issues (avoid relying on string messages)
-    
-- cleaner and more structured error handling
+Why  would you need a class for errors instead of ValueError?
+- check easier what type of errors arrise
+- translate from one language to another -> silly strings?
+- 
