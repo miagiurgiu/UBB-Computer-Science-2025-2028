@@ -1034,6 +1034,8 @@ class Rational:
 		raise ValueError("Cannot have 0 denominator")
 	self.denominator = denominator
 
-q = Rational()
+q = Rational(5)
 print(type(q))
+print(q.numerator, q.denominator)
+q.denominator = 0 # not good
 ```
