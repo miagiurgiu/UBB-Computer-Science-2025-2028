@@ -866,8 +866,8 @@ from pdoc import pdoc
 
 
 Modules in C/C++:
-- header files: .h (signatures, documentation for all the methods that are pu, not compiled)
-- want a list? list.h (stuff) and list.c (implementation) 
+- header files: .h (signatures, documentation for all the methods that are public, not compiled)
+- want a list? list.h (stuff, public) and list.c (implementation, private?) 
 - c is much older -> separate stuff from program implementation
 - **include** take the header file and copy pastes-in into the current file
 .cpp ?
@@ -1061,4 +1061,5 @@ print(q._numerator, q._denominator)
 
 ```
 
-import ... from .... * -> import everything except what is with "_"
+from .... import ...  * -> import everything except what is with underscore
+
