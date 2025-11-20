@@ -1003,3 +1003,6 @@ take a look at how history works!
     6. 
 
 
+## Lecture 8 (20 nov 2025)
+#classes
+#objects
