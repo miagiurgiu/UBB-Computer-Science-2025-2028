@@ -1149,9 +1149,13 @@ the setting method on class Rational
 
 
 ```
+from ... import Rational
 class Calculator:
 	def __init__(self):
-		self._value = 
+		self._value = Rational(0)
+		# history of the calculator's operations
+		self.history = []
+		
 ```
 
 1. Call the rational class constructor
