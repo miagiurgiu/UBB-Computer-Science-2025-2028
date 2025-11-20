@@ -1018,7 +1018,7 @@ What is an OBJECT?
 What is a CLASS?
 - a template/blueprint/plan used to create objects
 - a definition for a data type
-- a collection of stat
+- a collection of state ( ) and behaviour (functions, methods)
 
 ```
 """
@@ -1026,6 +1026,7 @@ simplest class that we can write in python
 
 """
 class Rational:
+	def __init__(self,numerator:int, denominator: int=1):
 	pass
 
 q = Rational()
