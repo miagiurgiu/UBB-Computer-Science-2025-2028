@@ -1034,7 +1034,6 @@ simplest class that we can write in python
 """
 class Rational:
 	def __init__(self,numerator:int, denominator: int=1): # constructor
-	# the next atributes are public
 	self.numerator = numerator
 	if denominator == 0:
 		raise ValueError("Cannot have 0 denominator")
@@ -1047,3 +1046,14 @@ q.denominator = 0 # not good
 ```
 
 What if someone tries to change the denominator to 0? -> BAD -> private/protected/private
+
+the next atributes are public
+self.numerator = numerator
+self.denominator = denominator
+
+the next attributes are private:
+```
+
+self._numerator = numerator
+self._denominator = denominator
+```
