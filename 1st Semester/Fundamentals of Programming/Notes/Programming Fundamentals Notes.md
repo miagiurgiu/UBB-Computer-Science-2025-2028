@@ -1026,11 +1026,12 @@ What is a CLASS?
 ```
 class Rational:
     ...
-
+=> Rational becomes a new data type
 
 ```
 What is a CONSTRUCTOR?
 - allocates memory -> calls the original one -> **create an instance called "self"**
+- in python, the constructor is always ____init____
 - with constructors, we are not allowed to the return sth, its job is to return a reference/pointer from the original object. if you return "none", you destroy the way the constructor works
 - it implicitly returns a reference to the new created object (you should not write return here)
 
