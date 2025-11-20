@@ -1020,13 +1020,14 @@ What is a CLASS?
 - a definition for a data type
 - a collection of state ( ) and behaviour (functions, methods)
 
+In python - only one "init" function
 ```
 """
 simplest class that we can write in python
 
 """
 class Rational:
-	def __init__(self,numerator:int, denominator: int=1):
+	def __init__(self,numerator:int, denominator: int=1): # constructor
 	pass
 
 q = Rational()
