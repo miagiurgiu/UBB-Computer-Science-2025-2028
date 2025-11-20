@@ -1156,7 +1156,11 @@ class Calculator:
 		# history of the calculator's operations
 		self._history = []
     def add_number(self, value):
-	     pass
+	    # record the value in the undo list
+	     self._history.append(self.value)
+	     #update
+	     self._value + = value
+	     
 	# a value to print
 	
 	@property
