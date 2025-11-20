@@ -1079,7 +1079,14 @@ Java/c++ - the name of the constructor: "Rational"
 - public (accessible from anywhere)
 -
 
-the attributes are public
+PUBLIC attributes:
+
+```
+
+
+```
+
+the attributes are public:
 ```
 """
 simplest class that we can write in python
@@ -1139,3 +1146,9 @@ q.set_numerator(q.get_numerator()+1)
 
 the setting method on class Rational
 - count how many rational numbers we created
+
+
+```
+class Calculator:
+
+```
