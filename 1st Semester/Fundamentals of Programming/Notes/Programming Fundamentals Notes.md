@@ -1086,3 +1086,6 @@ print(q.__numerator, q.__denominator)
 
 ```
 
+How to access python class methods:
+print(q.get_numerator())
+print(Rational.get_numerator(q)) # we assume q is rational
