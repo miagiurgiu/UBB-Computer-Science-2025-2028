@@ -1104,3 +1104,4 @@ q.set_numerator(q.get_numerator()+1)
 
 @property - combine getters and setters
 
+the setting method
