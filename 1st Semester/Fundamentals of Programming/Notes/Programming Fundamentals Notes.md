@@ -866,7 +866,7 @@ from pdoc import pdoc
 
 
 Modules in C/C++:
-- header files: .h (signatures, documentation for all the methods, not compiled)
+- header files: .h (signatures, documentation for all the methods that are pu, not compiled)
 - want a list? list.h (stuff) and list.c (implementation) 
 - c is much older -> separate stuff from program implementation
 - **include** take the header file and copy pastes-in into the current file
