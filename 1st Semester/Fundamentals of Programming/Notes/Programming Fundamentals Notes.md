@@ -1025,7 +1025,13 @@ What is a CONSTRUCTOR?
 - with constructors, we are not allowed to the return sth, its job is to return a reference/pointer from the original object. if you return "none", you destroy the way the constructor works
 - it implicitly returns a reference to the new created object (you should not write return here)
 
+How to better use a class:
 
+```
+def to_str(self) => str:
+
+
+```
 In python - only one "init" function called with "init"
 Java/c++ - the name of the constructor: "Rational"
 
