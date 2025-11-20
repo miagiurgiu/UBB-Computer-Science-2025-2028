@@ -1021,6 +1021,7 @@ What is a CLASS?
 - a collection of state ( ) and behaviour (functions, methods)
 
 What is a CONSTRUCTOR?
+- allocates memory -> calls the original 
 - with constructors, we are not allowed to the return sth, its job is to return a reference/pointer from the original object. if you return "none", you destroy the way the constructor works
 - it implicitly returns a reference to the new created object (you should not write return here)
 
@@ -1029,9 +1030,9 @@ In python - only one "init" function called with "init"
 Java/c++ - the name of the constructor: "Rational"
 
 3 keywords:
-- private
+- private (by convention, you should not modify them from outside the class)
 - protected
-- public
+- public (accessible from anywhere)
 -
 
 the attributes are public
