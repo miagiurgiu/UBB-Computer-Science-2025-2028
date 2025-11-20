@@ -1006,3 +1006,8 @@ take a look at how history works!
 ## Lecture 8 (20 nov 2025)
 #classes
 #objects
+
+ex31_modular_calculator
+has a feature add numbers
+has a feature to undo -> until it gets to the initial values
+
