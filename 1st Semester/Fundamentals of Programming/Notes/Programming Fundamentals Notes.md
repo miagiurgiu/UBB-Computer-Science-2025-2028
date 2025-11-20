@@ -1153,4 +1153,7 @@ class Calculator:
 
 ```
 
-1. Call the r
+1. Call the rational class constructor
+	- raises an exception => steps 2, 3 no longer take pla
+2. Type of rational object transfered to q0
+3. Value of rational object transfered to q0
