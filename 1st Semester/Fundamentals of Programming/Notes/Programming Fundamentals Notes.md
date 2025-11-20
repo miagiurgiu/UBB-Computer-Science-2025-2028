@@ -1158,6 +1158,8 @@ class Calculator:
     def add_number(self, value):
 	     pass
 	# a value to print
+	
+	@property
 	def value(self):
 		return self._value
 	def undo(self):
