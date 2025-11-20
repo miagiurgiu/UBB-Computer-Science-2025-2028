@@ -1154,13 +1154,18 @@ class Calculator:
 	def __init__(self):
 		self._value = Rational(0)
 		# history of the calculator's operations
-		self.history = []
+		self._history = []
     def add_number(self, value):
 	     pass
-	#
+	# a value to print
+	def value(self):
+		return self._value
 	def undo(self):
 		pass
-	
+
+
+c= Calculator()
+print(c.value)
 ```
 
 1. Call the rational class constructor
