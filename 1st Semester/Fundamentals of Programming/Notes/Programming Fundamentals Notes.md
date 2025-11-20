@@ -1150,7 +1150,8 @@ the setting method on class Rational
 
 ```
 class Calculator:
-
+	def __init__(self):
+		self._value = 
 ```
 
 1. Call the rational class constructor
