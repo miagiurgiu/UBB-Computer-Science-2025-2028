@@ -1181,6 +1181,9 @@ class Calculator:
 
 c= Calculator()
 print(c.value)
+
+
+def test_cal
 ```
 
 1. Call the rational class constructor
@@ -1190,4 +1193,5 @@ print(c.value)
 
 Why  would you need a class for errors instead of ValueError?
 - check easier what type of errors arrise
+- translate from one language to another -> silly strings?
 - 
