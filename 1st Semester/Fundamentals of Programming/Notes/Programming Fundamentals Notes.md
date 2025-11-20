@@ -1042,7 +1042,7 @@ class Rational:
 		raise ValueError("Cannot have 0 denominator")
 	self.denominator = denominator
 
-q = Rational(5)
+q = Rational(5) # returns the object that was created
 print(type(q))
 print(q.numerator, q.denominator)
 q.denominator = 0 # not good
@@ -1075,3 +1075,5 @@ self.__denominator = denominator
 print(q.__numerator, q.__denominator)
 
 ```
+
+with construbtors, we are not allowed to the return sth, its job is to return an instance from the
