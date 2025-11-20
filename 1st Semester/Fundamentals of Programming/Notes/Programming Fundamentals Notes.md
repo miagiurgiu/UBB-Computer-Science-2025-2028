@@ -1182,8 +1182,14 @@ class Calculator:
 c= Calculator()
 print(c.value)
 
-
-def test_cal
+# outside the class, so it does not need self
+def test_calculator():
+	c = Calculator()
+	try:
+		c.undo()
+	except CalculatorError:
+		assert True
+	except 
 ```
 
 1. Call the rational class constructor
