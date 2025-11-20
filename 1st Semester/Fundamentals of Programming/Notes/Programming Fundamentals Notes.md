@@ -1057,8 +1057,12 @@ q.denominator = 0 # not good
 What if someone tries to change the denominator to 0? -> BAD -> private/protected/private
 
 the next atributes are public
+```
+
 self.numerator = numerator
 self.denominator = denominator
+```
+
 
 the next attributes are private:
 ```
