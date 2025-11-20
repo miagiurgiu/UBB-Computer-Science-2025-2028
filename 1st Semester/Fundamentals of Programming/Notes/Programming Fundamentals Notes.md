@@ -1152,6 +1152,10 @@ the setting method on class Rational
 from ... import Rational
 
 class CalculatorError(Exception):
+"""
+a kind of exception
+Exception is the error that python returns implicitly
+"""
 
 class Calculator:
 	def __init__(self):
@@ -1170,6 +1174,8 @@ class Calculator:
 	def value(self):
 		return self._value
 	def undo(self):
+		if len(self._history)==0:
+			raise calculator
 		self._value = self._history.pop() # removes and returns the last element from a list
 
 
