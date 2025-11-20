@@ -1029,7 +1029,10 @@ simplest class that we can write in python
 """
 class Rational:
 	def __init__(self,numerator:int, denominator: int=1): # constructor
-	self 
+	self.numerator = numerator
+	if denominator == 0:
+		raise ValueError("Cannot have 0 denominator")
+	self.denominator = denominator
 
 q = Rational()
 print(type(q))
