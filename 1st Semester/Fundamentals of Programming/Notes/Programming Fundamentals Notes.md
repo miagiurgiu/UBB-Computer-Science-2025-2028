@@ -1156,9 +1156,9 @@ class Calculator:
 		# history of the calculator's operations
 		self._history = []
     def add_number(self, value):
-	    # record the value in the undo list
+	     #record the value in the undo list
 	     self._history.append(self.value)
-	     #update
+	     #update calculator value
 	     self._value + = value
 	     
 	# a value to print
@@ -1167,7 +1167,7 @@ class Calculator:
 	def value(self):
 		return self._value
 	def undo(self):
-		pass
+		self._value = self._history.pop()
 
 
 c= Calculator()
