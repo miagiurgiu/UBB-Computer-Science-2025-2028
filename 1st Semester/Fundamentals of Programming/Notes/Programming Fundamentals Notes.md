@@ -1150,6 +1150,9 @@ the setting method on class Rational
 
 ```
 from ... import Rational
+
+class CalculatorError(Exception):
+
 class Calculator:
 	def __init__(self):
 		self._value = Rational(0)
@@ -1167,7 +1170,7 @@ class Calculator:
 	def value(self):
 		return self._value
 	def undo(self):
-		self._value = self._history.pop()
+		self._value = self._history.pop() # removes and returns the last element from a list
 
 
 c= Calculator()
