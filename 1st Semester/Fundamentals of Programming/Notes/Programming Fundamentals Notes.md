@@ -1067,11 +1067,11 @@ print(q._numerator, q._denominator)
 from .... import ...  * -> import everything except what is with underscore
 
 
-the next attributes are still private, but 
+the next attributes are still private, but mangling
 ```
 self.__numerator = numerator
-self._denominator = denominator
+self.__denominator = denominator
 ...
-print(q._numerator, q._denominator)
+print(q.__numerator, q.__denominator)
 
 ```
