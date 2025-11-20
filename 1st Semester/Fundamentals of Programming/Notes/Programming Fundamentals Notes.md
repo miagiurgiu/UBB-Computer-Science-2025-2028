@@ -1027,6 +1027,9 @@ Java/c++ - the name of the constructor: "Rational"
 - private
 - protected
 - public
+-
+
+the attributes are public
 ```
 """
 simplest class that we can write in python
@@ -1063,3 +1066,12 @@ print(q._numerator, q._denominator)
 
 from .... import ...  * -> import everything except what is with underscore
 
+
+the next attributes are still private, but 
+```
+self.__numerator = numerator
+self._denominator = denominator
+...
+print(q._numerator, q._denominator)
+
+```
