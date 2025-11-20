@@ -1104,4 +1104,5 @@ q.set_numerator(q.get_numerator()+1)
 
 @property - combine getters and setters
 
-the setting method
+the setting method on class Rational
+- count how many rational numbers we created
