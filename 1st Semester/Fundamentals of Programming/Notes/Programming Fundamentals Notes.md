@@ -1013,6 +1013,10 @@ has a feature to undo -> until it gets to the initial values
 
 livecoding -> rational.py
 
+What is a CLASS?
+- a template
+- a definition
+
 ```
 """
 simplest class that we can write in python
