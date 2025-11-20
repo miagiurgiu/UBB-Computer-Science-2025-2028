@@ -1029,6 +1029,7 @@ class Rational:
 => Rational becomes a new data type
 
 ```
+
 What is a CONSTRUCTOR?
 - allocates memory -> calls the original one -> **create an instance called "self"**
 - in python, the constructor is always ____init____
