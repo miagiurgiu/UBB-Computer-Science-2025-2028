@@ -1015,13 +1015,20 @@ livecoding -> rational.py
 
 What is an OBJECT?
 - a thing created from a class
-- 
+- it has a state(attributes/data) and behaviour (methods/functions)
+- it occupies memory
 
 What is a CLASS?
 - a template/blueprint/plan used to create objects
 - a definition for a data type
-- a collection of state ( ) and behaviour (functions, methods)
+- a collection of state (attributes/fields) and behaviour (functions, methods)
 
+```
+class Rational:
+    ...
+
+
+```
 What is a CONSTRUCTOR?
 - allocates memory -> calls the original one -> **create an instance called "self"**
 - with constructors, we are not allowed to the return sth, its job is to return a reference/pointer from the original object. if you return "none", you destroy the way the constructor works
