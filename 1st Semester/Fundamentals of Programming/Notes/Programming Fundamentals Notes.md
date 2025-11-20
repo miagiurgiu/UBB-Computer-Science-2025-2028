@@ -1021,7 +1021,7 @@ What is a CLASS?
 - a collection of state ( ) and behaviour (functions, methods)
 
 What is a CONSTRUCTOR?
-- allocates memory -> calls the original 
+- allocates memory -> calls the original one -> **create an instance called "self"**
 - with constructors, we are not allowed to the return sth, its job is to return a reference/pointer from the original object. if you return "none", you destroy the way the constructor works
 - it implicitly returns a reference to the new created object (you should not write return here)
 
