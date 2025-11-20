@@ -1152,10 +1152,10 @@ the setting method on class Rational
 from ... import Rational
 
 class CalculatorError(Exception):
-"""
-a kind of exception
-Exception is the error that python returns implicitly
-"""
+	"""
+	a kind of exception
+	Exception is the error that python returns implicitly
+	"""
 
 class Calculator:
 	def __init__(self):
@@ -1175,7 +1175,7 @@ class Calculator:
 		return self._value
 	def undo(self):
 		if len(self._history)==0:
-			raise calculator
+			raise calculatorError("No operations to undo")
 		self._value = self._history.pop() # removes and returns the last element from a list
 
 
@@ -1187,3 +1187,7 @@ print(c.value)
 	- raises an exception => steps 2, 3 no longer take place
 2. Type of rational object transfered to q0
 3. Value of rational object transfered to q0
+
+Why  would you need a class for errors instead of ValueError?
+- check easier what type of errors arrise
+- 
