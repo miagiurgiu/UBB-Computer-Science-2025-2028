@@ -1187,9 +1187,12 @@ def test_calculator():
 	c = Calculator()
 	try:
 		c.undo()
+		assert False # if we dont rise and exception
 	except CalculatorError:
 		assert True
-	except 
+	except Exception
+		assert False
+	
 ```
 
 1. Call the rational class constructor
