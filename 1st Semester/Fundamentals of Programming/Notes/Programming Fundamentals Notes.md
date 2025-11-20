@@ -1152,3 +1152,5 @@ the setting method on class Rational
 class Calculator:
 
 ```
+
+1. Call the r
