@@ -1053,7 +1053,12 @@ self.denominator = denominator
 
 the next attributes are private:
 ```
-
+...
 self._numerator = numerator
 self._denominator = denominator
+...
+print(q._numerator, q._denominator)
+
 ```
+
+import ... from .... **
