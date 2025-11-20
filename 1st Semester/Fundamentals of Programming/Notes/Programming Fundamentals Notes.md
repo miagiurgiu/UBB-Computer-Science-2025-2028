@@ -1029,7 +1029,9 @@ How to better use a class:
 
 ```
 def to_str(self) => str:
+	return str(self.numerator) + "/" + str(self.denominator)
 
+def __s
 
 ```
 In python - only one "init" function called with "init"
