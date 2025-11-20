@@ -1036,9 +1036,28 @@ What is a CONSTRUCTOR?
 - it implicitly returns a reference to the new created object (you should not write return here)
 
 ```
+class Rational:
+    def __init__(self, numerator: int, denominator: int = 1):
+        if denominator == 0:
+            raise ValueError("Cannot have 0 denominator")
+        self.numerator = numerator
+        self.denominator = denominator
 
 
 ```
+
+usage:
+
+```
+q = Rational(5)
+print(type(q))
+print(q.numerator, q.denominator)
+
+q.denominator = 0  # BAD – should not modify directly
+
+
+```
+
 How to better use a class:
 
 ```
