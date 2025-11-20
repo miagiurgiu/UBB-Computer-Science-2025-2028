@@ -1103,3 +1103,137 @@ print(Rational.get_numerator(q)) # we assume q is rational
 q.set_numerator(q.get_numerator()+1)
 
 @property - combine getters and setters
+
+## **Classes & Objects**
+
+### **What is an OBJECT?**
+
+- A **thing** created from a class.
+    
+- It has **state** (attributes/data) and **behaviour** (methods/functions).
+    
+- It occupies memory.
+    
+
+### **What is a CLASS?**
+
+A class is:
+
+- A **template / blueprint** used to create objects.
+    
+- A **definition of a new data type**.
+    
+- A **collection of:**
+    
+    - **state** (attributes / fields)
+        
+    - **behaviour** (methods)
+        
+
+Example:
+
+`class Rational:     ...`
+
+→ `Rational` becomes a **new data type**.
+
+---
+
+## **What is a CONSTRUCTOR?**
+
+- In Python, the constructor is always `__init__`.
+    
+- It **allocates memory** and **initializes** the new object.
+    
+- It creates the object instance referred to as **self**.
+    
+- It **must not return anything** — Python implicitly returns the reference to the new object.
+    
+- If you write `return something`, you break how constructors work.
+    
+
+---
+
+## **Example: Rational class**
+
+`class Rational:     def __init__(self, numerator: int, denominator: int = 1):         if denominator == 0:             raise ValueError("Cannot have 0 denominator")         self.numerator = numerator         self.denominator = denominator`
+
+Usage:
+
+`q = Rational(5) print(type(q)) print(q.numerator, q.denominator)  q.denominator = 0  # BAD – should not modify directly`
+
+---
+
+## **Variable visibility**
+
+Python does NOT enforce private/protected, but uses conventions.
+
+### **Public attributes**
+
+`self.numerator self.denominator`
+
+Accessible from anywhere.
+
+### **Protected (by convention)**
+
+`self._numerator self._denominator`
+
+→ “Please do not modify from outside.”  
+`from module import *` does NOT import names starting with `_`.
+
+### **Private (name-mangled)**
+
+`self.__numerator self.__denominator`
+
+Python rewrites them internally:
+
+- `self.__numerator` → `_Rational__numerator`
+    
+
+But still: NOT true privacy — just harder to access.
+
+---
+
+## **Accessing methods**
+
+`print(q.get_numerator())           # instance method call print(Rational.get_numerator(q))   # same, but class-style call q.set_numerator(q.get_numerator() + 1)`
+
+---
+
+## **`@property` — Pythonic getters/setters**
+
+Allows you to write:
+
+`print(q.numerator) # looks like attribute q.numerator = 10   # setter`
+
+but internally still enforce logic.
+
+---
+
+# ⭐ **YOUR QUESTION**
+
+**“If a class is a datatype, then the name of that datatype will be ‘class object’ or the name of the class I gave?”**
+
+### **Correct Answer:**
+
+A class defines a **new data type**, and **the name of the class IS the name of the data type**.
+
+Example:
+
+`class Rational:     ...`
+
+- The **data type** is called **`Rational`**.
+    
+- Objects created are **instances of type `Rational`**.
+    
+
+You can check:
+
+`q = Rational(5) print(type(q))   # <class '__main__.Rational'>`
+
+### **So:**
+
+- Not “class object”
+    
+- Not “object datatype”
+    
+- The datatype name = **the class name** you defined.
