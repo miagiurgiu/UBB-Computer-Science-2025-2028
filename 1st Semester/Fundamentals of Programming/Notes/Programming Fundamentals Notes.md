@@ -1129,7 +1129,7 @@ print(q._numerator, q._denominator)
 from .... import ...  * -> import everything except what is with underscore
 
 
-the next attributes are still private, but mangling
+the next attributes are still private, but mangling - can be modified, but only inside the class?
 ```
 self.__numerator = numerator
 self.__denominator = denominator
