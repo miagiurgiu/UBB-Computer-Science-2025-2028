@@ -1206,4 +1206,17 @@ def test_calculator():
 Why  would you need a class for errors instead of ValueError?
 - check easier what type of errors arrise
 - translate from one language to another -> silly strings?
-- 
+-
+
+how to use pdoc in terminal:
+```
+(.venv) Maria@Mac a8-miagiurgiu % export PYTHONPATH=/Users/Maria/PycharmProjects/a8-miagiurgiu
+
+(.venv) Maria@Mac a8-miagiurgiu % pdoc src/repository/repository.py -o docs
+
+(.venv) Maria@Mac a8-miagiurgiu % ls docs
+index.html      repository      search.js
+(.venv) Maria@Mac a8-miagiurgiu % open docs/index.html
+(.venv) Maria@Mac a8-miagiurgiu % 
+
+```
