@@ -1,0 +1,488 @@
+1. Scrieți un program care citește de la tastatură un număr întreg și îl afișează în baza 2.
+bits 32
+global start
+
+extern printf, scanf
+import printf msvcrt.dll
+import scanf msvcrt.dll
+
+segment data
+    msg_in  db "Introdu numar: ",0
+    fmt_in  db "%d",0
+    fmt_out db "Baza 2: %s",10,0
+    buffer  times 33 db 0 ; 32 biți + terminator
+    nr      dd 0
+
+segment code
+start:
+    ; citire numar
+    push msg_in
+    call printf
+    add esp, 4
+
+    push nr
+    push fmt_in
+    call scanf
+    add esp, 8
+
+    mov eax, [nr]
+    mov ecx, 32
+    mov edi, buffer
+
+convert_loop:
+    shl eax, 1
+    adc byte [edi], '0'
+    inc edi
+    loop convert_loop
+
+    mov byte [edi], 0
+
+    push buffer
+    push fmt_out
+    call printf
+    add esp, 8
+
+    ret
+
+2. Scrieți un program care citește de la tastatură un număr întreg și afișează câte cifre are numărul citit în baza 10.
+bits 32
+global start
+
+extern printf, scanf
+import printf msvcrt.dll
+import scanf msvcrt.dll
+
+segment data
+    msg_in db "Introdu numar: ",0
+    fmt_in db "%d",0
+    fmt_out db "Numarul are %d cifre",10,0
+    nr dd 0
+
+segment code
+start:
+    push msg_in
+    call printf
+    add esp, 4
+
+    push nr
+    push fmt_in
+    call scanf
+    add esp, 8
+
+    mov eax, [nr]
+    cdq
+    cmp eax, 0
+    jge cont
+    neg eax
+cont:
+    mov ecx, 0
+
+count_loop:
+    cmp eax, 0
+    je done
+    inc ecx
+    mov ebx, 10
+    div ebx
+    jmp count_loop
+
+done:
+    push ecx
+    push fmt_out
+    call printf
+    add esp, 8
+
+    ret
+3. Scrieți un program care citește de la tastatură un șir de numere întregi și îl afișează în ordine crescătoare/descrescătoare.
+bits 32
+global start
+
+extern printf, scanf, gets
+import printf msvcrt.dll
+import scanf msvcrt.dll
+import gets msvcrt.dll
+
+segment data
+    msg db "Cate numere? ",0
+    msg2 db "Numerele sortate: ",0
+    fmt db "%d",0
+    arr dd 100 dup(0)
+    n dd 0
+
+segment code
+start:
+    push msg
+    call printf
+    add esp, 4
+
+    push n
+    push fmt
+    call scanf
+    add esp, 8
+
+    mov ecx, [n]
+    mov edi, arr
+
+read_loop:
+    push fmt
+    push edi
+    call scanf
+    add esp, 8
+    add edi, 4
+    loop read_loop
+
+; bubble sort
+    mov ecx, [n]
+outer:
+    mov ebx, 0
+inner:
+    mov eax, [arr + ebx*4]
+    mov edx, [arr + ebx*4 + 4]
+    cmp eax, edx
+    jle no_swap
+    mov [arr + ebx*4], edx
+    mov [arr + ebx*4 + 4], eax
+no_swap:
+    inc ebx
+    cmp ebx, ecx
+    jl inner
+    loop outer
+
+    push msg2
+    call printf
+    add esp, 4
+
+    mov ecx, [n]
+    mov ebx, 0
+print_loop:
+    push dword [arr + ebx*4]
+    push fmt
+    call printf
+    add esp, 8
+    inc ebx
+    loop print_loop
+
+    ret
+
+4. Scrieți un program care citește de la tastatură cuvinte (șiruri de caractere), verifică și, apoi, afișează dacă aceste cuvinte sunt de tip palindrom. 
+bits 32
+global start
+
+extern printf, gets
+import printf msvcrt.dll
+import gets msvcrt.dll
+
+segment data
+    msg db "Cuvant: ",0
+    msg_da db "Este palindrom",10,0
+    msg_nu db "Nu este palindrom",10,0
+    buf times 100 db 0
+
+segment code
+start:
+    push msg
+    call printf
+    add esp, 4
+
+    push buf
+    call gets
+    add esp, 4
+
+    mov esi, buf
+find_end:
+    cmp byte [esi], 0
+    je found_end
+    inc esi
+    jmp find_end
+found_end:
+    dec esi ; ultimul caracter
+
+    mov edi, buf
+check_loop:
+    cmp edi, esi
+    jge palindrome
+    mov al, [edi]
+    mov bl, [esi]
+    cmp al, bl
+    jne not_pal
+    inc edi
+    dec esi
+    jmp check_loop
+
+palindrome:
+    push msg_da
+    call printf
+    add esp, 4
+    ret
+
+not_pal:
+    push msg_nu
+    call printf
+    add esp, 4
+    ret
+
+5. Se dă un nume de fișier (definit în segmentul de date). Fișierul conține numerele întregi cu semn separate prin spații. Să se calculeze și să se afișeze suma numerelor din fișier. 
+bits 32
+global start
+
+extern printf, fopen, fscanf, fclose
+import printf msvcrt.dll
+import fopen msvcrt.dll
+import fscanf msvcrt.dll
+import fclose msvcrt.dll
+
+segment data
+    filename db "numere.txt",0
+    mode db "r",0
+    fmt db "%d",0
+    msg db "Suma = %d",10,0
+
+    file dd 0
+    x dd 0
+    sum dd 0
+
+segment code
+start:
+    push mode
+    push filename
+    call fopen
+    add esp, 8
+    mov [file], eax
+
+    cmp eax, 0
+    je end
+
+read_loop:
+    push x
+    push fmt
+    push dword [file]
+    call fscanf
+    add esp, 12
+
+    cmp eax, 1
+    jne done
+
+    mov eax, [sum]
+    add eax, [x]
+    mov [sum], eax
+    jmp read_loop
+
+done:
+    push dword [file]
+    call fclose
+    add esp, 4
+
+    push dword [sum]
+    push msg
+    call printf
+    add esp, 8
+
+end:
+    ret
+
+6. Se dă un nume de fișier (definit în segmentul de date). Fișierul conține litere mici, litere mari, cifre și caractere speciale. Să se înlocuiască toate caracterele speciale din fișier cu caracterul 'X'. 
+bits 32
+global start
+
+extern fopen, fclose, fread, fwrite
+import fopen msvcrt.dll
+import fclose msvcrt.dll
+import fread msvcrt.dll
+import fwrite msvcrt.dll
+
+segment data
+    fin db "input.txt",0
+    fout db "output.txt",0
+    mode_r db "r",0
+    mode_w db "w",0
+
+    buf times 1024 db 0
+    f_in dd 0
+    f_out dd 0
+
+segment code
+start:
+    push mode_r
+    push fin
+    call fopen
+    add esp, 8
+    mov [f_in], eax
+
+    push mode_w
+    push fout
+    call fopen
+    add esp, 8
+    mov [f_out], eax
+
+read:
+    push dword [f_in]
+    push 1
+    push 1024
+    push buf
+    call fread
+    add esp, 16
+    mov ecx, eax
+    cmp eax, 0
+    je close_files
+
+    mov esi, buf
+process:
+    cmp ecx, 0
+    je write_buf
+    mov al, [esi]
+    cmp al, '0'
+    jl rep
+    cmp al, '9'
+    jle ok
+    cmp al, 'A'
+    jl rep
+    cmp al, 'Z'
+    jle ok
+    cmp al, 'a'
+    jl rep
+    cmp al, 'z'
+    jle ok
+rep:
+    mov byte [esi], 'X'
+ok:
+    inc esi
+    dec ecx
+    jmp process
+
+write_buf:
+    push dword [f_out]
+    push 1
+    push eax
+    push buf
+    call fwrite
+    add esp, 16
+    jmp read
+
+close_files:
+    push dword [f_in]
+    call fclose
+    add esp, 4
+
+    push dword [f_out]
+    call fclose
+    add esp, 4
+
+    ret
+
+7. Se dă un nume de fișier (definit în segmentul de date). Fișierul conține cuvinte (șiruri de caractere separate prin spații). Să se determine și să se afișeze numărul de cuvinte din fișier. 
+bits 32
+global start
+
+extern printf, fopen, fscanf, fclose
+import printf msvcrt.dll
+import fopen msvcrt.dll
+import fscanf msvcrt.dll
+import fclose msvcrt.dll
+
+segment data
+    fname db "cuvinte.txt",0
+    mode db "r",0
+    fmt db "%s",0
+    msg db "Numar cuvinte: %d",10,0
+
+    word times 100 db 0
+    cnt dd 0
+    f dd 0
+
+segment code
+start:
+    push mode
+    push fname
+    call fopen
+    add esp, 8
+    mov [f], eax
+
+loop_read:
+    push word
+    push fmt
+    push dword [f]
+    call fscanf
+    add esp, 12
+
+    cmp eax, 1
+    jne finish
+
+    mov eax, [cnt]
+    inc eax
+    mov [cnt], eax
+    jmp loop_read
+
+finish:
+    push dword [f]
+    call fclose
+    add esp, 4
+
+    push dword [cnt]
+    push msg
+    call printf
+    add esp, 8
+
+    ret
+
+8. Se dă un nume de fișier (definit în segmentul de date). Fișierul conține propoziții (șiruri de caractere separate prin spații sau punct). Să se determine și să se afișeze numărul de propoziții din fișier. solve all the problems given the theory in the file. keep a simple format, as for a beginner.
+bits 32
+global start
+
+extern fopen, fclose, fread, printf
+import fopen msvcrt.dll
+import fclose msvcrt.dll
+import fread msvcrt.dll
+import printf msvcrt.dll
+
+segment data
+    fin db "text.txt",0
+    mode db "r",0
+    buf times 1024 db 0
+    f dd 0
+    cnt dd 0
+    msg db "Numar propozitii: %d",10,0
+
+segment code
+start:
+    push mode
+    push fin
+    call fopen
+    add esp, 8
+    mov [f], eax
+
+read_block:
+    push dword [f]
+    push 1
+    push 1024
+    push buf
+    call fread
+    add esp, 16
+
+    mov ecx, eax
+    cmp eax, 0
+    je end
+
+    mov esi, buf
+check:
+    cmp ecx, 0
+    je read_block
+    cmp byte [esi], '.'
+    jne next
+    mov eax, [cnt]
+    inc eax
+    mov [cnt], eax
+next:
+    inc esi
+    dec ecx
+    jmp check
+
+end:
+    push dword [f]
+    call fclose
+    add esp, 4
+
+    push dword [cnt]
+    push msg
+    call printf
+    add esp, 8
+
+    ret
