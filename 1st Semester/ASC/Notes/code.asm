@@ -17,7 +17,7 @@ segment data use32 class=data
     ; defining the descriptor
     descriptor dd 0
     ; defining the buffer for reading
-    buffer db 100 dup(0)
+    buffer db 100 dup(0) ; buffer times 100 db 0
     ; the buffer size (100)
     buffer_size equ 100
     
@@ -49,6 +49,7 @@ start:
     push dword [descriptor]  ; using the descriptor
     push dword buffer_size
     push dword 1
+    
     push dword buffer
     call [fread] ; call the read function
     add esp, 4*4 ; clear the stack - 4 parameters

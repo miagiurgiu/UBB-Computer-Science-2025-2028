@@ -1,0 +1,105 @@
+     1                                  bits 32
+     2                                  global start
+     3                                  extern exit, fopen, fread, fclose, printf
+     4                                  
+     5                                  import exit msvcrt.dll
+     6                                  import fopen msvcrt.dll
+     7                                  import fread msvcrt.dll
+     8                                  import fclose msvcrt.dll
+     9                                  import printf msvcrt.dll
+    10                                  import fscanf msvcrt.dll
+    11                                  
+    12                                  segment data use32 class=data
+    13                                      ; defining the file name
+    14 00000000 696E7075742E747874-         file_name_input db "input.txt",0
+    14 00000009 00                 
+    15                                      ; defining the mode - read
+    16 0000000A 7200                        mode db "r",0
+    17                                      ; defining the descriptor
+    18 0000000C 00000000                    descriptor dd 0
+    19                                      ; defining the buffer for reading
+    20 00000010 000000000000000000-         buffer db 100 dup(0) ; buffer times 100 db 0
+    20 00000019 000000000000000000-
+    20 00000022 000000000000000000-
+    20 0000002B 000000000000000000-
+    20 00000034 000000000000000000-
+    20 0000003D 000000000000000000-
+    20 00000046 000000000000000000-
+    20 0000004F 000000000000000000-
+    20 00000058 000000000000000000-
+    20 00000061 000000000000000000-
+    20 0000006A 000000000000000000-
+    20 00000073 00                 
+    21                                      ; the buffer size (100)
+    22                                      buffer_size equ 100
+    23                                      
+    24                                      ;defining the output
+    25 00000074 6F75747075742E7478-         file_name_output db "output.txt",0
+    25 0000007D 7400               
+    26                                      ; defining the format
+    27 0000007F 257300                      format_string db "%s",0
+    28                                     
+    29 00000082 0A03FE07FB04F81400          s db 10,3,-2,7,-5,4,-8,20,0
+    30                                      l equ $ - s
+    31 0000008B 00<rep 9h>                  d times l db 0
+    32                                  
+    33                                  segment code use32 class=code
+    34                                  start:
+    35                                      ; 1 task
+    36                                      ; open
+    37                                      ; values in the stack are put from right to left
+    38 00000000 68[0A000000]                push dword mode ; this is why we start with the mode
+    39 00000005 68[00000000]                push dword file_name_input ; the file wewant to read
+    40 0000000A FF15[00000000]              call [fopen] ; call the fopen function
+    41 00000010 83C408                      add esp, 4*2 ; clear the stack - 2 parameters => 4*2
+    42                                  
+    43                                      ; handnling when unsuccessful opening
+    44 00000013 83F800                      cmp eax, 0 ; check if eax is 0
+    45 00000016 744C                        je open_failed ; if yes, we could not open the file
+    46 00000018 A3[0C000000]                mov [descriptor], eax ; if not, we add the value in the descriptor so that we can close the file gracefully at the end
+    47                                  
+    48                                      ; reading the file
+    49 0000001D FF35[0C000000]              push dword [descriptor]  ; using the descriptor
+    50 00000023 6A64                        push dword buffer_size
+    51 00000025 6A01                        push dword 1
+    52                                      
+    53 00000027 68[10000000]                push dword buffer
+    54 0000002C FF15[00000000]              call [fread] ; call the read function
+    55 00000032 83C410                      add esp, 4*4 ; clear the stack - 4 parameters
+    56                                  
+    57                                      ; handling unsuccessful reading
+    58 00000035 83F800                      cmp eax, 0
+    59 00000038 7432                        je read_failed
+    60                                  
+    61                                      ; printing the content of the file
+    62 0000003A 68[10000000]                push dword buffer
+    63 0000003F 68[7F000000]                push dword format_string
+    64 00000044 FF15[00000000]              call [printf]
+    65 0000004A 83C408                      add esp, 4*2
+    66                                  
+    67                                      ; closing
+    68 0000004D FF35[0C000000]              push dword [descriptor]
+    69 00000053 FF15[00000000]              call [fclose]
+    70 00000059 83C404                      add esp, 4*1
+    71                                  
+    72                                      ; exiting
+    73 0000005C 6A00                        push dword 0
+    74 0000005E FF15[00000000]              call [exit]
+    75                                  
+    76                                      open_failed:
+    77 00000064 6A00                        push dword 0
+    78 00000066 FF15[00000000]              call [exit]
+    79                                  
+    80                                      read_failed:
+    81 0000006C 6A00                        push dword 0
+    82 0000006E FF15[00000000]              call [exit]
+    83                                      
+    84                                      ; idea for 2 task
+    85                                      ; using fscanf read the content in the file
+    86                                      ; using a loop take the whole string s and compute the sum using other loop
+    87                                      
+    88                                      ; idea for 3 task
+    89                                      ; read a new file in the terminal
+    90                                      ; read those pairs
+    91                                      ; cmp each pair with -1,-1
+    92                                      ; if encountered, jump to where the sum is calculated
