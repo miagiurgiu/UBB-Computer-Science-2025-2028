@@ -1241,8 +1241,12 @@ CONCEPTS:
 2. OBJECT - instance of a class
 3. CONSTRUCTOR (_____init_____) - sets fields of the object
 4. ENCAPSULATION - ' _ ' or ' _  _ '
-5. 
+5. INHERITANCE - pass another class as a parameter
+```
+_data -> internal, cannot be used directly from exterior
+__data -> name-mangling
 
+```
 ## Lab 9
 test Modular + Procedural programming
 
