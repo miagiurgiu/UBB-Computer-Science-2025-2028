@@ -1227,7 +1227,8 @@ index.html      repository      search.js
 #### OOP STRUCTURE AND THEORY
 
 STRUCTURE OF AN OOP PROGRAM:
-1. Domain (Book/Store/)
+1. Domain (Book/Flight etc. -> only data )
+2. Repository ()
 
 ## Lab 9
 test Modular + Procedural programming
