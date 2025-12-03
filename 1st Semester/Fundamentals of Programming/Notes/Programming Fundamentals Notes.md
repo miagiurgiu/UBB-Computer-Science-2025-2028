@@ -1242,6 +1242,7 @@ CONCEPTS:
 3. CONSTRUCTOR (_____init_____) - sets fields of the object
 4. ENCAPSULATION - ' _ ' or ' _  _ '
 5. INHERITANCE - pass another class as a parameter
+
 ```
 _data -> internal, cannot be used directly from exterior (there is no "private" in python, so kinda private)
 __data -> name-mangling, can be used only inside the class
