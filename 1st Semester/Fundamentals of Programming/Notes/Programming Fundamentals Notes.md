@@ -1221,10 +1221,14 @@ index.html      repository      search.js
 
 ```
 
+
 ## Lecture 9
 
+### OOP STRUCTURE AND THEORY
+
+
 ## Lab 9
-test Modular + Procedural
+test Modular + Procedural programming
 
 ## Seminar 9
 
