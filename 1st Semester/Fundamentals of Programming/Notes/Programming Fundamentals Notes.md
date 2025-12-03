@@ -1240,7 +1240,8 @@ CONCEPTS:
 1. CLASS - blueprint
 2. OBJECT - instance of a class
 3. CONSTRUCTOR (_____init_____) - sets fields of the object
-4. ENCAPSULATION - choose their av
+4. ENCAPSULATION - ' _ ' or ' _  _ '
+5. 
 
 ## Lab 9
 test Modular + Procedural programming
