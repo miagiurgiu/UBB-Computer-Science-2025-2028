@@ -1243,8 +1243,8 @@ CONCEPTS:
 4. ENCAPSULATION - ' _ ' or ' _  _ '
 5. INHERITANCE - pass another class as a parameter
 ```
-_data -> internal, cannot be used directly from exterior
-__data -> name-mangling
+_data -> internal, cannot be used directly from exterior (there is no "private" in python, so kinda private)
+__data -> name-mangling, can be used only inside the class
 
 ```
 ## Lab 9
