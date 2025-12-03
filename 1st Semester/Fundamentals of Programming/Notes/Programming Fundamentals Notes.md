@@ -1234,7 +1234,12 @@ STRUCTURE OF AN OOP PROGRAM:
 5. main (links them all)
 
 FLOW:
+UI -> SERVICE -> REPOSITORY -> DOMAIN
 
+CONCEPTS:
+1. CLASS = blueprint
+2. OBJECT = instance of a class
+3. CONSTRUCTOR (_____init_____) 
 
 ## Lab 9
 test Modular + Procedural programming
