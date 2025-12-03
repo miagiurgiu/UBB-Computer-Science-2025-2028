@@ -1224,8 +1224,10 @@ index.html      repository      search.js
 
 ## Lecture 9
 
-### OOP STRUCTURE AND THEORY
+#### OOP STRUCTURE AND THEORY
 
+STRUCTURE OF AN OOP PROGRAM:
+1. Domain (Book/Store/)
 
 ## Lab 9
 test Modular + Procedural programming
