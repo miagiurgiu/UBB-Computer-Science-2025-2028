@@ -1220,3 +1220,16 @@ index.html      repository      search.js
 (.venv) Maria@Mac a8-miagiurgiu % 
 
 ```
+
+## Lecture 9
+
+## Lab 9
+test Modular + Procedural
+
+## Seminar 9
+
+## Lecture 10
+
+## Lab 10
+
+## Seminar 10
