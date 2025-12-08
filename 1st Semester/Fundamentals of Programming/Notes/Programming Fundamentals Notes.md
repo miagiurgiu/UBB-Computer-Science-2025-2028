@@ -1266,8 +1266,8 @@ THE 4 KEY CONCEPTS OF OOP IN PYTHON:
 - abstraction
 	- hide implementation details
 	- expose only the essential functionality of an object
-- polymorphism
-	- 
+- polymorphism ?
+	- trat objects of different types as instances of the same base type 
 
 How to create an object:
 - by instatiating a class -> calling the class name followed by parentheses
