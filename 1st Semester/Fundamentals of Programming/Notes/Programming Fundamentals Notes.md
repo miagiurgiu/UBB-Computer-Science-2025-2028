@@ -1239,6 +1239,7 @@ UI -> SERVICE -> REPOSITORY -> DOMAIN
 CONCEPTS:
 1. CLASS - blueprint
 2. OBJECT - instance of a class
+	- 
 3. CONSTRUCTOR (_____init_____) - sets fields of the object
 4. ENCAPSULATION - ' _ ' or ' _  _ '
 5. INHERITANCE - pass another class as a parameter
