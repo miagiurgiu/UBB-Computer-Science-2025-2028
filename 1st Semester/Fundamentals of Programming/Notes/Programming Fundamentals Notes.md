@@ -1269,6 +1269,8 @@ THE 4 KEY CONCEPTS OF OOP IN PYTHON:
 - polymorphism ?
 	- trat objects of different types as instances of the same base type 
 
+How to create a class:
+
 How to create an object:
 - by instatiating a class -> calling the class name followed by parentheses
 
@@ -1276,6 +1278,8 @@ How to create an object:
 book = Book("1", "Mircea Cartarescu", "Solenoid")
 
 ```
+
+
 
 How to call a method from the parent class:
 - by using super() -> extends/modifies inherited behaviour
