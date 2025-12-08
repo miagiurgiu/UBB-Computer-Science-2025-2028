@@ -1244,6 +1244,7 @@ CONCEPTS:
 	- a blueprint for how to define sth
 	- it does not contain any data
 	- ex: an employee class specifies that a name and age are necessary, but does not contain any name or age of any employee -> it's just the pattern
+	- like a form/questionnaire
 2. OBJECT - instance of a class
 	- Mia is an object:
 		- with properties (name Mia, age 19)
@@ -1256,7 +1257,8 @@ CONCEPTS:
 5. INHERITANCE - pass another class as a parameter
 6. INSTANCE
 	- an object that is built from a class and contains real data
-	- an instance of the employee class is not a blueprint anymore, but an actia
+	- an instance of the employee class is not a blueprint anymore, but an actual employee with a name
+	- the form/questionnaire is filled out with information
 
 ```
 _data -> internal, cannot be used directly from exterior (there is no "private" in python, so kinda private)
