@@ -1265,7 +1265,7 @@ book = Book("1", "Mircea Cartarescu", "Solenoid")
 ```
 
 How to call a method from the parent class:
-- by using 
+- by using super() -> extends/modifies inherited behaviour
 
 
 ## Lab 9
