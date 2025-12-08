@@ -1255,7 +1255,8 @@ CONCEPTS:
 4. ENCAPSULATION - ' _ ' or ' _  _ '
 5. INHERITANCE - pass another class as a parameter
 6. INSTANCE
-	- an object that is built from a class and 
+	- an object that is built from a class and contains real data
+	- an instance of the employee class is not a blueprint anymore, but an actia
 
 ```
 _data -> internal, cannot be used directly from exterior (there is no "private" in python, so kinda private)
