@@ -1259,9 +1259,12 @@ How to create an object:
 - by instatiating a class -> calling the class name followed by parentheses
 
 ```
-
+book = Book("1", "Mircea Cartarescu", "Solenoid")
 
 ```
+
+
+
 ## Lab 9
 test Modular + Procedural programming
 
