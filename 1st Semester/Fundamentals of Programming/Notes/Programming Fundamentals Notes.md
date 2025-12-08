@@ -1249,7 +1249,14 @@ __data -> name-mangling, can be used only inside the class
 
 ```
 
-THE 4 KEY CONCEPT
+THE 4 KEY CONCEPTS OF OOP IN PYTHON:
+- encapsulation
+- inheritance
+- abstraction
+- polymorphism
+
+How to create an object:
+
 ## Lab 9
 test Modular + Procedural programming
 
