@@ -1248,6 +1248,8 @@ _data -> internal, cannot be used directly from exterior (there is no "private" 
 __data -> name-mangling, can be used only inside the class
 
 ```
+
+THE 4 KEY CONCEPT
 ## Lab 9
 test Modular + Procedural programming
 
