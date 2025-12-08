@@ -1257,6 +1257,7 @@ __data -> name-mangling, can be used only inside the class
 
 THE 4 KEY CONCEPTS OF OOP IN PYTHON:
 - encapsulation
+	- 
 - inheritance (class inheritance)
 	- a class can inherit attributes and methods from another class (parent class)
 - abstraction
