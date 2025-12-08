@@ -1281,6 +1281,7 @@ THE 4 KEY CONCEPTS OF OOP IN PYTHON:
 	- trat objects of different types as instances of the same base type 
 
 How to create a class:
+- use CamelCase
 
 ```
 class Employee:
