@@ -1271,6 +1271,13 @@ THE 4 KEY CONCEPTS OF OOP IN PYTHON:
 
 How to create a class:
 
+```
+class Employee:
+	def __init__ (self, name, age): # declare which attributes each instance of the class should have
+		self.name = name
+		self.age = age
+
+```
 How to create an object:
 - by instatiating a class -> calling the class name followed by parentheses
 
