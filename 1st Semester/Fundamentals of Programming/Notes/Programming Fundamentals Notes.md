@@ -1243,7 +1243,7 @@ CONCEPTS:
 	- these methods identify the behaviours and actions of an object
 	- a blueprint for how to define sth
 	- it does not contain any data
-	- ex: an employee class specifies that a name and 
+	- ex: an employee class specifies that a name and age are necessary, but does not contain any name or age of any employee -> it's just the pattern
 2. OBJECT - instance of a class
 	- Mia is an object:
 		- with properties (name Mia, age 19)
@@ -1254,6 +1254,8 @@ CONCEPTS:
 3. CONSTRUCTOR (_____init_____) - sets fields of the object
 4. ENCAPSULATION - ' _ ' or ' _  _ '
 5. INHERITANCE - pass another class as a parameter
+6. INSTANCE
+	- an object that is built from a class and 
 
 ```
 _data -> internal, cannot be used directly from exterior (there is no "private" in python, so kinda private)
