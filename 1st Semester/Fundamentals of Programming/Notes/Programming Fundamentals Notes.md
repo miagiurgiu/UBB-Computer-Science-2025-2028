@@ -1238,6 +1238,7 @@ UI -> SERVICE -> REPOSITORY -> DOMAIN
 
 CONCEPTS:
 1. CLASS - blueprint
+	- 
 2. OBJECT - instance of a class
 	- Mia is an object:
 		- with properties (name Mia, age 19)
