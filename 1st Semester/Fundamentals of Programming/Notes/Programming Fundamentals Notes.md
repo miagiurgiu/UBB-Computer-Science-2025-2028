@@ -1238,7 +1238,9 @@ UI -> SERVICE -> REPOSITORY -> DOMAIN
 
 CONCEPTS:
 1. CLASS - blueprint
-	- 
+	- classes allows me to create user-defined data structures
+	- classes define functions called methods
+	- these methods identify the behaviours and actions of an object
 2. OBJECT - instance of a class
 	- Mia is an object:
 		- with properties (name Mia, age 19)
