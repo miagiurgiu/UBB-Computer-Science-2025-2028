@@ -1241,6 +1241,9 @@ CONCEPTS:
 	- classes allows me to create user-defined data structures
 	- classes define functions called methods
 	- these methods identify the behaviours and actions of an object
+	- a blueprint for how to define sth
+	- it does not contain any data
+	- ex: an employee class specifies that a name and 
 2. OBJECT - instance of a class
 	- Mia is an object:
 		- with properties (name Mia, age 19)
