@@ -1354,10 +1354,21 @@ How to access instance attributes:
 - using dot notation
 
 ```
-Mia.name -> Mia
+Mia.name # Mia
+Mia.age # 19
+
+Magda.name # Magda
+Magda.age # 52
+
+```
+
+How to access class attributes:
+
+```
 
 
 ```
+
 ## Lab 9
 test Modular + Procedural programming
 
