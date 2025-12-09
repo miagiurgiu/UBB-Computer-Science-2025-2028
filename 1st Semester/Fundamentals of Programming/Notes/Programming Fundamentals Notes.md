@@ -1323,8 +1323,10 @@ INSTANCE ATTRIBUTES vs CLASS ATTRIBUTES:
 
 ```
 class Employee:
-	s
-
+	species = "Homo Sapiens" # class attribute
+	def __init__(self, name, age):
+		self.name = name # instance attribute
+		self.age = age
 ```
 ## Lab 9
 test Modular + Procedural programming
