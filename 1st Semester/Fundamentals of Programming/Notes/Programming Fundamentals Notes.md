@@ -1304,7 +1304,7 @@ The init method:
 - can have any number of params, but the first one should be always "self"
 
 What does self do:
-- when we create a new class instance (like book above)
+- when we create a new class instance (like book above), that instance is passed to the self parameter in init -> python can define new attributes on the object
 
 
 How to call a method from the parent class:
