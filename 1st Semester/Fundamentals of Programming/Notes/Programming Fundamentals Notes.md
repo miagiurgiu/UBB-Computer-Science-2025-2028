@@ -1298,7 +1298,9 @@ book = Book("1", "Mircea Cartarescu", "Solenoid")
 
 ```
 
-The 
+The init method:
+- inside we define properties that all Employee objects must have
+- sets the initial state of the object
 
 
 How to call a method from the parent class:
