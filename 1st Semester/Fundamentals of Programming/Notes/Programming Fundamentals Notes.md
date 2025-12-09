@@ -1321,7 +1321,22 @@ print(Mia) # address -> we want that value -> we need __str__ method
 ```
 
 String method:
-- useful for printing stuff i
+- useful for printing useful stuff instead of weirdo addresses
+
+```
+class Employee:
+	def __init__ (self, name, age):
+		self.name = name 
+		self.age = age
+	def description(self): # instance method that returns a string (not pythonic)
+		return f"{self.name} is {self.age} years old"
+	def speak (self, sound): # instance method that returns a string based on the parameter
+		return f"{self.name says {sound}"
+	def __str__(self):
+		return f"
+
+
+```
 
 ```
 _data -> internal, cannot be used directly from exterior (there is no "private" in python, so kinda private)
