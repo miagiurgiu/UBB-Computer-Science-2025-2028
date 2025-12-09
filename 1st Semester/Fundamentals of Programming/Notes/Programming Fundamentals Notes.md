@@ -1259,7 +1259,12 @@ CONCEPTS:
 ```
 class Employee:
 	pass
-Employee() # we instantiated the Employee class
+Employee() # we instantiated the Employee class -> address1
+Employee() # -> address2
+
+a = Employee()
+b = Employee()
+a == b # print
 ```
 1. INHERITANCE - pass another class as a parameter
 2. INSTANCE
