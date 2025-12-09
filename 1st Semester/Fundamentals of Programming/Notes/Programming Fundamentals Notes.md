@@ -1255,17 +1255,20 @@ CONCEPTS:
 3. CONSTRUCTOR (_____init_____) - sets fields of the object
 4. ENCAPSULATION - ' _ ' or ' _  _ '
 5. INSTANTIATION
-	 - 
-6. INHERITANCE - pass another class as a parameter
-7. INSTANCE
+	 - creating a new object from a class
+```
+class Do
+```
+1. INHERITANCE - pass another class as a parameter
+2. INSTANCE
 	- an object that is built from a class and contains real data
 	- an instance of the employee class is not a blueprint anymore, but an actual employee with a name
 	- the form/questionnaire is filled out with information
-8. INSTANCE ATTRIBUTES:
+3. INSTANCE ATTRIBUTES:
 	- attributes created in init
 	- their value are specific to a particular instance of the class (ex: all employees have a name and age, but the values differ depending on the instance) -> information in form/questionnaire
 	- used to defining properties that vary between instances
-9. CLASS ATTRIBUTES:
+4. CLASS ATTRIBUTES:
 	- attributes that have the same values for all instances -> the form/questionnaire
 	- define them by assigning to them a value outside init
 	- defined immediately after the first line of the class name
