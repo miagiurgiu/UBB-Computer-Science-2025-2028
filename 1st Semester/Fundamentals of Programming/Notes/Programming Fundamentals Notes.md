@@ -1264,7 +1264,7 @@ CONCEPTS:
 	- their value are specific to a particular instance of the class (ex: all employees have a name and age, but the values differ depending on the instance) -> information in form/questionnaire
 8. CLASS ATTRIBUTES:
 	- attributes that have the same values for all instances -> the form/questionnaire
-	- define them outsi
+	- define them by assigning to them a value outside init
 
 ```
 _data -> internal, cannot be used directly from exterior (there is no "private" in python, so kinda private)
@@ -1319,7 +1319,13 @@ What does self do:
 How to call a method from the parent class:
 - by using super() -> extends/modifies inherited behaviour
 
+INSTANCE ATTRIBUTES vs CLASS ATTRIBUTES:
 
+```
+class Employee:
+	s
+
+```
 ## Lab 9
 test Modular + Procedural programming
 
