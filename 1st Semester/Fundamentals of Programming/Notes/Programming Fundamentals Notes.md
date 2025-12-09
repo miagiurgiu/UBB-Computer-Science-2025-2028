@@ -1294,7 +1294,7 @@ How to create an object:
 - by instatiating a class -> calling the class name followed by parentheses
 
 ```
-book = Book("1", "Mircea Cartarescu", "Solenoid") # this is an
+book = Book("1", "Mircea Cartarescu", "Solenoid") # this is an object
 ```
 
 The init method:
@@ -1302,6 +1302,9 @@ The init method:
 - sets the initial state of the object by assigning the values of the object's properties
 - init initializes each new instance of the class
 - can have any number of params, but the first one should be always "self"
+
+What does self do:
+- when we create a new class instance (like book above)
 
 
 How to call a method from the parent class:
