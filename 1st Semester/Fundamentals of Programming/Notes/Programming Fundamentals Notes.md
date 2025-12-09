@@ -1344,7 +1344,8 @@ class Employee:
 		self.age = age
 Employee() # error
 
-# c
+# create 2 Employee instances:
+# we don't use the first parameter because that one is "self"
 Mia = Employee("Mia", 19)
 Magda = Employee("Magda", 52)
 ```
