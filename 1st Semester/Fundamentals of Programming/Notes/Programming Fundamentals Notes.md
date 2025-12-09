@@ -1322,18 +1322,17 @@ print(Mia) # address -> we want that value -> we need __str__ method
 
 String method:
 - useful for printing useful stuff instead of weirdo addresses
-
+- that .description method was not pythonic -> replace it with str
 ```
 class Employee:
 	def __init__ (self, name, age):
 		self.name = name 
 		self.age = age
-	def description(self): # instance method that returns a string (not pythonic)
+	def __str__(self):
 		return f"{self.name} is {self.age} years old"
 	def speak (self, sound): # instance method that returns a string based on the parameter
-		return f"{self.name says {sound}"
-	def __str__(self):
-		return f"
+		return f"{self.name} says {sound}"
+	
 
 
 ```
