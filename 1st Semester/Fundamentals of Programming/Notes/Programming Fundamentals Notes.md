@@ -1298,8 +1298,14 @@ class Employee:
 		self.age = age
 	def description(self): # instance method that returns a string 
 		return f"{self.name} is {self.age} years old"
-	def speak (self, sound): # instance method that returns a string
+	def speak (self, sound): # instance method that returns a string based on the parameter
 		return f"(self.name) says {sound}"
+```
+
+```
+Mia = Employee("Mia", 19)
+Mia.description()
+
 ```
 
 ```
