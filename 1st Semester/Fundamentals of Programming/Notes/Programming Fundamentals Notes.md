@@ -1344,7 +1344,11 @@ class Employee:
 	def __init__(self, name, age):
 		self.name = name # instance attribute
 		self.age = age
+Employee() # error
 ```
+
+
+
 ## Lab 9
 test Modular + Procedural programming
 
