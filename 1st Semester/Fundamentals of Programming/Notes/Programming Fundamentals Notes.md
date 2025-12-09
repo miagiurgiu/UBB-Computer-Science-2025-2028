@@ -1261,9 +1261,10 @@ CONCEPTS:
 	- the form/questionnaire is filled out with information
 7. INSTANCE ATTRIBUTES:
 	- attributes created in init
-	- their value are specific to a particular instance of the class (ex: all employees have a name and age, but the values differ depending on the instance) -> information in 
+	- their value are specific to a particular instance of the class (ex: all employees have a name and age, but the values differ depending on the instance) -> information in form/questionnaire
 8. CLASS ATTRIBUTES:
-	- attributes that have the same values for all instances 
+	- attributes that have the same values for all instances -> the form/questionnaire
+	- define them outsi
 
 ```
 _data -> internal, cannot be used directly from exterior (there is no "private" in python, so kinda private)
