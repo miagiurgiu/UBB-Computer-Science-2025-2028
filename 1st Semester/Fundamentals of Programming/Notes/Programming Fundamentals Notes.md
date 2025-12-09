@@ -1316,9 +1316,12 @@ print(names)
 
 # ['Mia', 'Magda']
 
+print(Mia) # address -> we want that value -> we need __str__ method
+
 ```
 
-
+String method:
+- useful for printing stuff i
 
 ```
 _data -> internal, cannot be used directly from exterior (there is no "private" in python, so kinda private)
