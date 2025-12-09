@@ -1310,6 +1310,14 @@ Mia.speak("Goodbye") # Mia says Goodbye
 
 ```
 
+```
+names = ["Mia", "Magda"]
+print(names)
+
+# ['Mia', 'Magda']
+
+```
+
 
 
 ```
