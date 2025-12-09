@@ -1259,12 +1259,10 @@ CONCEPTS:
 ```
 class Employee:
 	pass
-Employee() # we instantiated the Employee class -> address1
-Employee() # -> address2
 
-a = Employee()
-b = Employee()
-a == b # prints out False because they are 2 distinct object in memory
+a = Employee() # we instantiated the Employee class -> address1
+b = Employee() # -> address2
+a == b # prints out False because they are 2 distinct object in memory (address1 != address2)
 ```
 1. INHERITANCE - pass another class as a parameter
 2. INSTANCE
@@ -1345,6 +1343,10 @@ class Employee:
 		self.name = name # instance attribute
 		self.age = age
 Employee() # error
+
+# c
+Mia = Employee("Mia", 19)
+Magda = Employee("Magda", 52)
 ```
 
 
