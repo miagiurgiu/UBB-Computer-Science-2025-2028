@@ -1323,6 +1323,7 @@ print(Mia) # address -> we want that value -> we need __str__ method
 String method:
 - useful for printing useful stuff instead of weirdo addresses
 - that .description method was not pythonic -> replace it with str
+- ~={blue}dunder method=~
 ```
 class Employee:
 	def __init__ (self, name, age):
@@ -1332,8 +1333,13 @@ class Employee:
 		return f"{self.name} is {self.age} years old"
 	def speak (self, sound): # instance method that returns a string based on the parameter
 		return f"{self.name} says {sound}"
-	
 
+```
+
+```
+Mia = Employee("Mia", 4)
+print("Mia")
+# 'Mia is 4 years old'
 
 ```
 
