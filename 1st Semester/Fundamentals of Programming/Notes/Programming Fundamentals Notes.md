@@ -1260,7 +1260,8 @@ CONCEPTS:
 	- an instance of the employee class is not a blueprint anymore, but an actual employee with a name
 	- the form/questionnaire is filled out with information
 7. INSTANCE ATTRIBUTES:
-
+	- attributes created in init
+	- their value are specific to a particular instance of the class (ex: all employees )
 
 ```
 _data -> internal, cannot be used directly from exterior (there is no "private" in python, so kinda private)
