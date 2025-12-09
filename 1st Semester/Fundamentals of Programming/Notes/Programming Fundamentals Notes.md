@@ -1350,8 +1350,14 @@ Mia = Employee("Mia", 19)
 Magda = Employee("Magda", 52)
 ```
 
+How to access instance attributes:
+- using dot notation
+
+```
+Mia.name -> Mia
 
 
+```
 ## Lab 9
 test Modular + Procedural programming
 
