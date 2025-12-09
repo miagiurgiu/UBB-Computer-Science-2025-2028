@@ -1304,7 +1304,9 @@ class Employee:
 
 ```
 Mia = Employee("Mia", 19)
-Mia.description()
+Mia.description() # Mia is 19 years old
+Mia.speak("Hello") # Mia says "Hello"
+Mia.speak("Goodbye") # Mia says :
 
 ```
 
