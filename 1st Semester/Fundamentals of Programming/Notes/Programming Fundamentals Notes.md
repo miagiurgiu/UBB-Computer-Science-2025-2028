@@ -1296,7 +1296,7 @@ class Employee:
 	def __init__ (self, name, age):
 		self.name = name 
 		self.age = age
-	def description(self): # instance method that returns a string 
+	def description(self): # instance method that returns a string (not pythonic)
 		return f"{self.name} is {self.age} years old"
 	def speak (self, sound): # instance method that returns a string based on the parameter
 		return f"(self.name) says {sound}"
@@ -1305,10 +1305,12 @@ class Employee:
 ```
 Mia = Employee("Mia", 19)
 Mia.description() # Mia is 19 years old
-Mia.speak("Hello") # Mia says "Hello"
-Mia.speak("Goodbye") # Mia says :
+Mia.speak("Hello") # Mia says Hello
+Mia.speak("Goodbye") # Mia says Goodbye
 
 ```
+
+
 
 ```
 _data -> internal, cannot be used directly from exterior (there is no "private" in python, so kinda private)
