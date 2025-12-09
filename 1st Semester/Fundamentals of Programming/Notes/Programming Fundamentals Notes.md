@@ -1292,7 +1292,14 @@ a == b # prints out False because they are 2 distinct object in memory (address1
 	 - always self as their first parameter
 
 ```
-
+class Employee:
+	def __init__ (self, name, age):
+		self.name = name 
+		self.age = age
+	def description(self):
+		return f"{self.name} is {self.age} years old"
+	def speak (self, sound):
+		ret
 ```
 
 ```
