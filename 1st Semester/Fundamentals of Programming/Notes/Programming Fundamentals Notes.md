@@ -1245,6 +1245,7 @@ CONCEPTS:
 	- it does not contain any data
 	- ex: an employee class specifies that a name and age are necessary, but does not contain any name or age of any employee -> it's just the pattern
 	- like a form/questionnaire
+	- advantage: instances are guaranteed to have the attribut
 2. OBJECT - instance of a class
 	- Mia is an object:
 		- with properties (name Mia, age 19)
@@ -1365,7 +1366,8 @@ Magda.age # 52
 How to access class attributes:
 
 ```
-
+Mia.species # Homo Sapiens
+Magda.species # Homo Sapiens
 
 ```
 
