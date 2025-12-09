@@ -1257,7 +1257,9 @@ CONCEPTS:
 5. INSTANTIATION
 	 - creating a new object from a class
 ```
-class Do
+class Employee:
+	pass
+Employee() # we instantiated the Employee class
 ```
 1. INHERITANCE - pass another class as a parameter
 2. INSTANCE
