@@ -1286,8 +1286,8 @@ How to create a class:
 ```
 class Employee:
 	def __init__ (self, name, age): # declare which attributes each instance of the class should have
-		self.name = name # creates an attribute c
-		self.age = age
+		self.name = name # creates an attribute called "name" (left) and assigns the value of the "name" (parameter) to it (right)
+		self.age = age # creates an attribute called "age" and assigns the values
 
 ```
 How to create an object:
