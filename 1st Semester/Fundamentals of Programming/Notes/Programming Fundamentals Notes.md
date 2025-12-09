@@ -1245,7 +1245,7 @@ CONCEPTS:
 	- it does not contain any data
 	- ex: an employee class specifies that a name and age are necessary, but does not contain any name or age of any employee -> it's just the pattern
 	- like a form/questionnaire
-	- advantage: instances are guaranteed to have the attribut
+	- advantage: instances are guaranteed to have the attributes we expect (all Emplouee instances have .species, .name, .age attributes)
 2. OBJECT - instance of a class
 	- Mia is an object:
 		- with properties (name Mia, age 19)
@@ -1361,6 +1361,10 @@ Mia.age # 19
 Magda.name # Magda
 Magda.age # 52
 
+Mia.name = Ioana
+
+
+
 ```
 
 How to access class attributes:
@@ -1368,8 +1372,9 @@ How to access class attributes:
 ```
 Mia.species # Homo Sapiens
 Magda.species # Homo Sapiens
-
 ```
+
+
 
 ## Lab 9
 test Modular + Procedural programming
