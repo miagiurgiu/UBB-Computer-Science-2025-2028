@@ -1262,12 +1262,14 @@ CONCEPTS:
 7. INSTANCE ATTRIBUTES:
 	- attributes created in init
 	- their value are specific to a particular instance of the class (ex: all employees have a name and age, but the values differ depending on the instance) -> information in form/questionnaire
+	- used to defining properties that vary between instances
 8. CLASS ATTRIBUTES:
 	- attributes that have the same values for all instances -> the form/questionnaire
 	- define them by assigning to them a value outside init
 	- defined immediately after the first line of the class name
 	- they must have an initial value
-	- flow: create an instance of the class -> python creates and assi
+	- flow: create an instance of the class -> python creates and assigns class attributes to their initial values
+	- used for defining properties that do not vary between instances
 
 ```
 _data -> internal, cannot be used directly from exterior (there is no "private" in python, so kinda private)
