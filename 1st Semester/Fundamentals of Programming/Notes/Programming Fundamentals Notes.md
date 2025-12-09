@@ -1259,6 +1259,8 @@ CONCEPTS:
 	- an object that is built from a class and contains real data
 	- an instance of the employee class is not a blueprint anymore, but an actual employee with a name
 	- the form/questionnaire is filled out with information
+7. INSTANCE ATTRIBUTES:
+
 
 ```
 _data -> internal, cannot be used directly from exterior (there is no "private" in python, so kinda private)
@@ -1286,10 +1288,12 @@ How to create a class:
 ```
 class Employee:
 	def __init__ (self, name, age): # declare which attributes each instance of the class should have
+		# instance attributes:
 		self.name = name # creates an attribute called "name" (left) and assigns the value of the "name" (parameter) to it (right)
-		self.age = age # creates an attribute called "age" and assigns the values
+		self.age = age # creates an attribute called "age" and assigns the value of the "age" parameter to it
 
 ```
+
 How to create an object:
 - by instatiating a class -> calling the class name followed by parentheses
 
