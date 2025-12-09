@@ -1296,10 +1296,10 @@ class Employee:
 	def __init__ (self, name, age):
 		self.name = name 
 		self.age = age
-	def description(self):
+	def description(self): # instance method that returns a string 
 		return f"{self.name} is {self.age} years old"
-	def speak (self, sound):
-		ret
+	def speak (self, sound): # instance method that returns a string
+		return f"(self.name) says {sound}"
 ```
 
 ```
