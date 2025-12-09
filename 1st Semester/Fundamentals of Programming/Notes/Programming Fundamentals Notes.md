@@ -1294,8 +1294,7 @@ How to create an object:
 - by instatiating a class -> calling the class name followed by parentheses
 
 ```
-book = Book("1", "Mircea Cartarescu", "Solenoid")
-
+book = Book("1", "Mircea Cartarescu", "Solenoid") # this is an
 ```
 
 The init method:
