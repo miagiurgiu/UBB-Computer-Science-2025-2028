@@ -1361,7 +1361,12 @@ Mia.age # 19
 Magda.name # Magda
 Magda.age # 52
 
-Mia.name = Ioana
+Mia.name = Ioana 
+Mia.name # Ioana
+
+Mia.species = "Felis silvestris"
+Mia.species
+
 
 
 
