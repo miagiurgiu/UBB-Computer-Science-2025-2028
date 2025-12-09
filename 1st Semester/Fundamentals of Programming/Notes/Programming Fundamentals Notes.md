@@ -1247,13 +1247,16 @@ CONCEPTS:
 	- like a form/questionnaire
 	- advantage: instances are guaranteed to have the attributes we expect (all Emplouee instances have .species, .name, .age attributes)
 2. OBJECT - instance of a class
+	- custom object are mutable by default
+	- an object is mutable if you can alter it dynamically (sth do to with private/public?)
+	- lists, dictionaries -> mutable
+	- strings, tuples -> immutable
 	- Mia is an object:
 		- with properties (name Mia, age 19)
 		- with behaviours (walking, talking, breathing)
 	- Magda is an object:
 		- with properties (name Magda, age 52)
 		- with behaviours (walking, running, eating)
-		- 
 3. CONSTRUCTOR (_____init_____) - sets fields of the object
 4. ENCAPSULATION - ' _ ' or ' _  _ '
 5. INSTANTIATION
