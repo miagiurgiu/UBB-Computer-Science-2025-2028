@@ -1264,7 +1264,7 @@ Employee() # -> address2
 
 a = Employee()
 b = Employee()
-a == b # print
+a == b # prints out False because they are 2 distinct object in memory
 ```
 1. INHERITANCE - pass another class as a parameter
 2. INSTANCE
