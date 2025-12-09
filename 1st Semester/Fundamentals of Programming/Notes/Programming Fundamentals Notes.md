@@ -1300,7 +1300,9 @@ book = Book("1", "Mircea Cartarescu", "Solenoid")
 
 The init method:
 - inside we define properties that all Employee objects must have
-- sets the initial state of the object
+- sets the initial state of the object by assigning the values of the object's properties
+- init initializes each new instance of the class
+- can have any number of params
 
 
 How to call a method from the parent class:
