@@ -1286,7 +1286,7 @@ How to create a class:
 ```
 class Employee:
 	def __init__ (self, name, age): # declare which attributes each instance of the class should have
-		self.name = name
+		self.name = name # creates an attribute c
 		self.age = age
 
 ```
@@ -1302,6 +1302,7 @@ The init method:
 - sets the initial state of the object by assigning the values of the object's properties
 - init initializes each new instance of the class
 - can have any number of params, but the first one should be always "self"
+- should pe properly indented
 
 What does self do:
 - when we create a new class instance (like book above), that instance is passed to the self parameter in init -> python can define new attributes on the object
