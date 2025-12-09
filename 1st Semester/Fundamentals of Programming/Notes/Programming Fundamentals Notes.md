@@ -1265,6 +1265,9 @@ CONCEPTS:
 8. CLASS ATTRIBUTES:
 	- attributes that have the same values for all instances -> the form/questionnaire
 	- define them by assigning to them a value outside init
+	- defined immediately after the first line of the class name
+	- they must have an initial value
+	- flow: create an instance of the class -> python creates and assi
 
 ```
 _data -> internal, cannot be used directly from exterior (there is no "private" in python, so kinda private)
