@@ -1289,6 +1289,11 @@ a == b # prints out False because they are 2 distinct object in memory (address1
  10. INSTANCE METHODS
 	 - functions defined inside a class
 	 - they can only call on an instance of that class
+	 - always self as their first parameter
+
+```
+
+```
 
 ```
 _data -> internal, cannot be used directly from exterior (there is no "private" in python, so kinda private)
