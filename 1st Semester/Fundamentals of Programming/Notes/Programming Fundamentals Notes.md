@@ -1269,22 +1269,26 @@ a = Employee() # we instantiated the Employee class -> address1
 b = Employee() # -> address2
 a == b # prints out False because they are 2 distinct object in memory (address1 != address2)
 ```
-1. INHERITANCE - pass another class as a parameter
-2. INSTANCE
+
+6. INHERITANCE - pass another class as a parameter
+7. INSTANCE
 	- an object that is built from a class and contains real data
 	- an instance of the employee class is not a blueprint anymore, but an actual employee with a name
 	- the form/questionnaire is filled out with information
-3. INSTANCE ATTRIBUTES:
+8. INSTANCE ATTRIBUTES:
 	- attributes created in init
 	- their value are specific to a particular instance of the class (ex: all employees have a name and age, but the values differ depending on the instance) -> information in form/questionnaire
 	- used to defining properties that vary between instances
-4. CLASS ATTRIBUTES:
+9. CLASS ATTRIBUTES:
 	- attributes that have the same values for all instances -> the form/questionnaire
 	- define them by assigning to them a value outside init
 	- defined immediately after the first line of the class name
 	- they must have an initial value
 	- flow: create an instance of the class -> python creates and assigns class attributes to their initial values
 	- used for defining properties that do not vary between instances
+ 10. INSTANCE METHODS
+	 - functions defined inside a class
+	 - they can only call on an instance of that class
 
 ```
 _data -> internal, cannot be used directly from exterior (there is no "private" in python, so kinda private)
