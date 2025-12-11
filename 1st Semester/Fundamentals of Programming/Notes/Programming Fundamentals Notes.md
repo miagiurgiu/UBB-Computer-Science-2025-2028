@@ -1453,4 +1453,6 @@ test Modular + Procedural programming
 
 ## Lecture 11
 
+The service layer. Design patterns.
+
 
