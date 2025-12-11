@@ -1483,3 +1483,5 @@ abstract = should not be instantiated. we use it to figure out when save_file, l
 
 local history
 percent of salt statistics -> low_salt_recipes
+
+transmit the repos as constructor parameters 
