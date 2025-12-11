@@ -1493,4 +1493,7 @@ transmit the repos as constructor parameters -> recipe_service
 4. review of the design patterns that we have already seen (memento, layered architecture, iterator, command design pattern for undo/redo)
 
 
-how to run with coverage -
+how to run with coverage
+- right click on test folder -> run all tests with coverage
+
+pip install cover
