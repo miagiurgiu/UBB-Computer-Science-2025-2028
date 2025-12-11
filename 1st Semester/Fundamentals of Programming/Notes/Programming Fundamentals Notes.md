@@ -1455,4 +1455,4 @@ test Modular + Procedural programming
 
 The service layer. Design patterns.
 
-
+- patterns repeating over and over again
