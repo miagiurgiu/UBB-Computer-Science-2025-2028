@@ -1459,8 +1459,11 @@ The service layer. Design patterns.
 - design patterns = generic solutions
 	- iterator (bakery -> repo -> memory_repo -> repository iterator) - traverses a data structure
 https://refactoring.guru/design-patterns/iterator
-		- layered architecture 
+	-  layered architecture 
 			- programs organised into layers
 			- each layer talks within itself / the level immediately below
 			- week 10 lecture notes (bakery example)
+	- memento
+			- remember the state of an object, revert to it when neede
+			- 
 
