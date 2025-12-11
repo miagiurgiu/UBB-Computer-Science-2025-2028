@@ -1453,7 +1453,7 @@ test Modular + Procedural programming
 
 ## Lecture 11
 
-The service layer. Design patterns.
+### The service layer. Design patterns.
 
 - patterns repeating over and over again
 - design patterns = generic solutions
