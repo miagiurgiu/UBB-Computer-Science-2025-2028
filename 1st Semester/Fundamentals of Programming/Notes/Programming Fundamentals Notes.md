@@ -1496,4 +1496,6 @@ transmit the repos as constructor parameters -> recipe_service
 how to run with coverage
 - right click on test folder -> run all tests with coverage
 
-pip install cover
+pip install coverage
+coverage run -m unittest discover -s tests
+coverage report -m
