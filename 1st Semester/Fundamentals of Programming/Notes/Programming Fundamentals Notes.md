@@ -1465,5 +1465,6 @@ https://refactoring.guru/design-patterns/iterator
 			- week 10 lecture notes (bakery example)
 	- memento
 			- remember the state of an object, revert to it when neede
-			- 
+			- when copying the list of entities for undo
+	
 
