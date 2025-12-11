@@ -1472,9 +1472,9 @@ test Modular + Procedural programming
 
 Uml diagram - IngredientAmount is a value object because it does not have an id, it is defined by its own attributes and does not depend on BakeryObject, but is part of the domain still.
 
-you can obtain thte memory repository form the repository iterator
+You can obtain thte memory repository form the repository iterator
 
-white triangle arrow = inheritance
+White triangle arrow = inheritance
 we need a different repo for each ingredient/product/recipe because we need different load file for each entity
 
 see abstract text file repo -> encodes the behaviour of when to load/save file
