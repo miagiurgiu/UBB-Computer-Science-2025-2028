@@ -1499,3 +1499,6 @@ how to run with coverage
 pip install coverage
 coverage run -m unittest discover -s tests
 coverage report -m
+
+how to save what you do in terminal:
+script session.txt
