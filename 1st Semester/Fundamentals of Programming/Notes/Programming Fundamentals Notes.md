@@ -1466,5 +1466,6 @@ https://refactoring.guru/design-patterns/iterator
 	- memento
 			- remember the state of an object, revert to it when neede
 			- when copying the list of entities for undo
-	
+	- command
+			- 
 
