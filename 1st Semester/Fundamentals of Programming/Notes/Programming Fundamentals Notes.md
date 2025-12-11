@@ -1482,4 +1482,4 @@ one underscore -> protected
 abstract = should not be instantiated. we use it to figure out when save_file, load_file must be called
 
 local history
-percent of salt
+percent of salt statistics -> low_salt_recipes
