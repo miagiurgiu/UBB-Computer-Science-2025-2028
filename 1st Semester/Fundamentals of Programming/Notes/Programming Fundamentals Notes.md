@@ -1476,5 +1476,8 @@ you can obtain thte memory repository form the repository iterator
 
 white triangle arrow = inheritance
 we need a different repo for each ingredient/product/recipe because we need different load file for each entity
-			- 
+
+see abstract text file repo -> encodes the behaviour of when to load/save file
+one underscore -> protected
+
 
