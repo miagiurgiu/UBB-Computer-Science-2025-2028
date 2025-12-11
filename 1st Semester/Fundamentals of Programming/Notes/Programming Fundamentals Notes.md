@@ -1469,6 +1469,6 @@ The service layer. Design patterns.
 			- when copying the list of entities for undo
 			- https://refactoring.guru/design-patterns/memento
 	- command
-uml diagram - IngredientAmount is a value object be
+uml diagram - IngredientAmount is a value object because it does not have an id, it is defined by its own attributes 
 			- 
 
