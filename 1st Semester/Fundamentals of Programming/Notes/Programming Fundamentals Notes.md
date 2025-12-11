@@ -1451,7 +1451,7 @@ test Modular + Procedural programming
 
 ## Seminar 10
 
-## Lecture 11
+## Lecture 11 (11 dec 2025)
 
 ### The service layer. Design patterns.
 
