@@ -1484,4 +1484,8 @@ abstract = should not be instantiated. we use it to figure out when save_file, l
 local history
 percent of salt statistics -> low_salt_recipes
 
-transmit the repos as constructor parameters 
+transmit the repos as constructor parameters -> recipe_service
+
+
+1. uml diagram for layered architecture more entities than needed - will be uploaded
+2. how to implement statistics us
