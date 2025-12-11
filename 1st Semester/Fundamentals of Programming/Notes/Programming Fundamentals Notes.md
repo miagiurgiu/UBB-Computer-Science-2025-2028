@@ -1457,4 +1457,4 @@ The service layer. Design patterns.
 
 - patterns repeating over and over again
 - design patterns = generic solutions
-	- examples: iterator, 
+	- examples: iterator (bakery -> repo -> memory_repo -> repository iterator)
