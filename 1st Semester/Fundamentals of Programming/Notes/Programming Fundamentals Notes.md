@@ -1488,4 +1488,6 @@ transmit the repos as constructor parameters -> recipe_service
 
 
 1. uml diagram for layered architecture more entities than needed - will be uploaded
-2. how to implement statistics us
+2. how to implement statistics using data transfer object move between layers
+3. implement undo/redo using command degin pattern
+4. review of the design patterns that we have already seen (memento, layered architecture, iterator, command design pattern for undo/redo)
