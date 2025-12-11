@@ -1475,6 +1475,6 @@ uml diagram - IngredientAmount is a value object because it does not have an id,
 you can obtain thte memory repository form the repository iterator
 
 white triangle arrow = inheritance
-
+we need a different repo for each ingredient/product/recipe because we need different load file for each entity
 			- 
 
