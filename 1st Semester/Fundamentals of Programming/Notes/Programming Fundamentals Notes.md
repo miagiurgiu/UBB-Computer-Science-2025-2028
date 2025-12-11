@@ -1457,8 +1457,9 @@ The service layer. Design patterns.
 
 - patterns repeating over and over again
 - design patterns = generic solutions
-	- iterator (bakery -> repo -> memory_repo -> repository iterator) - traverses a data structure
-https://refactoring.guru/design-patterns/iterator
+	- iterator (bakery -> repo -> memory_repo -> repository iterator) 
+			- traverses a data structure
+			- https://refactoring.guru/design-patterns/iterator
 	-  layered architecture 
 			- programs organised into layers
 			- each layer talks within itself / the level immediately below
@@ -1466,6 +1467,8 @@ https://refactoring.guru/design-patterns/iterator
 	- memento
 			- remember the state of an object, revert to it when neede
 			- when copying the list of entities for undo
+			- https://refactoring.guru/design-patterns/memento
 	- command
+			- 
 			- 
 
