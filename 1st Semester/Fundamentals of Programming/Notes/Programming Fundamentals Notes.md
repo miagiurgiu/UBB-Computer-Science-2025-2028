@@ -1566,3 +1566,8 @@ Lecture 11 - the Services layer, Design Patterns
 """
     In Python, function are "first class citizens" => they can be used like any variable (assigned, function parameters etc)
 """
+
+
+Observations:
+1) id, name properties are read-only (once we create the object, we cannot change its id)
+2) 
