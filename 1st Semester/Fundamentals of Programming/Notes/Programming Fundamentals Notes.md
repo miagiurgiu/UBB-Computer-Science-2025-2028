@@ -1570,4 +1570,6 @@ Lecture 11 - the Services layer, Design Patterns
 
 Observations:
 1) id, name properties are read-only (once we create the object, we cannot change its id)
-2) 
+2) This is an abstract class (abstract = it cannot/should not be instantiated)
+    Its job is to figure out when save_file and load_file must be called
+    Derived classes should implement those methods for storing BakeryObject instances
