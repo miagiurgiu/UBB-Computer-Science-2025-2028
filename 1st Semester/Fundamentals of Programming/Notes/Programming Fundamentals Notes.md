@@ -1555,6 +1555,7 @@ Lecture 11 - the Services layer, Design Patterns
             - we use it when copying the list of entities for undo/redo (it's not
             an exact implementation of the pattern though :( )
             -- learn more - https://refactoring.guru/design-patterns/memento
+            - very inneficient in terms of memory because it remembers the state of each 
 
         Command
             - Remember an operation (and its parameters) and carry it out sometime later
