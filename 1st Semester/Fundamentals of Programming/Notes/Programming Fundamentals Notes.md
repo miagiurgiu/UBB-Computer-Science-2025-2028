@@ -1573,3 +1573,8 @@ Observations:
 2) This is an abstract class (abstract = it cannot/should not be instantiated)
     Its job is to figure out when save_file and load_file must be called
     Derived classes should implement those methods for storing BakeryObject instances
+3) For layered architecture !!
+        - Transmit the repositories as constructor parameters, as this allows us to change the type of repository we use
+        without changing the service class source code
+        - Early form of "dependency injection"
+4) 
