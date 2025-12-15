@@ -1577,4 +1577,19 @@ Observations:
         - Transmit the repositories as constructor parameters, as this allows us to change the type of repository we use
         without changing the service class source code
         - Early form of "dependency injection"
-4) 
+4) Observations about writing PyUnit tests:
+        -> PyUnit is a member of the xUnit testing tools (the first was probably JUnit for Java)
+        -> Unit tests should be placed in their own directory/package (usually called "test")
+        -> Unit test classes must be derived from unittest.TestCase (gives us access to assertXXX methods)
+        -> test method names must start with "test_"
+        -> test methods are run separately from running the program
+        Test discovery:
+            -> the testing framework must be able to autoamtically find and run all unit tests
+            -> right-click on test package -> Run all tests ...
+        How do I know I've written enough tests? !?
+        => we use "code coverage" (how much of the application's source code, expressed in percents, was executed
+        while running the tests)
+            - the idea is not to miss classes, functions, code sections
+        => more code coverage is generally better than less, but not perfect :(
+        => 100% code coverage does not mean the application does not have bugs :(
+5) 
