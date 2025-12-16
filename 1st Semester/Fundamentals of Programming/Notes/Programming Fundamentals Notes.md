@@ -1596,4 +1596,8 @@ Observations:
 
 when to import and when not to import a class in another class:
 
-can we just use it by the _validator attribute? how does it know how to instantiate with that method from the validate_assignment class??
+why don't we import the validation class? can we just use it by the _validator attribute? how does it know how to instantiate with that method from the validate_assignment class??
+
+Because the validator is **created in `main()` and injected into the service**, not instantiated inside it.
+
+`AssignmentService` does **not need to import or create** `AssignmentValidator`; it only uses `self._validator`, which already **is** an `AssignmentValidator` instance passed via the constructor (dependency injection).
