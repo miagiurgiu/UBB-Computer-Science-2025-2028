@@ -1592,4 +1592,8 @@ Observations:
             - the idea is not to miss classes, functions, code sections
         => more code coverage is generally better than less, but not perfect :(
         => 100% code coverage does not mean the application does not have bugs :(
-5) 
+
+
+when to import and when not to import a class in another class:
+
+can we just use it by the _validator attribute? how does it know how to instantiate with that method from the validate_assignment class??
