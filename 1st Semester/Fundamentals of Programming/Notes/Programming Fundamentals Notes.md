@@ -1246,6 +1246,7 @@ CONCEPTS:
 	- ex: an employee class specifies that a name and age are necessary, but does not contain any name or age of any employee -> it's just the pattern
 	- like a form/questionnaire
 	- advantage: instances are guaranteed to have the attributes we expect (all Emplouee instances have .species, .name, .age attributes)
+	
 
 ```
 class A(object):
@@ -1255,6 +1256,7 @@ class A(object):
 		return "A"
 	
 in this case, class A inherits from class object
+all python classes (except object) inherit from object (either directly or transitively)
 ```
 1. OBJECT - instance of a class
 	- custom object are mutable by default
