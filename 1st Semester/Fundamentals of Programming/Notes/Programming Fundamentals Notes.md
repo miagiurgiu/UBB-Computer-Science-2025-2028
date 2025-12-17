@@ -1354,7 +1354,7 @@ print(Mia) # address -> we want that value -> we need __str__ method
 String method:
 - useful for printing useful stuff instead of weirdo addresses
 - that .description method was not pythonic -> replace it with str
-- ~={blue}dunder method=~
+- dunder method
 ```
 class Employee:
 	def __init__ (self, name, age):
