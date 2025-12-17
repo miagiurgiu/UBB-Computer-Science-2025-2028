@@ -1491,6 +1491,10 @@ https://github.com/Mathew-H7/Seminar-9-FP
 
 #### The service layer. Design patterns.
 
+Design patterns:
+- many problems in writing software keep repeating
+- = templates, generic solutions that when implemented
+
 Layered Architecture
 **What is it?**
 
