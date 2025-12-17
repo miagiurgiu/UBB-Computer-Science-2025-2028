@@ -1499,7 +1499,21 @@ Design patterns:
 Examples of Design patterns:
 1. ITERATOR
 		- traverses a collection so that we visit each element only once
-		- 
+		- example:
+```
+class RepositoryIterator:  
+    def __init__(self, elements):  
+        self._elements = list(elements)  
+        self._pos = -1  
+  
+    def __next__(self):  
+        self._pos += 1  
+        if self._pos >= len(self._elements):  
+            raise StopIteration()  
+        return self._elements[self._pos]
+
+```
+2. LAYERED ARCHITECTURE (= assi)
 Layered Architecture
 **What is it?**
 
