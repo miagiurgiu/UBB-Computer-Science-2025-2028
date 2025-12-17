@@ -1271,6 +1271,7 @@ a == b # prints out False because they are 2 distinct object in memory (address1
 ```
 
 6. INHERITANCE - pass another class as a parameter
+		- one of the pillars of OOP
 7. INSTANCE
 	- an object that is built from a class and contains real data
 	- an instance of the employee class is not a blueprint anymore, but an actual employee with a name
