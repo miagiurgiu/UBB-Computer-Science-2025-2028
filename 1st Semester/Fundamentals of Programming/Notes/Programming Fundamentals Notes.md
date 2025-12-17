@@ -1271,7 +1271,7 @@ class B(A):
   
 a = A()
 print(str(a))
-print
+print()
 ```
 1. OBJECT - instance of a class
 	- custom object are mutable by default
