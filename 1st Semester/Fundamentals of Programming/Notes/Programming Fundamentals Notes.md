@@ -1617,18 +1617,17 @@ class AbstractTextFileRepo(MemoryRepository):
 ```
 
 
-local history
-percent of salt statistics -> low_salt_recipes
-
-transmit the repos as constructor parameters -> recipe_service
-
 Conclusion:
-1. uml diagram for layered architecture more entities than needed - will be uploaded
+1. UML diagram for layered architecture more entities than needed https://github.com/cs-ubbcluj-ro/FP/blob/main/src/lecture/livecoding/bakery/Bakery_uml_class_diagram.png
 2. how to implement statistics using data transfer object move between layers
-3. implement undo/redo using command degin pattern
+3. implement undo/redo using command desgin pattern
 4. review of the design patterns that we have already seen (memento, layered architecture, iterator, command design pattern for undo/redo)
 
-we need a different repo for each ingredient/product/recipe because we need different load file for each entity
+Observations;
+- we need a different repo for each ingredient/product/recipe because we need different load file for each entity
+- transmit the repos as constructor parameters -> recipe_service
+- percent of salt statistics -> low_salt_recipes
+- local history
 
 how to run with coverage
 - right click on test folder -> run all tests with coverage
