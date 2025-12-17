@@ -1394,15 +1394,8 @@ THE 4 KEY CONCEPTS OF OOP IN PYTHON:
 	- hide implementation details
 	- expose only the essential functionality of an object
 - polymorphism ?
-	- trat objects of different types as instances of the same base type 
-	- 
-
-	The 3 pillars of oop:
-	1. Encapsulation 
-	2. Inheritance 
-	3. Polymorphism 
-
-
+	- treat objects of different types as instances of the same base type 
+	- (changing the way objects react to messages)
 
 How to create a class:
 - use CamelCase
@@ -1429,11 +1422,10 @@ The init method:
 - init initializes each new instance of the class
 - can have any number of params, but the first one should be always "self"
 - should pe properly indented
-- ~={blue}dunder method=~
+- dunder method
 
 What does self do:
 - when we create a new class instance (like book above), that instance is passed to the self parameter in init -> python can define new attributes on the object
-
 
 How to call a method from the parent class:
 - by using super() -> extends/modifies inherited behaviour
