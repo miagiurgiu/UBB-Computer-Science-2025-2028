@@ -1538,12 +1538,15 @@ class RepositoryIterator:
 		- remember the state of an object and revert to it when needed
 		- memory-consuming
 		- we use it when copying the list of entities for undo/repo 
+		- memento
+			- remember the state of an object, revert to it when needed
+			- when copying the list of entities for undo
+			- https://refactoring.guru/design-patterns/memento
 4. COMMAND (= design pattern)
 		- remember an operation + its parameters and carry it out sometime later
 		- we use it when we want to implement undo/redo
 
-Layered Architecture
-**What is it?**
+Layered Architecture - **What is it?**
 
 - It is a design pattern (a way to organize code) for writing large programs
 - The program is made up of layers
@@ -1565,14 +1568,6 @@ Layered Architecture
         - The domain contains the classes from the problem domain (e.g., _Product_, _Recipe_, _Ingredient_, etc.)
         - Classes from the domain do not know about any other layer
         - All other layer can use classes from the domain
-    
-
-	-  
-	- memento
-			- remember the state of an object, revert to it when neede
-			- when copying the list of entities for undo
-			- https://refactoring.guru/design-patterns/memento
-	- command
 
 Uml diagram - IngredientAmount is a value object because it does not have an id, it is defined by its own attributes and does not depend on BakeryObject, but is part of the domain still.
 
