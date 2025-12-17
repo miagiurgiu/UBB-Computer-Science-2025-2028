@@ -1249,8 +1249,12 @@ CONCEPTS:
 
 ```
 class A(object):
-	def __init
-
+	def __init__(self):
+		self.__a = 10
+	def m(self):
+		return "A"
+	
+in this case, class A inherits from class object
 ```
 1. OBJECT - instance of a class
 	- custom object are mutable by default
