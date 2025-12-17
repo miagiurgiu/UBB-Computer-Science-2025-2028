@@ -1265,8 +1265,13 @@ class B(A):
 	def m(self):
 		res = super().m() # access the initial method from class A
 		print(res)
+		return "B"
 		
-- method m() overrides 	
+- method m() in class B overrides method m() from class A
+  
+a = A()
+print(str(a))
+print
 ```
 1. OBJECT - instance of a class
 	- custom object are mutable by default
