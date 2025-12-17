@@ -1263,7 +1263,10 @@ class B(A):
 	def __init__(self):
 		super().__init__()
 	def m(self):
-		super().m()
+		res = super().m() # access the initial method from class A
+		print(res)
+		
+		
 ```
 1. OBJECT - instance of a class
 	- custom object are mutable by default
