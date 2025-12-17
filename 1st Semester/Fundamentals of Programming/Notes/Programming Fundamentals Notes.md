@@ -1354,7 +1354,7 @@ print(Mia) # address -> we want that value -> we need __str__ method
 String method:
 - useful for printing useful stuff instead of weirdo addresses
 - that .description method was not pythonic -> replace it with str
-- dunder method
+- init, str are dunder methods
 ```
 class Employee:
 	def __init__ (self, name, age):
@@ -1383,21 +1383,24 @@ __data -> name-mangling, can be used only inside the class
 THE 4 KEY CONCEPTS OF OOP IN PYTHON:
 - encapsulation
 	- bundle attributes and behaviours in a class
+	- (bundling state and behaviour together and selecting what to expose to the outside world)
 - inheritance (class inheritance)
 	- a class can inherit attributes and methods from another class (parent class)
 	- hierarchical relationships between classes
 	- a subclass can inherit attributes and methods from a parent class
 	- this reduces duplicate code
+	- (reuse code, specialize code, allow us to change things further down the line)
 - abstraction
 	- hide implementation details
 	- expose only the essential functionality of an object
 - polymorphism ?
 	- trat objects of different types as instances of the same base type 
+	- 
 
 	The 3 pillars of oop:
-	1. Encapsulation (bundling state and behaviour together and selecting what to expose to the outside world)
-	2. Inheritance (reuse code, specialize code, allow us to change things further down the line)
-	3. Polymorphism (changing the way objects react to messages)
+	1. Encapsulation 
+	2. Inheritance 
+	3. Polymorphism 
 
 
 
