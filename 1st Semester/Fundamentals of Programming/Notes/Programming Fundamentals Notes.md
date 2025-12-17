@@ -1514,6 +1514,9 @@ class RepositoryIterator:
 
 ```
 2. LAYERED ARCHITECTURE (= design pattern)
+		- high-level pattern, a way of organising large code
+		- program organised into layers (ui->service->repo)
+		- each layer talks with itself/the layer immediately below (repo talks to itself)
 Layered Architecture
 **What is it?**
 
