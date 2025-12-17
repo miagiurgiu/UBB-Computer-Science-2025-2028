@@ -1255,8 +1255,8 @@ class A(object):
 	def m(self):
 		return "A"
 	
-in this case, class A inherits from class object
-all python classes (except object) inherit from object (either directly or transitively)
+- in this case, class A inherits from class object
+- all python classes (except object) inherit from object (either directly or transitively) => all non-private fields and methods of class object also appear in class A
 ```
 1. OBJECT - instance of a class
 	- custom object are mutable by default
