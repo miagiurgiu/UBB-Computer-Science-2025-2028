@@ -1266,7 +1266,7 @@ class B(A):
 		res = super().m() # access the initial method from class A
 		print(res)
 		
-		
+- method m() overrides 	
 ```
 1. OBJECT - instance of a class
 	- custom object are mutable by default
