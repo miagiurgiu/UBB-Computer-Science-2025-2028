@@ -1577,12 +1577,43 @@ Uml diagram
 - IngredientAmount is a value object because it does not have an id, it is defined by its own attributes and does not depend on BakeryObject, but is part of the domain still.
 - White triangle arrow = inheritance
 - 
-we need a different repo for each ingredient/product/recipe because we need different load file for each entity
 
 Abstract_text_file_repo:
-see abstract text file repo -> encodes the behaviour of when to load/save file
-one underscore -> protected
-abstract = should not be instantiated. we use it to figure out when save_file, load_file must be called
+
+```
+from lecture.livecoding.bakery.domain.bakery_object import BakeryObject
+from lecture.livecoding.bakery.repo.memory_repo import MemoryRepository
+
+
+class AbstractTextFileRepo(MemoryRepository):
+    """
+    This is an abstract class (abstract = it cannot/should not be instantiated)
+    Its job is to figure out when save_file and load_file must be called
+    Derived classes should implement those methods for storing BakeyObject instances
+    """
+
+    def __init__(self, file_name: str):
+        super().__init__()
+        self._file_name = file_name
+        self._load_file()
+
+    def store(self, element: BakeryObject):
+        super().store(element)
+        # self._save_file()
+
+    def remove(self, element: BakeryObject):
+        super().remove(element)
+        # self._save_file()
+
+    def _load_file(self):
+        raise NotImplementedError("Must be implemented in subclasses")
+
+    def _save_file(self):
+        raise NotImplementedError("Must be implemented in subclasses")
+
+```
+
+
 
 local history
 percent of salt statistics -> low_salt_recipes
@@ -1594,6 +1625,7 @@ transmit the repos as constructor parameters -> recipe_service
 3. implement undo/redo using command degin pattern
 4. review of the design patterns that we have already seen (memento, layered architecture, iterator, command design pattern for undo/redo)
 
+we need a different repo for each ingredient/product/recipe because we need different load file for each entity
 
 how to run with coverage
 - right click on test folder -> run all tests with coverage
