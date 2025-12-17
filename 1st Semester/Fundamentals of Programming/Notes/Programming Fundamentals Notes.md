@@ -1493,8 +1493,13 @@ https://github.com/Mathew-H7/Seminar-9-FP
 
 Design patterns:
 - many problems in writing software keep repeating
-- = templates, generic solutions that when implemented
+- = templates, generic solutions that when implemented, can help
+- a common way to solve common problems
 
+Examples of Design patterns:
+1. ITERATOR
+		- traverses a collection so that we visit each element only once
+		- 
 Layered Architecture
 **What is it?**
 
