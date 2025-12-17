@@ -1502,10 +1502,15 @@ Design patterns:
 - many problems in writing software keep repeating
 - = templates, generic solutions that when implemented, can help
 - a common way to solve common problems
+-  patterns repeating over and over again
+- design patterns = generic solutions
 
 Examples of Design patterns:
 1. ITERATOR
 		- traverses a collection so that we visit each element only once
+		- iterator (bakery -> repo -> memory_repo -> repository iterator) 
+			- traverses a data structure
+			- https://refactoring.guru/design-patterns/iterator
 		- example:
 ```
 class RepositoryIterator:  
@@ -1524,6 +1529,10 @@ class RepositoryIterator:
 		- high-level pattern, a way of organising large code
 		- program organised into layers (ui->service->repo)
 		- each layer talks with itself/the layer immediately below (ex: service talks to itself + repo; ui talks to itself + service)
+		- layered architecture 
+			- programs organised into layers
+			- each layer talks within itself / the level immediately below
+			- week 10 lecture notes (bakery example)
 
 3. MEMENTO (= design pattern)
 		- remember the state of an object and revert to it when needed
@@ -1558,14 +1567,7 @@ Layered Architecture
         - All other layer can use classes from the domain
     
 
-- design patterns = generic solutions
-	- iterator (bakery -> repo -> memory_repo -> repository iterator) 
-			- traverses a data structure
-			- https://refactoring.guru/design-patterns/iterator
-	-  layered architecture 
-			- programs organised into layers
-			- each layer talks within itself / the level immediately below
-			- week 10 lecture notes (bakery example)
+	-  
 	- memento
 			- remember the state of an object, revert to it when neede
 			- when copying the list of entities for undo
