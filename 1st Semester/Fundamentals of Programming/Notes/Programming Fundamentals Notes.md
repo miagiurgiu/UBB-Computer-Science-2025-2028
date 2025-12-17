@@ -1273,7 +1273,7 @@ a = A()
 print(str(a))
 print()
 ```
-1. OBJECT - instance of a class
+2. OBJECT - instance of a class
 	- custom object are mutable by default
 	- a built-in Python class
 	- the root of the Python inheritance tree
@@ -1286,9 +1286,9 @@ print()
 	- Magda is an object:
 		- with properties (name Magda, age 52)
 		- with behaviours (walking, running, eating)
-2. CONSTRUCTOR (_____init_____) - sets fields of the object
-3. ENCAPSULATION - ' _ ' or ' _  _ '
-4. INSTANTIATION
+3. CONSTRUCTOR (_____init_____) - sets fields of the object
+4. ENCAPSULATION - ' _ ' or ' _  _ '
+5. INSTANTIATION
 	 - creating a new object from a class
 	
 ```
