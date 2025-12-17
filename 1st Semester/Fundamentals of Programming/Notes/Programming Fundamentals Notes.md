@@ -1629,15 +1629,23 @@ Observations;
 - percent of salt statistics -> low_salt_recipes
 - local history
 
-how to run with coverage
+How to run with coverage:
 - right click on test folder -> run all tests with coverage
 
+How to see coverage report in terminal:
+
+```
 pip install coverage
 coverage run -m unittest discover -s tests
 coverage report -m
+```
 
-how to save what you do in terminal:
+How to save what you do in terminal:
+```
 script session.txt
+
+```
+
 
 Lecture 11 - the Services layer, Design Patterns
 
