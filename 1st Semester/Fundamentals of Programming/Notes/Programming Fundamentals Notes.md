@@ -1579,7 +1579,10 @@ Uml diagram
 - 
 
 Abstract_text_file_repo:
-
+- see abstract text file repo -> encodes the behaviour of when to load/save file
+one underscore -> protected
+- abstract = should not be instantiated. 
+- we use it to figure out when save_file, load_file must be called
 ```
 from lecture.livecoding.bakery.domain.bakery_object import BakeryObject
 from lecture.livecoding.bakery.repo.memory_repo import MemoryRepository
@@ -1614,12 +1617,12 @@ class AbstractTextFileRepo(MemoryRepository):
 ```
 
 
-
 local history
 percent of salt statistics -> low_salt_recipes
 
 transmit the repos as constructor parameters -> recipe_service
 
+Conclusion:
 1. uml diagram for layered architecture more entities than needed - will be uploaded
 2. how to implement statistics using data transfer object move between layers
 3. implement undo/redo using command degin pattern
