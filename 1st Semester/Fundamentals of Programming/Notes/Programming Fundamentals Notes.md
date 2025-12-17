@@ -1519,7 +1519,12 @@ class RepositoryIterator:
 		- program organised into layers (ui->service->repo)
 		- each layer talks with itself/the layer immediately below (ex: service talks to itself + repo; ui talks to itself + service)
 
-
+3. MEMENTO (= design pattern)
+		- remember the state of an object and revert to it when needed
+		- memory-consuming
+		- we use it when copying the list of entities for undo/repo 
+4. COMMAND (= dessi)
+5. 
 Layered Architecture
 **What is it?**
 
