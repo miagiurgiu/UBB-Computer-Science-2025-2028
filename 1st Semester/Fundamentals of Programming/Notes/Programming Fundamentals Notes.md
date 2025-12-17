@@ -1261,7 +1261,7 @@ class A(object):
   
 class B(A):
 	def __init__(self):
-		super().__init__()
+		super().__init__() # this if how we call the constructor of the base class in python
 	def m(self):
 		res = super().m() # access the initial method from class A
 		print(res)
