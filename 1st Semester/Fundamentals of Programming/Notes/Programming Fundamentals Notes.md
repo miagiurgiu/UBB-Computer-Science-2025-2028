@@ -1479,7 +1479,8 @@ test Modular + Procedural programming
 
 
 ## Lecture 10
-
+bakery
+https://github.com/cs-ubbcluj-ro/FP/tree/main/src/lecture/livecoding/bakery
 
 ## Lab 10
 a9 layered architecture
@@ -1516,7 +1517,9 @@ class RepositoryIterator:
 2. LAYERED ARCHITECTURE (= design pattern)
 		- high-level pattern, a way of organising large code
 		- program organised into layers (ui->service->repo)
-		- each layer talks with itself/the layer immediately below (repo talks to itself)
+		- each layer talks with itself/the layer immediately below (ex: service talks to itself + repo; ui talks to itself + service)
+
+
 Layered Architecture
 **What is it?**
 
