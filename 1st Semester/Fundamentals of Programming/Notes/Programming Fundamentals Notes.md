@@ -1647,47 +1647,6 @@ script session.txt
 ```
 
 
-Lecture 11 - the Services layer, Design Patterns
-
-    What are Design Patterns?
-        - people figured out that many problems in writing software keep repeating over
-        and over
-        - design patterns are template (generic) solutions that when implemented, can
-        help
-        - a common way to solve common problems
-
-    What Design Patterns have we already come across?
-        Iterator
-            - solves the problem of traversing a collection, so that we visit each
-            element exactly once
-            - look up implementation of MemoryRepository in Bakery example
-            learn more at https://refactoring.guru/design-patterns/iterator
-
-        Layered Architecture
-            - very high-level pattern, which provides a suitable (not perfect, not unique)
-            way of organizing a large program
-            - programs are organized into layers ( ui -> services -> repository)
-            - each layer talks within itself or with the layer immediately below
-            - look up week 10 lecture notes in the source code (bakery example)
-
-        Memento
-            - remember the state of an object and revert to it when needed
-            - we use it when copying the list of entities for undo/redo (it's not
-            an exact implementation of the pattern though :( )
-            -- learn more - https://refactoring.guru/design-patterns/memento
-            - very inneficient in terms of memory because it remembers the state of each 
-
-        Command
-            - Remember an operation (and its parameters) and carry it out sometime later
-            - Used for undo/redo in many cases
-            - Learn more at -- https://refactoring.guru/design-patterns/command
-"""
-
-"""
-    In Python, function are "first class citizens" => they can be used like any variable (assigned, function parameters etc)
-"""
-
-
 Observations:
 1) id, name properties are read-only (once we create the object, we cannot change its id)
 2) This is an abstract class (abstract = it cannot/should not be instantiated)
