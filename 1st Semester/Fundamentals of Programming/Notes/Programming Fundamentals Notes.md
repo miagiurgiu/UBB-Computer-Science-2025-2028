@@ -1492,6 +1492,8 @@ https://github.com/Mathew-H7/Seminar-9-FP
 
 #### The service layer. Design patterns.
 
+! k
+
 Design patterns:
 - many problems in writing software keep repeating
 - = templates, generic solutions that when implemented, can help
@@ -1523,8 +1525,10 @@ class RepositoryIterator:
 		- remember the state of an object and revert to it when needed
 		- memory-consuming
 		- we use it when copying the list of entities for undo/repo 
-4. COMMAND (= dessi)
-5. 
+4. COMMAND (= design pattern)
+		- remember an operation + its parameters and carry it out sometime later
+		- we use it when we want to implement undo/redo
+
 Layered Architecture
 **What is it?**
 
