@@ -1246,7 +1246,13 @@ CONCEPTS:
 	- ex: an employee class specifies that a name and age are necessary, but does not contain any name or age of any employee -> it's just the pattern
 	- like a form/questionnaire
 	- advantage: instances are guaranteed to have the attributes we expect (all Emplouee instances have .species, .name, .age attributes)
-2. OBJECT - instance of a class
+
+```
+class A(object):
+	def __init
+
+```
+1. OBJECT - instance of a class
 	- custom object are mutable by default
 	- a built-in Python class
 	- the root of the Python inheritance tree
@@ -1259,9 +1265,9 @@ CONCEPTS:
 	- Magda is an object:
 		- with properties (name Magda, age 52)
 		- with behaviours (walking, running, eating)
-3. CONSTRUCTOR (_____init_____) - sets fields of the object
-4. ENCAPSULATION - ' _ ' or ' _  _ '
-5. INSTANTIATION
+2. CONSTRUCTOR (_____init_____) - sets fields of the object
+3. ENCAPSULATION - ' _ ' or ' _  _ '
+4. INSTANTIATION
 	 - creating a new object from a class
 	
 ```
