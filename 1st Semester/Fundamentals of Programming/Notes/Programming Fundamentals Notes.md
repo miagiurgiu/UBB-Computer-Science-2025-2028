@@ -1248,6 +1248,8 @@ CONCEPTS:
 	- advantage: instances are guaranteed to have the attributes we expect (all Emplouee instances have .species, .name, .age attributes)
 2. OBJECT - instance of a class
 	- custom object are mutable by default
+	- a built-in Python class
+	- the root of the Python inheritance tree
 	- an object is mutable if you can alter it dynamically (sth do to with private/public?)
 	- lists, dictionaries -> mutable
 	- strings, tuples -> immutable
@@ -1261,6 +1263,7 @@ CONCEPTS:
 4. ENCAPSULATION - ' _ ' or ' _  _ '
 5. INSTANTIATION
 	 - creating a new object from a class
+	
 ```
 class Employee:
 	pass
