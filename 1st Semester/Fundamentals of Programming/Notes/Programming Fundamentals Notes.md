@@ -1492,7 +1492,11 @@ https://github.com/Mathew-H7/Seminar-9-FP
 
 #### The service layer. Design patterns.
 
-! k
+! keep in mind:
+in Python, functions are "first-class-citizens" => they can be used like any other variable,
+so functions can be:
+	- assigned
+	- we can give them as parameters
 
 Design patterns:
 - many problems in writing software keep repeating
