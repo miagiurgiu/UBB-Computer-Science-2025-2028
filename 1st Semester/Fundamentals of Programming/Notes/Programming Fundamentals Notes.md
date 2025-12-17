@@ -1557,7 +1557,7 @@ Layered Architecture
         - Classes from the domain do not know about any other layer
         - All other layer can use classes from the domain
     
-- patterns repeating over and over again
+
 - design patterns = generic solutions
 	- iterator (bakery -> repo -> memory_repo -> repository iterator) 
 			- traverses a data structure
@@ -1574,7 +1574,7 @@ Layered Architecture
 
 Uml diagram - IngredientAmount is a value object because it does not have an id, it is defined by its own attributes and does not depend on BakeryObject, but is part of the domain still.
 
-You can obtain thte memory repository form the repository iterator
+You can obtain the memory repository form the repository iterator
 
 White triangle arrow = inheritance
 we need a different repo for each ingredient/product/recipe because we need different load file for each entity
@@ -1587,7 +1587,6 @@ local history
 percent of salt statistics -> low_salt_recipes
 
 transmit the repos as constructor parameters -> recipe_service
-
 
 1. uml diagram for layered architecture more entities than needed - will be uploaded
 2. how to implement statistics using data transfer object move between layers
