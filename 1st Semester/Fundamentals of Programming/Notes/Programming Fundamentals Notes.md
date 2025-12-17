@@ -1513,7 +1513,7 @@ class RepositoryIterator:
         return self._elements[self._pos]
 
 ```
-2. LAYERED ARCHITECTURE (= assi)
+2. LAYERED ARCHITECTURE (= design pattern)
 Layered Architecture
 **What is it?**
 
