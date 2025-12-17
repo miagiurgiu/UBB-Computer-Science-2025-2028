@@ -1472,17 +1472,20 @@ Magda.species # Homo Sapiens
 ```
 
 
-
 ## Lab 9
 test Modular + Procedural programming
 
 ## Seminar 9
 
+
 ## Lecture 10
 
+
 ## Lab 10
+a9 layered architecture
 
 ## Seminar 10
+
 
 ## Lecture 11 (11 dec 2025)
 
