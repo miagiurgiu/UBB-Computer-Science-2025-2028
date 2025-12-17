@@ -1364,6 +1364,8 @@ THE 4 KEY CONCEPTS OF OOP IN PYTHON:
 - polymorphism ?
 	- trat objects of different types as instances of the same base type 
 
+	The 3 pillars of oop:
+	1. Encapsulation (bundling stat)
 How to create a class:
 - use CamelCase
 
