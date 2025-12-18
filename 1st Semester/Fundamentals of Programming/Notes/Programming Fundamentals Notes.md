@@ -1680,3 +1680,6 @@ When to import and when not to import a class in another class:
 
 
 How to add a new sth to the dictionary:
+
+
+A11: game Planes 
