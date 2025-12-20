@@ -1683,27 +1683,12 @@ How to add a new sth to the dictionary:
 
 
 A11: game Planes 
-
-
-
 Questions for Alex:
-import string  
-from random import shuffle  
-from texttable import Texttable  
-  
-class MinefieldException(Exception):  
-    pass  
-  
-class Minefield:  
-    def __init__(self, rows:int, columns:int, mines: int):  
-        self.__rows = rows  
-        self.__columns = columns  
-        self.__mines = mines  
-  
-        self.__mines_laid = False # we did not lay the mines  
-        self.__data = [[0 for i in range(columns)] for j in range(rows)]  
+
+1. why return a tuple like this return val, False ?
+
       
     def _cell_state(self, row, column):  
         val = self.__data[row][column]  
         if val < 10:  
-            return val, False # why the value and false
+            return val, False # why the value and false? 
