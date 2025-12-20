@@ -1692,3 +1692,6 @@ Questions for Alex:
         val = self.__data[row][column]  
         if val < 10:  
             return val, False # why the value and false? 
+
+2. why a list of lists and not a matrix? list of lists = matrix in python?
+3. 
