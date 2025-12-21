@@ -1874,6 +1874,9 @@ Layered Architecture questions
 ![[Pasted image 20251221121027.png]]
 ![[Pasted image 20251221121050.png]]
 
+![[Pasted image 20251221121119.png]]
+
+![[Pasted image 20251221121140.png]]
 
 
 2. when to have a validator class? the teacher in the seminar insisted on having a validator class, but in the example given by him the validator class does nothing, it is just passed to the service as an attribute
