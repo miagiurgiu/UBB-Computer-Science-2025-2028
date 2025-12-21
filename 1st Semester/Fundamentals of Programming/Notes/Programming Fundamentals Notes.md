@@ -1582,7 +1582,6 @@ class RepositoryIterator:
 Uml diagram 
 - IngredientAmount is a value object because it does not have an id, it is defined by its own attributes and does not depend on BakeryObject, but is part of the domain still.
 - White triangle arrow = inheritance
-- 
 
 Abstract_text_file_repo:
 - see abstract text file repo -> encodes the behaviour of when to load/save file
