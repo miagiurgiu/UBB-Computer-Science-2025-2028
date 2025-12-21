@@ -1809,6 +1809,9 @@ class AbstractTextFileRepo(MemoryRepository):
 
 7. what's the point of a DTO (data transfer object) and how does it work, when to use
 
+this is a dto class:
+
+
 OOP questions
 
 Layered Architecture questions
