@@ -1693,10 +1693,11 @@ A11: game Planes
 Questions for Alex:
 
 Syntax questions
+1. 
 OOP questions
 Layered Architecture questions
 
-1. why return a tuple like this return val, False ?
+2. why return a tuple like this return val, False?
 
 ```
 def _cell_state(self, row, column):  
