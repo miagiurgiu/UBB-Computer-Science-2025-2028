@@ -1727,6 +1727,17 @@ def _cell_state(self, row, column):
             return val, False # why return a tuple like this? how will this be accessed further?
         else:
 	        return val, True
+	        
+def click(self, row: int, column: int):
+        if not (0 < row < self.__rows) or not (0 < column < self.__columns):
+            raise MinefieldException(f"User clicked out of bounds: ({row},{column})")
+        self.__lay_mines(row, column)
+
+        if self.__cell_state(row, column)[0] == 9:
+            raise MinefieldException(f"Game over, there is a mine on ({row},{column})")
+        self.__reveal(row, column)
+
+
 ```
 
 4. why a list of lists and not a matrix? list of lists = matrix in python? in the context of creating the field for a minesweeper game
