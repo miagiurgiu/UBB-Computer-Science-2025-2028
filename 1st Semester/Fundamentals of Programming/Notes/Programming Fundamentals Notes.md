@@ -1911,3 +1911,6 @@ class GradeValidator:
 5. how does command design pattern work
 
 Minesweeper questions:
+
+**2. polymorphism =  treat objects of different types as instances of the same base type (I don't understand the definition and I can't associate it with an example) overriding is a polymorphism**
+
