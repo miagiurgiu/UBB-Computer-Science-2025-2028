@@ -1813,6 +1813,11 @@ OOP questions
 
 Layered Architecture questions
 1. structure of a program. is there a template/structure for layered architecture code with repo, service, ui, start, tests. clarify the structure. clear in general, but if i have binaryrepo, textrepo etc it gets complicated.
-2. when to have a validator class? the teacher in the seminar insisted on having a validator class, but in the example given by him the validator class does nothing and he still checks everything 
+2. when to have a validator class? the teacher in the seminar insisted on having a validator class, but in the example given by him the validator class does nothing and he still checks if the data entered by the user is valid inside the ui, not in the validator
+
+validation package:
+
+
+
 
 
