@@ -1274,7 +1274,11 @@ print(str(a))
 print(a.__str__())
 print(a.m())
 
-b =
+b = B()
+print(b.__str__())
+print(b.m())
+
+
 ```
 2. OBJECT - instance of a class
 	- custom object are mutable by default
