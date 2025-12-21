@@ -1862,7 +1862,7 @@ class Student:
 OOP questions
 
 Layered Architecture questions
-1. structure of a program. is there a template/structure for layered architecture code with repo, service, ui, start, tests. clarify the structure. clear in general, but if i have binaryrepo, textrepo etc it gets complicated. ce structure imi recomanzi? main - ul ar trebui sa fie intr-un package separat de "start" sau on its own? 
+1. structure of a program. is there a template/structure for layered architecture code with repo, service, ui, start, tests. clarify the structure. clear in general, but if i have binaryrepo, textrepo etc it gets complicated. ce structure imi recomanzi? main - ul ar trebui sa fie intr-un package separat de "start" sau on its own? pentru undo ar trebui sa am un package separat sau sa bag undo_service in package-ul services? si restul modulelor pentru commands? 
 ![[Pasted image 20251221120507.png]]
 ![[Pasted image 20251221120550.png]]
 ![[Pasted image 20251221120617.png]]
@@ -1879,8 +1879,6 @@ Layered Architecture questions
 ![[Pasted image 20251221121140.png]]
 
 ![[Pasted image 20251221121205.png]]
-
-
 
 2. when to have a validator class? the teacher in the seminar insisted on having a validator class, but in the example given by him the validator class does nothing, it is just passed to the service as an attribute
 
@@ -1906,3 +1904,5 @@ class GradeValidator:
     def validate(self, grade):
         pass
 ```
+
+3. UML diagram unde
