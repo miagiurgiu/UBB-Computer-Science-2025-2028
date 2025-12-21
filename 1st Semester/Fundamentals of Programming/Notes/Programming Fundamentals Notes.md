@@ -1717,8 +1717,8 @@ self.__numerator = numerator
 self.__denominator = denominator
 ```
 
-2. polymorphism?
-3. 
+2. polymorphism =  treat objects of different types as instances of the same base type (I don't understand the definition and can't associate it with an example)
+3. what is self 
 
 OOP questions
 Layered Architecture questions
