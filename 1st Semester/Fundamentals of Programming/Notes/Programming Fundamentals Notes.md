@@ -1760,6 +1760,6 @@ class Minefield:
 OOP questions
 
 Layered Architecture questions
-1. structure of a program. is there a template/structure for layered architecture code with repo, service, ui, sta
+1. structure of a program. is there a template/structure for layered architecture code with repo, service, ui, start, tests. clarify the structure. clear in general, but if i have binaryrepo, textrepo etc it gets complicated.
 
 
