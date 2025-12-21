@@ -1693,7 +1693,27 @@ A11: game Planes
 Questions for Alex:
 
 Syntax questions
-1. private 
+1. public vs protected vs private (name-mangling) ?
+public
+```
+self.numerator = numerator
+self.denominator = denominator
+```
+
+private - since it's a "convention", this means that it could be ac
+```
+...
+self._numerator = numerator
+self._denominator = denominator
+...
+print(q._numerator, q._denominator)
+
+```
+
+private, but name mangling - can be modified, but only inside the class?
+```
+self.__numerator = numerator
+self.__denominator = denominator
 OOP questions
 Layered Architecture questions
 
