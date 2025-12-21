@@ -1718,10 +1718,6 @@ self.__denominator = denominator
 ```
 
 2. polymorphism =  treat objects of different types as instances of the same base type (I don't understand the definition and can't associate it with an example)
-
-OOP questions
-Layered Architecture questions
-
 3. why return a tuple like this return val, False?
 
 ```
@@ -1733,5 +1729,25 @@ def _cell_state(self, row, column):
 	        return val, True
 ```
 
+4. why a list of lists and not a matrix? list of lists = matrix in python? in the context of creating the field for a minesweeper game
 
-2. why a list of lists and not a matrix? list of lists = matrix in python?
+```
+class Minefield:
+    def __init__(self, rows: int, columns: int, mines: int):
+        self.__rows = rows
+        self.__columns = columns
+        self.__mines = mines
+
+        # We did not lay the mines
+        self.__mines_laid = False
+
+        self.__data = [[0 for i in range(columns)] for j in range(rows)]
+
+```
+
+
+
+OOP questions
+Layered Architecture questions
+
+
