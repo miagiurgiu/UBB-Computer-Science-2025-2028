@@ -1756,7 +1756,7 @@ class Minefield:
 
 ```
 
-5. what's the point of an iterator (ex: repository iterator below) ? it sais
+5. what's the point of an iterator (ex: repository iterator below) ? traverses a data structure? meaning a dictionary/list/matrix/list of lists? couldn't we do that in a for loop as well with the help of getters/setters/property?
 
 OOP questions
 
