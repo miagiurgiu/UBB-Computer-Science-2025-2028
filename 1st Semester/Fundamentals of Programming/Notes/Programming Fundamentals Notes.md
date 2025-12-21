@@ -1701,7 +1701,7 @@ self.numerator = numerator
 self.denominator = denominator
 ```
 
-private - since it's a "convention", this means that the following attributes could actually be accesses from outside the class, but should not? If 
+private - since it's a "convention", this means that the following attributes could actually be accesses from outside the class, but should not? If i want to access them in another class i need a @property?
 ```
 ...
 self._numerator = numerator
@@ -1711,13 +1711,11 @@ print(q._numerator, q._denominator)
 
 ```
 
-private, but name mangling - can be accessed, but only inside the class?
+private, but name mangling - can be accessed, but only inside the class? If i want to access them in another class i need a @property?
 ```
 self.__numerator = numerator
 self.__denominator = denominator
 ```
-
-
 
 
 OOP questions
