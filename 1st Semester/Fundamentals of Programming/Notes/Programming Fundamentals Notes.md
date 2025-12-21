@@ -1811,6 +1811,53 @@ class AbstractTextFileRepo(MemoryRepository):
 
 this is a dto class:
 
+```
+class GradeDTO:
+
+    def __init__(self,id_grade,id_student,id_subject,value):
+        self.__id_grade = id_grade
+        self.__id_student = id_student
+        self.__id_subject = id_subject
+        self.__value = value
+
+    @property
+    def id_grade(self):
+        return self.__id_grade
+    @property
+    def id_student(self):
+        return self.__id_student
+    @property
+    def id_subject(self):
+        return self.__id_subject
+    @property
+    def value(self):
+        return self.__value
+
+```
+
+this is a normal class:
+```
+class Student:
+
+    def __init__(self, id_student, name):
+        self.__id_student = id_student
+        self.__name = name
+
+    @property
+    def id_student(self):
+        return self.__id_student
+    @property
+    def name(self):
+        return self.__name
+    @name.setter
+    def name(self, value):
+        self.__name = value
+
+    def __str__(self):
+        return f'{self.id_student},{self.name}'
+
+```
+
 
 OOP questions
 
