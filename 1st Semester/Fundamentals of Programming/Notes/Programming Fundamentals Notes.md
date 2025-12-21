@@ -1718,7 +1718,7 @@ self.__denominator = denominator
 ```
 
 2. polymorphism =  treat objects of different types as instances of the same base type (I don't understand the definition and can't associate it with an example)
-3. why return a tuple like this return val, False?
+3. if the _cell_state function returns a tuple, then why we access this function like this insi
 
 ```
 def _cell_state(self, row, column):  
