@@ -1688,15 +1688,20 @@ How to add a new sth to the dictionary:
 
 
 A11: game Planes 
+
+
 Questions for Alex:
+
 
 1. why return a tuple like this return val, False ?
 
-      
-    def _cell_state(self, row, column):  
+```
+def _cell_state(self, row, column):  
         val = self.__data[row][column]  
         if val < 10:  
-            return val, False # why the value and false? 
+            return val, False # why return a tuple like this? how will this be accessed further?
+```
+    
 
 2. why a list of lists and not a matrix? list of lists = matrix in python?
 3. 
