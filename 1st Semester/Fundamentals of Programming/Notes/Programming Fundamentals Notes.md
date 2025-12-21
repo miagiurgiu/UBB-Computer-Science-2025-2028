@@ -1758,7 +1758,21 @@ class Minefield:
 
 5. what's the point of an iterator (ex: repository iterator below) ? traverses a data structure? meaning a dictionary/list/matrix/list of lists? couldn't we do that using a for loop with the help of getters/setters/property?
 
+```
+class RepositoryIterator:  
+    def __init__(self, elements):  
+        self._elements = list(elements)  
+        self._pos = -1  
+  
+    def __next__(self):  
+        self._pos += 1  
+        if self._pos >= len(self._elements):  
+            raise StopIteration()  
+        return self._elements[self._pos]
 
+```
+
+6. what's the point of an abstract text file repo? when to load/save file?
 
 
 OOP questions
