@@ -1756,6 +1756,7 @@ class Minefield:
 
 ```
 
+5. what's the point of an iterator (ex: repository iterator below) ? it sais
 
 OOP questions
 
