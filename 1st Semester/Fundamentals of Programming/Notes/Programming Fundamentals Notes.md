@@ -1807,7 +1807,7 @@ class AbstractTextFileRepo(MemoryRepository):
 
 ```
 
-7. what's the point of a DTO (data transfer object) and how does it work, when to use? i don't see t
+7. what's the point of a DTO (data transfer object) and how does it work, when to use? i don't see the difference at least in terms of structure?
 
 this is a dto class:
 
