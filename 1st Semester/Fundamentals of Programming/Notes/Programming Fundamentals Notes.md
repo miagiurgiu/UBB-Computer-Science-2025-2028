@@ -1868,7 +1868,7 @@ Layered Architecture questions
 ![[Pasted image 20251221120617.png]]
 ![[Pasted image 20251221120653.png]]
 ![[Pasted image 20251221120710.png]]
-
+![[Pasted image 20251221120824.png]]
 
 
 
