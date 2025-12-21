@@ -1862,7 +1862,7 @@ class Student:
 OOP questions
 
 Layered Architecture questions
-1. structure of a program. is there a template/structure for layered architecture code with repo, service, ui, start, tests. clarify the structure. clear in general, but if i have binaryrepo, textrepo etc it gets complicated.
+1. structure of a program. is there a template/structure for layered architecture code with repo, service, ui, start, tests. clarify the structure. clear in general, but if i have binaryrepo, textrepo etc it gets complicated. ce structure imi recomanzi? 
 ![[Pasted image 20251221120507.png]]
 ![[Pasted image 20251221120550.png]]
 ![[Pasted image 20251221120617.png]]
@@ -1871,6 +1871,8 @@ Layered Architecture questions
 ![[Pasted image 20251221120824.png]]
 ![[Pasted image 20251221120848.png]]
 
+![[Pasted image 20251221121027.png]]
+![[Pasted image 20251221121050.png]]
 
 
 
