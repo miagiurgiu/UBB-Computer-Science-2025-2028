@@ -1837,3 +1837,9 @@ class StudentValidator:
 
 subject_validator.py:
 
+```
+class SubjectValidator:
+
+    def validate(self, subject):
+        pass
+```
