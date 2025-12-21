@@ -1263,14 +1263,18 @@ class B(A):
 		super().__init__() # this if how we call the constructor of the base class in python
 	def m(self):
 		res = super().m() # access the initial method from class A
-		print(res)
+		print(res
+		# print(super().m())
 		return "B"
 		
 - method m() in class B overrides method m() from class A
   
 a = A()
 print(str(a))
-print()
+print(a.__str__())
+print(a.m())
+
+b =
 ```
 2. OBJECT - instance of a class
 	- custom object are mutable by default
