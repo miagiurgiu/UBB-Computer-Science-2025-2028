@@ -1718,11 +1718,13 @@ self.__denominator = denominator
 ```
 
 2. polymorphism =  treat objects of different types as instances of the same base type (I don't understand the definition and can't associate it with an example)
-3. 
 
 OOP questions
 Layered Architecture questions
-2. why return a tuple like this return val, False?
+
+3. why return a tuple like this return val, False?
+
+```
 def _cell_state(self, row, column):  
         val = self.__data[row][column]  
         if val < 10:  
@@ -1730,8 +1732,6 @@ def _cell_state(self, row, column):
         else:
 	        return val, True
 ```
-    
+
 
 2. why a list of lists and not a matrix? list of lists = matrix in python?
-
-
