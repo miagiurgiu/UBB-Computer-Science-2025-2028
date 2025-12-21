@@ -1693,7 +1693,7 @@ A11: game Planes
 Questions for Alex:
 
 Syntax questions
-1. 
+1. private 
 OOP questions
 Layered Architecture questions
 
@@ -1710,4 +1710,5 @@ def _cell_state(self, row, column):
     
 
 2. why a list of lists and not a matrix? list of lists = matrix in python?
-3. 
+
+
