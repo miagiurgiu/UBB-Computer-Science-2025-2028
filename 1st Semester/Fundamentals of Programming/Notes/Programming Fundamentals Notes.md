@@ -1815,34 +1815,25 @@ Layered Architecture questions
 1. structure of a program. is there a template/structure for layered architecture code with repo, service, ui, start, tests. clarify the structure. clear in general, but if i have binaryrepo, textrepo etc it gets complicated.
 2. when to have a validator class? the teacher in the seminar insisted on having a validator class, but in the example given by him the validator class does nothing, it is just passed to the service as an attribute
 
+grades_service.py:
 
+```
+class GradesService:
 
+    def __init__(self,students_repo,subjects_repo,grades_repo,grade_validator):
+        self.__students_repo = students_repo
+        self.__subject_repo = subjects_repo
+        self.__grades_repo = grades_repo
+        self.__grade_validator = grade_validator
+	...
 
-validation package:
+```
+
 grade_validator.py:
 
 ```
 class GradeValidator:
 
     def validate(self, grade):
-        pass
-```
-
-student_validator.py:
-
-```
-class StudentValidator:
-
-    def validate(self, student):
-        pass
-
-```
-
-subject_validator.py:
-
-```
-class SubjectValidator:
-
-    def validate(self, subject):
         pass
 ```
