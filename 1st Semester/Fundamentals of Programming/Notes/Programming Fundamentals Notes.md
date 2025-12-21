@@ -1741,7 +1741,7 @@ class Minefield:
         # We did not lay the mines
         self.__mines_laid = False
 
-        self.__data = [[0 for i in range(columns)] for j in range(rows)] # for each element in the column creates a row or for each element
+        self.__data = [[0 for i in range(columns)] for j in range(rows)] # for each element in the column creates a row or for each element in the row creates a column?
 
 ```
 
