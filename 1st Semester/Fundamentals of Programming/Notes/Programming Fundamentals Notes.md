@@ -1692,6 +1692,8 @@ A11: game Planes
 
 Questions for Alex:
 
+Syntax Questions
+OOP questions
 
 1. why return a tuple like this return val, False ?
 
