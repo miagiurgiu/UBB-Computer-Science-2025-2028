@@ -1693,14 +1693,15 @@ A11: game Planes
 Questions for Alex:
 
 Syntax questions
+
 1. public vs protected vs private (name-mangling) ?
-public
+public ? 
 ```
 self.numerator = numerator
 self.denominator = denominator
 ```
 
-private - since it's a "convention", this means that the following attributes could be accesses from outside the class, but should not?
+private - since it's a "convention", this means that the following attributes could actually be accesses from outside the class, but should not? If 
 ```
 ...
 self._numerator = numerator
@@ -1714,11 +1715,13 @@ private, but name mangling - can be accessed, but only inside the class?
 ```
 self.__numerator = numerator
 self.__denominator = denominator
-OOP questions
-Layered Architecture questions
-
 ```
 
+
+
+
+OOP questions
+Layered Architecture questions
 2. why return a tuple like this return val, False?
 def _cell_state(self, row, column):  
         val = self.__data[row][column]  
