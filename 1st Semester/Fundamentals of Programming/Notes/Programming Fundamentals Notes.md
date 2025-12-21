@@ -1483,7 +1483,7 @@ Magda.species # Homo Sapiens
 test Modular + Procedural programming
 
 ## Seminar 9
-
+extensive discussion about the origins of computer science, ladies at 
 
 ## Lecture 10
 ### Layered architecture
