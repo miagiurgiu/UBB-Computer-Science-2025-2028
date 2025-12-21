@@ -1078,7 +1078,6 @@ Java/c++ - the name of the constructor: "Rational"
 - private (by convention, you should not modify them from outside the class)
 - protected
 - public (accessible from anywhere)
--
 
 PUBLIC attributes:
 
