@@ -1816,8 +1816,24 @@ Layered Architecture questions
 2. when to have a validator class? the teacher in the seminar insisted on having a validator class, but in the example given by him the validator class does nothing and he still checks if the data entered by the user is valid inside the ui, not in the validator
 
 validation package:
+grade_validator.py:
 
+```
+class GradeValidator:
 
+    def validate(self, grade):
+        pass
+```
 
+student_validator.py:
 
+```
+class StudentValidator:
+
+    def validate(self, student):
+        pass
+
+```
+
+subject_validator.py:
 
