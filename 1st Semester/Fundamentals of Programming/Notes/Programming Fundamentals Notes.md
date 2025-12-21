@@ -1862,7 +1862,7 @@ class Student:
 OOP questions
 
 Layered Architecture questions
-1. structure of a program. is there a template/structure for layered architecture code with repo, service, ui, start, tests. clarify the structure. clear in general, but if i have binaryrepo, textrepo etc it gets complicated. ce structure imi recomanzi? main - ul ar trebui sa fie intr-un package separat de "start" sau on its own? pentru undo ar trebui sa am un package separat sau sa bag undo_service in package-ul services? si restul modulelor pentru commands? 
+1. structure of a program. is there a template/structure for layered architecture code with repo, service, ui, start, tests. clarify the structure. clear in general, but if i have binaryrepo, textrepo etc it gets complicated. ce structure imi recomanzi? main - ul ar trebui sa fie intr-un package separat de "start" sau on its own? pentru undo ar trebui sa am un package separat sau sa bag undo_service in package-ul services? si restul modulelor pentru commands? shou
 ![[Pasted image 20251221120507.png]]
 ![[Pasted image 20251221120550.png]]
 ![[Pasted image 20251221120617.png]]
