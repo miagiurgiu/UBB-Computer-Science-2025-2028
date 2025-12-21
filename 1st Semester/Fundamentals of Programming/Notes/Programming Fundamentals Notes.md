@@ -1483,10 +1483,9 @@ Magda.species # Homo Sapiens
 test Modular + Procedural programming
 
 ## Seminar 9
-extensive discussion about the origins of computer science, ladies at 
+extensive discussion about the origins of computer science, ladies at ENIAC and economical breakthroughs.
 
-## Lecture 10
-### Layered architecture
+## Lecture 10 - Layered architecture
 bakery
 https://github.com/cs-ubbcluj-ro/FP/tree/main/src/lecture/livecoding/bakery
 
