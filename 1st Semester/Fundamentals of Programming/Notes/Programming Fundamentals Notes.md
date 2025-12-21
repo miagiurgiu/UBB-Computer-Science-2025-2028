@@ -1700,7 +1700,7 @@ self.numerator = numerator
 self.denominator = denominator
 ```
 
-private - since it's a "convention", this means that it could be ac
+private - since it's a "convention", this means that the following attributes could be accesses from outside the class, but should not?
 ```
 ...
 self._numerator = numerator
@@ -1710,16 +1710,16 @@ print(q._numerator, q._denominator)
 
 ```
 
-private, but name mangling - can be modified, but only inside the class?
+private, but name mangling - can be accessed, but only inside the class?
 ```
 self.__numerator = numerator
 self.__denominator = denominator
 OOP questions
 Layered Architecture questions
 
-2. why return a tuple like this return val, False?
-
 ```
+
+2. why return a tuple like this return val, False?
 def _cell_state(self, row, column):  
         val = self.__data[row][column]  
         if val < 10:  
