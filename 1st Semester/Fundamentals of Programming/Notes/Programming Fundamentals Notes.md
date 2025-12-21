@@ -1717,6 +1717,8 @@ self.__numerator = numerator
 self.__denominator = denominator
 ```
 
+2. polymorphism?
+3. 
 
 OOP questions
 Layered Architecture questions
