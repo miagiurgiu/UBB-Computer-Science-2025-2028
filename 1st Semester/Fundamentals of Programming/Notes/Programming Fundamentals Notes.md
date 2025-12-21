@@ -1905,4 +1905,5 @@ class GradeValidator:
         pass
 ```
 
-3. UML diagram unde
+3. UML diagram understood?
+4. difference between memento design pattern and command design pattern for undo/redo is that memento uses lists to store previous states and command uses parameters to retain information? concrete example?
