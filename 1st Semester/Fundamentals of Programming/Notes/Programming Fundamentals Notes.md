@@ -1757,8 +1757,9 @@ class Minefield:
 ```
 
 
-
 OOP questions
+
 Layered Architecture questions
+1. structure of a program. is there a template/structure for layered architecture code with repo, service, ui, sta
 
 
