@@ -1692,8 +1692,9 @@ A11: game Planes
 
 Questions for Alex:
 
-Syntax Questions
+Syntax questions
 OOP questions
+Layered Architecture questions
 
 1. why return a tuple like this return val, False ?
 
@@ -1702,6 +1703,8 @@ def _cell_state(self, row, column):
         val = self.__data[row][column]  
         if val < 10:  
             return val, False # why return a tuple like this? how will this be accessed further?
+        else:
+	        return val, True
 ```
     
 
