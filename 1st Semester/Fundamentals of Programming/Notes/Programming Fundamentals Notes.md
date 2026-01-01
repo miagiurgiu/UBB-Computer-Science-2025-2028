@@ -1917,6 +1917,8 @@ Minesweeper questions:
 
 KeyboardInterrupt inside/outside loops:
 OUTSIDE LOOP: YOU CAN PRINT
+
+```
 def run(self):  
     try:  
         self._service.place_computer_planes()  
@@ -1924,5 +1926,34 @@ def run(self):
         self._game_loop()  
     except KeyboardInterrupt:  
         print("Program interrupted by the user")
+```
 
-INSIDE LOOP: YOU CANNOT PRINT 
+
+INSIDE LOOP: YOU CANNOT PRINT - JUST raise
+
+```
+def _ui_place_user_planes(self):  
+    print("Place your planes on the board giving HEAD and TAIL coordinates (ex: A3 D3):")  
+    for i in range (1,4): #plane1, plane2, plane3  
+        while True:  
+            try:  
+                coordinates = input(f"Plane {i}:").strip()  
+                if not coordinates:  
+                    raise ValueError("You must enter two coordinates")  
+                parts = coordinates.split()  
+                if len(parts) != 2:  
+                    raise ValueError("You must enter two coordinates")  
+                head = parts[0]  
+                tail = parts[1]  
+                if not self._validation.validate_coordinates(head) or not self._validation.validate_coordinates(tail):  
+                    raise ValueError("Invalid coordinates format (A1-J10)")  
+                # UI sends raw strings to service (head=A3, tail = D3)  
+                self._service.place_user_planes(head, tail)  
+                self._print_user_board()  
+                break  
+            except ValueError as e:  
+                print("Error: ", e)  
+            except KeyboardInterrupt:  
+                raise
+```
+
