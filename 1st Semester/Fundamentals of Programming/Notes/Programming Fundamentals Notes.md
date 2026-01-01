@@ -1914,8 +1914,8 @@ Minesweeper questions:
 
 **2. polymorphism =  treat objects of different types as instances of the same base type (I don't understand the definition and I can't associate it with an example) overriding is a polymorphism**
 
-KeyboardInterrupt inside/outside loops:
 
+KeyboardInterrupt inside/outside loops:
 OUTSIDE LOOP: YOU CAN PRINT
 def run(self):  
     try:  
@@ -1925,3 +1925,4 @@ def run(self):
     except KeyboardInterrupt:  
         print("Program interrupted by the user")
 
+INSIDE LOOP: YOU CANNOT PRINT 
