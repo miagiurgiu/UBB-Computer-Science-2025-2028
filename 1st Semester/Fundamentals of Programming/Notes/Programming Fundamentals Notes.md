@@ -2044,6 +2044,9 @@ class StudentsService:
 	
 	def remove_student(self, student_id) # cascaded removal
 		cascade = CascadedOperation()
+		student = self._repo.find(student_id)
 		
+		undo_student = FunctionCall(self._repo.add, student)
+		redo_student = FunctionCall(self._repo.remove, student_id)
 		
 ```
