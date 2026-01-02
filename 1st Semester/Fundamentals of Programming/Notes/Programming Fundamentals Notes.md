@@ -1961,4 +1961,14 @@ def _ui_place_user_planes(self):
 
 PROGRAM STRUCTURE:
 domain/
-rep
+repository/
+service/
+	-> undo_service.py
+	-> students_service.py
+ui/
+
+service/undo_service.py:
+```
+class Service:
+	def __init__()
+```
