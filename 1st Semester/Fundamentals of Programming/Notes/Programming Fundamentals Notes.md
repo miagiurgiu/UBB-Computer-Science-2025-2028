@@ -2072,4 +2072,17 @@ def redo(self):
 	self._undo_service.redo()
 ```
 
-### HOW TO texttable
+### HOW TO work with text files:
+
+```
+def write_text_file(file_name, persons):
+    f = open(file_name, "w")
+    try:
+        for p in persons:
+            person_str = str(p.id) + ";" + p.family_name + ";" + p.given_name + "\n"
+            f.write(person_str)
+        f.close()
+    except Exception as e:
+        print("An error occurred -" + str(e))
+
+```
