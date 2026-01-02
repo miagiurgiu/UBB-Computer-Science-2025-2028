@@ -2040,6 +2040,10 @@ class StudentsService:
 		undo = FunctionCall(self._repo.remove, student.id)
 		
 		redo()
-		self.
+		self._undo_service.record(Operation(undo, redo))
+	
+	def remove_student(self, student_id) # cascaded removal
+		cascade = CascadedOperation()
+		
 		
 ```
