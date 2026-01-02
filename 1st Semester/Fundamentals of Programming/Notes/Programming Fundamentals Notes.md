@@ -2074,6 +2074,7 @@ def redo(self):
 
 ### HOW TO work with text files:
 
+WRITE TO FIL
 ```
 def write_text_file(file_name, persons):
     f = open(file_name, "w")
@@ -2085,4 +2086,29 @@ def write_text_file(file_name, persons):
     except Exception as e:
         print("An error occurred -" + str(e))
 
+
+def __write_students_to_file(self):
+        with open(self.__file_name, "w") as f:
+            for student in self._data.values():
+                line = f"{student.id},{student.name},{student.group}\n"
+                f.write(line)
+
+```
+
+```
+def __read_students_from_file(self):
+        with open(self.__file_name, "r") as f:
+            self._data.clear() # clear the dictionary each time
+            for line in f:
+                line = line.strip()
+                if line != "":
+                    raw_parts = line.split(",")
+                    parts = []
+                    for p in raw_parts:
+                        parts.append(p.strip())
+                    student_id = int(parts[0])
+                    name = parts[1]
+                    group = int(parts[2])
+                    student = Student(student_id, name, group)
+                    self._data[student_id] = student # adds it 
 ```
