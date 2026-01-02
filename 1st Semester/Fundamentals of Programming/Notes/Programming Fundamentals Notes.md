@@ -2024,5 +2024,14 @@ class UndoService:
 			raise Exception("Nothing to redo")
 		op = self._redo_stack.pop()
 		op.redo()
+		self._undo_stack.append(op)
 		
+```
+
+service/students_service.py:
+```
+class StudentsService:
+	def __init__(self, repo, undo_service):
+		self._repo = repo
+		self._undo_
 ```
