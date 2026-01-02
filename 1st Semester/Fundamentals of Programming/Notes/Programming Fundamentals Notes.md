@@ -1969,6 +1969,13 @@ ui/
 
 service/undo_service.py:
 ```
-class Service:
-	def __init__()
+class FunctionCall:
+	def __init__(self, function, *params)
+		self._function = function
+		self._params = params
+		
+	def call(self):
+		self._function(*self._params)
+
+
 ```
