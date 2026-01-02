@@ -2132,3 +2132,13 @@ def __read_students_from_file(self):
                     student = Student(student_id, name, group)
                     self._data[student_id] = student # adds it 
 ```
+
+### HOW TO work with binary files (pickle)
+
+WRITE TO FILE:
+```
+def write_binary_file(file_name, persons):
+    f = open(file_name, "wb")
+    pickle.dump(persons, f)
+    f.close()
+```
