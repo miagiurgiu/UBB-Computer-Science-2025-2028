@@ -1977,5 +1977,10 @@ class FunctionCall:
 	def call(self):
 		self._function(*self._params)
 
-
+class Operation:
+	def __init__(self, undo_call: FunctionCall, redo_call: FunctionCall)
+		self._undo = undo_call
+		self._redo = redo_call
+	
+	def undo(self):
 ```
