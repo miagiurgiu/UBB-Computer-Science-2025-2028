@@ -1999,4 +1999,7 @@ class CascadedOperation:
 		for op in reversed(self._operations):
 			op.undo()
 	
+	def redo(self):
+		for op in self._operations:
+			op.redo()
 ```
