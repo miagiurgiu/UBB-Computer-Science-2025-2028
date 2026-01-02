@@ -2060,6 +2060,12 @@ class StudentsService:
 		redo_student.call()
 		for grade in grades:
 			self._grades_repo.remove(grade.id)
-			
+		self._undo_service.record(cascade)
 		
+```
+
+ui/
+```
+def undo(self):
+
 ```
