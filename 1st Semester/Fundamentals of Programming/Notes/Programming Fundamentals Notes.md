@@ -2174,3 +2174,11 @@ def __read_students_from_file(self):
 ```
 
 ### HOW TO work with texttable
+
+```
+def build_table():
+	table = Texttable()
+	table.add_row(["Case", "Result"])
+	table.add_row([value, result])
+	return table
+```
