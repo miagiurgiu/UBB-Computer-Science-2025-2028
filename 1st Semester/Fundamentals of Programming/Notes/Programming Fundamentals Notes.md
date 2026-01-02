@@ -1958,3 +1958,7 @@ def _ui_place_user_planes(self):
 ```
 
 ### HOW TO UNDO/REDO Command Design pattern
+
+PROGRAM STRUCTURE:
+domain/
+rep
