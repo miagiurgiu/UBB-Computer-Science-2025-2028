@@ -2172,3 +2172,5 @@ def __read_students_from_file(self):
     except (FileNotFoundError, EOFError):
         self._data = {}
 ```
+
+### HOW TO work with texttable
