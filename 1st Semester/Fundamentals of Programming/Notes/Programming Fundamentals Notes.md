@@ -1983,4 +1983,11 @@ class Operation:
 		self._redo = redo_call
 	
 	def undo(self):
+		self._undo.call()
+	
+	def redo(self):
+		self._redo.call()
+
+class CascadedOperation:
+	def __in
 ```
