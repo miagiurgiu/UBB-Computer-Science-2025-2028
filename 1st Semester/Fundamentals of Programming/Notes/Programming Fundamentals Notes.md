@@ -2033,5 +2033,13 @@ service/students_service.py:
 class StudentsService:
 	def __init__(self, repo, undo_service):
 		self._repo = repo
-		self._undo_
+		self._undo_service = undo_service
+	
+	def add_student(self, student):
+		redo = FunctionCall(self._repo.add, student)
+		undo = FunctionCall(self._repo.remove, student.id)
+		
+		redo()
+		self.
+		
 ```
