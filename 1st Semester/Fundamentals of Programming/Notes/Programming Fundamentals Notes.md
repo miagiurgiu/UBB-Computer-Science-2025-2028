@@ -2142,7 +2142,9 @@ def write_binary_file(file_name, persons):
     pickle.dump(persons, f)
     f.close()
 
-
+def __write_students_to_file(self):
+    with open(self.__file_name, "wb") as f:
+        pickle.dump(self._data, f)
 ```
 
 READ FROM FILE:
@@ -2164,9 +2166,9 @@ def read_binary_file(file_name):
         raise e
         
 def __read_students_from_file(self):
-        try:
-            with open(self.__file_name, "rb") as f:
-                self._data = pickle.load(f)
-        except (FileNotFoundError, EOFError):
-            self._data = {}
+    try:
+        with open(self.__file_name, "rb") as f:
+            self._data = pickle.load(f)
+    except (FileNotFoundError, EOFError):
+        self._data = {}
 ```
