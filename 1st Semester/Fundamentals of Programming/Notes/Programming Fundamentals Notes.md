@@ -2049,4 +2049,10 @@ class StudentsService:
 		undo_student = FunctionCall(self._repo.add, student)
 		redo_student = FunctionCall(self._repo.remove, student_id)
 		
+		cascade.add(Operation(undo_student, redo_student))
+		
+		grades = self._grades_repo.find_by_student(student_id)
+		for grade in grades:
+			undo_grade = FunctionCall(self._grades_repo.add)
+		
 ```
