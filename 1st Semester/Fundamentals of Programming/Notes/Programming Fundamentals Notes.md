@@ -2186,4 +2186,5 @@ if __name__ == "__main__":
 	print(build_table().draw())
 ```
 
-### HOW TO wo
+### HOW TO work with json
+
