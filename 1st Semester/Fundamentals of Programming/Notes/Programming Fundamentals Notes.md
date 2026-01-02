@@ -2053,6 +2053,13 @@ class StudentsService:
 		
 		grades = self._grades_repo.find_by_student(student_id)
 		for grade in grades:
-			undo_grade = FunctionCall(self._grades_repo.add)
+			undo_grade = FunctionCall(self._grades_repo.add, grade)
+			redo_grade = FunctionCall(self._grades_repo.remove, grade.id)
+			cascade.add(Operation(undo_grade, redo_grade))
+		
+		redo_student.call()
+		for grade in grades:
+			self._grades_repo.remove(grade.id)
+			
 		
 ```
