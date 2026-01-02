@@ -1989,5 +1989,14 @@ class Operation:
 		self._redo.call()
 
 class CascadedOperation:
-	def __in
+	def __init__(self):
+		self._operations = []
+	
+	def add(self, operation: Operation):
+		self._operations.append(operation)
+	
+	def undo(self):
+		for op in reversed(self._operations):
+			op.undo()
+	
 ```
