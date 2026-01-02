@@ -2011,4 +2011,11 @@ class UndoService:
 	def record(self, operation):
 		self._undo_stack.append(operation)
 		self._redo_stack.clear()
+	
+	def undo(self):
+		if not self._undo_stack:
+			raise Exception("Nothing to undo")
+		op = self._undo_stack.pop()
+		op.undo()
+		self._redo_stack.append(op)
 ```
