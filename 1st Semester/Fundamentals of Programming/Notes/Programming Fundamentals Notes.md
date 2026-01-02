@@ -2181,4 +2181,7 @@ def build_table():
 	table.add_row(["Case", "Result"])
 	table.add_row([value, result])
 	return table
+
+if __name__ == "__main__":
+	print(build_table().draw())
 ```
