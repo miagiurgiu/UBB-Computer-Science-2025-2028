@@ -2141,4 +2141,32 @@ def write_binary_file(file_name, persons):
     f = open(file_name, "wb")
     pickle.dump(persons, f)
     f.close()
+
+
+```
+
+READ FROM FILE:
+```
+def read_binary_file(file_name):
+    try:
+        f = open(file_name, "rb")
+        return pickle.load(f)
+    except EOFError:
+        """
+            This is raised if input file is empty
+        """
+        return []
+    except IOError as e:
+        """
+            Here we 'log' the error, and throw it to the outer layers 
+        """
+        print("An error occured - " + str(e))
+        raise e
+        
+def __read_students_from_file(self):
+        try:
+            with open(self.__file_name, "rb") as f:
+                self._data = pickle.load(f)
+        except (FileNotFoundError, EOFError):
+            self._data = {}
 ```
