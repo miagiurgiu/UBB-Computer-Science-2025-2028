@@ -2018,4 +2018,11 @@ class UndoService:
 		op = self._undo_stack.pop()
 		op.undo()
 		self._redo_stack.append(op)
+		
+	def redo(self):
+		if not self._redo_stack:
+			raise Exception("Nothing to redo")
+		op = self._redo_stack.pop()
+		op.redo()
+		
 ```
