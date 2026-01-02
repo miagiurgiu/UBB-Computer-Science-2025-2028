@@ -2074,7 +2074,7 @@ def redo(self):
 
 ### HOW TO work with text files:
 
-WRITE TO FIL
+WRITE TO FILE:
 ```
 def write_text_file(file_name, persons):
     f = open(file_name, "w")
@@ -2095,7 +2095,27 @@ def __write_students_to_file(self):
 
 ```
 
+READ FROM FILE:
 ```
+def read_text_file(file_name):
+    result = []
+    try:
+        f = open(file_name, "r")
+        line = f.readline().strip()
+        while len(line) > 0:
+            line = line.split(";")
+            result.append(Person(int(line[0]), line[1], line[2]))
+            line = f.readline().strip()
+        f.close()
+    except IOError as e:
+        """
+            Here we 'log' the error, and throw it to the outer layers 
+        """
+        print("An error occured - " + str(e))
+        raise e
+
+    return result
+
 def __read_students_from_file(self):
         with open(self.__file_name, "r") as f:
             self._data.clear() # clear the dictionary each time
