@@ -2067,5 +2067,7 @@ class StudentsService:
 ui/
 ```
 def undo(self):
-
+	self._undo_service.undo()
+def redo(self):
+	self._undo_service.redo()
 ```
