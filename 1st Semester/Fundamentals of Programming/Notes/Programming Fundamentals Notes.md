@@ -2002,4 +2002,13 @@ class CascadedOperation:
 	def redo(self):
 		for op in self._operations:
 			op.redo()
+
+class UndoService:
+	def __init__(self):
+		self._undo_stack = []
+		self._redo_stack = []
+	
+	def record(self, operation):
+		self._undo_stack.append(operation)
+		self._redo_stack.clear()
 ```
