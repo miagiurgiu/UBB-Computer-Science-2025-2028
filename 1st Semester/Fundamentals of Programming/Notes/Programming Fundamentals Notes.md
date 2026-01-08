@@ -2191,5 +2191,5 @@ if __name__ == "__main__":
 ### Seminar 8 Jan - Hints for the practical exam
 
 - implement the domain entities
-- look at the first graded functionality
+- look at the first graded functionality (repo -> service -> UI)
 - 
