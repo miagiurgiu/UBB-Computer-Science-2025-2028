@@ -2188,3 +2188,5 @@ if __name__ == "__main__":
 
 ### HOW TO work with json
 
+### Seminar 8 Jan - Hints for the practical exam
+
