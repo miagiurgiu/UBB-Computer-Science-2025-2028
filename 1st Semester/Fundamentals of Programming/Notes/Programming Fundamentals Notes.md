@@ -2201,6 +2201,6 @@ Abstract Text File Repo
 - does not know how the file looks like
 
 Ingredient Text File Repo, Product Text File Repo, Recipe Text File Repo
-- each of these repo knows the format of the file
-- what objects it creates
+- each of these repos knows the format of the file
+- 
 - 
