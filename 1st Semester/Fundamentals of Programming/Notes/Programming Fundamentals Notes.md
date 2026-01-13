@@ -2198,4 +2198,9 @@ Abstract Text File Repo
 - extends MemoryRepository
 - adds WHEN is the file loaded
 - adds When is the file saved
-- does not 
+- does not know how the file looks like
+
+Ingredient Text File Repo, Product Text File Repo, Recipe Text File Repo
+- each of these repo knows the format of the file
+- what objects it creates
+- 
