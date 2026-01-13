@@ -2194,3 +2194,8 @@ if __name__ == "__main__":
 - look at the first graded functionality (repo -> service -> UI)
 - 
 
+Abstract Text File Repo 
+- extends MemoryRepository
+- adds WHEN is the file loaded
+- adds When is the file saved
+- does not 
