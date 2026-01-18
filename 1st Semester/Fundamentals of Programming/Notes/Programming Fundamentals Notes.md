@@ -2289,7 +2289,10 @@ f f f0
 
 
 ![[Pasted image 20260118173017.png]]
-
+True
+False
+True
+True
 
 ![[Pasted image 20260118173205.png]]
 
