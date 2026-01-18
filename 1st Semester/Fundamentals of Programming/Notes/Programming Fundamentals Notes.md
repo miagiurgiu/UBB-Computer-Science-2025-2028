@@ -2292,6 +2292,14 @@ V1 - The easiest one, using list slicing (data[0:m])
 V2 - Replace list slicing with the use of indices
 V3 - Replace the recursive implementation with an iterative one. (simulate the stack using a list or queue)
 
+- - Calculate the r-th root of a given number x with a given precision p
+        - Recursive Python 3 function using divide and conquer that returns the number of even numbers placed on odd positions
+        in a list of natural numbers .
+        Return None in case there is no such number
+            V1 - using Python list slicing, divide the list into halves [time + extra space complexity]
+            V2 - using indices, no list slicing [time + extra space complexity]
+            V3 - eliminate recursion [time + extra space complexity]
+
 DYNAMIC PROGRAMMING
 -  A stair can be climbed by going up 1, 2 or 3 steps at once. Determine in how many ways we can go up a staircase of 10 stairs.
 1 stair = 1 way
@@ -2300,6 +2308,7 @@ DYNAMIC PROGRAMMING
 
 V1 - naive implementation
 V2 - dynamic programming
+- 
 
  - Coin Change Problem
     V1 - Find the fewest number of coins needed to make a specific total
