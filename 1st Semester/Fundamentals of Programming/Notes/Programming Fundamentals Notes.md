@@ -2264,8 +2264,9 @@ LAMBDA EXPRESSIONS:
 
 - "Analyse the time complexity of the following function"
 ![[Pasted image 20260118172439.png]]
+![[Pasted image 20260118172517.png]]
 
-
+![[Pasted image 20260118172539.png]]
 
 
 
