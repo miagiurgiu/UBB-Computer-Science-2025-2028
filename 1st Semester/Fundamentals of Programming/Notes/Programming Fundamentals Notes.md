@@ -2238,13 +2238,14 @@ LAMBDA EXPRESSIONS:
 
 - "Specify and test the following function"
 ![[Pasted image 20260118172114.png]]
-
+![[Pasted image 20260118173222.png]]
 
 - "Implement and specify the function it tests"
 ![[Pasted image 20260118172909.png]]
 
 ![[Pasted image 20260118173103.png]]
 
+![[Pasted image 20260118173305.png]]
 - "Given the following code fragment what is the result of the execution?"
 
 ![[Pasted image 20260118172002.png]]
@@ -2258,7 +2259,7 @@ LAMBDA EXPRESSIONS:
 
 ![[Pasted image 20260118172707.png]]
 ![[Pasted image 20260118173017.png]]
-
+![[Pasted image 20260118173205.png]]
 
 
 1. Recursion
@@ -2275,7 +2276,7 @@ LAMBDA EXPRESSIONS:
 ![[Pasted image 20260118172825.png]]
 ![[Pasted image 20260118173041.png]]
 
-
+![[Pasted image 20260118173240.png]]
 
 1. Searching
 2. Sorting
