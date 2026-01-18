@@ -2207,6 +2207,14 @@ Ingredient Text File Repo, Product Text File Repo, Recipe Text File Repo
 ### FP WRITTEN EXAM PREP
 
 ##### 1. Python elements
+INSTRUCTIONS:
+	=
+	==
+	IF
+	WHILE
+	FOR
+PREDEFINED DATA TYPES
+
 
 2. Recursion
 3. Complexities
