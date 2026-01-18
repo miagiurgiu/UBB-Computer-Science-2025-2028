@@ -2220,6 +2220,7 @@ PREDEFINED DATA TYPES:
 	LIST
 	DICTIONARY
 	TUPLE
+	
 FUNCTIONS:
 	DEFINING
 	PARAMETER TRANSMISSION
@@ -2230,20 +2231,24 @@ EXCEPTIONS:
 	CATCHING
 LAMBDA EXPRESSIONS:
 
+##### 2. Algorithms
+- "Implement and test the function having the following specification."
 
-2. Recursion
-3. Complexities
-4. Searching
-5. Sorting
-6. Problem Solving Methods
-7. Procedural Programming (test 1 lab)
-8. Modular Programming
-9. Unit Tests
-10. Exceptions
-11. Classes, objects
-12. Design Patterns
-13. UML Diagrams
-14. TextFiles, BinaryFiles
-15. Layered architecture
-16. Inheritance
-17. Testing (lec11)
+
+
+1. Recursion
+2. Complexities
+3. Searching
+4. Sorting
+5. Problem Solving Methods
+6. Procedural Programming (test 1 lab)
+7. Modular Programming
+8. Unit Tests
+9. Exceptions
+10. Classes, objects
+11. Design Patterns
+12. UML Diagrams
+13. TextFiles, BinaryFiles
+14. Layered architecture
+15. Inheritance
+16. Testing (lec11)
