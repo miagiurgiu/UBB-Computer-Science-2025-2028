@@ -2256,6 +2256,7 @@ LAMBDA EXPRESSIONS:
 
 ![[Pasted image 20260118172651.png]]
 
+![[Pasted image 20260118172707.png]]
 
 
 
