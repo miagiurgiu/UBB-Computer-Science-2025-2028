@@ -2233,10 +2233,17 @@ LAMBDA EXPRESSIONS:
 
 ##### 2. Algorithms
 - "Implement and test the function having the following specification"
-
+1.
 ![[Pasted image 20260118173333.png]]
 
+2.  Write a recursive function that determines the number of
+even elements found on odd positions in a list of natural
+numbers. Use a divide and conquer implementation that divides
+the list into halves. V1 - The easiest one, using list slicing (data[0:m])
+V2 - Replace list slicing with the use of indices
+V3 - Replace the recursive implementation with an iterative one. (simulate the stack using a list or queue)
 
++ write a test function for the implementation
 
 
 - "Specify and test the following function"
