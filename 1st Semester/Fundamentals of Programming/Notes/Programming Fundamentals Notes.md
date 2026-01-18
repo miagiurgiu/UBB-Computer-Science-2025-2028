@@ -2206,3 +2206,6 @@ Ingredient Text File Repo, Product Text File Repo, Recipe Text File Repo
 
 ### FP WRITTEN EXAM PREP
 
+1. Recursion
+2. Complexities
+3. Se
