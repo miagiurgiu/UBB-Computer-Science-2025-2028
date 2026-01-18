@@ -2254,7 +2254,7 @@ LAMBDA EXPRESSIONS:
 
 ![[Pasted image 20260118172346.png]]
 
-
+![[Pasted image 20260118172651.png]]
 
 
 
@@ -2267,6 +2267,8 @@ LAMBDA EXPRESSIONS:
 ![[Pasted image 20260118172517.png]]
 
 ![[Pasted image 20260118172539.png]]
+
+![[Pasted image 20260118172604.png]]
 
 
 
