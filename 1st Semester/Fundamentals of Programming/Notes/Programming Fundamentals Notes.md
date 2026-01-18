@@ -2232,8 +2232,11 @@ EXCEPTIONS:
 LAMBDA EXPRESSIONS:
 
 ##### 2. Algorithms
-- "Implement and test the function having the following specification."
+- "Implement and test the function having the following specification"
+```
 
+
+```
 
 
 1. Recursion
