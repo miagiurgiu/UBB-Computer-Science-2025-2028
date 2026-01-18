@@ -2282,11 +2282,15 @@ Y
 X
 
 ![[Pasted image 20260118172651.png]]
-
+f f f0
 
 
 ![[Pasted image 20260118172707.png]]
+
+
 ![[Pasted image 20260118173017.png]]
+
+
 ![[Pasted image 20260118173205.png]]
 
 
