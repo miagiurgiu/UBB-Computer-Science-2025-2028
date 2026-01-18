@@ -2234,7 +2234,11 @@ LAMBDA EXPRESSIONS:
 ##### 2. Algorithms
 - "Implement and test the function having the following specification"
 ```
-
+Compute the sum of even elements in the given list.
+input: l - the list of numbers
+output: the sum 
+Raises TypeError if parameter l is not a Python list
+Raises va
 
 ```
 
