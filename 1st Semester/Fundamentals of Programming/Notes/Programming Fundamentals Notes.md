@@ -2295,7 +2295,7 @@ True
 True
 
 ![[Pasted image 20260118173205.png]]
-
+8 [1,2,3] [1,2,3]
 
 1. Recursion
 2. Complexities
