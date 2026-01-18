@@ -2250,9 +2250,9 @@ LAMBDA EXPRESSIONS:
 ![[Pasted image 20260118172002.png]]
 
 ![[Pasted image 20260118172215.png]]
+![[Pasted image 20260118172308.png]]
 
-
-
+![[Pasted image 20260118172346.png]]
 
 
 1. Recursion
