@@ -2208,4 +2208,14 @@ Ingredient Text File Repo, Product Text File Repo, Recipe Text File Repo
 
 1. Recursion
 2. Complexities
-3. Se
+3. Searching
+4. Sorting
+5. Problem Solving Methods
+6. Procedural Programming (test 1 lab)
+7. Modular Programming
+8. Unit Tests
+9. Exceptions
+10. Classes, objects
+11. Design Patterns
+12. UML Diagrams
+13. TextFiles, bi
