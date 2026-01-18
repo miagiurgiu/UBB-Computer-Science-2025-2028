@@ -2258,7 +2258,9 @@ aba
 ababa
 
 ![[Pasted image 20260118172215.png]]
-
+1
+3
+[2,3]
 
 ![[Pasted image 20260118172308.png]]
 
