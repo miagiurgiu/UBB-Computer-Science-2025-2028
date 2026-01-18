@@ -2234,9 +2234,13 @@ LAMBDA EXPRESSIONS:
 ##### 2. Algorithms
 - "Implement and test the function having the following specification"
 
+![[Pasted image 20260118173333.png]]
+
+
 
 
 - "Specify and test the following function"
+![[Pasted image 20260118173352.png]]
 ![[Pasted image 20260118172114.png]]
 ![[Pasted image 20260118173222.png]]
 
