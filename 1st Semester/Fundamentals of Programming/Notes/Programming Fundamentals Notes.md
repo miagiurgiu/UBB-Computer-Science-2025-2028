@@ -2263,6 +2263,7 @@ ababa
 [2,3]
 
 ![[Pasted image 20260118172308.png]]
+id(y) == id(z) -> same object in memory?
 
 
 
