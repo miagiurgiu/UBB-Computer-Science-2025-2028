@@ -2253,9 +2253,16 @@ LAMBDA EXPRESSIONS:
 - "Given the following code fragment what is the result of the execution?"
 
 ![[Pasted image 20260118172002.png]]
+a
+aba
+ababa
 
 ![[Pasted image 20260118172215.png]]
+
+
 ![[Pasted image 20260118172308.png]]
+
+
 
 ![[Pasted image 20260118172346.png]]
 
