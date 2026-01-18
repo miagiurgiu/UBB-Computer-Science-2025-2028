@@ -2264,7 +2264,8 @@ ababa
 
 ![[Pasted image 20260118172308.png]]
 id(y) == id(z) -> same object in memory?
-
+z[0:2] -> first 2 elements of z
+list [1] != value
 
 
 ![[Pasted image 20260118172346.png]]
