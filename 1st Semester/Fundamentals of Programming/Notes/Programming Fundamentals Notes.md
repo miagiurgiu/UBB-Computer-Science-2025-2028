@@ -2274,10 +2274,17 @@ True
 
 
 ![[Pasted image 20260118172346.png]]
-
+Y
+Y
+X
+Y
+Y
+X
 
 
 ![[Pasted image 20260118172651.png]]
+
+
 
 ![[Pasted image 20260118172707.png]]
 ![[Pasted image 20260118173017.png]]
