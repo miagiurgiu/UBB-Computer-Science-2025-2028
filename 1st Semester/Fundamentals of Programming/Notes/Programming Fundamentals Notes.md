@@ -2255,19 +2255,31 @@ LAMBDA EXPRESSIONS:
 ![[Pasted image 20260118172346.png]]
 
 
+
+
+
+
 1. Recursion
 2. Complexities
-3. Searching
-4. Sorting
-5. Problem Solving Methods
-6. Procedural Programming (test 1 lab)
-7. Modular Programming
-8. Unit Tests
-9. Exceptions
-10. Classes, objects
-11. Design Patterns
-12. UML Diagrams
-13. TextFiles, BinaryFiles
-14. Layered architecture
-15. Inheritance
-16. Testing (lec11)
+
+- "Analyse the time complexity of the following function"
+![[Pasted image 20260118172439.png]]
+
+
+
+
+
+1. Searching
+2. Sorting
+3. Problem Solving Methods
+4. Procedural Programming (test 1 lab)
+5. Modular Programming
+6. Unit Tests
+7. Exceptions
+8. Classes, objects
+9. Design Patterns
+10. UML Diagrams
+11. TextFiles, BinaryFiles
+12. Layered architecture
+13. Inheritance
+14. Testing (lec11)
