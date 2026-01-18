@@ -2241,7 +2241,7 @@ LAMBDA EXPRESSIONS:
 
 
 - "Implement and specify the function it tests"
-
+![[Pasted image 20260118172909.png]]
 
 
 
