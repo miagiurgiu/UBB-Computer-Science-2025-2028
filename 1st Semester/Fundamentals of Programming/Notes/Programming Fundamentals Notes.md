@@ -2305,20 +2305,10 @@ DYNAMIC PROGRAMMING
 1 stair = 1 way
 2 stairs = 2 ways (1+1, 2)
 3 stairs = 4 ways (1+1+1, 1+2, 2+1, 3)
-- A stair can be climbed by going up 1, 2 or 3 steps at once. Determine in how many ways we can go up a staircase
-        of "n" stairs
--  Coin Change Problem
-            V1 - Find the fewest number of coins needed to make a specific total (Greedy + DP)
-            V2 - Find the total number of ways to make a specific total (naive + DP)
-- Given an array of integers, calculate the longest decreasing subsequence of primes contained in it
-
-BA
-
 V1 - naive implementation
 V2 - dynamic programming
-- 
 
- - Coin Change Problem
+- Coin Change Problem
     V1 - Find the fewest number of coins needed to make a specific total
 
     V2 - Find the total number of ways to make a specific total
@@ -2326,6 +2316,20 @@ V2 - dynamic programming
     say we have coins 1, 3 and 4
     the total sum is 8
     => take a look at the Excel file in the same folder as this source
+
+- A stair can be climbed by going up 1, 2 or 3 steps at once. Determine in how many ways we can go up a staircase
+        of "n" stairs
+        
+-  Coin Change Problem
+            V1 - Find the fewest number of coins needed to make a specific total (Greedy + DP)
+            V2 - Find the total number of ways to make a specific total (naive + DP)
+            
+- Given an array of integers, calculate the longest decreasing subsequence of primes contained in it
+
+BACKTRACKING
+- A Latin square is an n × n square filled with n different symbols, each occurring exactly once in each row and
+    exactly once in each column. Generate all the N x N Latin squares for a given number N.
+-  Variant: generate all the "reduced" Latin squares (these are squares where the letters in the first row and column are ordered).
 
 5. Procedural Programming (test 1 lab)
 6. Modular Programming
