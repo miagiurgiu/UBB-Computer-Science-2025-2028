@@ -2236,14 +2236,18 @@ LAMBDA EXPRESSIONS:
 1.
 ![[Pasted image 20260118173333.png]]
 
-2.  Write a recursive function that determines the number of
-even elements found on odd positions in a list of natural
-numbers. Use a divide and conquer implementation that divides
-the list into halves. V1 - The easiest one, using list slicing (data[0:m])
+2.  Implement and test a recursive function that determines the number of even elements found on odd positions in a list of natural numbers. Use a divide and conquer implementation that divides the list into halves. 
+V1 - The easiest one, using list slicing (data[0:m])
 V2 - Replace list slicing with the use of indices
 V3 - Replace the recursive implementation with an iterative one. (simulate the stack using a list or queue)
 
-+ write a test function for the implementation
+3. A stair can be climbed by going up 1, 2 or 3 steps at once. Determine in how many ways we can go up a staircase of10 stairs.
+1 stair = 1 way
+    2 stairs = 2 ways (1+1, 2)
+    3 stairs = 4 ways (1+1+1, 1+2, 2+1, 3)
+
+    V1 - naive implementation
+    V2 - dynamic programming
 
 
 - "Specify and test the following function"
