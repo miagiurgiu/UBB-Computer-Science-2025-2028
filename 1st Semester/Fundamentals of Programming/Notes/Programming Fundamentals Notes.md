@@ -2305,6 +2305,14 @@ DYNAMIC PROGRAMMING
 1 stair = 1 way
 2 stairs = 2 ways (1+1, 2)
 3 stairs = 4 ways (1+1+1, 1+2, 2+1, 3)
+- A stair can be climbed by going up 1, 2 or 3 steps at once. Determine in how many ways we can go up a staircase
+        of "n" stairs
+-  Coin Change Problem
+            V1 - Find the fewest number of coins needed to make a specific total (Greedy + DP)
+            V2 - Find the total number of ways to make a specific total (naive + DP)
+- Given an array of integers, calculate the longest decreasing subsequence of primes contained in it
+
+BA
 
 V1 - naive implementation
 V2 - dynamic programming
