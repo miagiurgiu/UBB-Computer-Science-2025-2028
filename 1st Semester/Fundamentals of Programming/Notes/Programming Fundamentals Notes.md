@@ -2247,18 +2247,18 @@ Raises ValueError if the list does not contain even numbers.
 ```
 
 - "Specify and test the following function"
-```
 
-
-```
 
 - "Implement and specify the function it tests"
-```
-
-
-```
 
 - "Given the following code fragment what is the result of the execution?"
+
+![[Pasted image 20260118172002.png]]
+
+
+
+
+
 
 
 1. Recursion
