@@ -2235,7 +2235,7 @@ LAMBDA EXPRESSIONS:
 - "Implement and test the function having the following specification"
 ```
 '''
-Compute the sum of even elements in the given list.
+1. Compute the sum of even elements in the given list.
 input: l - the list of numbers
 output: the sum 
 Raises TypeError if parameter l is not a Python list
@@ -2246,8 +2246,17 @@ Raises ValueError if the list does not contain even numbers.
 
 ```
 
-- "Specify and test the "
+- "Specify and test the following function"
+```
 
+
+```
+
+- "Implement and specify the function it tests"
+```
+
+
+```
 
 1. Recursion
 2. Complexities
