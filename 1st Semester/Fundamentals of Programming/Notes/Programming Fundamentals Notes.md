@@ -2243,7 +2243,7 @@ LAMBDA EXPRESSIONS:
 - "Implement and specify the function it tests"
 ![[Pasted image 20260118172909.png]]
 
-
+![[Pasted image 20260118173103.png]]
 
 - "Given the following code fragment what is the result of the execution?"
 
