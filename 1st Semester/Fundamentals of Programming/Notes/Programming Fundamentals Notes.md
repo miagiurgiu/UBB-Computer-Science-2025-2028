@@ -2258,6 +2258,9 @@ Raises ValueError if the list does not contain even numbers.
 
 ```
 
+- "Given the following code fragment what is the result of the execution?"
+
+
 1. Recursion
 2. Complexities
 3. Searching
