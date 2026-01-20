@@ -2323,9 +2323,10 @@ Recc=T(n)=2*T(n-1)+1
 Time complexity: O(2^n)
 Extra space: O(1) without the stack space
 
-![[Pasted image 20260118172604.png]]
 
 ![[Pasted image 20260118172825.png]]
+
+
 ![[Pasted image 20260118173041.png]]
 
 ![[Pasted image 20260118173240.png]]
