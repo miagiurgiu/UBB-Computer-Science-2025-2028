@@ -2328,10 +2328,12 @@ Extra space: O(1) without the stack space, O(n) with the stack space
 BC=O(1)
 AC=WC=O(n^2)
 Extra space=O(n^2)
-	- recursive
-	- 
+	- recursive stack O(n)
+	- slicing O(n^2)
 
 ![[Pasted image 20260118173041.png]]
+
+
 
 ![[Pasted image 20260118173240.png]]
 
