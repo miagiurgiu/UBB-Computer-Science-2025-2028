@@ -2286,7 +2286,10 @@ f f f0
 
 
 ![[Pasted image 20260118172707.png]]
-
+BC = O(1)
+AC = O(n^2)
+WC = O(n^2)
+Extra space = O(n^2)
 
 ![[Pasted image 20260118173017.png]]
 True
@@ -2302,6 +2305,8 @@ True
 
 - "Analyse the time complexity of the following function"
 ![[Pasted image 20260118172439.png]]
+
+
 ![[Pasted image 20260118172517.png]]
 
 ![[Pasted image 20260118172539.png]]
