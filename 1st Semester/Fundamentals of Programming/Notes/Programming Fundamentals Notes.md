@@ -2314,7 +2314,7 @@ BC=O(1) when n<=1
 reccurence: T(n) = T(n/2)+n
 AC=WC = O(n)
 extra space: O(log n)
-	data -> log n elements for each cal
+	data -> data +=[n] is executed once/call , we have log n elements for each call => log n executions of that modification of data
 	recursion stack -> log n calls = log n levels = log n recursive calls = the number of times i can split a list in half
 
 ![[Pasted image 20260118172539.png]]
