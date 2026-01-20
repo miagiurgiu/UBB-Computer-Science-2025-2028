@@ -2318,7 +2318,9 @@ extra space: O(log n)
 	recursion stack -> log n calls = log n levels = log n recursive calls = the number of times i can split a list in half
 
 ![[Pasted image 20260118172539.png]]
-
+BC=AC=WC=O(2^n)
+Recc=T(n)=2*T(n-1)+1
+Time complexity
 
 ![[Pasted image 20260118172604.png]]
 
