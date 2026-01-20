@@ -2325,7 +2325,9 @@ Extra space: O(1) without the stack space
 
 
 ![[Pasted image 20260118172825.png]]
-
+BC=O(1)
+AC=WC=O(n^2)
+Extra space 
 
 ![[Pasted image 20260118173041.png]]
 
