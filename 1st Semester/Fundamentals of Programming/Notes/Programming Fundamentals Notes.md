@@ -2339,8 +2339,12 @@ extra space = O(1)
 ![[Pasted image 20260118173240.png]]
 f(n):
 	BC=O(1)
-	 AC=O(log n)
-		
+	AC=O(log n)
+	WC=O(log n)
+	extra space: O(1)
+a(n):
+	BC=AC=WC=O(n log n)
+	extra space: O(1)
 
 1. Searching
 2. Sorting
