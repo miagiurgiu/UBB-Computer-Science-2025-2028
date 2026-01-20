@@ -2337,6 +2337,10 @@ extra space = O(1)
 
 
 ![[Pasted image 20260118173240.png]]
+f(n):
+	BC=O(1)
+	 AC=O(log n)
+		
 
 1. Searching
 2. Sorting
