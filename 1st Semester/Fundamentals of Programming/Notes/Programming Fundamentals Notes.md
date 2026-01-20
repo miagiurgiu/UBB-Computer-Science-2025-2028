@@ -2313,7 +2313,9 @@ extra space: O(1)
 BC=O(1) when n<=1
 reccurence: T(n) = T(n/2)+n
 AC=WC = O(n)
-extra space: O(l)
+extra space: O(log n)
+	data -> log n elements
+	recursion stack -> log n
 
 ![[Pasted image 20260118172539.png]]
 
