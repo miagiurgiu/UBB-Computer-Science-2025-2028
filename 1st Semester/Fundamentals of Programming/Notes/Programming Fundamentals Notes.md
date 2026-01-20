@@ -2311,7 +2311,9 @@ extra space: O(1)
 
 ![[Pasted image 20260118172517.png]]
 BC=O(1) when n<=1
-AC=WC = O(n) when 
+reccurence: T(n) = T(n/2)+n
+AC=WC = O(n)
+extra space: O(l)
 
 ![[Pasted image 20260118172539.png]]
 
