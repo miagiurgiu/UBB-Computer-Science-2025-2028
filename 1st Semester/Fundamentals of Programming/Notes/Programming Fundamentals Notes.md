@@ -2305,7 +2305,9 @@ True
 
 - "Analyse the time complexity of the following function"
 ![[Pasted image 20260118172439.png]]
-
+T(n) = n^3 * log n
+BC=AC=WC=O(n^3 * log n)
+extra space: O(1)
 
 ![[Pasted image 20260118172517.png]]
 
