@@ -2332,7 +2332,8 @@ Extra space=O(n^2)
 	- slicing O(n^2)
 
 ![[Pasted image 20260118173041.png]]
-
+BC=AC=WC=O(n^2 * log n)
+extra space = O(1)
 
 
 ![[Pasted image 20260118173240.png]]
