@@ -2321,13 +2321,15 @@ extra space: O(log n)
 BC=AC=WC=O(2^n)
 Recc=T(n)=2*T(n-1)+1
 Time complexity: O(2^n)
-Extra space: O(1) without the stack space
+Extra space: O(1) without the stack space, O(n) with the stack space
 
 
 ![[Pasted image 20260118172825.png]]
 BC=O(1)
 AC=WC=O(n^2)
-Extra space 
+Extra space=O(n^2)
+	- recursive
+	- 
 
 ![[Pasted image 20260118173041.png]]
 
