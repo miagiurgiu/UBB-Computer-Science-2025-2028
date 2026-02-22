@@ -114,4 +114,13 @@ https://github.com/jonathan2667/UBB-CS-Bachelors-Materials/blob/main/Year%201/Se
 
 https://github.com/jonathan2667/UBB-CS-Bachelors-Materials/blob/main/Year%201/Semester%202/Geometry/Partial%201/2023%20and%20older/Old2.jpg - 2016, row 2
 
-https://github.com/jonathan2667/UBB-CS-Bachelors-Materials/blob/main/Year%201/Semester%202/Geometry/Partial%201/2023%20and%20older/Solution%201%20Mogovan%20Jonathan.pdf - partial II
+https://github.com/jonathan2667/UBB-CS-Bachelors-Materials/blob/main/Year%201/Semester%202/Geometry/Partial%201/2023%20and%20older/Solution%201%20Mogovan%20Jonathan.pdf - partial II solved
+
+https://github.com/jonathan2667/UBB-CS-Bachelors-Materials/blob/main/Year%201/Semester%202/Geometry/Partial%201/2024/1.jpg - 2024, 1
+
+https://github.com/jonathan2667/UBB-CS-Bachelors-Materials/blob/main/Year%201/Semester%202/Geometry/Partial%201/2024/Solution%20-%201%20Mogovan%20Jonathan.pdf - 1, solved
+
+https://github.com/jonathan2667/UBB-CS-Bachelors-Materials/blob/main/Year%201/Semester%202/Geometry/Partial%201/2024/2.jpg - 2024, 2
+
+
+
