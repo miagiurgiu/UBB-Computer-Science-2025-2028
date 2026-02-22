@@ -20,6 +20,7 @@ https://github.com/mirceamaierean/ubb/blob/main/2nd%20Semester/Geometry/seminars
 
 https://github.com/patriimanciu/uni-work/blob/main/sem%202/geometry/seminars/Seminar%202%20MICU.pdf - seminar 2 Micu
 
+https://github.com/patriimanciu/uni-work/blob/main/sem%202/geometry/seminars/seminar%202%20PINTEA.pdf - seminar 2 Pintea
 
 https://github.com/FintinaOlivia/UBB-Computer-Science/blob/main/Semester%202/Geometry/Seminars/seminar02.pdf - seminar 2
 k - official seminar
@@ -29,6 +30,11 @@ k - redone seminar
 
 ## Seminar 3
 https://github.com/mirceamaierean/ubb/blob/main/2nd%20Semester/Geometry/seminars/Seminar%203.pdf - solved seminar 3
+
+https://github.com/patriimanciu/uni-work/blob/main/sem%202/geometry/seminars/seminar%203%20MICU.pdf - seminar 3 Micu
+
+https://github.com/patriimanciu/uni-work/blob/main/sem%202/geometry/seminars/seminar%203%20PINTEA.pdf - seminar 3 Pintea
+
 https://github.com/FintinaOlivia/UBB-Computer-Science/blob/main/Semester%202/Geometry/Seminars/seminar03.pdf - seminar 3
 k - official seminar
 k - redone seminar
@@ -37,6 +43,10 @@ k - redone seminar
 
 ## Seminar 4
 https://github.com/mirceamaierean/ubb/blob/main/2nd%20Semester/Geometry/seminars/Seminar%204.pdf - solved seminar 4
+
+https://github.com/patriimanciu/uni-work/blob/main/sem%202/geometry/seminars/Seminar%204%20MICU.pdf - seminar 4 Micu
+
+
 https://github.com/FintinaOlivia/UBB-Computer-Science/blob/main/Semester%202/Geometry/Seminars/seminar04.pdf - seminar 4
 k - official seminar
 k - redone seminar
