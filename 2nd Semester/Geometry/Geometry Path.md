@@ -185,6 +185,10 @@ https://github.com/jonathan2667/UBB-CS-Bachelors-Materials/blob/main/Year%201/Se
 
 https://github.com/jonathan2667/UBB-CS-Bachelors-Materials/blob/main/Year%201/Semester%202/Geometry/Partial%202/SOLUTION%202.pdf - partial 2, solved
 
+https://github.com/Oancea-Teodora/UBB-Computer-Science/blob/main/First%20Year/Semester%202/Geometry/Subjects/Partial%20Exam/2024-1.jpg
+
+https://github.com/Oancea-Teodora/UBB-Computer-Science/blob/main/First%20Year/Semester%202/Geometry/Subjects/Partial%20Exam/2024-2.jpg
+
 https://github.com/patriimanciu/uni-work/blob/main/sem%202/geometry/MIDTERM%20prep.pdf - midterm prep 
 ## SOLVED STUFF + CONSULTATIONS
 
