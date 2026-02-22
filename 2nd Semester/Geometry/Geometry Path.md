@@ -97,3 +97,6 @@ k - official seminar
 k - redone seminar
 
 ## PARTIAL EXAM PREP
+https://github.com/mirceamaierean/ubb/blob/main/2nd%20Semester/Geometry/Exams/Partial%201%202022.jpeg - 2022
+
+https://github.com/mirceamaierean/ubb/blob/main/2nd%20Semester/Geometry/Exams/Partial%202%202023.jpeg - 2023
