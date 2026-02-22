@@ -91,6 +91,11 @@ k - redone seminar
 
 ## Seminar 8
 https://github.com/mirceamaierean/ubb/blob/main/2nd%20Semester/Geometry/seminars/Seminar%208.pdf - solved seminar 8
+
+https://github.com/patriimanciu/uni-work/blob/main/sem%202/geometry/seminars/Seminar%208%20MICU.pdf - seminar 8 Micu
+
+https://github.com/patriimanciu/uni-work/blob/main/sem%202/geometry/seminars/seminar%208%20PINTEA.pdf - seminar 8 Pintea
+
 k - official seminar
 k - redone seminar
 
@@ -98,6 +103,10 @@ k - redone seminar
 
 ## Seminar 9
 https://github.com/mirceamaierean/ubb/blob/main/2nd%20Semester/Geometry/seminars/Seminar%209.pdf
+
+https://github.com/patriimanciu/uni-work/blob/main/sem%202/geometry/seminars/Seminar%209%20MICU.pdf - seminar 9 Micu
+
+
 k - official seminar
 k - redone seminar
 
