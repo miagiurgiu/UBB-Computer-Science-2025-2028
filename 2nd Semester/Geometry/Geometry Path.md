@@ -70,7 +70,8 @@ k - redone seminar
 ## Seminar 6
 https://github.com/mirceamaierean/ubb/blob/main/2nd%20Semester/Geometry/seminars/Seminar%206.pdf - solved seminar 6
 
-https://github.com/patriimanciu/uni-work/blob/main/sem%202/geometry/seminars/seminar%206%20MICU.pdf - semin
+https://github.com/patriimanciu/uni-work/blob/main/sem%202/geometry/seminars/seminar%206%20MICU.pdf - seminar 6 Micu
+
 https://github.com/FintinaOlivia/UBB-Computer-Science/blob/main/Semester%202/Geometry/Seminars/seminar06.pdf - seminar 6
 k - official seminar
 k - redone seminar
@@ -79,6 +80,10 @@ k - redone seminar
 
 ## Seminar 7
 https://github.com/mirceamaierean/ubb/blob/main/2nd%20Semester/Geometry/seminars/Seminar%207.pdf - solved seminar 7
+
+https://github.com/patriimanciu/uni-work/blob/main/sem%202/geometry/seminars/seminar%207%20MICU.pdf - seminar 7 Micu
+
+https://github.com/patriimanciu/uni-work/blob/main/sem%202/geometry/seminars/seminar%207%20PINTEA.pdf - seminar 7 Pintea
 k - official seminar
 k - redone seminar
 
