@@ -106,6 +106,7 @@ https://github.com/mirceamaierean/ubb/blob/main/2nd%20Semester/Geometry/seminars
 
 https://github.com/patriimanciu/uni-work/blob/main/sem%202/geometry/seminars/Seminar%209%20MICU.pdf - seminar 9 Micu
 
+https://github.com/patriimanciu/uni-work/blob/main/sem%202/geometry/seminars/seminar%209%20PINTEA.pdf - seminar 9 Pintea
 
 k - official seminar
 k - redone seminar
@@ -114,6 +115,12 @@ k - redone seminar
 
 ## Seminar 10
 https://github.com/mirceamaierean/ubb/blob/main/2nd%20Semester/Geometry/seminars/Seminar%2010.pdf
+
+https://github.com/patriimanciu/uni-work/blob/main/sem%202/geometry/seminars/Seminar%2010%20MICU.pdf - seminar 10 Micu
+
+https://github.com/patriimanciu/uni-work/blob/main/sem%202/geometry/seminars/seminar%2010%20PINTEA.pdf - seminar 10 Pintea
+
+
 k - official seminar
 k - redone seminar
 
@@ -121,6 +128,10 @@ k - redone seminar
 
 ## Seminar 11
 https://github.com/mirceamaierean/ubb/blob/main/2nd%20Semester/Geometry/seminars/Seminar%2011.pdf
+
+https://github.com/patriimanciu/uni-work/blob/main/sem%202/geometry/seminars/seminar%2011%20PINTEA.pdf - seminar 11 Pintea
+
+
 k - official seminar
 k - redone seminar
 
