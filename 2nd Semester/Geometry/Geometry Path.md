@@ -198,3 +198,7 @@ https://github.com/jonathan2667/UBB-CS-Bachelors-Materials/blob/main/Year%201/Se
 
 https://github.com/patriimanciu/uni-work/blob/main/sem%202/geometry/EXAMEN%20prep.pdf - final exam prep
 
+## ALL LECTURES
+
+https://github.com/Oancea-Teodora/UBB-Computer-Science/blob/main/First%20Year/Semester%202/Geometry/Lectures/Geometry.pdf
+
