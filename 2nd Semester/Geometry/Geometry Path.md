@@ -107,3 +107,5 @@ k - redone seminar
 https://github.com/mirceamaierean/ubb/blob/main/2nd%20Semester/Geometry/Exams/Partial%201%202022.jpeg - 2022
 
 https://github.com/mirceamaierean/ubb/blob/main/2nd%20Semester/Geometry/Exams/Partial%202%202023.jpeg - 2023
+
+https://github.com/jonathan2667/UBB-CS-Bachelors-Materials/blob/main/Year%201/Semester%202/Geometry/Partial%201/2023%20and%20older/2.jpg
