@@ -125,4 +125,10 @@ https://github.com/jonathan2667/UBB-CS-Bachelors-Materials/blob/main/Year%201/Se
 
 ## SOLVED SEMINARS
 
-Seminars 1-7 solved
+Seminars 1-7 solved: https://github.com/jonathan2667/UBB-CS-Bachelors-Materials/blob/main/Year%201/Semester%202/Geometry/Seminars/Sem1-7GeomeMicu.pdf.pdf
+
+Seminars 8-11 solved: https://github.com/jonathan2667/UBB-CS-Bachelors-Materials/blob/main/Year%201/Semester%202/Geometry/Seminars/Sem8-11GeomeMicu.pdf
+
+Seminars 12-13 solved: https://github.com/jonathan2667/UBB-CS-Bachelors-Materials/blob/main/Year%201/Semester%202/Geometry/Seminars/Sem12-13GeomeMicu.pdf
+
+
