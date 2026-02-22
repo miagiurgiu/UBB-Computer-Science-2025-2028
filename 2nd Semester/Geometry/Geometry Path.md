@@ -122,8 +122,11 @@ https://github.com/jonathan2667/UBB-CS-Bachelors-Materials/blob/main/Year%201/Se
 
 https://github.com/jonathan2667/UBB-CS-Bachelors-Materials/blob/main/Year%201/Semester%202/Geometry/Partial%201/2024/2.jpg - 2024, 2
 
+https://github.com/jonathan2667/UBB-CS-Bachelors-Materials/blob/main/Year%201/Semester%202/Geometry/Partial%202/2.jpg
 
-## SOLVED SEMINARS
+
+
+## SOLVED SEMINARS + CONSULTATIONS
 
 Seminars 1-7 solved: https://github.com/jonathan2667/UBB-CS-Bachelors-Materials/blob/main/Year%201/Semester%202/Geometry/Seminars/Sem1-7GeomeMicu.pdf.pdf
 
@@ -131,4 +134,4 @@ Seminars 8-11 solved: https://github.com/jonathan2667/UBB-CS-Bachelors-Materials
 
 Seminars 12-13 solved: https://github.com/jonathan2667/UBB-CS-Bachelors-Materials/blob/main/Year%201/Semester%202/Geometry/Seminars/Sem12-13GeomeMicu.pdf
 
-
+https://github.com/jonathan2667/UBB-CS-Bachelors-Materials/blob/main/Year%201/Semester%202/Geometry/Seminars/consgeom.pdf - consultations
