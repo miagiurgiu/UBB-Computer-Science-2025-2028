@@ -96,3 +96,4 @@ k - redone seminar
 k - official seminar
 k - redone seminar
 
+## PARTIAL EXAM PREP
