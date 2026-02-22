@@ -4,6 +4,7 @@ https://ubbcluj-my.sharepoint.com/shared?listurl=https%3A%2F%2Fubbcluj-my.sharep
 
 ## Seminar 1
 https://github.com/mirceamaierean/ubb/blob/main/2nd%20Semester/Geometry/seminars/Seminar%201.pdf - solved seminar 1
+https://github.com/FintinaOlivia/UBB-Computer-Science/blob/main/Semester%202/Geometry/Seminars/seminar01.pdf - seminar 1
 k - official seminar
 k - redone seminar
 
