@@ -72,18 +72,21 @@ k - redone seminar
 ## Lecture 11
 
 ## Seminar 11
+https://github.com/mirceamaierean/ubb/blob/main/2nd%20Semester/Geometry/seminars/Seminar%2011.pdf
 k - official seminar
 k - redone seminar
 
 ## Lecture 12
 
 ## Seminar 12
+https://github.com/mirceamaierean/ubb/blob/main/2nd%20Semester/Geometry/seminars/Seminar%2012.pdf
 k - official seminar
 k - redone seminar
 
 ## Lecture 13
 
 ## Seminar 13
+https://github.com/mirceamaierean/ubb/blob/main/2nd%20Semester/Geometry/seminars/Seminar%2013.pdf
 k - official seminar
 k - redone seminar
 
