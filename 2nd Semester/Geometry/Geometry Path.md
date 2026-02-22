@@ -44,25 +44,28 @@ k - redone seminar
 ## Lecture 7
 
 ## Seminar 7
-https://github.com/mirceamaierean/ubb/blob/main/2nd%20Semester/Geometry/seminars/Seminar%207.pdf - solved seminar 
+https://github.com/mirceamaierean/ubb/blob/main/2nd%20Semester/Geometry/seminars/Seminar%207.pdf - solved seminar 7
 k - official seminar
 k - redone seminar
 
 ## Lecture 8
 
 ## Seminar 8
+https://github.com/mirceamaierean/ubb/blob/main/2nd%20Semester/Geometry/seminars/Seminar%208.pdf - solved seminar 8
 k - official seminar
 k - redone seminar
 
 ## Lecture 9
 
 ## Seminar 9
+https://github.com/mirceamaierean/ubb/blob/main/2nd%20Semester/Geometry/seminars/Seminar%209.pdf
 k - official seminar
 k - redone seminar
 
 ## Lecture 10
 
 ## Seminar 10
+https://github.com/mirceamaierean/ubb/blob/main/2nd%20Semester/Geometry/seminars/Seminar%2010.pdf
 k - official seminar
 k - redone seminar
 
