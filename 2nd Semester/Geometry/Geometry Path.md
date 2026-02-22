@@ -12,6 +12,7 @@ k - redone seminar
 
 ## Seminar 2
 https://github.com/mirceamaierean/ubb/blob/main/2nd%20Semester/Geometry/seminars/Seminar%202.pdf - solved seminar 2
+https://github.com/FintinaOlivia/UBB-Computer-Science/blob/main/Semester%202/Geometry/Seminars/seminar02.pdf - seminar 2
 k - official seminar
 k - redone seminar
 
@@ -19,6 +20,7 @@ k - redone seminar
 
 ## Seminar 3
 https://github.com/mirceamaierean/ubb/blob/main/2nd%20Semester/Geometry/seminars/Seminar%203.pdf - solved seminar 3
+https://github.com/FintinaOlivia/UBB-Computer-Science/blob/main/Semester%202/Geometry/Seminars/seminar03.pdf - seminar 3
 k - official seminar
 k - redone seminar
 
@@ -26,6 +28,7 @@ k - redone seminar
 
 ## Seminar 4
 https://github.com/mirceamaierean/ubb/blob/main/2nd%20Semester/Geometry/seminars/Seminar%204.pdf - solved seminar 4
+https://github.com/FintinaOlivia/UBB-Computer-Science/blob/main/Semester%202/Geometry/Seminars/seminar04.pdf - seminar 4
 k - official seminar
 k - redone seminar
 
@@ -33,6 +36,7 @@ k - redone seminar
 
 ## Seminar 5
 https://github.com/mirceamaierean/ubb/blob/main/2nd%20Semester/Geometry/seminars/Seminar%205.pdf - solved seminar 5
+https://github.com/FintinaOlivia/UBB-Computer-Science/blob/main/Semester%202/Geometry/Seminars/seminar05.pdf - seminar 5
 k - official seminar
 k - redone seminar
 
@@ -40,6 +44,7 @@ k - redone seminar
 
 ## Seminar 6
 https://github.com/mirceamaierean/ubb/blob/main/2nd%20Semester/Geometry/seminars/Seminar%206.pdf - solved seminar 6
+https://github.com/FintinaOlivia/UBB-Computer-Science/blob/main/Semester%202/Geometry/Seminars/seminar06.pdf - seminar 6
 k - official seminar
 k - redone seminar
 
