@@ -124,7 +124,9 @@ https://github.com/jonathan2667/UBB-CS-Bachelors-Materials/blob/main/Year%201/Se
 
 https://github.com/jonathan2667/UBB-CS-Bachelors-Materials/blob/main/Year%201/Semester%202/Geometry/Partial%202/2.jpg
 
+https://github.com/jonathan2667/UBB-CS-Bachelors-Materials/blob/main/Year%201/Semester%202/Geometry/Partial%202/SOLUTION%201.pdf - partial 1, solved
 
+https://github.com/jonathan2667/UBB-CS-Bachelors-Materials/blob/main/Year%201/Semester%202/Geometry/Partial%202/SOLUTION%202.pdf - partial 2, solved
 
 ## SOLVED SEMINARS + CONSULTATIONS
 
