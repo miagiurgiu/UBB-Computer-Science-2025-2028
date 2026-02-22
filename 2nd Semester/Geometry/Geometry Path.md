@@ -185,7 +185,7 @@ https://github.com/jonathan2667/UBB-CS-Bachelors-Materials/blob/main/Year%201/Se
 
 https://github.com/jonathan2667/UBB-CS-Bachelors-Materials/blob/main/Year%201/Semester%202/Geometry/Partial%202/SOLUTION%202.pdf - partial 2, solved
 
-## SOLVED SEMINARS + CONSULTATIONS
+## SOLVED STUFF + CONSULTATIONS
 
 Seminars 1-7 solved: https://github.com/jonathan2667/UBB-CS-Bachelors-Materials/blob/main/Year%201/Semester%202/Geometry/Seminars/Sem1-7GeomeMicu.pdf.pdf
 
@@ -194,3 +194,6 @@ Seminars 8-11 solved: https://github.com/jonathan2667/UBB-CS-Bachelors-Materials
 Seminars 12-13 solved: https://github.com/jonathan2667/UBB-CS-Bachelors-Materials/blob/main/Year%201/Semester%202/Geometry/Seminars/Sem12-13GeomeMicu.pdf
 
 https://github.com/jonathan2667/UBB-CS-Bachelors-Materials/blob/main/Year%201/Semester%202/Geometry/Seminars/consgeom.pdf - consultations
+
+https://github.com/patriimanciu/uni-work/blob/main/sem%202/geometry/EXAMEN%20prep.pdf - final exam prep
+
