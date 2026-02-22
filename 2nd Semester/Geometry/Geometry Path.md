@@ -139,6 +139,9 @@ k - redone seminar
 
 ## Seminar 12
 https://github.com/mirceamaierean/ubb/blob/main/2nd%20Semester/Geometry/seminars/Seminar%2012.pdf
+
+https://github.com/patriimanciu/uni-work/blob/main/sem%202/geometry/seminars/seminar%2012%20PINTEA.pdf - seminar 12 Pintea
+
 k - official seminar
 k - redone seminar
 
@@ -152,6 +155,8 @@ k - redone seminar
 ## Lecture 14
 
 ## Seminar 14
+https://github.com/patriimanciu/uni-work/blob/main/sem%202/geometry/seminars/seminar%2014%20PINTEA.pdf - seminar 14 Pintea
+
 k - official seminar
 k - redone seminar
 
