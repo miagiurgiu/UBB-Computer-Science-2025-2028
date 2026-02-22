@@ -5,6 +5,10 @@ https://ubbcluj-my.sharepoint.com/shared?listurl=https%3A%2F%2Fubbcluj-my.sharep
 ## Seminar 1
 https://github.com/mirceamaierean/ubb/blob/main/2nd%20Semester/Geometry/seminars/Seminar%201.pdf - solved seminar 1
 
+https://github.com/patriimanciu/uni-work/blob/main/sem%202/geometry/seminars/Seminar%201%20MICU.pdf - seminar 1 Micu
+
+https://github.com/patriimanciu/uni-work/blob/main/sem%202/geometry/seminars/seminar%201%20PINTEA.pdf - seminar 1 Pintea
+
 https://github.com/FintinaOlivia/UBB-Computer-Science/blob/main/Semester%202/Geometry/Seminars/seminar01.pdf - seminar 1
 k - official seminar
 k - redone seminar
@@ -13,6 +17,10 @@ k - redone seminar
 
 ## Seminar 2
 https://github.com/mirceamaierean/ubb/blob/main/2nd%20Semester/Geometry/seminars/Seminar%202.pdf - solved seminar 2
+
+https://github.com/patriimanciu/uni-work/blob/main/sem%202/geometry/seminars/Seminar%202%20MICU.pdf - seminar 2 Micu
+
+
 https://github.com/FintinaOlivia/UBB-Computer-Science/blob/main/Semester%202/Geometry/Seminars/seminar02.pdf - seminar 2
 k - official seminar
 k - redone seminar
