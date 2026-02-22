@@ -1,4 +1,5 @@
 ## Lecture 1
+https://ubbcluj-my.sharepoint.com/shared?listurl=https%3A%2F%2Fubbcluj-my.sharepoint.com%2Fpersonal%2Fiulian_simion_ubbcluj_ro%2FDocuments&id=%2Fpersonal%2Fiulian_simion_ubbcluj_ro%2FDocuments%2F2026+Geometry+IE+IA%2Fpublic%2Fgeometry_draft_2026.pdf&parent=%2Fpersonal%2Fiulian_simion_ubbcluj_ro%2FDocuments%2F2026+Geometry+IE+IA%2Fpublic&ct=1771770382388&or=Teams-HL&shareLink=1&ga=1&LOF=1
 
 
 ## Seminar 1
