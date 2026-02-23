@@ -62,7 +62,7 @@ ls sth = list another folder without entering it
 touch filename = create a file named filename
 echo = print sth to the terminal
 ">" = send text into a file (overwrites the file)
-">>" = 
+">>" = append
 ```
 echo "hello" > file1.txt
 put the text "hello" inside file1.txt
