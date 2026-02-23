@@ -245,4 +245,4 @@ PERMISSIONS
 see permissions: ls -l
 change permission: 
 chmod +x hello -> add execute
-chmod -x hello
+chmod -x hello -> remove execute
