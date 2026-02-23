@@ -167,3 +167,4 @@ q = quit
 
 PIPES
 | = take the output of the command on the left and give it as input to the command on the right
+command1 | command2 -> "command1 feeds command2"
