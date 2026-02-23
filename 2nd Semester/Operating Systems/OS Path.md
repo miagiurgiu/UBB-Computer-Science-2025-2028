@@ -68,3 +68,5 @@ echo "hello" > file1.txt
 put the text "hello" inside file1.txt
 ```
 cat = show contents of a file
+"-" = file
+rw-- = owner (the owen)
