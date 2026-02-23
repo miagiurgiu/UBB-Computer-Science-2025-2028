@@ -198,10 +198,14 @@ ls becomes a process
 LONG PROCESS
 
 CTRL+C = cancel the unfinished command
-
 WHILE LOOP in bash:
 ```
 while CONDITION; do
     commands
 done
+```
+
+PRINT EVERY SECOND:
+```
+while true; do date; sleep 1; done
 ```
