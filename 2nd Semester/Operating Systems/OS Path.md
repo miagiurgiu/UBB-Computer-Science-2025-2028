@@ -128,3 +128,6 @@ gcc -o output_file_name hello.c
 ```
 how to check executable file:
 ls -l
+```
+
+```
