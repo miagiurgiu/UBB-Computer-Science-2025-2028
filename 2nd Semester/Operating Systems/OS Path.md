@@ -198,7 +198,7 @@ ls becomes a process
 LONG PROCESS
 
 CTRL+C = cancel the unfinished command
-CTRL+Z = pause the process
+CTRL+Z = pause the process, still exists in memory, it is not running
 WHILE LOOP in bash:
 ```
 while CONDITION; do
