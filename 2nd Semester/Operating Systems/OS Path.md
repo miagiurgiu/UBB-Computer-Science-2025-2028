@@ -12,3 +12,7 @@ you can use the manual for the c documentation, commands
 WINDOWS LINUX SETUP
 Microsoft Store -> Ubuntu -> terminals -> username -> password
 
+COMMANDS
+clear - clear the screen
+cd Downloads
+mkdir test7
