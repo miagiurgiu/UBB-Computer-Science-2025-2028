@@ -92,3 +92,4 @@ r-x = others (read, not write, execute)
 read (r) = can list files inside
 write (w) = can create/delete files inside
 execute (x) = can enter the directory (using cd)
+cd .. = go one level up (go to parent directory)
