@@ -235,5 +235,9 @@ sort fruits.txt | uniq -> remove duplicates
 sort fruits.txt | uniq -c -> count duplicates
 
 ABSOLUTE VS RELATIVE PATHS
-
+ABSOLUTE: /home/miagiurgiu/lab1/file1.txt
+RELATIVE: 
+file1.txt
+./file1.txt
+../file1.txt
 
