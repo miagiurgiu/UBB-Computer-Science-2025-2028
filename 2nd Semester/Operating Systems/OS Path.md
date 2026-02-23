@@ -156,3 +156,6 @@ argv[1] = test
 man sth = manual of sth
 SPACE = next page
 b = previous page
+/text = search for "text"
+n = next match
+q = quit
