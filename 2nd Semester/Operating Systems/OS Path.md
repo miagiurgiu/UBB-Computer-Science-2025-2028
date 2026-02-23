@@ -227,5 +227,9 @@ find . -name "*.txt" = search files ending with .txt in current directory
 find . -name "hello*" = recursive (searches inside subfolders)
 wc = count
 wc fruits.txt -> counts lines, words, bytes
-
+wc -l fruits.txt -> only lines
+head -n 5 fruits.txt -> first 5 lines
+tail -n 5 fruits.txt -> last 5 lines
+sort fruits.txt
+sort fruits.txt | 
 
