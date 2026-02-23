@@ -5,4 +5,6 @@ https://www.cs.ubbcluj.ro/apps/attendance- attendance
 https://www.cs.ubbcluj.ro/~rares/course/os/ - website
 
 4 tests, min grade 5
+tests in Linux terminal
+you can use the manual for the c documentation, commands
 
