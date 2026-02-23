@@ -93,8 +93,10 @@ write (w) = can create/delete files inside
 execute (x) = can enter the directory (using cd)
 cd .. = go one level up (go to parent directory)
 ls . = ls
-. = the directory contains itself
-.. = the directory contains its parent
+. = current directory
+.. = parent directory
+~ = home directory
+/ = root directory
 ./ = look here, not in path
 ./program = run the file named "program" from the current directory
 
