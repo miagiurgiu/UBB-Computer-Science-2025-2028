@@ -223,3 +223,6 @@ ps = show process status = list running processes
 ```
 ps -f = show all processes (full format, more details)
 ps aux = show everything running on system
+find . -name "*.txt" = search files ending with .txt in current directory
+
+
