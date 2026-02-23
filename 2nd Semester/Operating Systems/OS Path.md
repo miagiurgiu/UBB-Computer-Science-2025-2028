@@ -190,3 +190,7 @@ grep apple fruits.txt
 apple
 apple pie
 ```
+
+PROCESS = RUNNING PROGRAM
+./hello becomes a process
+ls becomes a process
