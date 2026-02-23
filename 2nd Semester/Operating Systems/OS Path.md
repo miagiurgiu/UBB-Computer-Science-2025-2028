@@ -159,3 +159,6 @@ b = previous page
 /text = search for "text"
 n = next match
 q = quit
+(1) = section 1 = user commands (ls etc.)
+(2) = section
+open(1)
