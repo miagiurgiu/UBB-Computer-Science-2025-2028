@@ -104,3 +104,4 @@ ls . = ls
 any file starting with . is hidden
 la = ls-A
 echo $PATH = see your path
+: = separates directories
