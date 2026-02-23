@@ -60,4 +60,5 @@ ls -a = show hidden files
 ls -la = long format + show hidden files
 ls sth = list another folder without entering it
 touch filename = create a file named filename
+echo = print sth to the terminal
 
