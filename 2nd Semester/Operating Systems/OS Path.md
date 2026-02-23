@@ -221,4 +221,5 @@ ps = show process status = list running processes
  TIME = CPU time used
  CMD = command name
 ```
-ps -f = show all processes
+ps -f = show all processes (full format, more details)
+ps aux = show everything running on system
