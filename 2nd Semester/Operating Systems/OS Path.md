@@ -116,13 +116,13 @@ nano filename.c -> write code -> ctrl+O -> Enter -> ctrl+X -> back in terminal
 how to compile C code:
 ```
 gcc -Wall -Wextra -Werror -g -o output_file_name hello.c
+gcc = compiler program
 -Wall = show warnings
 -Wextra = more warnings
 -Werror = treat warnings as errors
-g
+-g = include debugging info
+-o = output file named "output_file_name"
+hello.c = source file
 OR
 gcc -o output_file_name hello.c
-gcc = compiler program
-hello.c = input source file
--o output_file_name = name of output file
 ```
