@@ -175,6 +175,12 @@ grep = search for lines that match a pattern
 ```
 printf "apple\nbanana\npear\napple pie\nbanana split\n" > fruits.txt\
 cat fruits.txt
+=>
+apple
+banana
+pear
+apple pie
+banana split
 grep apple fruits.txt
 => 
 apple
