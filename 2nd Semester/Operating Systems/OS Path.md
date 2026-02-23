@@ -25,7 +25,8 @@ touch - create an empty file
 echo $PATH
 dolphin?
 ls ./ - list the current directory
-
+ls .. - go up
+ls ../
 TERMINAL WINDOWS:
 C:\Users\PC instead of having C, in Linux we have \ (just a bunch of folders)
 
