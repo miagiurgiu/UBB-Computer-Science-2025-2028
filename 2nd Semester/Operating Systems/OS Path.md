@@ -54,4 +54,6 @@ pwd - Print Working Directory = show your current location
 cd - Change Directory = go to home directory automatically
 cd sth = go to sth
 cd ~ = cd = go to home directory automatically
-ls = list the contents of the current directory
+ls = list the contents (files, directories) of the current directory
+ls -l = long format
+ls -a = show hidden files
