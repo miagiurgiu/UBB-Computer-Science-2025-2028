@@ -253,6 +253,7 @@ free() -> releases memory
 "*" = dereference
 valgrind to detect leaks??
 
-../ ../../= back
+../../../ = back
+
 
 
