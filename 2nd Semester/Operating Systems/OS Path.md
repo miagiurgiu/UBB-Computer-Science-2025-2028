@@ -113,3 +113,7 @@ how to write C code:
 ```
 nano filename.c -> write code -> ctrl+O -> Enter -> ctrl+X -> back in terminal
 ```
+how to compile C code:
+```
+gcc -o 
+```
