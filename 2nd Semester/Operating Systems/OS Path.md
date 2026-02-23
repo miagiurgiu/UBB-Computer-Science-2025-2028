@@ -38,6 +38,7 @@ ctrl+c, ctrl+s, ctrl+v don't do anything in linux
 ^ - circumflex accent
 ^ shift+6
 sudo 
+gcc test.c
 TERMINAL WINDOWS:
 C:\Users\PC instead of having C, in Linux we have \ (just a bunch of folders)
 
