@@ -102,4 +102,5 @@ ls . = ls
 -a = option (flag) = everything including . and ..
 -A = everything except . and ..
 any file starting with . is hidden
-la = ls-A = ls -A -lnex
+la = ls-A
+echo $PATH = see your path
