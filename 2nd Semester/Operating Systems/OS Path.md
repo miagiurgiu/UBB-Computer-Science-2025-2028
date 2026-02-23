@@ -154,3 +154,5 @@ argv[0] = ./output_file_name
 argv[1] = test
 ```
 man sth = manual of sth
+SPACE = next page
+b = previous page
