@@ -172,6 +172,9 @@ ls -1 puts the contents of the directory vertically
 ls puts them horizontally (by default)
 
 grep = search for lines that match a pattern
+grep apple fruits.txt
+grep -i Apple fruits.txt
+grep apple fruits.txt | wc -
 ```
 printf "apple\nbanana\npear\napple pie\nbanana split\n" > fruits.txt\
 cat fruits.txt
