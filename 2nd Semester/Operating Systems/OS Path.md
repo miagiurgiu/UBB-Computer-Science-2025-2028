@@ -20,3 +20,5 @@ mkdir - make directory
 ls
 which cd
 provide arguments to that command
+touch grass
+touch - create an empty file
