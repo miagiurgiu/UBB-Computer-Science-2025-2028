@@ -241,3 +241,8 @@ file1.txt
 ./file1.txt
 ../file1.txt
 
+PERMISSIONS
+see permissions: ls -l
+change permission: 
+chmod +x hello -> add execute
+chmod -x hello
