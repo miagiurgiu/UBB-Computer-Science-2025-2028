@@ -173,5 +173,10 @@ ls puts them horizontally (by default)
 
 grep = search for lines that match a pattern
 ```
-
+printf "apple\nbanana\npear\napple pie\nbanana split\n" > fruits.txt\
+cat fruits.txt
+grep apple fruits.txt
+=> 
+apple
+apple pie
 ```
