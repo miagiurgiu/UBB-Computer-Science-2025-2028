@@ -51,3 +51,6 @@ C:\Users\PC instead of having C, in Linux we have \ (just a bunch of folders)
 ## Individual work after Lab1
 
 pwd - Print Working Directory = show your current location
+cd - Change Directory = go to home directory automatically
+cd sth = go to sth
+cd ~ = 
