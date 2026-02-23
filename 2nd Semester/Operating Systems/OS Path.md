@@ -231,5 +231,9 @@ wc -l fruits.txt -> only lines
 head -n 5 fruits.txt -> first 5 lines
 tail -n 5 fruits.txt -> last 5 lines
 sort fruits.txt
-sort fruits.txt | 
+sort fruits.txt | uniq -> remove duplicates
+sort fruits.txt | uniq -c -> count duplicates
+
+ABSOLUTE VS RELATIVE PATHS
+
 
