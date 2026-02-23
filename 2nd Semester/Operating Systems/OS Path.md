@@ -117,5 +117,6 @@ how to compile C code:
 ```
 gcc -o output_file_name hello.c
 gcc = compiler program
-hello.c = input sourc
+hello.c = input source file
+-o output_file_name = name of output file
 ```
