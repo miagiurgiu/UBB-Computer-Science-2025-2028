@@ -101,3 +101,4 @@ ls . = ls
 ./program = run the file named "program" from the current directory
 -a = option (flag)
 any file starting with . is hidden
+la = ls-A
