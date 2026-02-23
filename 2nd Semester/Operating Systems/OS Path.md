@@ -99,6 +99,7 @@ ls . = ls
 / = root directory
 ./ = look here, not in path
 ./program = run the file named "program" from the current directory
--a = option (flag)
+-a = option (flag) = everything including . and ..
+-A = everything except . and ..
 any file starting with . is hidden
 la = ls-A
