@@ -27,6 +27,7 @@ dolphin?
 ls ./ - list the current directory
 ls .. - go up
 ls ../
+man
 TERMINAL WINDOWS:
 C:\Users\PC instead of having C, in Linux we have \ (just a bunch of folders)
 
