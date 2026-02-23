@@ -105,4 +105,4 @@ any file starting with . is hidden
 la = ls-A
 echo $PATH = see your path
 : = separates directories
-ls = does not look in the current directory first, it looks in the directories listed in 
+ls = does not look in the current directory first, it looks in the directories listed in $PATH and it searches for 
