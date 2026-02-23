@@ -102,4 +102,4 @@ ls . = ls
 -a = option (flag) = everything including . and ..
 -A = everything except . and ..
 any file starting with . is hidden
-la = ls-A
+la = ls-A = ls -A -lnex
