@@ -61,7 +61,7 @@ ls -la = long format + show hidden files
 ls sth = list another folder without entering it
 touch filename = create a file named filename
 echo = print sth to the terminal
-">" = take output of the command on the left and put it into a file (overwrites the file)
+">" = send text into a file (overwrites the file)
 ```
 echo "hello" > file1.txt
 put the text "hello" inside file1.txt
