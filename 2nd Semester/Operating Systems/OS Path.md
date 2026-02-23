@@ -246,3 +246,6 @@ see permissions: ls -l
 change permission: 
 chmod +x hello -> add execute
 chmod -x hello -> remove execute
+
+malloc() -> allocates memory
+free() -> releases m
