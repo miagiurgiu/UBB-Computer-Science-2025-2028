@@ -59,4 +59,4 @@ ls -l = long format
 ls -a = show hidden files
 ls -la = long format + show hidden files
 ls sth = list another folder without entering it
-
+touch filename = creat
