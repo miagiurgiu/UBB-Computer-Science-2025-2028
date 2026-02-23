@@ -28,4 +28,4 @@ dolphin?
 TERMINAL WINDOWS:
 C:\Users\PC instead of having C, in Linux we have \ (just a bunch of folders)
 
-"folders in files"
+"folders in files" is up to the kernel
