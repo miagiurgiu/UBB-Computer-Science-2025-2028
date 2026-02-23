@@ -17,3 +17,6 @@ clear - clear the screen
 pwd - working directory -  where do you execute the application from 
 cd - 
 mkdir - make directory
+ls
+which cd
+provide arguments to that command
