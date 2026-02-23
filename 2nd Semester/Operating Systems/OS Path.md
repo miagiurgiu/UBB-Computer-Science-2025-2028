@@ -175,6 +175,7 @@ grep = search for lines that match a pattern
 grep apple fruits.txt
 grep -i Apple fruits.txt
 grep apple fruits.txt | wc -l -> counts lines
+grep -x apple fruits.txt -> 
 ```
 printf "apple\nbanana\npear\napple pie\nbanana split\n" > fruits.txt\
 cat fruits.txt
