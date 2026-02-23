@@ -30,7 +30,8 @@ ls ../
 man
 rm
 cp
-rn
+mv
+
 TERMINAL WINDOWS:
 C:\Users\PC instead of having C, in Linux we have \ (just a bunch of folders)
 
