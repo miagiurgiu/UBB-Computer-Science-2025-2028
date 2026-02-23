@@ -212,5 +212,13 @@ while true; do date; sleep 1; done
 ```
 ps = show process status = list running processes
 ```
-
+  PID TTY          TIME CMD
+ 1234 pts/0    00:00:00 bash
+ 1300 pts/0    00:00:00 ps
+ 
+ PID = process ID (unique number)
+ TTY = terminal
+ TIME = CPU time used
+ CMD = command name
 ```
+ps -f = show all processes
