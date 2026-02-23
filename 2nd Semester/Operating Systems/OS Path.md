@@ -151,5 +151,5 @@ argv[1] = first real argument
 ./output_file_name test
 argc = 2
 argv[0] = ./output_file_name
-
+argv[1] = test
 ```
