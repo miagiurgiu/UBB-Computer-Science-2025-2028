@@ -68,11 +68,14 @@ echo "hello" > file1.txt
 put the text "hello" inside file1.txt
 ```
 cat = show contents of a file
-"-" = file
 ```
 -rw--r--r-- 1 miagiurgiu miagiurgiu 16 Feb 23 18:57 file1.txt
-
-```
+"-" = file
 rw-- = owner (the owner can read, write, not execute)
 r-- = group (read, not write, not execute)
 r-- = others (read, not write, not execute)
+1 = number of hard links 
+miagiurgiu = i own the file
+16 = file size in bytes
+```
+
