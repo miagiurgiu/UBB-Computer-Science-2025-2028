@@ -28,6 +28,9 @@ ls ./ - list the current directory
 ls .. - go up
 ls ../
 man
+rm
+cp
+rn
 TERMINAL WINDOWS:
 C:\Users\PC instead of having C, in Linux we have \ (just a bunch of folders)
 
