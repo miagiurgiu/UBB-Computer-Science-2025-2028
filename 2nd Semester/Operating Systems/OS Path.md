@@ -87,7 +87,6 @@ drwxr-xr-x 2 miagiurgiu miagiurgiu 4096 Feb 23 19:03 testdir
 rwx = owner (read, write, execute)
 r-x = group (read, not write, execute)
 r-x = others (read, not write, execute)
-
 ```
 read (r) = can list files inside
 write (w) = can create/delete files inside
@@ -95,4 +94,7 @@ execute (x) = can enter the directory (using cd)
 cd .. = go one level up (go to parent directory)
 ls . = ls
 . = the directory contains itself
-.. = the de
+.. = the directory contains its parent
+./ = look here, not in path
+./program = run the file named "program" from the current directory
+
