@@ -170,3 +170,5 @@ PIPES
 command1 | command2 -> "command1 feeds command2"
 ls -1 puts the contents of the directory vertically
 ls puts them horizontally (by default)
+
+grep = search for lines that match a pattern
