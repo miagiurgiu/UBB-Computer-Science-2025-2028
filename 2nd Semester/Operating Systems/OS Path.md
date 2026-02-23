@@ -164,4 +164,3 @@ q = quit
 (3) = section 3 = C library functions (printf, malloc)
 (5) = file formats
 (8) = system admin commands
-open(1)
