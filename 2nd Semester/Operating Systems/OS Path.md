@@ -160,5 +160,8 @@ b = previous page
 n = next match
 q = quit
 (1) = section 1 = user commands (ls etc.)
-(2) = section
+(2) = section 2 = system calls (open, read, write = kernel functions)
+(3) = section 3 = C library functions (printf, malloc)
+(5) = file formats
+(8) = system admin commands
 open(1)
