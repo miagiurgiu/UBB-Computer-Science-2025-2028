@@ -164,3 +164,6 @@ q = quit
 (3) = section 3 = C library functions (printf, malloc)
 (5) = file formats
 (8) = system admin commands
+
+PIPES
+| = take the output of the command on the left and give it as input to the command on the right
