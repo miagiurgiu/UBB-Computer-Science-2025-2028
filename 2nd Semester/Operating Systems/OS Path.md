@@ -56,7 +56,7 @@ cd sth = go to sth
 cd ~ = cd = go to home directory automatically
 ls = list the contents (files, directories) of the current directory
 ls -l = long format
-ls -a = show hidden files
+ls -a = show hidden files (shows . and .. as well)
 ls -la = long format + show hidden files
 ls sth = list another folder without entering it
 touch filename = create a file named filename
@@ -99,4 +99,4 @@ ls . = ls
 / = root directory
 ./ = look here, not in path
 ./program = run the file named "program" from the current directory
-
+-a = option (flag)
