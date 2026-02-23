@@ -68,6 +68,7 @@ echo "hello" > file1.txt
 put the text "hello" inside file1.txt
 ```
 cat = show contents of a file
+This is what ls -l does :
 ```
 -rw--r--r-- 1 miagiurgiu miagiurgiu 16 Feb 23 18:57 file1.txt
 "-" = file
