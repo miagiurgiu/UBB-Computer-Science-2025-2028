@@ -10,5 +10,5 @@ tests in Linux terminal
 you can use the manual for the c documentation, commands
 
 WINDOWS LINUX SETUP
-Microsoft Store -> Ubuntu -> 
+Microsoft Store -> Ubuntu -> terminals -> 
 
