@@ -89,3 +89,6 @@ r-x = group (read, not write, execute)
 r-x = others (read, not write, execute)
 
 ```
+read (r) = can list files inside
+write (w) = can create/delete files inside
+execute (x) = 
