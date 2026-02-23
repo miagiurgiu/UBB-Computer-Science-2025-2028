@@ -140,3 +140,11 @@ HOW DOES COMPILATION WORK
 1. GCC translates C -> machine code
 2. creates executable file
 3. that file can be run with ./
+
+```
+int main(int argc, char** argv)
+argc = number of arguments
+argv = array of strings
+argv[0] = program name
+argv[1] = first real argument
+```
