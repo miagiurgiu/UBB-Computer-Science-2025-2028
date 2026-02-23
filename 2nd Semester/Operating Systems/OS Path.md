@@ -100,3 +100,4 @@ ls . = ls
 ./ = look here, not in path
 ./program = run the file named "program" from the current directory
 -a = option (flag)
+any file starting with . is hidden
