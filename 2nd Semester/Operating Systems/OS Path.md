@@ -248,4 +248,9 @@ chmod +x hello -> add execute
 chmod -x hello -> remove execute
 
 malloc() -> allocates memory
-free() -> releases m
+free() -> releases memory
+"&" = address
+"*" = dereference
+valgrind to detect leaks??
+
+
