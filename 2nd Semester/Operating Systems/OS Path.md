@@ -147,4 +147,9 @@ argc = number of arguments
 argv = array of strings
 argv[0] = program name
 argv[1] = first real argument
+
+./output_file_name test
+argc = 2
+argv[0] = ./output_file_name
+
 ```
