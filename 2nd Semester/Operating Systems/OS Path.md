@@ -168,3 +168,5 @@ q = quit
 PIPES
 | = take the output of the command on the left and give it as input to the command on the right
 command1 | command2 -> "command1 feeds command2"
+ls -1 puts the contents of the directory vertically
+ls puts them horizontally (by default)
