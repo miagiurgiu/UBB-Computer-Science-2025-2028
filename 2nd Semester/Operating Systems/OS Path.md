@@ -14,6 +14,6 @@ Microsoft Store -> Ubuntu -> terminals -> username -> password
 
 COMMANDS
 clear - clear the screen
-pwd - where do you execute the application from
+pwd - working directory -  where do you execute the application from 
 cd Downloads
 mkdir test7
