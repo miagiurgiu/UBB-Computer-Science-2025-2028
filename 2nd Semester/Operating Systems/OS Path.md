@@ -80,7 +80,10 @@ miagiurgiu = i own the file
 16 = file size in bytes
 Feb 23 18:57 = last modification time
 file1.txt = the file
-
+```
+```
+drwxr-xr-x 2 miagiurgiu miagiurgiu 4096 Feb 23 19:03 testdir
+"d" = directory
+rwx = owner 
 
 ```
-
