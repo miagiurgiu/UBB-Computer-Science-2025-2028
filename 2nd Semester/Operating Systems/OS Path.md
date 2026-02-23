@@ -37,6 +37,7 @@ whatis printf
 ctrl+c, ctrl+s, ctrl+v don't do anything in linux
 ^ - circumflex accent
 ^ shift+6
+sudo 
 TERMINAL WINDOWS:
 C:\Users\PC instead of having C, in Linux we have \ (just a bunch of folders)
 
