@@ -84,6 +84,8 @@ file1.txt = the file
 ```
 drwxr-xr-x 2 miagiurgiu miagiurgiu 4096 Feb 23 19:03 testdir
 "d" = directory
-rwx = owner 
+rwx = owner (read, write, execute)
+r-x = group (read, not write, execute)
+r-x = others (read, not write, execute)
 
 ```
