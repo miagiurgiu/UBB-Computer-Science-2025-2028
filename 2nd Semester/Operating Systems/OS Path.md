@@ -34,7 +34,7 @@ mv
 search in page using / in a man page
 press n
 whatis printf
-
+ctrl 
 TERMINAL WINDOWS:
 C:\Users\PC instead of having C, in Linux we have \ (just a bunch of folders)
 
