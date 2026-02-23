@@ -210,3 +210,7 @@ PRINT EVERY SECOND:
 ```
 while true; do date; sleep 1; done
 ```
+ps = show process status = list running processes
+```
+
+```
