@@ -69,4 +69,6 @@ put the text "hello" inside file1.txt
 ```
 cat = show contents of a file
 "-" = file
-rw-- = owner (the owen)
+rw-- = owner (the owner can read, write, not execute)
+r-- = group (read, not write, not execute)
+r-- = others ()
