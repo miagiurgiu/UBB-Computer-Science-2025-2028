@@ -94,3 +94,5 @@ write (w) = can create/delete files inside
 execute (x) = can enter the directory (using cd)
 cd .. = go one level up (go to parent directory)
 ls . = ls
+. = the directory contains itself
+.. = the de
