@@ -115,5 +115,7 @@ nano filename.c -> write code -> ctrl+O -> Enter -> ctrl+X -> back in terminal
 ```
 how to compile C code:
 ```
-gcc -o 
+gcc -o output_file_name hello.c
+gcc = compiler program
+hello.c = input sourc
 ```
