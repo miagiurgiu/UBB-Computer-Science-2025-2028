@@ -23,3 +23,7 @@ provide arguments to that command
 touch grass
 touch - create an empty file
 echo $PATH
+dolphin?
+
+TERMINAL WINDOWS:
+C:
