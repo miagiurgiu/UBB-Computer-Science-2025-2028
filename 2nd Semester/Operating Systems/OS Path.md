@@ -108,3 +108,5 @@ echo $PATH = see your path
 ls = does not look in the current directory first, it looks in the directories listed in $PATH and it searches for ls inside there -> it finds a file named ls in /usr/bin/ls -> that file is an executable file
 executable file = file that contains machine code (compiled program) and has execute permission (x)
 cd = bash built-in = the shell program (bash) already contains the code for cd inside itself, it does not need to search $PATH
+
+how to write C
