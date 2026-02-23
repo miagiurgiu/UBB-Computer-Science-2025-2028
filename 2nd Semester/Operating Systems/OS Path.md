@@ -77,5 +77,7 @@ r-- = others (read, not write, not execute)
 1 = number of hard links 
 miagiurgiu = i own the file
 16 = file size in bytes
+Feb 23 18:57 = last modification time
+file1.txt = the file
 ```
 
