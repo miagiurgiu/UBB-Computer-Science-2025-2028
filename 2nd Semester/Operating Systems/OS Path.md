@@ -31,7 +31,7 @@ man
 rm
 cp
 mv
-
+search in page using / in
 TERMINAL WINDOWS:
 C:\Users\PC instead of having C, in Linux we have \ (just a bunch of folders)
 
