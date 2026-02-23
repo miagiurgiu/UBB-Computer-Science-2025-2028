@@ -53,4 +53,4 @@ C:\Users\PC instead of having C, in Linux we have \ (just a bunch of folders)
 pwd - Print Working Directory = show your current location
 cd - Change Directory = go to home directory automatically
 cd sth = go to sth
-cd ~ = 
+cd ~ = cd = go to home directory automatically
