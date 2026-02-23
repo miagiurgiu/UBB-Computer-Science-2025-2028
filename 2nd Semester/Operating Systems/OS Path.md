@@ -50,3 +50,4 @@ C:\Users\PC instead of having C, in Linux we have \ (just a bunch of folders)
 
 ## Individual work after Lab1
 
+pwd - Print Working Directory = show your current location
