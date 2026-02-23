@@ -129,5 +129,10 @@ gcc -o output_file_name hello.c
 how to check executable file:
 ls -l
 ```
-
+hello.c
+output_file_name -> executable (green)
+```
+how to run executable file:
+```
+./hello
 ```
