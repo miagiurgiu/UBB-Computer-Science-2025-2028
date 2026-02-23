@@ -109,4 +109,7 @@ ls = does not look in the current directory first, it looks in the directories l
 executable file = file that contains machine code (compiled program) and has execute permission (x)
 cd = bash built-in = the shell program (bash) already contains the code for cd inside itself, it does not need to search $PATH
 
-how to write C
+how to write C code:
+```
+nano filename.c -> write code -> ctrl+O -> Enter -> ctrl+X -> back in terminal
+```
