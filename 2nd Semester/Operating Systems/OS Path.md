@@ -134,5 +134,9 @@ output_file_name -> executable (green)
 ```
 how to run executable file:
 ```
-./hello
+./output_file_name
 ```
+HOW DOES COMPILATION WORK
+1. GCC translates C -> machine code
+2. creates executable file
+3. that file can be run with ./
