@@ -1,3 +1,7 @@
+## Lecture 1
+https://www.cs.ubbcluj.ro/~rlupsa/edu/grafe/index.html - website
+
+
 Lab 1
 
 1. graph 6 vertices + 10 edges
