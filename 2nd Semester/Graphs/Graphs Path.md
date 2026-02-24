@@ -6,3 +6,9 @@ Lab 1
 3. graph 6 vertices + 40 edges
 4. graph 1k, 10k, 100k
 
+graph.txt
+5 6
+0 1 5
+1 1 -1
+1 2 6
+2 3 10
