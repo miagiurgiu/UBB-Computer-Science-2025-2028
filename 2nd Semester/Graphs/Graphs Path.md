@@ -12,3 +12,8 @@ graph.txt
 1 1 -1
 1 2 6
 2 3 10
+2 1 7
+3 1 9
+
+5 = nr of vertices
+6 = nr of edges
