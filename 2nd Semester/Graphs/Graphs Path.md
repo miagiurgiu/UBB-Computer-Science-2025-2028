@@ -1,8 +1,8 @@
-## Lecture 1
+## Lecture 1 - 24 feb 2026
 https://www.cs.ubbcluj.ro/~rlupsa/edu/grafe/index.html - website
 
 
-Lab 1
+## Lab 1 - 24 feb 2026
 
 1. graph 6 vertices + 10 edges
 		implement diagram, dictionary, text file
