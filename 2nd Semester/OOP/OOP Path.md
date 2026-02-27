@@ -10,4 +10,4 @@ Address vs Value in C:
 - since when calling you did &len, inside the function you do *len so that you can go to the value from that address and write the new value in there
 - * does two things:
 		1. in a declaration (int *ptr) => "this is a pointer"
-		2. in an expression (*ptr = 5) => "go to the address"
+		2. in an expression (*ptr = 5) => "go to the address of ptr and put 5 (value)"
