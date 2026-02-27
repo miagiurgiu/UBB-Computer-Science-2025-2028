@@ -2,7 +2,8 @@
 
 ## Lab 1 - 26 feb 2026
 
-
+## HOW TO CLONE VISUAL STUDIO 2022 (WINDOWS)
+ 1. 
 
 Very big dilemmas:
 - why do we need stuff like & and * in C but in C++ we did not?
