@@ -20,14 +20,17 @@ pointer to a datatype -> int* vs pointer to a variable *p
 
 PYTHON:
 if choice == 1:
-    ...
+    read_vector()
 elif choice == 2:
-    ...
+    solve_a()
 elif choice == 3:
-    ...
+    solve_b()
 elif choice == 4:
-    ...
+    print("Exiting...")
 else:
     print("Invalid option")
 
 C:
+if (choice=1) {
+
+}
