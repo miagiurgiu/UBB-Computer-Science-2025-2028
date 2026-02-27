@@ -49,10 +49,21 @@ else {
 }
 
 C method 2:
+int len = 0;
+...
 switch (choice) {
 	case 1:
 		read_vector(v, &len);
 		break;
 	case 2:
-		solve_a
+		solve_a();
+		break;
+	case 3:
+		solve_b(v, len);
+		break;
+	case 4:
+		printf("Exiting...\n");
+		return;
+	default:
+		printf("Invalid option\n)
 }
