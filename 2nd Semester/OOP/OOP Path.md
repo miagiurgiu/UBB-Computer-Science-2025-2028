@@ -17,3 +17,17 @@ Address vs Value in C:
 
 pointer to a datatype -> int* vs pointer to a variable *p
 - scanf needs address
+
+PYTHON:
+if choice == 1:
+    ...
+elif choice == 2:
+    ...
+elif choice == 3:
+    ...
+elif choice == 4:
+    ...
+else:
+    print("Invalid option")
+
+C:
