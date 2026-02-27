@@ -5,7 +5,8 @@
 ## HOW TO CLONE IN VISUAL STUDIO 2022 (WINDOWS)
  1. Main page -> Clone a repository
  2. Repository location (copy-paste from browser)
- 3. Browse -> Documents -> GitHub -> New -> Folder -> a1 oop
+ 3. Browse -> Documents -> GitHub -> New -> Folder -> a1-oop -> Clone
+ 4. File -> New -> Project -
 
 Very big dilemmas:
 - why do we need stuff like & and * in C but in C++ we did not?
