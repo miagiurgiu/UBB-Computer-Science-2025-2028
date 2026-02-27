@@ -65,5 +65,5 @@ switch (choice) {
 		printf("Exiting...\n");
 		return;
 	default:
-		printf("Invalid option\n)
+		printf("Invalid option\n");
 }
