@@ -6,4 +6,5 @@ Very big dilemmas:
 
 Address vs Value in C:
 - in C there exist only pointers (addresses) and values (copies)
-- if you want a function to modify a variable outside 
+- if you want a function to modify a variable from the outside of that function, you give its address -> pointer -> &
+- since wh
