@@ -6,7 +6,9 @@
  1. Main page -> Clone a repository
  2. Repository location (copy-paste from browser)
  3. Browse -> Documents -> GitHub -> New -> Folder -> a1-oop -> Clone
- 4. File -> New -> Project -
+ 4. File -> New -> Project -> Empty Project (C++)
+ 5. Project name: a1
+ 6. Location:
 
 Very big dilemmas:
 - why do we need stuff like & and * in C but in C++ we did not?
