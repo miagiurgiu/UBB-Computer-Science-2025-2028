@@ -11,3 +11,8 @@ Address vs Value in C:
 - * does two things:
 		1. in a declaration (int *ptr) => "this is a pointer"
 		2. in an expression (*ptr = 5) => "go to the address of ptr and put 5 (value)"
+
+&x = WHERE is x in memory ?
+    = 
+*x = WHAT is stored at the address p?
+
