@@ -4,7 +4,6 @@
 https://github.com/cs-ubbcluj-ro/a1-miagiurgiu-1
 I received problem 11.
 
-
 ## HOW TO CLONE IN VISUAL STUDIO 2022 (WINDOWS)
  1. Main page -> Clone a repository
  2. Repository location (copy-paste from browser)
@@ -33,6 +32,8 @@ Address vs Value in C:
 
 pointer to a datatype -> int* vs pointer to a variable *p
 - scanf needs address
+
+### Try-Except Python vs C:
 
 PYTHON:
 if choice == 1:
