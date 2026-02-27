@@ -8,7 +8,8 @@
  3. Browse -> Documents -> GitHub -> New -> Folder -> a1-oop -> Clone
  4. File -> New -> Project -> Empty Project (C++)
  5. Project name: a1
- 6. Location: the folder of the cloned repo
+ 6. Location: the folder of the cloned repo (C:\Users\Maria\Documents\GitHub\a1-oop)
+ 7. Right click on Source F
 
 Very big dilemmas:
 - why do we need stuff like & and * in C but in C++ we did not?
