@@ -14,7 +14,8 @@ I received problem 11.
  7. Right click on Source Files -> Add -> Existing Item -> select the .c file from a1-oop -> Add
 
 ## HOW TO CLONE IN VISUAL STUDIO CODE (MAC)
-1. Source Control -> Changes -> 3 dots -> Clone -> copy-paste link from browser 
+1. Source Control -> Changes -> 3 dots -> Clone -> copy-paste link from browser -> New File -> .c
+2. CTRL + ` 
 
 Very big dilemmas:
 - why do we need stuff like & and * in C but in C++ we did not?
