@@ -6,7 +6,7 @@ I received problem 11.
 
 ## HOW TO CLONE IN VISUAL STUDIO 2022 (WINDOWS)
  1. Main page -> Clone a repository
- 2. Repository location (copy-paste from browser)
+ 2. Repository location (copy-paste link from browser)
  3. Browse -> Documents -> GitHub -> New -> Folder -> a1-oop -> Clone
  4. File -> New -> Project -> Empty Project (C++)
  5. Project name: a1
@@ -14,7 +14,7 @@ I received problem 11.
  7. Right click on Source Files -> Add -> Existing Item -> select the .c file from a1-oop -> Add
 
 ## HOW TO CLONE IN VISUAL STUDIO CODE (MAC)
-1. Source Control -> Changes -> 3 dots -> Clone -> 
+1. Source Control -> Changes -> 3 dots -> Clone -> copy-paste link from browser 
 
 Very big dilemmas:
 - why do we need stuff like & and * in C but in C++ we did not?
