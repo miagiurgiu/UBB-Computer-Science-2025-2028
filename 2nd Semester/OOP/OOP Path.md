@@ -15,7 +15,7 @@ I received problem 11.
 
 ## HOW TO CLONE IN VISUAL STUDIO CODE (MAC)
 1. Source Control -> Changes -> 3 dots -> Clone -> copy-paste link from browser -> New File -> .c
-2. CTRL + ` 
+2. Terminal: CTRL + ` 
 
 Very big dilemmas:
 - why do we need stuff like & and * in C but in C++ we did not?
