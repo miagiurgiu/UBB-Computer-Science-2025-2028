@@ -31,6 +31,15 @@ else:
     print("Invalid option")
 
 C:
-if (choice=1) {
+if (choice == 1) {
+	read_vector(v, &len);
+}
+else if (choice == 2) {
+	solve_a();
+}
+else if (choice == 3) {
+	solve_b(v, len);
+}
+else if (choice == 4) {
 
 }
