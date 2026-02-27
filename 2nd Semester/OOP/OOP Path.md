@@ -41,5 +41,9 @@ else if (choice == 3) {
 	solve_b(v, len);
 }
 else if (choice == 4) {
-
+	printf("Exiting...\n");
+	return;
+}
+else {
+	printf("Invalid option\n");
 }
