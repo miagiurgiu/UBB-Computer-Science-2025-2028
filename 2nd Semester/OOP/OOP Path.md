@@ -16,3 +16,4 @@ Address vs Value in C:
 *x = WHAT is stored at the address p? -> go to that location
 
 pointer to a datatype -> int* vs pointer to a variable *p
+- scanf needs address
