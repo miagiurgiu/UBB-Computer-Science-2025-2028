@@ -11,6 +11,9 @@
  6. Location: the folder of the cloned repo (C:\Users\Maria\Documents\GitHub\a1-oop)
  7. Right click on Source Files -> Add -> Existing Item -> select the .c file from a1-oop -> Add
 
+## HOW TO CLONE IN VISUAL STUDIO CODE (MAC)
+
+
 Very big dilemmas:
 - why do we need stuff like & and * in C but in C++ we did not?
 
