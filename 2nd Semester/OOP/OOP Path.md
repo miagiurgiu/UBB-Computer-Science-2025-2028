@@ -30,7 +30,7 @@ elif choice == 4:
 else:
     print("Invalid option")
 
-C:
+C method 1:
 if (choice == 1) {
 	read_vector(v, &len);
 }
@@ -46,4 +46,13 @@ else if (choice == 4) {
 }
 else {
 	printf("Invalid option\n");
+}
+
+C method 2:
+switch (choice) {
+	case 1:
+		read_vector(v, &len);
+		break;
+	case 2:
+		solve_a
 }
