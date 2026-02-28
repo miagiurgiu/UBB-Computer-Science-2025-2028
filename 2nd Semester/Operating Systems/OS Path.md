@@ -260,3 +260,6 @@ valgrind to detect leaks??
 
 ## Lecture 1 - 25 feb 2026
 
+## Individual work after Lecture 1
+
+valgrind - check for memory leaks
