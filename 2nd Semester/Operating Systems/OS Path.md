@@ -276,5 +276,9 @@ whatis printf -> gives on-line summary of manual pages
 4. to close linux -> type "exit"
 5. limactl stop default (typing exit only disconnects your shell, if you want to ACTUALLY stop the VM, you need this command)
 6. top -> interactive monitoring program (see cpu usage etc)
-7. q -> quit 
-8. 
+	1. q -> quit or CTRL + C
+	2. h -> help
+	3. k -> kill a process
+	4. P -> sort by cpu
+	5. M -> sort by memory
+7. 
