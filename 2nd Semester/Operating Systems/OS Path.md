@@ -264,3 +264,4 @@ valgrind to detect leaks??
 
 valgrind - check for memory leaks
 apropos printf -> all manuals containing printf
+whatis printf -> gives on-line summary of manual pages
