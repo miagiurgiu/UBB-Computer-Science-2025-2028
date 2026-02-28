@@ -263,3 +263,4 @@ valgrind to detect leaks??
 ## Individual work after Lecture 1
 
 valgrind - check for memory leaks
+apropos printf -> all manuals containing printf
