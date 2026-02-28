@@ -268,4 +268,5 @@ whatis printf -> gives on-line summary of manual pages
 
 ## HOW TO USE LIMA
 - Lima is so cool because it allows you to run Linux commands on your mac system, on the existing files on it (cause generally, from what i have observed, virtual machines can't see the files on your original system)
-1. Terminal
+1. Command + T = new terminal
+2. 
