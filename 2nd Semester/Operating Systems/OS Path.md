@@ -265,3 +265,6 @@ valgrind to detect leaks??
 valgrind - check for memory leaks
 apropos printf -> all manuals containing printf
 whatis printf -> gives on-line summary of manual pages
+
+## HOW TO USE LIMA
+- Lima is so cool because it allows you to run Linux commands on your mac system, on 
