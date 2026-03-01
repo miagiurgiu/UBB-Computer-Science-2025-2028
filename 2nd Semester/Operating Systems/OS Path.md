@@ -286,3 +286,6 @@ whatis printf -> gives on-line summary of manual pages
 8. 
 whoami -> lima
 uname -a -> shows linux
+
+ip for every computer in the world: 127.0.0.1 = " this computer itself"
+
