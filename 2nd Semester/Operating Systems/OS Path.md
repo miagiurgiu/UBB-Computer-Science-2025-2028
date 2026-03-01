@@ -282,6 +282,7 @@ whatis printf -> gives on-line summary of manual pages
 	3. k -> kill a process
 	4. P -> sort by cpu
 	5. M -> sort by memory
-
+7. to quit vim -> type :q! inside it
+8. 
 whoami -> lima
 uname -a -> shows linux
