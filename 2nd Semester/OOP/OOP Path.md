@@ -108,4 +108,6 @@ https://www.youtube.com/watch?v=HEiPxjVR8CU
 - console-based application
 - layered architecture (for week 3)
 	- UI, Service/Controller, Repository, Domain
+- modular programming (.c, .h)
+- 
 
