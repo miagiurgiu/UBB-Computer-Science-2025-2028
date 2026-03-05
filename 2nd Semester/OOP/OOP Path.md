@@ -103,6 +103,8 @@ https://www.youtube.com/watch?v=HEiPxjVR8CU
 ## Seminar 1 - 5 mar 2026
 
 ## Lab 1 - 5 mar 2026
+
+A2-3:
 - 2 weeks, 2 grades
 - in C
 - console-based application
@@ -121,6 +123,5 @@ https://www.youtube.com/watch?v=HEiPxjVR8CU
 	- modular programming in C
 - functional requirements:
 	- a for week2 (CRUD)
-	- b for week2 - display with condition (not the UI's job, which country should be display should be done in the service,)
-	- 
+	- b for week2 - display with condition (not the UI's job, which country should be display should be done in the service, part b split in 2: one that displays, one that searches)
 
