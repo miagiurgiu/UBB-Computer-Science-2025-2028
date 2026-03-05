@@ -116,5 +116,8 @@ https://www.youtube.com/watch?v=HEiPxjVR8CU
 	- basic array type in C: int [20]
 	- malloc - increase the size of dynamic array
 	- dynamic array used by repo to contain the data
-	- create structure dynamic array but it does not have to be dynamically allocated (should be static array for week2, but for week3 you need dynamic)
+	- create structure dynamic array but it does not have to be dynamically allocated (should be static array for week2, but for week3 you need dynamic ?)
+	- fine if in week2 modular does not work, but should work for week3
+	- modular programming in C
+	- 
 
