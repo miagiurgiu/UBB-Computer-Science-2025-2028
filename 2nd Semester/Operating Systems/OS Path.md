@@ -292,4 +292,5 @@ ip for every computer in the world: 127.0.0.1 = " this computer itself"
 Inside nano:
 - to save: CTRL + O -> Enter
 - to exit: CTRL + X
+- nano -l filename.c => numbered lines
 
