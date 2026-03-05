@@ -120,5 +120,7 @@ https://www.youtube.com/watch?v=HEiPxjVR8CU
 	- fine if in week2 modular does not work, but should work for week3
 	- modular programming in C
 - functional requirements:
-	- a,b for week2 (CRUD)
+	- a for week2 (CRUD)
+	- b for week2 - display with condition (not the UI's job, which country should be display should be done in the service,)
+	- 
 
