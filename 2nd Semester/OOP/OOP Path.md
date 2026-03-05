@@ -91,4 +91,9 @@ switch (choice) {
 
 ![[Pasted image 20260305090821.png]]
 
-## Lecture 2
+## Lecture 2 - 4 mar 2026
+
+## Seminar 1 - 5 mar 2026
+
+## Lab 1 - 5 mar 2026
+
