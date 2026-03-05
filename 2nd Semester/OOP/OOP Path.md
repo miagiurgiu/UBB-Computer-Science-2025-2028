@@ -96,6 +96,10 @@ Individual work after Lecture 2
 ![[Pasted image 20260305090821.png]]
 
 ![[Pasted image 20260305091520.png]]
+
+https://www.youtube.com/watch?v=HEiPxjVR8CU
+
+
 ## Seminar 1 - 5 mar 2026
 
 ## Lab 1 - 5 mar 2026
