@@ -104,7 +104,7 @@ https://www.youtube.com/watch?v=HEiPxjVR8CU
 
 ## Lab 1 - 5 mar 2026
 
-A2-3:
+A2-3: Intelligent refrigerator
 - 2 weeks, 2 grades
 - in C
 - console-based application
