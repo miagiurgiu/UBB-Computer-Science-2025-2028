@@ -103,5 +103,7 @@ https://www.youtube.com/watch?v=HEiPxjVR8CU
 ## Seminar 1 - 5 mar 2026
 
 ## Lab 1 - 5 mar 2026
-2 weeks, 2 grades
+- 2 weeks, 2 grades
+- in C
+- console-based application
 
