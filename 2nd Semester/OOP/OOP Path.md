@@ -113,5 +113,7 @@ https://www.youtube.com/watch?v=HEiPxjVR8CU
 - dynamic array used by Repository (repo contains all entities: add, remove etc.)
 	- this repo uses some kind of data structure (list/dict)
 	- you have to implement the list yourself = dynamic array
-	- basic array type in c: 
+	- basic array type in C: int [20]
+	- malloc - increase the size of dynamic array
+	- dynamic array used by repo to contain the data
 
