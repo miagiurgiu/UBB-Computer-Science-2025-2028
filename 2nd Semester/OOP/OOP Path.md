@@ -89,10 +89,13 @@ switch (choice) {
 		printf("Invalid option\n");
 }
 
-![[Pasted image 20260305090821.png]]
-
 ## Lecture 2 - 4 mar 2026
 
+Individual work after Lecture 2
+
+![[Pasted image 20260305090821.png]]
+
+![[Pasted image 20260305091520.png]]
 ## Seminar 1 - 5 mar 2026
 
 ## Lab 1 - 5 mar 2026
