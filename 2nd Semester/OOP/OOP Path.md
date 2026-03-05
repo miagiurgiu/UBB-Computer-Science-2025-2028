@@ -106,4 +106,6 @@ https://www.youtube.com/watch?v=HEiPxjVR8CU
 - 2 weeks, 2 grades
 - in C
 - console-based application
+- layered architecture (for week 3)
+	- UI, Service/Controller, Repository, Domain
 
