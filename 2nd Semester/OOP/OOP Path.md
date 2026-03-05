@@ -1,4 +1,5 @@
 ## Lecture 1 - 25 feb 2026
+introduction
 
 ## Lab 1 - 26 feb 2026
 https://github.com/cs-ubbcluj-ro/a1-miagiurgiu-1
@@ -87,3 +88,7 @@ switch (choice) {
 	default:
 		printf("Invalid option\n");
 }
+
+![[Pasted image 20260305090821.png]]
+
+## Lecture 2
