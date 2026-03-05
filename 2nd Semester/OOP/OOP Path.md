@@ -110,5 +110,8 @@ https://www.youtube.com/watch?v=HEiPxjVR8CU
 	- UI, Service/Controller, Repository, Domain
 - modular programming (.c, .h)
 - only include header files in this laboratory (not only c files)
-- dynamic array used by Repository (repo contains all entities: add)
+- dynamic array used by Repository (repo contains all entities: add, remove etc.)
+	- this repo uses some kind of data structure (list/dict)
+	- you have to implement the list yourself = dynamic array
+	- basic array type in c: 
 
