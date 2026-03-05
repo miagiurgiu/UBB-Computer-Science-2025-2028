@@ -109,5 +109,6 @@ https://www.youtube.com/watch?v=HEiPxjVR8CU
 - layered architecture (for week 3)
 	- UI, Service/Controller, Repository, Domain
 - modular programming (.c, .h)
-- 
+- only include header files in this laboratory (not only c files)
+- dynamic array used by Repository (repo contains all entities: add)
 
