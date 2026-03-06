@@ -396,6 +396,7 @@ close(fd);
     * * has two meanings:
 	    1. when declaring -> "this variable is a pointer"
 ```
+WHEN DE
 int* p; = "p points to an int"
 char* s; = "s points to a char"
 struct node* head; = "head points to a struct node"
