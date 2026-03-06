@@ -299,4 +299,6 @@ Inside nano:
 
 TYPES OF ERRORS:
 1. CATEGORY 1: "implicit declaration of function ... "
-	Solution: #include ... (see in man from where is )
+	Solution: #include ... (see in man in which library is that function included)
+	Most used: stdlib.h, string.h, stdio.h
+2. CATEGORY 2: 
