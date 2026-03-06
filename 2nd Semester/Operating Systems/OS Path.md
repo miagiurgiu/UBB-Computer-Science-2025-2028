@@ -360,8 +360,8 @@ if (head == NULL) {
 9. CATEGORY 9: "unused variable/unused parameter"
    To be left at last!
 	Delete them or use them somehow.
-10. CATEGORY 10:
-gg
+10. CATEGORY 10: mismatch fopen-fclose, open-close
+	Wh
 
 open vs fopen; close vs fclose
 
