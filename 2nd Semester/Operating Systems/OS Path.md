@@ -367,6 +367,7 @@ if (head == NULL) {
 9. CATEGORY 9: "unused variable/unused parameter"
    To be left at last!
 	Delete them or use them somehow.
+	Tell yourself: "Ignore until parsing errors are fixed"
 10. CATEGORY 10: mismatch fopen-fclose, open-close
 ```
 FILE* f = fopen("a.txt", "r");
