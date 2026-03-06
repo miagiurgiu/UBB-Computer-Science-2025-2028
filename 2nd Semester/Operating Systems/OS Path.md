@@ -301,7 +301,7 @@ TYPES OF ERRORS:
 1. CATEGORY 1: "implicit declaration of function ... "
 	Solution: #include ... (see in man in which library is that function included)
 	Most used: stdlib.h, string.h, stdio.h
-	"W"
+	Ask yourself: "What header is missing?"
 2. CATEGORY 2: pointer vs non-pointer
     "invalid operands to binary ..."
     "incompatible types when assigning to type ..."
@@ -337,6 +337,7 @@ char* = string, like "Ana"
 	"expected ..."
 	"missing terminating ... "
 	"%d", missing ";", missing "()", missing "{}"
+	Ask yourself: "Did I mistype punctuation?"
 6. CATEGORY 6: unitialized pointer/variable
 	Every pointer that starts as "empty list/no file/nothing yet" should usually start as NULL
 ```
