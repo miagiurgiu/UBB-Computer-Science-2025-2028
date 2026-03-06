@@ -399,5 +399,5 @@ close(fd);
 int* p;
 char* s;
 struct node* head;
-FILE*    
+FILE* f;   
 ```
