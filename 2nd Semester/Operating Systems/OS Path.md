@@ -455,3 +455,5 @@ C error families:
 - forgetting to initialize pointer to `NULL`
 - `scanf` with and without `&`
 - file descriptor I/O vs `FILE*` I/O
+
+### Reference sheet (week 1-2)
