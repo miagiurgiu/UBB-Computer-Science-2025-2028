@@ -393,7 +393,7 @@ close(fd);
 	In C there are no references, only pointers.
 	&n -> address of variable n
 	*n -> content pointed to by p
-    * & to use when a function must write INTO my variable
+    * & to use when a function must write INTO my variable; DON'T USE IT with strings/arrays because in most cases they are already pointers
     * * has two meanings:
 	    1. when declaring -> "this variable is a pointer"
 	    2. in an expression -> "go to the pointed value"
@@ -416,4 +416,6 @@ IN FUNCTIONS (&):
 scanf("%d", &x); SCANF NEEDS ADDRESS
 fscanf(f, "%d", &rows);
 read(fd, &k, sizeof(int));
+
+
 ```
