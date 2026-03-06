@@ -304,4 +304,4 @@ TYPES OF ERRORS:
 2. CATEGORY 2: pointer vs non-pointer
     "invalid operands to binary ..."
     "incompatible types when assigning to type ..."
-    "incompatible types when returin"
+    "incompatible types when returning type ..."
