@@ -294,3 +294,5 @@ Inside nano:
 - to exit: CTRL + X
 - nano -l filename.c => numbered lines
 
+## Test Prep for Test 1 
+#### correct a given program using compi
