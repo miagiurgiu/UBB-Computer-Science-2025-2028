@@ -402,4 +402,9 @@ int* p; = "p points to an int"
 char* s; = "s points to a char"
 struct node* head; = "head points to a struct node"
 FILE* f;  = "f points to FILE"
+
+IN AN EXPRESSION:
+int x=5;
+int* p = &x;
+printf("%d\n", *p);
 ```
