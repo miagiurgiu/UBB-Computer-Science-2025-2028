@@ -312,4 +312,9 @@ struct node* add(struct node head, char* name) ERROR
 struct node* add(struct node* head, char* name) CORRECT
 ```
 3. CATEGORY 3: "." instead of "->"
-	"p is a pointer, did you mean "
+	"p is a pointer, did you mean to use -> ?"
+```
+struct node* p;
+...
+strcmp(p.name, nam)
+```
