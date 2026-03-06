@@ -399,5 +399,5 @@ close(fd);
 int* p; = "p points to an int"
 char* s; = "s points to a char"
 struct node* head; = "head points to a struct node"
-FILE* f;  = "f poi"
+FILE* f;  = "f points to FILE"
 ```
