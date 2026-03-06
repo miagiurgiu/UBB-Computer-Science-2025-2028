@@ -393,4 +393,4 @@ close(fd);
 	In C there are no references, only pointers.
 	&n -> address of variable n
 	*n -> content pointed to by p
-	
+    * has two meanings *
