@@ -391,4 +391,6 @@ close(fd);
 
 11. CATEGORY 11: when * and when & 
 	In C there are no references, only pointers.
-	&n -> addre
+	&n -> address of variable n
+	*n -> content pointed to by p
+	
