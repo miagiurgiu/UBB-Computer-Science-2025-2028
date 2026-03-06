@@ -316,6 +316,7 @@ struct node* add(struct node* head, char* name) CORRECT
 ```
 3. CATEGORY 3: "." instead of "->"
 	"p is a pointer, did you mean to use -> ?"
+	Ask yourself: "Is this variable a pointer to struct?"
 ```
 struct node* p;
 ...
