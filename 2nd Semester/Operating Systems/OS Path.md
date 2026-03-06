@@ -307,5 +307,6 @@ TYPES OF ERRORS:
     "incompatible types when returning type ..."
     Solution: add a * somewhere
 ```
-    
+struct node* add(struct node head, char* name) ERROR
+struct node* add(struct node* head, char* name) CORRECT
 ```
