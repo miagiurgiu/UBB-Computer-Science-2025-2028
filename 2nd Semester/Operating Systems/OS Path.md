@@ -417,5 +417,9 @@ scanf("%d", &x); SCANF NEEDS ADDRESS
 fscanf(f, "%d", &rows);
 read(fd, &k, sizeof(int));
 
+BUT
 
+char name[64];
+scanf("%s", name); NOT &name BECAUSE name IS ALREADY A STRING
+strcmp(name, "ana");
 ```
