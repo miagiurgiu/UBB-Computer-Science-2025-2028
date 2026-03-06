@@ -302,5 +302,6 @@ TYPES OF ERRORS:
 	Solution: #include ... (see in man in which library is that function included)
 	Most used: stdlib.h, string.h, stdio.h
 2. CATEGORY 2: pointer vs non-pointer
-    "invalid operands to binary"
-    "incompatible types when assigning to. "
+    "invalid operands to binary ..."
+    "incompatible types when assigning to type ..."
+    "incompatible types when returin"
