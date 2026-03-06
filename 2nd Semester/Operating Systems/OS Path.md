@@ -398,17 +398,22 @@ close(fd);
 	    1. when declaring -> "this variable is a pointer"
 	    2. in an expression -> "go to the pointed value"
 ```
-WHEN DECLARING:
+WHEN DECLARING (*):
 int* p; = "p points to an int"
 char* s; = "s points to a char"
 struct node* head; = "head points to a struct node"
 FILE* f;  = "f points to FILE"
 
-IN AN EXPRESSION:
+IN AN EXPRESSION (*):
 int x=5;
 int* p = &x;
 printf("%d\n", *p); prints 5
 
 int rows;
 fscanf(f, "%d", &rows);
+
+IN FUNCTIONS (&):
+scanf("%d", &x);
+fscanf(f, "%d", &rows);
+read(fd, &k, sizeof(int));
 ```
