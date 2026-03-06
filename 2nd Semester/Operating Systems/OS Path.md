@@ -351,8 +351,11 @@ n->name = (char*)malloc(strlen(name)); ERROR (no space for the final '\0')
 n->name = (char*)malloc(strlen(name)+1); CORRECT
 ```
 8. CATEGORY 8: base-case /NULL checks in list functions
+	In linked list functions, ask yourself: "what if list is empty?", "what if current node is NULL?"
 ```
 if (head == NULL) {
 	return 0;
 }
 ```
+9. CATEGORY 9: "unused variable/unused parameter"
+	
