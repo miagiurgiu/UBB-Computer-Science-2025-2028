@@ -337,10 +337,10 @@ char* = string, like "Ana"
 	"missing terminating ... "
 	"%d", missing ";", missing "()", missing "{}"
 6. CATEGORY 6: unitialized pointer/variable
+	Every pointer that starts as "empty list/no file/nothing yet" should usually start as NULL
 ```
 struct node* head;
 if(known(head,name)) => ERROR (head was never initialized, so it contains garbage)
 
 struct node* head = NULL => CORRECT
-	
 ```
