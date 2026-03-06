@@ -370,5 +370,11 @@ fopen, fclose => library stdio.h => file is being read with FILE*
 FILE* f;
 f = fopen("a.txt", "r");
 fclose(f);
+
+=> used with fprintf, fscanf, fgets, fputs
 ```
 open, close => file is being read with file descriptors (int)
+```
+int fd;
+fd = open("a.bin", O_RDONLY)
+```
