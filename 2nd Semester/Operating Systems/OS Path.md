@@ -361,8 +361,15 @@ if (head == NULL) {
    To be left at last!
 	Delete them or use them somehow.
 10. CATEGORY 10: mismatch fopen-fclose, open-close
-	Wh
+```
+FILE* f = fopen("a.txt", "r");
+close(f);      // wrong
+```
 
+```
+int fd = open("a.txt", O_RDONLY);
+fclose(fd);    // wrong
+```
 open vs fopen; close vs fclose
 
 fopen, fclose => library <stdio.h> => file is being read with FILE*
@@ -381,3 +388,5 @@ close(fd);
 
  => used with read, write, lseek
 ```
+
+11.
