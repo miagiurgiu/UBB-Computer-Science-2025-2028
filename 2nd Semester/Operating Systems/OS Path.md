@@ -361,3 +361,6 @@ if (head == NULL) {
    To be left at last!
 	Delete them or use them somehow.
 10. CATEGORY 10:
+gg
+
+open vs fopen; close vs fclose
