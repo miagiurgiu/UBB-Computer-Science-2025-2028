@@ -322,3 +322,5 @@ strcmp(p->name, name) CORRECT
 struct node x; => access using x.name
 struct node* p; => access using p->name
 ```
+4. CATEGORY 4: wrong function parameter type
+	"passing argument 2 of strcmp makes pointer from integer"
