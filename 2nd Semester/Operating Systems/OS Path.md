@@ -444,3 +444,14 @@ p->name
 ```
 12. CATEGORY 12: "control reaches end of non-void function"
 	Ask yourself: "Did I forget a return?"
+
+C error families:
+- missing headers
+- pointer vs non-pointer
+- `.` vs `->`
+- string vs char
+- `malloc/free`
+- forgetting `+1` for strings
+- forgetting to initialize pointer to `NULL`
+- `scanf` with and without `&`
+- file descriptor I/O vs `FILE*` I/O
