@@ -470,3 +470,21 @@ int* p;   // pointer declaration
 &x        // address of x
 
 STRUCTS:
+x.name    // struct value
+p->name   // pointer to struct
+
+FILES:
+FILE* f = fopen("a.txt", "r");
+fclose(f);
+
+int fd = open("a.bin", O_RDONLY);
+close(fd);
+
+STRINGS:
+char c;       // one char
+char* s;      // string
+strlen(s)+1   // space needed for copy
+
+SCANF:
+int x;       scanf("%d", &x);
+char s[64];  scanf("%63s", s);
