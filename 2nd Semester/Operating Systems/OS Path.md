@@ -456,4 +456,17 @@ C error families:
 - `scanf` with and without `&`
 - file descriptor I/O vs `FILE*` I/O
 
-### Reference sheet (week 1-2)
+### Reference sheet (week 1-2):
+HEADERS:
+#include <stdio.h>    // printf scanf FILE fopen fclose
+#include <stdlib.h>   // malloc free
+#include <string.h>   // strlen strcpy strcmp
+#include <unistd.h>   // read write close
+#include <fcntl.h>    // open flags
+
+POINTERS:
+int* p;   // pointer declaration
+*p        // pointed value
+&x        // address of x
+
+STRUCTS:
