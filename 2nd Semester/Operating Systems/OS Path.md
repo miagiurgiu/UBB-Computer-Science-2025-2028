@@ -393,4 +393,11 @@ close(fd);
 	In C there are no references, only pointers.
 	&n -> address of variable n
 	*n -> content pointed to by p
-    * has two meanings *
+    * * has two meanings:
+	    1. when declaring -> "this variable is a pointer"
+```
+int* p;
+char* s;
+struct node* head;
+FILE*    
+```
