@@ -413,7 +413,7 @@ int rows;
 fscanf(f, "%d", &rows);
 
 IN FUNCTIONS (&):
-scanf("%d", &x);
+scanf("%d", &x); SCANF NEEDS ADDRESS
 fscanf(f, "%d", &rows);
 read(fd, &k, sizeof(int));
 ```
