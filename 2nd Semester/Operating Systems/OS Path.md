@@ -336,4 +336,8 @@ char* = string, like "Ana"
 	"expected ..."
 	"missing terminating ... "
 	"%d", missing ";", missing "()", missing "{}"
+6. CATEGORY 6: unitialized pointer/variable
+```
+
 	
+```
