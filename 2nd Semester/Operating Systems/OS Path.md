@@ -324,10 +324,12 @@ struct node* p; => access using p->name
 ```
 4. CATEGORY 4: wrong function parameter type
 	"passing argument 2 of strcmp makes pointer from integer"
+	When you see: strcmp, strcpy, strlen =>
 ```
 int known(struct node* head, char name) ERROR
 int known(struct node* head, char* name) CORRECT
 
 char = one character, like 'A'
 char* = string, like "Ana"
+
 ```
