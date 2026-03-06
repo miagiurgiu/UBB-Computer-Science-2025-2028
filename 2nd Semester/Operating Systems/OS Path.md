@@ -344,3 +344,5 @@ if(known(head,name)) => ERROR (head was never initialized, so it contains garbag
 
 struct node* head = NULL => CORRECT
 ```
+7. CATEGORY 7: memory allocation size 
+A string needs space for all characters plus the final '\0'
