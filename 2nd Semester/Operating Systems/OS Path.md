@@ -301,6 +301,7 @@ TYPES OF ERRORS:
 1. CATEGORY 1: "implicit declaration of function ... "
 	Solution: #include ... (see in man in which library is that function included)
 	Most used: stdlib.h, string.h, stdio.h
+	"W"
 2. CATEGORY 2: pointer vs non-pointer
     "invalid operands to binary ..."
     "incompatible types when assigning to type ..."
@@ -423,10 +424,14 @@ char name[64];
 scanf("%s", name); NOT &name BECAUSE name IS ALREADY A STRING
 strcmp(name, "ana");
 
-* -> WHEN THE VAR
+* -> WHEN THE VARIABLE STORES AN ADDRESS
 char *s;
 struct node* p;
 FILE* f;
 
+"->" -> WHEN I HAVE:
+struct something* p
+p->next
+p->name
 
 ```
