@@ -406,5 +406,8 @@ FILE* f;  = "f points to FILE"
 IN AN EXPRESSION:
 int x=5;
 int* p = &x;
-printf("%d\n", *p);
+printf("%d\n", *p); prints 5
+
+int rows;
+fscanf(f, "%d", &rows);
 ```
