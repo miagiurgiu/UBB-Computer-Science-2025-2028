@@ -359,3 +359,5 @@ if (head == NULL) {
 ```
 9. CATEGORY 9: "unused variable/unused parameter"
    To be left at last!
+	Delete them or use them somehow.
+10. CATEGORY 10:
