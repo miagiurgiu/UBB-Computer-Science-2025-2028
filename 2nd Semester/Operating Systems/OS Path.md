@@ -441,4 +441,5 @@ p->next
 p->name
 
 ```
-12. CATEGORY 12
+12. CATEGORY 12: "control reaches end of non-void function"
+	Ask yourself: "Did I forget a return?"
