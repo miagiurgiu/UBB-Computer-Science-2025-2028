@@ -327,4 +327,7 @@ struct node* p; => access using p->name
 ```
 int known(struct node* head, char name) ERROR
 int known(struct node* head, char* name) CORRECT
+
+char = one character, like 'A'
+char* = string, like "Ana"
 ```
