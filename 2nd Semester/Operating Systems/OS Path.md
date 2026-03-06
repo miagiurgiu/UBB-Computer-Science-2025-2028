@@ -333,4 +333,7 @@ char = one character, like 'A'
 char* = string, like "Ana"
 ```
 5. CATEGORY 5: syntax/typing mistakes
+	"expected ..."
+	"missing terminating ... "
+	"%d", missing ";", missing "()", missing "{}"
 	
