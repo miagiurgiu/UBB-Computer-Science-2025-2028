@@ -389,4 +389,5 @@ close(fd);
  => used with read, write, lseek
 ```
 
-11.
+11. CATEGORY 11: when * and when & 
+	
