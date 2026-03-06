@@ -295,4 +295,7 @@ Inside nano:
 - nano -l filename.c => numbered lines
 
 ## Test Prep for Test 1 
-#### correct a given program using compi
+#### correct a given program
+
+TYPES OF ERRORS:
+1. CATEGORY 1: "implicit declaration of function X"
