@@ -364,3 +364,5 @@ if (head == NULL) {
 gg
 
 open vs fopen; close vs fclose
+
+fopen, fclose => file is being read with FILE*
