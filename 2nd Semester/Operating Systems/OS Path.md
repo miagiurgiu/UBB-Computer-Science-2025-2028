@@ -338,6 +338,7 @@ char* = string, like "Ana"
 	"%d", missing ";", missing "()", missing "{}"
 6. CATEGORY 6: unitialized pointer/variable
 ```
+struct node* head;
 
 	
 ```
