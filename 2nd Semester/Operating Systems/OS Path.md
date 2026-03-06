@@ -305,3 +305,7 @@ TYPES OF ERRORS:
     "invalid operands to binary ..."
     "incompatible types when assigning to type ..."
     "incompatible types when returning type ..."
+    Solution: add a * somewhere
+```
+    
+```
