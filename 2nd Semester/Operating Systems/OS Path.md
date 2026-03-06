@@ -304,11 +304,12 @@ TYPES OF ERRORS:
 	Ask yourself: "What header is missing?"
 2. CATEGORY 2: pointer vs non-pointer
     "invalid operands to binary ..."
+    Ask yourself: "Am I comparing a non-pointer with NULL?"
     "incompatible types when assigning to type ..."
     "incompatible types when returning type ..."
+    Ask yourself: "Did I use pointer where plain value is expected, or vice versa?"
     Solution: add a * somewhere
     When you see: NULL, malloc, next => pointers (*)
-    Ask yourself: "Did I use pointer where plain value is expected, or vice versa?"
 ```
 struct node* add(struct node head, char* name) ERROR
 struct node* add(struct node* head, char* name) CORRECT
