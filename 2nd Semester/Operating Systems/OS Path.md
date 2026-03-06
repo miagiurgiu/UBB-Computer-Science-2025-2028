@@ -308,6 +308,7 @@ TYPES OF ERRORS:
     "incompatible types when returning type ..."
     Solution: add a * somewhere
     When you see: NULL, malloc, next => pointers (*)
+    Ask yourself: "Did I use pointer where plain value is expected, or vice versa?"
 ```
 struct node* add(struct node head, char* name) ERROR
 struct node* add(struct node* head, char* name) CORRECT
