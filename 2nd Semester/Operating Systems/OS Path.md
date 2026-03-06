@@ -346,3 +346,6 @@ struct node* head = NULL => CORRECT
 ```
 7. CATEGORY 7: memory allocation size 
 	A string needs space for all characters plus the final '\0'
+```
+n->name = (ch)
+```
