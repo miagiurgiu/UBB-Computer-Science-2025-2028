@@ -316,5 +316,9 @@ struct node* add(struct node* head, char* name) CORRECT
 ```
 struct node* p;
 ...
-strcmp(p.name, nam)
+strcmp(p.name, name) ERROR
+strcmp(p->name, name) CORRECT
+
+struct node x; => access using x.name
+struct node* p; => access using p->name
 ```
