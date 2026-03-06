@@ -366,4 +366,9 @@ gg
 open vs fopen; close vs fclose
 
 fopen, fclose => library stdio.h => file is being read with FILE*
+```
+FILE* f;
+f = fopen("a.txt", "r");
+fclose(f);
+```
 open, close => file is being read with file descriptors (int)
