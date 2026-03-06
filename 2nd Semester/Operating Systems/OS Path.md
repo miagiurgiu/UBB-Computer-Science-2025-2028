@@ -395,8 +395,9 @@ close(fd);
 	*n -> content pointed to by p
     * * has two meanings:
 	    1. when declaring -> "this variable is a pointer"
+	    2. in an expression -> "go to the pointed value"
 ```
-WHEN DE
+WHEN DECLARING:
 int* p; = "p points to an int"
 char* s; = "s points to a char"
 struct node* head; = "head points to a struct node"
