@@ -350,4 +350,9 @@ struct node* head = NULL => CORRECT
 n->name = (char*)malloc(strlen(name)); ERROR (no space for the final '\0')
 n->name = (char*)malloc(strlen(name)+1); CORRECT
 ```
-8. ca
+8. CATEGORY 8: base-case /NULL checks in list functions
+```
+if (head == NULL) {
+	return 0;
+}
+```
