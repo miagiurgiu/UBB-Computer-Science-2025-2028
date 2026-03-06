@@ -306,6 +306,7 @@ TYPES OF ERRORS:
     "incompatible types when assigning to type ..."
     "incompatible types when returning type ..."
     Solution: add a * somewhere
+    When you see: NULL,
 ```
 struct node* add(struct node head, char* name) ERROR
 struct node* add(struct node* head, char* name) CORRECT
