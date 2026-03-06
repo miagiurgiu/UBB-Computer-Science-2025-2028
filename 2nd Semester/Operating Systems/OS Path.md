@@ -339,6 +339,8 @@ char* = string, like "Ana"
 6. CATEGORY 6: unitialized pointer/variable
 ```
 struct node* head;
+if(known(head,name)) => ERROR (head was never initialized, so it contains garbage)
 
+struct node* head = NULL => CORRECT
 	
 ```
