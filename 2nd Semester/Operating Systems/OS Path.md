@@ -298,4 +298,5 @@ Inside nano:
 #### correct a given program
 
 TYPES OF ERRORS:
-1. CATEGORY 1: "implicit declaration of function X"
+1. CATEGORY 1: "implicit declaration of function ... "
+	Solution: #include ... (see in man from where is )
