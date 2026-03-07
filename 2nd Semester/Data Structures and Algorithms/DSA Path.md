@@ -8,7 +8,9 @@ Theory:
 Bag =
 - container with no positions, like a shopping cart
 - container in which the order of elements is not important and the elements do not have to be unique
-- there are no posit
+- there are no positions (meaning no operations working/returning positions)
+- the elements are added to the bag according to the order of memory (we cannot control)
+- printing is done
 #### Bag implementation:
 
 ```
