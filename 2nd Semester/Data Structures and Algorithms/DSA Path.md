@@ -210,3 +210,8 @@ private:
 ```
 we cannot allow the map size to increase indefinitely.
 without the capacity we would not know if we can still add new stuff or not.
+
+to compile all files in vs code:       
+FixedCapBiMapIterator.cpp
+Maria@Mac FixedCapBiMap % clang++ *.cpp -o app
+Maria@Mac FixedCapBiMap % ./app
