@@ -66,9 +66,12 @@ getCurrent() -> bag[current]
 ```
 elems = [5,7,9]
 fr = [3,1,2]
-
-
+=> 5 appears 3 times
+=> 7 appears 1 time
+=> 9 appears 2 times
+the real bag: {5,5,5,7,9,9}
 ```
+
 #### Bag implementation:
 b=input (exists from before => precondition)
 e=input (exists from before => precondition)
