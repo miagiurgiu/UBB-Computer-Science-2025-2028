@@ -36,6 +36,8 @@ Formal definition:
 - INTERFACE: 
 		init(i,b) = constructor
 		iterator(b,it) = call the constructor
+
+Never pass constructor or iterator directly. Use the iterator function.
 #### Bag implementation:
 
 ```
