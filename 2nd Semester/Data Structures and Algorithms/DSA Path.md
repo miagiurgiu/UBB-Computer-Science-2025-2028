@@ -201,9 +201,9 @@ printBag(b)
 Wrap-up with this ADT concept: ADT describes abstract operations, and in implementation they become calls to constructors or methods
 
 ## Lab 1
-
+elements = the beginning of the memory address
 ```
 private:
-	TElem* elements;
-	int capacity;
+	TElem* elements; // elements = the beginning of the memory address
+	int capacity; // how big is this array
 ```
