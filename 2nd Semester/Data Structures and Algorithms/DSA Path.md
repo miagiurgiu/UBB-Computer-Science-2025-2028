@@ -40,8 +40,8 @@ Formal definition:
 
 Never pass constructor or iterator directly. Use the iterator function.
 ```
-
-
+it = BagIterator(b) INCORRECT
+iterator(b,it) CORRECT (means create iterator for b)
 ```
 next() -> changes internally
 first() -> go back to the beginning (iterator)
