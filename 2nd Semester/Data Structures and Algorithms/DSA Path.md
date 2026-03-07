@@ -33,7 +33,9 @@ What is input and what is output?
 
 Formal definition:
 - DOMAIN: I = {it | it is an iterator over a bag b}
-- INTERFACE: init()
+- INTERFACE: 
+		init(i,b) = constructor
+		iterator(b,it) = call the constructor
 #### Bag implementation:
 
 ```
