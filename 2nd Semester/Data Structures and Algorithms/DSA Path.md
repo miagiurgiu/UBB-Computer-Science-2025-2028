@@ -208,4 +208,5 @@ private:
 	int capacity; // how big is this array (max)
 	int mapSize; // how many elements i currently have (current)
 ```
-we cannot allow the map size to
+we cannot allow the map size to increase indefinitely.
+without the capacity we would not know if we can still add new stuff or not.
