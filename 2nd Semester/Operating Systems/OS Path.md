@@ -496,4 +496,5 @@ char s[64];  scanf("%63s", s);
 C:
 - C functions receive copies of arguments -> call by value
 - usually a function cannot modify variables in the caller
+- char line[] <=> char *line
 - 
