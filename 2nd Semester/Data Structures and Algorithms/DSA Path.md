@@ -49,6 +49,9 @@ first() -> go back to the beginning (iterator)
 1. Using a LIST OF UNIQUE ELEMENTS + FREQUENCIES
 - current element from the iterator = current position + current frequency ??? concrete??
 #### Bag implementation:
+b=input
+e=input
+it=output
 
 ```
 class Bag:  
