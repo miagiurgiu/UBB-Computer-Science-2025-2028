@@ -502,3 +502,4 @@ C:
 - This happens because the function works with a **pointer to the same memory**.
 - FUNCTIONS RECEIVE ARRAYS => they can modify them
 - arrays are passed as pointers
+- when you make a function call like f(x), the VALUE of x is passed, not its address; if x is an array, 
