@@ -5,7 +5,7 @@
 ## Seminar 1 - 4 mar 2026
 
 Theory:
-Bag =
+1. Bag =
 - container with no positions, like a shopping cart
 - container in which the order of elements is not important and the elements do not have to be unique
 - there are no positions (meaning no operations working/returning positions)
@@ -24,6 +24,12 @@ Formal definition:
 		iterator(b,it) -> it is the output
 		nrOfOccurences(b,e)
 update operation does not make sense because we have no positions for bags
+What is input and what is output?
+	input => exists pre
+	output => does not exist pre, but exist post-conditions
+
+2. Iterator = 
+
 #### Bag implementation:
 
 ```
