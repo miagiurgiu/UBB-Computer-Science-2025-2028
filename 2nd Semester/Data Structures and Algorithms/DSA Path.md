@@ -38,6 +38,12 @@ Formal definition:
 		iterator(b,it) = call the constructor
 
 Never pass constructor or iterator directly. Use the iterator function.
+next() -> changes internally
+first() -> go back to the beginning (iterator)
+
+#### Bag representation:
+
+
 #### Bag implementation:
 
 ```
