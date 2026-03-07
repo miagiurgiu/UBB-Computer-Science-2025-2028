@@ -255,7 +255,7 @@ malloc() -> allocates memory
 free() -> releases memory
 "&" = address
 "*" = dereference
-valgrind to detect leaks??
+valgrind to detect leaks?? yes.
 
 ../../../ = back
 
