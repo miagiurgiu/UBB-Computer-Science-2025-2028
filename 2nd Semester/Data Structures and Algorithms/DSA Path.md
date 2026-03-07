@@ -7,7 +7,8 @@
 Theory:
 Bag =
 - container with no positions, like a shopping cart
-- container o
+- container in which the order of elements is not important and the elements do not have to be unique
+- there are no posit
 #### Bag implementation:
 
 ```
