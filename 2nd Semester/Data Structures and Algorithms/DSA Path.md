@@ -51,10 +51,14 @@ first() -> go back to the beginning (iterator)
 - the list is already a container ??!
 - current element from the iterator = index/position of the current element (not the value of the current element, but the index)
 ```
-
-
+[1,5,5,7]
+current = index
+current = 0 => 1
+current = 1 => 5
+current = 2 => 5
+current = 3 => 7
 ```
-1. Using a LIST OF UNIQUE ELEMENTS + FREQUENCIES
+2. Using a LIST OF UNIQUE ELEMENTS + FREQUENCIES
 - current element from the iterator = current position + current frequency ??? concrete??
 #### Bag implementation:
 b=input (exists from before => precondition)
