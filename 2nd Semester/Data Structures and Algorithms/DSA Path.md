@@ -49,9 +49,9 @@ first() -> go back to the beginning (iterator)
 1. Using a LIST OF UNIQUE ELEMENTS + FREQUENCIES
 - current element from the iterator = current position + current frequency ??? concrete??
 #### Bag implementation:
-b=input
-e=input
-it=output
+b=input (exists from before => precondition)
+e=input (exists from before => precondition)
+it=output (exists only after execution => postcondition)
 
 ```
 class Bag:  
