@@ -497,4 +497,4 @@ C:
 - C functions receive copies of arguments -> call by value
 - usually a function cannot modify variables in the caller
 - char line[] <=> char *line
-- 
+- Arrays passed to functions **decay into pointers**
