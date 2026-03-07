@@ -198,4 +198,4 @@ b = createIntBag()
 printBag(b)
 ```
 
-Wrap-up with this ADT concept: ADT describes abstract operations, and in implementation they
+Wrap-up with this ADT concept: ADT describes abstract operations, and in implementation they become calls to constructors or methods
