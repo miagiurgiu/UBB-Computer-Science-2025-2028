@@ -47,7 +47,7 @@ first() -> go back to the beginning (iterator)
 - current element from the iterator = index/position of the current element (not the value of the current element, but the index)
 
 1. Using a LIST OF UNIQUE ELEMENTS + FREQUENCIES
-- 
+- current element from the iterator = current position + current frequency ??? concrete??
 #### Bag implementation:
 
 ```
