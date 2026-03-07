@@ -208,3 +208,4 @@ private:
 	int capacity; // how big is this array (max)
 	int mapSize; // how many elements i currently have (current)
 ```
+we cannot allow the map size to
