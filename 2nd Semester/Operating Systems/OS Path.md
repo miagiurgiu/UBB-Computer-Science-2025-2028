@@ -304,6 +304,7 @@ TYPES OF ERRORS:
 	Solution: #include ... (see in man in which library is that function included)
 	Most used: stdlib.h, string.h, stdio.h
 	Ask yourself: "What header is missing?"
+	
 2. CATEGORY 2: pointer vs non-pointer
     "invalid operands to binary ..."
     Ask yourself: "Am I comparing a non-pointer with NULL?"
