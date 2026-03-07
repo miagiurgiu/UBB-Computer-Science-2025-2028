@@ -22,7 +22,8 @@ Formal definition:
 		init(b)
 		destroy(b)
 		iterator(b,it) -> it is the output
-nrOfOccurences(b,e)
+		nrOfOccurences(b,e)
+update operation does not make sense because we have no positions for bags
 #### Bag implementation:
 
 ```
