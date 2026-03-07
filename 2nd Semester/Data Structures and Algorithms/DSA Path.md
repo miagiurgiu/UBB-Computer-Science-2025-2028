@@ -57,9 +57,18 @@ current = 0 => 1
 current = 1 => 5
 current = 2 => 5
 current = 3 => 7
+
+self.__current = 0
+getCurrent() -> bag[current]
 ```
 2. Using a LIST OF UNIQUE ELEMENTS + FREQUENCIES
 - current element from the iterator = current position + current frequency ??? concrete??
+```
+elems = [5,7,9]
+fr = [3,1,2]
+
+
+```
 #### Bag implementation:
 b=input (exists from before => precondition)
 e=input (exists from before => precondition)
