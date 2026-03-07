@@ -197,3 +197,5 @@ def printBag(b):
 b = createIntBag()  
 printBag(b)
 ```
+
+Wrap-up with this ADT concept: ADT describes abstract operations, and in implementation they
