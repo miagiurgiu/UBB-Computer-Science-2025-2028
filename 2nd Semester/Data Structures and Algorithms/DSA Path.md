@@ -44,8 +44,10 @@ first() -> go back to the beginning (iterator)
 #### Bag representation:
 1. Using a LIST for the elements
 - the list is already a container ??!
-- current element
+- current element from the iterator = index/position of the current element (not the value of the current element, but the index)
 
+1. Using a LIST OF UNIQUE ELEMENTS + FREQUENCIES
+- 
 #### Bag implementation:
 
 ```
