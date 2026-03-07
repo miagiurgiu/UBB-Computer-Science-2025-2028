@@ -498,3 +498,7 @@ C:
 - usually a function cannot modify variables in the caller
 - char line[] <=> char *line
 - Arrays passed to functions **decay into pointers**
+- Functions can **modify the original array contents**
+- This happens because the function works with a **pointer to the same memory**.
+- FUNCTIONS RECEIVE ARRAYS => they can modify them
+- arrays are passed as pointers
