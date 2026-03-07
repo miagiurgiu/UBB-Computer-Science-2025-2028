@@ -35,7 +35,7 @@ Formal definition:
 - DOMAIN: I = {it | it is an iterator over a bag b}
 - INTERFACE: 
 		init(i,b) = constructor
-		iterator(b,it) = call the constructor
+		iterator(b,it) = call the constructor (b exists already, it is being created)
 
 Never pass constructor or iterator directly. Use the iterator function.
 next() -> changes internally
