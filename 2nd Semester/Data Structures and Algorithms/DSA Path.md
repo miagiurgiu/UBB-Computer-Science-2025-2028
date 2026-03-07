@@ -5,7 +5,7 @@
 ## Seminar 1 - 4 mar 2026
 
 Theory:
-Bag = container with no positions, like 
+Bag = container with no positions, like a shopping cart
 #### Bag implementation:
 
 ```
