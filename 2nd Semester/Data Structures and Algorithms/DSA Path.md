@@ -17,7 +17,12 @@ Formal definition:
 - INTERFACE: 
 		add(b,e)
 		remove(b,e)
-size(b)
+		size(b)
+		search(b,e)
+		init(b)
+		destroy(b)
+		iterator(b,it) -> it is the output
+nrOfOccurences(b,e)
 #### Bag implementation:
 
 ```
