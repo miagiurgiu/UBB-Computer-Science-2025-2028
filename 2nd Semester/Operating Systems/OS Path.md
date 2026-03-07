@@ -41,7 +41,7 @@ sudo
 gcc test.c -> ls -> 
 executable files -> green
 you can rename
-fallback method -> will "macaroane" be the default folder/fallback for ???
+fallback method -> will "macaroane" be the default folder/fallback for ??? (if the program cannot find or access the requested folder, it uses another predefined folder instead; in this context, the program first)
 
 TERMINAL WINDOWS:
 C:\Users\PC instead of having C, in Linux we have \ (just a bunch of folders)
