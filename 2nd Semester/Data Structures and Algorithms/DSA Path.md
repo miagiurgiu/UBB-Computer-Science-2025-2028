@@ -205,5 +205,6 @@ elements = the beginning of the memory address
 ```
 private:
 	TElem* elements; // elements = the beginning of the memory address
-	int capacity; // how big is this array
+	int capacity; // how big is this array (max)
+	int mapSize; // how many elements i currently have (current)
 ```
