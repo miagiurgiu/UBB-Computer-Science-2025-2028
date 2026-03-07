@@ -29,8 +29,8 @@ What is input and what is output?
 	output => does not exist pre, but exist post-conditions
 
 2. ADT Iterator = 
-- uni-directional, bi-directional
-- we have an iterator because we don't have positio
+- uni-directional (only next), bi-directional (next + previous)
+- we have an iterator because we don't have positions
 
 Formal definition:
 - DOMAIN: I = {it | it is an iterator over a bag b}
@@ -39,6 +39,10 @@ Formal definition:
 		iterator(b,it) = call the constructor (b exists already, it is being created)
 
 Never pass constructor or iterator directly. Use the iterator function.
+```
+
+
+```
 next() -> changes internally
 first() -> go back to the beginning (iterator)
 
