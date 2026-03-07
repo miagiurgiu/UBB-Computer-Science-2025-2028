@@ -13,7 +13,11 @@ Bag =
 - printing can be done in whichever order
 
 Formal definition:
-- DOMAIN: 
+- DOMAIN: B = {b | b is a bag with elements of type TElem}
+- INTERFACE: 
+		add(b,e)
+		remove(b,e)
+size(b)
 #### Bag implementation:
 
 ```
