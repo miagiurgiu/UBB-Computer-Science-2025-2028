@@ -28,8 +28,12 @@ What is input and what is output?
 	input => exists pre
 	output => does not exist pre, but exist post-conditions
 
-2. Iterator = 
+2. ADT Iterator = 
+- uni-directional, bi-directional
 
+Formal definition:
+- DOMAIN: I = {it | it is an iterator over a bag b}
+- INTERFACE: init()
 #### Bag implementation:
 
 ```
