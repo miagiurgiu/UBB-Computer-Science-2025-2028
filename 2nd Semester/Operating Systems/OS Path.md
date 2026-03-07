@@ -492,3 +492,7 @@ strlen(s)+1   // space needed for copy
 SCANF:
 int x;       scanf("%d", &x);
 char s[64];  scanf("%63s", s);
+
+C:
+- C functions receive copies of arguments -> call by value
+- 
