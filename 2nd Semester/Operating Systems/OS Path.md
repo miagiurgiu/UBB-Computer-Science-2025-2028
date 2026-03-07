@@ -138,6 +138,7 @@ how to run executable file:
 ```
 ./output_file_name
 ```
+
 HOW DOES COMPILATION WORK
 1. GCC translates C -> machine code
 2. creates executable file
