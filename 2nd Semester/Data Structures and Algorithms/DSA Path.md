@@ -30,6 +30,7 @@ What is input and what is output?
 
 2. ADT Iterator = 
 - uni-directional, bi-directional
+- we have an iterator because we don't have positio
 
 Formal definition:
 - DOMAIN: I = {it | it is an iterator over a bag b}
