@@ -369,9 +369,10 @@ if (head == NULL) {
 	Delete them or use them somehow.
 	Tell yourself: "Ignore until parsing errors are fixed"
 	"unused parameter argc"
-
-
-10. CATEGORY 10: mismatch fopen-fclose, open-close
+```
+(void)argc;
+```
+9. CATEGORY 10: mismatch fopen-fclose, open-close
 ```
 FILE* f = fopen("a.txt", "r");
 close(f);      // wrong
