@@ -69,7 +69,11 @@ fr = [3,1,2]
 => 5 appears 3 times
 => 7 appears 1 time
 => 9 appears 2 times
+
 the real bag: {5,5,5,7,9,9}
+
+the iterator holds current element and current frequency
+
 ```
 
 #### Bag implementation:
