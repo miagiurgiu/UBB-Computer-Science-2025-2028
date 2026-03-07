@@ -42,7 +42,9 @@ next() -> changes internally
 first() -> go back to the beginning (iterator)
 
 #### Bag representation:
-
+1. Using a LIST for the elements
+- the list is already a container ??!
+- current element
 
 #### Bag implementation:
 
