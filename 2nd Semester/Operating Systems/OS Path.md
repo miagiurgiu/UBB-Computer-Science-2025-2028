@@ -368,6 +368,9 @@ if (head == NULL) {
    To be left at last!
 	Delete them or use them somehow.
 	Tell yourself: "Ignore until parsing errors are fixed"
+	"unused parameter argc"
+
+
 10. CATEGORY 10: mismatch fopen-fclose, open-close
 ```
 FILE* f = fopen("a.txt", "r");
