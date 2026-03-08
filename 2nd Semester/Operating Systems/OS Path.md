@@ -567,5 +567,14 @@ C. `Invalid read of size ...`
 In your case:  
 corrupted node layout from bad allocation and possibly bad head handling.
 
-D. 
+D. `definitely lost`
+	real leak, pointer gone
+	Ask:
+- where was memory allocated?
+- who was supposed to free it?
+- did I overwrite the pointer?
+- did I forget `free`?
+
+E. `0 bytes after a block of size X alloc'd`
+	overflow exactly past the end
 	
