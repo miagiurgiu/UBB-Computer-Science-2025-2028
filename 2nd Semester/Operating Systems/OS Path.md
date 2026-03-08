@@ -602,3 +602,5 @@ deallocate:
 free(node->name);
 free(node);
 ```
+
+free() vs clear()
