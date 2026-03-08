@@ -200,6 +200,33 @@ printBag(b)
 
 Wrap-up with this ADT concept: ADT describes abstract operations, and in implementation they become calls to constructors or methods
 
+## Lecture 2 
+
+Dynamic arrays (data structures)
+
+addToEnd
+```
+subalgorithm addToEnd (da, e) is:
+    if da.nrElem == da.cap then
+        //the dynamic array is full. We need to resize it
+        da.cap ← da.cap * 2
+        newElems ← @ an array with da.cap empty slots
+
+        //we need to copy existing elements into newElems
+        for index ← 1, da.nrElem execute
+            newElems[index] ← da.elems[index]
+        end-for
+
+        //we need to replace the old element array with the new one
+        //depending on the prog. lang., we may need to free the old elems array
+        da.elems ← newElems
+    end-if
+
+    //now we certainly have space for the element e
+    da.nrElem ← da.nrElem + 1
+    da.elems[da.nrElem] ← e
+end-subalgorithm
+```
 ## Lab 1
 elements = the beginning of the memory address
 ```
@@ -221,3 +248,4 @@ or:
 
 clang++ App.cpp FixedCapBiMap.cpp FixedCapBiMapIterator.cpp -o app
 Maria@Mac FixedCapBiMap % ./app
+
