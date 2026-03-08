@@ -592,7 +592,7 @@ Valgrind errors in this priority:
 Why this order?  
 Because leaks are often just consequences of earlier corruption.
 
-allocate:
+allocate (YOU MUST FREE BOTH ALLOCATIONS!)
 ```
 n = malloc(sizeof(struct node));  
 n->name = malloc(strlen(name)+1);
