@@ -257,7 +257,7 @@ def addToEnd(da, e):
 
 ```
 
-addToEndC:
+addToEnd - C++:
 ```
 #include <iostream>
 using namespace std;
@@ -290,6 +290,43 @@ void addToEnd(DynamicArray& da, int e) {
     da.elems[da.nrElem] = e;
 }
 ```
+
+
+addToEnd - C:
+```
+#include <stdio.h>
+#include <stdlib.h>
+
+struct DynamicArray {
+    int cap;
+    int nrElem;
+    int* elems;
+};
+
+void addToEnd(struct DynamicArray* da, int e) {
+    if (da->nrElem == da->cap) {
+        // the dynamic array is full. We need to resize it
+        da->cap = da->cap * 2;
+        int* newElems = (int*)malloc((da->cap + 1) * sizeof(int)); // an array with da.cap empty slots
+
+        // we need to copy existing elements into newElems
+        for (int index = 1; index <= da->nrElem; index++) {
+            newElems[index] = da->elems[index];
+        }
+
+        // we need to replace the old element array with the new one
+        // depending on the prog. lang., we may need to free the old elems array
+        free(da->elems);
+        da->elems = newElems;
+    }
+
+    // now we certainly have space for the element e
+    da->nrElem = da->nrElem + 1;
+    da->elems[da->nrElem] = e;
+}
+```
+
+
 ## Lab 1
 elements = the beginning of the memory address
 ```
