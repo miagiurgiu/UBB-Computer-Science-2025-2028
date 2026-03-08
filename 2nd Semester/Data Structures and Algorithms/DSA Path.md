@@ -328,16 +328,146 @@ void addToEnd(struct DynamicArray* da, int e) {
 
 addToPosition - Pseudocode
 ```
+subalgorithm addToPosition (da, i, e) is:
+    if i > 0 and i ≤ da.nrElem+1 then
+        if da.nrElem = da.cap then //the dynamic array is full. We need to resize it
+            da.cap ← da.cap * 2
+            newElems ← @ an array with da.cap empty slots
 
+            for index ← 1, da.nrElem execute
+                newElems[index] ← da.elems[index]
+            end-for
 
+            da.elems ← newElems
+        end-if
+
+        //now we certainly have space for the element e
+        da.nrElem ← da.nrElem + 1
+
+        for index ← da.nrElem, i+1, -1 execute //move the elements to the right
+            da.elems[index] ← da.elems[index-1]
+        end-for
+
+        da.elems[i] ← e
+    else
+        @throw exception
+    end-if
+end-subalgorithm
 ```
-addToPosition - Python
 
+addToPosition - Python
+```
+class DynamicArray:
+    def __init__(self, cap):
+        self.cap = cap
+        self.nrElem = 0
+        self.elems = [None] * (cap + 1)  # 1-based indexing
+
+
+def addToPosition(da, i, e):
+    if i > 0 and i <= da.nrElem + 1:
+        if da.nrElem == da.cap:  # the dynamic array is full. We need to resize it
+            da.cap = da.cap * 2
+            newElems = [None] * (da.cap + 1)
+
+            for index in range(1, da.nrElem + 1):
+                newElems[index] = da.elems[index]
+
+            da.elems = newElems
+
+        # now we certainly have space for the element e
+        da.nrElem = da.nrElem + 1
+
+        # move the elements to the right
+        for index in range(da.nrElem, i, -1):
+            da.elems[index] = da.elems[index - 1]
+
+        da.elems[i] = e
+    else:
+        raise Exception("invalid position")
+```
 
 addToPosition - C++
+```
+#include <iostream>
+#include <stdexcept>
+using namespace std;
+
+struct DynamicArray {
+    int cap;
+    int nrElem;
+    int* elems;
+};
+
+void addToPosition(DynamicArray& da, int i, int e) {
+    if (i > 0 && i <= da.nrElem + 1) {
+        if (da.nrElem == da.cap) { // the dynamic array is full. We need to resize it
+            da.cap = da.cap * 2;
+            int* newElems = new int[da.cap + 1];
+
+            for (int index = 1; index <= da.nrElem; index++) {
+                newElems[index] = da.elems[index];
+            }
+
+            delete[] da.elems;
+            da.elems = newElems;
+        }
+
+        // now we certainly have space for the element e
+        da.nrElem = da.nrElem + 1;
+
+        // move the elements to the right
+        for (int index = da.nrElem; index >= i + 1; index--) {
+            da.elems[index] = da.elems[index - 1];
+        }
+
+        da.elems[i] = e;
+    } else {
+        throw runtime_error("invalid position");
+    }
+}
+```
 
 addToPosition - C
+```
+#include <stdio.h>
+#include <stdlib.h>
 
+struct DynamicArray {
+    int cap;
+    int nrElem;
+    int* elems;
+};
+
+void addToPosition(struct DynamicArray* da, int i, int e) {
+    if (i > 0 && i <= da->nrElem + 1) {
+        if (da->nrElem == da->cap) { // the dynamic array is full. We need to resize it
+            da->cap = da->cap * 2;
+            int* newElems = (int*)malloc((da->cap + 1) * sizeof(int));
+
+            for (int index = 1; index <= da->nrElem; index++) {
+                newElems[index] = da->elems[index];
+            }
+
+            free(da->elems);
+            da->elems = newElems;
+        }
+
+        // now we certainly have space for the element e
+        da->nrElem = da->nrElem + 1;
+
+        // move the elements to the right
+        for (int index = da->nrElem; index >= i + 1; index--) {
+            da->elems[index] = da->elems[index - 1];
+        }
+
+        da->elems[i] = e;
+    } else {
+        printf("Exception: invalid position\n");
+        exit(1);
+    }
+}
+```
 ## Lab 1
 elements = the beginning of the memory address
 ```
