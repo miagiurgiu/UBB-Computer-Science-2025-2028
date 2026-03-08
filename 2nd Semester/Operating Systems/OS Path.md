@@ -582,4 +582,3 @@ E. `0 bytes after a block of size X alloc'd`
 - forgot `+1` for string?
 - used `sizeof(pointer)` instead of `sizeof(object)`?
 
-This phrase is extremely important.
