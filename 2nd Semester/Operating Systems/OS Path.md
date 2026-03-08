@@ -582,7 +582,6 @@ E. `0 bytes after a block of size X alloc'd`
 - forgot `+1` for string?
 - used `sizeof(pointer)` instead of `sizeof(object)`?
 
-## Second
 
 Valgrind errors in this priority:
 1. uninitialized values
@@ -592,3 +591,10 @@ Valgrind errors in this priority:
 
 Why this order?  
 Because leaks are often just consequences of earlier corruption.
+
+allocate:
+```
+n = malloc(sizeof(struct node));  
+n->name = malloc(strlen(name)+1);
+```
+deallocate:
