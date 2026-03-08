@@ -604,3 +604,8 @@ free(node);
 ```
 
 free() vs clear()
+free - releases one block of memory that was allocated with malloc/calloc/realloc
+```
+char* s = malloc(10);
+free(s);
+```
