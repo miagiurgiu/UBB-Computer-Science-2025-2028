@@ -533,4 +533,21 @@ NULL is a pointer (void*)
 control reaches end of non-void function
 Ask yourself: Did I forget a return?
 
-valgrind 
+valgrind errors:
+A. `Conditional jump or move depends on uninitialised value(s)`
+	an `if`, `while`, `strcmp`, array index, etc. is using garbage
+Ask:
+
+- did I initialize the variable?
+    
+- did `scanf/fscanf/read` really write into it?
+    
+- did I forget `&`?
+    
+- did I initialize pointer to `NULL`?
+    
+
+In your case:  
+`head` not initialized.
+
+B. `Invalid write of size ...`
