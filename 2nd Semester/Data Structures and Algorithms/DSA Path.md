@@ -204,7 +204,7 @@ Wrap-up with this ADT concept: ADT describes abstract operations, and in impleme
 
 Dynamic arrays (data structures)
 
-addToEnd
+addToEnd - Pseudocode:
 ```
 subalgorithm addToEnd (da, e) is:
     if da.nrElem == da.cap then
@@ -226,6 +226,69 @@ subalgorithm addToEnd (da, e) is:
     da.nrElem ← da.nrElem + 1
     da.elems[da.nrElem] ← e
 end-subalgorithm
+```
+
+addToEnd - Python:
+```
+class DynamicArray:
+    def __init__(self, cap):
+        self.cap = cap
+        self.nrElem = 0
+        self.elems = [None] * (cap + 1)  # 1-based indexing
+
+
+def addToEnd(da, e):
+    if da.nrElem == da.cap:
+        # the dynamic array is full. We need to resize it
+        da.cap = da.cap * 2
+        newElems = [None] * (da.cap + 1)  # an array with da.cap empty slots
+
+        # we need to copy existing elements into newElems
+        for index in range(1, da.nrElem + 1):
+            newElems[index] = da.elems[index]
+
+        # we need to replace the old element array with the new one
+        # depending on the prog. lang., we may need to free the old elems array
+        da.elems = newElems
+
+    # now we certainly have space for the element e
+    da.nrElem = da.nrElem + 1
+    da.elems[da.nrElem] = e
+
+```
+
+addToEndC:
+```
+#include <iostream>
+using namespace std;
+
+struct DynamicArray {
+    int cap;
+    int nrElem;
+    int* elems;
+};
+
+void addToEnd(DynamicArray& da, int e) {
+    if (da.nrElem == da.cap) {
+        // the dynamic array is full. We need to resize it
+        da.cap = da.cap * 2;
+        int* newElems = new int[da.cap + 1]; // an array with da.cap empty slots
+
+        // we need to copy existing elements into newElems
+        for (int index = 1; index <= da.nrElem; index++) {
+            newElems[index] = da.elems[index];
+        }
+
+        // we need to replace the old element array with the new one
+        // depending on the prog. lang., we may need to free the old elems array
+        delete[] da.elems;
+        da.elems = newElems;
+    }
+
+    // now we certainly have space for the element e
+    da.nrElem = da.nrElem + 1;
+    da.elems[da.nrElem] = e;
+}
 ```
 ## Lab 1
 elements = the beginning of the memory address
