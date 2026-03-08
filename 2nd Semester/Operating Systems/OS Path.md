@@ -582,4 +582,13 @@ E. `0 bytes after a block of size X alloc'd`
 - forgot `+1` for string?
 - used `sizeof(pointer)` instead of `sizeof(object)`?
 
+## Second
 
+Valgrind errors in this priority:
+1. uninitialized values
+2. invalid writes
+3. invalid reads
+4. leaks
+
+Why this order?  
+Because leaks are often just consequences of earlier corruption.
