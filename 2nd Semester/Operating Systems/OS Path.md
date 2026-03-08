@@ -527,3 +527,4 @@ struct node {
 
 => linked lists store pointers to the next node, not to the node itself.
 ```
+
