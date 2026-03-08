@@ -598,3 +598,7 @@ n = malloc(sizeof(struct node));
 n->name = malloc(strlen(name)+1);
 ```
 deallocate:
+```
+free(node->name);
+free(node);
+```
