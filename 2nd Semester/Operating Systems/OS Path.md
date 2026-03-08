@@ -529,3 +529,6 @@ struct node {
 ```
 
 NULL is a pointer (void*)
+12. CATEGORY 12:
+control reaches end of non-void function
+Ask yourself: Did I forget a return?
