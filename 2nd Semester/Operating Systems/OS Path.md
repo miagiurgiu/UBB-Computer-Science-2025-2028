@@ -525,5 +525,5 @@ struct node {
     struct node* next;
 };
 
-=> linked lists store pointers to the next nod
+=> linked lists store pointers to the next node, 
 ```
