@@ -403,7 +403,9 @@ close(fd);
 
  => used with read, write, lseek
 ```
-
+Conclusion:
+open() -> returns int (file descriptor)
+fopen() -> returns FILE*
 11. CATEGORY 11: when * and when & 
 	In C there are no references, only pointers.
 	&n -> address of variable n
