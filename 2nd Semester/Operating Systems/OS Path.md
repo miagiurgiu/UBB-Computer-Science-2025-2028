@@ -546,5 +546,26 @@ In your case:
 
 B. `Invalid write of size ...`
 	you wrote where you do not own memory
+Ask:
+- wrong malloc size?
+- array out of bounds?
+- wrote to freed memory?
+- wrote through bad pointer?
 
+In your case:  
+`malloc(sizeof(struct node*))` instead of `sizeof(struct node)`.
+
+C. `Invalid read of size ...`
+	you read from invalid memory
+	Ask:
+- pointer corrupted?
+- memory freed already?
+- list node malformed?
+- wrong `&` in `read/fscanf`?
+- uninitialized pointer?
+
+In your case:  
+corrupted node layout from bad allocation and possibly bad head handling.
+
+D. 
 	
