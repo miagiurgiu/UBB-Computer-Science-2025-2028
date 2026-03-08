@@ -599,8 +599,8 @@ n->name = malloc(strlen(name)+1);
 ```
 deallocate:
 ```
-free(node->name);
-free(node);
+free(n->name);
+free(n);
 ```
 
 free - releases one block of memory that was allocated with malloc/calloc/realloc
