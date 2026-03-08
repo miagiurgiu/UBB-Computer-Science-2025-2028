@@ -519,11 +519,11 @@ struct node {
     struct node next;
 };
 
-CORRECT:
+CORRECT (LINKED LIST PATTERN):
 struct node {
     char* name;
     struct node* next;
 };
 
-=> linked lists store pointers to the next node, 
+=> linked lists store pointers to the next node, not to the node itself.
 ```
