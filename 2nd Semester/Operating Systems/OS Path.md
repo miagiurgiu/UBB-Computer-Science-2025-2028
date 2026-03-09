@@ -786,4 +786,7 @@ Did I break the list structure?
 
 "invalid operands to binary !=" => comparing struct with NULL instead of pointer
 
-"passing argument from incompatible pointer type" => clear()
+"passing argument from incompatible pointer type" => clear(head->name), but function expects struct node*
+
+"control reaches end of non-void function" => missing return
+
