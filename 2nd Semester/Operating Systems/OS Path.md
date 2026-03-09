@@ -781,3 +781,9 @@ Linked lists:
 Did I initialize head = NULL?
 Did I break the list structure?
 ```
+
+"Implicit declaration of function" => missing header
+
+"invalid operands to binary !=" => comparing struct with NULL instead of pointer
+
+"passing argument from incompatible pointer type" => clear()
