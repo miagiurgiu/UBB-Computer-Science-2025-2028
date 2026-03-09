@@ -809,3 +809,8 @@ function is void => return or nothing
 grep, sed, awk practice problems
 
 passwd - fisierul principal care gestioneaza userii de pe un sistem anume
+wget
+curl
+copy link from website -> wget link ...
+
+ps - processes from the system
