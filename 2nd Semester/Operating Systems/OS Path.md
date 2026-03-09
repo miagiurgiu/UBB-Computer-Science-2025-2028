@@ -834,4 +834,6 @@ export cheese=1
 echo $cheese
 
 - with sed:
-sed by default eliminate
+sed by default eliminates stuff
+has 4 fields
+[OPERATIE]/[CE_CAUTAM]/[DE_INLOCUIT]/[FLAGS
