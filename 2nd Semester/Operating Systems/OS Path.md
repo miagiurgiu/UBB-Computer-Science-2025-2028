@@ -699,5 +699,7 @@ scanf("%d", &x); correct
 5) "Invalid write of size ..." = writing outside allocated memory
 ```
 malloc(sizeof(struct node*)); ERROR
-
+malloc(sizeof(struct node)); CORRECT
+malloc(strlen(name)); ERROR
+malloc(strlen(name)+1); CORRECT
 ```
