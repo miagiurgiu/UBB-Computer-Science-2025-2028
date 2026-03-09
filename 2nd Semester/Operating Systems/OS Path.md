@@ -685,5 +685,12 @@ leaked a linked-list node => its name field also becomes unreachable
 4) "Conditional jump depends on unititialised value"
 ```
 if()
-ehil
+while()
+strcmp()
+is using garbage data.
+
+struct node* head; ERROR
+struct node* head = NULL; CORRECT
+
+
 ```
