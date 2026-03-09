@@ -670,7 +670,14 @@ freed at ...
 3) check leak summary (at the bottom)
 - "definitely lost" = memory was allocated but the pointer to it was lost
 ```
+ex.
 p = malloc(...);
 p = something_else;
 ```
 - "indirect lost" = memory reachable only through leaked memory
+```
+ex.
+leaked a linked-list node => its name field also becomes unreachable
+```
+- "possibly lost" = valgrind is unsure if pointer is valid
+- "still reachable "
