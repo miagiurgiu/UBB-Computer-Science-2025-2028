@@ -782,9 +782,9 @@ Did I initialize head = NULL?
 Did I break the list structure?
 ```
 
-"Implicit declaration of function" => missing header
+"Implicit declaration of function" => missing header (#include...)
 
-"invalid operands to binary !=" => comparing struct with NULL instead of pointer
+"invalid operands to binary !=" => comparing struct with NULL instead of pointer (NULL can only be compared with a point)
 
 "passing argument from incompatible pointer type" => clear(head->name), but function expects struct node*
 
