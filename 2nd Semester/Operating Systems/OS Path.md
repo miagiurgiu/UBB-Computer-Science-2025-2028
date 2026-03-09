@@ -870,3 +870,6 @@ we can sort them / add a new sed that deletes those lines where there are more t
 sed '^([a-z]+[0-9]{4}).+economica.+Sun.+$/\1/g' last.fake | sed -E '/ /d'  | sort | uniq | head -n1
 
 head can skip the first line and give the next n ones ...
+
+- with cat
+cat last.
