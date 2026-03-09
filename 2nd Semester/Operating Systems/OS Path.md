@@ -796,8 +796,7 @@ if function expects struct node* :
 clear(head->next);
 
 if you want to release a string:
-free(head->na)
-
+free(head->name);
 ```
 
 "control reaches end of non-void function" => missing return
