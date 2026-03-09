@@ -848,3 +848,8 @@ echo "Alex" | sed -E 's/e/3/d' -> Al3x
 replace everything with username from the beginning
 
 capturing groups
+replace the whole match with the content of 1
+replace with the content of capturing group 1
+delete the first part
+replace everyrthing with the content of....
+
