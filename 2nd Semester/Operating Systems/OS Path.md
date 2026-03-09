@@ -645,3 +645,11 @@ not
 ```
 
 VALGRIND ERRORS:
+command formula:
+```
+valgrind ./program arguments
+
+complete:
+
+valgrind --leak-check=full --show-leak-kinds=all 
+```
