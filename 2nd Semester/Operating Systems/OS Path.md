@@ -307,7 +307,7 @@ TYPES OF ERRORS:
 	
 2. CATEGORY 2: pointer vs non-pointer
     "invalid operands to binary ..."
-    Ask yourself: "Am I comparing a non-pointer with NULL?"
+    Ask yourself: "Am I comparing a non-pointer with NULL?" (null can only be compared with pointer)
     "argument makes pointer from integer"
     Ask yourself: "Did I pass char instead of char*, or int instead of pointer?"
     "incompatible types when assigning to type ..."
