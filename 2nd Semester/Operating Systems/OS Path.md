@@ -716,4 +716,5 @@ malloc(sizeof(pointer)) instead of malloc(sizeof(object))
 but pointer is not an object?!
 ```
 
-7) 
+7) "definitely lost" -> where is the matching free?
+
