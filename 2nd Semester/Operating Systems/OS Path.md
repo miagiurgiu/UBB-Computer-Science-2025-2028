@@ -656,4 +656,8 @@ valgrind --leak-check=full --show-leak-kinds=all  --track-origins=yes ./program 
 
 reading strategy:
 1) first error at the top -> where the problem happens
+```
+at function (file.c:line)
+```
+
 2) 
