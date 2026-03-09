@@ -680,4 +680,10 @@ ex.
 leaked a linked-list node => its name field also becomes unreachable
 ```
 - "possibly lost" = valgrind is unsure if pointer is valid
-- "still reachable "
+- "still reachable" = memory was not freed, but program still had a pointer to it when exiting
+-
+4) "Conditional jump depends on unititialised value"
+```
+if()
+ehil
+```
