@@ -618,5 +618,11 @@ int main(int argc, char** argv)
 argc = number of arguments
 argv = array of strings
 argv[0] = program name
-argv[1] = first arguments
+argv[1] = first argument
 argv[2] = second argument
+
+HOW TO DETECT WHAT ARGUMENTS ARE NEEDED:
+```
+fopen(argv[1])
+
+```
