@@ -668,4 +668,8 @@ freed at ...
 ```
 
 3) check leak summary (at the bottom)
-4)
+- "definitely lost" = memory was allocated but the pointer to it was lost
+```
+p = malloc(...)
+p =
+```
