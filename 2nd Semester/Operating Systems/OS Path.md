@@ -758,3 +758,26 @@ void clear(struct node* head) {
 ```
 
 Pointer issues:
+```
+Did I forget * ?
+Did I compare struct with NULL?
+Did I use . instead of -> ?
+```
+
+Input:
+```
+Did I forget & in scanf/fscanf/read?
+```
+
+Memory:
+```
+Did I allocate correct size?
+Did I forget +1 for string?
+Did I free everything I malloc?
+```
+
+Linked lists:
+```
+Did I initialize head = NULL?
+Did I break the list structure?
+```
