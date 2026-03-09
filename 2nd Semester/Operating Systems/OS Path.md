@@ -836,4 +836,7 @@ echo $cheese
 - with sed:
 sed by default eliminates stuff
 has 4 fields
-[OPERATIE]/[CE_CAUTAM]/[DE_INLOCUIT]/[FLAGS
+[OPERATIE]/[CE_CAUTAM]/[DE_INLOCUIT]/[FLAGS]
+how to delete with sed
+/asdf/d
+dmesg | sed '/e/d' -> deletes lines whith c
