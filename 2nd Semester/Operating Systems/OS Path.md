@@ -804,3 +804,4 @@ free(head->name);
 function is int => return sth like 0,1,x
 function is struct node* => return head or n
 function is void => return or nothing
+
