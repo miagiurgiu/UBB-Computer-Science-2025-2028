@@ -843,3 +843,6 @@ s/[CHESTIE]/[]
 dmesg | sed '/e/d' -> deletes lines which contain letter e
 dmesg | sed  -E '/e/d' -> deletes lines which contain letter e or E
 
+echo "Alex" | sed -E 's/e/3/d' -> Al3x
+
+replace everything ewith username from the beginning
