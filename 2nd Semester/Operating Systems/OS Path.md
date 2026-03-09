@@ -730,8 +730,20 @@ free(node);
 
 LINKED LIST MEMORY STRUCTURE:
 ```
+A node:
 struct node {
     char* name;
     struct node* next;
 };
+
+Memory layout:
+node - name
+       - next
+
+Allocations per node:
+malloc(struct node)
+malloc(string)
+
+Cleanup:
+free(name)
 ```
