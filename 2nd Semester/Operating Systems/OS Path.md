@@ -851,7 +851,10 @@ capturing groups
 replace the whole match with the content of 1
 replace with the content of capturing group 1
 delete the first part
-replace everyrthing with the content of....
+replace everything with the content of....
 
 ^[a-z]+([0-9]{4}).+$
-^[a-z]+([0-9]{4}).+$
+^([a-z]+[0-9]{4}).+$
+
+matc-ul sa nu match-uiasca doar daca are si Sun si economica in nume
+^([a-z]+[0-9]{4}).+economica.+Sa$
