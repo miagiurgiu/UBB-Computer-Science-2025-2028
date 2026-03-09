@@ -901,3 +901,9 @@ awk -f test.awk last.fake
 awk for deduplicate
 
 THE ONLY THING EXTRA IN AWK is ~
+$3 ~/economica.*/  && $4=="Sun" {
+	print $1;
+}
+
+finish the rest; 
+ex 2 ->
