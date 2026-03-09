@@ -853,3 +853,5 @@ replace with the content of capturing group 1
 delete the first part
 replace everyrthing with the content of....
 
+^[a-z]+([0-9]{4}).+$
+^[a-z]+([0-9]{4}).+$
