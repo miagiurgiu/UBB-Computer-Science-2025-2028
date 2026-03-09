@@ -653,3 +653,7 @@ complete:
 
 valgrind --leak-check=full --show-leak-kinds=all  --track-origins=yes ./program arguments
 ```
+
+reading strategy:
+1) first error at the top -> where the problem happens
+2) 
