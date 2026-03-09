@@ -891,7 +891,7 @@ useri[$1]++
 END{
 
 }
-coloana 3 maches ...
+coloana 3 matches ...
 
 awk last.fake -f test.awk
 awk last.fake | awk -f test.awk
