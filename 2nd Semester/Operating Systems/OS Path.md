@@ -886,7 +886,10 @@ initialise a vecor accessed based on key column1
 }
 $3 ~ / economica.*/ && $4=="Sun" {
 print $1
-useri[]
+useri[$1]++
+}
+END{
+
 }
 coloana 3 maches ...
 
@@ -896,3 +899,5 @@ awk last.fake | awk -f test.awk
 awk -f test.awk last.fake
 
 awk for deduplicate
+
+THE ONLY THING EXTRA IN AWK is ~
