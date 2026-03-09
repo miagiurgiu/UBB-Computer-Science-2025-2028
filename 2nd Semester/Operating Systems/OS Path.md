@@ -623,7 +623,7 @@ argv[2] = second argument
 
 HOW TO DETECT WHAT ARGUMENTS ARE NEEDED:
 ```
-fopen(argv[1], "r") -> argv[1] is a filename
-
-
+fopen(argv[1], "r") -> argv[1] is a FILENAME
+atoi(argv[1]) -> argv[1] is a NUMBER
+printf("%s", argv[1]) -> argv[1] is a STRING
 ```
