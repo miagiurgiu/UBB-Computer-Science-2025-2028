@@ -880,3 +880,8 @@ cat last.fake | grep "economica" | grep "Sun" | awk '{print $2}'
 
 awk matching with regex?? -> teaching notes -> tilda, BEGIN, END
 
+$3 ~ / economica.*/ 
+coloana 3 maches ...
+
+awk last.fake -f test.awk
+awk -F last.fake 
