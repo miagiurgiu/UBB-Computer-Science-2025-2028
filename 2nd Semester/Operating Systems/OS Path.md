@@ -614,4 +614,9 @@ When you see:
 ```
 int main(int argc, char** argv)
 ```
-p
+... program expects command-line arguments
+argc = number of arguments
+argv = array of strings
+argv[0] = program name
+argv[1] = first arguments
+argv[2] = second argument
