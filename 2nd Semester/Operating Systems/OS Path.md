@@ -863,3 +863,6 @@ a single regext that gets everything
 in Kate -> find all, replace all
 
 we cna extract the username for those using only a single sed. 
+sed '^([a-z]+[0-9]{4}).+economica.+Sun.+$/\1/g' last.txt 
+
+we can sort them / add a new sed that deletes those lines wher
