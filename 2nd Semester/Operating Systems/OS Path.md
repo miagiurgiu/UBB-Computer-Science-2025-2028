@@ -608,3 +608,10 @@ free - releases one block of memory that was allocated with malloc/calloc/reallo
 char* s = malloc(10);
 free(s);
 ```
+
+HOW TO INFER PROGRAM ARGUMENTS
+When you see:
+```
+int main(int argc, char** argv)
+```
+p
