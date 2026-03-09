@@ -822,11 +822,11 @@ ps aux
 
 1. All usernames that logged in from "economica" on a Sunday
 
-cat last.fake | grep "economica" | grep "Sun" | grep E- '^[a-z0-9]+ '
+cat last.fake | grep "economica" | grep "Sun" | grep E- '^[a-z0-9]+ ' -o
 
 ^[a-z0-9]+ -> regex; 
 "" -> with $ at the end -> $ name of variable
 '' -> everything interpreted exactly as it is; preferable
-
+-o -> only matching our 
 export cheese=1
 echo $cheese
