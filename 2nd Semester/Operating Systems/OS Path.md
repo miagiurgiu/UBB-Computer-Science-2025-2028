@@ -791,6 +791,14 @@ struct node* p; CORRECT
 ```
 
 "passing argument from incompatible pointer type" => clear(head->name), but function expects struct node*
+```
+if function expects struct node* :
+clear(head->next);
+
+if you want to release a string:
+free(head->na)
+
+```
 
 "control reaches end of non-void function" => missing return
 
