@@ -906,4 +906,9 @@ $3 ~/economica.*/  && $4=="Sun" {
 }
 
 finish the rest; 
-ex 2 ->
+ex 2 -> give it to chat gpt -> construct another method than chat gpt (with awk for instance)
+
+grep, sed, cat -> no need for awk
+ask -> no need for the rest
+
+complex processing -> 
