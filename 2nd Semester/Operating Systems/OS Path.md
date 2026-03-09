@@ -814,3 +814,4 @@ curl
 copy link from website -> wget link ...
 
 ps - processes from the system
+ps aux
