@@ -872,4 +872,9 @@ sed '^([a-z]+[0-9]{4}).+economica.+Sun.+$/\1/g' last.fake | sed -E '/ /d'  | sor
 head can skip the first line and give the next n ones ...
 
 - with cat
-cat last.
+cat last.fake | grep "economica" | grep "Sun" | cut -d' ' -f 1 | sort | uniq
+
+cat last.fake | grep "economica" | grep "Sun" | awk '{print $1}'
+
+cat last.fake | grep "economica" | grep "Sun" | awk '{print $2}'
+
