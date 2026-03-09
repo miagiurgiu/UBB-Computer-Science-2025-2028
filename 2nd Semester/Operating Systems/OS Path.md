@@ -629,3 +629,12 @@ printf("%s", argv[1]) -> argv[1] is a STRING
 ```
 
 STANDARD INPUT vs COMMAND-LINE FILE
+scanf => read from standard input, not from file
+run them like:
+```
+./program
+not
+./program file.txt
+```
+
+fopen =
