@@ -660,4 +660,12 @@ reading strategy:
 at function (file.c:line)
 ```
 
-2) 
+2) where the memory came from
+```
+created by ...
+alloc'd at ...
+freed at ...
+```
+
+3) check leak summary (at the bottom)
+4)
