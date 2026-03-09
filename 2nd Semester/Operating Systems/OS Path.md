@@ -829,4 +829,4 @@ cat last.fake | grep "economica" | grep "Sun" | grep '^[a-z0-9]+ '
 '' -> everything interpreted exactly as it is
 
 export cheese=1
-echo 
+echo $cheese
