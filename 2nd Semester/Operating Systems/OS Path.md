@@ -718,3 +718,12 @@ but pointer is not an object?!
 
 7) "definitely lost" -> where is the matching free?
 
+MEMORY OWNERSHIP:
+```
+allocate:
+n = malloc(sizeof(struct node));
+n->name = malloc(strlen(name)+1);
+free:
+free(node->name);
+free(node);
+```
