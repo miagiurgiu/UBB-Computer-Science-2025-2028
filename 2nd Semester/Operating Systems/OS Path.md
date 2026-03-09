@@ -784,7 +784,11 @@ Did I break the list structure?
 
 "Implicit declaration of function" => missing header (#include...)
 
-"invalid operands to binary !=" => comparing struct with NULL instead of pointer (NULL can only be compared with a point)
+"invalid operands to binary !=" => comparing struct with NULL instead of pointer (NULL can only be compared with a pointer)
+```
+struct node p; ERROR
+struct node* p; CORRECT
+```
 
 "passing argument from incompatible pointer type" => clear(head->name), but function expects struct node*
 
