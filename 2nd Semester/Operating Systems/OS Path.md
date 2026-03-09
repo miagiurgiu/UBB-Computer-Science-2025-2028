@@ -808,7 +808,8 @@ function is void => return or nothing
 ## Lab 3 - 9 mar 2026
 
 https://regex101.com
-- copy paste from a file -> explain live 
+- copy paste from a file -> explain live what happens (live line search)
+
 grep, sed, awk practice problems
 
 passwd - fisierul principal care gestioneaza userii de pe un sistem anume
