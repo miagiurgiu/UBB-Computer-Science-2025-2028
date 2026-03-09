@@ -839,4 +839,7 @@ has 4 fields
 [OPERATIE]/[CE_CAUTAM]/[DE_INLOCUIT]/[FLAGS]
 how to delete with sed
 /asdf/d
-dmesg | sed '/e/d' -> deletes lines whith c
+s/[CHESTIE]/[]
+dmesg | sed '/e/d' -> deletes lines which contain letter e
+dmesg | sed  -E '/e/d' -> deletes lines which contain letter e or E
+
