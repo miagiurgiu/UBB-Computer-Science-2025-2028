@@ -637,4 +637,11 @@ not
 ./program file.txt
 ```
 
-fopen =
+fopen => read from file, not from standard input
+```
+./program file.txt
+not
+./program
+```
+
+VALGRIND ERRORS:
