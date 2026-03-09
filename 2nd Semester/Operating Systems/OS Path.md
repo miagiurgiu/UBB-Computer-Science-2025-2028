@@ -867,4 +867,6 @@ sed '^([a-z]+[0-9]{4}).+economica.+Sun.+$/\1/g' last.fake
 
 we can sort them / add a new sed that deletes those lines where there are more than 2 spaces
 
-sed '^([a-z]+[0-9]{4}).+economica.+Sun.+$/\1/g' last.fake | sed -E '/ /d' 
+sed '^([a-z]+[0-9]{4}).+economica.+Sun.+$/\1/g' last.fake | sed -E '/ /d'  | sort | uniq | head -n1
+
+head can skip the first line and give the next n ones ...
