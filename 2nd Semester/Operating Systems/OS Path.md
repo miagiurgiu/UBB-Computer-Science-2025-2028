@@ -806,4 +806,6 @@ function is struct node* => return head or n
 function is void => return or nothing
 
 ## Lab 3 - 9 mar 2026
-grep, sed, awk prac
+grep, sed, awk practice problems
+
+passwd - fisierul principal care gestioneaza userii de pe un sistem anume
