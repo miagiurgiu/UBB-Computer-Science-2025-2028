@@ -712,5 +712,8 @@ malloc(strlen(name)+1); CORRECT
 
 6) "0 bytes after a block of size X"
 ```
-
+malloc(sizeof(pointer)) instead of malloc(sizeof(object))
+but pointer is not an object?!
 ```
+
+7) 
