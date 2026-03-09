@@ -627,3 +627,5 @@ fopen(argv[1], "r") -> argv[1] is a FILENAME
 atoi(argv[1]) -> argv[1] is a NUMBER
 printf("%s", argv[1]) -> argv[1] is a STRING
 ```
+
+STANDARD INPUT vs COMMAND-LINE FILE
