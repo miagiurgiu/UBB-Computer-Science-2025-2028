@@ -692,5 +692,9 @@ is using garbage data.
 struct node* head; ERROR
 struct node* head = NULL; CORRECT
 
-
+scanf("%d", x); error
+scanf("%d", &x); correct
 ```
+
+5) "Invalid write of size ..." = writing out
+6) 
