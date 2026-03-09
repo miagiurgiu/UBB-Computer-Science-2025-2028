@@ -806,6 +806,9 @@ function is struct node* => return head or n
 function is void => return or nothing
 
 ## Lab 3 - 9 mar 2026
+
+https://regex101.com
+- copy paste from a file -> explain live 
 grep, sed, awk practice problems
 
 passwd - fisierul principal care gestioneaza userii de pe un sistem anume
@@ -818,4 +821,5 @@ ps aux
 
 1. All usernames that logged in from "economica" on a Sunday
 
+- use grep
 grep economica filename.txt
