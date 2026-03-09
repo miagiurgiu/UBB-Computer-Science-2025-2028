@@ -703,3 +703,6 @@ malloc(sizeof(struct node)); CORRECT
 malloc(strlen(name)); ERROR
 malloc(strlen(name)+1); CORRECT
 ```
+
+6) "Invalid read of size ..." = reading invalid memory
+7) 
