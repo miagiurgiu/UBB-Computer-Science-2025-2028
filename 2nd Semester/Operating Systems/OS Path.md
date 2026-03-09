@@ -728,4 +728,10 @@ free(node->name);
 free(node);
 ```
 
-LINKED LIST 
+LINKED LIST MEMORY STRUCTURE:
+```
+struct node {
+    char* name;
+    struct node* next;
+};
+```
