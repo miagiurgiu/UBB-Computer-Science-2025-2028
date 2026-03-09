@@ -878,3 +878,5 @@ cat last.fake | grep "economica" | grep "Sun" | awk '{print $1}'
 
 cat last.fake | grep "economica" | grep "Sun" | awk '{print $2}'
 
+awk matching with regex?? -> teaching notes -> tilda, BEGIN, END
+
