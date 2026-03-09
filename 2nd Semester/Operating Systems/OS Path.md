@@ -818,3 +818,4 @@ ps aux
 
 1. All usernames that logged in from "economica" on a Sunday
 
+grep economica filename.txt
