@@ -857,4 +857,9 @@ replace everything with the content of....
 ^([a-z]+[0-9]{4}).+$
 
 matc-ul sa nu match-uiasca doar daca are si Sun si economica in nume
-^([a-z]+[0-9]{4}).+economica.+Sa$
+^([a-z]+[0-9]{4}).+economica.+Sun.+$
+a single regext that gets everything
+
+in Kate -> find all, replace all
+
+we cna extract the username for those using only a single sed. 
