@@ -823,4 +823,4 @@ ps aux
 1. All usernames that logged in from "economica" on a Sunday
 
 cat last.fake | grep "economica" | grep "Sun" 
-grep economica filename.txt
+
