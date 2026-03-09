@@ -745,5 +745,16 @@ malloc(struct node)
 malloc(string)
 
 Cleanup:
-free(name)
+free(name);
+free(node);
+
+correct oder:
+void clear(struct node* head) {
+    if(head == NULL) return;
+    clear(head->next);
+    free(head->name);
+    free(head);
+}
 ```
+
+Pointer issues:
