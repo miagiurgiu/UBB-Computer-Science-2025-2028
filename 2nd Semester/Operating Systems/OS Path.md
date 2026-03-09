@@ -696,5 +696,8 @@ scanf("%d", x); error
 scanf("%d", &x); correct
 ```
 
-5) "Invalid write of size ..." = writing out
-6) 
+5) "Invalid write of size ..." = writing outside allocated memory
+```
+malloc(sizeof(struct node*)); ERROR
+
+```
