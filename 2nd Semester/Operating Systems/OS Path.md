@@ -387,7 +387,7 @@ fclose(fd);    // wrong
 ```
 open vs fopen; close vs fclose
 
-fopen, fclose => library <stdio.h> => file is being read with FILE*
+fopen, fclose => library <stdio.h> => file is being read with FILE* -> "r" .. descriptors
 ```
 FILE* f;
 f = fopen("a.txt", "r");
@@ -395,7 +395,7 @@ fclose(f);
 
 => used with fprintf, fscanf, fgets, fputs
 ```
-open, close => library <fcntl.h> => file is being read with file descriptors (int)
+open, close => library <fcntl.h> => file is being read with file descriptors (int) -> O_RDONLY ... descriptors
 ```
 int fd;
 fd = open("a.bin", O_RDONLY);
