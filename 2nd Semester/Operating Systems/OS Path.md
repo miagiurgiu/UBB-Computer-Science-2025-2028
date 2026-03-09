@@ -839,10 +839,12 @@ has 4 fields
 [OPERATIE]/[CE_CAUTAM]/[DE_INLOCUIT]/[FLAGS]
 how to delete with sed
 /asdf/d
-s/[CHESTIE]/[]
+s/[CHESTIE]/[REPLACE]/[FLAGS]
 dmesg | sed '/e/d' -> deletes lines which contain letter e
 dmesg | sed  -E '/e/d' -> deletes lines which contain letter e or E
 
 echo "Alex" | sed -E 's/e/3/d' -> Al3x
 
-replace everything ewith username from the beginning
+replace everything with username from the beginning
+
+capturing groups
