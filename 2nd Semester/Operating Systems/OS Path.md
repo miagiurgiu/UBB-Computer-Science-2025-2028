@@ -911,4 +911,6 @@ ex 2 -> give it to chat gpt -> construct another method than chat gpt (with awk 
 grep, sed, cat -> no need for awk
 ask -> no need for the rest
 
-complex processing -> 
+complex processing -> awk
+
+every one is needed for the exam. but for week 6 -> know awk -> regex, sed, grep.
