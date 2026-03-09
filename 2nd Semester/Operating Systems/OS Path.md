@@ -705,4 +705,12 @@ malloc(strlen(name)+1); CORRECT
 ```
 
 6) "Invalid read of size ..." = reading invalid memory
-7) 
+- pointer already freed
+- corrupted pointer ?
+- wrong & usage
+- wrong struct layout
+
+6) "0 bytes after a block of size X"
+```
+
+```
