@@ -822,11 +822,16 @@ ps aux
 
 1. All usernames that logged in from "economica" on a Sunday
 
+- with grep:
 cat last.fake | grep "economica" | grep "Sun" | grep E- '^[a-z0-9]+ ' -o | sort | uniq
 
 ^[a-z0-9]+ -> regex; 
 "" -> with $ at the end -> $ name of variable
 '' -> everything interpreted exactly as it is; preferable
 -o -> only matching our regex
+uniq -> same thing one after the other -> remains only the first one
 export cheese=1
 echo $cheese
+
+- with sed:
+sed by default eliminate
