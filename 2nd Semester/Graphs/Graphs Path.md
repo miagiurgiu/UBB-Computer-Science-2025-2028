@@ -23,11 +23,16 @@ graph.txt
 6 = nr of edges
 
 
+## Lab 2
+2 pdfs (2 documentations)
+
+Implementation
 ```
 class Graph:
 def __init__(self, nr_of_vertices=0,nr_of_edges=0):
 	self.__vertices = set()
 	self.__outbounds = dict()
 	self.__inbounds = dict()
-	self.__cost
+	self.__cost=dict()
 ```
+
