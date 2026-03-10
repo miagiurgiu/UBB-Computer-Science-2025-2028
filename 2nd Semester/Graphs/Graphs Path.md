@@ -30,9 +30,12 @@ Implementation
 ```
 class Graph:
 def __init__(self, nr_of_vertices=0,nr_of_edges=0):
+	# creates a graph with the given nr of vertices and edges
 	self.__vertices = set()
 	self.__outbounds = dict()
 	self.__inbounds = dict()
 	self.__cost=dict()
 ```
+
+
 
