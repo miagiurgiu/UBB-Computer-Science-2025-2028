@@ -1118,8 +1118,12 @@ cat
 man ps
 ```
 
-- sele
+- select which columns to display:
+```
 -o -> what columns to show
+```
+
+
 ps -o etime process_id
 
 a.sh
