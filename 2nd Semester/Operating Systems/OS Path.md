@@ -1064,4 +1064,4 @@ echo 0> x
 ```
 
 - what is the value of k in the 3 processes? 0
-- it can be interrupted (everyone reads, writes, overwrites, )
+- it can be interrupted (everyone reads, writes, overwrites) -> they act based on how things get scheduled and they don't interfere with each other ?
