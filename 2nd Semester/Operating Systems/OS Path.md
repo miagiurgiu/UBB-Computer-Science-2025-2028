@@ -994,15 +994,20 @@ Lastname.Firstname
 Lastname.Firstname.Group
 ```
 
-- extract the first name only => remove everything after the first dot
+- extract the first name only => remove everything after the first dot (the first name -> up to the first point)
 ```
 awk -F: '{print $5}' /etc/passwd \
 | grep -E " - 91[0-9] - " \
 | sed -E  "s/\..*//"
+
+'{print $5}' -> extract the 5th field
+s -> substitute
+/ -> separator
+\. -> literal dot
+.* -> 
 ```
 
-the first name -> up to the first point
-extract the 5th field
+
 awk -F: '{print $5}' /etc/passwd | grep -E " - 91[0-9] - " | sed -E  "s/\..*//"
 first | after s is "separator"
 search . followed by any name replace it to nothing
