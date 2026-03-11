@@ -1073,12 +1073,15 @@ grep -E -v "^.{,2}$"
 ```
 
 - count most frequent names:
+- sort numerically in reverse?
 ```
 sort | uniq -c | sort -n -r | head -n 20
+
+awk -F: '{print $5}' /etc/passwd | grep -E " - 91[0-9] - " | sed -E "s/^.* - [^ ]+[^ ]+ //" | sed -E "s/[^a-z]//gi" | sed -E "s/ +/\n/g" | grep -E -v "^.{,2} | sort | uniq -c sort -n -r head -n 20
+
 ```
 
-- sort numerically in reverse
--
+
 awk -F: '{print $5}' /etc/passwd | grep -E " - 91[0-9] - " | sed -E "s/^.* - [^ ]+[^ ]+ //" | sed -E "s/[^a-z]//gi" | sed -E "s/ +/\n/g" | grep -E -v "^.{,2} sort uniq -c sort -n -r head -n 20
 
 7) escape character - how to write a command on > lines
