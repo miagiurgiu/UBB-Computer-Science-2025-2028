@@ -952,7 +952,8 @@ grep -> searches lines in a file
 ```
 grep -E " - 911 - " /etc/passwd | awk -F: '{print $5}'
 
-| -> pipe -> send output of left command to 
+| -> pipe -> send output of left command as input for right command
+awk -> proce
 ```
 
 
