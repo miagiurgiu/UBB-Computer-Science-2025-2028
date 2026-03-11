@@ -1040,7 +1040,8 @@ echo 0 >x
 cat x
 ./b.sh x
 cat x
-
+./b.sh x & -> does what??!
+chmod 700 
 ```
 #!/bin/bash
 
@@ -1052,4 +1053,12 @@ while test $N -lt 200; do
 	echo $K > $F
 	N=`expr $N +1`
 done
+```
+
+```
+#!/bin/bash
+echo 0> x
+./b.sh x &
+./b.sh x &
+./b.sh x &
 ```
