@@ -987,8 +987,14 @@ sort -n -> sorts numerically
 head -n 20 -> the top 20
 ```
 
+- the comment field often looks like:
+```
+Lastname Firstname
+Lastname.Firstname
+Lastname.Firstname.Group
+```
 
-
+- extract the first name only
 the first name -> up to the first point
 extract the 5th field
 awk -F: '{print $5}' /etc/passwd | grep -E " - 91[0-9] - " | sed -E  "s/\..*//"
