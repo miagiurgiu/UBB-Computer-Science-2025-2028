@@ -1251,9 +1251,35 @@ echo 0> x
 - the lower chances to interfere -> worst case
 - the higher chances to interfere -> ?
 ```
+#include <stdio.h>
+#include <string.h>
+#include <unistd.h>
+#include <fcntl.h>
 
+int main(int argc, char** argv) {
+    int f, k, i;
+    f = open(argv[1], O_RDWR);
+    if(argc > 2 && strcmp(argv[2], "reset") == 0) {
+        k = 0;
+        write(f, &k, sizeof(int));
+        close(f);
+        return 0;
+    }
+    for(i = 0; i < 200; i++) {
+        lseek(f, 0, SEEK_SET);
+        read(f, &k, sizeof(int));
+        k++;
+        lseek(f, 0, SEEK_SET);
+        write(f, &k, sizeof(int));
+    }
+    close(f);
+    return 0;
+}
 ```
-
+- open() opens a file descriptor
+- read() reads bytes from file
+- write() writes bytes to file
+- lseek() moves the file pointer
 ```
 #!/bin/bash
 echo 0> x
