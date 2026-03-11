@@ -943,7 +943,7 @@ grep -E " - 91[0-9] - " /etc/passwd | awk -F: '{print $5}' | sort | uniq -c | so
 
 the first name -> up to the first point
 extract the 5th field
-grep -E " - 91[0-9] - " /etc/passwd | awk -F: '{print $5}' | sort | uniq -c | sort -n -r | head -n 10
+awk -F: '{print $5}' /etc/passwd | grep -E " - 91[0-9] - " | sed -E 
 
 
 
