@@ -935,7 +935,7 @@ grep -E " - 911 - "/etc/passwd | awk -F: '{print $5}'
 grep -E " - 91[0-9] - " /etc/passwd | awk -F: '{print $5}' | sort | uniq|wc -l
 
 regular expressions
--E = use the extended array of expressions???
+-E = use the extended regular expressions
 -F = 
 
 4) find most popular names in the English section? extract just the first names
@@ -943,8 +943,11 @@ grep -E " - 91[0-9] - " /etc/passwd | awk -F: '{print $5}' | sort | uniq -c | so
 
 the first name -> up to the first point
 extract the 5th field
-awk -F: '{print $5}' /etc/passwd | grep -E " - 91[0-9] - " | sed -E 
+awk -F: '{print $5}' /etc/passwd | grep -E " - 91[0-9] - " | sed -E  "s/\..*//"
 
+search . followed by any name replace it to nothing
+
+awk -F: '{print $5}' /etc/passwd | grep -E " - 91[0-9] - " | sed -E  "s/\..*//" | sort | uniq -c|
 
 
 
