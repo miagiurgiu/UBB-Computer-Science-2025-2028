@@ -1170,7 +1170,7 @@ expr 3 \* 5
 ```
 
 
-a.sh:
+a.sh: (aproximativ)
 ```
 #!/bin/bash
 for P in `ps -ef | grep -E -v "^root\>" | awk '{print $2}' | tail -n +2`; do
@@ -1189,14 +1189,14 @@ for P in `ps -ef | grep -E -v "^root\>" | awk '{print $2}' | tail -n +2`; do
 done
 ```
 
-
-
+```
+ps -o etime process_id | tail -n +2
+```
 
 awk - extracts
 expr - arithmetic in the command line
-ps -o etime process_id | tail -n +2
 
-10) nothing happens simultaneously (they are just very fast, one after the other)
+10) nothing happens simultaneously (processes - they are just very fast, one after the other)
 n++ (you may lose cpu during a n++ operation -> it's 3 assembly operations and during those cpu might be lost)
 
 11) implement a script and then a c file; read a number from file, increments it and writes it back to file
