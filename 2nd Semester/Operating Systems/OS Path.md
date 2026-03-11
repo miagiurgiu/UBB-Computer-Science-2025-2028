@@ -1120,7 +1120,7 @@ man ps
 - select which columns to display:
 ```
 -o -> what columns to show
-ps -o etime process_id
+ps -o etime PID
 
 etime -> elapsed time since the process started
 ```
@@ -1132,6 +1132,7 @@ HH:MM:SS
 DD-HH:MM:SS
 ```
 
+9) script: detect long running processes:
 
 a.sh
 - kick out everything starting with root
