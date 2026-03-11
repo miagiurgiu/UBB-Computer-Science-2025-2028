@@ -1212,7 +1212,7 @@ echo 0 >x
 cat x
 ./b.sh x
 cat x
-./b.sh x & -> does what??! runs script in background ig.
+./b.sh x & -> does what??! runs script in background.
 chmod 700 
 ```
 - script:
@@ -1228,7 +1228,7 @@ while test $N -lt 200; do
 	N=`expr $N +1`
 done
 ```
-
+- run multiple scripts simultaneously:
 ```
 #!/bin/bash
 echo 0> x
@@ -1237,7 +1237,7 @@ echo 0> x
 ./b.sh x &
 ./b.sh x &
 ```
-
+- & runs script in the background
 - what is the value of k in the 3 processes? 0
 - it can be interrupted (everyone reads, writes, overwrites) -> they act based on how things get scheduled and they don't interfere with each other ?
 
