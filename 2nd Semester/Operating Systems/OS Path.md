@@ -980,3 +980,5 @@ n - normal meaning
 ![[Pasted image 20260311183657.png]]
 
 8) script - stop the student processes running more than ... 
+- kill students' processes
+ps -e all processes in t
