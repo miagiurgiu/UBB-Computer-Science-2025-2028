@@ -918,7 +918,9 @@ every one is needed for the exam. but for week 6 -> know awk -> regex, sed, grep
 
 ## Lecture 3 (11 mar 2026)
 
-1) find names of all students in group 911. Which file has the list of all students in the system? using grep.
+1) Find names of all students in group 911. Which file has the list of all students in the system? using grep.
+
+- linux keeps inf
 
 less/etc/passwd
 on columns
