@@ -948,10 +948,12 @@ grep -> searches lines in a file
 ```
 
 
-2) how to extract one filed from the file? using awk
+2) how to extract one field from the file? using awk
+```
+grep -E " - 911 - " /etc/passwd | awk -F: '{print $5}'
+```
 
 
-grep -E " - 911 - "/etc/passwd | awk -F: '{print $5}'
 
 3) uniq command; sort first and then run uniq on it => one student each time
 grep -E " - 91[0-9] - " /etc/passwd | awk -F: '{print $5}' | sort | uniq|wc -l
