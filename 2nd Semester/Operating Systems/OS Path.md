@@ -1154,6 +1154,15 @@ awk '{print $2}'
 tail -n +2
 ```
 - how to test if a string is empty? using test
+- expr -> perform arithmetic in shell (meaning what?)
+
+./watch.sh a
+ps -ef | grep -E -v "^root\>" | awk '{print $2}' | tail -n +2
+chmod 700 a.sh
+./a.sh
+expr  1+1
+expr 3*5
+expr 3 \* 5
 
 a.sh:
 ```
@@ -1174,13 +1183,7 @@ for P in `ps -ef | grep -E -v "^root\>" | awk '{print $2}' | tail -n +2`; do
 done
 ```
 
-./watch.sh a
-ps -ef | grep -E -v "^root\>" | awk '{print $2}' | tail -n +2
-chmod 700 a.sh
-./a.sh
-expr  1+1
-expr 3*5
-expr 3 \* 5
+
 
 
 awk - extracts
