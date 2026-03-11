@@ -969,7 +969,7 @@ awk -F: '{print $5}' /etc/passwd | grep -E " - 91[0-9] - " | sed -E "s/^.* - [^ 
 - replace all spaces with a new line
 awk -F: '{print $5}' /etc/passwd | grep -E " - 91[0-9] - " | sed -E "s/^.* - [^ ]+[^ ]+ //" | sed -E "s/[^a-z]//gi" | sed -E "s/ +/\n/g" | grep -E -v "^.{,2} sort uniq -c sort -n -r head -n 20
 
-7) escape character
+7) escape character - how to write a command on > lines
 every character has 2 meanings; 
 n - normal meaning
 \n - special meaning
