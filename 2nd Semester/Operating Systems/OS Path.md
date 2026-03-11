@@ -989,4 +989,5 @@ cat
 
 8) how to find the age of a process?
 - iterate through processes -> find age
-- ma
+- man ps
+-o -> what columns to show
