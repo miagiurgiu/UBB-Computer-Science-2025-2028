@@ -1025,10 +1025,15 @@ awk -F: '{print $5}' /etc/passwd \
 5) How to get middle names as well? (skip last name, skip initials, extract only first and middle names)
 - remove from every line everything from dash space 
 - but what if there are ppl with 2/3 last names?
+- ex:
+```
+Pope
+
+```
 use sed to replace ... with nothing
 
 
-awk -F: '{print $5}' /etc/passwd | grep -E " - 91[0-9] - " | sed -E "s/^.* - [^ ]+[^ ]+ //"
+
 
 - replace every - with space?
 
