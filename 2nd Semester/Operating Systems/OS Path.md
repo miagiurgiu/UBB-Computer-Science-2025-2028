@@ -1002,8 +1002,8 @@ for P in `ps -ef | grep -E -v "^root\>" | awk '{print $2}' | tail -n +2`; do
 	T = `ps -o etime process_id | tail -n +2`
 	M = `echo $T | sed -E ""`
 	S = ``
-	X = ``
-	echo $P
+	X = `expr $M \*60 +$S`
+	echo $P $M $S $X
 done
 
 ```
