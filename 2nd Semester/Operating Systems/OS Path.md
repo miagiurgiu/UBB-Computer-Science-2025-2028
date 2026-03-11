@@ -1001,6 +1001,8 @@ a.sh
 for P in `ps -ef | grep -E -v "^root\>" | awk '{print $2}' | tail -n +2`; do
 	T = `ps -o etime process_id | tail -n +2`
 	M = `echo $T | sed -E ""`
+	S = ``
+	X = ``
 	echo $P
 done
 
@@ -1010,9 +1012,13 @@ done
 ps -ef | grep -E -v "^root\>" | awk '{print $2}' | tail -n +2
 chmod 700 a.sh
 ./a.sh
+expr  1+1
+expr 3*5
+expr 3 \* 5
+
 
 awk - extracts
-
+expr - arithmetic in the command line
 ps -o etime process_id | tail -n +2
 
 - i need to get rid of the header
