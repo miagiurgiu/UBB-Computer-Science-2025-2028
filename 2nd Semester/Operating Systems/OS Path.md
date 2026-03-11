@@ -1034,3 +1034,14 @@ ps -o etime process_id | tail -n +2
 n++ (you may lose cpu during a n++ operation -> it's 3 assembly operations and during those cpu might be lost)
 
 11) implement a script and then a c file; read a number from file, write it back to file
+
+```
+#!/bin/bash
+
+f=$1
+n=0
+while test $N -lt 200; do
+	K=`cat $F`
+	
+done
+```
