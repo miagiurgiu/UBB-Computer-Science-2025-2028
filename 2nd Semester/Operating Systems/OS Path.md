@@ -1034,6 +1034,11 @@ Giurgiu Corina Maria - 914 - ...
 - I remove Giurgiu Corina and I am left with Maria :))
 ```
 sed -E "s/^.* - [^ ]+[^ ]+ //"
+
+^ -> beginning of line
+.* -> anything
+" - " -> literal pattern
+[^ ] -> sequence of non-space characters (space negated)
 ```
 
 ```
