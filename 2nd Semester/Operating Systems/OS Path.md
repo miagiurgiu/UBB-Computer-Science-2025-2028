@@ -1002,7 +1002,9 @@ a.sh
 #!/bin/bash
 for P in `ps -ef | grep -E -v "^root\>" | awk '{print $2}' | tail -n +2`; do
 	T = `ps -o etime process_id | tail -n +2`
-	if test -x "$T" || 
+	if test -z "$T" || echo $T | grep -E -q ".*:.*:"; then
+		continue
+	fi
 	M = `echo $T | sed -E ""`
 	S = ``
 	echo echo $P $M $S
