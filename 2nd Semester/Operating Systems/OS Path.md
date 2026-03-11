@@ -1033,19 +1033,22 @@ ps -o etime process_id | tail -n +2
 10) nothing happens simultaneously (they are just very fast, one after the other)
 n++ (you may lose cpu during a n++ operation -> it's 3 assembly operations and during those cpu might be lost)
 
-11) implement a script and then a c file; read a number from file, write it back to file
-./a/sh
+11) implement a script and then a c file; read a number from file, increments it and writes it back to file
+- run one time -> 200 -> run one more time -> 400 -> ...
+./a.sh
 echo 0 >x
 cat x
-./b.sh
+./b.sh x
+cat x
+
 ```
 #!/bin/bash
 
 f=$1
-n=0
+N =0
 while test $N -lt 200; do
 	K=`cat $F`
-	K=`expre $K+1`
+	K=`expr $K+1`
 	echo $K > $F
 	N=`expr $N +1`
 done
