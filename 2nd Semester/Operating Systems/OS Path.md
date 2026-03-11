@@ -1110,7 +1110,6 @@ kill PID
 cat
 ```
 
-
 8) how to find the age of a process?
 - process = program in execution (task manager)
 - iterate through processes -> find age
@@ -1121,10 +1120,13 @@ man ps
 - select which columns to display:
 ```
 -o -> what columns to show
+ps -o etime process_id
+
+etime -> elapsed t
 ```
 
 
-ps -o etime process_id
+
 
 a.sh
 - kick out everything starting with root
