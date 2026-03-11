@@ -1137,11 +1137,13 @@ DD-HH:MM:SS
 ps -ef | grep -E -v "^root\>" | awk '{print $2}' | tail -n +2
 
 ps -ef -> all processes, full information (user, PID, parent PID etc.)
-
 ```
 
 a.sh
 - kick out everything starting with root
+```
+grep -E -v "^root\>"
+```
 - i need to get rid of the header
 - how to test if a string is empty? using test
 
