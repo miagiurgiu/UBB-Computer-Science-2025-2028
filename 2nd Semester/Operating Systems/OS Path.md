@@ -1283,8 +1283,6 @@ int main(int argc, char** argv) {
 ```
 #!/bin/bash
 echo 0> x
-
-
 ```
 
 xxd y
