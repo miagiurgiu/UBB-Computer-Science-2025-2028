@@ -1077,14 +1077,10 @@ grep -E -v "^.{,2}$"
 ```
 sort | uniq -c | sort -n -r | head -n 20
 
-awk -F: '{print $5}' /etc/passwd | grep -E " - 91[0-9] - " | sed -E "s/^.* - [^ ]+[^ ]+ //" | sed -E "s/[^a-z]//gi" | sed -E "s/ +/\n/g" | grep -E -v "^.{,2} | sort | uniq -c sort -n -r head -n 20
-
+awk -F: '{print $5}' /etc/passwd | grep -E " - 91[0-9] - " | sed -E "s/^.* - [^ ]+[^ ]+ //" | sed -E "s/[^a-z]//gi" | sed -E "s/ +/\n/g" | grep -E -v "^.{,2} | sort | uniq -c | sort -n -r | head -n 20
 ```
 
-
-awk -F: '{print $5}' /etc/passwd | grep -E " - 91[0-9] - " | sed -E "s/^.* - [^ ]+[^ ]+ //" | sed -E "s/[^a-z]//gi" | sed -E "s/ +/\n/g" | grep -E -v "^.{,2} sort uniq -c sort -n -r head -n 20
-
-7) escape character - how to write a command on > lines
+6) escape character - how to write a command on > lines
 every character has 2 meanings; 
 n - normal meaning
 \n - special meaning
@@ -1092,7 +1088,7 @@ n - normal meaning
 \. - the actual dot
 ![[Pasted image 20260311183657.png]]
 
-8) script - stop the student processes running more than ... . how to kill any non-root process? using kill. using process id. (2nd column)
+7) script - stop the student processes running more than ... . how to kill any non-root process? using kill. using process id. (2nd column)
 - kill students' processes
 ps -e -> all processes in the system
 cat
