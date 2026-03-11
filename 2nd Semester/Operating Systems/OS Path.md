@@ -1027,7 +1027,12 @@ awk -F: '{print $5}' /etc/passwd \
 - but what if there are ppl with 2/3 last names?
 - ex:
 ```
-Pope
+Giurgiu Corina Maria - 914 - ...
+
+```
+
+```
+Lo Monaco Marco Giuseppe - 914 - ...
 
 ```
 use sed to replace ... with nothing
