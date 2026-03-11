@@ -1044,8 +1044,8 @@ awk -F: '{print $5}' /etc/passwd | grep -E " - 91[0-9] - " | sed -E "s/^.* - [^ 
 ```
 
 ```
-Lo Monaco Marco Giuseppe - 914 - ...
-
+Lo Monaco Marco etc. - 914 - ...
+??
 ```
 
  - everything that is not a character replace it with nothing: use sed to replace character with nothing:
