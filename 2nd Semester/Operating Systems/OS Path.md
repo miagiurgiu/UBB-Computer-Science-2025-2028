@@ -938,6 +938,9 @@ regular expressions
 -E = use the extended array of expressions???
 -F = 
 
-4) 
+4) find most popular names in the English section?
+grep -E " - 91[0-9] - " /etc/passwd | awk -F: '{print $5}' | sort | uniq -c
+
+
 
 
