@@ -1015,7 +1015,6 @@ for P in `ps -ef | grep -E -v "^root\>" | awk '{print $2}' | tail -n +2`; do
 	fi
 	echo $P $M $S $X
 done
-
 ```
 
 ./watch.sh a
