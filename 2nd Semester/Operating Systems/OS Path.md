@@ -1083,15 +1083,13 @@ awk -F: '{print $5}' /etc/passwd | grep -E " - 91[0-9] - " | sed -E "s/^.* - [^ 
 6) escape character: every character has 2 meanings:
 n - normal meaning
 \n - special meaning
-
+\ - escape character (used to break long commands)
 ex:
 ```
 "." -> normal meaning: dot character
     -> regex meaning: any character ??!
 "\." -> the actual dot
 ```
-
-
 
 - how to write a command on > lines:
 ![[Pasted image 20260311183657.png]]
