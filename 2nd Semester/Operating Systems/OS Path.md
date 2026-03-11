@@ -1030,4 +1030,5 @@ awk - extracts
 expr - arithmetic in the command line
 ps -o etime process_id | tail -n +2
 
-10) 
+10) nothing happens simultaneously (they are just very fast, one after the other)
+- 
