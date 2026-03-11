@@ -1002,14 +1002,15 @@ a.sh
 ```
 #!/bin/bash
 for P in `ps -ef | grep -E -v "^root\>" | awk '{print $2}' | tail -n +2`; do
-	T = `ps -o etime process_id | tail -n +2` -> duration of the process
+	T = `ps -o etime process_id | tail -n +2` -> duration of the process (minutes, seconds)
 	if test -z "$T" || echo $T | grep -E -q ".*:.*:"; then
 		continue
 	fi
-	M = `echo $T | sed -E ""`
-	S = ``
-	echo echo $P $M $S
+	M = `echo $T | sed -E ""` -> echoing the time and replacing so that i am left eith the minutes
+	S = `` -> echoing the time and replacing so that i am left eith the seconds
+	echo $P $M $S
 	X = `expr $M \*60 +$S`
+	if test $X -gt 36
 	echo $P $M $S $X
 done
 
