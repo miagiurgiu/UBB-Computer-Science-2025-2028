@@ -1080,12 +1080,15 @@ sort | uniq -c | sort -n -r | head -n 20
 awk -F: '{print $5}' /etc/passwd | grep -E " - 91[0-9] - " | sed -E "s/^.* - [^ ]+[^ ]+ //" | sed -E "s/[^a-z]//gi" | sed -E "s/ +/\n/g" | grep -E -v "^.{,2} | sort | uniq -c | sort -n -r | head -n 20
 ```
 
-6) escape character - how to write a command on > lines
-every character has 2 meanings; 
+6) escape character: every character has 2 meanings
+"." -> normal meaning: dot character
+    -> regex meaning: any character ?!
 n - normal meaning
 \n - special meaning
 .
 \. - the actual dot
+
+- how to write a command on > lines:
 ![[Pasted image 20260311183657.png]]
 
 7) script - stop the student processes running more than ... . how to kill any non-root process? using kill. using process id. (2nd column)
