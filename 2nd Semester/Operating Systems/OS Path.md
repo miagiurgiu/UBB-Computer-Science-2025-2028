@@ -987,8 +987,17 @@ ps -u -> usernames' processes
 kill process_id
 cat
 
-8) how to find the age of a process?
+9) how to find the age of a process?
 - iterate through processes -> find age
 - man ps
 -o -> what columns to show
 ps -o etime process_id
+
+a.sh
+- kick out everything starting with root
+
+```
+#!/bin/bash
+
+
+```
