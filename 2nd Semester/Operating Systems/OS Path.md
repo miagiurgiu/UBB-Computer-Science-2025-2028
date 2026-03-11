@@ -966,3 +966,5 @@ awk -F: '{print $5}' /etc/passwd | grep -E " - 91[0-9] - " | sed -E "s/^.* - [^ 
 - everything that is not a .... replace it with nothing;
 - g - 
 - i - insensitive
+- replace all spaces with a new line
+awk -F: '{print $5}' /etc/passwd | grep -E " - 91[0-9] - " | sed -E "s/^.* - [^ ]+[^ ]+ //" | sed -E "s/[^a-z]//gi" | sed -E "s/ +/\n/g" | grep -E -v "^.{}"
