@@ -1080,3 +1080,10 @@ echo 0> x
 
 
 ```
+
+xxd y
+./d y
+expr 12 \*16 + 8
+xxd y
+expr 256+9 \*16
+xxd y
