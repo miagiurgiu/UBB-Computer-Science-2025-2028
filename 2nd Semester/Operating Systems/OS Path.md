@@ -983,3 +983,10 @@ n - normal meaning
 - kill students' processes
 ps -e -> all processes in the system
 cat
+ps -u -> usernames' processes
+kill process_id
+cat
+
+8) how to find the age of a process?
+- iterate through processes -> find age
+- ma
