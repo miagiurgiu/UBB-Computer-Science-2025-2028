@@ -1139,14 +1139,17 @@ ps -ef | grep -E -v "^root\>" | awk '{print $2}' | tail -n +2
 ps -ef -> all processes, full information (user, PID, parent PID etc.)
 ```
 
-a.sh
-- kick out everything starting with root
+- kick out everything starting with root (remove processes owned by root)
 ```
 grep -E -v "^root\>"
+
+-v -> invert match (exclude)
 ```
+- extract PID column
 - i need to get rid of the header
 - how to test if a string is empty? using test
 
+a.sh:
 ```
 #!/bin/bash
 for P in `ps -ef | grep -E -v "^root\>" | awk '{print $2}' | tail -n +2`; do
