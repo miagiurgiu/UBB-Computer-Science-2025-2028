@@ -938,12 +938,14 @@ username:password:UID:GID:comment:home_directory:shell
 	- field 1 -> username
 	- field 2 -> password placeholder (usually x)
 	- field 5 -> comment field (person's full name and other info)
-on columns
-field 1: username
-field 2: password
-etc.
+- use grep command for searching students from group 911:
+```
+grep -E " - 911 - " /etc/passwd
 
-grep -E " - 911 - "/etc/passwd
+grep -> searches lines in a file
+-E ->
+```
+
 
 2) how to extract one filed from the file? using awk
 grep -E " - 911 - "/etc/passwd | awk -F: '{print $5}'
