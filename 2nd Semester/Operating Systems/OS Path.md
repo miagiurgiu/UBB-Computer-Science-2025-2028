@@ -959,8 +959,13 @@ awk -> processes text column-by-column (extracts)
 ```
 
 
-3) Count unique esudents? using uniq command; sort first and then run uniq on it => one student each time
-grep -E " - 91[0-9] - " /etc/passwd | awk -F: '{print $5}' | sort | uniq|wc -l
+3) Count unique esudents? using uniq command; 
+- sort first and then run uniq on it => one student each time
+```
+grep -E " - 91[0-9] - " /etc/passwd | awk -F: '{print $5}' | sort | uniq | wc -l
+
+```
+
 
 regular expressions
 -E = use the extended regular expressions
