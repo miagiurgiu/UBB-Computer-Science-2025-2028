@@ -1029,12 +1029,11 @@ awk -F: '{print $5}' /etc/passwd \
 - ex:
 ```
 Giurgiu Corina Maria - 914 - ...
-
 ```
 
+- I remove Giurgiu Corina and I am left with Maria :))
 ```
 sed -E "s/^.* - [^ ]+[^ ]+ //"
-
 ```
 
 ```
