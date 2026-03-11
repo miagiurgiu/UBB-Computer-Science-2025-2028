@@ -1156,6 +1156,8 @@ tail -n +2
 - how to test if a string is empty? using test
 - expr -> perform arithmetic in shell (meaning what?)
 
+in terminal:
+```
 ./watch.sh a
 ps -ef | grep -E -v "^root\>" | awk '{print $2}' | tail -n +2
 chmod 700 a.sh
@@ -1163,6 +1165,10 @@ chmod 700 a.sh
 expr  1+1
 expr 3*5
 expr 3 \* 5
+
+* must be excaped: \* (otherwise shell treats it as ??)
+```
+
 
 a.sh:
 ```
