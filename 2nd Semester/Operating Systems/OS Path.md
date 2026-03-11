@@ -1040,7 +1040,7 @@ echo 0 >x
 cat x
 ./b.sh x
 cat x
-./b.sh x & -> does what??!
+./b.sh x & -> does what??! runs script in background ig.
 chmod 700 
 ```
 #!/bin/bash
