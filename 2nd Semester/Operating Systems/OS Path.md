@@ -1242,11 +1242,12 @@ echo 0> x
 	- K=0; each process reads 0 -> increments -> writes 1; 
 	- expected result: 600; 
 	- actual result: smaller number
-	- reason: race
+	- reason: "race condition" (= processes overwrite each other's results)
 - what is the value of k in the 3 processes? 0
 - it can be interrupted (everyone reads, writes, overwrites) -> they act based on how things get scheduled and they don't interfere with each other ?
 
 12) the same thing in C
+- increments a number stored in a file
 - the lower chances to interfere -> worst case
 - the higher chances to interfere -> ?
 ```
