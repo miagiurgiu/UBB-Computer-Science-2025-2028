@@ -998,9 +998,11 @@ a.sh
 
 ```
 #!/bin/bash
-
+for P in ''
 
 ```
 
 ./watch.sh a
-ps -ef | grep -E -v "^root\>" | awk '{print $2}' | tail 
+ps -ef | grep -E -v "^root\>" | awk '{print $2}' | tail -n +2
+
+awk - extracts
