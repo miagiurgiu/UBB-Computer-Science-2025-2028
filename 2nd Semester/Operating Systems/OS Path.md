@@ -947,8 +947,8 @@ awk -F: '{print $5}' /etc/passwd | grep -E " - 91[0-9] - " | sed -E  "s/\..*//"
 
 search . followed by any name replace it to nothing
 
-awk -F: '{print $5}' /etc/passwd | grep -E " - 91[0-9] - " | sed -E  "s/\..*//" | sort | uniq -c|
+awk -F: '{print $5}' /etc/passwd | grep -E " - 91[0-9] - " | sed -E  "s/\..*//" | sort | uniq -c| sort -n -r \ head -n 20
 
-
+sed = command that performs search i
 
 
