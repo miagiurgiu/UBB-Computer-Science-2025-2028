@@ -1094,9 +1094,13 @@ ex:
 - how to write a command on > lines:
 ![[Pasted image 20260311183657.png]]
 
-7) script - stop the student processes running more than ... . how to kill any non-root process? using kill. using process id. (2nd column)
+7) script - stop the student processes running more than ... . How to kill any non-root process? using kill. using process id. (2nd column)
 - kill students' processes
-ps -e -> all processes in the system
+- show all processes in the system:
+```
+ps -e 
+```
+
 cat
 ps -u -> usernames' processes
 kill process_id
