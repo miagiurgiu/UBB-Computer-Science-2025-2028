@@ -952,6 +952,7 @@ awk -F: '{print $5}' /etc/passwd | grep -E " - 91[0-9] - " | sed -E  "s/\..*//" 
 sed = command that performs search in place. 
 
 5) how to get middle names as well? (skip last name, skip initials)
+-remove from every line evything from dash space 
 awk -F: '{print $5}' /etc/passwd | grep -E " - 91[0-9] - " 
 
 
