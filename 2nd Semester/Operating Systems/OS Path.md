@@ -987,7 +987,8 @@ ps -u -> usernames' processes
 kill process_id
 cat
 
-9) how to find the age of a process?
+8) how to find the age of a process?
+- process = program in execution (task manager)
 - iterate through processes -> find age
 - man ps
 -o -> what columns to show
@@ -1001,7 +1002,7 @@ a.sh
 ```
 #!/bin/bash
 for P in `ps -ef | grep -E -v "^root\>" | awk '{print $2}' | tail -n +2`; do
-	T = `ps -o etime process_id | tail -n +2`
+	T = `ps -o etime process_id | tail -n +2` -> duration of the process
 	if test -z "$T" || echo $T | grep -E -q ".*:.*:"; then
 		continue
 	fi
