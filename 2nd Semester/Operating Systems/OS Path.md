@@ -975,8 +975,13 @@ wc -l -> count lines
 4) Find most popular names in the English section? extract just the first names
 ```
 grep -E " - 91[0-9] - " /etc/passwd \
-| awk -F: '{print $5}' | sort | uniq -c | sort -n -r | head -n 20
+| awk -F: '{print $5}' \
+| sort \
+| uniq -c \
+| sort -n -r \
+| head -n 20
 
+uniq 0
 ```
 
 
