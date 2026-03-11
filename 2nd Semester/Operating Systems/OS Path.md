@@ -1238,7 +1238,11 @@ echo 0> x
 ./b.sh x &
 ```
 - & runs script in the background
-- PROBLEM: all scripts read the same value at the same time (K=0; each process reads 0)
+- PROBLEM: all scripts read the same value at the same time 
+	- K=0; each process reads 0 -> increments -> writes 1; 
+	- expected result: 600; 
+	- actual result: smaller number
+	- reason: race
 - what is the value of k in the 3 processes? 0
 - it can be interrupted (everyone reads, writes, overwrites) -> they act based on how things get scheduled and they don't interfere with each other ?
 
