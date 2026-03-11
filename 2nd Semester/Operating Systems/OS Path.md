@@ -928,7 +928,8 @@ every one is needed for the exam. but for week 6 -> know awk -> regex, sed, grep
 ```
 less /etc/passwd
 ```
-- less -> view the contents of a file one page at a time without editor
+- "less" -> view the contents of a file one page at a time without editor (allows scrolling)
+- result: fields are separated by ":"
 on columns
 field 1: username
 field 2: password
