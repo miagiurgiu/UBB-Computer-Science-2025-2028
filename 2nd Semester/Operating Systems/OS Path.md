@@ -948,9 +948,11 @@ grep -> searches lines in a file
 ```
 
 
-2) how to extract one field from the file? using awk
+2) how to extract one field (column) from the file? using awk
 ```
 grep -E " - 911 - " /etc/passwd | awk -F: '{print $5}'
+
+| -> pipe -> send output of left command to 
 ```
 
 
