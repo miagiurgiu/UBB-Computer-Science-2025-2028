@@ -1039,6 +1039,8 @@ sed -E "s/^.* - [^ ]+[^ ]+ //"
 .* -> anything
 " - " -> literal pattern
 [^ ] -> sequence of non-space characters (space negated)
+
+awk -F: '{print $5}' /etc/passwd | grep -E " - 91[0-9] - " | sed -E "s/^.* - [^ ]+[^ ]+ //"
 ```
 
 ```
@@ -1046,8 +1048,11 @@ Lo Monaco Marco Giuseppe - 914 - ...
 
 ```
 
- - everything that is not a .... replace it with nothing;
-use sed to replace ... with nothing
+ - everything that is not a character replace it with nothing: use sed to replace character with nothing:
+```
+ 
+```
+
 
 
 
