@@ -943,11 +943,14 @@ username:password:UID:GID:comment:home_directory:shell
 grep -E " - 911 - " /etc/passwd
 
 grep -> searches lines in a file
--E ->
+-E -> extended regular expressions
+" - 911 - " -> matches the group number written between spaces and dashes
 ```
 
 
 2) how to extract one filed from the file? using awk
+
+
 grep -E " - 911 - "/etc/passwd | awk -F: '{print $5}'
 
 3) uniq command; sort first and then run uniq on it => one student each time
