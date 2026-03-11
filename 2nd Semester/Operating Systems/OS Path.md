@@ -991,3 +991,4 @@ cat
 - iterate through processes -> find age
 - man ps
 -o -> what columns to show
+ps -o etime process_id
