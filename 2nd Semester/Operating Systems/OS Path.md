@@ -1102,10 +1102,12 @@ ps -e
 ```
 - usernames' processes:
 ```
-ps -u username
+ps -u rares
 ```
-
-cat
+- terminate a process (PID = process id):
+```
+kill PID
+```
 
 kill process_id
 cat
