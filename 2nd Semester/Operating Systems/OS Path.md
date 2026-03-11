@@ -1062,3 +1062,6 @@ echo 0> x
 ./b.sh x &
 ./b.sh x &
 ```
+
+- what is the value of k in the 3 processes? 0
+- everythin
