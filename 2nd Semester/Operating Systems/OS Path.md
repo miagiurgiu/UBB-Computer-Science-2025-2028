@@ -925,7 +925,10 @@ every one is needed for the exam. but for week 6 -> know awk -> regex, sed, grep
 /etc/passwd
 ```
 - view that file:
-less/etc/passwd
+```
+less /etc/passwd
+```
+
 on columns
 field 1: username
 field 2: password
