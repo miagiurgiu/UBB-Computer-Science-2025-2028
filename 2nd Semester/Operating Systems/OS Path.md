@@ -953,12 +953,13 @@ grep -> searches lines in a file
 grep -E " - 911 - " /etc/passwd | awk -F: '{print $5}'
 
 | -> pipe -> send output of left command as input for right command
-awk -> processes text column-by-column (help)
+awk -> processes text column-by-column (extracts)
+-F -> tells awk that the field separator is ":"
+{print $5} -> prints the 5th field (column), the one with the student's name
 ```
 
 
-
-3) uniq command; sort first and then run uniq on it => one student each time
+3) Count unique esudents? using uniq command; sort first and then run uniq on it => one student each time
 grep -E " - 91[0-9] - " /etc/passwd | awk -F: '{print $5}' | sort | uniq|wc -l
 
 regular expressions
