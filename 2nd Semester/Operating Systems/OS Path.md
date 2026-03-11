@@ -1045,6 +1045,8 @@ sed -E "s/^.* - [^ ]+[^ ]+ //"
 Lo Monaco Marco Giuseppe - 914 - ...
 
 ```
+
+ - everything that is not a .... replace it with nothing;
 use sed to replace ... with nothing
 
 
@@ -1052,7 +1054,7 @@ use sed to replace ... with nothing
 
 awk -F: '{print $5}' /etc/passwd | grep -E " - 91[0-9] - " | sed -E "s/^.* - [^ ]+[^ ]+ //" | sed -E "s/[^a-z]//gi"
 
-- everything that is not a .... replace it with nothing;
+-
 - g - everywhere on the line
 - i - insensitive
 - -v - i dont show it
