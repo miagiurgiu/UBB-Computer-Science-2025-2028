@@ -944,11 +944,11 @@ grep -E " - 91[0-9] - " /etc/passwd | awk -F: '{print $5}' | sort | uniq -c | so
 the first name -> up to the first point
 extract the 5th field
 awk -F: '{print $5}' /etc/passwd | grep -E " - 91[0-9] - " | sed -E  "s/\..*//"
-
+first | after s is "separator"
 search . followed by any name replace it to nothing
 
 awk -F: '{print $5}' /etc/passwd | grep -E " - 91[0-9] - " | sed -E  "s/\..*//" | sort | uniq -c| sort -n -r \ head -n 20
 
-sed = command that performs search i
+sed = command that performs search in place. whatever comes at standard 
 
 
