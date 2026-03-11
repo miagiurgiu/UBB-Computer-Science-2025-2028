@@ -1072,6 +1072,10 @@ v -> i dont show it (exclude)
 ^.{,2}$ -> strings of length <=2
 ```
 
+- count most frequent names:
+```
+sort | uniq -c | sort -n -r | head -n 20
+```
 
 - sort numerically in reverse
 -
