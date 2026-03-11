@@ -1059,7 +1059,7 @@ i - case insensitive
 awk -F: '{print $5}' /etc/passwd | grep -E " - 91[0-9] - " | sed -E "s/^.* - [^ ]+[^ ]+ //" | sed -E "s/[^a-z]//gi"
 ```
 
-- replace multiple spaces 
+- replace multiple spaces with new lines ()
 
 - -v - i dont show it
 - sort numerically in reverse
