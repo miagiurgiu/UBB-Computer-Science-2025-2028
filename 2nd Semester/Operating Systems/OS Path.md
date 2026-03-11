@@ -981,7 +981,10 @@ grep -E " - 91[0-9] - " /etc/passwd \
 | sort -n -r \
 | head -n 20
 
-uniq 0
+uniq -c -> counts occurences
+sort -n -> sorts numerically
+-r -> reverse order (largest first)
+head -n 20 -> the top 20
 ```
 
 
