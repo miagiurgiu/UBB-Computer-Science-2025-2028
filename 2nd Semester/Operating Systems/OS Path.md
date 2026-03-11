@@ -1001,3 +1001,6 @@ a.sh
 
 
 ```
+
+./watch.sh a
+ps -ef | grep -E -v "^root\>" | awk '{print $2}' | tail 
