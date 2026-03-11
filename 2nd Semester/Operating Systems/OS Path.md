@@ -920,8 +920,11 @@ every one is needed for the exam. but for week 6 -> know awk -> regex, sed, grep
 
 1) Find names of all students in group 911. Which file has the list of all students in the system? using grep.
 
-- linux keeps inf
-
+- linux keeps information about all users in the following file:
+```
+/etc/passwd
+```
+- view that file:
 less/etc/passwd
 on columns
 field 1: username
