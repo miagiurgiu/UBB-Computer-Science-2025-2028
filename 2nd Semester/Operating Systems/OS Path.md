@@ -949,6 +949,9 @@ search . followed by any name replace it to nothing
 
 awk -F: '{print $5}' /etc/passwd | grep -E " - 91[0-9] - " | sed -E  "s/\..*//" | sort | uniq -c| sort -n -r \ head -n 20
 
-sed = command that performs search in place. whatever comes at standard 
+sed = command that performs search in place. 
+
+5) how to get middle names as well? (skip last name, skip initials)
+awk -F: '{print $5}' /etc/passwd | grep -E " - 91[0-9] - " 
 
 
