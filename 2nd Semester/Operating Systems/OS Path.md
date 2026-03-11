@@ -995,6 +995,7 @@ ps -o etime process_id
 
 a.sh
 - kick out everything starting with root
+- 
 
 ```
 #!/bin/bash
@@ -1002,6 +1003,7 @@ for P in `ps -ef | grep -E -v "^root\>" | awk '{print $2}' | tail -n +2`; do
 	T = `ps -o etime process_id | tail -n +2`
 	M = `echo $T | sed -E ""`
 	S = ``
+	echo echo $P $M $S
 	X = `expr $M \*60 +$S`
 	echo $P $M $S $X
 done
@@ -1020,5 +1022,3 @@ expr 3 \* 5
 awk - extracts
 expr - arithmetic in the command line
 ps -o etime process_id | tail -n +2
-
-- i need to get rid of the header
