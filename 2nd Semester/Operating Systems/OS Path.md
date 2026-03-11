@@ -1010,7 +1010,9 @@ for P in `ps -ef | grep -E -v "^root\>" | awk '{print $2}' | tail -n +2`; do
 	S = `` -> echoing the time and replacing so that i am left eith the seconds
 	echo $P $M $S
 	X = `expr $M \*60 +$S`
-	if test $X -gt 36
+	if test $X -gt 3600; then
+		echo $S $T $M $S $X
+	fi
 	echo $P $M $S $X
 done
 
