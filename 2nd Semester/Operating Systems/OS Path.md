@@ -1019,10 +1019,11 @@ awk -F: '{print $5}' /etc/passwd \
 | head -n 20
 ```
 
-- sed = command that performs search in place. 
+- sed - command that performs search in place. 
+- awk - extracts
 
-5) how to get middle names as well? (skip last name, skip initials)
-- remove from every line evything from dash space 
+5) How to get middle names as well? (skip last name, skip initials, extract only first and middle names)
+- remove from every line everything from dash space 
 - but what if there are ppl with 2/3 last names?
 use sed to replace ... with nothing
 
