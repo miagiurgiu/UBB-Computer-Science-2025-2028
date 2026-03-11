@@ -929,5 +929,5 @@ etc.
 grep -E " - 911 - "/etc/passwd
 
 2) how to extract one filed from the file? using awk
-awk -F: '{print $}'
+grep -E " - 911 - "/etc/passwd | awk -F: '{print $5}'
 
