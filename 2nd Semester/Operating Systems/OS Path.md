@@ -1286,7 +1286,11 @@ int main(int argc, char** argv) {
 echo 0> x
 ```
 
+- display file content in hexa (to see raw binary data written by C programs -> how integers are stored inside the file)
+```
 xxd y
+```
+
 ./d y
 expr 12 \*16 + 8
 xxd y
