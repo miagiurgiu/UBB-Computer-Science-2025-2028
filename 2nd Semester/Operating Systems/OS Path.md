@@ -1064,6 +1064,11 @@ awk -F: '{print $5}' /etc/passwd | grep -E " - 91[0-9] - " | sed -E "s/^.* - [^ 
 sed -E "s/ +/\n/g"
 ```
 
+- remove short names (initials):
+```
+grep -E -v "^.{,2}$"
+```
+
 - -v - i dont show it
 - sort numerically in reverse
 -
