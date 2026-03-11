@@ -936,7 +936,8 @@ username:password:UID:GID:comment:home_directory:shell
 ```
 - important fields (on columns):
 	- field 1 -> username
-	- field 2 -> 
+	- field 2 -> password placeholder (usually x)
+	- field 5 -> comment field (person's full name and other info)
 on columns
 field 1: username
 field 2: password
