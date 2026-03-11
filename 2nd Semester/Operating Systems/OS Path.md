@@ -1269,13 +1269,14 @@ int main(int argc, char** argv) {
         lseek(f, 0, SEEK_SET);
         read(f, &k, sizeof(int));
         k++;
-        lseek(f, 0, SEEK_SET);
+        lseek(f, 0, SEEK_SET); // move pointer to start of file
         write(f, &k, sizeof(int));
     }
     close(f);
     return 0;
 }
 ```
+- this program suffers from "race conditions" if multiple instances run simultaneously
 - open() opens a file descriptor
 - read() reads bytes from file
 - write() writes bytes to file
