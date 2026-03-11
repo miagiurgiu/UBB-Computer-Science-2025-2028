@@ -975,3 +975,4 @@ n - normal meaning
 \n - special meaning
 .
 \. - the actual dot
+![[Pasted image 20260311183657.png]]
