@@ -1104,18 +1104,21 @@ ps -e
 ```
 ps -u rares
 ```
-- terminate a process (PID = process id):
+- terminate a process (PID = process id, second column of ps output):
 ```
 kill PID
+cat
 ```
 
-kill process_id
-cat
 
-9) how to find the age of a process?
+8) how to find the age of a process?
 - process = program in execution (task manager)
 - iterate through processes -> find age
-- man ps
+```
+man ps
+```
+
+- sele
 -o -> what columns to show
 ps -o etime process_id
 
