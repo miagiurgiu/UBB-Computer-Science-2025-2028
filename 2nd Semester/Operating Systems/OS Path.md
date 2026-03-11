@@ -948,7 +948,7 @@ grep -> searches lines in a file
 ```
 
 
-2) how to extract one field (column) from the file? using awk
+2) How to extract one field (column) from the file? using awk
 ```
 grep -E " - 911 - " /etc/passwd | awk -F: '{print $5}'
 
@@ -960,21 +960,17 @@ awk -> processes text column-by-column (extracts)
 
 
 3) Count unique students? using uniq command; 
-- sort first and then run uniq on it => one student each time
+- sort first and then run uniq on it => one student each time => nr of unique students
 ```
 grep -E " - 91[0-9] - " /etc/passwd | awk -F: '{print $5}' | sort | uniq | wc -l
 
 grep -E " - 91[0-9] -> select English section groups (910-919)
 awk -> extract names
 sort -> sort alphabetically
-uniq -> remove duplicates
+uniq -> remove duplicates (works well only on sorted input)
 wc -l -> count lines
 ```
 
-
-regular expressions
--E = use the extended regular expressions
--F = 
 
 4) find most popular names in the English section? extract just the first names
 grep -E " - 91[0-9] - " /etc/passwd | awk -F: '{print $5}' | sort | uniq -c | sort -n -r | head -n 20
