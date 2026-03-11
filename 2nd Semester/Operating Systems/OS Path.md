@@ -1058,6 +1058,7 @@ done
 ```
 #!/bin/bash
 echo 0> x
+
 ./b.sh x &
 ./b.sh x &
 ./b.sh x &
@@ -1070,5 +1071,12 @@ echo 0> x
 - the lower chances to interfere -> worst case
 - the higher chances to interfere -> ?
 ```
+
+```
+
+```
+#!/bin/bash
+echo 0> x
+
 
 ```
