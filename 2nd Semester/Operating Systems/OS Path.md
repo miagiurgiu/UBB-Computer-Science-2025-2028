@@ -921,8 +921,13 @@ every one is needed for the exam. but for week 6 -> know awk -> regex, sed, grep
 1) find names of all students in group 911. Which file has the list of all students in the system? using grep.
 
 less/etc/passwd
+on columns
 field 1: username
 field 2: password
 etc.
 
 grep -E " - 911 - "/etc/passwd
+
+2) how to extract one filed from the file? using awk
+awk -F: '{print $}'
+
