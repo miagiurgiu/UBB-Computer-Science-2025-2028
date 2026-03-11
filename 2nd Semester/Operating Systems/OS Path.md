@@ -1064,4 +1064,4 @@ echo 0> x
 ```
 
 - what is the value of k in the 3 processes? 0
-- everythin
+- it can be interrupted (everyone reads, writes, overwrites, )
