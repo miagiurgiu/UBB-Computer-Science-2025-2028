@@ -1067,6 +1067,8 @@ echo 0> x
 - it can be interrupted (everyone reads, writes, overwrites) -> they act based on how things get scheduled and they don't interfere with each other ?
 
 12) the same thing in C
-- the lower chances to 
+- the lower chances to interfere -> worst case
+- the higher chances to interfere -> ?
 ```
+
 ```
