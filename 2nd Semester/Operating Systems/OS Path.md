@@ -1196,10 +1196,10 @@ ps -o etime process_id | tail -n +2
 awk - extracts
 expr - arithmetic in the command line
 
-10) nothing happens simultaneously (processes - they are just very fast, one after the other)
-- n++ NOT ATOMIC: you may lose cpu during a n++ operation -> it's 3 assembly operations (load value to register, increment, store value) and during those operations, cpu might get lost)
+10) Nothing happens simultaneously (processes - they are just very fast, one after the other)
+- n++ NOT ATOMIC: you may lose cpu during a n++ operation -> it's 3 assembly operations (load value from n to register, increment register, store value back to n) and during these operations, cpu might get lost
 
-11) implement a script and then a c file; read a number from file, increments it and writes it back to file
+10) Implement a script and then a c file; Reads a number from file, increments it and writes it back to file
 - run one time -> 200 -> run one more time -> 400 -> ...
 ./a.sh
 echo 0 >x
