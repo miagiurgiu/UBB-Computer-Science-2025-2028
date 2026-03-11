@@ -998,8 +998,11 @@ a.sh
 
 ```
 #!/bin/bash
-for P in `ps -ef | grep -E -v "^root\>" | awk '{print $2}' | tail -n +2` do
-	echo 
+for P in `ps -ef | grep -E -v "^root\>" | awk '{print $2}' | tail -n +2`; do
+	T = `ps -o etime process_id | tail -n +2`
+	M = `echo $T | sed -E ""`
+	echo $P
+done
 
 ```
 
@@ -1010,6 +1013,6 @@ chmod 700 a.sh
 
 awk - extracts
 
-ps -o etime process_id | tai
+ps -o etime process_id | tail -n +2
 
 - i need to get rid of the header
