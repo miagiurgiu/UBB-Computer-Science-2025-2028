@@ -998,11 +998,18 @@ a.sh
 
 ```
 #!/bin/bash
-for P in ''
+for P in `ps -ef | grep -E -v "^root\>" | awk '{print $2}' | tail -n +2` do
+	echo 
 
 ```
 
 ./watch.sh a
 ps -ef | grep -E -v "^root\>" | awk '{print $2}' | tail -n +2
+chmod 700 a.sh
+./a.sh
 
 awk - extracts
+
+ps -o etime process_id | tai
+
+- i need to get rid of the header
