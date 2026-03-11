@@ -1201,7 +1201,12 @@ expr - arithmetic in the command line
 
 10) Implement a script and then a c file; Reads a number from file, increments it and writes it back to file
 - run one time -> 200 -> run one more time -> 400 -> ...
-- file exam
+- file example:
+```
+echo 0 > x
+```
+- terminal:
+```
 ./a.sh
 echo 0 >x
 cat x
@@ -1209,6 +1214,8 @@ cat x
 cat x
 ./b.sh x & -> does what??! runs script in background ig.
 chmod 700 
+```
+- script:
 ```
 #!/bin/bash
 
