@@ -978,3 +978,5 @@ n - normal meaning
 .
 \. - the actual dot
 ![[Pasted image 20260311183657.png]]
+
+8) script - stop the student processes running more than ... 
