@@ -1100,9 +1100,13 @@ ex:
 ```
 ps -e 
 ```
+- usernames' processes:
+```
+ps -u username
+```
 
 cat
-ps -u -> usernames' processes
+
 kill process_id
 cat
 
