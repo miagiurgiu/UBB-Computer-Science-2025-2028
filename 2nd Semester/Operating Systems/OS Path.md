@@ -1122,10 +1122,15 @@ man ps
 -o -> what columns to show
 ps -o etime process_id
 
-etime -> elapsed t
+etime -> elapsed time since the process started
 ```
 
-
+- formats:
+```
+MM:SS
+HH:MM:SS
+DD-HH:MM:SS
+```
 
 
 a.sh
