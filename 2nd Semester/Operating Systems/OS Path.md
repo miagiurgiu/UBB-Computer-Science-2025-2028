@@ -1068,7 +1068,7 @@ sed -E "s/ +/\n/g"
 ```
 grep -E -v "^.{,2}$"
 
-v -> i dont show it (exclude)
+-v -> i dont show it (exclude)
 ^.{,2}$ -> strings of length <=2
 ```
 
