@@ -1146,7 +1146,13 @@ grep -E -v "^root\>"
 -v -> invert match (exclude)
 ```
 - extract PID column
-- i need to get rid of the header
+```
+awk '{print $2}'
+```
+- i need to get rid of the header (skip header line)
+```
+tail -n +2
+```
 - how to test if a string is empty? using test
 
 a.sh:
