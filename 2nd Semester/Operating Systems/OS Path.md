@@ -914,3 +914,7 @@ ask -> no need for the rest
 complex processing -> awk
 
 every one is needed for the exam. but for week 6 -> know awk -> regex, sed, grep.
+
+
+## Lecture 3 (11 mar 2026)
+
