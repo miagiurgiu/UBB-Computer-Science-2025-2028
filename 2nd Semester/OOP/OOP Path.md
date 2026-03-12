@@ -128,6 +128,7 @@ A2-3: Intelligent refrigerator
 
 Dynamic Array Implementation
 
+DynamicArray.h
 ```
 #pragma once
 #include "Planet.h"
@@ -141,5 +142,6 @@ typedef struct {
 	destroyFct destructionOperation;
 } DynamicArray;
 
+DynamicArray* createArray(int cap, destroyFct op);
 
 ```
