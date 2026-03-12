@@ -172,35 +172,18 @@ DynamicArray* createArray(int cap, destroyFct op)
 void destroyDynamicArray(DynamicArray* arr)
 {
 	if (arr == NULL)
-return;
-
-  
-
-for (int i = 0; i < arr->size; i++)
-
-arr->destructionOperation(arr->elems[i]);
-
-  
-
-free(arr->elems);
-
-free(arr);
-
+		return;
+	for (int i = 0; i < arr->size; i++)
+		arr->destructionOperation(arr->elems[i]);
+	free(arr->elems);
+	free(arr);
 }
 
-  
-
 void resize(DynamicArray* arr) {
-
-if (arr == NULL)
-
-return;
-
-  
-
-arr->capacity *= 2;
-
-/*TElem* aux = malloc(sizeof(TElem) * arr->capacity);
+	if (arr == NULL)
+		return;
+	arr->capacity *= 2;
+	/*TElem* aux = malloc(sizeof(TElem) * arr->capacity);
 
 for (int i = 0; i < arr->size; i++)
 
