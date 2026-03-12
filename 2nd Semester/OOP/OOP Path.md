@@ -133,5 +133,13 @@ Dynamic Array Implementation
 #include "Planet.h"
 
 typedef void* TElem;
-typedef void
+typedef void (*destroyFct)(TElem);
+
+typedef struct {
+	int capacity, size;
+	TElem* elems;
+	destroyFct destructionOperation;
+} DynamicArray;
+
+
 ```
