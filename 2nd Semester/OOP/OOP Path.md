@@ -239,52 +239,25 @@ Planet.c
 Planet* createPlanet(char* name, char* type, double distanceFromEarth)
 {
 	Planet* p = (Planet*)malloc(sizeof(Planet));
-if (p == NULL)
-
-return NULL;
-
-p->name = (char*)malloc(sizeof(char) * (strlen(name) + 1));
-
-strcpy(p->name, name);
-
-p->type = (char*)malloc(sizeof(char) * (strlen(type) + 1));
-
-strcpy(p->type, type);
-
-  
-
-p->distanceFromEarth = distanceFromEarth;
-
-  
-
-return p;
-
+	if (p == NULL)
+		return NULL;
+	p->name = (char*)malloc(sizeof(char) * (strlen(name) + 1));
+	strcpy(p->name, name);
+	p->type = (char*)malloc(sizeof(char) * (strlen(type) + 1));
+	strcpy(p->type, type);
+	p->distanceFromEarth = distanceFromEarth;
+	return p;
 }
 
-  
-
 void destroyPlanet(Planet* p)
-
 {
-
-if (p == NULL)
-
-return;
-
-  
-
-// free the memory which was allocated for the component fields
-
-free(p->name);
-
-free(p->type);
-
-  
-
-// free the memory which was allocated for the planet structure
-
-free(p);
-
+	if (p == NULL)
+		return;
+	// free the memory which was allocated for the component fields
+	free(p->name);
+	free(p->type);
+	// free the memory which was allocated for the planet structure
+	free(p);
 }
 
   
