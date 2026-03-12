@@ -1079,5 +1079,218 @@ void multiplyByScalar(double scalarValue);
 ```
 
 DynamicVector.h
+```
+#pragma once
+
+  
+
+typedef int TElement;
+
+  
+
+class DynamicVector
+
+{
+
+private:
+
+TElement* elems;
+
+int size;
+
+int capacity;
+
+  
+
+public:
+
+// default constructor for a DynamicVector
+
+DynamicVector(int capacity = 10);
+
+  
+
+// copy constructor for a DynamicVector
+
+DynamicVector(const DynamicVector& v);
+
+~DynamicVector();
+
+  
+
+// assignment operator for a DynamicVector
+
+DynamicVector operator=(const DynamicVector& v);
+
+  
+
+// Adds an element to the current DynamicVector.
+
+void add(TElement e);
+
+  
+
+/*
+
+Overloading the subscript operator
+
+Input: pos - a valid position within the vector.
+
+Output: a reference to the element o position pos.
+
+*/
+
+TElement& operator[](int pos);
+
+  
+
+int getSize() const;
+
+  
+
+private:
+
+// Resizes the current DynamicVector, multiplying its capacity by a given factor (real number).
+
+void resize(int factor = 2);
+
+};
+
+```
+
+DynamicVector.cpp
+```
+#include "DynamicVector.h"
+
+  
+  
+
+DynamicVector::DynamicVector(int capacity)
+
+{
+
+this->size = 0;
+
+this->capacity = capacity;
+
+this->elems = new TElement[capacity];
+
+}
+
+  
+
+DynamicVector::DynamicVector(const DynamicVector& v)
+
+{
+
+this->size = v.size;
+
+this->capacity = v.capacity;
+
+this->elems = new TElement[this->capacity];
+
+for (int i = 0; i < this->size; i++)
+
+this->elems[i] = v.elems[i];
+
+}
+
+  
+
+DynamicVector::~DynamicVector()
+
+{
+
+delete[] this->elems;
+
+}
+
+  
+
+DynamicVector DynamicVector::operator=(const DynamicVector& v)
+
+{
+
+if (this == &v)
+
+return *this;
+
+this->size = v.size;
+
+this->capacity = v.capacity;
+
+delete[] this->elems;
+
+this->elems = new TElement[this->capacity];
+
+for (int i = 0; i < this->size; i++)
+
+this->elems[i] = v.elems[i];
+
+  
+
+return *this;
+
+}
+
+  
+
+void DynamicVector::add(TElement e)
+
+{
+
+if (this->size == this->capacity)
+
+this->resize();
+
+this->elems[this->size] = e;
+
+this->size++;
+
+}
+
+  
+
+void DynamicVector::resize(int factor)
+
+{
+
+this->capacity *= factor;
+
+TElement* els = new TElement[this->capacity];
+
+for (int i = 0; i < this->size; i++)
+
+els[i] = this->elems[i];
+
+  
+
+delete[] this->elems;
+
+this->elems = els;
+
+}
+
+  
+
+TElement & DynamicVector::operator[](int pos)
+
+{
+
+return this->elems[pos];
+
+}
+
+  
+
+int DynamicVector::getSize() const
+
+{
+
+return this->size;
+
+}
+
+```
 
 
