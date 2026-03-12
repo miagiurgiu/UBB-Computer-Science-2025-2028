@@ -126,3 +126,8 @@ A2-3: Intelligent refrigerator
 
 ## Lecture 3 - 12 mar 2026
 
+Dynamic Array Implementation
+
+```
+
+```
