@@ -1078,4 +1078,6 @@ void multiplyByScalar(double scalarValue);
 };
 ```
 
+DynamicVector.h
+
 
