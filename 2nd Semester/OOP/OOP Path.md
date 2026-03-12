@@ -817,5 +817,265 @@ return 0;
 }
 ```
 
-Ve
+Vector2D.cpp
+
+```
+#include "Vector2D.h"
+
+#include <cmath>
+
+#include <iostream>
+
+  
+
+//Vector2D::Vector2D()
+
+//{
+
+// this->xCoordinate = 0;
+
+// this->yCoordinate = 0;
+
+//
+
+// std::cout << "Constructor called.";
+
+//}
+
+  
+
+//Vector2D::Vector2D(double x, double y)
+
+//{
+
+// this->xCoordinate = x;
+
+// this->yCoordinate = y;
+
+//}
+
+  
+
+//Vector2D::Vector2D(double x, double y)
+
+//{
+
+// this->xCoordinate = x;
+
+// this->yCoordinate = y;
+
+//}
+
+  
+
+// constructor with parameters using member initialization
+
+Vector2D::Vector2D(double x, double y) : xCoordinate{ x }, yCoordinate{ y }
+
+{}
+
+  
+
+Vector2D::Vector2D(const Vector2D& v)
+
+{
+
+this->xCoordinate = v.xCoordinate;
+
+this->yCoordinate = v.yCoordinate;
+
+}
+
+  
+
+Vector2D::~Vector2D()
+
+{
+
+std::cout << "Destructor called for " << this->xCoordinate << ", " << this->yCoordinate << std::endl;
+
+}
+
+  
+
+void Vector2D::setXCoordinate(double newX)
+
+{
+
+if (newX < 0)
+
+throw std::invalid_argument{"New value must be > 0!"};
+
+this->xCoordinate = newX;
+
+}
+
+  
+
+void Vector2D::add(Vector2D v)
+
+{
+
+this->xCoordinate += v.xCoordinate;
+
+this->yCoordinate += v.yCoordinate;
+
+}
+
+  
+
+void Vector2D::subtract(Vector2D v)
+
+{
+
+this->xCoordinate -= v.xCoordinate;
+
+this->yCoordinate -= v.yCoordinate;
+
+}
+
+  
+
+void Vector2D::rotate(double angle)
+
+{
+
+this->xCoordinate = this->xCoordinate * cos(angle) - this->yCoordinate * sin(angle);
+
+this->yCoordinate = this->xCoordinate * sin(angle) + this->yCoordinate * cos(angle);
+
+}
+
+  
+
+void Vector2D::multiplyByScalar(double scalarValue)
+
+{
+
+this->xCoordinate *= scalarValue;
+
+this->yCoordinate *= scalarValue;
+
+}
+```
+
+Vector2D.h
+```
+#pragma once
+
+  
+
+class Vector2D
+
+{
+
+private:
+
+double xCoordinate;
+
+double yCoordinate;
+
+  
+
+public:
+
+// default constructor
+
+//Vector2D();
+
+//Vector2D() = default;
+
+Vector2D(double x = 0, double y = 0);
+
+  
+
+// constructor with parameters
+
+//Vector2D(double x, double y);
+
+  
+
+// copy constructor
+
+Vector2D(const Vector2D& v);
+
+  
+
+// destructor
+
+~Vector2D();
+
+  
+
+// we can have 2 functions with the same name and parameter list, if one is const
+
+double getXCoordinate() { return this->xCoordinate; }
+
+double getXCoordinate() const { return this->xCoordinate; }
+
+double getYCoordinate() const { return this->yCoordinate; }
+
+  
+
+void setXCoordinate(double newX);
+
+  
+
+/*
+
+Add the given 2D vector to the current 2D vector.
+
+Input: v - Vector2D
+
+Output: v is added to the current 2D vector.
+
+*/
+
+void add(Vector2D v);
+
+  
+
+/*
+
+Subtract the given 2D vector from the current 2D vector.
+
+Input: v - Vector2D
+
+Output: v is subtracted from the current 2D vector.
+
+*/
+
+void subtract(Vector2D v);
+
+  
+
+/*
+
+Rotates the current 2D vector.
+
+Input: angle - real value
+
+Output: the current 2D vector is rotated with the given angle.
+
+*/
+
+void rotate(double angle);
+
+  
+
+/*
+
+Multiplies the current 2D vector with a scalar value.
+
+Input: scalarValue - real number
+
+Output: the current 2D vector is multiplied by the given value.
+
+*/
+
+void multiplyByScalar(double scalarValue);
+
+};
+```
+
 
