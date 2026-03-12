@@ -124,3 +124,5 @@ A2-3: Intelligent refrigerator
 	- a for week2 (CRUD)
 	- b for week2 - display with condition (not the UI's job, which country should be display should be done in the service, part b split in 2: one that displays, one that searches)
 
+## Lecture 3 - 12 mar 2026
+
