@@ -129,5 +129,9 @@ A2-3: Intelligent refrigerator
 Dynamic Array Implementation
 
 ```
+#pragma once
+#include "Planet.h"
 
+typedef void* TElem;
+typedef void
 ```
