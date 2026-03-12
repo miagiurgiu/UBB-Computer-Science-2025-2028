@@ -1293,4 +1293,373 @@ return this->size;
 
 ```
 
+vector_ex3.cpp
+```
+#include "Vector2D.h"
 
+#include "DynamicVector.h"
+
+#include <iostream>
+
+#include <string>
+
+#include <Windows.h>
+
+#include <crtdbg.h>
+
+  
+
+#define PI 3.14159265
+
+#include<cmath>
+
+#include <iostream>
+
+  
+
+int main()
+
+{
+
+system("color f4");
+
+  
+
+Vector2D v1{ -1, 1 };
+
+std::cout << Vector2D::getNumberOfInstances() << "\n";
+
+  
+
+Vector2D v2{2, 3};
+
+std::cout << Vector2D::getNumberOfInstances() << "\n";
+
+  
+
+Vector2D v3 = v1 + v2; // <=> Vector2D v3 = v1.operator+(v2);
+
+std::cout << Vector2D::getNumberOfInstances() << std::endl;
+
+  
+
+Vector2D v4 = v1 * 3; // <=> Vector2D v3 = v1.operator*(3);
+
+std::cout << "There are " << Vector2D::getNumberOfInstances() << " objects of class Vector2D." << std::endl;
+
+  
+
+Vector2D v5 = 3 * v1; // will this work? Why/why not?
+
+std::cout << "v3 is: " << v3.toString();
+
+std::cout << "v4 is: " << v4.toString();
+
+//std::cout << "v5 is: " << v5.toString();
+
+  
+
+Vector2D v6{};
+
+v6 = v4; // assignment operator called
+
+v6 = v2 = v1; // assignment operator called twice <=> v6.operator=(v2.operator=(v1))
+
+  
+
+Vector2D v7 = v1; // copy constructor is called (a new object is created and data is copied into it)
+
+Vector2D v8{};
+
+v8 = v2; // assignment operator is called (the object already exists, data is copied into it)
+
+  
+
+// Dynamic Vector - What happens here if the DynamicVector class does not have an overloaded assignment operator?
+
+DynamicVector vect1;
+
+{
+
+DynamicVector vect2{ 5 }; // initializes a dynamic vector, capacity = 5
+
+vect2.add(1);
+
+vect2.add(2);
+
+vect1 = vect2;
+
+}
+
+int x = vect1[1];
+
+std::cout << x << std::endl;
+
+// static class member
+
+//std::cout << "There are " << Vector2D::numberOfInstances << " objects of class Vector2D." << std::endl;
+
+std::cout << "There are " << Vector2D::getNumberOfInstances() << " objects of class Vector2D." << std::endl;
+
+  
+
+// friend function
+
+std::cout << "v4 is: ";
+
+printVectorData(v4);
+
+  
+
+// friend class
+
+Vector2D vectorOf2DVectors[20] = { v1, v2, v3, v4 };
+
+std::cout << "There are " << Vector2D::getNumberOfInstances() << " objects of class Vector2D." << std::endl;
+
+Graphics g(vectorOf2DVectors, 4);
+
+g.printAllYCoordinates();
+
+std::cout << "There are " << Vector2D::getNumberOfInstances() << " objects of class Vector2D." << std::endl;
+
+  
+
+return 0;
+
+}
+
+```
+
+Vector2D.cpp
+```
+#include "Vector2D.h"
+
+#include <cmath>
+
+#include <sstream>
+
+#include <iostream>
+
+  
+
+// initialize the static member
+
+int Vector2D::numberOfInstances = 0;
+
+  
+
+int Vector2D::getNumberOfInstances()
+
+{
+
+return numberOfInstances;
+
+}
+
+  
+
+Vector2D::Vector2D(double x, double y) : xCoordinate{ x }, yCoordinate{ y }
+
+{
+
+numberOfInstances++;
+
+}
+
+  
+
+Vector2D::Vector2D(const Vector2D& v)
+
+{
+
+this->xCoordinate = v.xCoordinate;
+
+this->yCoordinate = v.yCoordinate;
+
+  
+
+numberOfInstances++;
+
+}
+
+  
+
+Vector2D::~Vector2D()
+
+{
+
+std::cout << "Destructor\n";
+
+  
+
+//numberOfInstances--;
+
+}
+
+  
+
+void Vector2D::add(const Vector2D& v)
+
+{
+
+this->xCoordinate += v.xCoordinate;
+
+this->yCoordinate += v.yCoordinate;
+
+}
+
+  
+
+void Vector2D::subtract(Vector2D v)
+
+{
+
+this->xCoordinate -= v.xCoordinate;
+
+this->yCoordinate -= v.yCoordinate;
+
+}
+
+  
+
+void Vector2D::rotate(double angle)
+
+{
+
+this->xCoordinate = this->xCoordinate * cos(angle) - this->yCoordinate * sin(angle);
+
+this->yCoordinate = this->xCoordinate * sin(angle) + this->yCoordinate * cos(angle);
+
+}
+
+  
+
+void Vector2D::multiplyByScalar(double scalarValue)
+
+{
+
+this->xCoordinate *= scalarValue;
+
+this->yCoordinate *= scalarValue;
+
+}
+
+  
+
+std::string Vector2D::toString()
+
+{
+
+std::stringstream txt;
+
+txt << "X and Y coordinates: (" << this->xCoordinate << "," << this->yCoordinate << ")" << std::endl;
+
+return txt.str();
+
+}
+
+  
+
+Vector2D Vector2D::operator+(const Vector2D& v)
+
+{
+
+Vector2D res{ this->xCoordinate, this->yCoordinate };
+
+res.add(v);
+
+return res;
+
+}
+
+  
+
+Vector2D Vector2D::operator*(double scalarValue)
+
+{
+
+Vector2D res{ *this };
+
+res.multiplyByScalar(scalarValue);
+
+return res;
+
+}
+
+  
+
+Vector2D& Vector2D::operator=(const Vector2D& v)
+
+{
+
+this->xCoordinate = v.xCoordinate;
+
+this->yCoordinate = v.yCoordinate;
+
+return *this;
+
+}
+
+  
+  
+
+// non-member function
+
+Vector2D operator*(double scalarValue, const Vector2D& v)
+
+{
+
+Vector2D res{ v };
+
+res.multiplyByScalar(scalarValue);
+
+return res;
+
+}
+
+  
+
+// friend function definition
+
+void printVectorData(const Vector2D& v)
+
+{
+
+std::cout << "X and Y coordinates: (" << v.xCoordinate << "," << v.yCoordinate << ")" << std::endl;
+
+}
+
+  
+  
+  
+
+// friend class
+
+Graphics::Graphics(Vector2D elems[], int size)
+
+{
+
+this->noOfElements = size;
+
+for (int i = 0; i < size; i++)
+
+this->graphicElements[i] = elems[i];
+
+}
+
+  
+
+void Graphics::printAllYCoordinates()
+
+{
+
+for (int i = 0; i < this->noOfElements; i++)
+
+std::cout << "Y coordinate: " << i << ": " << this->graphicElements[i].yCoordinate << std::endl;
+
+}
+
+```
+
+Vector2D
