@@ -143,5 +143,7 @@ typedef struct {
 } DynamicArray;
 
 DynamicArray* createArray(int cap, destroyFct op);
-
+void destroyDynamicArray(DynamicArray* arr);
+void add(DynamicArray* arr, TElem elem);
 ```
+
