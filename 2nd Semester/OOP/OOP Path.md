@@ -274,29 +274,17 @@ char* getName(Planet* p)
 }
 
 char* getType(Planet* p)
-
 {
-
-return p->type;
-
+	return p->type;
 }
-
-  
 
 double getDistanceFromEarth(Planet* p)
-
 {
-
-return p->distanceFromEarth;
-
+	return p->distanceFromEarth;
 }
 
-  
-
 void toString(Planet* p, char str[])
-
 {
-
-sprintf(str, "Planet %s is a %s planet and its distance from Earth is %.2lf.", p->name, p->type, p->distanceFromEarth);
-
-}```
+	sprintf(str, "Planet %s is a %s planet and its distance from Earth is %.2lf.", p->name, p->type,p->distanceFromEarth);
+}
+```
