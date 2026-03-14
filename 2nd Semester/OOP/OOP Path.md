@@ -1863,5 +1863,7 @@ void printAllYCoordinates();
 
 
 
-
-
+How to run only tests (needs linking):
+tests % clang tests.c ../repository/dynamic_array.c ../domain/product.c -o tests
+./tests
+Maria@Mac tests % ./tests
