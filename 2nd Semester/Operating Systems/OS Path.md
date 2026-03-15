@@ -1599,4 +1599,10 @@ s/-.*//
 ```
 sed 's/pattern.*//'
 ```
--> ex: remove everything aft
+-> ex: remove everything after the first dot:
+```
+sed 's/\..*//'
+s/ -> serch
+\. -> replace literal dot ...
+
+```
