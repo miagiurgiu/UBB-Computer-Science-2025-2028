@@ -1616,4 +1616,11 @@ sed 's/^.*pattern//'
 sed 's/^.* //'
 ```
 
-"Re"
+"Replace sth with sth else"
+```
+sed 's/old/new'
+```
+-> ex: convert "-" into space " "
+```
+sed 's/-/ /'
+```
