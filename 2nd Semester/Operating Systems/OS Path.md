@@ -1469,5 +1469,9 @@ head -n -1 last.fake | awk '$7 >= "23:00" {print $1}' | sort | uniq
 Method 2. Using awk and given recommendation:
 - extract username and login time:
 ```
-head -n
+head -n -1 last.fake | awk '{print $1, $7}'
+```
+- replace ":" with " ":
+```
+head -n -1 last.fake | awk '{print $1, $7}' | sed 's/:/ '
 ```
