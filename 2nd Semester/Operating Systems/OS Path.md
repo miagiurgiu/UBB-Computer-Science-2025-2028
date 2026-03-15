@@ -929,10 +929,14 @@ awk -> treat input as rows/fields
 ```
 grep Sun /etc/passwd 
 grep economica /etc/passwd
-grep
+grep ^[a-z0-9]+ -> from start of the line, one or more lowercase letters or digits
 
 ```
 
+^ -> start of line
+$ -> end of line
+[a-z] -> one lowercase letter
+[]
 
 
 
