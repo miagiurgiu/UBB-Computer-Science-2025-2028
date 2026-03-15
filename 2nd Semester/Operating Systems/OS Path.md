@@ -1382,5 +1382,8 @@ grep 'economica' last.fake | grep 'Sun'
 ```
 grep 'economica' last.fake | grep 'Sun' | awk '{print $1}'
 
-awk -> 
+awk -> splits each line into "columns" separated by spaces by default
+$1 -> the first field (column)
+{print $1} -> prints onlt that first field (column)
 ```
+- 4. 
