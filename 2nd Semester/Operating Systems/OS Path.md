@@ -1469,6 +1469,8 @@ head -n -1 last.fake | awk '$7 >= "23:00" {print $1}' | sort | uniq
 Method 2. Using awk only.
 ```
 head -n -1 last.fake | awk 'substr($7,1,2)>=23 {print $1}' | sort | uniq
+
+'substr($7,1,2)>=23 {print $1}' -> take field 7, start at character 1, take 2 characters
 ```
 
 
