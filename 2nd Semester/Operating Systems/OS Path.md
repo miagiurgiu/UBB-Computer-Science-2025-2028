@@ -1437,5 +1437,5 @@ sed -E 's/REGEX/REPLACEMENT/'
 s -> substitute
 find text matching REGEX
 replace it with REPLACEMENT
-
+-E -> extended regex like + and ()
 ```
