@@ -1547,4 +1547,12 @@ ps -ef | head
 ps -ef | grep '^root' | awk '{print $6}' | sort | uniq
 ```
 
-Method 2. 
+Method 2. on a file processes list.
+-  keep processes owned by root
+```
+grep '^root' ps.fake 
+```
+- extract the 6th field (tty)
+```
+
+```
