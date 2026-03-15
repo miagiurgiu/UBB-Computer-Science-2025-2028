@@ -1471,8 +1471,9 @@ Method 2. Using awk only.
 head -n -1 last.fake | awk 'substr($7,1,2)>=23 {print $1}' | sort | uniq
 
 'substr($7,1,2)>=23 {print $1}' -> take field 7, start at character 1, take 2 characters
-```
 
+ex: if $7 is 23:10 -> substr($7,1,2) is 23.
+```
 
 Method 3. Using awk + sed and given recommendation:
 - extract username and login time:
@@ -1492,4 +1493,7 @@ head -n -1 last.fake | awk '{print $1, $7}' | sed 's/:/ /' | awk '$2 >= 23'
 head -n -1 last.fake | awk '{print $1, $7}' | sed 's/:/ /' | awk '$2 >= 23 {print $1}' | sort | uniq
 ```
 
-Method
+Method 4. Using awk + grep.
+```
+head -n -1 
+```
