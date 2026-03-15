@@ -1542,3 +1542,6 @@ ps -ef | grep '^root'
 ps -ef | head
 ```
 - solution
+```
+ps -ef | grep '^root' | awk '{print $6}' | sort | uniq
+```
