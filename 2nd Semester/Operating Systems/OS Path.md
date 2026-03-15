@@ -1415,5 +1415,5 @@ grep 'economica' last.fake | grep 'Sun' | grep -E -o '^[a-z0-9]+'
 grep 'economica' last.fake | grep 'Sun' | grep -E -o '^[a-z0-9]+' | sort | uniq
 
 sort -> put identical usernames together
-
+uniq -> remove repeated adjacent lines
 ```
