@@ -1452,3 +1452,5 @@ s/ -> substitute
 	-> $ -> end of line
 \1 -> replace capturing group 1 with itself. 
 ```
+
+![[Pasted image 20260315163151.png]]
