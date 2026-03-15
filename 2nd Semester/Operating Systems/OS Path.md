@@ -1419,3 +1419,4 @@ uniq -> remove repeated adjacent lines
 ```
 
 Method 3. Using awk
+~ -> special regex operator -> "matches regex"
