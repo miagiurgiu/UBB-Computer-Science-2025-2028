@@ -1374,5 +1374,6 @@ grep 'economica' last.fake
 ```
 - 2. from those lines, keep only lines that contain "Sun"
 ```
-
+grep 'economica' last.fake | grep 'Sun'
 ```
+-.
