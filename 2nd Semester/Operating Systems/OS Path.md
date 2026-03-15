@@ -1367,3 +1367,4 @@ https://www.cs.ubbcluj.ro/~rares/course/os/res/practice/gsa/index.html
 1.
 ![[Pasted image 20260315145110.png]]
 
+Method 1. Using grep.
