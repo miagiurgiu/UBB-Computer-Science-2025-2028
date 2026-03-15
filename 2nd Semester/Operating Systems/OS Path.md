@@ -1307,4 +1307,9 @@ xxd y
 expr 2 \* 256+5\*16 +8
 ./e.sh
 
-## Individual work after Lec
+## Individual work after Lecture 3, Lab 3
+
+REGEX = PATTERN ("find text that looks like this pattern")
+"dan" means: find dan
+"^dan:" means: find lines that start with dan:
+"^[0-9]"
