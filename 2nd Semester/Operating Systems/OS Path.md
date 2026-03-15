@@ -1498,4 +1498,5 @@ Method 4. Using awk + grep.
 head -n -1 last.fake | grep -E ' 23:[0-9]{2} | awk '{print $1}' | sort | uniq
 ```
 
-3. 
+3.
+![[Pasted image 20260315165900.png]]
