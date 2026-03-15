@@ -1434,7 +1434,7 @@ General form of sed:
 ```
 sed -E 's/REGEX/REPLACEMENT/'
 
-s -> substitute
+s/ -> substitute
 find text matching REGEX
 replace it with REPLACEMENT
 -E -> extended regex like + and ()
@@ -1443,5 +1443,8 @@ replace it with REPLACEMENT
 ```
 echo 'piir1546 pts/5 economica.ubbclu Sun Mar 2' | sed -E 's/^([a-z]+[0-9]{4}).*$/\1/'
 
-s ->
+s/ -> substitute
+^([a-z]+[0-9]{4}).*$/ -> find text matching this regex
+	-> ^ -> start of line
+	-> 
 ```
