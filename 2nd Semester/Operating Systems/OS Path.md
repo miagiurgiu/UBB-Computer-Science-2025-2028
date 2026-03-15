@@ -923,7 +923,10 @@ sed = transform text
 awk = treat text like columns and process it
 
 grep -> searches with regex
-sed -> search
+sed -> search, replace, delete
+awk -> treat input as rows/fields
+
+
 
 
 
