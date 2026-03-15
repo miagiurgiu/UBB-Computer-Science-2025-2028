@@ -1564,5 +1564,11 @@ grep '^root' ps.fake | awk '{print $6}' | sort | uniq
 
 5.
 ![[Pasted image 20260315205552.png]]
-
-- S
+- search usernames ending in 88:
+```
+grep '88:' passwd.fake | awk -F: '{print $5}'
+```
+- take their full names
+```
+grep '88:' passwd.fake | awk -F: '{print $5}'
+```
