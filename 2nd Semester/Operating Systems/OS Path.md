@@ -1449,4 +1449,5 @@ s/ -> substitute
 	-> ([a-z]+[0-9]{4}) -> one or more lowercase letters, followed by exactly 4 digits
 	-> .* -> rest of the line
 	-> $ -> end of line
+\1 -> replace with this
 ```
