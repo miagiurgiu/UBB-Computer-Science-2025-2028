@@ -1023,6 +1023,7 @@ wc -l -> count lines
 ```
 grep -E " - 91[0-9] - " /etc/passwd \
 | awk -F: '{print $5}' \
+| awk '{print $2}' \
 | sort \
 | uniq -c \
 | sort -n -r \
