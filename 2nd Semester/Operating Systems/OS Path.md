@@ -1572,3 +1572,6 @@ grep '88:' passwd.fake
 ```
 grep '88:' passwd.fake | awk -F: '{print $5}'
 ```
+
+6.
+
