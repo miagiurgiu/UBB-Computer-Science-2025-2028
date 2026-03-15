@@ -1502,3 +1502,6 @@ head -n -1 last.fake | grep -E ' 23:[0-9]{2} | awk '{print $1}' | sort | uniq
 3.
 ![[Pasted image 20260315165900.png]]
 - search for line starting with "m":
+```
+grep '^m' passwd.fake | awk -F: '$3%7==0'
+```
