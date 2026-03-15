@@ -1456,4 +1456,8 @@ s/ -> substitute
 2.
 ![[Pasted image 20260315163151.png]]
 
+- remove last line of the file (not valid data)
+```
+head -n -1 last.fake
+```
 - 
