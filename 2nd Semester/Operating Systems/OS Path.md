@@ -1477,5 +1477,10 @@ head -n -1 last.fake | awk '{print $1, $7}' | sed 's/:/ /'
 ```
 - show only the hours >=23 (second column now)
 ```
-head -n -1 last.fake | awk '{print $1, $7}' | sed 's/:/ /' | awk
+head -n -1 last.fake | awk '{print $1, $7}' | sed 's/:/ /' | awk '$2 >= 23 {print $1}' | sort | uniq
+```
+- show only the usernames for those hours
+```
+
+
 ```
