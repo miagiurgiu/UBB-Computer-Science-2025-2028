@@ -1535,6 +1535,6 @@ ps -ef
 ```
 - keep processes owned by root
 ```
-grep '^root'
+ps -ef | grep '^root'
 ```
 - 
