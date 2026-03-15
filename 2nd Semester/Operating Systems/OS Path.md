@@ -1312,4 +1312,4 @@ expr 2 \* 256+5\*16 +8
 REGEX = PATTERN ("find text that looks like this pattern")
 "dan" means: find dan
 "^dan:" means: find lines that start with dan:
-"^[0-9]"
+"^[0-9]+$" means: find full lines that contain no digits at all
