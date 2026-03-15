@@ -1306,3 +1306,5 @@ expr 256+9 \*16
 xxd y
 expr 2 \* 256+5\*16 +8
 ./e.sh
+
+## Individual work after Lec
