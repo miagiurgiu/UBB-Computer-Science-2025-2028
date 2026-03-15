@@ -1603,6 +1603,9 @@ sed 's/pattern.*//'
 ```
 sed 's/\..*//'
 s/ -> serch
-\. -> replace literal dot ...
-
+\..*/-> replace everything after literal dot ...
+/ -> ... with nothing
 ```
+
+"Remove everything after a pattern"
+
