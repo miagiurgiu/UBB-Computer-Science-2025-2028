@@ -1554,5 +1554,6 @@ grep '^root' ps.fake
 ```
 - extract the 6th field (tty)
 ```
-
+grep '^root' ps.fake | awk '{print $6}' | sort -u
 ```
+- same thin
