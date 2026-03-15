@@ -1473,5 +1473,9 @@ head -n -1 last.fake | awk '{print $1, $7}'
 ```
 - replace ":" with " ":
 ```
-head -n -1 last.fake | awk '{print $1, $7}' | sed 's/:/ '
+head -n -1 last.fake | awk '{print $1, $7}' | sed 's/:/ /'
+```
+- show only the hours >=23 (second column now)
+```
+head -n -1 last.fake | awk '{print $1, $7}' | sed 's/:/ /' | awk
 ```
