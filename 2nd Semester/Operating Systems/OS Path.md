@@ -1607,5 +1607,8 @@ s/ -> serch
 / -> ... with nothing
 ```
 
-"Remove everything after a pattern"
+"Remove everything before a pattern"
+```
+sed 's/^.*pattern'
 
+```
