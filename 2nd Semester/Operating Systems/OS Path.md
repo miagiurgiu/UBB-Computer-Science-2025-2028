@@ -1462,5 +1462,5 @@ head -n -1 last.fake
 ```
 - 
 ```
-
+head -n -1 last.fake | awk '$7 >= "23:00" {print}'
 ```
