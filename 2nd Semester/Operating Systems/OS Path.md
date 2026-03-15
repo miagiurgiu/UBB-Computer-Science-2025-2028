@@ -946,7 +946,7 @@ $ -> end of line
 \ -> escape character
 ```
 
-
+'' -> single quotes -> everything is taken literally (prefered for re)
 
 
 
