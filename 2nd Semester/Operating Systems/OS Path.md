@@ -1460,7 +1460,7 @@ s/ -> substitute
 ```
 head -n -1 last.fake
 ```
-- inspect the fields
+- 
 ```
 
 ```
