@@ -943,8 +943,10 @@ $ -> end of line
   * -> zero or more
 () -> group
 | -> or
-\ -> e
+\ -> escape character
 ```
+
+
 
 
 
