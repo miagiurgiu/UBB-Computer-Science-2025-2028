@@ -1578,4 +1578,7 @@ grep '88:' passwd.fake | awk -F: '{print $5}'
 - choose UIDs
 ```
 awk -F: '$3 ~ /^23[0-9]$/ {print $5}' 
+-F: -> fields separated by ":"
+$3 -> UID
+
 ```
