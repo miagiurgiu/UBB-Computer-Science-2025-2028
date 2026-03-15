@@ -1516,5 +1516,10 @@ Method 2. using only awk
 ```
 awk -F: '$1 ~ /^m/ && $3 % 7 == 0 {print $5}' /etc/passwd
 
+$1 -> username
+~ -> ?
+/^m/ -> starts with m
+&& -> and
+
 ```
 4. 
