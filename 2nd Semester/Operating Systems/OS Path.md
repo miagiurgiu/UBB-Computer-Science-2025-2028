@@ -1525,4 +1525,7 @@ $3 % 7 == 0 -> third field (column) (id) divisible with 7
 {print $5} -> print full name
 ```
 
-4. 
+
+4.
+![[Pasted image 20260315203839.png]]
+
