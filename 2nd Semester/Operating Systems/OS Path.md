@@ -1537,4 +1537,8 @@ ps -ef
 ```
 ps -ef | grep '^root'
 ```
-- 
+- how to find out name of headers? -> count the columns
+```
+ps -ef | head
+```
+- solution
