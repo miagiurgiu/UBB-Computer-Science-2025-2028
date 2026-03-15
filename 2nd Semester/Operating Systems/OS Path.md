@@ -1456,7 +1456,7 @@ s/ -> substitute
 2.
 ![[Pasted image 20260315163151.png]]
 
-Method 1. Using awk.
+Method 1. Using awk only.
 - remove last line of the file (not valid data)
 ```
 head -n -1 last.fake
@@ -1466,7 +1466,7 @@ head -n -1 last.fake
 head -n -1 last.fake | awk '$7 >= "23:00" {print $1}' | sort | uniq
 ```
 
-Method 2. Using awk and given recommendation:
+Method 2. Using awk + sed and given recommendation:
 - extract username and login time:
 ```
 head -n -1 last.fake | awk '{print $1, $7}'
@@ -1477,10 +1477,11 @@ head -n -1 last.fake | awk '{print $1, $7}' | sed 's/:/ /'
 ```
 - show only the hours >=23 (second column now)
 ```
+head -n -1 last.fake | awk '{print $1, $7}' | sed 's/:/ /' | awk '$2 >= 23'
+```
+- show only the usernames for those hours -> sorted, non-duplicate format
+```
 head -n -1 last.fake | awk '{print $1, $7}' | sed 's/:/ /' | awk '$2 >= 23 {print $1}' | sort | uniq
 ```
-- show only the usernames for those hours
-```
 
-
-```
+Method
