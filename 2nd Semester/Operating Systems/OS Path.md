@@ -1420,3 +1420,10 @@ uniq -> remove repeated adjacent lines
 
 Method 3. Using awk
 ~ -> special regex operator -> "matches regex"
+```
+awk '$3~/economica/ && $4=="Sun" {print $1}' last.fake | sort | uniq
+
+awk -> read file line by line, field by field (column by column), using spaces
+
+
+```
