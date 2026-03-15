@@ -1577,5 +1577,5 @@ grep '88:' passwd.fake | awk -F: '{print $5}'
 ![[Pasted image 20260315211400.png]]
 - choose UIDs
 ```
-awk -F: '$3 ~ /'
+awk -F: '$3 ~ /^23[0-9]$/ {print $5}' 
 ```
