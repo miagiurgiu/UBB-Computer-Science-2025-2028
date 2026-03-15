@@ -1428,3 +1428,13 @@ $3~/economica/ && $4=="Sun" -> logical test
 $3~/economica/ -> column 3 CONTAINS "economica"
 
 ```
+
+Method 4. Using sed
+General form of sed:
+```
+sed -E 's/REGEX/REPLACEMENT/'
+
+s -> substitute
+find text matching REGEX
+
+```
