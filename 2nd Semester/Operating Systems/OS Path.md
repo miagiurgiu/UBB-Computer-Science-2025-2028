@@ -949,6 +949,12 @@ $ -> end of line
 '' -> single quotes -> everything is taken literally (preferred for regex)
 "" -> double quotes -> if regex contains $, it could create confusion
 
+-E -> extended regex
+-i -> ignore case (insensitive case)
+-v -> invert match 
+-o -> print only matching part
+
+
 
 
 
