@@ -1405,6 +1405,5 @@ grep 'economica' last.fake | grep 'Sun'
 ```
 - 3. extract the username from the beginning
 ```
-
-
+grep 'economica' last.fake | grep 'Sun' | 
 ```
