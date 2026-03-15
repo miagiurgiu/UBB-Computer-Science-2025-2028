@@ -1427,5 +1427,4 @@ awk -> read file line by line, field by field (column by column), using spaces
 $3~/economica/ && $4=="Sun" -> logical test 
 $3~/economica/ -> column 3 CONTAINS "economica"
 
-
 ```
