@@ -946,7 +946,9 @@ $ -> end of line
 \ -> escape character
 ```
 
-'' -> single quotes -> everything is taken literally (prefered for re)
+'' -> single quotes -> everything is taken literally (preferred for regex)
+"" -> double quotes -> if regex contains $, it could create confusion
+
 
 
 
