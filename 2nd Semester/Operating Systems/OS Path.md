@@ -915,7 +915,15 @@ complex processing -> awk
 
 every one is needed for the exam. but for week 6 -> know awk -> regex, sed, grep.
 
+LAB 3 WRAP-UP:
 
+REGEX = pattern language
+grep = find matching lines
+sed = transform text
+awk = treat text like columns and process it
+
+grep -> searches with regex
+sed -> search
 
 
 
