@@ -1445,10 +1445,10 @@ echo 'piir1546 pts/5 economica.ubbclu Sun Mar 2' | sed -E 's/^([a-z]+[0-9]{4}).*
 
 s/ -> substitute
 ^([a-z]+[0-9]{4}).*$/ -> find text matching this regex
-	-> () -> capturing group
+	-> () -> capturing group 1
 	-> ^ -> start of line
 	-> ([a-z]+[0-9]{4}) -> one or more lowercase letters, followed by exactly 4 digits
 	-> .* -> rest of the line
 	-> $ -> end of line
-\1 -> replace capturing group 
+\1 -> replace capturing group 1  with 
 ```
