@@ -1365,3 +1365,5 @@ grep -> searches through files using regular expressions
 https://www.cs.ubbcluj.ro/~rares/course/os/res/practice/gsa/index.html
 
 1.
+![[Pasted image 20260315145110.png]]
+
