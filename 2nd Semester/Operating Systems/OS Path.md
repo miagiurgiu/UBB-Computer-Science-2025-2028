@@ -1439,3 +1439,9 @@ find text matching REGEX
 replace it with REPLACEMENT
 -E -> extended regex like + and ()
 ```
+
+```
+echo 'piir1546 pts/5 economica.ubbclu Sun Mar 2' | sed -E 's/^([a-z]+[0-9]{4}).*$/\1/'
+
+s ->
+```
