@@ -1368,3 +1368,11 @@ https://www.cs.ubbcluj.ro/~rares/course/os/res/practice/gsa/index.html
 ![[Pasted image 20260315145110.png]]
 
 Method 1. Using grep.
+- 1. keep only lines that contain "economica"
+```
+grep 'economica' last.fake
+```
+- 2. from those lines, keep only lines that contain "Sun"
+```
+
+```
