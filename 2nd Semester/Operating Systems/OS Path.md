@@ -1436,5 +1436,6 @@ sed -E 's/REGEX/REPLACEMENT/'
 
 s -> substitute
 find text matching REGEX
+replace it with REPLACEMENT
 
 ```
