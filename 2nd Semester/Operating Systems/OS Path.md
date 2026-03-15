@@ -1556,4 +1556,12 @@ grep '^root' ps.fake
 ```
 grep '^root' ps.fake | awk '{print $6}' | sort -u
 ```
-- same thin
+- same thing but with uniq:
+```
+grep '^root' ps.fake | awk '{print $6}' | sort | uniq
+```
+
+
+5.
+![[Pasted image 20260315205552.png]]
+
