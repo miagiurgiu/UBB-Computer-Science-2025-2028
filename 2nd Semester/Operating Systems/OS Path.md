@@ -1403,4 +1403,8 @@ grep 'economica' last.fake | grep 'Sun'
 | -> sends those lines to the next command
 
 ```
-- 3. 
+- 3. extract the username from the beginning
+```
+
+
+```
