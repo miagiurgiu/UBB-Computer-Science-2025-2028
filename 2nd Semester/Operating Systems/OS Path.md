@@ -1410,3 +1410,10 @@ grep 'economica' last.fake | grep 'Sun' | grep -E -o '^[a-z0-9]+'
 -E -> grep used with regex
 -o -> print only the part that matches
 ```
+- 4. remove duplicates
+```
+grep 'economica' last.fake | grep 'Sun' | grep -E -o '^[a-z0-9]+' | sort | uniq
+
+sort -> put identical usernames together
+
+```
