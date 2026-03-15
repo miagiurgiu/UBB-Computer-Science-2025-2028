@@ -1375,5 +1375,8 @@ grep 'economica' last.fake
 - 2. from those lines, keep only lines that contain "Sun"
 ```
 grep 'economica' last.fake | grep 'Sun'
+
+| -> sends those lines to the next command
 ```
--.
+- 3. from those lines, extract the username
+- 
