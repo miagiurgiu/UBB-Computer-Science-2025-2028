@@ -1593,3 +1593,10 @@ remove everything after the space:
 ```
 s/-.*//
 ```
+
+#### TEMPLATES:
+"Remove everything after a pattern"
+```
+sed 's/pattern.*//'
+```
+-> ex: remove everything aft
