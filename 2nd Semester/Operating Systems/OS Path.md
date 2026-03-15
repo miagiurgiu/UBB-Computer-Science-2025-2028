@@ -933,10 +933,20 @@ grep ^[a-z0-9]+ -> from start of the line, one or more lowercase letters or digi
 
 ```
 
+```
 ^ -> start of line
 $ -> end of line
 [a-z] -> one lowercase letter
-[]
+[0-9] -> one digit
+[^ ] -> one character that is NOT space (space negated)
++ -> one or more
+  * -> zero or more
+() -> group
+| -> or
+\ -> e
+```
+
+
 
 
 
