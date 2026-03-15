@@ -1529,3 +1529,4 @@ $3 % 7 == 0 -> third field (column) (id) divisible with 7
 4.
 ![[Pasted image 20260315203839.png]]
 
+- 
