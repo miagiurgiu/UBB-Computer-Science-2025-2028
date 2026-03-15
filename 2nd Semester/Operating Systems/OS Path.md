@@ -1533,4 +1533,8 @@ $3 % 7 == 0 -> third field (column) (id) divisible with 7
 ```
 ps -ef
 ```
+- keep processes owned by root
+```
+grep '^root'
+```
 - 
