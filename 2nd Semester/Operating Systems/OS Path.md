@@ -1387,4 +1387,9 @@ $1 -> the first field (column)
 {print $1} -> prints onlt that first field (column)
 ```
 - 4. remove duplicates
+```
+grep 'economica' last.fake | grep 'Sun' | awk '{print $1}' | sort | uniq
+```
 
+Method 2. Using grep + regex
+- 1. 
