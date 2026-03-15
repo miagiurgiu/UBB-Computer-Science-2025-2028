@@ -1495,5 +1495,6 @@ head -n -1 last.fake | awk '{print $1, $7}' | sed 's/:/ /' | awk '$2 >= 23 {prin
 
 Method 4. Using awk + grep.
 ```
-head -n -1 last.fake | gre[ -]
+head -n -1 last.fake | grep -E ' 23:[0-9]{2} | awk '{print $1}' | sort | uniq
 ```
+
