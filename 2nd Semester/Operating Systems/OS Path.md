@@ -1501,8 +1501,20 @@ head -n -1 last.fake | grep -E ' 23:[0-9]{2} | awk '{print $1}' | sort | uniq
 
 3.
 ![[Pasted image 20260315165900.png]]
+
+Method 1. using grep + awk
 - search for line starting with "m":
+```
+grep '^m' passwd.fake 
+```
+- extract only the ids (the 3rd column) that are divisible with 7:
 ```
 grep '^m' passwd.fake | awk -F: '$3%7==0 {print $5}'
 ```
-- extract only the ids (the 3rd column) that are divisible with 7:
+
+Method 2. using only awk
+```
+awk -F: '$1 ~ /^m/ && $3 % 7 == 0 {print $5}' /etc/passwd
+
+```
+4. 
