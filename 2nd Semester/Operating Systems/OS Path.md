@@ -926,8 +926,12 @@ grep -> searches with regex
 sed -> search, replace, delete
 awk -> treat input as rows/fields
 
+```
+grep Sun /etc/passwd 
+grep economica /etc/passwd
+grep
 
-
+```
 
 
 
