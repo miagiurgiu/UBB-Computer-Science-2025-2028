@@ -1456,11 +1456,12 @@ s/ -> substitute
 2.
 ![[Pasted image 20260315163151.png]]
 
+Method 1. Using awk.
 - remove last line of the file (not valid data)
 ```
 head -n -1 last.fake
 ```
 - 
 ```
-head -n -1 last.fake | awk '$7 >= "23:00" {print}'
+head -n -1 last.fake | awk '$7 >= "23:00" {print $1}' | sort | uniq
 ```
