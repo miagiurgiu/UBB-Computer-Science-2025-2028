@@ -1453,4 +1453,7 @@ s/ -> substitute
 \1 -> replace capturing group 1 with itself. 
 ```
 
+2.
 ![[Pasted image 20260315163151.png]]
+
+- 
