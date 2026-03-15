@@ -1461,7 +1461,9 @@ Method 1. Using awk.
 ```
 head -n -1 last.fake
 ```
-- 
+- find what was asked
 ```
 head -n -1 last.fake | awk '$7 >= "23:00" {print $1}' | sort | uniq
 ```
+
+Method 2. Using awk and given recommendation
