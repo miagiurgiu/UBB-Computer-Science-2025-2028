@@ -1580,5 +1580,6 @@ grep '88:' passwd.fake | awk -F: '{print $5}'
 awk -F: '$3 ~ /^23[0-9]$/ {print $5}' 
 -F: -> fields separated by ":"
 $3 -> UID
-
+/^23[0-9]$/ -> exactly 3 digits, starting with 23
+{print $5} -> print full name
 ```
