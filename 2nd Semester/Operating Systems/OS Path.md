@@ -1406,4 +1406,7 @@ grep 'economica' last.fake | grep 'Sun'
 - 3. extract the username from the beginning
 ```
 grep 'economica' last.fake | grep 'Sun' | grep -E -o '^[a-z0-9]+'
+
+-E -> grep used with regex
+-o -> print only the part that matches
 ```
