@@ -1361,4 +1361,7 @@ grep -> searches through files using regular expressions
 -o
 
 
-Grep/Sed/Awk practice problems
+#### Grep/Sed/Awk practice problems
+https://www.cs.ubbcluj.ro/~rares/course/os/res/practice/gsa/index.html
+
+1.
