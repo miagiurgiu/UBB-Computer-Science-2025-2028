@@ -1583,3 +1583,13 @@ $3 -> UID
 /^23[0-9]$/ -> exactly 3 digits, starting with 23
 {print $5} -> print full name
 ```
+
+remove everything before the space:
+```
+s/^.* //
+```
+
+remove everything after the space:
+```
+s/-.*//
+```
