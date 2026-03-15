@@ -1392,4 +1392,15 @@ grep 'economica' last.fake | grep 'Sun' | awk '{print $1}' | sort | uniq
 ```
 
 Method 2. Using grep + regex
-- 1. 
+1. keep only lines that contain "economica"
+```
+grep 'economica' last.fake
+```
+- 2. from those lines, keep only lines that contain "Sun"
+```
+grep 'economica' last.fake | grep 'Sun'
+
+| -> sends those lines to the next command
+
+```
+- 3. 
