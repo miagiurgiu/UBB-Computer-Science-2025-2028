@@ -1380,5 +1380,7 @@ grep 'economica' last.fake | grep 'Sun'
 ```
 - 3. from those lines, extract the username
 ```
+grep 'economica' last.fake | grep 'Sun' | awk '{print $1}'
 
+awk -> 
 ```
