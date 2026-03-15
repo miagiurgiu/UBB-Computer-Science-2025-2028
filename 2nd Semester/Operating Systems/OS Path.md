@@ -1529,6 +1529,7 @@ $3 % 7 == 0 -> third field (column) (id) divisible with 7
 4.
 ![[Pasted image 20260315203839.png]]
 
+Method 1. on my own processes list.
 - get the process list
 ```
 ps -ef
@@ -1545,3 +1546,5 @@ ps -ef | head
 ```
 ps -ef | grep '^root' | awk '{print $6}' | sort | uniq
 ```
+
+Method 2. 
