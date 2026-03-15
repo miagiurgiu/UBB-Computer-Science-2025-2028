@@ -1609,6 +1609,11 @@ s/ -> serch
 
 "Remove everything before a pattern"
 ```
-sed 's/^.*pattern'
-
+sed 's/^.*pattern//'
 ```
+-> ex: extract the first name from Giurgiu Corina Maria => Corina Maria
+```
+sed 's/^.* //'
+```
+
+"Re"
