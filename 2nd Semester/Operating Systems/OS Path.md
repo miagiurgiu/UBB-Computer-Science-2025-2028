@@ -1595,11 +1595,14 @@ capturing groups ->
 capturing group:
 
 ```
-^([a-z0-9A-Z -]+:){5} 
+^([a-z0-9A-Z -]+:){5}.+$
 
 equivalent of 5 capturing groups
 ```
 
+backslash in sed:
+\1 -> content of capturing group 1 
+\2 -> content of capuring group 2
 
 6.
 ![[Pasted image 20260315211400.png]]
