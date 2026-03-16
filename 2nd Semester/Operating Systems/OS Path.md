@@ -1763,12 +1763,19 @@ END {
 	print suma/NR // average PID
 }
 ```
+- run it:
+```
+mv ex11.txt ex11.awk
+cat ps.fake | awk -f ex11.awk
+```
+- using command:
+```
 
-
+```
 - NR = nr of rows
 - NF = nr of fields
 
-mv rename:
+mv =  rename
 mv ex11.txt ex11.awk
 
 cat ps.fake | awk -f ex11.awk
