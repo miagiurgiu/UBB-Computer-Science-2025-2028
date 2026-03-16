@@ -1787,8 +1787,24 @@ mv ex11.txt ex11.awk
 
 - average only for odd rows:
 ```
+BEGIN {
+   suma = 0
+   count = 0
+}
 
+{
+   if (NR % 2 == 1)
+   {
+      suma += $2
+      count++
+   }
+}
 
+END{
+   print count
+   print suma
+   print suma/count
+}
 ```
 - average only if the first character is vowel
 
