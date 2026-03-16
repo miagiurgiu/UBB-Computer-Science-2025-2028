@@ -1744,9 +1744,11 @@ wc -
 xargs -> puts all numbers on one line
 
 Method 2. Using awk:
-
 - we need the second column:
+```
 cat ps.fake | awk -f ex11.txt
+```
+
 inside ex11.txt we have {print $2}
 
 - NR = nr of rows
