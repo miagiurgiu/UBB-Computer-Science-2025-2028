@@ -1873,6 +1873,7 @@ for (i in fr)
 }
 }
 ```
+- display the shell of every user:
 
 
 
