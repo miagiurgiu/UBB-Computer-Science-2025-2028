@@ -1720,6 +1720,10 @@ $ -> end of line
 d -> delete them
 ```
 - remove header
+```
+cat ps.fake | sed "s/ +/ /g" -E |  cut -d " " -f2 | sed "/^ *$/d" | sed "/PID/d"
+```
+- put all numbers on one line
 
 bc
 
