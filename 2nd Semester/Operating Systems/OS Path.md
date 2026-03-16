@@ -1862,13 +1862,13 @@ BEGIN {
 	count=0
 }
 {
-	fr[$7]++ // counts occurren
+	fr[$7]++ // counts occurrences of each shell
 }
 END {
 for (i in fr)
 {
-        count++
-        print i, fr[i]
+        count++ // counts how many distinct shells exist
+        print i, fr[i] // prints shell count
         print count
 }
 }
