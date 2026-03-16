@@ -1584,7 +1584,8 @@ capturing groups ->
 - very specific regexes
 - lazy and greedy quantifiers
 
-^.+
+^.+:
+![[Pasted image 20260316151532.png]]
 
 
 6.
