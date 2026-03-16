@@ -1600,7 +1600,9 @@ sed -E 's/(pattern1)(pattern2)/\2/'
 ```
 sed -nE 's/regex/\1/p'
 ```
-
+- greedy vs lazy quantifiers:
+	- greedy (default): .* matches as much as possible, then goes backwards (backtracking)
+	- lazy (non-greedy): .*? matches as 
 - extract only using sed because there exists a regex on the same line 
 - very specific regexes
 - lazy and greedy quantifiers
