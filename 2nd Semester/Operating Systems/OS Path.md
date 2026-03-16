@@ -1816,9 +1816,7 @@ $1 -> first column
 ^ -> beginning of word
 [aeiou] -> any vowel
 ```
-
-ex11.awk:
-
+- ex11.awk:
 ```
   GNU nano 7.2                                                   ex11.awk
  BEGIN {
@@ -1845,7 +1843,7 @@ END{
 ```
 
 
- cat /etc/passwd
+cat /etc/passwd
 
 out of these users who are allowed to log in in the system?
 
