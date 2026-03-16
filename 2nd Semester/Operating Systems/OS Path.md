@@ -1564,6 +1564,7 @@ grep '^root' ps.fake | awk '{print $6}' | sort | uniq
 
 5.
 ![[Pasted image 20260315205552.png]]
+Method 1. grep + awk
 - search usernames ending in 88:
 ```
 grep '88:' passwd.fake
@@ -1573,12 +1574,16 @@ grep '88:' passwd.fake
 grep '88:' passwd.fake | awk -F: '{print $5}'
 ```
 
-with awk:
+Method 2. with awk only
 begin nothing:
 if $1 ~ 88 print $5
 https://regex101.com
 
-with sth else:
+```
+awk -F: '$1 ~ /88$/ {print $5}' /etc/passwd
+```
+
+Method 3. with sth else:
 capturing groups -> 
 - extract only using sed because there exists a regex on the same line 
 - very specific regexes
