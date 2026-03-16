@@ -1903,9 +1903,11 @@ cat passwd.fake | sed -E 's/[^r]//g' | sort | uniq
 
 8.
 ![[Pasted image 20260316214514.png]]
-
+```
+cat ps.fake | grep -E "^r" | cut -d' ' -f1 | sort | uniq | sed -E 's/([aeiou])/\1\1/g'  
+```
 
 cat ps.fake | grep -E "^r"
 ![[Pasted image 20260316153215.png]]
 
-cat ps.fake | grep -E "^r" | cut -d' ' -f1 | sort | uniq | sed -E 's/([aeiou])/\1\1/g'   
+ 
