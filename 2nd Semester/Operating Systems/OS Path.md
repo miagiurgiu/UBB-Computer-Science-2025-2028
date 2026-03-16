@@ -1710,9 +1710,13 @@ sed -nE '/regex/ s//\1/p'
 ([a-z0-9A-Z -]+:){5}
 
 ([a-z0-9A-Z -]+:)([a-z0-9A-Z -]+:)([a-z0-9A-Z -]+:)([a-z0-9A-Z -]+:)([a-z0-9A-Z -]+:)
-
-equivalent of 5 capturing groups
+```
+- solution
+```
 cat passwd.fake | grep -E '^[a-z0-9]+88:([a-z0-9A-Z -]+:){4}.+$' | sed -E 's/^[a-z0-9]+88:([a-z0-9A-Z -]+:){4}.+$/\1/g'
+```
+- cleaner solution
+```
 sed -nE '/^[a-z0-9]+88:([a-z0-9A-Z -]+:){4}.+$/ s//\1/p' passwd.fake
 
 ```
@@ -1722,7 +1726,6 @@ backslash in sed:
 \2 -> content of capuring group 2
 
 ![[Pasted image 20260316152749.png]]
-
 
 ?: -> TRANSFORMS ( ) from capturing group to non-capturing group
 
