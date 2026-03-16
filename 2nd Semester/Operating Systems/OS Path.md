@@ -1575,6 +1575,8 @@ grep '88:' passwd.fake | awk -F: '{print $5}'
 
 begin nothing:
 if $1 ~ 88 print $5
+https://regex101.com
+
 
 6.
 ![[Pasted image 20260315211400.png]]
