@@ -1642,3 +1642,9 @@ sed -E 's/^.* ([^-]+)-.*/\1/'
 cat ps.fake | cut -d " " -f2 
 problem: too many spaces
 replace all spaces with a single space
+
+cat ps.fake | sed "s/ +/ /g" -E
+replace multiple spaces with a single space
+
+
+
