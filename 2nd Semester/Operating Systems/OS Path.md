@@ -1843,9 +1843,8 @@ END{
 ```
 
 
-cat /etc/passwd
-
-out of these users who are allowed to log in in the system?
+Extra:
+Show each login shell from cat /etc/passwd and out of these users who are allowed to log in in the system?
 
 BEGIN is optional
 
