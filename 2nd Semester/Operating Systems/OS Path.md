@@ -1688,28 +1688,31 @@ $1 ~ /^[aeiou]/ {}
 ex11.awk:
 
 ```
-BEGIN {
-        sum=0
-        count=0
+  GNU nano 7.2                                                   ex11.awk
+ BEGIN {
+   suma = 0
+   count = 0
 }
-{
-        if(NR%2==0&& $1 ~ /^[aeiou]/)
-        {
-                print $0
-                suma+=$2
-        }
 
-        #print $2
-        #suma+=$2
+{
+   if(NR % 2 == 0 && $1 ~ /^[aeiou]/)
+   {
+     print $0
+     suma += $2
+   }
+
+   #print $2
+   #suma += $2
 }
 
 END{
-        print NR
-        print suma
-        print suma/NR
+   print NR
+   print suma
+   print suma/NR
 }
 ```
 
 
  ![[Pasted image 20260316144943.png]]
 
+out of these users who are allowed to log in in the system?
