@@ -1600,11 +1600,16 @@ capturing group:
 ^[a-z0-9]+88:([a-z0-9A-Z -]+:){4}.+$ 
 equivalent of 5 capturing groups
 cat passwd.fake | grep -E '^[a-z0-9]+88:([a-z0-9A-Z -]+:){4}.+$' | sed -E 's/^[a-z0-9]+88:([a-z0-9A-Z -]+:){4}.+$/\1/g'
+sed -nE '/^[a-z0-9]+88:([a-z0-9A-Z -]+:){4}.+$/ s//\1/p' passwd.fake
 ```
 
 backslash in sed:
 \1 -> content of capturing group 1 
 \2 -> content of capuring group 2
+
+![[Pasted image 20260316152749.png]]
+
+
 
 6.
 ![[Pasted image 20260315211400.png]]
