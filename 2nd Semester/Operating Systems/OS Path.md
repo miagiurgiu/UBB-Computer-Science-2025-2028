@@ -1724,6 +1724,14 @@ d -> delete them
 cat ps.fake | sed "s/ +/ /g" -E |  cut -d " " -f2 | sed "/^ *$/d" | sed "/PID/d"
 ```
 - put all numbers on one line
+```
+cat ps.fake | sed "s/ +/ /g" -E |  cut -d " " -f2 | sed "/^ *$/d" | sed "/PID/d" | xargs
+```
+- turn spaces into addition signs
+```
+
+
+```
 
 bc
 
