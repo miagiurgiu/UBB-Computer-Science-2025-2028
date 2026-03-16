@@ -1636,3 +1636,5 @@ awk -F: '{print $5}' passwd.fake \
 ```
 sed -E 's/^.* ([^-]+)-.*/\1/'
 ```
+
+## Lab 4 - 16 mar 2026
