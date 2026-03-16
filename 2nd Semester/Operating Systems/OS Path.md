@@ -1595,7 +1595,9 @@ capturing groups ->
 capturing group:
 
 ```
+^([a-z0-9A-Z -]+:){5}(.+)$
 ^([a-z0-9A-Z -]+:){5}.+$
+^([a-z0-9]+88+:){5}.+$
 
 equivalent of 5 capturing groups
 ```
