@@ -1711,14 +1711,22 @@ g -> do it for the whole line
 cat ps.fake | sed "s/ +/ /g" -E | cut -d " " -f2
 ```
 - remove empty lines
+```
+cat ps.fake | sed "s/ +/ /g"-E |  cut -d " " -f2 | sed "/^ *$/d"
 
+^ -> beginning of line
+* -> any number of spaces
+$ -> end of line
+d -> delete them
+```
+- remove header
 
 bc
 
 uniq -c => count
 wc -
 
-cat ps.fake | sed "s/ +/ /g"-E |  cut -d " " -f2 | sed "/^ *$/d"
+
 
 xargs -> puts all numbers on one line
 
