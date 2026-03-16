@@ -1573,6 +1573,9 @@ grep '88:' passwd.fake
 grep '88:' passwd.fake | awk -F: '{print $5}'
 ```
 
+begin nothing:
+if $1
+
 6.
 ![[Pasted image 20260315211400.png]]
 - choose UIDs
