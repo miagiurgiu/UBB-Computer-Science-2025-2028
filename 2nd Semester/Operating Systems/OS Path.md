@@ -1851,15 +1851,12 @@ cat /etc/passwd | awk -f trabant.awk -F:
 -F: -> separator is :
 $7 -> shell column
 fr[$7]++ -> frequency vector: count each shell
-for (i i)
+for (i in fr)  print i, fr[i] -> print each shell and its count
 ```
-BEGIN is optional
+- BEGIN is optional
+- de cate ori apare fiecare shell
+- e gol pt ca awk foloseste spatiu ca separator. 
 
-de cate ori apare fiecare shellp
-
-e gol pt ca awk foloseste spatiu ca separator. 
-
-cat /etc/passwd | awk -f trabant.awk -F: 
 
 inside trabant.awk:
 
