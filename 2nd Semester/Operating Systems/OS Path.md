@@ -1660,8 +1660,15 @@ Method x. using capturing group:
 ```
 - the full matching regex:
 ```
+^[a-z0-9]+88:([a-z0-9A-Z -]+:){4}.+$
 
-
+username ending in 88
+skip 4 fields
+match the rest of the line
+```
+- grep command:
+```
+cat passwd.fake | grep -E 'regex'
 ```
 
 ```
