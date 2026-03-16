@@ -1700,6 +1700,10 @@ cat ps.fake | sed "s/ +/ /g" -E
 
 sed -> edits text
 s/../../  -> substitutes
++ -> one or more spaces
+/ -> replace with one space
+g -> do it for the whole line
+-E -> enable extended regex ??
 
 ```
 
