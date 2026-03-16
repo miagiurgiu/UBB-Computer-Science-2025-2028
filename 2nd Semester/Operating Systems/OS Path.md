@@ -1681,6 +1681,7 @@ sed -E 's/^.* ([^-]+)-.*/\1/'
 
 ## Lab 4 - 16 mar 2026
 
+
 cat ps.fake | cut -d " " -f2 
 problem: too many spaces
 replace all spaces with a single space
