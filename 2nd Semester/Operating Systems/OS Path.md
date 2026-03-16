@@ -1640,6 +1640,7 @@ lazy = match as little as possible (instead of taking the whole line like greedy
 
 Method x. using capturing group:
 
+- match usernames ending in 88
 ```
 ^([a-z0-9A-Z -]+:){5}(.+)$
 ^([a-z0-9A-Z -]+:){5}.+$
