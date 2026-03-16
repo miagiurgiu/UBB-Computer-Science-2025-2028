@@ -1750,14 +1750,16 @@ cat ps.fake | awk -f ex11.txt
 ```
 - inside ex11.txt we have {print $2}
 ```
-BEGIN {  
-suma = 0  
-count = 0  
+BEGIN {  // (runs before reading the file)
+suma = 0  // sum of PIDs
+count = 0  // nr of rows
 }
-(runs before reading the file)
-suma = sum of PIDs
-count = nr of rows
+{
+	suma +
+}
 ```
+
+
 - NR = nr of rows
 - NF = nr of fields
 
