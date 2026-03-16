@@ -1671,5 +1671,9 @@ inside ex11.txt we have {print $2}
 
 - NR = nr of rows
 - NF = nr of fields
+
+mv rename:
+mv ex11.txt ex11.awk
+
  
 
