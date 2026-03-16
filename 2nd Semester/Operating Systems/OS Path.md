@@ -1669,6 +1669,7 @@ using awk:
 cat ps.fake | awk -f ex11.txt
 inside ex11.txt we have {print $2}
 
-- 
+- NR = nr of rows
+- NF = nr of fields
  
 
