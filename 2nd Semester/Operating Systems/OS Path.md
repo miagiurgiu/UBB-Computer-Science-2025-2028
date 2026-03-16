@@ -1760,7 +1760,7 @@ count = 0  // nr of rows
 END {
 	print NR // nr of rows
 	print suma // total of PIDs
-	print suma/NR // average PID
+	print suma/count // average PID
 }
 ```
 - run it:
