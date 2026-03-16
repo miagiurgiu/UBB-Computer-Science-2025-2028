@@ -1687,6 +1687,12 @@ sed -E 's/^.* ([^-]+)-.*/\1/'
 - extract the second column (PID):
 ```
 cat ps.fake | cut -d " " -f2 
+
+cat ps.fake -> prints the file
+cut -> extract a column
+-d " " -> the separator is space
+-f2 -> take field 2
+
 ```
 
 problem: too many spaces
