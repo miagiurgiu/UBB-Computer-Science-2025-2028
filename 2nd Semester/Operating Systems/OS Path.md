@@ -1676,7 +1676,14 @@ cat passwd.fake | grep -E 'regex'
 ```
 sed -E 's/regex/\1/g'
 
+\1 refers to ([a-z0-9A-Z -]+:)
 
+cat passwd.fake | grep -E '^[a-z0-9]+88:([a-z0-9A-Z -]+:){4}.+$' | sed -E 's/^[a-z0-9]+88:([a-z0-9A-Z -]+:){4}.+$/\1/g'
+
+```
+- cleaner version using -n and p:
+```
+sed -nE '/regex/ s//\1/p'
 ```
 
 ```
