@@ -1651,3 +1651,4 @@ bc
 uniq -c => count
 wc -
 
+cat ps.fake | sed "s/ +/ /g"-E |  cut -d " " -f2 | sed "/^ *$/d"
