@@ -1675,5 +1675,9 @@ inside ex11.txt we have {print $2}
 mv rename:
 mv ex11.txt ex11.awk
 
+cat ps.fake | awk -f ex11.awk
+
+average only for odd rows:
+
  
 
