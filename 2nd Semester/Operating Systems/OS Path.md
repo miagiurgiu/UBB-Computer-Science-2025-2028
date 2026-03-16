@@ -1754,8 +1754,8 @@ BEGIN {  // (runs before reading the file)
 suma = 0  // sum of PIDs
 count = 0  // nr of rows
 }
-{
-	suma +
+{ // for each line ...
+	suma +=$2
 }
 ```
 
