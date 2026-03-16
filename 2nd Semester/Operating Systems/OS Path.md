@@ -1680,5 +1680,10 @@ cat ps.fake | awk -f ex11.awk
 average only for odd rows:
 
 average only if the first character is vowel
+
+```
+$1 ~ /^[aeiou]/ {}
+```
+
  
 
