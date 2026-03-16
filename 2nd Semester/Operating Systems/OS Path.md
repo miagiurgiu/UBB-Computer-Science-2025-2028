@@ -1580,7 +1580,11 @@ https://regex101.com
 
 with sth else:
 capturing groups -> 
-- extract only using sed because there exists a regex on the f
+- extract only using sed because there exists a regex on the same line 
+- very specific regexes
+- lazy and greedy quantifiers
+
+^.+
 
 
 6.
