@@ -1638,7 +1638,7 @@ lazy = match as little as possible (instead of taking the whole line like greedy
 
 ![[Pasted image 20260316151609.png]]
 
-capturing group:
+Method x. using capturing group:
 
 ```
 ^([a-z0-9A-Z -]+:){5}(.+)$
