@@ -1669,6 +1669,14 @@ match the rest of the line
 - grep command:
 ```
 cat passwd.fake | grep -E 'regex'
+
+??
+```
+- sed command with capturing group
+```
+sed -E 's/regex/\1/g'
+
+
 ```
 
 ```
