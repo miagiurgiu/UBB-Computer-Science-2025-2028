@@ -1767,5 +1767,8 @@ for (i in fr)
 
 cat /etc/passwd | awk -f trabant.awk -F: 
 
-10. sa raman
+10. sa ramana r si sa sterg toate celelalte
+- sed replace everything except r with nothing
+- global mode at sed
+- 
 
