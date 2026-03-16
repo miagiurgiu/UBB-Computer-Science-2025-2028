@@ -1614,6 +1614,7 @@ sed -nE 's/regex/\1/p'
 - greedy mode take from the beginning till the end and go back until you find what you are looking for. this is why lazy mode is slower (more steps)
 - pag 13, could work in one way (-p, -e) 
 
+- GREEDY QUANTIFIER:
 ```
 .+ -> will match almost the entire line because it keeps consuming characters until reaching the end; then, if sth later in the regex fails, it backtracks (gives characters back)
 
@@ -1624,6 +1625,14 @@ greedy -> tries to match as much of the line as possible
 ```
 ^.+:
 ![[Pasted image 20260316151532.png]]
+
+- LAZY QUANTIFIER:
+```
+.+?
+. -> any character
++ -> on
+
+```
 
 ![[Pasted image 20260316151609.png]]
 
