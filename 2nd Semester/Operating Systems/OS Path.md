@@ -1615,11 +1615,11 @@ sed -nE 's/regex/\1/p'
 - pag 13, could work in one way (-p, -e) 
 
 ```
-.+ 
+.+ -> will match almost the entire line because it keeps consuming characters until reaching the end; then, if sth later in the regex fails, it backtracks (gives characters back)
 
 . -> any character
 + -> one or more times
-  greedy -> tries to match as much of 
+greedy -> tries to match as much of the line as possible
 
 ```
 ^.+:
