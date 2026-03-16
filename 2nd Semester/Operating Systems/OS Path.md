@@ -1684,6 +1684,8 @@ sed -E 's/^.* ([^-]+)-.*/\1/'
 11. - Irina
 
 ![[Pasted image 20260316210106.png]]
+
+Method 1:
 - extract the second column (PID):
 ```
 cat ps.fake | cut -d " " -f2 
@@ -1733,28 +1735,15 @@ cat ps.fake | sed "s/ +/ /g" -E |  cut -d " " -f2 | sed "/^ *$/d" | sed "/PID/d"
 ```
 - calculate the sum
 ```
-
-
+cat ps.fake | sed "s/ +/ /g" -E |  cut -d " " -f2 | sed "/^ *$/d" | sed "/PID/d" | xargs | sed "s/ /+/ g" | bc
 ```
 
 bc = basic calculator
-
 uniq -c => count
 wc -
-
-
-
 xargs -> puts all numbers on one line
 
-cat ps.fake | sed "s/ +/ /g" -E |  cut -d " " -f2 | sed "/^ *$/d" | xargs
-
-cat ps.fake | sed "s/ +/ /g" -E |  cut -d " " -f2 | sed "/^ *$/d" | sed "/PID/d" | xargs | sed "s/ /+/ g"
-
-cat ps.fake | sed "s/ +/ /g" -E |  cut -d " " -f2 | sed "/^ *$/d" | sed "/PID/d" | xargs | sed "s/ /+/ g" | bc
-
-cat ps.fake |sed "s/ +/ /g" -E | cut -d " " -f2 | sed "/^ *$/d" | sed "/PID/d" | xargs | sed "s/ /+/ g"  | bc
-
-using awk:
+Method 2. Using awk:
 
 - we need the second column:
 cat ps.fake | awk -f ex11.txt
