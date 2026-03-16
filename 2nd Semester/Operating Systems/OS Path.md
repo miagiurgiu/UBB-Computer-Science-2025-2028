@@ -1734,4 +1734,6 @@ BEGIN {
 print $7
 }
 
+- vector de frecventa folosing coloana 7
+
 
