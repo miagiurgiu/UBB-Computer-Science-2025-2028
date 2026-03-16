@@ -1583,6 +1583,7 @@ capturing groups ->
 - extract only using sed because there exists a regex on the same line 
 - very specific regexes
 - lazy and greedy quantifiers
+- lazy mode -> not defined in standard
 
 ^.+:
 ![[Pasted image 20260316151532.png]]
