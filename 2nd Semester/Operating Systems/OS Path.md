@@ -1693,7 +1693,16 @@ sed -nE '/regex/ s//\1/p'
 ```
 - match a line with at least 6 fields separated by : but without capturing the last part
 ```
-^([a-z0-9A-Z -]+:){5}.+
+^([a-z0-9A-Z -]+:){5}.+$
+ 
+=> skip first 5 fields, ensure sth exists afterwards, used for matching, not extracting
+```
+- match users whose username ends in 88
+```
+^[a-z0-9]+88:([a-z0-9A-Z -]+:){4}.+$ 
+
+=> 
+
 ```
 
 backslash in sed:
