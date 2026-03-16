@@ -1685,5 +1685,31 @@ average only if the first character is vowel
 $1 ~ /^[aeiou]/ {}
 ```
 
+ex11.awk:
+
+```
+BEGIN {
+        sum=0
+        count=0
+}
+{
+        if(NR%2==0&& $1 ~ /^[aeiou]/)
+        {
+                print $0
+                suma+=$2
+        }
+
+        #print $2
+        #suma+=$2
+}
+
+END{
+        print NR
+        print suma
+        print suma/NR
+}
+```
+
+
  
 
