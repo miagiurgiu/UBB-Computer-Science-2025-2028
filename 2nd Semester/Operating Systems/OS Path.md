@@ -1597,8 +1597,9 @@ capturing group:
 ```
 ^([a-z0-9A-Z -]+:){5}(.+)$
 ^([a-z0-9A-Z -]+:){5}.+$
-^[a-z0-9]+88:([a-z0-9A-Z -]+:){4}.+ 
+^[a-z0-9]+88:([a-z0-9A-Z -]+:){4}.+$ 
 equivalent of 5 capturing groups
+cat passwd.fake | grep -E '^[a-z0-9]+88:([a-z0-9A-Z -]+:){4}.+$' | sed -E 's/^[a-z0-9]+88:([a-z0-9A-Z -]+:){4}.+$/\1/g'
 ```
 
 backslash in sed:
