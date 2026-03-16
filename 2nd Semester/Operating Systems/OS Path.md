@@ -1612,6 +1612,9 @@ backslash in sed:
 
 ?: -> TRANSFORMS ( ) from capturing group to non-capturing group
 
+
+
+
 6.
 ![[Pasted image 20260315211400.png]]
 - choose UIDs
@@ -1813,3 +1816,7 @@ cat /etc/passwd | awk -f trabant.awk -F:
 ```
 cat passwd.fake | sed -E 's/[^r]//g' | sort | uniq
 ```
+
+8.
+cat ps.fake | grep -E "^r"
+![[Pasted image 20260316153215.png]]
