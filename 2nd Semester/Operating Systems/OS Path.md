@@ -1729,11 +1729,15 @@ cat ps.fake | sed "s/ +/ /g" -E |  cut -d " " -f2 | sed "/^ *$/d" | sed "/PID/d"
 ```
 - turn spaces into addition signs
 ```
+cat ps.fake | sed "s/ +/ /g" -E |  cut -d " " -f2 | sed "/^ *$/d" | sed "/PID/d" | xargs | sed "s/ /+/g"
+```
+- calculate the sum
+```
 
 
 ```
 
-bc
+bc = basic calculator
 
 uniq -c => count
 wc -
