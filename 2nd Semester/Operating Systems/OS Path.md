@@ -1748,9 +1748,16 @@ Method 2. Using awk:
 ```
 cat ps.fake | awk -f ex11.txt
 ```
-
-inside ex11.txt we have {print $2}
-
+- inside ex11.txt we have {print $2}
+```
+BEGIN {  
+suma = 0  
+count = 0  
+}
+(runs before reading the file)
+suma = sum of PIDs
+count = nr of rows
+```
 - NR = nr of rows
 - NF = nr of fields
 
