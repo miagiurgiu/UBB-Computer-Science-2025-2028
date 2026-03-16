@@ -1649,13 +1649,19 @@ Method x. using capturing group:
 88 -> ends in 88
 : -> next field separator
 ```
-- skip de next 4 fields:
+- skip the next 4 fields:
 ```
 ([a-z0-9A-Z -]+:){4}
 
 [a-z0-9A-Z -]+ -> characters allowed in fields
 : -> field separator
 {4} -> repeat 4 times
+=> the last captured part becomes field 5
+```
+- the full matching regex:
+```
+
+
 ```
 
 ```
