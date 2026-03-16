@@ -1716,3 +1716,6 @@ END{
  cat /etc/passwd
 
 out of these users who are allowed to log in in the system?
+
+BEGIN is optional
+
