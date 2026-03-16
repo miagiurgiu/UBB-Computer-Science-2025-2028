@@ -1807,9 +1807,12 @@ END{
 }
 ```
 - average only if the first character is vowel
-
 ```
-$1 ~ /^[aeiou]/ {}
+$1 ~ /^[aeiou]/ {}\
+
+$1 -> first column
+~ -> matches regex
+
 ```
 
 ex11.awk:
