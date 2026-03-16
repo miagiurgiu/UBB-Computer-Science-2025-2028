@@ -1721,4 +1721,17 @@ BEGIN is optional
 
 de cate ori apare fiecare shellp
 
-e gol 
+e gol pt ca awk foloseste spatiu ca separator. 
+
+cat /etc/passwd | awk -f trabant.awk -F: 
+
+inside trabant.awk:
+
+BEGIN {
+
+}
+{
+print $7
+}
+
+
