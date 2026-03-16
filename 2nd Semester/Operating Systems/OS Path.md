@@ -1602,7 +1602,13 @@ sed -nE 's/regex/\1/p'
 ```
 - greedy vs lazy quantifiers:
 	- greedy (default): .* matches as much as possible, then goes backwards (backtracking)
-	- lazy (non-greedy): .*? matches as 
+	- lazy (non-greedy): .*? matches as little as possible
+		- they are not part of the standard POSIX regex, so sed does not work with lazy quantifiers
+```
+[]
+
+```
+
 - extract only using sed because there exists a regex on the same line 
 - very specific regexes
 - lazy and greedy quantifiers
