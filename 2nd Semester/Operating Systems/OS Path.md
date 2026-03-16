@@ -1845,7 +1845,14 @@ END{
 
 Extra:
 Show each login shell from cat /etc/passwd and out of these users who are allowed to log in in the system?
+```
+cat /etc/passwd | awk -f trabant.awk -F: 
 
+-F: -> separator is :
+$7 -> shell column
+fr[$7]++ -> frequency vector: count each shell
+for (i i)
+```
 BEGIN is optional
 
 de cate ori apare fiecare shellp
