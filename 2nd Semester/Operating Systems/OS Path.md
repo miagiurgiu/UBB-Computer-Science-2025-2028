@@ -1895,14 +1895,16 @@ for (i in fr)
 10.
 ![[Pasted image 20260316214356.png]]
 - sa ramana r si sa sterg toate celelalte
-- sed -<replace everything except r with nothing
+- sed -> replace everything except r with nothing
 - global mode at sed
-
 ```
 cat passwd.fake | sed -E 's/[^r]//g' | sort | uniq
 ```
 
 8.
+![[Pasted image 20260316214514.png]]
+
+
 cat ps.fake | grep -E "^r"
 ![[Pasted image 20260316153215.png]]
 
