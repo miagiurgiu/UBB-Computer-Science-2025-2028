@@ -1785,11 +1785,9 @@ sum/count -> compute average
 mv =  rename
 mv ex11.txt ex11.awk
 
-cat ps.fake | awk -f ex11.awk
+- average only for odd rows:
 
-average only for odd rows:
-
-average only if the first character is vowel
+- average only if the first character is vowel
 
 ```
 $1 ~ /^[aeiou]/ {}
