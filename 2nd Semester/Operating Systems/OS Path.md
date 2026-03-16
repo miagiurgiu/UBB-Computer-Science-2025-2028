@@ -1755,7 +1755,12 @@ suma = 0  // sum of PIDs
 count = 0  // nr of rows
 }
 { // for each line ...
-	suma +=$2
+	suma +=$2 // add PID to the sum
+}
+END {
+	print NR // nr of rows
+	print suma // total of PIDs
+	print suma/NR // average PID
 }
 ```
 
