@@ -1646,5 +1646,8 @@ replace all spaces with a single space
 cat ps.fake | sed "s/ +/ /g" -E
 replace multiple spaces with a single space
 
+bc
 
+uniq -c => count
+wc -
 
