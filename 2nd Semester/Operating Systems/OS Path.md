@@ -1701,7 +1701,19 @@ sed -nE '/regex/ s//\1/p'
 ```
 ^[a-z0-9]+88:([a-z0-9A-Z -]+:){4}.+$ 
 
-=> 
+=> match username ending in 88
+=> SKIP NEXT 4 FIELDS
+=> reach field 5 (full name)
+```
+- equivalent of 5 capturing groups:
+```
+([a-z0-9A-Z -]+:){5}
+
+([a-z0-9A-Z -]+:)([a-z0-9A-Z -]+:)([a-z0-9A-Z -]+:)([a-z0-9A-Z -]+:)([a-z0-9A-Z -]+:)
+
+equivalent of 5 capturing groups
+cat passwd.fake | grep -E '^[a-z0-9]+88:([a-z0-9A-Z -]+:){4}.+$' | sed -E 's/^[a-z0-9]+88:([a-z0-9A-Z -]+:){4}.+$/\1/g'
+sed -nE '/^[a-z0-9]+88:([a-z0-9A-Z -]+:){4}.+$/ s//\1/p' passwd.fake
 
 ```
 
