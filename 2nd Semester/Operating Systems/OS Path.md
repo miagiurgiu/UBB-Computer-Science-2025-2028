@@ -1692,13 +1692,17 @@ cat ps.fake -> prints the file
 cut -> extract a column
 -d " " -> the separator is space
 -f2 -> take field 2
+```
+problem: ps output has too many spaces
+- replace all spaces with a single space
+```
+cat ps.fake | sed "s/ +/ /g" -E
+
+sed -> edits text
+s/../../  -> substitutes
 
 ```
 
-problem: too many spaces
-replace all spaces with a single space
-
-cat ps.fake | sed "s/ +/ /g" -E
 replace multiple spaces with a single space
 
 bc
