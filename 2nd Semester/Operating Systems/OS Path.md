@@ -1874,11 +1874,23 @@ for (i in fr)
 }
 ```
 - display the shell of every user:
-
-
-
-
-cat /etc/passwd | awk -f trabant.awk -F: 
+```
+{
+print $7
+}
+```
+- display the distinct shells used in the system:
+```
+{
+fr[$7]++
+}
+END {
+for (i in fr)
+{
+        print i
+}
+}
+```
 
 10. sa ramana r si sa sterg toate celelalte
 - sed replace everything except r with nothing
