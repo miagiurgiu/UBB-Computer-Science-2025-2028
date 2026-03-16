@@ -1605,14 +1605,12 @@ sed -nE 's/regex/\1/p'
 	- lazy (non-greedy): .*? matches as little as possible
 		- they are not part of the standard POSIX regex, so sed does not work with lazy quantifiers
 ```
-[]
+[^:]* -> prefered
+.* -> not recommended
 
 ```
-
 - extract only using sed because there exists a regex on the same line 
 - very specific regexes
-- lazy and greedy quantifiers
-- lazy mode -> not defined in standard -> ?
 - greedy mode take from the beginning till the end and go back until you find what you are looking for. this is why lazy mode is slower (more steps)
 - pag 13, could work in one way (-p, -e) 
 
