@@ -1584,11 +1584,14 @@ capturing groups ->
 - very specific regexes
 - lazy and greedy quantifiers
 - lazy mode -> not defined in standard
+- pag 13, could work in one way (-p, -e) 
 
 ^.+:
 ![[Pasted image 20260316151532.png]]
 
 ![[Pasted image 20260316151609.png]]
+
+
 
 6.
 ![[Pasted image 20260315211400.png]]
