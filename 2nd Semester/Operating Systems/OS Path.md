@@ -1735,5 +1735,18 @@ print $7
 }
 
 - vector de frecventa folosing coloana 7
+BEGIN {
+
+}
+{
+fr[$7]++
+}
+END {
+for (i in fr)
+{
+        print i
+}
+}
+
 
 
