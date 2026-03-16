@@ -1694,7 +1694,7 @@ cut -> extract a column
 -f2 -> take field 2
 ```
 problem: ps output has too many spaces
-- replace all spaces with a single space
+- replace multiple spaces with a single space
 ```
 cat ps.fake | sed "s/ +/ /g" -E
 
@@ -1706,8 +1706,12 @@ g -> do it for the whole line
 -E -> enable extended regex ??
 
 ```
+- extract PID after fixing spaces
+```
+cat ps.fake | sed "s/ +/ /g" -E | cut -d " " -f2
+```
+- remove empty lines
 
-replace multiple spaces with a single space
 
 bc
 
