@@ -1765,4 +1765,7 @@ for (i in fr)
 }
 }
 
+cat /etc/passwd | awk -f trabant.awk -F: 
+
+
 
