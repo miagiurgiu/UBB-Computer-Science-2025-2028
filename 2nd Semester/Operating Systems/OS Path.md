@@ -1770,7 +1770,14 @@ cat ps.fake | awk -f ex11.awk
 ```
 - using command:
 ```
+ps -ef | awk 'NR>1 {sum += $2; count++} END {print sum/count}'
 
+NR>1 -> skip header
+$2 -> PID column
+sum +=$2 -> add PID
+count++ -> count rows
+END -> after processing
+sum/count -> compute average
 ```
 - NR = nr of rows
 - NF = nr of fields
