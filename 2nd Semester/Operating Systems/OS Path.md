@@ -1666,5 +1666,6 @@ cat ps.fake |sed "s/ +/ /g" -E | cut -d " " -f2 | sed "/^ *$/d" | sed "/PID/d" |
 using awk:
 
 - we need the second column:
-
+cat ps.fake | awk -f ex11.txt
+ inside ex11.txt we have {print $2}
 
