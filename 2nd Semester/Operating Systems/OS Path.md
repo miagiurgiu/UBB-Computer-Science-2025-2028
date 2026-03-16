@@ -1587,6 +1587,7 @@ capturing groups ->
 ^.+:
 ![[Pasted image 20260316151532.png]]
 
+![[Pasted image 20260316151609.png]]
 
 6.
 ![[Pasted image 20260315211400.png]]
