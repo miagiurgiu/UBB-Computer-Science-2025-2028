@@ -1892,8 +1892,10 @@ for (i in fr)
 }
 ```
 
-10. sa ramana r si sa sterg toate celelalte
-- sed replace everything except r with nothing
+10.
+![[Pasted image 20260316214356.png]]
+- sa ramana r si sa sterg toate celelalte
+- sed -<replace everything except r with nothing
 - global mode at sed
 
 ```
