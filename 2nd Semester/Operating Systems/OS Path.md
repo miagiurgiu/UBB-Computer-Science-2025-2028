@@ -1573,9 +1573,14 @@ grep '88:' passwd.fake
 grep '88:' passwd.fake | awk -F: '{print $5}'
 ```
 
+with awk:
 begin nothing:
 if $1 ~ 88 print $5
 https://regex101.com
+
+with sth else:
+capturing groups -> 
+- extract only using sed because there exists a regex on the f
 
 
 6.
