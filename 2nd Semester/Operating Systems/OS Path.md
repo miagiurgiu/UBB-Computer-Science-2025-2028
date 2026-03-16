@@ -1856,38 +1856,13 @@ for (i in fr)  print i, fr[i] -> print each shell and its count
 - BEGIN is optional
 - de cate ori apare fiecare shell
 - e gol pt ca awk foloseste spatiu ca separator. 
-
-
-inside trabant.awk:
-
+- inside trabant.awk:
+```
 BEGIN {
-
+	count=0
 }
 {
-print $7
-}
-
-- vector de frecventa folosing coloana 7
-BEGIN {
-
-}
-{
-fr[$7]++
-}
-END {
-for (i in fr)
-{
-        print i
-}
-}
-
-
-BEGIN {
-count=0
-
-}
-{
-fr[$7]++
+	fr[$7]++ // counts occurren
 }
 END {
 for (i in fr)
@@ -1897,6 +1872,10 @@ for (i in fr)
         print count
 }
 }
+```
+
+
+
 
 cat /etc/passwd | awk -f trabant.awk -F: 
 
