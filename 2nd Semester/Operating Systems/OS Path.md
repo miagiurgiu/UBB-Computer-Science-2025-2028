@@ -1688,15 +1688,12 @@ sed -nE '/regex/ s//\1/p'
 - match a line with at least 6 fields separated by :
 ```
 ^([a-z0-9A-Z -]+:){5}(.+)$
-```
 
+=> skip first 5 fields, then capture the rest of the line
 ```
-
-^([a-z0-9A-Z -]+:){5}.+$
-^[a-z0-9]+88:([a-z0-9A-Z -]+:){4}.+$ 
-equivalent of 5 capturing groups
-cat passwd.fake | grep -E '^[a-z0-9]+88:([a-z0-9A-Z -]+:){4}.+$' | sed -E 's/^[a-z0-9]+88:([a-z0-9A-Z -]+:){4}.+$/\1/g'
-sed -nE '/^[a-z0-9]+88:([a-z0-9A-Z -]+:){4}.+$/ s//\1/p' passwd.fake
+- match a line with at least 6 fields separated by : but without capturing the last part
+```
+^([a-z0-9A-Z -]+:){5}.+
 ```
 
 backslash in sed:
