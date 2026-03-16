@@ -1812,7 +1812,9 @@ $1 ~ /^[aeiou]/ {}\
 
 $1 -> first column
 ~ -> matches regex
-
+/^[aeiou]/ -> line starts with vowel
+^ -> beginning of word
+[aeiou] -> any vowel
 ```
 
 ex11.awk:
