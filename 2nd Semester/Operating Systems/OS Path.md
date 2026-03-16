@@ -1584,7 +1584,10 @@ awk -F: '$1 ~ /88$/ {print $5}' /etc/passwd
 ```
 
 Method 3. with sth else:
+- use sed when you want to match a pattern and extract part of the line at the same time
+
 capturing groups -> 
+-> defined with parantheses ()
 - extract only using sed because there exists a regex on the same line 
 - very specific regexes
 - lazy and greedy quantifiers
