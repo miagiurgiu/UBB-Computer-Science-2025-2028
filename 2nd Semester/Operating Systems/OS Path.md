@@ -1685,9 +1685,10 @@ sed -E 's/^.* ([^-]+)-.*/\1/'
 
 ![[Pasted image 20260316210106.png]]
 - extract the second column (PID):
-
-
+```
 cat ps.fake | cut -d " " -f2 
+```
+
 problem: too many spaces
 replace all spaces with a single space
 
