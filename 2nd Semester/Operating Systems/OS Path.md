@@ -1713,6 +1713,6 @@ END{
 ```
 
 
- ![[Pasted image 20260316144943.png]]
+ cat /etc/passwd
 
 out of these users who are allowed to log in in the system?
