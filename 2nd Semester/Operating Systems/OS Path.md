@@ -1749,4 +1749,20 @@ for (i in fr)
 }
 
 
+BEGIN {
+count=0
+
+}
+{
+fr[$7]++
+}
+END {
+for (i in fr)
+{
+        count++
+        print i, fr[i]
+        print count
+}
+}
+
 
