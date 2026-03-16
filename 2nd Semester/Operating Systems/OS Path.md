@@ -1640,7 +1640,17 @@ lazy = match as little as possible (instead of taking the whole line like greedy
 
 Method x. using capturing group:
 
-- match usernames ending in 88
+- match usernames ending in 88:
+```
+^[a-z0-9]+88:
+
+^ -> beginning of line
+[a-z0-9] -> letters or digits
+88 -> ends in 88
+: -> next field separator
+```
+
+
 ```
 ^([a-z0-9A-Z -]+:){5}(.+)$
 ^([a-z0-9A-Z -]+:){5}.+$
