@@ -1685,9 +1685,13 @@ cat passwd.fake | grep -E '^[a-z0-9]+88:([a-z0-9A-Z -]+:){4}.+$' | sed -E 's/^[a
 ```
 sed -nE '/regex/ s//\1/p'
 ```
-
+- match a line with at least 6 fields separated by :
 ```
 ^([a-z0-9A-Z -]+:){5}(.+)$
+```
+
+```
+
 ^([a-z0-9A-Z -]+:){5}.+$
 ^[a-z0-9]+88:([a-z0-9A-Z -]+:){4}.+$ 
 equivalent of 5 capturing groups
