@@ -1630,8 +1630,10 @@ greedy -> tries to match as much of the line as possible
 ```
 .+?
 . -> any character
-+ -> on
++ -> one or more
+  ? -> lazy mode
 
+lazy = match as little as possible (instead of taking the whole line like greedy does, it stops as soon as the regex can succeed)
 ```
 
 ![[Pasted image 20260316151609.png]]
