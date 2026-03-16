@@ -1592,6 +1592,13 @@ capturing groups ->
 
 ![[Pasted image 20260316151609.png]]
 
+capturing group:
+
+```
+^([a-z0-9A-Z -]+:){5} 
+
+equivalent of 5 capturing groups
+```
 
 
 6.
