@@ -2255,8 +2255,8 @@ other files containing /bin
 any program that we create is also a command
 
 ```
-main() {}
+int main() { return 0}
 a.c 
 
-gcc a.c
+gcc a.c => a.out => execute it => also a command
 ```
