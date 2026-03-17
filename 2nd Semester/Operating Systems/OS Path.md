@@ -2358,4 +2358,9 @@ readonly variables:
 ```
 VAR="MyVar" -> readonly VAR
 ```
-delete the variable (re)
+delete the variable (release the memory -> like free with malloc)
+```
+unset VAR
+```
+local variables -> in functions
+environment variables -> ex: PATH 
