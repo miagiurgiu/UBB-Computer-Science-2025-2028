@@ -2370,5 +2370,13 @@ how to see command variables?
 ```
 printenv
 ```
-when we get started wi
+when we get started with Putty:
+```
 .bashrc
+
+/etc/environment -> place such commands
+```
+
+command line parameters in C:
+
+
