@@ -2407,4 +2407,7 @@ shift (arguments to the left) -> with no parameter -> one argument to the left
 echo $?
 ```
 
-REPLY -> default delimiter
+REPLY -> default delimiter (space)
+READ command -> -d
+
+message for the user, result put in that variable
