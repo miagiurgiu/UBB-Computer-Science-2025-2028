@@ -2319,3 +2319,6 @@ How to produce from C -> assembly code
 
 
 SHELL vs C
+shell -> interpreted because it interprets line by line, slower than sth that is from memory -> if you want to do sth not so ma times, small (size)
+
+c ->
