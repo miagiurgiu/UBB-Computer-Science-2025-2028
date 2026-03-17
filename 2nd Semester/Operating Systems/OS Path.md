@@ -2249,7 +2249,7 @@ control structures -> allows branching, looping etc.
 
 /bin
 /usr/bin
-
+...
 other files containing /bin
 
 any program that we create is also a command
@@ -2272,3 +2272,7 @@ g++
 ```
 
 yum, apt -> for installing stuff
+
+SCRIPT = file that contains 
+1) Unix commands
+2) directives
