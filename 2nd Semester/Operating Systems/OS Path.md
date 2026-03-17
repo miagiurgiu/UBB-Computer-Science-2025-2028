@@ -2339,4 +2339,8 @@ echo Hello World!
 - 4) run it
 - 5) see result in terminal
 
+echo receives 2 arguments:
+![[Pasted image 20260317150221.png]]
 
+echo receives one argument:
+![[Pasted image 20260317150245.png]]
