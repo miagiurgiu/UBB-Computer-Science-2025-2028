@@ -2277,6 +2277,8 @@ SCRIPT = file that contains
 1) Unix commands
 2) directives
 3) .sh suffix -> naming convention (interpreter knows it's a proper file for the compiler)
+- readable, modifiable, easy to give as parameter to an interpreter
+- 
 
 In UNIX, no meaning of "extension": we can have a.b.c.d
 
@@ -2306,10 +2308,9 @@ $ ls -> content of the current folder
 $ ls -l
 
 ```
-
-
-```
 < -> input redirection
 << -> appending to input redirection
 > -> output redirection (if does not exist, write it)
-> 
+>> -> if output file exists, append to it
+```
+
