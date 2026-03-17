@@ -2201,7 +2201,7 @@ bash ->
 - different colors for different file types
 - C - shell
 - K - shell
-- wildcards similar to regular expressions
+- wildcards - similar to regular expressions
 
 pipe -> interprocess communication
 - output of left hand side
