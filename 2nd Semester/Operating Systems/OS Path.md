@@ -2192,5 +2192,8 @@ Shell = common line interpreter; their role is to INTERPRET
 
 sh -> does not allow navigation on that line -> $ or # 
 bash -> 
-newer version of shell (i have the navigation history)
-the prompt is more descriptive -> path $ or # 
+- newer version of shell (i have the navigation history)
+- the prompt is more descriptive -> path $ or # 
+- autocomplete 
+- less f TAB -> autocompletes the common part
+- 
