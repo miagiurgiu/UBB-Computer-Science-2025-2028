@@ -2028,4 +2028,7 @@ cat ps.fake | grep -E "^r"
 ![[Pasted image 20260317101239.png]]
 
 
+
 9.
+![[Pasted image 20260317101320.png]]
+
