@@ -2251,3 +2251,12 @@ control structures -> allows branching, looping etc.
 /usr/bin
 
 other files containing /bin
+
+any program that we create is also a command
+
+```
+main() {}
+a.c 
+
+gcc a.c
+```
