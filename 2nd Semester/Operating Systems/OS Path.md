@@ -343,6 +343,10 @@ EVERYTHING ABOUT GREP:
 - searches through files using regular expressions
 - option arguments:
 ![[Pasted image 20260317111044.png]]
+- * -> zero or more
+- + -> one or more (with grep -E)
+- ? -> zero or one (with grep -E)
+- {2,} -> at least 2 (with grep )
 - display all lines containing "dan"
 ```
 grep "dan"  /etc/passwd
