@@ -305,7 +305,17 @@ grep -E '[0-9]{3}[- ]?[0-9]{3}[- ]?[0-9]{4}' file.txt
 ```
 - How to remove space at the end of each line?
 ```
+sed -E 's/[[:space:]]+$//' file.txt
 
+[[:space:]]+ -> one or more spaces
+$ -> end of line
+// -> delete them
+
+when using d and when simply // for deletion??
+```
+- Remove duplicated spaces
+```
+sed -E 's/[[:space:]]+/ /g' file.txt
 
 ```
 ## Test Prep for Test 1 
