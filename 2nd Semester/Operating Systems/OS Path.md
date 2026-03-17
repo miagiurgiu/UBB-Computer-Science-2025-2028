@@ -299,7 +299,15 @@ Inside nano:
 
 ## Seminar 1 OS
 
+- How to find all lines of a text file that contains phone numbers?
+```
+grep -E '[0-9]{3}[- ]?[0-9]{3}[- ]?[0-9]{4}' file.txt
+```
+- How to remove space at the end of each line?
+```
 
+
+```
 ## Test Prep for Test 1 
 #### correct a given program
 
