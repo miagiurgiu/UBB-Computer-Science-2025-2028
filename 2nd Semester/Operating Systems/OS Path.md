@@ -2067,5 +2067,7 @@ g-> globally apply on each line
 ```
 - using awk:
 ```
+cat passwd.fake | awk '{gsub(/[a-zA-Z0-9 ]/, ""); print}' | sort | uniq
 
+gsub -> global substitution like sed s///g
 ```
