@@ -2202,5 +2202,13 @@ bash ->
 - wildcards?
 
 pipe -> interprocess communication
-
+- output of left hand side
+```
 cat a.txt
+```
+- wanna scroll?
+```
+cat a.txt | less
+
+creates an in-memory mechanism that allows th
+```
