@@ -2214,7 +2214,14 @@ creates an in-memory mechanism that allows those two commands to communicate
 ```
 
 ps -> processes
+```
 ps -ef
 ps -U
+```
+- all processes with their ancestors (which processes created which)
+```
 ps -fax 
-p
+ps -aux 
+```
+
+here docs
