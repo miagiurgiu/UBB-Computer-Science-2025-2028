@@ -2210,5 +2210,11 @@ cat a.txt
 ```
 cat a.txt | less
 
-creates an in-memory mechanism that allows th
+creates an in-memory mechanism that allows those two commands to communicate
 ```
+
+ps -> processes
+ps -ef
+ps -U
+ps -fax 
+p
