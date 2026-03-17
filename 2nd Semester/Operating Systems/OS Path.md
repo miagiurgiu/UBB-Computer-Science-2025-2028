@@ -2313,4 +2313,4 @@ $ ls -l
 >> -> if output file exists, append to it
 ```
 
-How to produce from C ->
+How to produce from C -> assembly code
