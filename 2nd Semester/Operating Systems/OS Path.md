@@ -2260,9 +2260,15 @@ a.c
 
 gcc a.c => a.out => execute it => also a command
 gcc -Wall -o myp a.c
-does not work with .cpp
-
-int main() { return 0; }
-a.c 
+```
 
 ```
+gcc does not work with .cpp
+
+int main() { return 0; }
+a.cpp
+
+g++
+```
+
+yum, apt -> for installing stuff
