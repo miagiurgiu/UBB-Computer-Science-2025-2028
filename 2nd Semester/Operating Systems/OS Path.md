@@ -2201,7 +2201,7 @@ bash ->
 - different colors for different file types
 - C - shell
 - K - shell
-- wildcards?
+- wildcards similar to regular expressions
 
 pipe -> interprocess communication
 - output of left hand side
@@ -2433,6 +2433,7 @@ how to create a 0 size file? using touch.
 
 \t\v -> all 3 are considered spaces
 
+![[Pasted image 20260317153015.png]]
 S=0 (sum initialised with 0)
 f -> variable in this list 
 $1 first argument after the command main
@@ -2442,4 +2443,6 @@ count the lines that are not empty
 $f
 wc -l -> count the lines
 add to the sum the value of that variabel
-do <
+do <-> done
+display
+double quotes when ... ?
