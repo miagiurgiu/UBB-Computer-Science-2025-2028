@@ -355,7 +355,13 @@ grep -i "^dan:" /etc/passwd
 ```
 grep -E "^[^0-9:]+:" /etc/passwd
 ```
-- display the whole line for all users wh
+- display the whole line for all users who have at least two vowels in username
+```
+grep -i -E "^[^:]*[aeiou]"
+
+```
+
+
 
 ## Test Prep for Test 1 
 #### correct a given program
