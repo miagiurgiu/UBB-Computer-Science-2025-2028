@@ -2344,3 +2344,5 @@ echo receives 2 arguments:
 
 echo receives one argument:
 ![[Pasted image 20260317150245.png]]
+
+include comments!
