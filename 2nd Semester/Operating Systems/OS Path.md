@@ -2284,4 +2284,5 @@ How to run a script:
 
 prompt:
 $ ls - is found in /bin
-$ a.out -> "command or filename not found" ()
+$ a.out -> "command or filename not found" -> located in PATH -> absolute vs relative
+PATH -> environment variable
