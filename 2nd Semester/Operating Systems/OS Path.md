@@ -2411,3 +2411,6 @@ REPLY -> default delimiter (space)
 READ command -> -d
 
 message for the user, result put in that variable
+```
+read -p "Enter sth: " ME
+```
