@@ -343,8 +343,7 @@ EVERYTHING ABOUT GREP:
 - searches through files using regular expressions
 - option arguments:
 ![[Pasted image 20260317111044.png]]
-
-
+- display all lines containing "dan"
 
 ## Test Prep for Test 1 
 #### correct a given program
