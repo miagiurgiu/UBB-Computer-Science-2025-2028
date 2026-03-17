@@ -374,7 +374,15 @@ grep -E -i "^([^:]*:){4}[^:]*\<ion\>" /etc/passwd
 ```
 grep "." a.txt
 ```
+- display empty lines
+```
+grep "^$" a.txt
+```
+- display all lines containing an odd number of characters
+```
+grep -E "^(..)"
 
+```
 
 ## Test Prep for Test 1 
 #### correct a given program
