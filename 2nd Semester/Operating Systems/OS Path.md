@@ -2367,4 +2367,8 @@ environment variables -> ex: PATH
 shell variables -> same meaning in any shell
 
 how to see command variables?
-printend
+```
+printenv
+```
+when we get started wi
+.bashrc
