@@ -2414,3 +2414,9 @@ message for the user, result put in that variable
 ```
 read -p "Enter sth: " ME
 ```
+
+export VAR -> VAR becomes a global variable for every ...
+
+if you want ... then instead of ./ use:
+
+
