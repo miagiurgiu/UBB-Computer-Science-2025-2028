@@ -2201,4 +2201,6 @@ bash ->
 - K - shell
 - wildcards?
 
-pipe -> 
+pipe -> interprocess communication
+
+cat a.txt
