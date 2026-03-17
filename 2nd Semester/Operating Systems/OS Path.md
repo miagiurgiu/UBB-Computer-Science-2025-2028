@@ -2316,3 +2316,6 @@ $ ls -l
 How to produce from C -> assembly code
 - preprocessor directives?
 - #include <stdio.h> -> editing step
+
+
+SHELL vs C
