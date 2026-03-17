@@ -348,6 +348,14 @@ EVERYTHING ABOUT GREP:
 grep "dan" | /etc/passwd
 ```
 - display the line of username "dan", ending in :
+```
+grep -i "^dan:" /etc/passwd
+```
+- display all users who don't have digits in their username
+```
+grep -E "^[^0-9]"
+
+```
 
 ## Test Prep for Test 1 
 #### correct a given program
