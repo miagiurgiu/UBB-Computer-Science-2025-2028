@@ -2276,3 +2276,6 @@ yum, apt -> for installing stuff
 SCRIPT = file that contains 
 1) Unix commands
 2) directives
+3) .sh suffix -> naming convention (interpretor knows it's a proper file for the compiler)
+
+In UNIX, no meaning of "extension": we can have a.b.c.d
