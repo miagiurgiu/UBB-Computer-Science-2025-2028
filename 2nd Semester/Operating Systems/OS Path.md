@@ -2390,6 +2390,14 @@ int main(int argc, char **argv, char **envp)
 
 ```
 
+command line arguments
+```
+$1 - $9 -> command line arguments
+$0 -> nam
+
+```
 return 0 -> success from the shell's perspective
 
 shift (to the left)
+newer shells -> continue after line between braces (${10}, ${11})
+
