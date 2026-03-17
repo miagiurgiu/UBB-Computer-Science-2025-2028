@@ -296,6 +296,10 @@ Inside nano:
 - to exit: CTRL + X
 - nano -l filename.c => numbered lines
 
+
+## Seminar 1 OS
+
+
 ## Test Prep for Test 1 
 #### correct a given program
 
@@ -2071,3 +2075,4 @@ cat passwd.fake | awk '{gsub(/[a-zA-Z0-9 ]/, ""); print}' | sort | uniq
 
 gsub -> global substitution like sed s///g
 ```
+
