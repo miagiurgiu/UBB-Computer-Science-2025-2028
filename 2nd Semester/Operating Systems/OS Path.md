@@ -390,7 +390,7 @@ grep -E -i "\<atlantic\>|\<pacific\>|\<indian\>|\<arctic\>|\<antarctic\>" a.txt
 ```
 - display all lines containing an email addres
 ```
-grep -E -i "\<[^@*\!?]+@[a-z0-9]"
+grep -E -i "\<[^@*\!?]+@[a-z0-9_-]+(.[a-z0-9_-]+)+\>" a.txt
 
 ```
 
