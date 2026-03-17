@@ -2188,4 +2188,7 @@ Shell = common line interpreter; their role is to INTERPRET
 - interactive command language
 - beside regular commands, we can have scripts
 - run commands => scripts run by sb else
-- emu
+- emulator to connect to server (ssh = secure shell)
+
+sh ->
+bash -> newer ver
