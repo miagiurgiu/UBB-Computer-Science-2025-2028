@@ -345,7 +345,7 @@ EVERYTHING ABOUT GREP:
 ![[Pasted image 20260317111044.png]]
 - display all lines containing "dan"
 ```
-grep "dan" | /etc/passwd
+grep "dan"  /etc/passwd
 ```
 - display the line of username "dan", ending in :
 ```
