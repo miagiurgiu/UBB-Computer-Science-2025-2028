@@ -2255,8 +2255,14 @@ other files containing /bin
 any program that we create is also a command
 
 ```
-int main() { return 0}
+int main() { return 0; }
 a.c 
 
 gcc a.c => a.out => execute it => also a command
+gcc -Wall -o myp a.c
+does not work with .cpp
+
+int main() { return 0; }
+a.c 
+
 ```
