@@ -2346,3 +2346,4 @@ echo receives one argument:
 ![[Pasted image 20260317150245.png]]
 
 include comments!
+no space between identifier and "=" and before and after value
