@@ -2417,6 +2417,10 @@ read -p "Enter sth: " ME
 
 export VAR -> VAR becomes a global variable for every ...
 
-if you want ... then instead of ./ use:
+if you want ... then instead of ./script.sh use:
 
+```
+sh.             script.sh
+source.     script.
 
+```
