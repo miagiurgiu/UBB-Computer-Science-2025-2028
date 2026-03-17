@@ -2191,4 +2191,6 @@ Shell = common line interpreter; their role is to INTERPRET
 - emulator to connect to server (ssh = secure shell)
 
 sh -> does not allow navigation on that line -> $ or # 
-bash -> newer version of shell (i have the navigation history), the prompt is more descriptive
+bash -> 
+newer version of shell (i have the navigation history)
+the prompt is more descriptive -> path $ or # 
