@@ -2182,3 +2182,4 @@ cat passwd.fake | awk '{gsub(/[a-zA-Z0-9 ]/, ""); print}' | sort | uniq
 gsub -> global substitution like sed s///g
 ```
 
+## Seminar 2- 17 mar 2026
