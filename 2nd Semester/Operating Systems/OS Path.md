@@ -380,9 +380,15 @@ grep "^$" a.txt
 ```
 - display all lines containing an odd number of characters
 ```
-grep -E "^(..)"
+grep -E "^(..)*.$" a.txt
 
 ```
+- display all lines containing an ocean name
+```
+grep -E -i "\<atlantic\"
+
+```
+
 
 ## Test Prep for Test 1 
 #### correct a given program
