@@ -375,6 +375,8 @@ grep -E -i "^([^:]*:){4}[^:]*\<ion\>" /etc/passwd
 - display non-empty lines
 ```
 grep "." a.txt
+
+. -> any single character except newline
 ```
 - display empty lines
 ```
