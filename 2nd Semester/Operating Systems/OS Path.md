@@ -2293,6 +2293,8 @@ $ a.out -> "command or filename not found" -> located in PATH -> absolute vs rel
 
 ../../a.out -> if a.out is in grandparent folder
 ```
-
-
-PATH -> environment variable
+- not recommended:
+```
+PATH ./
+$ a.out
+```
