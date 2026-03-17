@@ -364,10 +364,13 @@ grep -i -E "^[^:]*([aeiou] [^:]*){2,}:" /etc/passwd
 ```
 - display the lines of all users not having bash as their shell
 ```
-grep -v "/bash$" /e
+grep -v "/bash$" /etc/passwd
+```
+- display all lines of all usernames named Ion (not Ionescu, Simion)
+```
+grep -E -i "^([^:])"
 
 ```
-
 ## Test Prep for Test 1 
 #### correct a given program
 
