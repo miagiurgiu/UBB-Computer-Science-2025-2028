@@ -2319,6 +2319,10 @@ How to produce from C -> assembly code
 
 
 SHELL vs C
-shell -> interpreted because it interprets line by line, slower than sth that is from memory -> if you want to do sth not so ma times, small (size)
+shell -> interpreted (shell) because it interprets line by line, slower than sth that is from memory -> if you want to do sth not so many times, small (size)
 
-c ->
+c -> compiled (gcc) because it translates whole code at once -> do sth many times
+
+#! -> directive given to shell
+#! /bin/sh -> use this interpreter
+#! /bin/bash -> use this interpreter
