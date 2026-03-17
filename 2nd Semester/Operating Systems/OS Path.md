@@ -341,6 +341,10 @@ Examples for rules:
 
 EVERYTHING ABOUT GREP:
 - searches through files using regular expressions
+- option arguments:
+![[Pasted image 20260317111044.png]]
+
+
 
 ## Test Prep for Test 1 
 #### correct a given program
