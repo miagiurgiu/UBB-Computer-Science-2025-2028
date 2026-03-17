@@ -326,7 +326,17 @@ Extended regular expression rules:
 ![[Pasted image 20260317110312.png]]
 ![[Pasted image 20260317110326.png]]
 
+Examples for rules:
+```
+.* -> any sequence of characters
 
+[a-zA-Z02468] -> any lowercase, any digit, any uppercase
+
+[ !] -> space or !
+
+^[^0-9]+$ -> 
+
+```
 ## Test Prep for Test 1 
 #### correct a given program
 
