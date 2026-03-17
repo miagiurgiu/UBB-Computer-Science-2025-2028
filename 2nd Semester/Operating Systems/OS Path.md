@@ -2059,5 +2059,10 @@ cat last.fake | awk -f ex7.awk | sort | uniq
 ```
 cat passwd.fake | sed -E 's/[a-z0-9A-Z ]//g' | sort | uniq
 
-g-> globally, apply on each line
+or
+
+sed -E 's/[a-zA-Z0-9 ]//g' passwd.fake | sort | uniq
+
+g-> globally apply on each line
 ```
+- using awk:
