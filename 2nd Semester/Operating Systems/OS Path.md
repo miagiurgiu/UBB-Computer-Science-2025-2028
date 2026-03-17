@@ -2197,4 +2197,8 @@ bash ->
 - autocomplete 
 - less f TAB -> autocompletes the common part
 - different colors for different file types
-- 
+- C - shell
+- K - shell
+- wildcards?
+
+pipe -> 
