@@ -2239,4 +2239,5 @@ common substitution -> single quotes, double quotes
 '' -> single quotes -> everything is taken literally (preferred for regex)
 "" -> double quotes -> if regex contains $, it could create confusion
 
-'$(command)'
+'$(command)' -> execute, will display result
+"$(command)" -> command substitution -> substitute the part inside quotes with ...
