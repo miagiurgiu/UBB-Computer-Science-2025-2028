@@ -2190,6 +2190,7 @@ Shell = common line interpreter; their role is to INTERPRET
 - run commands => scripts run by sb else
 - emulator to connect to server (ssh = secure shell)
 - script language
+- any program runnable on computer
 
 sh -> does not allow navigation on that line -> $ or # 
 bash -> 
@@ -2245,3 +2246,8 @@ common substitution -> single quotes, double quotes
 
 variables
 control structures -> allows branching, looping etc.
+
+/bin
+/usr/bin
+
+other files containing /bin
