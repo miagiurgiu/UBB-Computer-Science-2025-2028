@@ -2364,3 +2364,7 @@ unset VAR
 ```
 local variables -> in functions
 environment variables -> ex: PATH 
+shell variables -> same meaning in any shell
+
+how to see command variables?
+printend
