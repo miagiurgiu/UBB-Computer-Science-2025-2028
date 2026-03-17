@@ -313,11 +313,15 @@ $ -> end of line
 
 when using d and when simply // for deletion??
 ```
-- Remove duplicated spaces
+- Remove duplicated spaces -> replace multiple spaces with one space
 ```
 sed -E 's/[[:space:]]+/ /g' file.txt
-
 ```
+- Verify email format
+```
+grep -E '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$' file.txt
+```
+
 ## Test Prep for Test 1 
 #### correct a given program
 
