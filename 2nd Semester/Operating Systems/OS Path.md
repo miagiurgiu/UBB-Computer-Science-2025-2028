@@ -377,6 +377,7 @@ grep -v "/bash$" /etc/passwd
 ```
 grep -E -i "^([^:]*:){4}[^:]*\<ion\>" /etc/passwd
 
+\<ion\> -> whole word ion, not part of a larger word
 
 ```
 - display non-empty lines
