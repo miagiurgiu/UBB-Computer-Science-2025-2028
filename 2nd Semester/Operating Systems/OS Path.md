@@ -346,7 +346,7 @@ EVERYTHING ABOUT GREP:
 - * -> zero or more
 - + -> one or more (with grep -E)
 - ? -> zero or one (with grep -E)
-- {2,} -> at least 2 (with grep )
+- {2,} -> at least 2 (with grep -E)
 - display all lines containing "dan"
 ```
 grep "dan"  /etc/passwd
@@ -366,6 +366,7 @@ grep -E "^[^0-9:]+:" /etc/passwd
 grep -i -E "^[^:]*[aeiou] [^:]*[aeiou] [^:]*:" /etc/passwd
 
 grep -i -E "^[^:]*([aeiou] [^:]*){2,}:" /etc/passwd
+([aeiou] [^:]*){2,} -> repeat this pattern at least 2 times
 
 ```
 - display the lines of all users not having bash as their shell
@@ -375,6 +376,8 @@ grep -v "/bash$" /etc/passwd
 - display all lines of all usernames named Ion (not Ionescu, Simion)
 ```
 grep -E -i "^([^:]*:){4}[^:]*\<ion\>" /etc/passwd
+
+
 ```
 - display non-empty lines
 ```
