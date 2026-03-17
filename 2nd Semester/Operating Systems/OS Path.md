@@ -2186,4 +2186,6 @@ gsub -> global substitution like sed s///g
 
 Shell = common line interpreter; their role is to INTERPRET
 - interactive command language
-- 
+- beside regular commands, we can have scripts
+- run commands => scripts run by sb else
+- emu
