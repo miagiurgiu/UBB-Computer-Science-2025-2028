@@ -2446,3 +2446,6 @@ add to the sum the value of that variabel
 do <-> done
 display
 double quotes when ... ?
+
+creates all combinations that exist between those two sets (cartesian product)
+![[Pasted image 20260317153232.png]]
