@@ -2196,4 +2196,5 @@ bash ->
 - the prompt is more descriptive -> path $ or # 
 - autocomplete 
 - less f TAB -> autocompletes the common part
+- different colors for different file types
 - 
