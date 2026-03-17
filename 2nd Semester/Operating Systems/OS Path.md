@@ -2225,3 +2225,11 @@ ps -aux
 ```
 
 here docs
+- local document where we have
+```
+command << EOF
+command <<HERE
+...
+HERE
+
+```
