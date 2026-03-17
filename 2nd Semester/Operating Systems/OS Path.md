@@ -350,6 +350,8 @@ grep "dan"  /etc/passwd
 - display the line of username "dan", ending in :
 ```
 grep -i "^dan:" /etc/passwd
+
+^dan -> line must start with da, then immediately followed by :
 ```
 - display all users who don't have digits in their username
 ```
