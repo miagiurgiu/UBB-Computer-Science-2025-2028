@@ -2231,5 +2231,8 @@ command << EOF
 command <<HERE
 ...
 HERE
+... -> local document given to the command
 
 ```
+
+common substitution
