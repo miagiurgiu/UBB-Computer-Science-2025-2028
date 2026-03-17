@@ -2285,6 +2285,7 @@ How to run a script:
 prompt:
 $ ls - is found in /bin
 $ a.out -> "command or filename not found" -> located in PATH -> absolute vs relative
+PATH -> environment variable
 ```
 ./a.out
 
@@ -2298,3 +2299,5 @@ $ a.out -> "command or filename not found" -> located in PATH -> absolute vs rel
 PATH ./
 $ a.out
 ```
+
+- if we have multiple a.out files, it executes the closest ones -> use either relati
