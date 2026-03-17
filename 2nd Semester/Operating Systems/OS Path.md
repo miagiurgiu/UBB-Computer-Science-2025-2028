@@ -2329,9 +2329,14 @@ STRUCTURE OF A SCRIPT:
 #! -> directive given to shell
 #! /bin/sh -> use this interpreter
 #! /bin/bash -> use this interpreter
+
 ```
 - 2) 
 ```
 echo Hello World!
 ```
-- 3) i
+- 3) give permission
+- 4) run it
+- 5) see result in terminal
+
+
