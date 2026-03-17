@@ -2378,5 +2378,11 @@ when we get started with Putty:
 ```
 
 command line parameters in C:
+```
+int main() {}
 
+int main(int argc, char argv[])
+-> i have the argument count (how many arg) and the list of arguments as l
+int main(int argc, char **argv[])
 
+```
