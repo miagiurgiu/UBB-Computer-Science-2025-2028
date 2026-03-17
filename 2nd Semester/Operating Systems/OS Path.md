@@ -2032,6 +2032,24 @@ cat last.fake | awk '$1 ~ /^t/ && $2 == "pts/9" {print $1}' | sort | uniq
 ```
 - using .awk nano file:
 ```
+ex7.awk:
+
+BEGIN {
+
+}
+{
+        if ($1 ~ /^t/ && $2 == "pts/9")
+        {
+                print $1
+        }
+}
+END {
+
+}
+
+```
+- run it:
+```
 
 ```
 
