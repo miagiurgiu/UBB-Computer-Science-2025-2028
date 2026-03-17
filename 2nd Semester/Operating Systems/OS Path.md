@@ -2283,4 +2283,5 @@ In UNIX, no meaning of "extension": we can have a.b.c.d
 How to run a script:
 
 prompt:
-> $ ls
+$ ls - is found in /bin
+$ a.out -> "command or filename not found" ()
