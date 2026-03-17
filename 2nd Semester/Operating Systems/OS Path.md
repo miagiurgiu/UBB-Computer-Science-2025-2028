@@ -322,6 +322,11 @@ sed -E 's/[[:space:]]+/ /g' file.txt
 grep -E '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$' file.txt
 ```
 
+Extended regular expression rules:
+![[Pasted image 20260317110312.png]]
+![[Pasted image 20260317110326.png]]
+
+
 ## Test Prep for Test 1 
 #### correct a given program
 
