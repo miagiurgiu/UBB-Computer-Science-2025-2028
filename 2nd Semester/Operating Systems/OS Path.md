@@ -368,9 +368,14 @@ grep -v "/bash$" /etc/passwd
 ```
 - display all lines of all usernames named Ion (not Ionescu, Simion)
 ```
-grep -E -i "^([^:])"
-
+grep -E -i "^([^:]*:){4}[^:]*\<ion\>" /etc/passwd
 ```
+- display non-empty lines
+```
+grep "." a.txt
+```
+
+
 ## Test Prep for Test 1 
 #### correct a given program
 
