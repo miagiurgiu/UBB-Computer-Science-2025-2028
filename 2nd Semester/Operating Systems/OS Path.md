@@ -2425,4 +2425,6 @@ source.     script.
 ```
 
 ![[Pasted image 20260317152538.png]]
-there are 3 spaces 
+there are 3 spaces in there
+
+$() cause you are younger
