@@ -2304,3 +2304,12 @@ $ a.out
 
 $ ls -> content of the current folder
 $ ls -l
+
+```
+
+
+```
+< -> input redirection
+<< -> appending to input redirection
+> -> output redirection (if does not exist, write it)
+> 
