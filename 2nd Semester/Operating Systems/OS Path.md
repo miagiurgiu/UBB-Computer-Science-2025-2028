@@ -334,8 +334,9 @@ Examples for rules:
 
 [ !] -> space or !
 
-^[^0-9]+$ -> 
+^[^0-9]+$ -> non-empty lines containing any characters except digits
 
+\([Nn][Oo] )+ -> any refusal, no matter how insistent
 ```
 ## Test Prep for Test 1 
 #### correct a given program
