@@ -2024,4 +2024,8 @@ cat ps.fake | grep -E "^r" | cut -d' ' -f1 | sort | uniq | sed -E 's/([aeiou])/\
 cat ps.fake | grep -E "^r"
 ![[Pasted image 20260316153215.png]]
 
- 
+7.
+![[Pasted image 20260317101239.png]]
+
+
+9.
