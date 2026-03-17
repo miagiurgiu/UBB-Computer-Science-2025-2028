@@ -2442,7 +2442,7 @@ count the lines that are not empty
 ^ \t -> not space or horizonthal ...
 $f
 wc -l -> count the lines
-add to the sum the value of that variabel
+add to the sum the value of that variable
 do <-> done
 display
 double quotes when ... ?
