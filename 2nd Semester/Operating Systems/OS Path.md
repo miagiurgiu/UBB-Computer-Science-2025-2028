@@ -2435,4 +2435,11 @@ how to create a 0 size file? using touch.
 
 S=0 (sum initialised with 0)
 f -> variable in this list 
-$1 f
+$1 first argument after the command main
+; -> common separator not always?
+count the lines that are not empty
+^ \t -> not space or horizonthal ...
+$f
+wc -l -> count the lines
+add to the sum the value of that variabel
+do <
