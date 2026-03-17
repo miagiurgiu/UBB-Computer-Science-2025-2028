@@ -2066,3 +2066,6 @@ sed -E 's/[a-zA-Z0-9 ]//g' passwd.fake | sort | uniq
 g-> globally apply on each line
 ```
 - using awk:
+```
+
+```
