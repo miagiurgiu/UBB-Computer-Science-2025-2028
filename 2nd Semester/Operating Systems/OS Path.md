@@ -2348,10 +2348,14 @@ echo receives one argument:
 include comments!
 no space between identifier and "=" and before and after value
 ```
-
-
+VAR=value
 ```
 how to get this variable inside memory:
 ```
 echo $VAR
 ```
+readonly variables:
+```
+VAR="MyVar" -> readonly VAR
+```
+delete the variable (re)
