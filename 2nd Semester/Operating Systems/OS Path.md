@@ -2382,7 +2382,10 @@ command line parameters in C:
 int main() {}
 
 int main(int argc, char argv[])
--> i have the argument count (how many arg) and the list of arguments as l
+-> i have the argument count (how many arguments) and the list of arguments as list of strings
+
 int main(int argc, char **argv[])
+
+int main(int argc, char **argv, char **envp)
 
 ```
