@@ -2300,4 +2300,7 @@ PATH ./
 $ a.out
 ```
 
-- if we have multiple a.out files, it executes the closest ones -> use either relati
+- if we have multiple a.out files, it executes the closest ones -> use either relative/absolute path to make sure you execute the correct file -> this is how the interpreter finds the files
+
+ls -> content of the current folder
+ls -l
