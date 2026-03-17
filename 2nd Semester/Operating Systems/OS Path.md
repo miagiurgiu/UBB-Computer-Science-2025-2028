@@ -2393,6 +2393,7 @@ int main(int argc, char **argv, char **envp)
 command line arguments
 ```
 $1 - $9 -> command line arguments
+newer shells -> continue after line between braces (${10}, ${11})
 $0 -> name of the command being run
 $*
 $@
@@ -2405,5 +2406,5 @@ shift (arguments to the left) -> with no parameter -> one argument to the left
 ./a.out
 echo $?
 ```
-newer shells -> continue after line between braces (${10}, ${11})
 
+REPLY -> default delimiter
