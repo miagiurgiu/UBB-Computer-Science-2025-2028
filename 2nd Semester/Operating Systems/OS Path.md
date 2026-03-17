@@ -2428,3 +2428,6 @@ source.     script.
 there are 3 spaces in there
 
 $() cause you are younger
+
+how to create a 0 size file? using touch.
+
