@@ -2422,5 +2422,7 @@ if you want ... then instead of ./script.sh use:
 ```
 sh.             script.sh
 source.     script.
-
 ```
+
+![[Pasted image 20260317152538.png]]
+there are 3 spaces 
