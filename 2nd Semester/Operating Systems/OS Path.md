@@ -2285,4 +2285,14 @@ How to run a script:
 prompt:
 $ ls - is found in /bin
 $ a.out -> "command or filename not found" -> located in PATH -> absolute vs relative
+```
+./a.out
+
+. -> current folder
+/ -> path separator
+
+../../a.out -> if a.out is in grandparent folder
+```
+
+
 PATH -> environment variable
