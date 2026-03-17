@@ -2183,3 +2183,7 @@ gsub -> global substitution like sed s///g
 ```
 
 ## Seminar 2- 17 mar 2026
+
+Shell = common line interpreter; their role is to INTERPRET
+- interactive command language
+- 
