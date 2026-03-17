@@ -388,8 +388,11 @@ grep -E "^(..)*.$" a.txt
 grep -E -i "\<atlantic\>|\<pacific\>|\<indian\>|\<arctic\>|\<antarctic\>" a.txt
 
 ```
-- display all lines containing an email
+- display all lines containing an email addres
+```
+grep -E -i "\<[^@*\!?]+@[a-z0-9]"
 
+```
 
 ## Test Prep for Test 1 
 #### correct a given program
