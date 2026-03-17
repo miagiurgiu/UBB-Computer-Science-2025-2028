@@ -385,9 +385,10 @@ grep -E "^(..)*.$" a.txt
 ```
 - display all lines containing an ocean name
 ```
-grep -E -i "\<atlantic\"
+grep -E -i "\<atlantic\>|\<pacific\>|\<indian\>|\<arctic\>|\<antarctic\>" a.txt
 
 ```
+- display all lines containing an email
 
 
 ## Test Prep for Test 1 
