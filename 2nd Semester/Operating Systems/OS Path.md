@@ -353,8 +353,7 @@ grep -i "^dan:" /etc/passwd
 ```
 - display all users who don't have digits in their username
 ```
-grep -E "^[^0-9]"
-
+grep -E "^[^0-9:]+:" /etc/passwd
 ```
 
 ## Test Prep for Test 1 
