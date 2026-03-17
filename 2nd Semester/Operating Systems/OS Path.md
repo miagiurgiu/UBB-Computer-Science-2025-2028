@@ -359,12 +359,14 @@ grep -E "^[^0-9:]+:" /etc/passwd
 ```
 grep -i -E "^[^:]*[aeiou] [^:]*[aeiou] [^:]*:" /etc/passwd
 
-grep -i -E "^[^:]*([aeiou] [^:]*):" /etc/passwd
-
+grep -i -E "^[^:]*([aeiou] [^:]*){2,}:" /etc/passwd
 
 ```
+- display the lines of all users not having bash as their shell
+```
+grep -v "/bash$" /e
 
-
+```
 
 ## Test Prep for Test 1 
 #### correct a given program
