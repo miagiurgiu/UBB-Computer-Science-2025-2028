@@ -2056,4 +2056,8 @@ cat last.fake | awk -f ex7.awk | sort | uniq
 9.
 ![[Pasted image 20260317101320.png]]
 - using sed:
+```
+cat passwd.fake | sed -E 's/[a-z0-9A-Z ]//g' | sort | uniq
 
+g-> globally, apply on each line
+```
