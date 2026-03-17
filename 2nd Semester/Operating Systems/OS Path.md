@@ -2431,3 +2431,8 @@ $() cause you are younger
 
 how to create a 0 size file? using touch.
 
+\t\v -> all 3 are considered spaces
+
+S=0 (sum initialised with 0)
+f -> variable in this list 
+$1 f
