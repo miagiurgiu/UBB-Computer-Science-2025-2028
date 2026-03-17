@@ -2050,6 +2050,7 @@ END {
 ```
 - run it:
 ```
+cat last.fake | awk -f ex7.awk | sort | uniq
 
 ```
 
