@@ -338,6 +338,10 @@ Examples for rules:
 
 \([Nn][Oo] )+ -> any refusal, no matter how insistent
 ```
+
+EVERYTHING ABOUT GREP:
+- searches through files using regular expressions
+
 ## Test Prep for Test 1 
 #### correct a given program
 
