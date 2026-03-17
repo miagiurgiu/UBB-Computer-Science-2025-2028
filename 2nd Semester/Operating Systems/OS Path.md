@@ -2323,6 +2323,15 @@ shell -> interpreted (shell) because it interprets line by line, slower than sth
 
 c -> compiled (gcc) because it translates whole code at once -> do sth many times
 
+STRUCTURE OF A SCRIPT:
+- 1) first line:
+```
 #! -> directive given to shell
 #! /bin/sh -> use this interpreter
 #! /bin/bash -> use this interpreter
+```
+- 2) 
+```
+echo Hello World!
+```
+- 3) i
