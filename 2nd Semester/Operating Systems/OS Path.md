@@ -2591,4 +2591,22 @@ b 12116 2887
 
 ```
 
-- how to get a process
+- how to get a process:
+```
+while(1) {
+	get request
+	process
+	respond
+}
+
+while(1) {
+	get request
+	if (fork()==0) {
+		process
+		respond
+		exit
+	}
+	
+}
+
+```
