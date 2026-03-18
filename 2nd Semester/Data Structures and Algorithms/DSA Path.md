@@ -730,4 +730,8 @@ Inserting a node at a given position:
 
 Deleting a given element:
 - idk address of the node, i know the .info only
-- traversal with 2 nodes, not checking -
+- traversal with 2 nodes, not checking -> next each time (there are 2 methods)
+- spe
+```
+
+```
