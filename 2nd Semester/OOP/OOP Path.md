@@ -1873,7 +1873,7 @@ Maria@Mac tests % ./tests
 Reference = another name for the same memory
 - by copying
 - by using a reference
-- by const reference (when you want the values from original array not modified, but don't want a copy either)
+- by const reference (when you want the values from original array not modified, but don't want a copy either) -> a certain object should not be chang
 
 ```
 .h
@@ -1892,3 +1892,6 @@ DynamicArray::DynamicArray(int capacity) {
 		this->size=0;
 }
 ```
+
+arrow because "this" is a pointer to the current object.
+*this -> dereference the pointer
