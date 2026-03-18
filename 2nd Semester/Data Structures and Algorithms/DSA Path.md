@@ -671,8 +671,9 @@ Search function for singly linked list:
 - you don't have the access like for a dynamic array
 - work with current nodes instead of positions
 - we need a loop (stop sooner) => while
+- CNode.info -> not allowed
 ```
 function search(sll, elem):
 	cNode <- sll.head
-	while
+	while [CNode].info != elem
 ```
