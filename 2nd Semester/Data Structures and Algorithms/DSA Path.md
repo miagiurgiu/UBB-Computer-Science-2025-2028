@@ -519,4 +519,7 @@ Containers
 - how relations are done for lab assignments:
 - rel(e1,e2) = true if e1<=e2; false if e1>e2
 - the test functions are defined in this way
-- how to check if a bag is sorted (not at implementation level?)
+- how to check if a bag is sorted (not at implementation level?) two posibilities:
+	- 1. add to the bag: 3,1,4,2
+		- sort them internally when adding them to the bag: 1,2,3,4 -> standard iterator for dynamic array; add operation is more complicated based on relation, 
+		- 
