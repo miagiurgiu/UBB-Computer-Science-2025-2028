@@ -676,7 +676,7 @@ Search function for singly linked list:
 ```
 function search(sll, elem):
 	cNode <- sll.head
-	while [cNode].info != elem and cNode!=NULL execute
+	while [cNode].info != elem and cNode!=NIL execute
 		// go to the next node
 		cNode <- [cNode].next
 ```
