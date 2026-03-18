@@ -550,6 +550,7 @@ sorted bag -> only the first two
 	- put a specific value on a given position
 	- there is a value on every position
 	- 4 cases: current(0/1) vs new(0/1)
+	- ex: if sth is not there (3 3), then it means it's 0
 ```
 0 (current) -> 0 (new) => do nothing
 0 (current) -> !=0 (new) => insert/add
@@ -563,3 +564,4 @@ sorted bag -> only the first two
 	- 1. way of storing 1: only store the non-zero values -> triples (line, col, value)
 	- 
 "remove element 10" -> value-min+1
+
