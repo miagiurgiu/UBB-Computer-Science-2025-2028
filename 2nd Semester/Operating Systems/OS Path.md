@@ -1194,7 +1194,7 @@ Giurgiu Corina Maria - 914 - ...
 sed -E "s/^.* - [^ ]+[^ ]+ //"
 
 ^ -> beginning of line
-.* -> anything
+.* -> anything (greedy - match as many as possible)
 " - " -> literal pattern
 [^ ] -> sequence of non-space characters (space negated)
 
