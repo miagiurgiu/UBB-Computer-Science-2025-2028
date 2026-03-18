@@ -2458,10 +2458,10 @@ validate your arguments and give comments! check nr of parameters, check their t
 
 ## Lecture 4 - 18 mar 2026
 
-1) Issue about having the same resource modified by two things
+1) Issue about having the same resource modified by two things (last lecture)
 L - load (n++); n is a variable; last time -> file
-M
-S
+M - 
+S - 
 ```
 mov ax, n
 inc ax
@@ -2469,12 +2469,13 @@ mov n, ax
 ```
 
 
-
 | T (time) | A (program) | B (program) |
 | -------- | ----------- | ----------- |
 | 0        | L           |             |
-| 1        |             |             |
-| 2        |             |             |
-| 3        |             |             |
-| 4        |             |             |
-| 5        |             |             |
+| 1        |             | L           |
+| 2        | M           |             |
+| 3        |             | M           |
+| 4        | S           |             |
+| 5        |             | S           |
+2) learn how to create processes in linux.
+in C:
