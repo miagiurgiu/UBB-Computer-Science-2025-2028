@@ -642,3 +642,5 @@ Rear  ->                                                             Front
 2) ADT List <-> positions
 - only for lists: POSITIONS => they give an order
 - TPosition - the type of a position
+- init function to create a list
+- "perpendicular" = invalid position (no next position)
