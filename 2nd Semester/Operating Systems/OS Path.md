@@ -2515,6 +2515,7 @@ int main(int argc, char** argv) {
 - run it in terminal
 ```
 gcc -Wall -Wextra -Werror -g -o code code.c
+./code
 ```
 - result:
 ```
