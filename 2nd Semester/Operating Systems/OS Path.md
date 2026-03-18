@@ -2484,8 +2484,10 @@ ls
 What happens when you run a program:
 
 fork instruction 
-	- original -> parent
-	- clone -> child?
+	- original -> parent -> ? -> needs to see the pid of the child
+	- clone -> child? -> 0
+	- returns a value
+every process can get its pid
 
 | Context                                               |     |
 | ----------------------------------------------------- | --- |
