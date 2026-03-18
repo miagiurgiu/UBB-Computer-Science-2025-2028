@@ -581,5 +581,6 @@ for i <- lines[line], lines[line+1],1 ex
 ```
 
 - most frequent word of a text:
+	- dictionaries (key = words; values = frequencies)
 	- 
 
