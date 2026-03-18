@@ -1879,7 +1879,7 @@ Reference = another name for the same memory
 .h
 class DynamicArray {
 	private: int size, capacity;
-			Telem* elems;
+			Telem* elems; // only the pointer is deallocated, not the pointer it points to; provide for that class too maybe?
 	public:
 		DynamicArray(int capacity=10);
 }
@@ -1913,4 +1913,8 @@ Destructors
 ```
 Vector2D x = new Vector2D{1,2};
 delete x; // destructor is being called
+```
+- default destructor?
+```
+~DynamicArray()
 ```
