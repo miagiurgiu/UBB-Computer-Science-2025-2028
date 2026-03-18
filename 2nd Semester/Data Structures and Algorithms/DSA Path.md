@@ -641,18 +641,18 @@ Rear  ->                                                             Front
 
 2) ADT List <-> positions
 - only for lists: POSITIONS => they give an order
-- TPosition - the type of a position
+- TPosition - the type of a position (index or iterator)
 - operations:
 	- init function to create a list
 	- getElement -> return element from given position
 	- position -> return position from given element
-	- setElement -> put a specific value for a specific position -> STORE DIRECTLY ORDERED
+	- setElement -> put a specific value for a specific position -> STORE DIRECTLY ORDERED INTERNALLY
 	- addToEnd -> 
 	- remove -> from given position
 	- search -> boolean function
 	- destroy ->
 	- etc.
 - "perpendicular" = invalid position (no next position)
-- sorted list -> add, validate, set element does not make sense (5 cannot be added at the beginning because it is already sorted, and my list is 2,4,6,8...)
+- sorted list -> add, validate, set element does not make sense (5 cannot be added at the beginning because it is already sorted, and my list is 2,4,6,8...) -> sorted indexed list, sorted iterated list
 - relation passed as a parameter to the init function (init will have 2 parameters)
 - iterator returns element in sorted order
