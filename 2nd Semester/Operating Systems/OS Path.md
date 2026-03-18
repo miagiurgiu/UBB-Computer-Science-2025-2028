@@ -2616,3 +2616,25 @@ while(1) {
 3) Zombie process
 - deleted child -> keep its pid, then cleans the process?
 - parents wait for children to finish execution
+
+- wait returns error if there are no child 
+```
+
+```#include <stdio.h>
+#include <unistd.h>
+#include <stdlib.h>
+int main(int argc, char** argv) {
+        printf("a %d %d \n",getpid(),getppid());
+        for(int i=0; i<3; i++) {
+                if(fork()==0) {
+                        printf("c %d %d %d \n",getpid(),getppid(),i);
+                        exit(0);
+                }
+        }
+        wait(0);
+        printf("b %d %d\n",getpid(),getppid());
+        (void) argc;
+        (void) argv;
+        return 0;
+}
+
