@@ -2654,3 +2654,9 @@ b 12804 2887
 ```
 while true; do ps -u mia-giurgiu | grep -E "\./b|defunct"; sleep(1); clear; done
 ```
+
+- run in terminal
+```
+./b
+```
+- if the processes are all "zombied up" you cannot add more processes
