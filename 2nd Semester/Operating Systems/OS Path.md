@@ -2666,8 +2666,8 @@ while true; do ps -u mia-giurgiu | grep -E "\./b|defunct"; sleep(1); clear; done
 - wires = interrupts -> designed to signal "division by 0"
 - software interrupts -> not through wires, but through sth else (signals)
 - ex: ctrl+c -> sends a signal to the process -> "STOP" -> stop the processes execution -> execute the code associated to ctrl+c
-- signal does not signal.
-- send a signal -> use kipp 
+- signal does not signal
+- send a signal -> use kill -> function kill
 
 ```
 cat
