@@ -588,5 +588,9 @@ for i <- lines[line], lines[line+1],1 ex
 	- one single getCurrentFunction
 	- sortedmap sorted by the keys
 - morse
-	- multi-map: key is allowed not to
+	- multi-map: key is allowed not to be unique?
+	- add a new key-value pair simply because
+	- for remove, specify the entire pair
+	- for a simple map, the value is not required for removing, it removes by position ig
+	- 
 
