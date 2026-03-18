@@ -567,10 +567,12 @@ sorted bag -> only the first two
 
 - "waste of memory" (modify the value from position 3 3 to 19) -> making the lines array shorter (have as many elements as.... + 1)
 ```
-1 2 3 4  5 6 7
-1 4 8 11 15
+1 2 3 4  5  6   7
+1 4 8 11 15 15 19
 
-we don't have 5 on the line -> put the one on the ne
+we don't have 5 on the line -> put the one on the next
+we don't have 7 (too big) -> last position + 1 = 19
+elements from line 3 -> positions 8,9,10 in the other 2 arrays -> pos
 
 ```
 
