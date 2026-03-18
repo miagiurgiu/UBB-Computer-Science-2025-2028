@@ -500,7 +500,7 @@ Containers
 - see end of lecture 2
 - always possible, no matter the data structure used for a bag
 - representation 3 - array of positions -> "nightmare" for a sorted bag
-- representatoin 4 - searching is faster theta(1) -> compute formula
+- representatoin 4 - searching is faster theta(1) -> compute formula -> not good for sorted?
 - it is recommended to have non-zero elements on the first and last positions
 - iterator is a little different because of the zero values
 	- should not have as current element sth that is 0
@@ -510,7 +510,7 @@ Containers
 	- keep count of the current frequencies
 	- when you go the next position, you might need to skip a few zeroes
 
-1) Sorted bag
+2) Sorted bag
 - elements are sorted (they have an order)
 - no positions
 - binary search instead of linear search (but not visible from the outside)
@@ -523,3 +523,8 @@ Containers
 	- 1. add to the bag: 3,1,4,2
 		- sort them internally when adding them to the bag: 1,2,3,4 -> standard iterator for dynamic array; add operation is more complicated based on relation; -> iterator is efficient (stored internally by the relation altough it might not be visually vi)
 		- i dont have positions -> store them in 3,1,4,2 -> iterator needs sorted order -> search for the min -> position 2 -> when calling next() -> find the next smallest value => 4th position -> 1st position -> 3rd position -> change more things -> iteration is inefficient -> we want theta(1) complexity, whenever is possible
+
+regular bag ->
+sorted bag -> only the first two
+
+3) 
