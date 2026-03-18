@@ -671,12 +671,12 @@ Search function for singly linked list:
 - you don't have the access like for a dynamic array
 - work with current nodes instead of positions
 - we need a loop (stop sooner) => while
-- CNode.info -> not allowed
-- [CNode].info -> dereference in pseudocode
+- cNode.info -> not allowed
+- [cNode].info -> dereference in pseudocode
 ```
 function search(sll, elem):
 	cNode <- sll.head
-	while [CNode].info != elem execute
-		@ go to the next node
+	while [cNode].info != elem and cNode!=NULL execute
+		// go to the next node
 		cNode <- [cNode].next
 ```
