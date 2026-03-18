@@ -2539,3 +2539,25 @@ while(1) {
 ```
 
 ![[Pasted image 20260318183105.png]]
+
+
+```
+#include <stdio.h>
+#include <unistd.h>
+int main(int argc, char** argv) {
+        printf("a %d %d \n",getpid(),getppid());
+        for(int i=0; i<3; i++) {
+                fork();
+                printf("c %d %d %d \n",getpid(),getppid(),i);
+        }
+        printf("b %d %d\n",getpid(),getppid());
+        (void) argc;
+        (void) argv;
+        return 0;
+}
+
+```
+
+```
+
+```
