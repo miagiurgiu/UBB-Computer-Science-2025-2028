@@ -2701,3 +2701,6 @@ int main(int argc, char** argv) {
 ps -u mia-giurgiu
 ```
 - kill that number
+- SIGKILL
+- value 9???
+- 
