@@ -653,4 +653,6 @@ Rear  ->                                                             Front
 	- destroy ->
 	- etc.
 - "perpendicular" = invalid position (no next position)
-- sorted list -> add does not make sense (5 cannot be added at the beginning because it is already sorted, and my list is 2,4,6,8...)
+- sorted list -> add, validate, set element does not make sense (5 cannot be added at the beginning because it is already sorted, and my list is 2,4,6,8...)
+- relation passed as a parameter to the init function
+- 
