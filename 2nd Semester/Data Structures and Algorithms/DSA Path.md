@@ -653,3 +653,4 @@ Rear  ->                                                             Front
 	- destroy ->
 	- etc.
 - "perpendicular" = invalid position (no next position)
+- sorted list -> add doe
