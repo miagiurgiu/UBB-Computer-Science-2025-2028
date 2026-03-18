@@ -653,4 +653,4 @@ Rear  ->                                                             Front
 	- destroy ->
 	- etc.
 - "perpendicular" = invalid position (no next position)
-- sorted list -> add doe
+- sorted list -> add does not make sense (5 cannot be added at the beginning because it is already sorted, and my list is 2,4,6,8...)
