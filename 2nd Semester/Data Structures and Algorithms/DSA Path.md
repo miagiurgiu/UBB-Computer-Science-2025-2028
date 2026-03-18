@@ -647,5 +647,9 @@ Rear  ->                                                             Front
 	- getElement -> return element from given position
 	- position -> return position from given element
 	- setElement -> put a specific value for a specific position
-	- addT
+	- addToEnd -> 
+	- remove -> from given position
+	- search -> boolean function
+	- destroy ->
+	- etc.
 - "perpendicular" = invalid position (no next position)
