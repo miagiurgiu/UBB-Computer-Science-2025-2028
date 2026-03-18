@@ -665,4 +665,8 @@ Rear  ->                                                             Front
 - singly linked list (every node has one single link, the one pointing to the next node)
 - doubly linked list
 - used to implement containers for assignment 2
-- 
+
+
+```
+function search(sll)
+```
