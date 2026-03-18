@@ -611,9 +611,12 @@ Queues
 - FIFO
 - all elements inserted at the end (rear)
 1) Implementing a queue using an array (static/dynamic), where should we place the front and rear of the queue?
+- theta(n) operation is not enough
+- front: remove/pop
+- rear: add/push
 
 |     |     |     |     |     |     |
 | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |
-Front                                  
-Rear
+Front                                                                 Rear
+Rear                                                                  Front
