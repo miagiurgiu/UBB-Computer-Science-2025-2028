@@ -586,4 +586,7 @@ for i <- lines[line], lines[line+1],1 ex
 	- MAP (=DICTIONARY in Python)
 	- i need iterator because map does not have position (key-value pair will be returned by iterator)
 	- one single getCurrentFunction
+	- sortedmap sorted by the keys
+- morse
+	- multi-map: key is allowed not to
 
