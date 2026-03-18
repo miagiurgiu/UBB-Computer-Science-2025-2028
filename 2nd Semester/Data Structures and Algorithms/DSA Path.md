@@ -519,3 +519,4 @@ Containers
 - how relations are done for lab assignments:
 - rel(e1,e2) = true if e1<=e2; false if e1>e2
 - the test functions are defined in this way
+- how to check if a bag is sorted (not at implementation level?)
