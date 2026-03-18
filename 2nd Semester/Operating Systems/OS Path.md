@@ -2560,6 +2560,33 @@ int main(int argc, char** argv) {
 
 - parent never executes exit().
 - parent only iterates for??
+- recursive??
 ```
+#include <stdio.h>
+#include <unistd.h>
+#include <stdlib.h>
+int main(int argc, char** argv) {
+        printf("a %d %d \n",getpid(),getppid());
+        for(int i=0; i<3; i++) {
+                if(fork()==0) {
+                        printf("c %d %d %d \n",getpid(),getppid(),i);
+                        exit(0);
+                }
+        }
+        printf("b %d %d\n",getpid(),getppid());
+        (void) argc;
+        (void) argv;
+        return 0;
+}
+
+
+```
+- result:
+```
+a 12116 2887 
+c 12117 12116 0 
+c 12118 12116 1 
+c 12119 12116 2 
+b 12116 2887
 
 ```
