@@ -2602,6 +2602,7 @@ while(1) {
 	respond
 }
 
+// maybe put SIG_IGN instead of f (ignore)
 signal(SIGCHILD,f); // added
 while(1) {
 	get request
@@ -2613,6 +2614,7 @@ while(1) {
 	//wait
 }
 
+// maybe give this up 
 void f(int sgn) {
 	wait(0);
 }
