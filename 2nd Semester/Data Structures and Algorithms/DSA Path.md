@@ -490,3 +490,5 @@ or:
 clang++ App.cpp FixedCapBiMap.cpp FixedCapBiMapIterator.cpp -o app
 Maria@Mac FixedCapBiMap % ./app
 
+## Lecture 3 - 18 mar 2026
+
