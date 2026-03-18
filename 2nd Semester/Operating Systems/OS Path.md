@@ -2488,6 +2488,7 @@ fork instruction
 	- clone -> child? -> 0 = copy
 	- returns a value
 	- create a new process in Unix 
+	- child gets copy of heap
 every process can get its pid
 
 | Context                                               |     |
