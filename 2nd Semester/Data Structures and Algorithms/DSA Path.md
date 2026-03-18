@@ -607,7 +607,7 @@ for i <- lines[line], lines[line+1],1 ex
 ## Lecture 4 - 18 mar 2026
 
 Types of containers
-1) AQueues
+1) ADT Queues
 - ex: emergency room
 - rear = tail/back (end position) -> where we add
 - front -> where we remove
@@ -624,7 +624,7 @@ Types of containers
 Front                                                                 Rear
 Rear  ->                                                             Front
 
-2) Priority queue 
+2) ADT Priority queue <-> priorities
 - each element has an associated priority
 - a relation on these priorities (tells which element has a higher priority)
 - higher number does not mean higher priority
@@ -634,7 +634,10 @@ Rear  ->                                                             Front
 - priority given by position? by a value?
 - no iterators
 
-2) Deque
+2) ADT Deque <-> both ends
 - container in which we can insert/delete from both ends
 - could be used instead of a stack/queue
+
+2) ADT List <-> positions
+- only for lists: POSITIONS => they give an order
 - 
