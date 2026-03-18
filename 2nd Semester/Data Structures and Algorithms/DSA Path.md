@@ -642,5 +642,10 @@ Rear  ->                                                             Front
 2) ADT List <-> positions
 - only for lists: POSITIONS => they give an order
 - TPosition - the type of a position
-- init function to create a list
+- operations:
+	- init function to create a list
+	- getElement -> return element from given position
+	- position -> return position from given element
+	- setElement -> put a specific value for a specific position
+	- addT
 - "perpendicular" = invalid position (no next position)
