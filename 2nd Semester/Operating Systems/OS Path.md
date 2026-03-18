@@ -1127,7 +1127,7 @@ sort -> sort alphabetically
 uniq -> remove duplicates (works well only on sorted input)
 wc -l -> count lines
 ```
-
+ 
 
 4) Find most popular names in the English section? extract just the first names
 ```
