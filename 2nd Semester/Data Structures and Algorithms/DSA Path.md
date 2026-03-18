@@ -503,4 +503,7 @@ Containers
 - representatoin 4 - searching is faster theta(1) -> compute formula
 - it is recommended to have non-zero elements on the first and last positions
 - iterator is a little different because of the zero values
-	- should no
+	- should not have as current element sth that is 0
+	- go the next non-zero operation
+	- no longer theta(1) because it will have a while loop
+	- we need the current frequency 
