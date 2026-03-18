@@ -515,7 +515,7 @@ Containers
 - no positions
 - binary search instead of linear search (but not visible from the outside)
 - sorting criteria
-
-how relations are done for lab assignments:
-
-rel(e1,e2) 
+- only init is changed (in the interface; the only change is that init will take a relation as para)
+- how relations are done for lab assignments:
+- rel(e1,e2) = true if e1<=e2; false if e1>e2
+- the test functions are defined in this way
