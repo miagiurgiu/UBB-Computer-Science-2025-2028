@@ -1229,6 +1229,8 @@ awk -F: '{print $5}' /etc/passwd | grep -E " - 91[0-9] - " | sed -E "s/^.* - [^ 
 - replace all spaces with a new line (each name on its own line):
 ```
 sed -E "s/ +/\n/g"
+
+ + -> one or more spaces
 ```
 
 - remove short names (initials):
