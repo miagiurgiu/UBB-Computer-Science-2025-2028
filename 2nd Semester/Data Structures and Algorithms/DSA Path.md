@@ -606,13 +606,14 @@ for i <- lines[line], lines[line+1],1 ex
 
 ## Lecture 4 - 18 mar 2026
 
-Queues
+Types of containers
+1) Queues
 - ex: emergency room
 - rear = tail/back (end position) -> where we add
 - front -> where we remove
 - FIFO
 - all elements inserted at the end (rear)
-1) Implementing a queue using an array (static/dynamic), where should we place the front and rear of the queue?
+- Implementing a queue using an array (static/dynamic), where should we place the front and rear of the queue?
 - theta(n) operation is not enough
 - front: remove/pop
 - rear: add/push
@@ -632,3 +633,5 @@ Rear  ->                                                             Front
 - pop -> removes the element with the higher priority
 - priority given by position? by a value?
 - no iterators
+
+2) Deque
