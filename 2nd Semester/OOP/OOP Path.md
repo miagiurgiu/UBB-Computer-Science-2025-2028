@@ -1912,7 +1912,8 @@ y gets destroyed, then x gets destroyed, statically allocated, they go out of sc
 x on the stack -> memory automatically managed
 ```
 
-Constructors with parameters using member initial
+Constructors with parameters using member initialisation?
+
 Destructors
 - called when objects should be destroyed
 ```
@@ -1921,8 +1922,9 @@ delete x; // destructor is being called => memory deallocated
 ```
 - default destructor?
 ```
-~DynamicArray()
+~DynamicArray() -> specifies that this is a destructor (no return value, a tilda, no parameters, the name of the class)
 ```
 - if we have dinamically allocated data, create your own destructor!
+- you could just print sth in the destructor 
  
  when i have "const" inside the header function i am not allowed to use "this"
