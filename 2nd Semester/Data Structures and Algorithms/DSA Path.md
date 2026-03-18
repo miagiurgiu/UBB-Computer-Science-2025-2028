@@ -572,7 +572,9 @@ sorted bag -> only the first two
 
 we don't have 5 on the line -> put the one on the next
 we don't have 7 (too big) -> last position + 1 = 19
-elements from line 3 -> positions 8,9,10 in the other 2 arrays -> pos
+elements from line 3 -> positions 8,9,10 in the other 2 arrays -> p
+
+for i <- lines[line], lines[]
 
 ```
 
