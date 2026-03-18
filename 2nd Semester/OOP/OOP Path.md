@@ -1869,5 +1869,9 @@ tests % clang tests.c ../repository/dynamic_array.c ../domain/product.c -o tests
 Maria@Mac tests % ./tests
 
 
-## Lecture 4 - 18 m
+## Lecture 4 - 18 mar 2026
 Reference = another name for the same memory
+- by copying
+- by using a reference
+- by const reference (when you want the values from original array not modified, but don't want a copy either)
+- 
