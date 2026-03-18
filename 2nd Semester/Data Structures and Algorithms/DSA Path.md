@@ -527,7 +527,9 @@ Containers
 regular bag ->
 sorted bag -> only the first two
 
-3) electoral application
+3) SET. electoral application
 	- elements to be unique
 	- order not important
-	- 
+	- no positions, like in a bag
+	- container w no positions but elements are unique -> called a SET
+	- nr of occurences does no
