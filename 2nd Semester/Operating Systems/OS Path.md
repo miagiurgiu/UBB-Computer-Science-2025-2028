@@ -2529,6 +2529,7 @@ b 3801 1893
 b 3803 1893
 ```
 - will become unusable (produces processes exponentially fast)
+- pointless to "kill"
 ```
 while(1) {
 	fork();
