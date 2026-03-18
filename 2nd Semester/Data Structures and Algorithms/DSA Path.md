@@ -496,4 +496,6 @@ Containers
 
 1) Bag
 - representation 1
-- representation 2 -
+- representation 2 - with frequencies
+- see end of lecture 2
+- always possible, no matter the data structure used for a bag
