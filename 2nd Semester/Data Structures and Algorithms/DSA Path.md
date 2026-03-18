@@ -668,6 +668,9 @@ Rear  ->                                                             Front
 
 Search function for singly linked list:
 - elem is TElem
+- you don't have the access like for a dynamic array
+- work with current nodes instead of positions
 ```
 function search(sll, elem):
+	cNO
 ```
