@@ -500,4 +500,5 @@ Containers
 - see end of lecture 2
 - always possible, no matter the data structure used for a bag
 - representation 3 - array of positions
+- representatoin 4 - searching is faster theta(1) -> compute formula
 - it is recommended to have non-zero elements on the first and last positions
