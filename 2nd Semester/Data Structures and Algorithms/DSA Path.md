@@ -672,8 +672,10 @@ Search function for singly linked list:
 - work with current nodes instead of positions
 - we need a loop (stop sooner) => while
 - CNode.info -> not allowed
+- [CNode].info -> dereference in pseudocode
 ```
 function search(sll, elem):
 	cNode <- sll.head
-	while [CNode].info != elem
+	while [CNode].info != elem execute
+		@ go to the next node
 ```
