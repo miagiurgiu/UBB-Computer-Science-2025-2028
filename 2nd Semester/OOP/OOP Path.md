@@ -1874,4 +1874,13 @@ Reference = another name for the same memory
 - by copying
 - by using a reference
 - by const reference (when you want the values from original array not modified, but don't want a copy either)
-- 
+
+```
+class DynamicArray {
+	private: int size, capacity;
+			Telem* elems;
+	public:
+		DynamicArray
+	
+}
+```
