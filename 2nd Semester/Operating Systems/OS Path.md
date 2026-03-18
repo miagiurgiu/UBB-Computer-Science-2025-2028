@@ -2696,11 +2696,11 @@ int main(int argc, char** argv) {
 }
 ```
 
-- to see the processes -> take that number
+- to see the processes -> take that_number
 ```
 ps -u mia-giurgiu
 ```
-- kill that number
+- kill that_number
 - SIGKILL
 - value 9???
-- 
+- kill -9 that_number
