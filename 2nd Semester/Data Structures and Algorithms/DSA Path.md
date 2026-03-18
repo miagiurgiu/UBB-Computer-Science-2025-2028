@@ -534,5 +534,7 @@ sorted bag -> only the first two
 	- container w no positions but elements are unique -> called a SET
 	- nr of occurences does not make sense for a set because elements are unique
 	- union, intersection
+	- same for sorted bag but interface is changed by relation
+	- iterator has to return elems in correct sorted order
 
-"remove element 10" value-min+1
+"remove element 10" -> value-min+1
