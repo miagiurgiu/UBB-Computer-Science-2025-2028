@@ -2613,4 +2613,6 @@ while(1) {
 
 ```
 
-3) 
+3) Zombie process
+- deleted child -> keep its pid, then cleans the process?
+- parents wait for children to finish execution
