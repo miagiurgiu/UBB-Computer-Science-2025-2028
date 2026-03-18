@@ -1900,7 +1900,14 @@ arrow because "this" is a pointer to the current object.
 Copy constructors
 - implement your own copy constructor
 ```
+{
 Vector2D x{1,2}
 Vector2D y=x;
 Vector2D y{x}; // initialising y with x
+}
+
+y gets destroyed, then x gets destroyed, statically allocated, they go out of scope when function finishes.
 ```
+Destructors
+- called when objects should be destroyed
+- 
