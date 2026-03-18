@@ -1162,7 +1162,7 @@ awk -F: '{print $5}' /etc/passwd \
 s -> substitute
 / -> separator
 \. -> literal dot
-.* -> everything after dot
+.* -> everything after dot (any character, any number of times)
 // -> replace with nothing (there is nothing between / and /)
 ```
 
