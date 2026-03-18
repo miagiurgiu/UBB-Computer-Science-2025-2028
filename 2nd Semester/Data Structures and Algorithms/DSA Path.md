@@ -542,5 +542,7 @@ sorted bag -> only the first two
 - matrix is container 2-dimensional array
 - container with positions for the elements
 - what operations? create matrix, specify nr lines, columns -> non zero, positive numbers
-- get lines, get columns
+- get nr lines, get nr columns
+- return value from given position based on line, column (valid values for lines, cols)
+- no add, remove from matrix (does not make sense)
 "remove element 10" -> value-min+1
