@@ -2650,3 +2650,7 @@ c 12806 12804 1
 c 12807 12804 2 
 b 12804 2887
 ```
+
+```
+while true; do ps -u mia-giurgiu | grep -E "\./b|defunct"; sleep(1); clear; done
+```
