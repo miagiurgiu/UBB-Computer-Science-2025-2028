@@ -1915,11 +1915,13 @@ Destructors
 - called when objects should be destroyed
 ```
 Vector2D x = new Vector2D{1,2}; // data allocated on the heap
-delete x; // destructor is being called
+delete x; // destructor is being called => memory deallocated
 ```
 - default destructor?
 ```
 ~DynamicArray()
 ```
 - if we have dinamically allocated data, create your own destructor!
+ 
+ when i have "const" inside the header function i am not allowed to use "this"
 - 
