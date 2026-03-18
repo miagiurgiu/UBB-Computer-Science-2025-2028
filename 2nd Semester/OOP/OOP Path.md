@@ -1911,6 +1911,8 @@ Vector2D y{x}; // initialising y with x
 y gets destroyed, then x gets destroyed, statically allocated, they go out of scope when function finishes.
 x on the stack -> memory automatically managed
 ```
+
+Constructors with parameters using member initial
 Destructors
 - called when objects should be destroyed
 ```
@@ -1924,4 +1926,3 @@ delete x; // destructor is being called => memory deallocated
 - if we have dinamically allocated data, create your own destructor!
  
  when i have "const" inside the header function i am not allowed to use "this"
-- 
