@@ -2485,7 +2485,7 @@ What happens when you run a program:
 
 fork instruction 
 	- original -> parent
-	- 
+	- clone -> child?
 
 | Context                                               |     |
 | ----------------------------------------------------- | --- |
@@ -2497,3 +2497,9 @@ fork instruction
 |                                                       |     |
 | stack (up)                                            |     |
 |                                                       |     |
+
+everything down from variables -> cloned
+
+```
+
+```
