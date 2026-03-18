@@ -1899,6 +1899,8 @@ arrow because "this" is a pointer to the current object.
 
 Copy constructors
 - implement your own copy constructor
+- invoked when we create memory on heap and then initialise it
+- when the copy constructor is called
 ```
 {
 Vector2D x{1,2}; // data allocated on the stack
@@ -1907,7 +1909,7 @@ Vector2D y{x}; // initialising y with x
 }
 
 y gets destroyed, then x gets destroyed, statically allocated, they go out of scope when function finishes.
-x on the stack -> memory automatically manag
+x on the stack -> memory automatically managed
 ```
 Destructors
 - called when objects should be destroyed
