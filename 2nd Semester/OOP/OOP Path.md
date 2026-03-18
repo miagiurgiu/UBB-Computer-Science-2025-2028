@@ -1895,3 +1895,10 @@ DynamicArray::DynamicArray(int capacity) {
 
 arrow because "this" is a pointer to the current object.
 *this -> dereference the pointer
+
+
+Copy constructors
+```
+Vector2D x{1,2}
+Vector2D y=x;
+```
