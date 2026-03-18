@@ -2677,3 +2677,23 @@ bg
 ```
 
 - program that does stuff with signals:
+```
+  GNU nano 7.2                         signals.c                                   
+#include <stdio.h>
+#include <signal.h>
+
+void f(int sgn) {
+        printf("you wish...\n");
+        (void)sgn;
+}
+
+int main(int argc, char** argv) {
+        signal(SIGINT,f);
+        while(1);
+        (void)argc;
+        (void)argv;
+        return 0;
+}
+
+
+```
