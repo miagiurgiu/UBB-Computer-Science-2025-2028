@@ -666,7 +666,8 @@ Rear  ->                                                             Front
 - doubly linked list
 - used to implement containers for assignment 2
 
-
+Search function for singly linked list:
+- elem is TElem
 ```
-function search(sll)
+function search(sll, elem):
 ```
