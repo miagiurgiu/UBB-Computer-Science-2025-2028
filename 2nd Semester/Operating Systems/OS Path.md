@@ -1191,6 +1191,8 @@ Giurgiu Corina Maria - 914 - ...
 
 - I remove Giurgiu Corina and I am left with Maria :))
 ```
+sed -E "s/ .*//" -> everything after the first space replace it with nothing
+
 sed -E "s/^.* - [^ ]+[^ ]+ //"
 
 ^ -> beginning of line
@@ -1199,6 +1201,10 @@ sed -E "s/^.* - [^ ]+[^ ]+ //"
 [^ ] -> sequence of non-space characters (space negated)
 
 awk -F: '{print $5}' /etc/passwd | grep -E " - 91[0-9] - " | sed -E "s/^.* - [^ ]+[^ ]+ //"
+
+awk -F: '{print $5}' /etc/passwd \
+| grep -E " - 91[0-9] - " \
+| sed -E "s/ .*//"
 ```
 
 ```
