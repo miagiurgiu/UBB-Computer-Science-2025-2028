@@ -2558,7 +2558,8 @@ int main(int argc, char** argv) {
 
 ```
 
-- parent ne
+- parent never executes exit().
+- parent only iterates for??
 ```
 
 ```
