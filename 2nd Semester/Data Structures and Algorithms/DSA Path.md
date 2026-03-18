@@ -546,6 +546,7 @@ sorted bag -> only the first two
 - return value from given position based on line, column (valid values for lines, cols)
 - no add, remove from matrix (does not make sense)
 - we have "modify values on a specific position" operation instead.
+	- split it in helper function for different cases, but still one modify operation
 	- put a specific value on a given position
 	- there is a value on every position
 	- 4 cases: current(0/1) vs new(0/1)
@@ -553,7 +554,7 @@ sorted bag -> only the first two
 0 (current) -> 0 (new) => do nothing
 0 (current) -> !=0 (new) => insert/add
 !=0 (current) -> 0 (new) => remove from the data structure
-!=0 (current) -> !=0 (new) => 
+!=0 (current) -> !=0 (new) => change value
 
 ```
 
