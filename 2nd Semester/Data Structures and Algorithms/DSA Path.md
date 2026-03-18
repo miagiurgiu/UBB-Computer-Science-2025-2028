@@ -545,4 +545,6 @@ sorted bag -> only the first two
 - get nr lines, get nr columns
 - return value from given position based on line, column (valid values for lines, cols)
 - no add, remove from matrix (does not make sense)
+- we have "modify values on a specific position" operation instead.
+- 
 "remove element 10" -> value-min+1
