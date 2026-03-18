@@ -2499,16 +2499,20 @@ fork instruction
 |                                                       |     |
 
 everything down from variables -> cloned
-
+- nano code.c
 ```
 #include <stdio.h>
 #include <unistd.h>
 int main(int argc, char** argv) {
         printf("a %d %d \n",getpid(),getppid());
-        fork(); // after this,
+        fork(); // after this, we have two processes
         printf("b %d %d\n",getpid(),getppid());
         (void) argc;
         (void) argv;
         return 0;
 }
+```
+- run it in terminal
+```
+
 ```
