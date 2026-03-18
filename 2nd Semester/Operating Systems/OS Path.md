@@ -2501,5 +2501,15 @@ fork instruction
 everything down from variables -> cloned
 
 ```
+#include <stdio.h>
+
+int main(int argc, char** argv) {
+        printf("a\n");
+        fork();
+        printf("b\n");
+        (void) argc;
+        (void) argv;
+        return 0;
+}
 
 ```
