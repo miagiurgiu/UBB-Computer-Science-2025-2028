@@ -2483,11 +2483,17 @@ ls
 
 What happens when you run a program:
 
+fork instruction 
+	- original -> parent
+	- 
+
 | Context                                               |     |
 | ----------------------------------------------------- | --- |
 | Sources (you can think of it as Source Segment ASC)   |     |
 | Constant                                              |     |
 | Variables (you can think of them as global variables) |     |
-| heap                                                  |     |
+| heap (down)                                           |     |
 |                                                       |     |
+|                                                       |     |
+| stack (up)                                            |     |
 |                                                       |     |
