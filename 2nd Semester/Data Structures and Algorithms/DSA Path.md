@@ -593,5 +593,10 @@ for i <- lines[line], lines[line+1],1 ex
 	- for remove, specify the entire pair
 	- for a simple map, the value is not required for removing, it removes by position ig
 	- sorted multi-map -> sort only the keys
+
+- stack
+	- restricted access (only to some elements - the one on the top)
+	- add, remove operations happen on the top
+	- remove. stack knows what. 
 	- 
 
