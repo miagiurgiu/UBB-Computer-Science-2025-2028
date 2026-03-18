@@ -718,6 +718,8 @@ Inserting a node before the current node:
 ```
 
 Inserting a node at a given position:
+- you need the node after the position to which you are inserting
+- 
 ```
 
 ```
