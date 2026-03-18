@@ -520,7 +520,7 @@ Containers
 - rel(e1,e2) = true if e1<=e2; false if e1>e2
 - the test functions are defined in this way
 - how to check if a bag is sorted (not at implementation level?) two posibilities:
-	- 1. add to the bag: 3,1,4,2
+	- 1. add to the bag: 3,1,4,2 -> two approaches
 		- sort them internally when adding them to the bag: 1,2,3,4 -> standard iterator for dynamic array; add operation is more complicated based on relation; -> iterator is efficient (stored internally by the relation altough it might not be visually vi)
 		- i dont have positions -> store them in 3,1,4,2 -> iterator needs sorted order -> search for the min -> position 2 -> when calling next() -> find the next smallest value => 4th position -> 1st position -> 3rd position -> change more things -> iteration is inefficient -> we want theta(1) complexity, whenever is possible
 
@@ -654,5 +654,5 @@ Rear  ->                                                             Front
 	- etc.
 - "perpendicular" = invalid position (no next position)
 - sorted list -> add, validate, set element does not make sense (5 cannot be added at the beginning because it is already sorted, and my list is 2,4,6,8...)
-- relation passed as a parameter to the init function
-- 
+- relation passed as a parameter to the init function (init will have 2 parameters)
+- iterator returns element in sorted order
