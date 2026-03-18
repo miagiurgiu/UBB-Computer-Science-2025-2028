@@ -2468,7 +2468,6 @@ inc ax
 mov n, ax
 ```
 
-
 | T (time) | A (program) | B (program) |
 | -------- | ----------- | ----------- |
 | 0        | L           |             |
@@ -2478,4 +2477,12 @@ mov n, ax
 | 4        | S           |             |
 | 5        |             | S           |
 2) learn how to create processes in linux.
-in C:
+```
+ls
+```
+
+What happens when you run a program:
+
+| Context |     |
+| ------- | --- |
+| Sources |     |
