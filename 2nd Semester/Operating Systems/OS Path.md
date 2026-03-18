@@ -2661,3 +2661,5 @@ while true; do ps -u mia-giurgiu | grep -E "\./b|defunct"; sleep(1); clear; done
 ./b
 ```
 - if the processes are all "zombied up" you cannot add more processes
+
+4) Interrupts
