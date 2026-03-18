@@ -690,6 +690,7 @@ function search(sll, elem):
 	end-if
 ```
 
+!!! VEEY
 Inserting a node at the beginning of a linked list:
 - order counts a lot.
 https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.youtube.com/watch%3Fv%3DHKfj0l7ndbc&ved=2ahUKEwiHp_Tr4qmTAxUYJhAIHV_8KwoQtwJ6BAgREAI&usg=AOvVaw32tvpqYGxF9--2JwWxg2GX
