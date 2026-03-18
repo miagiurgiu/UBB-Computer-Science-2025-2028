@@ -2664,4 +2664,5 @@ while true; do ps -u mia-giurgiu | grep -E "\./b|defunct"; sleep(1); clear; done
 
 4) Interrupts
 - wires = interrupts -> designed to signal "division by 0"
-- 
+- software interrupts -> not through wires, but through sth else (signals)
+- ex: ctrl+c -> sends a signal to the proc
