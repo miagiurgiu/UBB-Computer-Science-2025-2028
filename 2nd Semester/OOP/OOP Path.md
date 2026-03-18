@@ -1876,11 +1876,19 @@ Reference = another name for the same memory
 - by const reference (when you want the values from original array not modified, but don't want a copy either)
 
 ```
+.h
 class DynamicArray {
 	private: int size, capacity;
 			Telem* elems;
 	public:
-		DynamicArray
-	
+		DynamicArray(int capacity=10);
+}
+```
+
+```
+.cpp
+DynamicArray::DynamicArray(int capacity) {
+		this->capacity=capacity;
+		this->size=0;
 }
 ```
