@@ -2504,9 +2504,9 @@ everything down from variables -> cloned
 #include <stdio.h>
 #include <unistd.h>
 int main(int argc, char** argv) {
-        printf("a\n");
-        fork();
-        printf("b\n");
+        printf("a %d %d \n",getpid(),getppid());
+        fork(); // after this,
+        printf("b %d %d\n",getpid(),getppid());
         (void) argc;
         (void) argv;
         return 0;
