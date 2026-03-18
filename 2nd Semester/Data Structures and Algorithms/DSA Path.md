@@ -549,8 +549,13 @@ sorted bag -> only the first two
 	- put a specific value on a given position
 	- there is a value on every position
 	- 4 cases: current(0/1) vs new(0/1)
-		- 0 (current) -> 0 (new)
-		- 
+```
+0 (current) -> 0 (new) => do nothing
+0 (current) -> !=0 (new) => insert/add
+!=0 (current) 
+
+```
+
 - most positions are empty in minesweeper. 480 positions?
 - sparse matrix (not a lot of positions occupied)
 	- 1. way of storing 1: only store the non-zero values -> triples (line, col, value)
