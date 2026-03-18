@@ -1901,20 +1901,23 @@ Copy constructors
 - implement your own copy constructor
 ```
 {
-Vector2D x{1,2}
+Vector2D x{1,2}; // data allocated on the stack
 Vector2D y=x;
 Vector2D y{x}; // initialising y with x
 }
 
 y gets destroyed, then x gets destroyed, statically allocated, they go out of scope when function finishes.
+x on the stack -> memory automatically manag
 ```
 Destructors
 - called when objects should be destroyed
 ```
-Vector2D x = new Vector2D{1,2};
+Vector2D x = new Vector2D{1,2}; // data allocated on the heap
 delete x; // destructor is being called
 ```
 - default destructor?
 ```
 ~DynamicArray()
 ```
+- if we have dinamically allocated data, create your own destructor!
+- 
