@@ -582,5 +582,7 @@ for i <- lines[line], lines[line+1],1 ex
 
 - most frequent word of a text:
 	- dictionaries (key = words; values = frequencies)
+	- order of keys is not important
+	- MAP (=DICTIONARY in Python)
 	- 
 
