@@ -514,4 +514,5 @@ Containers
 - elements are sorted (they have an order)
 - no positions
 - binary search instead of linear search (but not visible from the outside)
+- sorting criteria
 - 
