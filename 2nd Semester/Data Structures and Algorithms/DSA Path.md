@@ -603,3 +603,7 @@ for i <- lines[line], lines[line+1],1 ex
 	- pop (remove+return), exception from an empty stack
 	- 
 
+
+## Lecture 4 - 18 mar 2026
+
+1) Implementing a queue using an array
