@@ -722,6 +722,7 @@ Inserting a node at a given position:
 - do I even have that node at that position?
 - position < 1 => invalid position => throw exception
 - position too big => 
+- position = 1 separate because it's the only position that does not have a previous node
 ```
 
 ```
