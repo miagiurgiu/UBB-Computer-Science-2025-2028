@@ -565,3 +565,5 @@ sorted bag -> only the first two
 	- 
 "remove element 10" -> value-min+1
 
+- "waste of memory" (modify the value fromaking the lines array shorter (have as many elements as.... + 1)
+- 
