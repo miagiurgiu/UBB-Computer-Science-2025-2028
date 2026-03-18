@@ -527,4 +527,7 @@ Containers
 regular bag ->
 sorted bag -> only the first two
 
-3) 
+3) electoral application
+	- elements to be unique
+	- order not important
+	- 
