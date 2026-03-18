@@ -546,6 +546,8 @@ sorted bag -> only the first two
 - return value from given position based on line, column (valid values for lines, cols)
 - no add, remove from matrix (does not make sense)
 - we have "modify values on a specific position" operation instead.
+	- put a specific value on a given position
+	- there is
 - most positions are empty in minesweeper. 480 positions?
 - sparse matrix (not a lot of positions occupied)
 	- 1. way of storing 1: only store the non-zero values -> triples (line, col, value)
