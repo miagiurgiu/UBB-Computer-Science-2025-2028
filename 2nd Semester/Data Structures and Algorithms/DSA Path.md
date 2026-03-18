@@ -552,7 +552,8 @@ sorted bag -> only the first two
 ```
 0 (current) -> 0 (new) => do nothing
 0 (current) -> !=0 (new) => insert/add
-!=0 (current) 
+!=0 (current) -> 0 (new) => remove from the data structure
+!=0 (current) -> !=0 (new) => 
 
 ```
 
