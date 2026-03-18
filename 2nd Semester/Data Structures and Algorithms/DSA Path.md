@@ -499,3 +499,4 @@ Containers
 - representation 2 - with frequencies
 - see end of lecture 2
 - always possible, no matter the data structure used for a bag
+- representation 3 - array of positions
