@@ -703,9 +703,7 @@ subalgorithm addFirst(sll,e) execute
 
 Inserting a node after the current node:
 ```
-subalgorithm addFirst(sll,e) execute
-	newNode <- allocate()
-	[newNode].info <-e
-	[newNode].next <- sll.head
-	sll.head <- newNode
+subalgorithm addAfterCurrent(sll,e) execute
+	[newNode].next <- [currentNode].next
+	[currentNode].next <- newNode
 ```
