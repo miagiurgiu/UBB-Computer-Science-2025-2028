@@ -538,5 +538,9 @@ sorted bag -> only the first two
 	- iterator has to return elems in correct sorted order
 
 4) minesweeper. what type of container needed to place the mines?
-- matrix? list? dictionary? 
+- matrix? list? dictionary? matrix. 
+- matrix is container 2-dimensional array
+- container with positions for the elements
+- what operations? create matrix, specify nr lines, columns -> non zero, positive numbers
+- get lines, get columns
 "remove element 10" -> value-min+1
