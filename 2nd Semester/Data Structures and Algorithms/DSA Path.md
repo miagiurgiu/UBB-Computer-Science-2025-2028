@@ -584,5 +584,6 @@ for i <- lines[line], lines[line+1],1 ex
 	- dictionaries (key = words; values = frequencies)
 	- order of keys is not important
 	- MAP (=DICTIONARY in Python)
-	- 
+	- i need iterator because map does not have position (key-value pair will be returned by iterator)
+	- one single getCurrentFunction
 
