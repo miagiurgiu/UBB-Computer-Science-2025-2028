@@ -695,8 +695,8 @@ https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.yo
 - constant complexity (theta(1))
 ```
 subalgorithm addFirst(sll,e) execute
-	newNod
-
-[newNode].next <- sll.head
-sll.head <- newNode
+	newNode <- allocate()
+	[newNode].info <-e
+	[newNode].next <- sll.head
+	sll.head <- newNode
 ```
