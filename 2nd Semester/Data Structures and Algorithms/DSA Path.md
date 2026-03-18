@@ -537,4 +537,6 @@ sorted bag -> only the first two
 	- same for sorted bag but interface is changed by relation
 	- iterator has to return elems in correct sorted order
 
+4) minesweeper. what type of container needed to place the mines?
+- matrix? list? dictionary? 
 "remove element 10" -> value-min+1
