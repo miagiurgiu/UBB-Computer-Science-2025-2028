@@ -2603,6 +2603,7 @@ while(1) {
 }
 
 // maybe put SIG_IGN instead of f (ignore)
+// SIG_DFL (default)
 signal(SIGCHILD,f); // added
 while(1) {
 	get request
