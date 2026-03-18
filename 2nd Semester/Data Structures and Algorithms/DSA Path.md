@@ -598,5 +598,8 @@ for i <- lines[line], lines[line+1],1 ex
 	- restricted access (only to some elements - the one on the top)
 	- add, remove operations happen on the top
 	- remove. stack knows what. 
+	- LIFO
+	- push (add)
+	- pop (remove)
 	- 
 
