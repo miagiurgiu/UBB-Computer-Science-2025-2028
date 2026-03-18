@@ -1901,4 +1901,5 @@ Copy constructors
 ```
 Vector2D x{1,2}
 Vector2D y=x;
+Vector2D y{x}; // initialising y with x
 ```
