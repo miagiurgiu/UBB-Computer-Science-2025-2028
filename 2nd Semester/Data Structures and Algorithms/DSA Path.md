@@ -641,4 +641,4 @@ Rear  ->                                                             Front
 
 2) ADT List <-> positions
 - only for lists: POSITIONS => they give an order
-- 
+- TPosition - the type of a position
