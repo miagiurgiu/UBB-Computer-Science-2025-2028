@@ -2694,7 +2694,10 @@ int main(int argc, char** argv) {
         (void)argv;
         return 0;
 }
-
-
-
 ```
+
+- to see the processes -> take that number
+```
+ps -u mia-giurgiu
+```
+- kill that number
