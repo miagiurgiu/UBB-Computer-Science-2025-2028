@@ -2602,6 +2602,7 @@ while(1) {
 	respond
 }
 
+signal(SIGCHILD,f); // added
 while(1) {
 	get request
 	if (fork()==0) {
@@ -2612,6 +2613,9 @@ while(1) {
 	//wait
 }
 
+void f(int sgn) {
+	wait(0);
+}
 ```
 
 3) Zombie process
