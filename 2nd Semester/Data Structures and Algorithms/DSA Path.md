@@ -587,6 +587,7 @@ for i <- lines[line], lines[line+1],1 ex
 	- i need iterator because map does not have position (key-value pair will be returned by iterator)
 	- one single getCurrentFunction
 	- sortedmap sorted by the keys
+	- for maps -> no previous/next key
 - morse
 	- multi-map: key is allowed not to be unique?
 	- add a new key-value pair simply because
