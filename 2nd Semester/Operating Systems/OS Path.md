@@ -1064,15 +1064,6 @@ $ -> end of line
 -v -> invert match 
 -o -> print only matching part
 
-
-
-
-
-
-
-
-
-
 ## Lecture 3 (11 mar 2026)
 
 1) Find names of all students in group 911. Which file has the list of all students in the system? using grep.
@@ -2467,3 +2458,4 @@ validate your arguments and give comments! check nr of parameters, check their t
 
 ## Lecture 4 - 18 mar 2026
 
+1) Issue about having the same 
