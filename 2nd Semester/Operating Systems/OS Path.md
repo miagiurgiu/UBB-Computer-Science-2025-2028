@@ -2612,7 +2612,7 @@ while(1) {
 		respond
 		exit
 	}
-	//wait
+	//wait -> the parent will stay here until the child finishes, not getting any new request; you call wait only when you know the process finished (cause it's right there??)
 }
 
 // maybe give this up 
