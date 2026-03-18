@@ -719,7 +719,8 @@ Inserting a node before the current node:
 
 Inserting a node at a given position:
 - you need the node after the position to which you are inserting
-- 
+- do I even have that node at that position?
+- invalid 
 ```
 
 ```
