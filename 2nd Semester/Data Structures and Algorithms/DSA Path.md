@@ -621,10 +621,14 @@ Queues
 | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |
 Front                                                                 Rear
-Rear                                                                  Front
+Rear  ->                                                             Front
 
 2) Priority queue 
 - each element has an associated priority
 - a relation on these priorities (tells which element has a higher priority)
 - higher number does not mean higher priority
-- function - takes two priorities, returns true/false if the
+- function - takes two priorities, returns true/false if the relation is checked
+- when we push sth to this type of queue -> actually a pair
+- pop -> removes the element with the higher priority
+- priority given by position? by a value?
+- no iterators
