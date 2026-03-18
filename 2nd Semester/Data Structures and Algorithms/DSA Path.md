@@ -607,6 +607,7 @@ for i <- lines[line], lines[line+1],1 ex
 ## Lecture 4 - 18 mar 2026
 
 Queues
+- ex: emergency room
 - rear = tail/back (end position) -> where we add
 - front -> where we remove
 - FIFO
@@ -624,4 +625,6 @@ Rear                                                                  Front
 
 2) Priority queue 
 - each element has an associated priority
-- a relation on these priorities 
+- a relation on these priorities (tells which element has a higher priority)
+- higher number does not mean higher priority
+- function - takes two priorities, returns true/false if the
