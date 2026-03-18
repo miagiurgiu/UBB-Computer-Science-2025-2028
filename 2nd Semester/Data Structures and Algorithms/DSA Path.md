@@ -512,4 +512,5 @@ Containers
 
 1) Sorted bag
 - elements are sorted (they have an order)
+- no positions
 - 
