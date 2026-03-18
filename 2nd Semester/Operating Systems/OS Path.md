@@ -1241,7 +1241,7 @@ grep -E -v "^.{,2}$"
 ^.{,2}$ -> strings of length <=2
 exclude lines that have length <=2;
 ```
-
+0
 - count most frequent names:
 - sort numerically in reverse?
 ```
