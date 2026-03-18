@@ -673,6 +673,8 @@ Search function for singly linked list:
 - we need a loop (stop sooner) => while
 - cNode.info -> not allowed
 - [cNode].info -> dereference in pseudocode
+- the two conditions in the while need to be reversed
+- before accessing any node, make sure it is not NIL! then you can check other stuff
 ```
 function search(sll, elem):
 	cNode <- sll.head
