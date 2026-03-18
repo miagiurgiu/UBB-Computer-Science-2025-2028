@@ -1898,6 +1898,7 @@ arrow because "this" is a pointer to the current object.
 
 
 Copy constructors
+- implement your own copy constructor
 ```
 Vector2D x{1,2}
 Vector2D y=x;
