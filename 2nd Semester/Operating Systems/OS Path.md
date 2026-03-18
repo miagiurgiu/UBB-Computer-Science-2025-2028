@@ -2458,4 +2458,13 @@ validate your arguments and give comments! check nr of parameters, check their t
 
 ## Lecture 4 - 18 mar 2026
 
-1) Issue about having the same 
+1) Issue about having the same resource modified by two things
+L - load (n++) sth like
+M
+S
+```
+mov ax, n
+inc ax
+mov n, ax
+```
+
