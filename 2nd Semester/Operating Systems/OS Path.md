@@ -1239,7 +1239,7 @@ grep -E -v "^.{,2}$"
 
 -v -> i dont show it (exclude)
 ^.{,2}$ -> strings of length <=2
-exclude lines that have length <=2
+exclude lines that have length <=2;
 ```
 
 - count most frequent names:
