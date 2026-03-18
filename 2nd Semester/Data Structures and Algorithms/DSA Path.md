@@ -607,7 +607,7 @@ for i <- lines[line], lines[line+1],1 ex
 ## Lecture 4 - 18 mar 2026
 
 Types of containers
-1) Queues
+1) AQueues
 - ex: emergency room
 - rear = tail/back (end position) -> where we add
 - front -> where we remove
@@ -635,3 +635,6 @@ Rear  ->                                                             Front
 - no iterators
 
 2) Deque
+- container in which we can insert/delete from both ends
+- could be used instead of a stack/queue
+- 
