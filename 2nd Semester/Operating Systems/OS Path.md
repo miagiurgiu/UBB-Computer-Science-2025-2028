@@ -2459,7 +2459,7 @@ validate your arguments and give comments! check nr of parameters, check their t
 ## Lecture 4 - 18 mar 2026
 
 1) Issue about having the same resource modified by two things
-L - load (n++) sth like
+L - load (n++); n is a variable; last time -> file
 M
 S
 ```
@@ -2468,3 +2468,13 @@ inc ax
 mov n, ax
 ```
 
+
+
+| T (time) | A (program) | B (program) |
+| -------- | ----------- | ----------- |
+| 0        | L           |             |
+| 1        |             |             |
+| 2        |             |             |
+| 3        |             |             |
+| 4        |             |             |
+| 5        |             |             |
