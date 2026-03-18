@@ -2622,6 +2622,7 @@ while(1) {
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
+#include <sys/wait.h>
 int main(int argc, char** argv) {
         printf("a %d %d \n",getpid(),getppid());
         for(int i=0; i<3; i++) {
@@ -2630,12 +2631,16 @@ int main(int argc, char** argv) {
                         exit(0);
                 }
         }
-        wait(0);
+        for(int i=0; i<3; i++) { // 3 times because i created 3. 
+                wait(0);
+        }
         printf("b %d %d\n",getpid(),getppid());
         (void) argc;
         (void) argv;
         return 0;
 }
+
+
 ```
 - result:
 ```
