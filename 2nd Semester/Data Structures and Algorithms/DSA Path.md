@@ -683,5 +683,9 @@ function search(sll, elem):
 		// go to the next node
 		cNode <- [cNode].next
 	end-while
-	if 
+	if cNode = NIL then
+		search <- False
+	else
+		search <- True
+	end-if
 ```
