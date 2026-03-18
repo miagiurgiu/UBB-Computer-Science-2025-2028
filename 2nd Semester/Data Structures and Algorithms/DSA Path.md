@@ -507,3 +507,7 @@ Containers
 	- go the next non-zero operation
 	- no longer theta(1) because it will have a while loop
 	- we need the current frequency 
+	- keep count of the current frequencies
+	- when you go the next position, you might need to skip a few zeroes
+
+1) Sorted bag
