@@ -1931,7 +1931,8 @@ delete x; // destructor is being called => memory deallocated
 
 Copy constructor vs assignment operator
 ```
-Vector2D v7=v1; copy constructor is called
+Vector2D v7=v1;  // copy constructor is called
 
-Vector2D
+Vector2D v8;
+v8=v2; // assignment operator
 ```
