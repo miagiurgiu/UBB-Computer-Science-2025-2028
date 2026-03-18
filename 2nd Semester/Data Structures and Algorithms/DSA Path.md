@@ -600,6 +600,6 @@ for i <- lines[line], lines[line+1],1 ex
 	- remove. stack knows what. 
 	- LIFO
 	- push (add)
-	- pop (remove)
+	- pop (remove+return), exception from an empty stack
 	- 
 
