@@ -546,5 +546,5 @@ sorted bag -> only the first two
 - return value from given position based on line, column (valid values for lines, cols)
 - no add, remove from matrix (does not make sense)
 - we have "modify values on a specific position" operation instead.
-- 
+- most positions are empty in minesweeper. 480 positions?
 "remove element 10" -> value-min+1
