@@ -532,4 +532,6 @@ sorted bag -> only the first two
 	- order not important
 	- no positions, like in a bag
 	- container w no positions but elements are unique -> called a SET
-	- nr of occurences does no
+	- nr of occurences does not make sense for a set because elements are unique
+	- union, intersection
+	- 
