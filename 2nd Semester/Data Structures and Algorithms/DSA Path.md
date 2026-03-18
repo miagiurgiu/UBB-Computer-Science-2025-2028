@@ -719,10 +719,14 @@ Inserting a node before the current node:
 
 Inserting a node at a given position:
 - you need the node after the position to which you are inserting
-- do I even have that node at that position?
+- do I even have that node at that position? 
+- complexity: O(n) because of the while loop
 - position < 1 => invalid position => throw exception
 - position too big => 
 - position = 1 separate because it's the only position that does not have a previous node
 ```
 
 ```
+
+Deleting a given element:
+- idk address of the node, i know the .info only
