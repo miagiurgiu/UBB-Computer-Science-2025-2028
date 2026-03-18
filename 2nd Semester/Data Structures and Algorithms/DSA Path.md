@@ -606,4 +606,8 @@ for i <- lines[line], lines[line+1],1 ex
 
 ## Lecture 4 - 18 mar 2026
 
-1) Implementing a queue using an array
+Queues
+- rear = tail/back (end position)
+- FIFO
+- 
+1) Implementing a queue using an array (static/dynamic), where should we place the front and rear of the queue?
