@@ -691,6 +691,7 @@ function search(sll, elem):
 ```
 
 Inserting a node at the beginning of a linked list:
+- ord
 https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.youtube.com/watch%3Fv%3DHKfj0l7ndbc&ved=2ahUKEwiHp_Tr4qmTAxUYJhAIHV_8KwoQtwJ6BAgREAI&usg=AOvVaw32tvpqYGxF9--2JwWxg2GX
 - constant complexity (theta(1))
 ```
@@ -706,4 +707,5 @@ Inserting a node after the current node:
 subalgorithm addAfterCurrent(sll,e) execute
 	[newNode].next <- [currentNode].next
 	[currentNode].next <- newNode
+	
 ```
