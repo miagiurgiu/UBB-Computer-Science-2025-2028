@@ -1910,4 +1910,7 @@ y gets destroyed, then x gets destroyed, statically allocated, they go out of sc
 ```
 Destructors
 - called when objects should be destroyed
-- 
+```
+Vector2D x = new Vector2D{1,2};
+delete x; // destructor is being called
+```
