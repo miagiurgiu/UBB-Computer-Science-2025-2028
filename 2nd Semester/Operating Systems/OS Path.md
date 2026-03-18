@@ -2463,3 +2463,7 @@ creates all combinations that exist between those two sets (cartesian product)
 ![[Pasted image 20260317153232.png]]
 
 validate your arguments and give comments! check nr of parameters, check their type
+
+
+## Lecture 4 - 18 mar 2026
+
