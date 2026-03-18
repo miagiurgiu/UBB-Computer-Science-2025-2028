@@ -511,3 +511,5 @@ Containers
 	- when you go the next position, you might need to skip a few zeroes
 
 1) Sorted bag
+- elements are sorted (they have an order)
+- 
