@@ -502,3 +502,5 @@ Containers
 - representation 3 - array of positions
 - representatoin 4 - searching is faster theta(1) -> compute formula
 - it is recommended to have non-zero elements on the first and last positions
+- iterator is a little different because of the zero values
+	- should no
