@@ -2483,6 +2483,11 @@ ls
 
 What happens when you run a program:
 
-| Context |     |
-| ------- | --- |
-| Sources |     |
+| Context                                               |     |
+| ----------------------------------------------------- | --- |
+| Sources (you can think of it as Source Segment ASC)   |     |
+| Constant                                              |     |
+| Variables (you can think of them as global variables) |     |
+| heap                                                  |     |
+|                                                       |     |
+|                                                       |     |
