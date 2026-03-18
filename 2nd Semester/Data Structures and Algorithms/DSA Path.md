@@ -565,6 +565,7 @@ sorted bag -> only the first two
 	- 
 "remove element 10" -> value-min+1
 
+- complex sparse line representation and complex 
 - "waste of memory" (modify the value from position 3 3 to 19) -> making the lines array shorter (have as many elements as.... + 1)
 ```
 1 2 3 4  5  6   7
@@ -574,7 +575,8 @@ we don't have 5 on the line -> put the one on the next
 we don't have 7 (too big) -> last position + 1 = 19
 elements from line 3 -> positions 8,9,10 in the other 2 arrays -> p
 
-for i <- lines[line], lines[]
+for i <- lines[line], lines[line+1],1 ex
 
+(for loop that traverses the elements on line line)
 ```
 
