@@ -2514,5 +2514,17 @@ int main(int argc, char** argv) {
 ```
 - run it in terminal
 ```
-
+gcc -Wall -Wextra -Werror -g -o code code.c
 ```
+- result:
+```
+a 3798 2887 
+b 3802 3798
+b 3799 3798
+b 3800 3798
+b 3798 2887
+b 3804 3800
+b 3801 1893
+b 3803 1893
+```
+
