@@ -522,7 +522,7 @@ Containers
 - how to check if a bag is sorted (not at implementation level?) two posibilities:
 	- 1. add to the bag: 3,1,4,2 -> two approaches
 		- sort them internally when adding them to the bag: 1,2,3,4 -> standard iterator for dynamic array; add operation is more complicated based on relation; -> iterator is efficient (stored internally by the relation altough it might not be visually vi)
-		- i dont have positions -> store them in 3,1,4,2 -> iterator needs sorted order -> search for the min -> position 2 -> when calling next() -> find the next smallest value => 4th position -> 1st position -> 3rd position -> change more things -> iteration is inefficient -> we want theta(1) complexity, whenever is possible
+		- i don't have positions -> store them in 3,1,4,2 -> iterator needs sorted order -> search for the min -> position 2 -> when calling next() -> find the next smallest value => 4th position -> 1st position -> 3rd position -> change more things -> iteration is inefficient -> we want theta(1) complexity, whenever is possible -> innefficient, we don't use (would work in the sense that the behaviour will be ok)
 
 regular bag ->
 sorted bag -> only the first two
@@ -646,7 +646,7 @@ Rear  ->                                                             Front
 	- init function to create a list
 	- getElement -> return element from given position
 	- position -> return position from given element
-	- setElement -> put a specific value for a specific position
+	- setElement -> put a specific value for a specific position -> STORE DIRECTLY ORDERED
 	- addToEnd -> 
 	- remove -> from given position
 	- search -> boolean function
