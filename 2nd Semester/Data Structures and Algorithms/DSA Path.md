@@ -592,5 +592,6 @@ for i <- lines[line], lines[line+1],1 ex
 	- add a new key-value pair simply because
 	- for remove, specify the entire pair
 	- for a simple map, the value is not required for removing, it removes by position ig
+	- sorted multi-map -> sort only the keys
 	- 
 
