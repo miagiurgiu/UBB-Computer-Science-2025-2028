@@ -678,4 +678,5 @@ function search(sll, elem):
 	cNode <- sll.head
 	while [CNode].info != elem execute
 		@ go to the next node
+		cNode <- [cNode].next
 ```
