@@ -667,6 +667,7 @@ Rear  ->                                                             Front
 - used to implement containers for assignment 2
 
 Search function for singly linked list:
+- boolean function
 - elem is TElem
 - you don't have the access like for a dynamic array
 - work with current nodes instead of positions
@@ -681,4 +682,6 @@ function search(sll, elem):
 	while [cNode].info != elem and cNode!=NIL execute
 		// go to the next node
 		cNode <- [cNode].next
+	end-while
+	if 
 ```
