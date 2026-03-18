@@ -2485,8 +2485,9 @@ What happens when you run a program:
 
 fork instruction 
 	- original -> parent -> ? -> needs to see the pid of the child
-	- clone -> child? -> 0
+	- clone -> child? -> 0 = copy
 	- returns a value
+	- create a new process in Unix 
 every process can get its pid
 
 | Context                                               |     |
@@ -2561,6 +2562,7 @@ int main(int argc, char** argv) {
 - parent never executes exit().
 - parent only iterates for??
 - recursive??
+- every process has its own i 
 ```
 #include <stdio.h>
 #include <unistd.h>
