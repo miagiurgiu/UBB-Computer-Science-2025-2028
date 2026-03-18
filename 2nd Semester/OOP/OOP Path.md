@@ -1928,3 +1928,10 @@ delete x; // destructor is being called => memory deallocated
 - you could just print sth in the destructor 
  
  when i have "const" inside the header function i am not allowed to use "this"
+
+Copy constructor vs assignment operator
+```
+Vector2D v7=v1; copy constructor is called
+
+Vector2D
+```
