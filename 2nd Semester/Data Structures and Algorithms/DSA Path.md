@@ -492,3 +492,4 @@ Maria@Mac FixedCapBiMap % ./app
 
 ## Lecture 3 - 18 mar 2026
 
+Containers
