@@ -2535,3 +2535,5 @@ while(1) {
 	fork();
 }
 ```
+
+![[Pasted image 20260318183105.png]]
