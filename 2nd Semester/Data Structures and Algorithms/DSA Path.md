@@ -515,4 +515,7 @@ Containers
 - no positions
 - binary search instead of linear search (but not visible from the outside)
 - sorting criteria
-- 
+
+how relations are done for lab assignments:
+
+rel(e1,e2) 
