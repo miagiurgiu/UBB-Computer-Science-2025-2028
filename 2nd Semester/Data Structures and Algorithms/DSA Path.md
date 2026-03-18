@@ -659,4 +659,6 @@ Rear  ->                                                             Front
 
 2) Linked list
 - elements can be anywhere in the memory (no longer at consecutive position)
-- 
+- i will know the address of the first node
+- i have a pointer which tells me who is the first node. contains a pointer who tells me who is the next one etc.
+- 4th node has the address of the 5th one...
