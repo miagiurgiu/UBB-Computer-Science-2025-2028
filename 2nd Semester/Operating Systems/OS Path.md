@@ -2617,10 +2617,9 @@ while(1) {
 - deleted child -> keep its pid, then cleans the process?
 - parents wait for children to finish execution
 
-- wait returns error if there are no child 
+- wait returns error if there are no child processes
 ```
-
-```#include <stdio.h>
+#include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
 int main(int argc, char** argv) {
@@ -2638,3 +2637,4 @@ int main(int argc, char** argv) {
         return 0;
 }
 
+```
