@@ -609,5 +609,11 @@ for i <- lines[line], lines[line+1],1 ex
 Queues
 - rear = tail/back (end position)
 - FIFO
-- 
+- all elements inserted at the end (rear)
 1) Implementing a queue using an array (static/dynamic), where should we place the front and rear of the queue?
+
+|     |     |     |     |     |     |
+| --- | --- | --- | --- | --- | --- |
+|     |     |     |     |     |     |
+Front                                  
+Rear
