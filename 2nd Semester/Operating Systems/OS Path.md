@@ -1121,7 +1121,7 @@ awk -> processes text column-by-column (extracts)
 ```
 grep -E " - 91[0-9] - " /etc/passwd | awk -F: '{print $5}' | sort | uniq | wc -l
 
-grep -E " - 91[0-9] -> select English section groups (910-919)
+grep -E " - 91[0-9] - " -> select English section groups (910-919)
 awk -> extract names
 sort -> sort alphabetically
 uniq -> remove duplicates (works well only on sorted input)
