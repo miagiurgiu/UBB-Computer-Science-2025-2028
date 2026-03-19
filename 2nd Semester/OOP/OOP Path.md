@@ -1959,3 +1959,8 @@ gcc -g domain/product.c repository/dynamic_array.c repository/repo_dynamic.c ser
 ./test_suite
 ```
 
+## Lab 4 
+
+A4-5:
+- console based app with a menu
+- 
