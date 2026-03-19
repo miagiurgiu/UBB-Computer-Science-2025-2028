@@ -1985,5 +1985,5 @@ gcc -g domain/product.c repository/dynamic_array.c repository/repo_dynamic.c ser
 ```
 gcc -g domain/product.c repository/dynamic_array.c repository/repo_dynamic.c service/service_dynamic.c service/OperationStack.c tests/tests.c -o test_suite
 
-
+leaks --atExit -- ./test_suite
 ```
