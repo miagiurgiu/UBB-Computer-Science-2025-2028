@@ -1968,3 +1968,5 @@ A4-5:
 	- crud
 - user mode 
 - layered architecture
+	- ui-service-repo-dynamicvector-domain
+	- tests 
