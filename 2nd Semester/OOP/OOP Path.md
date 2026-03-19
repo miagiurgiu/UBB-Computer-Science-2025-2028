@@ -1972,4 +1972,4 @@ A4-5:
 	- tests with code coverage 98%
 	- cppcoverage - generic tool that counts lines of code covered by tests
 	- example at the lecture on how to use code coverage
-	- 
+	- user input validation
