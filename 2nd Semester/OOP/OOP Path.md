@@ -1945,3 +1945,17 @@ run dynamic version:
 gcc -g domain/product.c repository/dynamic_array.c repository/repo_dynamic.c service/service_dynamic.c service/OperationStack.c ui/ui_dynamic.c main_dynamic.c -o fridge_dynamic
 ./fridge_dynamic
 ```
+
+
+run static version:
+```
+ gcc -g domain/product.c repository/repo_static.c service/service_static.c ui/ui.c main.c -o fridge_static
+./fridge_static
+```
+
+run tests:
+```
+gcc -g domain/product.c repository/dynamic_array.c repository/repo_dynamic.c service/service_dynamic.c service/OperationStack.c tests.c -o test_suite
+./test_suite
+```
+
