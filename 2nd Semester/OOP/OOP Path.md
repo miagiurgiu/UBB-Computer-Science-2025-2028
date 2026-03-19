@@ -1975,3 +1975,7 @@ A4-5:
 	- user input validation -> throwing and catching errors, exceptions (like try except in python -> try - catch)
 - what makes a ... unique? add a movie that has the same name and year -> duplicate -> not allowed
 - hardcode some elements
+-
+
+gcc -g domain/product.c repository/dynamic_array.c repository/repo_dynamic.c service/service_dynamic.c service/OperationStack.c ui/ui_dynamic.c start/main_dynamic.c -o fridge_dynamic
+./fridge_dynamic
