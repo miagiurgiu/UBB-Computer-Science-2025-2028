@@ -740,4 +740,3 @@ Deleting a given element:
 
 ## Lab 2 - 19 mar 2026
 
-Assignment 1 description -> see types of constructors
