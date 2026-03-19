@@ -1979,3 +1979,11 @@ A4-5:
 
 gcc -g domain/product.c repository/dynamic_array.c repository/repo_dynamic.c service/service_dynamic.c service/OperationStack.c ui/ui_dynamic.c start/main_dynamic.c -o fridge_dynamic
 ./fridge_dynamic
+
+
+
+```
+gcc -g domain/product.c repository/dynamic_array.c repository/repo_dynamic.c service/service_dynamic.c service/OperationStack.c tests/tests.c -o test_suite
+
+
+```
