@@ -1964,6 +1964,8 @@ gcc -g domain/product.c repository/dynamic_array.c repository/repo_dynamic.c ser
 A4-5:
 - c++
 - console based app with a menu
-- admin mode (for nex)
-- user mode
+- admin mode (for next week)
+	- crud
+	- 
+- user mode 
 - 
