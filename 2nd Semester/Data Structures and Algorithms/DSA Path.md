@@ -740,4 +740,4 @@ Deleting a given element:
 
 ## Lab 2 - 19 mar 2026
 
-destructor is never exp
+destructor is never explicitly called - it is called automatically at the end of lifespan of a function
