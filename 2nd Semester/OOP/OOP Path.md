@@ -1966,6 +1966,5 @@ A4-5:
 - console based app with a menu
 - admin mode (for next week)
 	- crud
-	- 
 - user mode 
-- 
+- layered architecture
