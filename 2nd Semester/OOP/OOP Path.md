@@ -1962,5 +1962,8 @@ gcc -g domain/product.c repository/dynamic_array.c repository/repo_dynamic.c ser
 ## Lab 4 
 
 A4-5:
+- c++
 - console based app with a menu
+- admin mode (for nex)
+- user mode
 - 
