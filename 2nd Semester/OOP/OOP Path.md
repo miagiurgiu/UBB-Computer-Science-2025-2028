@@ -1936,3 +1936,12 @@ Vector2D v7=v1;  // copy constructor is called
 Vector2D v8;
 v8=v2; // assignment operator
 ```
+
+
+## A2-3
+
+run dynamic version:
+```
+gcc -g domain/product.c repository/dynamic_array.c repository/repo_dynamic.c service/service_dynamic.c service/OperationStack.c ui/ui_dynamic.c main_dynamic.c -o fridge_dynamic
+./fridge_dynamic
+```
