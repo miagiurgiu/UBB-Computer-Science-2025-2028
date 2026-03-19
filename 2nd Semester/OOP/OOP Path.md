@@ -1970,8 +1970,8 @@ A4-5:
 - layered architecture
 	- ui-service-repo-dynamicvector-domain
 	- tests with code coverage 98%
-	- cppcoverage - generic tool that counts lines of code covered by tests -
+	- cppcoverage - generic tool that counts lines of code covered by tests -> for next week if we receive examples
 	- example at the lecture on how to use code coverage
-	- user input validation
+	- user input validation -> throwing and catching errors, exceptions (like try except in python -> try - catch)
 - what makes a ... unique? add a movie that has the same name and year -> duplicate -> not allowed
 - hardcode some elements
