@@ -1973,3 +1973,4 @@ A4-5:
 	- cppcoverage - generic tool that counts lines of code covered by tests
 	- example at the lecture on how to use code coverage
 	- user input validation
+- what makes a ... unique? add a movie that has the same name and title
