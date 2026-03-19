@@ -744,4 +744,5 @@ destructor is never explicitly called - it is called automatically at the end of
 
 - reallocate method
 - watch with debug
-- 
+- turn add into sorted 
+- add condition
