@@ -659,14 +659,16 @@ Rear  ->                                                             Front
 - operations for working on positions:
 	- init function to create a list (constructor)
 	- first (returns position of the first element from the list)
-	- last
+	- last (returns position of the last element from the list)
 	- valid (true/false)
 	- next
 	- previous
-	- getElement -> return element from given position
-	- position -> return position from given element
+	- getElement -> return element (value) from given position
+	- position -> return position of given element
 	- setElement -> put a specific value for a specific position -> STORE DIRECTLY ORDERED INTERNALLY
 	- addToEnd -> 
+	- addAfterPosition ->
+	- addBefore ->
 	- remove -> from given position
 	- search -> boolean function
 	- destroy ->
