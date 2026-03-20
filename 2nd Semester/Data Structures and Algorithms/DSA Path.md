@@ -702,6 +702,10 @@ Dynamic array
 
 2) Linked list
 - every node has 2 components
+	- k
+	- second component = pointer
+- first element = HEAD
+- last element = TAIL -> pointer = NIL
 - elements can be anywhere in the memory (no longer at consecutive position)
 - i will know the address of the first node
 - i have a pointer which tells me who is the first node. contains a pointer who tells me who is the next one etc.
