@@ -634,9 +634,9 @@ Rear  ->                                                             Front
 
 2) ADT Priority queue <-> priorities
 - triage (emergency room)
-- each element has an associated priority (associated)
-- a relation on these priorities (tells which element has a higher priority)
-- higher number does not mean higher priority
+- each element has an associated priority (associated value)
+- a relation on these priorities (tells which element has a higher priority) - works in the same 
+- higher number does not mean higher priority (don't assume priority = numbers)
 - function - takes two priorities, returns true/false if the relation is checked
 - when we push sth to this type of queue -> actually a pair
 - pop -> removes the element with the higher priority
