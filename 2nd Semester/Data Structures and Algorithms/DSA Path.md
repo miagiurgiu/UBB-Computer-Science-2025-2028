@@ -654,6 +654,8 @@ Rear  ->                                                             Front
 2) ADT List <-> positions
 - only container with POSITIONS => they give an order
 - TPosition - the type of a position (index or iterator)
+- 1. position = rank of the element inside a list (general)
+- 2. memory addresses - 
 - operations:
 	- init function to create a list
 	- getElement -> return element from given position
