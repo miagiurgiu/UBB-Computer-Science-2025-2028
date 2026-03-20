@@ -656,9 +656,13 @@ Rear  ->                                                             Front
 - TPosition - the type of a position (index or iterator)
 - 1. position = rank of the element inside a list (general)
 - 2. position = memory addresses 
-- operations:
+- operations for working on positions:
 	- init function to create a list (constructor)
-	- first (returns position of the first element from)
+	- first (returns position of the first element from the list)
+	- last
+	- valid (true/false)
+	- next
+	- previous
 	- getElement -> return element from given position
 	- position -> return position from given element
 	- setElement -> put a specific value for a specific position -> STORE DIRECTLY ORDERED INTERNALLY
