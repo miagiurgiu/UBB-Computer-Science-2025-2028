@@ -622,6 +622,7 @@ Types of containers
 - two ends: front (remove operations, green) and rear (add operations, red)
 - same operations as in the stack 
 - i cannot pop more elements than i pushed
+- circular array -> the one with empty spaces
 
 |     |     |     |     |     |     |
 | --- | --- | --- | --- | --- | --- |
