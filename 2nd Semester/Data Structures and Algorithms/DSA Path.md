@@ -619,6 +619,7 @@ Types of containers
 - front: remove/pop
 - rear: add/push
 - limited access
+- two ends: front (remove operations) and rear (add operations)
 
 |     |     |     |     |     |     |
 | --- | --- | --- | --- | --- | --- |
