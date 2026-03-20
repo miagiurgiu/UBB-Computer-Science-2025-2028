@@ -682,6 +682,10 @@ Rear  ->                                                             Front
 - relation passed as a parameter to the init function (init will have 2 parameters)
 - iterator returns element in sorted order
 - not abstract: (python) -> position is a number between brackets (index)
+- c++ -> positions = iterators
+- vectors in c++
+
+
 
 2) Linked list
 - elements can be anywhere in the memory (no longer at consecutive position)
