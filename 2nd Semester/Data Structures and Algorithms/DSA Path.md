@@ -696,6 +696,7 @@ Dynamic array
 - elements on continuous positions
 - advantage: constant access to every element
 - disadvantage: remove/add -> shift -> theta(n) complexity for operations
+- anywhere in the memory (not on consecutive memory locations anymore)
 - 
 
 2) Linked list
