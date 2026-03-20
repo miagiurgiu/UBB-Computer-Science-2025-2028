@@ -703,7 +703,8 @@ Dynamic array
 2) Linked list
 - every node has 2 components
 	- data (info)
-	- second component = pointer (address of the next node)
+	- second component = pointer (address of the next node) (next)
+- pointer = datatype which denotes address
 - first element = HEAD
 - last element = TAIL -> pointer = NIL
 - elements can be anywhere in the memory (no longer at consecutive position)
@@ -716,6 +717,8 @@ Dynamic array
 		- 
 - doubly linked list
 - used to implement containers for assignment 2
+
+
 
 Search function for singly linked list:
 - boolean function
