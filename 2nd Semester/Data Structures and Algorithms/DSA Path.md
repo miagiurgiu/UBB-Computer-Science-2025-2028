@@ -639,9 +639,9 @@ Rear  ->                                                             Front
 - higher number does not mean higher priority (don't assume priority = numbers)
 - function - takes two priorities, returns true/false if the relation is checked
 - when we push sth to this type of queue -> actually a pair
-- pop -> removes the element with the higher priority
+- pop -> removes the element with the higher priority - returns element with its priority (both remove + return)
 - priority given by position? by a value?
-- no iterators
+- no iterators - 
 - same operations for the queue but:
 	- there is a relation
 	- priority pairs internally
