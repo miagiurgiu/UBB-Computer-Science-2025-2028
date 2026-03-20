@@ -684,6 +684,7 @@ Rear  ->                                                             Front
 - not abstract: (python) -> position is a number between brackets (index)
 - c++ -> positions = iterators
 - vectors in c++
+- iterated lists and indexed lists ?
 ```
 vector v
 v.erase(f) -> f is an iterator
