@@ -645,7 +645,6 @@ Rear  ->                                                             Front
 - same operations for the queue but:
 	- there is a relation
 	- priority pairs internally
-	- 
 
 2) ADT Deque <-> both ends
 - double-ended queue
