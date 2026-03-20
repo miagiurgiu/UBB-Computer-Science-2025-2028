@@ -717,7 +717,7 @@ Dynamic array
 		- 
 - doubly linked list
 - used to implement containers for assignment 2
-- dereference = go to that memory address stored in the pointer and take the value in there (.info)
+- dereference = go to that memory address stored in the pointer and take the value in there (.infobb)
 
 Search function for singly linked list:
 - boolean function
