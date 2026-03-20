@@ -685,6 +685,7 @@ Rear  ->                                                             Front
 - c++ -> positions = iterators
 - vectors in c++
 - iterated lists and indexed lists ?
+- unidirectional vs bidirectional iter
 ```
 vector v
 v.erase(f) -> f is an iterator
