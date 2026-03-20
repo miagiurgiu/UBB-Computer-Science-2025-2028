@@ -669,15 +669,19 @@ Rear  ->                                                             Front
 	- addToEnd -> 
 	- addAfterPosition ->
 	- addBefore ->
-	- remove -> from given position
+	- remove -> remove from given position
 	- search -> boolean function
+	- empty
+	- size
 	- destroy ->
 	- etc.
+	- ITERATOR
 - valid position
 - "perpendicular" = invalid position (no next position)
 - sorted list -> add, validate, set element does not make sense (5 cannot be added at the beginning because it is already sorted, and my list is 2,4,6,8...) -> sorted indexed list, sorted iterated list
 - relation passed as a parameter to the init function (init will have 2 parameters)
 - iterator returns element in sorted order
+- not abstract: (python) 
 
 2) Linked list
 - elements can be anywhere in the memory (no longer at consecutive position)
