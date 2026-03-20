@@ -624,7 +624,7 @@ Types of containers
 - i cannot pop more elements than i pushed
 - circular array -> the one with empty spaces
 - just increment the index or bring the index back to the beginning of the array (two situations when popping)
-- 
+- full queue => resize (circular array)
 
 |     |     |     |     |     |     |
 | --- | --- | --- | --- | --- | --- |
