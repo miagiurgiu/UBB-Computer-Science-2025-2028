@@ -717,7 +717,7 @@ Dynamic array
 		- 
 - doubly linked list
 - used to implement containers for assignment 2
-- dereference = go to that memory address stored in the pointer and take the value in there (.infobb5)
+- dereference = go to that memory address stored in the pointer and take the value in there (.info)
 
 Search function for singly linked list:
 - boolean function
@@ -800,4 +800,3 @@ destructor is never explicitly called - it is called automatically at the end of
 - turn add into sorted 
 - add condition in the while statement of the add function
 	&& this->mapElements[index].first >=c
-	
