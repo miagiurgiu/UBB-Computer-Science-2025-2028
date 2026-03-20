@@ -633,7 +633,8 @@ Front                                                                 Rear
 Rear  ->                                                             Front
 
 2) ADT Priority queue <-> priorities
-- each element has an associated priority
+- triage (emergency room)
+- each element has an associated priority (associated)
 - a relation on these priorities (tells which element has a higher priority)
 - higher number does not mean higher priority
 - function - takes two priorities, returns true/false if the relation is checked
