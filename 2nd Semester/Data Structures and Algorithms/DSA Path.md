@@ -698,8 +698,10 @@ Dynamic array
 - disadvantage: remove/add -> shift -> theta(n) complexity for operations
 - anywhere in the memory (not on consecutive memory locations anymore)
 - store another value = memory address of the second element
+- last element -> memory address = NIL
 
 2) Linked list
+- every node has 2 components
 - elements can be anywhere in the memory (no longer at consecutive position)
 - i will know the address of the first node
 - i have a pointer which tells me who is the first node. contains a pointer who tells me who is the next one etc.
