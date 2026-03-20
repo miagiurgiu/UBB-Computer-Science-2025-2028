@@ -618,6 +618,7 @@ Types of containers
 - theta(n) operation is not enough
 - front: remove/pop
 - rear: add/push
+- limited access
 
 |     |     |     |     |     |     |
 | --- | --- | --- | --- | --- | --- |
