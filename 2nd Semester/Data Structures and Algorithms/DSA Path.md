@@ -684,8 +684,11 @@ Rear  ->                                                             Front
 - not abstract: (python) -> position is a number between brackets (index)
 - c++ -> positions = iterators
 - vectors in c++
+```
+vector v
+v.erase(f) -> f is an iterator
 
-
+```
 
 2) Linked list
 - elements can be anywhere in the memory (no longer at consecutive position)
