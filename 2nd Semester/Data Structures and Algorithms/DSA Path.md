@@ -694,6 +694,9 @@ v.erase(f) -> f is an iterator
 
 Dynamic array
 - elements on continuous positions
+- advantage: constant access to every element
+- disadvantage: remove/add -> shift -> theta(n) complexity for operations
+- 
 
 2) Linked list
 - elements can be anywhere in the memory (no longer at consecutive position)
