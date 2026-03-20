@@ -612,7 +612,7 @@ Types of containers
 - ex: emergency room
 - rear = tail/back (end position) -> where we add
 - front -> where we remove
-- FIFO
+- FIFO (LIFO is for stack)
 - all elements inserted at the end (rear)
 - Implementing a queue using an array (static/dynamic), where should we place the front and rear of the queue?
 - theta(n) operation is not enough
