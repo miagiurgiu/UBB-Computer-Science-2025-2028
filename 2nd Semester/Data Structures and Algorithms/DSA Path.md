@@ -702,8 +702,8 @@ Dynamic array
 
 2) Linked list
 - every node has 2 components
-	- k
-	- second component = pointer
+	- data (info)
+	- second component = pointer (address of the next node)
 - first element = HEAD
 - last element = TAIL -> pointer = NIL
 - elements can be anywhere in the memory (no longer at consecutive position)
@@ -711,6 +711,9 @@ Dynamic array
 - i have a pointer which tells me who is the first node. contains a pointer who tells me who is the next one etc.
 - 4th node has the address of the 5th one...
 - singly linked list (every node has one single link, the one pointing to the next node)
+	- implementation of SSL:
+		- structure of a node
+		- 
 - doubly linked list
 - used to implement containers for assignment 2
 
