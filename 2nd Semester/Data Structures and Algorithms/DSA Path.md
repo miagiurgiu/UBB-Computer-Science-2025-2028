@@ -652,7 +652,7 @@ Rear  ->                                                             Front
 - could be used instead of a stack/queue
 
 2) ADT List <-> positions
-- only for lists: POSITIONS => they give an order
+- only container with POSITIONS => they give an order
 - TPosition - the type of a position (index or iterator)
 - operations:
 	- init function to create a list
