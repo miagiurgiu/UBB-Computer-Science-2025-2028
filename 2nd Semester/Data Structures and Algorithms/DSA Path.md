@@ -641,14 +641,15 @@ Rear  ->                                                             Front
 - when we push sth to this type of queue -> actually a pair
 - pop -> removes the element with the higher priority - returns element with its priority (both remove + return)
 - priority given by position? by a value?
-- no iterators - 
+- no iterators
 - same operations for the queue but:
 	- there is a relation
 	- priority pairs internally
 	- 
 
 2) ADT Deque <-> both ends
-- container in which we can insert/delete from both ends
+- double-ended queue
+- container in which we can insert/delete (push/pop) from both ends
 - could be used instead of a stack/queue
 
 2) ADT List <-> positions
