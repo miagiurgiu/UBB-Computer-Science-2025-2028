@@ -635,13 +635,17 @@ Rear  ->                                                             Front
 2) ADT Priority queue <-> priorities
 - triage (emergency room)
 - each element has an associated priority (associated value)
-- a relation on these priorities (tells which element has a higher priority) - works in the same 
+- a relation on these priorities (tells which element has a higher priority) - works in the same way as sorting containers
 - higher number does not mean higher priority (don't assume priority = numbers)
 - function - takes two priorities, returns true/false if the relation is checked
 - when we push sth to this type of queue -> actually a pair
 - pop -> removes the element with the higher priority
 - priority given by position? by a value?
 - no iterators
+- same operations for the queue but:
+	- there is a relation
+	- priority pairs internally
+	- 
 
 2) ADT Deque <-> both ends
 - container in which we can insert/delete from both ends
