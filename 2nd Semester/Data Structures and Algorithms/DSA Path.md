@@ -692,6 +692,9 @@ v.erase(f) -> f is an iterator
 
 ```
 
+Dynamic array
+- elements on continuous positions
+
 2) Linked list
 - elements can be anywhere in the memory (no longer at consecutive position)
 - i will know the address of the first node
@@ -782,3 +785,4 @@ destructor is never explicitly called - it is called automatically at the end of
 - turn add into sorted 
 - add condition in the while statement of the add function
 	&& this->mapElements[index].first >=c
+	
