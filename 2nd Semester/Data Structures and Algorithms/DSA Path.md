@@ -655,7 +655,7 @@ Rear  ->                                                             Front
 - only container with POSITIONS => they give an order
 - TPosition - the type of a position (index or iterator)
 - 1. position = rank of the element inside a list (general)
-- 2. memory addresses - 
+- 2. position = memory addresses - 
 - operations:
 	- init function to create a list
 	- getElement -> return element from given position
