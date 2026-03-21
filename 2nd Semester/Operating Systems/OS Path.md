@@ -2477,11 +2477,11 @@ for f in $(ls); do
 done
 ```
 
-- cartesian product:
+8) Others:
 
 $() cause you are younger
 
-how to create a 0 size file? using touch.
+- how to create a 0 size file? using touch.
 
 \t\v -> all 3 are considered spaces
 
@@ -2499,7 +2499,7 @@ do <-> done
 display
 double quotes when ... ?
 
-creates all combinations that exist between those two sets (cartesian product)
+- creates all combinations that exist between those two sets (cartesian product)
 ![[Pasted image 20260317153232.png]]
 
 validate your arguments and give comments! check nr of parameters, check their type
