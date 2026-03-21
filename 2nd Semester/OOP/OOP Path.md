@@ -1937,6 +1937,10 @@ Vector2D v8;
 v8=v2; // assignment operator
 ```
 
+"BIG THREE" of C++ memory management:
+- 1. constructor
+- 2. destructor
+- 3. copu constructor
 
 ## A2-3
 
