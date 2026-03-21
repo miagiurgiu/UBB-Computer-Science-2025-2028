@@ -2187,7 +2187,7 @@ gsub -> global substitution like sed s///g
 
 ## Seminar 2- 17 mar 2026
 
-Shell = common line interpreter; their role is to INTERPRET
+Shell = command line interpreter; their role is to INTERPRET
 - interactive command language
 - beside regular commands, we can have scripts
 - run commands => scripts run by sb else
