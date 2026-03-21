@@ -1997,6 +1997,9 @@ DynamicArray.cpp
 
 // constructor
 DynamicArray::DynamicArray(int cap): capacity{cap}, size{0}
+{
+
+}
 
 ```
 
