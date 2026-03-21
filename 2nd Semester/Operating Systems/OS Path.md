@@ -2439,7 +2439,7 @@ echo $?
 
 7) Logic and Loops
 
-REPLY -> default delimiter (space)
+REPLY -> default delimiter (space), default variable if no name is provided
 READ command -> -d
 
 message for the user, result put in that variable
@@ -2448,9 +2448,9 @@ read -p "Enter sth: " VAR
 -> displays a message and saves input to VAR
 ```
 
-export VAR -> VAR becomes a global variable for every ...
+- export VAR -> VAR becomes a global variable for every ...
 
-if you want ... then instead of ./script.sh use:
+- if you want ... then instead of ./script.sh use:
 
 ```
 sh.             script.sh
