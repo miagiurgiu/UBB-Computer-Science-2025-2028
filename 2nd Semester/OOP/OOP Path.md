@@ -1947,8 +1947,8 @@ Lecture 4 wrap-up:
 
 main.cpp:
 - arr1 creates a memory block on the heap -> ADDRESS A
-- arr3 creates a different memory block on the heap
-- arr3 = arr1 => DISASTER because we did not write a custom = operator, C++ just copies the POINTER => arr3 points to
+- arr3 creates a different memory block on the heap -> ADDRESS B
+- arr3 = arr1 => DISASTER because we did not write a custom = operator, C++ just copies the POINTER => arr3.elems points to ADDRESS A and ADDRESS B is forgotten => memory leak
 ```
 #include "DynamicArray.h"
 // #include <crtdbg.h> // does not work on mac/linux
@@ -1963,11 +1963,13 @@ int main() {
 	// this line currently causes a memory leak
 	arr3 = arr1;
 }
-	// _CrtDumpMemoryLeaks(); // does not work on mac/linux
+	// _CrtDumpMemoryLeaks(); // does not work on mac/linux -> use command (*) in teminal 
 	std::cout << "Program finished. Check terminal for sanitizer reports if enabled. " << std::endl;
 	return 0;
 }
 ```
+
+wh
 ## A2-3
 
 run dynamic version:
