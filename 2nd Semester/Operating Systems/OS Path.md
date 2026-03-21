@@ -2390,6 +2390,7 @@ unset VAR
 2) environment variables -> ex: PATH 
 ```
 export VAR -> make variable global for child processes
+ xport VAR -> VAR becomes a global variable for every sub-process (child process) started from this shell
 ```
 3) shell variables -> same meaning in any shell
 
@@ -2448,7 +2449,6 @@ read -p "Enter sth: " VAR
 -> displays a message and saves input to VAR
 ```
 
-- export VAR -> VAR becomes a global variable for every ...
 
 - if you want ... then instead of ./script.sh use:
 ```
