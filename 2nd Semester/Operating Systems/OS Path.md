@@ -2511,9 +2511,9 @@ FILE="My Doc.txt"
 ```
 
 
-- Brace expansion: creates all combinations that exist between those two sets (cartesian product)
+- Brace expansion: creates all combinations that exist between those two sets (cartesian product) -> useful for creating many directories at once: mkdir -p
 ```
-echo {A,B}{1,2} => 
+echo {A,B}{1,2} => A1 A2 B1 B2
 
 ```
 ![[Pasted image 20260317153232.png]]
