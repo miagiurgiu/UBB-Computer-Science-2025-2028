@@ -2259,12 +2259,11 @@ EOF
 ```
 - command substitution 
 ```
- $(command) or `command` -> executes the command and substitutes the output into
+ $(command) or `command` -> executes the command and substitutes the output into the line
 ```
-
-
-'' -> single quotes -> everything is taken literally (preferred for regex)
-"" -> double quotes -> if regex contains $, it could create confusion
+- quotes
+'' -> single quotes -> literal strings -> everything is taken literally (preferred for regex)
+"" -> double quotes -> allows variable expansion -> if regex contains $, it could create confusion
 
 '$(command)' -> execute, will display result as it is
 "$(command)" -> command substitution -> substitute the part inside quotes with ...
