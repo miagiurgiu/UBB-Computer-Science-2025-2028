@@ -2217,8 +2217,8 @@ less f [TAB] -> autocompletes the filename, the common part
 	- filename wildcarding (*, ?) helps select groups or files
 
 - pipes -> interprocess communication
-	- redirects the output of the left part to the i
-- output of left hand side
+	- redirects the output of the left part to the input of the right part
+	- output of left hand side
 ```
 cat a.txt
 ```
@@ -2226,13 +2226,13 @@ cat a.txt
 ```
 cat a.txt | less
 
-creates an in-memory mechanism that allows those two commands to communicate
+creates an in-memory pipe mechanism that allows those two commands to communicate
 ```
 
-ps -> processes
+ps -> processes (process status)
 ```
-ps -ef
-ps -U
+ps -ef -> every process with full details
+ps -U 
 ```
 - all processes with their ancestors (which processes created which)
 ```
