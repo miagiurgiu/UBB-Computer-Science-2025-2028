@@ -2268,6 +2268,9 @@ EOF
 '$(command)' -> execute, will display result as it is
 "$(command)" -> command substitution -> substitute the part inside quotes with ...
 
+5) Development environment
+
+- paths
 variables
 control structures -> allows branching, looping etc.
 
