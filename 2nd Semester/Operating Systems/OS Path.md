@@ -2201,11 +2201,13 @@ sh (Bourne Shell)
 -> prompt is usually $ (user) or # (root)
 
 bash (Bourne Again Shell) 
--> 
-- newer version of shell (i have the navigation history)
-- the prompt is more descriptive -> path $ or # 
-- autocomplete 
-- less f TAB -> autocompletes the common part
+-> newer version of shell (i have the navigation history)
+-> the prompt is more descriptive -> path $ or # 
+-> autocomplete 
+```
+less f [TAB] -> autocompletes the filename, thecommon part
+```
+- 
 - different colors for different file types
 - C - shell
 - K - shell
