@@ -2385,9 +2385,13 @@ VAR="MyVar" -> readonly VAR
 ```
 unset VAR
 ```
-local variables -> in functions
-environment variables -> ex: PATH 
-shell variables -> same meaning in any shell
+
+1) local variables -> in functions
+2) environment variables -> ex: PATH 
+```
+export VAR -> make variable global for child processes
+```
+1) shell variables -> same meaning in any shell
 
 how to see command variables?
 ```
