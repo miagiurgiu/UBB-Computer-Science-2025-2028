@@ -2236,10 +2236,11 @@ ps -U
 ```
 - all processes with their ancestors (which processes created which)
 ```
-ps -fax 
-ps -aux 
+ps -fax  -> processes in a tree format showing ancestors (parent-child relationships)
+ps -aux  -> all processes running on system with user info
 ```
 
+4) Redirection and Substitutio
 here docs
 - local document where we have
 ```
