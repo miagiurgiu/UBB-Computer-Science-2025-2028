@@ -2507,12 +2507,15 @@ Count all lines of code in C files in the directory given as a command line argu
 ```
 FILE="My Doc.txt" 
 -> ls $FILE -> look for two files: "My" and "Doc.txt"
-
-
+-> ls "$FILE" -> look for one file: "My Doc.txt"
 ```
 
 
-- creates all combinations that exist between those two sets (cartesian product)
+- Brace expansion: creates all combinations that exist between those two sets (cartesian product)
+```
+echo {A,B}{1,2} => 
+
+```
 ![[Pasted image 20260317153232.png]]
 
 - validate your arguments and give comments in exam! check nr of parameters, check their type.
