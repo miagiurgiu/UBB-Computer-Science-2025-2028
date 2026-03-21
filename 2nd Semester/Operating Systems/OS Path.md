@@ -2329,9 +2329,6 @@ $ a.out
 
 - if we have multiple a.out files, it executes the closest ones -> use either relative/absolute path to make sure you execute the correct file -> this is how the interpreter finds the files
 
-$ ls -> content of the current folder
-$ ls -l
-
 - Redirections:
 ```
 < -> input redirection
@@ -2351,9 +2348,9 @@ shell -> interpreted (shell) because it interprets line by line, slower than sth
 c -> compiled (gcc) because it translates whole code at once -> do sth many times
 
 STRUCTURE OF A SCRIPT:
-- 1) first line:
+- 1) first line directive telling the os which interpreter to use
 ```
-#! -> directive given to shell
+#! -> SHEBANG -> directive given to shell
 #! /bin/sh -> use this interpreter
 #! /bin/bash -> use this interpreter
 
