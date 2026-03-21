@@ -1947,7 +1947,7 @@ Lecture 4 wrap-up:
 
 main.cpp:
 - arr1 creates a memory block on the heap
-- arr3 creates a memory block on the heap
+- arr3 creates a different memory block on the heap
 - 
 ```
 #include "DynamicArray.h"
@@ -1959,7 +1959,7 @@ int main() {
 	DynamicArray arr1{ 2 }; // arr1 creates a memory block on the Heap
 	//DynamicArray arr2{ arr1 }; 
 	DynamicArray arr2 = arr1; // calls copy assignment operator (operator=) => shallow copy (not defined in .h)
-	DynamicArray arr3{10}; // arr2 creates a different memory block on the Heap
+	DynamicArray arr3{10}; // arr3 creates a different memory block on the Heap
 	// this line currently causes a memory leak
 	arr3 = arr1;
 }
