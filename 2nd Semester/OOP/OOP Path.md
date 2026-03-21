@@ -1946,9 +1946,9 @@ Lecture 4 wrap-up:
 - 3. copy constructor
 
 main.cpp:
-- arr1 creates a memory block on the heap
+- arr1 creates a memory block on the heap -> ADDRESS A
 - arr3 creates a different memory block on the heap
-- 
+- arr3 = arr1 => DISASTER because we did not write a custom = operator, C++ just copies the POINTER => arr3 points to
 ```
 #include "DynamicArray.h"
 // #include <crtdbg.h> // does not work on mac/linux
