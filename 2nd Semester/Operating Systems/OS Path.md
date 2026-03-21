@@ -2352,12 +2352,13 @@ STRUCTURE OF A SCRIPT:
 ```
 #! -> SHEBANG -> directive given to shell
 #! /bin/sh -> use this interpreter
-#! /bin/bash -> use this interpreter
+#! /bin/bash -> use this interpreter (bash is better, newer)
+```
+- 2) arguments
+```
+echo Hello World -> receives two arguments (Hello and World)
 
-```
-- 2) 
-```
-echo Hello World!
+echo "Hello World" ->
 ```
 - 3) give permission
 - 4) run it
