@@ -2302,7 +2302,7 @@ yum, apt -> for installing stuff
 
 6) Scripts
 SCRIPT = text file that contains Unix commands and shell directives
-.sh suffix -> naming convention for humans (interpreter knows it's a proper file for the compiler, meaning that Unix ignores ext)
+- .sh suffix -> naming convention for humans (interpreter knows it's a proper file for the compiler, meaning that Unix ignores extensions and looks directly at permissions/headers)
 - readable, modifiable, easy to give as parameter to an interpreter
 
 In UNIX, no meaning of "extension": we can have a.b.c.d
@@ -2312,9 +2312,9 @@ How to run a script:
 prompt:
 $ ls - is found in /bin
 $ a.out -> "command or filename not found" -> located in PATH -> absolute vs relative
-PATH -> environment variable
+PATH -> environment variable telling the shell where to look for commands
 ```
-./a.out
+./a.out -> executes from the current folder (requires . in path or explicit path)
 
 . -> current folder
 / -> path separator
