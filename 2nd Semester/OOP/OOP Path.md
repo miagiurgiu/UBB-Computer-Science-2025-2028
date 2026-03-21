@@ -1998,9 +1998,10 @@ DynamicArray.cpp
 // constructor
 DynamicArray::DynamicArray(int cap): capacity{cap}, size{0}
 {
-
+	this->elems = new TElem[this->capacity]; // allocates new memory on the Heap
 }
 
+//
 ```
 
 What command to use in vs code terminal to see memory leaks:
