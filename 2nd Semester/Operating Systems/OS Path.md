@@ -2449,7 +2449,8 @@ read -p "Enter sth: " VAR
 -> displays a message and saves input to VAR
 ```
 
-- 
+Process Environment:
+- standard way: ./script.sh -> shell creates a child process (a sub-shell) and the script runs there. when it's done, the child des
 - if you want the changes made by the script (like cd or variable assignments) to persist in your current terminal session, then instead of ./script.sh use source or . :
 - 
 ```
