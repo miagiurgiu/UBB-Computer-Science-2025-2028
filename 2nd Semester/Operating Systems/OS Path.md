@@ -2205,12 +2205,11 @@ bash (Bourne Again Shell)
 -> the prompt is more descriptive -> path $ or # 
 -> autocomplete 
 ```
-less f [TAB] -> autocompletes the filename, thecommon part
+less f [TAB] -> autocompletes the filename, the common part
 ```
-- 
-- different colors for different file types
-- C - shell
-- K - shell
+-> different colors for different file types (directories vs files)
+-> C - shell (csh)
+-> K - shell (ksh)
 - wildcards - similar to regular expressions
 
 pipe -> interprocess communication
