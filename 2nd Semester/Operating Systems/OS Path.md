@@ -2483,25 +2483,25 @@ done
 - how to create a 0 size file? using touch.
 - \t\v -> all 3 are considered spaces ?
 
-Count all lines of code in C files in the directory given as a command line argument, excluding lines that are empty or contain onl
+Count all lines of code in C files in the directory given as a command line argument, excluding lines that are empty or contain only blank spaces:
 ![[Pasted image 20260317153015.png]]
-S=0 (sum initialised with 0)
-f -> variable in this list 
-$1 first argument after the command main
-; -> common separator not always?
-count the lines that are not empty
-^ \t -> not space or horizonthal ...
-$f
-wc -l -> count the lines
-add to the sum the value of that variable
-do <-> done
-display
-double quotes when ... ?
+- S=0 (sum initialised with 0)
+- f -> variable in this list 
+- $1 first argument after the command main
+- ; -> common separator not always?
+- count the lines that are not empty
+- ^ \t -> not space or horizonthal ...
+- $f
+- wc -l -> count the lines
+- add to the sum the value of that variable
+- do <-> done
+- display
+- double quotes when ... ?
 
 - creates all combinations that exist between those two sets (cartesian product)
 ![[Pasted image 20260317153232.png]]
 
-validate your arguments and give comments! check nr of parameters, check their type
+- validate your arguments and give comments in exam! check nr of parameters, check their type.
 
 
 ## Lecture 4 - 18 mar 2026
