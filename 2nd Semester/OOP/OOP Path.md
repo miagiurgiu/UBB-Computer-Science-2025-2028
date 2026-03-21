@@ -1977,7 +1977,14 @@ int main() {
 DynamicArray.h
 ```
 #pragma once
-typedef TElem
+typedef int TElem // instead of hardcoding int everywhere
+
+class DynamicArray {
+	int size;
+	int capacity;
+	TElem* elems;
+};
+
 
 ```
 
