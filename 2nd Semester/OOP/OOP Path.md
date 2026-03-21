@@ -2007,7 +2007,15 @@ DynamicArray::~DynamicArray()
 	delete[] this->elems; // new - delete
 }
 
-
+// COPY CONSTRUCTOR: deep copy
+DynamicArray::DynamicArray(const DynamicArray& arr)
+{
+	this->capacity = arr.capacity;
+	this->size = arr.size;
+	this->elems = new TElem[this->capacity]; // allocate new memory
+	for (int i = 0; i < this->size; i++)
+	this->elems[i] = arr.elems[i]; // copy data manually
+}
 ```
 
 What command to use in vs code terminal to see memory leaks:
