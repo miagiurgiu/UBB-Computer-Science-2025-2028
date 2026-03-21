@@ -2451,14 +2451,20 @@ read -p "Enter sth: " VAR
 - export VAR -> VAR becomes a global variable for every ...
 
 - if you want ... then instead of ./script.sh use:
-
 ```
 sh.             script.sh
 source.     script.
 ```
+- How to run scripts in current shell:
+```
+source script.sh
+. script.sh
+-> changes persist in current terminal
+```
 
+- there are 3 spaces in there:
 ![[Pasted image 20260317152538.png]]
-there are 3 spaces in there
+
 
 $() cause you are younger
 
