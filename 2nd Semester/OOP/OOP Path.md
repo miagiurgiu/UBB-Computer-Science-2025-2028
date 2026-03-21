@@ -1958,9 +1958,9 @@ main.cpp:
 
 int main() {
 {
-	DynamicArray arr1{ 2 }; // arr1 creates a memory block on the Heap
+	DynamicArray arr1{ 2 }; // calls constryctor, allocates a heap array of size 2
 	//DynamicArray arr2{ arr1 }; 
-	DynamicArray arr2 = arr1; // calls copy assignment operator (operator=) => shallow copy (not defined in .h)
+	DynamicArray arr2 = arr1; // calls copu 
 	DynamicArray arr3{10}; // arr3 creates a different memory block on the Heap
 	// this line currently causes a memory leak
 	arr3 = arr1;
@@ -1977,7 +1977,8 @@ g++ -g -fsanitize=address main.cpp DynamicArray.cpp -o app
 
 g++ => the compiler GNU C++
 -g -> debug symbols
--fsanitize=address -> turns on AddressSanitizer (ASan) which tracks e
+-fsanitize=address -> turns on AddressSanitizer (ASan) which tracks eery byte I allocate (if i try to delete sth twice or read memory i don't own, program stops)
+-o app -> names output file
 ```
 
 ## A2-3
