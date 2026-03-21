@@ -1987,12 +1987,17 @@ class DynamicArray {
 	public:
 		DynamicArray(int n=10);
 		~DynamicArray();
-		DynamicArray( & arr)
+		DynamicArray(const DynamicArray& arr);
 };
+```
+
+DynamicArray.cpp
+```
+#include "DynamicArray.h"
+
 
 
 ```
-
 
 What command to use in vs code terminal to see memory leaks:
 ```
