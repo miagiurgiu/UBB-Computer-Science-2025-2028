@@ -1977,7 +1977,7 @@ g++ -g -fsanitize=address main.cpp DynamicArray.cpp -o app
 
 g++ => the compiler GNU C++
 -g -> debug symbols
--fsanitize=address -> turns on Ad
+-fsanitize=address -> turns on AddressSanitizer (ASan) which tracks e
 ```
 
 ## A2-3
