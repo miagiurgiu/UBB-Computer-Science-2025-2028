@@ -2424,13 +2424,14 @@ $1 - $9 -> command line arguments, positional arguments
 ${10}, ${11} -> braces required for double digits
 newer shells -> continue after line between braces (${10}, ${11})
 $0 -> name of the command being run, name of the script
-$*
-$@
-
-```
+$* -> all arguments
+$@ -> all arguments
+$? -> exit status of the last command (0=success)
 return 0 -> success from the shell's perspective
+```
 
 shift (arguments to the left) -> with no parameter -> one argument to the left
+	-> ex: shifts $2 i
 ```
 ./a.out
 echo $?
