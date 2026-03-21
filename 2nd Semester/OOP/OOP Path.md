@@ -1969,7 +1969,11 @@ int main() {
 }
 ```
 
-wh
+What command to use in vs code terminal to see memory leaks:
+```
+g++ -g -fsanitize=address main.cpp DynamicArray.cpp -o app
+```
+
 ## A2-3
 
 run dynamic version:
