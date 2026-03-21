@@ -2449,7 +2449,6 @@ read -p "Enter sth: " VAR
 -> displays a message and saves input to VAR
 ```
 
-
 - if you want ... then instead of ./script.sh use:
 ```
 sh.             script.sh
