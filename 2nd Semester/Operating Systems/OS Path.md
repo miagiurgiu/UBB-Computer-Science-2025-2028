@@ -2363,13 +2363,8 @@ echo "Hello World" -> receives one argument (the whole string)
 - 3) give permission
 - 4) run it
 - 5) see result in terminal
+- include comments in your scripts for the exam!
 
-echo receives 2 arguments:
-![[Pasted image 20260317150221.png]]
-echo receives one argument:
-![[Pasted image 20260317150245.png]]
-
-include comments!
 no space between identifier and "=" and before and after value
 ```
 VAR=value
