@@ -2470,7 +2470,9 @@ source script.sh
 
 - conditionals:
 ```
-`if [ $# -ne 1 ]; then ... fi`
+`if [ $# -ne 1 ]; then ... fi` -> CORRECT
+
+`if [$# -ne 1]; then ... fi` -> CRASH
 
 [ ] -> alias for test; YOU MUST HAVE A SPACE AFTER [  AND A SPACE BEFORE ]
 ```
@@ -2495,7 +2497,7 @@ Count all lines of code in C files in the directory given as a command line argu
 - $1 first argument after the command main
 - ; -> common separator not always?
 - count the lines that are not empty
-- ^ \t -> not space or horizonthal ...
+- ^ \t -> not space or horizonthal ... ->
 - $f
 - wc -l -> count the lines
 - add to the sum the value of that variable
