@@ -2265,7 +2265,7 @@ EOF
 '' -> single quotes -> literal strings -> everything is taken literally (preferred for regex)
 "" -> double quotes -> allows variable expansion -> if regex contains $, it could create confusion
 
-'$(command)' -> execute, will display result as it is
+'$(command)' -> execute, will display result as it is -> it will display the characters (command)
 "$(command)" -> command substitution -> substitute the part inside quotes with ...
 
 5) Development environment
