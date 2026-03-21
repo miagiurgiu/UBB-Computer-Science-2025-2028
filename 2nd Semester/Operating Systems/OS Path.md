@@ -2391,11 +2391,11 @@ unset VAR
 ```
 export VAR -> make variable global for child processes
 ```
-1) shell variables -> same meaning in any shell
+3) shell variables -> same meaning in any shell
 
-how to see command variables?
+- how to see all command variables?
 ```
-printenv
+printenv or env
 ```
 when we get started with Putty:
 ```
@@ -2409,7 +2409,8 @@ command line parameters in C:
 int main() {}
 
 int main(int argc, char argv[])
--> i have the argument count (how many arguments) and the list of arguments as list of strings
+-> i have the argument count (argc, how many arguments)
+-> i have the list of arguments as list of strings (argv)
 
 int main(int argc, char **argv[])
 
