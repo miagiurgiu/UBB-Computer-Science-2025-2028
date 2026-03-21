@@ -1941,9 +1941,12 @@ v8=v2; // assignment operator
 Lecture 4 wrap-up:
 - it teaches me why manual memory management is tricky
 "BIG THREE" of C++ memory management:
-- 1. copy constructor
-- 2. destructor - to free memor
-- 3. copy assignment operator
+- 1. copy constructor - to handle DynamicArray a=b (creation)
+- 2. destructor - to free memory
+- 3. copy assignment operator - to handle a=b
+
+SHALLOW COPY - copies the pointer
+DEEP COPY - allocates new memory
 
 main.cpp:
 - arr1 creates a memory block on the heap -> ADDRESS A
