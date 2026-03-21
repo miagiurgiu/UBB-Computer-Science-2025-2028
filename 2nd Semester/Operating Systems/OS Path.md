@@ -2504,6 +2504,13 @@ Count all lines of code in C files in the directory given as a command line argu
 - do <-> done
 - display
 - double quotes whenever a variable might contain spaces or be empty
+```
+FILE="My Doc.txt" 
+-> ls $FILE -> look for two files: "My" and "Doc.txt"
+
+
+```
+
 
 - creates all combinations that exist between those two sets (cartesian product)
 ![[Pasted image 20260317153232.png]]
