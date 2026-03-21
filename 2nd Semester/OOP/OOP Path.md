@@ -1950,7 +1950,7 @@ main.cpp:
 - arr3 creates a different memory block on the heap -> ADDRESS B
 - arr3 = arr1 => DISASTER because we did not write a custom = operator, C++ just copies the POINTER => arr3.elems points to ADDRESS A and ADDRESS B is forgotten => memory leak
 - ~arr3() -> successfully frees up memory (delete[] ADDRESS A)
-- 
+- ~arr1() -> crash (ADDRESS A is already gone)
 ```
 #include "DynamicArray.h"
 // #include <crtdbg.h> // does not work on mac/linux
@@ -1974,6 +1974,10 @@ int main() {
 What command to use in vs code terminal to see memory leaks:
 ```
 g++ -g -fsanitize=address main.cpp DynamicArray.cpp -o app
+
+g++ => the compiler GNU C++
+-g -> debug symbols
+-fsanitize=address -> turns on Ad
 ```
 
 ## A2-3
