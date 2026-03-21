@@ -2270,16 +2270,16 @@ EOF
 
 5) Development environment
 
-- paths
-variables
-control structures -> allows branching, looping etc.
-
-/bin
-/usr/bin
+- paths 
+```
+/bin -> contains standard system commands
+/usr/bin -> contains standard system commands
 ...
 other files containing /bin
-
-any program that we create is also a command
+```
+- custom commands -> any program that we create is also a command
+variables
+control structures -> allows branching, looping etc.
 
 ```
 int main() { return 0; }
