@@ -2431,18 +2431,21 @@ return 0 -> success from the shell's perspective
 ```
 
 shift (arguments to the left) -> with no parameter -> one argument to the left
-	-> ex: shifts $2 i
+	-> ex: shifts $2 into $1
 ```
 ./a.out
 echo $?
 ```
+
+7) Logic and Loops
 
 REPLY -> default delimiter (space)
 READ command -> -d
 
 message for the user, result put in that variable
 ```
-read -p "Enter sth: " ME
+read -p "Enter sth: " VAR
+-> displays a message and saves input to VAR
 ```
 
 export VAR -> VAR becomes a global variable for every ...
