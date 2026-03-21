@@ -2258,7 +2258,10 @@ text here
 EOF
 ```
 - command substitution 
-	- 
+```
+ $(command) or `command` -> executes the command and substitutes the output into
+```
+
 
 '' -> single quotes -> everything is taken literally (preferred for regex)
 "" -> double quotes -> if regex contains $, it could create confusion
