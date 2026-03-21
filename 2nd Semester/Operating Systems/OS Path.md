@@ -2269,7 +2269,8 @@ EOF
 "$(command)" -> command substitution -> substitute the part inside quotes with ...
 
 5) Development environment
-
+variables
+control structures -> allows branching, looping etc.
 - paths 
 ```
 /bin -> contains standard system commands
@@ -2278,9 +2279,6 @@ EOF
 other files containing /bin
 ```
 - custom commands -> any program that we create is also a command
-variables
-control structures -> allows branching, looping etc.
-
 ```
 int main() { return 0; }
 a.c 
