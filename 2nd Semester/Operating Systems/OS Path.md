@@ -2497,13 +2497,13 @@ Count all lines of code in C files in the directory given as a command line argu
 - $1 first argument after the command main
 - ; -> common separator not always?
 - count the lines that are not empty
-- ^ \t -> not space or horizonthal ... ->
+- ^ \t -> not space or horizonthal ... -> refers to regex used with grep -> targets lines starting with space or tab
 - $f
 - wc -l -> count the lines
 - add to the sum the value of that variable
 - do <-> done
 - display
-- double quotes when ... ?
+- double quotes whenever a variable might contain spaces or be empty
 
 - creates all combinations that exist between those two sets (cartesian product)
 ![[Pasted image 20260317153232.png]]
