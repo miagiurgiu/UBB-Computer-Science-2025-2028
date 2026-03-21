@@ -2300,10 +2300,9 @@ g++ ... => used for .cpp files
 yum, apt -> for installing stuff
 ```
 
-SCRIPT = file that contains 
-1) Unix commands
-2) directives
-3) .sh suffix -> naming convention (interpreter knows it's a proper file for the compiler)
+6) Scripts
+SCRIPT = text file that contains Unix commands and shell directives
+.sh suffix -> naming convention for humans (interpreter knows it's a proper file for the compiler, meaning that Unix ignores ext)
 - readable, modifiable, easy to give as parameter to an interpreter
 
 In UNIX, no meaning of "extension": we can have a.b.c.d
