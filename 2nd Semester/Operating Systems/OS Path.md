@@ -2266,7 +2266,7 @@ EOF
 "" -> double quotes -> allows variable expansion -> if regex contains $, it could create confusion
 
 '$(command)' -> execute, will display result as it is -> it will display the characters (command)
-"$(command)" -> command substitution -> substitute the part inside quotes with ...
+"$(command)" -> command substitution -> substitute the part inside quotes with the output/result of that command (with the value of variables like $VAR of the result of command substitutions)
 
 5) Development environment
 variables
