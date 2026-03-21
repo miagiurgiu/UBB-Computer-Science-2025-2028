@@ -1953,23 +1953,17 @@ main.cpp:
 
 int main() {
 {
-DynamicArray arr1{ 2 };
-//DynamicArray arr2{ arr1 };
-DynamicArray arr2 = arr1; // calls copy assignment operator (operator=) => shallow copy (not defined in .h)
-DynamicArray arr3{10};
-// this line currently causes a memory leak
-arr3 = arr1;
+	DynamicArray arr1{ 2 }; // arr1 creates a memory block on the Heap
+	//DynamicArray arr2{ arr1 }; // arr2 creates a different memory b
+	DynamicArray arr2 = arr1; // calls copy assignment operator (operator=) => shallow copy (not defined in .h)
+	DynamicArray arr3{10};
+	// this line currently causes a memory leak
+	arr3 = arr1;
 }
-// _CrtDumpMemoryLeaks(); // does not work on mac/linux
-
-std::cout << "Program finished. Check terminal for sanitizer reports if enabled. " << std::endl;
-
-  
-
-return 0;
-
+	// _CrtDumpMemoryLeaks(); // does not work on mac/linux
+	std::cout << "Program finished. Check terminal for sanitizer reports if enabled. " << std::endl;
+	return 0;
 }
-
 ```
 ## A2-3
 
