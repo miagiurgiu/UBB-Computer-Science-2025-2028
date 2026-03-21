@@ -39,3 +39,10 @@ def __init__(self, nr_of_vertices=0,nr_of_edges=0):
 
 
 
+Assignment 1:
+
+how to run c++ code in vs code:
+```
+g++ -std=c++17 main.cpp graph.cpp -o graph_manager
+```
+
