@@ -2376,11 +2376,12 @@ VAR=value
 ```
 echo $VAR
 ```
-readonly variables:
+- readonly variables:
+		- prevents further changes
 ```
 VAR="MyVar" -> readonly VAR
 ```
-delete the variable (release the memory -> like free with malloc)
+- delete the variable (release the memory -> like free with malloc)
 ```
 unset VAR
 ```
