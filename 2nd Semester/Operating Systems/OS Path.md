@@ -2284,7 +2284,7 @@ int main() { return 0; }
 a.c 
 
 gcc a.c => a.out => execute it => also a command
-gcc -Wall -o myp a.c
+gcc -Wall -o myp a.c => compiles c code into an executable named myp
 ```
 
 ```
@@ -2293,10 +2293,12 @@ gcc does not work with .cpp
 int main() { return 0; }
 a.cpp
 
-g++ ...
+g++ ... => used for .cpp files
 ```
-
+- package managers
+```
 yum, apt -> for installing stuff
+```
 
 SCRIPT = file that contains 
 1) Unix commands
