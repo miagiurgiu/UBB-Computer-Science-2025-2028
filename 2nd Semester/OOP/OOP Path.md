@@ -1995,7 +1995,8 @@ DynamicArray.cpp
 ```
 #include "DynamicArray.h"
 
-
+// constructor
+DynamicArray::DynamicArray(int cap)
 
 ```
 
