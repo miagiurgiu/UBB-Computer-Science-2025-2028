@@ -1980,9 +1980,14 @@ DynamicArray.h
 typedef int TElem // instead of hardcoding int everywhere
 
 class DynamicArray {
-	int size;
-	int capacity;
-	TElem* elems;
+	private:
+		int size;
+		int capacity;
+		TElem* elems;
+	public:
+		DynamicArray(int n=10);
+		~DynamicArray();
+		DynamicArray( & arr)
 };
 
 
