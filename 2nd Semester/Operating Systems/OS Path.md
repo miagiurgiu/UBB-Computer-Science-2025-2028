@@ -2479,12 +2479,11 @@ done
 
 8) Others:
 
-$() cause you are younger
-
+- $() cause you are younger?
 - how to create a 0 size file? using touch.
+- \t\v -> all 3 are considered spaces ?
 
-\t\v -> all 3 are considered spaces
-
+Count all lines of code in C files in the directory given as a command line argument, excluding lines that are empty or contain onl
 ![[Pasted image 20260317153015.png]]
 S=0 (sum initialised with 0)
 f -> variable in this list 
