@@ -2465,6 +2465,19 @@ source script.sh
 - there are 3 spaces in there:
 ![[Pasted image 20260317152538.png]]
 
+- conditionals:
+```
+`if [ $# -ne 1 ]; then ... fi`
+```
+
+- loops:
+```
+for f in $(ls); do
+    echo $f
+done
+```
+
+- cartesian product:
 
 $() cause you are younger
 
