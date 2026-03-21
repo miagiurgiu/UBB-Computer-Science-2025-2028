@@ -1958,9 +1958,9 @@ main.cpp:
 
 int main() {
 {
-	DynamicArray arr1{ 2 }; // calls constryctor, allocates a heap array of size 2
+	DynamicArray arr1{ 2 }; // calls default constryctor, allocates a heap array of size 2
 	//DynamicArray arr2{ arr1 }; 
-	DynamicArray arr2 = arr1; // calls copu 
+	DynamicArray arr2 = arr1; // calls copy constructor (even though there is an = sign, the assignment operator is not called because arr2 is created for the first time on this line)
 	DynamicArray arr3{10}; // arr3 creates a different memory block on the Heap
 	// this line currently causes a memory leak
 	arr3 = arr1;
