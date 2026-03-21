@@ -2332,10 +2332,11 @@ $ a.out
 $ ls -> content of the current folder
 $ ls -l
 
+- Redirections:
 ```
 < -> input redirection
 << -> appending to input redirection
-> -> output redirection (if does not exist, write it)
+> -> output redirection (if does not exist, write it -> overwrites)
 >> -> if output file exists, append to it
 ```
 
