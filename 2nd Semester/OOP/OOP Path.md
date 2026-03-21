@@ -1949,6 +1949,8 @@ main.cpp:
 - arr1 creates a memory block on the heap -> ADDRESS A
 - arr3 creates a different memory block on the heap -> ADDRESS B
 - arr3 = arr1 => DISASTER because we did not write a custom = operator, C++ just copies the POINTER => arr3.elems points to ADDRESS A and ADDRESS B is forgotten => memory leak
+- ~arr3() -> successfully frees up memory (delete[] ADDRESS A)
+- 
 ```
 #include "DynamicArray.h"
 // #include <crtdbg.h> // does not work on mac/linux
