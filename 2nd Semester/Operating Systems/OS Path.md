@@ -2449,7 +2449,9 @@ read -p "Enter sth: " VAR
 -> displays a message and saves input to VAR
 ```
 
-- if you want ... then instead of ./script.sh use:
+- 
+- if you want the changes made by the script (like cd or variable assignments) to persist in your current terminal session, then instead of ./script.sh use source or . :
+- 
 ```
 sh.             script.sh
 source.     script.
