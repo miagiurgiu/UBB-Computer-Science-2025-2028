@@ -2415,14 +2415,15 @@ int main(int argc, char argv[])
 int main(int argc, char **argv[])
 
 int main(int argc, char **argv, char **envp)
-
+-> envp holds environment variables
 ```
 
 command line arguments
 ```
-$1 - $9 -> command line arguments
+$1 - $9 -> command line arguments, positional arguments
+${10}, ${11} -> braces required for double digits
 newer shells -> continue after line between braces (${10}, ${11})
-$0 -> name of the command being run
+$0 -> name of the command being run, name of the script
 $*
 $@
 
