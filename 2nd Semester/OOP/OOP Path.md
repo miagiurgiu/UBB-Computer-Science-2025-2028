@@ -1976,7 +1976,8 @@ int main() {
 
 DynamicArray.h
 ```
-
+#pragma once
+typedef TElem
 
 ```
 
