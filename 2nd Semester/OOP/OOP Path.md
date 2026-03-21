@@ -1937,6 +1937,9 @@ Vector2D v8;
 v8=v2; // assignment operator
 ```
 
+
+Lecture 4 wrap-up:
+- it teaches me why manual memory management is tricky
 "BIG THREE" of C++ memory management:
 - 1. constructor
 - 2. destructor
