@@ -2001,7 +2001,12 @@ DynamicArray::DynamicArray(int cap): capacity{cap}, size{0}
 	this->elems = new TElem[this->capacity]; // allocates new memory on the Heap
 }
 
-//
+// DESTRUCTOR: frees that memory using delete[]
+DynamicArray::~DynamicArray()
+{
+delete[] this->elems; // new - delete
+
+}
 ```
 
 What command to use in vs code terminal to see memory leaks:
