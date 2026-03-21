@@ -2212,10 +2212,12 @@ less f [TAB] -> autocompletes the filename, the common part
 -> C - shell (csh)
 -> K - shell (ksh)
 
-3) c
-- wildcards - similar to regular expressions
+3) Core features
+-  wildcards - similar to regular expressions
+	- filename wildcarding (*, ?) helps select groups or files
 
-pipe -> interprocess communication
+- pipes -> interprocess communication
+	- redirects the output of the left part to the i
 - output of left hand side
 ```
 cat a.txt
