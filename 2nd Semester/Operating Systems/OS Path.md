@@ -2240,9 +2240,10 @@ ps -fax  -> processes in a tree format showing ancestors (parent-child relations
 ps -aux  -> all processes running on system with user info
 ```
 
-4) Redirection and Substitutio
-here docs
-- local document where we have
+4) Redirection and Substitutions
+- here docs (<<)
+	- local document where we have
+	- provide a local document/block of text to a command
 ```
 command << EOF
 command <<HERE
@@ -2251,7 +2252,13 @@ HERE
 ... -> local document given to the command
 ```
 
-common substitution -> single quotes, double quotes
+```
+command << EOF
+text here
+EOF
+```
+- command substitution 
+	- 
 
 '' -> single quotes -> everything is taken literally (preferred for regex)
 "" -> double quotes -> if regex contains $, it could create confusion
