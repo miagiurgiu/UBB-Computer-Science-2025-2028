@@ -2347,7 +2347,7 @@ shell -> interpreted (shell) because it interprets line by line, slower than sth
 
 c -> compiled (gcc) because it translates whole code at once -> do sth many times
 
-STRUCTURE OF A SCRIPT:
+STRUCTURE OF A SCRIPT - how to work with it:
 - 1) first line directive telling the os which interpreter to use
 ```
 #! -> SHEBANG -> directive given to shell
@@ -2358,7 +2358,7 @@ STRUCTURE OF A SCRIPT:
 ```
 echo Hello World -> receives two arguments (Hello and World)
 
-echo "Hello World" ->
+echo "Hello World" -> receives one argument (the whole string)
 ```
 - 3) give permission
 - 4) run it
@@ -2366,7 +2366,6 @@ echo "Hello World" ->
 
 echo receives 2 arguments:
 ![[Pasted image 20260317150221.png]]
-
 echo receives one argument:
 ![[Pasted image 20260317150245.png]]
 
