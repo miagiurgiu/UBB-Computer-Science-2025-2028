@@ -2187,7 +2187,7 @@ gsub -> global substitution like sed s///g
 
 ## Seminar 2- 17 mar 2026
 
-Shell = command line interpreter; 
+1) Shell = command line interpreter; 
 - their role is to INTERPRET and provide a user interface to the OS kernel
 - interactive command language - executes commands as you type them
 - scripting language - beside regular commands, we can have scripts (text files with commands)
@@ -2196,6 +2196,7 @@ Shell = command line interpreter;
 - script language
 - any program runnable on computer - a shell is just a program that hides kernel details
 
+2) Shell variants
 sh (Bourne Shell) 
 -> does not allow navigation or history on that line 
 -> prompt is usually $ (user) or # (root)
@@ -2210,6 +2211,8 @@ less f [TAB] -> autocompletes the filename, the common part
 -> different colors for different file types (directories vs files)
 -> C - shell (csh)
 -> K - shell (ksh)
+
+3) c
 - wildcards - similar to regular expressions
 
 pipe -> interprocess communication
