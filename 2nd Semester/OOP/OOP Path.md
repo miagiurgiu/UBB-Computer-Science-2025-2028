@@ -1963,7 +1963,7 @@ int main() {
 	DynamicArray arr2 = arr1; // calls copy constructor (even though there is an = sign, the assignment operator is not called because arr2 is created for the first time on this line) => deep copy
 	DynamicArray arr3{10}; // arr3 creates a different memory block on the Heap
 	// this line currently causes a memory leak
-	arr3 = arr1; // already existed
+	arr3 = arr1; // arr3 already exists -> looks for operator= -> does not find it -> shallow copy
 }
 	// _CrtDumpMemoryLeaks(); // does not work on mac/linux -> use command (*) in teminal 
 	std::cout << "Program finished. Check terminal for sanitizer reports if enabled. " << std::endl;
