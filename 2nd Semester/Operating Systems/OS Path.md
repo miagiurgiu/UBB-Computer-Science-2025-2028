@@ -2192,11 +2192,11 @@ Shell = command line interpreter;
 - interactive command language - executes commands as you type them
 - scripting language - beside regular commands, we can have scripts (text files with commands)
 - run commands => scripts run by sb else
-- emulator to connect to server (ssh = secure shell)
+- emulator to connect to server - users interact via terminal emulators (ssh = secure shell is used for remote server access)
 - script language
-- any program runnable on computer
+- any program runnable on computer - a shell is just a program that hides kernel details
 
-sh -> does not allow navigation on that line -> $ or # 
+sh (-> does not allow navigation on that line -> $ or # 
 bash -> 
 - newer version of shell (i have the navigation history)
 - the prompt is more descriptive -> path $ or # 
