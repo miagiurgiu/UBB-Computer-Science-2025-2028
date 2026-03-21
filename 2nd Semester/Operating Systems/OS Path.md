@@ -2365,7 +2365,7 @@ echo "Hello World" -> receives one argument (the whole string)
 - 5) see result in terminal
 - include comments in your scripts for the exam!
 
-no space between identifier and "=" and before and after value
+no space between identifier and "=" before and after value
 ```
 VAR=value
 ```
