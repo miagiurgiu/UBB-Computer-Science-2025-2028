@@ -2196,8 +2196,12 @@ Shell = command line interpreter;
 - script language
 - any program runnable on computer - a shell is just a program that hides kernel details
 
-sh (-> does not allow navigation on that line -> $ or # 
-bash -> 
+sh (Bourne Shell) 
+-> does not allow navigation or history on that line 
+-> prompt is usually $ (user) or # (root)
+
+bash (Bourne Again Shell) 
+-> 
 - newer version of shell (i have the navigation history)
 - the prompt is more descriptive -> path $ or # 
 - autocomplete 
