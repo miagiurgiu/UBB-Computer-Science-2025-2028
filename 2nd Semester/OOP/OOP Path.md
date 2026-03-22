@@ -1870,6 +1870,7 @@ Maria@Mac tests % ./tests
 
 
 ## Lecture 4 - 18 mar 2026
+C++
 Reference = another name for the same memory
 - by copying
 - by using a reference
