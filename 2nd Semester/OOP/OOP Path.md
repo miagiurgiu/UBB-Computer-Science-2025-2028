@@ -2082,3 +2082,11 @@ leaks --atExit -- ./test_suite
 Constructors
 
 if I want constructor with parameters, I **don’t need** default constructor as well because the default constructor does the "starting state" of the fields of the object **only when used**. and then inside the constructor with parameters those initialised fields are filled out with the given parameters. constructor with initialisation list can exist on its own, without a default constructor. it creates the starting state + initialises at the same time.
+
+
+A4-5
+
+how to compile:
+```
+g++ -std=c++17 start/main.cpp ui/ui.cpp service/service.cpp repo/repo.cpp repo/dynamic_vector.cpp domain/coat.cpp -o app
+```
