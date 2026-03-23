@@ -495,8 +495,9 @@ Maria@Mac FixedCapBiMap % ./app
 Containers
 
 1) Bag
-- representation 1
-- representation 2 - with frequencies
+- representation 1: linear sequence (ex: dynamic array)
+- representation 2:  with frequencies - store pairs of (element, frequency)
+	- useful when
 - see end of lecture 2
 - always possible, no matter the data structure used for a bag
 - representation 3 - array of positions -> "nightmare" for a sorted bag
