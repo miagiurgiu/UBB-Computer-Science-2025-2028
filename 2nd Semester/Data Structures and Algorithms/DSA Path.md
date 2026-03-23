@@ -497,11 +497,11 @@ Containers
 1) Bag
 - representation 1: linear sequence (ex: dynamic array)
 - representation 2:  with frequencies - store pairs of (element, frequency)
-	- useful when
+	- useful when many elements repeat because it saves space
 - see end of lecture 2
 - always possible, no matter the data structure used for a bag
-- representation 3 - array of positions -> "nightmare" for a sorted bag
-- representatoin 4 - searching is faster theta(1) -> compute formula -> not good for sorted?
+- representation 3: array of positions -> "nightmare" for a sorted bag because adding an element requires shifting all elements to mantain order
+- representatoin 4: hash table/formula-based -  searching is faster theta(1) -> compute formula -> not good for sorted?
 - it is recommended to have non-zero elements on the first and last positions
 - iterator is a little different because of the zero values
 	- should not have as current element sth that is 0
