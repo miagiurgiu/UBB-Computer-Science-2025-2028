@@ -2104,3 +2104,10 @@ tests/tests.cpp \
 start/main.cpp \
 -o app
 ```
+
+```
+xcrun llvm-profdata merge -sparse default.profraw -o app.profdata
+
+xcrun llvm-cov report ./app -instr-profile=app.profdata
+```
+
