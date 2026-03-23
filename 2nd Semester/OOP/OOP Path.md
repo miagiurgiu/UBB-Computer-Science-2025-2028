@@ -2109,12 +2109,12 @@ start/main.cpp \
 
 xcrun llvm-profdata merge -sparse default.profraw -o app.profdata
 
+xcrun llvm-cov report ./app -instr-profile=app.profdata 
+
 
 ```
 
 ```
-xcrun llvm-profdata merge -sparse default.profraw -o app.profdata
-
-xcrun llvm-cov report ./app -instr-profile=app.profdata
+./app && xcrun llvm-profdata merge -sparse default.profraw -o app.profdata && xcrun llvm-cov report ./app -instr-profile=app.profdata
 ```
 
