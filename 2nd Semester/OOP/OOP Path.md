@@ -2103,6 +2103,13 @@ ui/ui.cpp \
 tests/tests.cpp \
 start/main.cpp \
 -o app
+
+./app
+
+
+xcrun llvm-profdata merge -sparse default.profraw -o app.profdata
+
+
 ```
 
 ```
