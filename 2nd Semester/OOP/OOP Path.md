@@ -2090,3 +2090,17 @@ how to compile:
 ```
 g++ -std=c++17 start/main.cpp ui/ui.cpp service/service.cpp repo/repo.cpp repo/dynamic_vector.cpp domain/coat.cpp -o app
 ```
+
+run tests with coverage mac:
+```
+clang++ -std=c++11 -fprofile-instr-generate -fcoverage-mapping \
+domain/coat.cpp \
+repo/dynamic_vector.cpp \
+repo/repo.cpp \
+service/service.cpp \
+validation/validation.cpp \
+ui/ui.cpp \
+tests/tests.cpp \
+start/main.cpp \
+-o app
+```
