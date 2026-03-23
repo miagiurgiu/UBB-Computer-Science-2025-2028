@@ -510,8 +510,8 @@ Containers
 		- iterator must skip positions where frequency is 0
 		- should not have as current element sth that is 0 (current element should never be a 0-frequency slot)
 		- go the next non-zero operation
-	- no longer theta(1) because it will have a while loop
-	- we need the current frequency 
+		- next() is no longer theta(1) in WC because it will have a while loop that needs to find the next non-zero frequency
+		- we need to keep track of the current frequency (internalFrequencyCount) so that if an element has frequency 3, the iterator returns that same element 3 times before 
 	- keep count of the current frequencies
 	- when you go the next position, you might need to skip a few zeroes
 
