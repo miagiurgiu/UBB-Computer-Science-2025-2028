@@ -519,7 +519,7 @@ Containers
 - elements are sorted (they have an order)
 - no positions
 - elements are ordered by a relation (ex: <=)
-- binary search instead of linear search (but not visible from the outside) used for search and nrOccurrences -> copmlexity O(log n)
+- binary search instead of linear search (but not visible from the outside) used for search and nrOccurrences -> complexity O(log n)
 - sorting criteria
 - only init is changed (in the interface; the only change is that init will take a relation as parameter; like giving a function as a parameter; and that function is a 2-parameter function which returns true or false)
 - how relations are done for lab assignments:
