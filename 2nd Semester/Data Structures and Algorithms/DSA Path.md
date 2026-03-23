@@ -511,14 +511,15 @@ Containers
 		- should not have as current element sth that is 0 (current element should never be a 0-frequency slot)
 		- go the next non-zero operation
 		- next() is no longer theta(1) in WC because it will have a while loop that needs to find the next non-zero frequency
-		- we need to keep track of the current frequency (internalFrequencyCount) so that if an element has frequency 3, the iterator returns that same element 3 times before 
-	- keep count of the current frequencies
-	- when you go the next position, you might need to skip a few zeroes
+		- we need to keep track of the current frequency (internalFrequencyCount) so that if an element has frequency 3, the iterator returns that same element 3 times before moving to the next non-zero position
+		- keep count of the current frequencies
+		- when you go the next position, you might need to skip a few zeroes
 
 2) Sorted bag
 - elements are sorted (they have an order)
 - no positions
-- binary search instead of linear search (but not visible from the outside)
+- elements are ordered by a relation (ex: <=)
+- binary search instead of linear search (but not visible from the outside) used for search and nrOccurrences
 - sorting criteria
 - only init is changed (in the interface; the only change is that init will take a relation as parameter; like giving a function asa parameter; and that function is a 2-parameter function which returns true or false)
 - how relations are done for lab assignments:
