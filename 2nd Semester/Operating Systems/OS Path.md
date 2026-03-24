@@ -2526,8 +2526,10 @@ echo {A,B}{1,2} => A1 A2 B1 B2
 1) Issue about having the same resource modified by two things (last lecture)
 (n++) -> steps:
 L - load n from memory to a register ; n is a variable; last time -> file
-M - 
-S - 
+M - modify
+S - store
+
+Issue
 ```
 mov ax, n
 inc ax
