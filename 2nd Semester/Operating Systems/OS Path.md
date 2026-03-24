@@ -2647,7 +2647,8 @@ int main(int argc, char** argv) {
 - parent never executes exit().
 - parent only iterates for??
 - recursive??
-- every process has its own i 
+- every process has its own i -> meaning that after the child (copy) is made, the two processes become independent 
+	- ex: if the child changes i=5, the parent's 
 ```
 #include <stdio.h>
 #include <unistd.h>
