@@ -2652,8 +2652,8 @@ int main(int argc, char** argv) {
 ```
 
 6) CONTROLLED CODE - CORRECT WAY to create 3 children
- parent only iterates for??
-- recursive??
+- parent only iterates 3 times
+- recursive?? no.
 - every process has its own i -> meaning that after the child (copy) is made, the two processes become independent 
 	- ex: if the child changes i=5, the parent's i stays at 1
 ```
@@ -2665,7 +2665,7 @@ int main(int argc, char** argv) {
         for(int i=0; i<3; i++) {
                 if(fork()==0) { // only the child can go inside here
                         printf("c %d %d %d \n",getpid(),getppid(),i);
-                        exit(0); // child's job is done
+                        exit(0); // child's job is done, dissapears now
                 }
         }
         printf("b %d %d\n",getpid(),getppid());
