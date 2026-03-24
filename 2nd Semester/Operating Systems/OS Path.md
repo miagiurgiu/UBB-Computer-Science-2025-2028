@@ -2551,6 +2551,8 @@ Issue:
 -> the only way to create a new process is by duplicating an existing process using fork()
 - PARENT = ORIGINAL PROCESS
 - CHILD = CLONE created by fork()
+-> how to tell the difference:
+
 ```
 ls
 ```
