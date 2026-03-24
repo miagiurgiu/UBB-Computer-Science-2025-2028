@@ -2616,6 +2616,8 @@ b 3803 1893
 FORK BOMB:
 - will become unusable (produces processes exponentially fast)
 - pointless to "kill"
+- tree
+- result: system runs out of PID or memory =>
 ```
 while(1) {
 	fork();
