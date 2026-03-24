@@ -2118,5 +2118,17 @@ xcrun llvm-cov show ./app -instr-profile=app.profdata -format=html > coverage_re
 
 ```
 ./app && xcrun llvm-profdata merge -sparse default.profraw -o app.profdata && xcrun llvm-cov report ./app -instr-profile=app.profdata
+
+
+
+
+correct order:
+
+
+clang++ -std=c++11 -fprofile-instr-generate -fcoverage-mapping \ domain/coat.cpp repo/dynamic_vector.cpp repo/repo.cpp service/service.cpp \ validation/validation.cpp ui/ui.cpp tests/tests.cpp start/main.cpp -o app
+
+rm default.profraw
+
+
 ```
 
