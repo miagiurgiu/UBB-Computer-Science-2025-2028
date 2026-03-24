@@ -2767,6 +2767,7 @@ Signals -> "software interrupts" -> force process to stop -> run special functio
 SIGINT (2): sent when I press CTRL+C => stops program
 SIGKILL(9): kernel kills the process
 SIGCHILD: sent to parent automatically whenever a child process stops or terminates
+signal() -> "when you sent me SIGINT, don't kill me - run my function f instead"
 
 ```
 cat
