@@ -2603,6 +2603,11 @@ gcc -Wall -Wextra -Werror -g -o code code.c
 ```
 - result:
 ```
+a 3075 2942 
+b 3075 2942
+b 3076 3075
+
+
 a 3798 2887 
 b 3802 3798
 b 3799 3798
