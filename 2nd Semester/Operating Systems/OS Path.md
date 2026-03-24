@@ -2706,7 +2706,8 @@ void f(int sgn) {
 ```
 
 3) Zombie process
-- when a child proce
+- when a child process finishes (exit(0)), it does not disappear immediately
+	- system keeps the child's exit code and PID in the process table so that the parent can read them -> ps -> ""
 - deleted child -> keep its pid, then cleans the process?
 - parents wait for children to finish execution
 - wait() returns error if there are no child processes
