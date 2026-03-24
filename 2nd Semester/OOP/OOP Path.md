@@ -2129,6 +2129,11 @@ clang++ -std=c++11 -fprofile-instr-generate -fcoverage-mapping \ domain/coat.cpp
 
 rm default.profraw
 
+exit app with 0
+
+xcrun llvm-profdata merge -sparse default.profraw -o app.profdata
+
+xcrun llvm-cov report ./app -instr-profile=app.profdata
 
 ```
 
