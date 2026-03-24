@@ -2627,6 +2627,9 @@ while(1) {
 ![[Pasted image 20260318183105.png]]
 
  - parent never executes exit()
+ - everyone forks
+ - i=0 => parent forks => 2 processes => both print "c"
+ - i=1 => both fork =>
 ```
 #include <stdio.h>
 #include <unistd.h>
