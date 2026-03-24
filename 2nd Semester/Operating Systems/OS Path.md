@@ -2590,7 +2590,7 @@ every process can get its pid
 int main(int argc, char** argv) {
         printf("a %d %d \n",getpid(),getppid()); // return process id of the current process and parent process id (terminal/bash shell that started the program)
         fork(); // after this, we have two processes
-        printf("b %d %d\n",getpid(),getppid());
+        printf("b %d %d\n",getpid(),getppid()); // 
         (void) argc;
         (void) argv;
         return 0;
