@@ -2662,7 +2662,7 @@ int main(int argc, char** argv) {
 #include <stdlib.h>
 int main(int argc, char** argv) {
         printf("a %d %d \n",getpid(),getppid());
-        for(int i=0; i<3; i++) {
+        for(int i=0; i<3; i++) { // exactly 3 children
                 if(fork()==0) { // only the child can go inside here
                         printf("c %d %d %d \n",getpid(),getppid(),i);
                         exit(0); // child's job is done, dissapears now
@@ -2683,7 +2683,6 @@ c 12119 12116 2
 b 12116 2887
 
 ```
-
 - how to get a process:
 ```
 while(1) {
