@@ -2708,10 +2708,11 @@ void f(int sgn) {
 3) Zombie process
 - when a child process finishes (exit(0)), it does not disappear immediately
 	- system keeps the child's exit code and PID in the process table so that the parent can read them -> ps ->defunct
-	- solution: parent must call wait(0) -> allows the system to delete the zombie and 
+	- solution: parent must call wait(0) -> allows the system to delete the zombie and reuse its PID
 - deleted child -> keep its pid, then cleans the process?
 - parents wait for children to finish execution
 - wait() returns error if there are no child processes
+- zombies are bad -> if you have a server that creates thousands of children but never "waits" for them, the system will eventually hit its process limit
 ```
 #include <stdio.h>
 #include <unistd.h>
