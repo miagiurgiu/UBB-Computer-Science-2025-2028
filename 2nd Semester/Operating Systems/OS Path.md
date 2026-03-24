@@ -2626,7 +2626,7 @@ while(1) {
 
 ![[Pasted image 20260318183105.png]]
 
-
+ - parent never executes exit()
 ```
 #include <stdio.h>
 #include <unistd.h>
@@ -2643,12 +2643,10 @@ int main(int argc, char** argv) {
 }
 
 ```
-
-- parent never executes exit().
 - parent only iterates for??
 - recursive??
 - every process has its own i -> meaning that after the child (copy) is made, the two processes become independent 
-	- ex: if the child changes i=5, the parent's 
+	- ex: if the child changes i=5, the parent's i stays at 1
 ```
 #include <stdio.h>
 #include <unistd.h>
