@@ -2632,6 +2632,7 @@ while(1) {
  - i=1 => both fork => 4 processes => all 4 print "c"
  - i=2 => all 4 fork => 8 processes => all 8 print "c"
  - result: TREE OF PROCESSES
+	 - exit() is not called => all children stay alive => fork its own children
 ```
 #include <stdio.h>
 #include <unistd.h>
