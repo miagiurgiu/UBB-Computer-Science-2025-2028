@@ -2536,7 +2536,8 @@ mov n, ax
 Issue: 
 -> when 2 programs A and B run at the same time, program A might get interrupted after the "Load" or "Modify" step but before the "Store" step. 
 -> program B then runs, reads the old value, increments it, saves it
--> when program A resumes, it saves its 
+-> when program A resumes, it saves its own version, accidentally overwriting Program B's work
+-> = RACE CONDITION
 
 | T (time) | A (program) | B (program) |
 | -------- | ----------- | ----------- |
