@@ -2549,6 +2549,8 @@ Issue:
 | 5        |             | S           |
 2) learn how to create processes in linux. using fork()
 -> the only way to create a new process is by duplicating an existing process using fork()
+- PARENT = ORIGINAL PROCESS
+- CHILD = CLONE created by fork()
 ```
 ls
 ```
