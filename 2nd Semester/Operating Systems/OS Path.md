@@ -2552,7 +2552,9 @@ Issue:
 - PARENT = ORIGINAL PROCESS
 - CHILD = CLONE created by fork()
 -> how to tell the difference:
-
+- CHILD -> fork() returns 0
+- PARENT -> fork() returns the PID (process id) of the new child
+-> the child gets a full copy of the parent's memory
 ```
 ls
 ```
