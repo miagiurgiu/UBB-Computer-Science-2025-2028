@@ -2547,7 +2547,7 @@ Issue:
 | 3        |             | M           |
 | 4        | S           |             |
 | 5        |             | S           |
-2) learn how to create processes in linux.
+2) learn how to create processes in linux. using fork()
 ```
 ls
 ```
