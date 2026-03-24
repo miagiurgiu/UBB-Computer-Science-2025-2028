@@ -2617,7 +2617,7 @@ FORK BOMB:
 - will become unusable (produces processes exponentially fast)
 - pointless to "kill"
 - tree
-- result: system runs out of PID or memory =>
+- result: system runs out of PID or memory => won't be able to run a simple kill command because the system can't start any more processes
 ```
 while(1) {
 	fork();
@@ -2706,10 +2706,10 @@ void f(int sgn) {
 ```
 
 3) Zombie process
+- when a child proce
 - deleted child -> keep its pid, then cleans the process?
 - parents wait for children to finish execution
-
-- wait returns error if there are no child processes
+- wait() returns error if there are no child processes
 ```
 #include <stdio.h>
 #include <unistd.h>
