@@ -2554,7 +2554,9 @@ Issue:
 -> how to tell the difference:
 - CHILD -> fork() returns 0
 - PARENT -> fork() returns the PID (process id) of the new child
--> the child gets a full copy of the parent's memory
+-> the child gets a full copy of the parent's memory at the moment of the fork()
+-> child and parent are independent after the fork()
+-> if child changes variable -> parent stays the same
 ```
 ls
 ```
@@ -2562,7 +2564,7 @@ ls
 What happens when you run a program:
 
 fork instruction 
-	- original -> parent -> ? -> needs to see the pid of the child
+	- original -> parent -> PID -> needs to see the pid of the child
 	- clone -> child? -> 0 = copy
 	- returns a value
 	- create a new process in Unix 
