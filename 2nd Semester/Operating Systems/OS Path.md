@@ -2586,7 +2586,7 @@ every process can get its pid
 - nano code.c
 ```
 #include <stdio.h> // needed for printf
-#include <unistd.h> // 
+#include <unistd.h> // needed for fork(), getpid() and getppid()
 int main(int argc, char** argv) {
         printf("a %d %d \n",getpid(),getppid());
         fork(); // after this, we have two processes
