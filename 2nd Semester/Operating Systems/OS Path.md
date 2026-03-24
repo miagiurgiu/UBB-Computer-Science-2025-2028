@@ -2524,7 +2524,8 @@ echo {A,B}{1,2} => A1 A2 B1 B2
 ## Lecture 4 - 18 mar 2026
 
 1) Issue about having the same resource modified by two things (last lecture)
-L - load (n++); n is a variable; last time -> file
+(n++) -> steps:
+L - load n from memory to a register ; n is a variable; last time -> file
 M - 
 S - 
 ```
