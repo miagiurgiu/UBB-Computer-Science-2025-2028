@@ -2613,7 +2613,7 @@ b 3801 1893
 b 3803 1893
 ```
 
-FORK BOMB:
+5) FORK BOMB:
 - will become unusable (produces processes exponentially fast)
 - pointless to "kill"
 - tree
@@ -2625,7 +2625,6 @@ while(1) {
 ```
 
 ![[Pasted image 20260318183105.png]]
-
 
  - parent never executes exit()
  - everyone forks
@@ -2652,6 +2651,7 @@ int main(int argc, char** argv) {
 
 ```
 
+6) CONTROL
  parent only iterates for??
 - recursive??
 - every process has its own i -> meaning that after the child (copy) is made, the two processes become independent 
