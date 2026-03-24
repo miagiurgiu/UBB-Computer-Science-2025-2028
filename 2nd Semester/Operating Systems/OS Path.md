@@ -2528,13 +2528,12 @@ echo {A,B}{1,2} => A1 A2 B1 B2
 L - load n from memory to a register ; n is a variable; last time -> file
 M - modify
 S - store
-
-Issue
 ```
 mov ax, n
 inc ax
 mov n, ax
 ```
+Issue: when 2 programs A and B run at the same time, program A might get interrupted after the "Load" or "Modify"
 
 | T (time) | A (program) | B (program) |
 | -------- | ----------- | ----------- |
