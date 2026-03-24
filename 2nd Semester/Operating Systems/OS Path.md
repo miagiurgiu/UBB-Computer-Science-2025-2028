@@ -2712,7 +2712,7 @@ void f(int sgn) {
 - deleted child -> keep its pid, then cleans the process?
 - parents wait for children to finish execution
 - wait() returns error if there are no child processes
-- zombies are bad -> if you have a server that creates thousands of children but never "waits" for them, the system will eventually hit its process limit
+- zombies are bad -> if you have a server that creates thousands of children but never "waits" for them, the system will eventually hit its process limit -> can't start anything new
 ```
 #include <stdio.h>
 #include <unistd.h>
@@ -2756,7 +2756,7 @@ while true; do ps -u mia-giurgiu | grep -E "\./b|defunct"; sleep(1); clear; done
 ```
 - if the processes are all "zombied up" you cannot add more processes
 
-4) Interrupts
+4) Interrupts and Signals
 - wires = interrupts -> designed to signal "division by 0"
 - software interrupts -> not through wires, but through sth else (signals)
 - ex: ctrl+c -> sends a signal to the process -> "STOP" -> stop the processes execution -> execute the code associated to ctrl+c
