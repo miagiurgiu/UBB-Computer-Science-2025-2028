@@ -2663,9 +2663,9 @@ int main(int argc, char** argv) {
 int main(int argc, char** argv) {
         printf("a %d %d \n",getpid(),getppid());
         for(int i=0; i<3; i++) {
-                if(fork()==0) {
+                if(fork()==0) { // only the child can go inside here
                         printf("c %d %d %d \n",getpid(),getppid(),i);
-                        exit(0);
+                        exit(0); // child's job is done
                 }
         }
         printf("b %d %d\n",getpid(),getppid());
