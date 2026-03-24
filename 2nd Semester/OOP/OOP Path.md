@@ -2111,6 +2111,8 @@ xcrun llvm-profdata merge -sparse default.profraw -o app.profdata
 
 xcrun llvm-cov report ./app -instr-profile=app.profdata 
 
+xcrun llvm-cov show ./app -instr-profile=app.profdata -format=html > coverage_report.html
+
 
 ```
 
