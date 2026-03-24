@@ -2651,7 +2651,7 @@ int main(int argc, char** argv) {
 
 ```
 
-6) CONTROL
+6) CONTROLLED CODE - CORRECT WAY to create 3 children
  parent only iterates for??
 - recursive??
 - every process has its own i -> meaning that after the child (copy) is made, the two processes become independent 
