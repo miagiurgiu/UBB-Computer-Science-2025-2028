@@ -2568,7 +2568,7 @@ fork instruction
 	- clone -> child? -> 0 = copy
 	- returns a value
 	- create a new process in Unix 
-	- child gets copy of heap
+	- child gets copy of heap, stack, variables
 every process can get its pid
 
 | Context                                               |     |
@@ -2612,8 +2612,11 @@ b 3804 3800
 b 3801 1893
 b 3803 1893
 ```
+
+FORK BOMB:
 - will become unusable (produces processes exponentially fast)
 - pointless to "kill"
+- produces processes exponentially fast
 ```
 while(1) {
 	fork();
