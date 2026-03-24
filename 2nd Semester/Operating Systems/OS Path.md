@@ -2557,9 +2557,6 @@ Issue:
 -> the child gets a full copy of the parent's memory at the moment of the fork()
 -> child and parent are independent after the fork()
 -> if child changes variable -> parent stays the same
-```
-ls
-```
 
 What happens when you run a program:
 
