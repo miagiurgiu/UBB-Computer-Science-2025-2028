@@ -2629,7 +2629,9 @@ while(1) {
  - parent never executes exit()
  - everyone forks
  - i=0 => parent forks => 2 processes => both print "c"
- - i=1 => both fork =>
+ - i=1 => both fork => 4 processes => all 4 print "c"
+ - i=2 => all 4 fork => 8 processes => all 8 print "c"
+ - result: TREE OF PROCESSES
 ```
 #include <stdio.h>
 #include <unistd.h>
