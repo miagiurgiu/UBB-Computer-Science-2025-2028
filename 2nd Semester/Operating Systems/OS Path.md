@@ -2585,8 +2585,8 @@ every process can get its pid
 4) everything down from variables -> cloned
 - nano code.c
 ```
-#include <stdio.h>
-#include <unistd.h>
+#include <stdio.h> // needed for printf
+#include <unistd.h> // 
 int main(int argc, char** argv) {
         printf("a %d %d \n",getpid(),getppid());
         fork(); // after this, we have two processes
