@@ -2568,6 +2568,9 @@ fork instruction
 	- child gets copy of heap, stack, variables
 every process can get its pid
 
+ANATOMY OF A PROCESS:
+- STACK 
+
 | Context                                               |     |
 | ----------------------------------------------------- | --- |
 | Sources (you can think of it as Source Segment ASC)   |     |
