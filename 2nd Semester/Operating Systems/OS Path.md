@@ -2568,7 +2568,7 @@ fork instruction
 	- child gets copy of heap, stack, variables
 every process can get its pid
 
-ANATOMY OF A PROCESS:
+3) ANATOMY OF A PROCESS:
 - STACK 
 
 | Context                                               |     |
@@ -2582,7 +2582,7 @@ ANATOMY OF A PROCESS:
 | stack (up)                                            |     |
 |                                                       |     |
 
-everything down from variables -> cloned
+4) everything down from variables -> cloned
 - nano code.c
 ```
 #include <stdio.h>
@@ -2626,13 +2626,15 @@ while(1) {
 
 ![[Pasted image 20260318183105.png]]
 
+
  - parent never executes exit()
  - everyone forks
  - i=0 => parent forks => 2 processes => both print "c"
  - i=1 => both fork => 4 processes => all 4 print "c"
  - i=2 => all 4 fork => 8 processes => all 8 print "c"
  - result: TREE OF PROCESSES
-	 - exit() is not called => all children stay alive => fork its own children
+	 - exit() is not called => all children stay alive => fork on children
+	 - produces processes exponentially fast
 ```
 #include <stdio.h>
 #include <unistd.h>
@@ -2649,7 +2651,8 @@ int main(int argc, char** argv) {
 }
 
 ```
-- parent only iterates for??
+
+ parent only iterates for??
 - recursive??
 - every process has its own i -> meaning that after the child (copy) is made, the two processes become independent 
 	- ex: if the child changes i=5, the parent's i stays at 1
