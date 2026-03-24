@@ -2763,7 +2763,10 @@ Signals -> "software interrupts" -> force process to stop -> run special functio
 - ex: ctrl+c -> sends a signal to the process -> "STOP" -> stop the processes execution -> execute the code associated to ctrl+c
 - signal does not signal
 - send a signal -> use kill -> function kill
-SIGINT (2): sent when you 
+
+SIGINT (2): sent when I press CTRL+C => stops program
+SIGKILL(9): kernel kills the process
+SIGCHILD: sent to parent automatically whenever a child process stops or terminates
 
 ```
 cat
