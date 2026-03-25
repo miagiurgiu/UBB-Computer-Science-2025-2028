@@ -965,4 +965,4 @@ while[[prevNode].next].next
 	- NEXT: current++
 	- GETCURRENT: can be implemented, but not efficient
 	- VALID: IS DIFFERENT
-		- iterator is invalid when
+		- iterator is invalid when .next = NIL
