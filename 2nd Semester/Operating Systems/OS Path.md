@@ -2964,15 +2964,12 @@ int main(int argc, char** argv) {
 #include <stdio.h>
 #include <unistd.h>
 int main(int argc, char** argv) {
-        printf("A %d\n", getpid());
-        if (fork()==0) {
-	        if(execl("/bin/ls", "/bin/ls", "C", "-a", "/sadfif", NULL)<0) {
-		        perror("execl did not work");
-		        exit(1);
-	        }
+        int a[4]={1,2,3,4};
+        // p[2];
+        // pipe(p);
+        if(fork()==0) {
+	        a[2]+=a[3];
         }
-        printf("B %d\n", getpid());
-        wait(0);
         (void)argc;
         (void)argv;
         return 0;
