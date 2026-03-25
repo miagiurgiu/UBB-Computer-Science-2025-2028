@@ -951,4 +951,8 @@ cNode instead of head
 
 ```
 
-8) Circular 
+8) Circular lists
+- sometimes might be useful
+- last node points back to first node
+- where the end of the list is? last node is the node whose next is the head, not NIL like in the previous cases
+- 
