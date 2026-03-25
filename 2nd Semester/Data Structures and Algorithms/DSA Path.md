@@ -935,3 +935,7 @@ https://www.interviewcake.com -> practice problems
 
 - SLL ends with NIL or cycle?
 -> 2 pointers -> slow pointer, quick pointer -> they will eventually meet
+
+7) Sorted SLL
+- INSERT
+	- we need the node after
