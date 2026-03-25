@@ -2148,9 +2148,12 @@ xcrun llvm-cov show ./app -instr-profile=app.profdata -format=html > coverage_re
 DynamicArray.h, DynamicArray.cpp, main.cpp
 
 - implementation of the assignment operator
-- could return void, could return DynamicArray
+- could return void, could return DynamicArray& (reference ) -> use reference!
+- that if protects self-assignment
 ```
 DynamicArray& DynamicArray::operator=(const DynamicArray) {
+	if(this==&arr)
+		return NULL;
 	this->capacity = arr.capacity
 	this->size = arr.size
 	delete[] this->elems;
