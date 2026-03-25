@@ -918,7 +918,9 @@ function deleteElem(dll, e) is:
 		[dll.tail].next <- NIL
 	else
 		before <-[cNode].prev
-		after <-[c]
+		after <-[cNode].next
+		[before].next <-after
+		[after].prev <- before
 	
 
 ```
