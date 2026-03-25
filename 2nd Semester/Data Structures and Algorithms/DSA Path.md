@@ -806,3 +806,8 @@ destructor is never explicitly called - it is called automatically at the end of
 - turn add into sorted 
 - add condition in the while statement of the add function
 	&& this->mapElements[index].first >=c
+
+
+## Lecture 5 - 25 mar 2026
+
+- SLL vs DLL
