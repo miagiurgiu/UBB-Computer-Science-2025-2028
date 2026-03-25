@@ -2816,10 +2816,11 @@ ps -u mia-giurgiu
 ## Lecture 5 - 25 mar 2026
 
 - system calls (apeluri de system)
-- 1. execlp
-- 2. execvp
-- 3. 
-
+- 1. execlp -> no need for absolute path
+- 2. execvp -> no need for absolute path
+- 3. execv
+- 4. execl
+PATH -> environment variable telling the shell where to look for commands
 ```
 
 ```
