@@ -2186,7 +2186,7 @@ class Service
 	private: 
 		Repository repo;
 	public:
-		Service(const Repository & repo );
+		Service(const Repository& repo ); // instead of creating a brand new copy of the repository (slow), service simply points to the existing one
 	
 }
 
