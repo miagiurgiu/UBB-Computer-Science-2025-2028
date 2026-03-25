@@ -2826,6 +2826,11 @@ how to see environment variables:
 env
 ```
 
+1) This code demonstrates **process branching**.
+- **`fork()`** creates a duplicate child process.
+- In the **child**, **`execl()`** replaces the running code with `/bin/echo` to print "C".
+- The **parent** continues independently, printing "B", then uses **`wait()`** to pause until the child finishes.
+
 code1.c:
 ```
 #include <stdio.h>
@@ -2872,7 +2877,7 @@ int main(int argc, char** argv) {
 int main(int argc, char** argv) {
         printf("A %d\n", getpid());
         if (fork()==0) {
-	        if(execl("/bin/ls", "/bin/echo=", "C", NULL)<0) {
+	        if(execl("/bin/ls", "/bin/ls", "C", "-a", "/sadfif", NULL)<0) {
 		        perror("execl did not work");
 		        exit(1);
 	        }
@@ -2884,3 +2889,4 @@ int main(int argc, char** argv) {
         return 0;
 }
 ```
+
