@@ -2147,10 +2147,12 @@ xcrun llvm-cov show ./app -instr-profile=app.profdata -format=html > coverage_re
 ## Lecture 5 - 25 mar 2026
 DynamicArray.h, DynamicArray.cpp, main.cpp
 
+ASSIGNMENT OPERATOR:
 - implementation of the assignment operator
 - could return void, could return DynamicArray& (reference ) -> use reference!
 - that if protects self-assignment
-- dynamic allocation -> our own destructor 0
+- dynamic allocation -> our own destructor -> rule of three
+- references behave like objects
 ```
 DynamicArray& DynamicArray::operator=(const DynamicArray) {
 	if(this==&arr)
