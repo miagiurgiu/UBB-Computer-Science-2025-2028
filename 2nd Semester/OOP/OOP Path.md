@@ -2154,18 +2154,27 @@ DynamicArray.h, DynamicArray.cpp, main.cpp
 - dynamic allocation -> our own destructor -> rule of three
 - references behave like objects
 ```
-DynamicArray& DynamicArray::operator=(const DynamicArray) {
-	if(this==&arr)
-		return NULL;
-	this->capacity = arr.capacity
-	this->size = arr.size
-	delete[] this->elems;
-	TElem* aux = new TElem[this->capacity];
-	for(int i=0; i<this->size; i++)
-		aux[i]=arr.elems[i];
-	this->elems = aux;
-	
-	//return *this -> dereference this because this is a pointer
+DynamicArray& DynamicArray::operator=(const DynamicArray& arr) {
+    // 1. Check for self-assignment
+    if (this == &arr) {
+        return *this; 
+    }
+
+    // 2. Free existing memory
+    delete[] this->elems;
+
+    // 3. Copy scalar data
+    this->capacity = arr.capacity;
+    this->size = arr.size;
+
+    // 4. Deep copy the array
+    this->elems = new TElem[this->capacity];
+    for (int i = 0; i < this->size; i++) {
+        this->elems[i] = arr.elems[i];
+    }
+
+    // 5. Return the object itself
+    return *this; 
 }
 
 ```
