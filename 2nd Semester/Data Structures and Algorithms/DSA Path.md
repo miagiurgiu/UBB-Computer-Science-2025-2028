@@ -956,4 +956,4 @@ cNode instead of head
 - last node points back to first node
 - where the end of the list is? last node is the node whose next is the head, not NIL like in the previous cases
 - operations:
-	- insert 
+	- insert node at the beginning -> not a theta(1) operation  -> until next of the current node is head
