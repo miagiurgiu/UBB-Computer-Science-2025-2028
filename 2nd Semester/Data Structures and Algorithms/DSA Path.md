@@ -927,3 +927,4 @@ function deleteElem(dll, e) is:
 
 6) Algorithmic problems
 - Find the nth node from the end of a SLL
+-> the method of the stick
