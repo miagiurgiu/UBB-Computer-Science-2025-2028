@@ -907,13 +907,15 @@ function deleteElem(dll, e) is:
 		cNode <- [cNode].next
 	if cNode = NIL then
 		deleteElem <-False
-	if cNode = dll.head then:
+	if cNode = dll.head then: // list made of one single node
 		dll.head <- [dll.head].next
 		if dll.head = NIL then
 			dll.tail <- NIL
 		else
 			[dll.head].prev <- NIL
 	else if cNode = dll.tail then
-		dll.tail <- [dll.tail]
+		dll.tail <- [dll.tail].prev
+		dll.tail
+	
 
 ```
