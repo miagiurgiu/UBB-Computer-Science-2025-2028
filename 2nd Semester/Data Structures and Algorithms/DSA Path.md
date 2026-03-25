@@ -853,6 +853,9 @@ subalg insertEnd(dll,e):
 
 ADDING A NODE TO GIVEN POSITION:
 - insert after (pos-1)
+- special case: inserting on position one 
+	- (there is no previous there is not a node "after which")
+	- t
 ```
 subalg insertOnPosition(dll,e,pos):
 	
