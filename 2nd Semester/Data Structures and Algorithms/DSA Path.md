@@ -933,4 +933,5 @@ https://www.interviewcake.com -> practice problems
 - Rotate singly linked list
 -> don't forget to put NIL and HEAD
 
-- 
+- SLL ends with NIL or cycle?
+-> 
