@@ -2907,7 +2907,9 @@ int main(int argc, char** argv) {
 	        close(a2b[0]);
 	        close(b2p[0]);
 	        close(b2p[1]);
-	        while(1)
+	        while(1) {
+		        read(p2a[0],&n,sizeof(int));
+	        }
 	        exit(0);
         }
         
