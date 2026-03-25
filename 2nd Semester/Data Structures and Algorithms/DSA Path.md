@@ -966,3 +966,5 @@ while[[prevNode].next].next
 	- GETCURRENT: can be implemented, but not efficient
 	- VALID: IS DIFFERENT
 		- iterator is invalid when .next = NIL
+		- boolean flag to keep track of when i get back to the head
+		- Josephus circle problem
