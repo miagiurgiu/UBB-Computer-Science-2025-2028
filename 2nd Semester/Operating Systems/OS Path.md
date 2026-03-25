@@ -2818,8 +2818,8 @@ ps -u mia-giurgiu
 - system calls (apeluri de system)
 - 1. execlp -> no need for absolute path
 - 2. execvp -> no need for absolute path
-- 3. execv
-- 4. execl
+- 3. execv -> array -> call that function
+- 4. execl -> array -> call that function
 PATH -> environment variable telling the shell where to look for commands
 ```
 
