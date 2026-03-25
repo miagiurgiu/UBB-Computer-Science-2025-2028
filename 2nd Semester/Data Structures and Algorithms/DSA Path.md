@@ -907,6 +907,7 @@ function deleteElem(dll, e) is:
 		cNode <- [cNode].next
 	if cNode = NIL then
 		deleteElem <-False
-	
+	if cNode = dll.head then:
+		
 
 ```
