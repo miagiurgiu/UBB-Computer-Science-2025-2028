@@ -947,8 +947,6 @@ if this relation returns false, e should be somethere after the head (not necess
 ssll.rel(e,[[ssll.head].next].info)==true) -> exactly after the node
 
 cNode instead of head
-
-
 ```
 
 8) Circular lists
@@ -958,3 +956,6 @@ cNode instead of head
 - operations:
 	- insert node at the beginning -> not a theta(1) operation  -> until next of the current node is head -> theta(n)
 	- for inserting at the end -> same thing, but don't change the head -> head stays at 1 (see drawing)
+
+
+while[[prevNode].next].next
