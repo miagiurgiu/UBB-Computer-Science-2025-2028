@@ -831,3 +831,4 @@ it.currentElem = it.currentElem->next;
 2) for DLL we need two structures:
 	- one structure for the node (DLLNode)
 	- one structure for the list (DLL)
+
