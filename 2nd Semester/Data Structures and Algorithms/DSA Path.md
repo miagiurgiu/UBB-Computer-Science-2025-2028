@@ -822,6 +822,6 @@ destructor is never explicitly called - it is called automatically at the end of
 	- VALID: 1->5
 - what is current? current = 1
 - what is the next current element? current++
-- how to implement getCurrent? using a loop starting from head until the value of current element -> not efficient -> 
+- how to implement getCurrent? using a loop starting from head until the value of current element -> not efficient -> see code
 - valid? compare my current position to the number of nodes in the linked list
 - CURRENT ELEMENT IN A SLL IS NOT THE POSITION, BUT THE ADDRESS OF THE NODE
