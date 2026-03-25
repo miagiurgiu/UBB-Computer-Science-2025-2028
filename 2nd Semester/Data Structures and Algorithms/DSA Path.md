@@ -811,3 +811,4 @@ destructor is never explicitly called - it is called automatically at the end of
 ## Lecture 5 - 25 mar 2026
 
 - SLL vs DLL
+1) iterator for SLL:
