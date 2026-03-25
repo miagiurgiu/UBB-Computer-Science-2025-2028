@@ -2147,7 +2147,7 @@ xcrun llvm-cov show ./app -instr-profile=app.profdata -format=html > coverage_re
 ## Lecture 5 - 25 mar 2026
 DynamicArray.h, DynamicArray.cpp, main.cpp
 
-ASSIGNMENT OPERATOR:
+1) ASSIGNMENT OPERATOR:
 - implementation of the assignment operator
 - could return void, could return DynamicArray& (reference ) -> use reference!
 - that if protects self-assignment
@@ -2165,7 +2165,9 @@ DynamicArray& DynamicArray::operator=(const DynamicArray) {
 		aux[i]=arr.elems[i];
 	this->elems = aux;
 	
-	//return *this -> dereference
+	//return *this -> dereference this because this is a pointer
 }
 
 ```
+
+2) 
