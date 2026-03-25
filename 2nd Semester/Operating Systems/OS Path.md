@@ -2921,6 +2921,19 @@ int main(int argc, char** argv) {
         
         // B child
         if (fork() ==0) {
+	        close(p2a[0]);
+	        close(p2a[1]);
+	        close(a2b[1]);
+	        close(b2p[0]);
+	        while(1) {
+		        if(read(a2b[0],&n,sizeof(int))<=0) break;
+		        if(n<=0) break;
+		        printf("A: %d\n",n);
+		        n--;
+		        write(b2b[1],&n, sizeof(int));
+	        }
+	        close(p2a[0]);
+	        close(a2b[1]);
 	        exit(0);
 	    }
 	    
