@@ -842,7 +842,16 @@ subalg insertEnd(dll,e):
 	[newNode].prev <- NIL
 	if dll.head!=NIL then
 		[newNode].prev <- dll.tail
-		[dll.]
+		[dll.tail].next <-newNode
+		dll.tail <-newnode
+	else
+		dll.head <-newNode
+		dll.tail <- newNode
 		
 
+```
+
+ADDING A NODE TO GIVEN POSITION:
+```
+subalg insertOnPosition(dll,e,pos)
 ```
