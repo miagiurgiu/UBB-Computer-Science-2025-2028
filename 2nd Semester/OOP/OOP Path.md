@@ -2186,7 +2186,7 @@ class Service
 	private: 
 		Repository repo;
 	public:
-		Service(const Repository & );
+		Service(const Repository & repo );
 	
 }
 
