@@ -944,6 +944,6 @@ ssll.rel(e,[ssll.head].info)==true) -> special case in our implementation becaus
 
 if this relation returns false, e should be somethere after the head (not necessarily immediately after)
 
-ssll.rel(e,[[ssll.head].info)==true)
+ssll.rel(e,[[ssll.head].next].info)==true) -> exactly after the node
 
 ```
