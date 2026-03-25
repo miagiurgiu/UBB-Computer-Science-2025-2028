@@ -813,9 +813,9 @@ destructor is never explicitly called - it is called automatically at the end of
 - SLL vs DLL
 1) iterator for SLL:
 - operations:
-	- INIT
-	- NEXT
-	- GETCURRENT
+	- INIT: current = 1
+	- NEXT: current++
+	- GETCURRENT: 
 	- VALID
 - what is current? current = 1
-- what is the
+- what is the next current element? 
