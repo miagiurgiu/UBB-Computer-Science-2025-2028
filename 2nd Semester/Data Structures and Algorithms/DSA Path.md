@@ -903,5 +903,8 @@ subalg insertOnPosition(dll,e,pos):
 subalgorithm deleteElem(dll, e) is:
 	// search part
 	cNode <- dll.head
-	while cNode!
+	while cNode!=NIL and [cNode].info !=e execute:
+		cNode <- [cNode].next
+	if cNode !=NIL
+
 ```
