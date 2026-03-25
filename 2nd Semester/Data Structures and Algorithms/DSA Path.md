@@ -832,3 +832,9 @@ it.currentElem = it.currentElem->next;
 	- one structure for the node (DLLNode)
 	- one structure for the list (DLL)
 
+ADDING A NODE TO THE END:
+-> empty list?
+```
+
+
+```
