@@ -836,7 +836,13 @@ ADDING A NODE TO THE END:
 -> empty list? -> treat case separately
 ```
 subalg insertEnd(dll,e):
-if dll.head!=NIL then
-	[newNode].prev <- dll.tail
+	newNode <- allocate()
+	[newNode].info <- e
+	[newNode].next <-NIL
+	[newNode].prev <- NIL
+	if dll.head!=NIL then
+		[newNode].prev <- dll.tail
+		[dll.]
+		
 
 ```
