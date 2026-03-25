@@ -865,5 +865,8 @@ subalg insertOnPosition(dll,e,pos):
 	if pos =1 then // 
 		newNode <- allocate()
 		[newNode].info <- e
-		[newNode].
+		[newNode].next <- dll.head
+		[newNode].[prev] <- NIL // prev of first node is always NIL
+		if (dll.head=NIL)
+		
 ```
