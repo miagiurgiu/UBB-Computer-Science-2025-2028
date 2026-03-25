@@ -828,7 +828,7 @@ destructor is never explicitly called - it is called automatically at the end of
 
 it.currentElem = it.currentElem->next;
 
-2) for DLL we need two structures:
+3) for DLL we need two structures:
 	- one structure for the node (DLLNode)
 	- one structure for the list (DLL)
 
@@ -894,11 +894,11 @@ subalg insertOnPosition(dll,e,pos):
 			[cNode].next <- newNode
 ```
 
-3) tips:
+4) tips:
 - add extra variables
 - make drawings
 
-3) delete given element -> 
+5) delete given element -> O(n)
 ```
 function deleteElem(dll, e) is:
 	// search part
@@ -923,5 +923,6 @@ function deleteElem(dll, e) is:
 		[after].prev <- before
 	@ deallocate cNode
 	deleteElem <- True
-
 ```
+
+6) 
