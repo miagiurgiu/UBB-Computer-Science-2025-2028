@@ -2890,3 +2890,15 @@ int main(int argc, char** argv) {
 }
 ```
 
+
+```
+#include <stdio.h>
+#include <unistd.h>
+int main(int argc, char** argv) {
+        int p2a[2],a2b[2]
+        (void)argc;
+        (void)argv;
+        return 0;
+}
+
+```
