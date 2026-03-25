@@ -2858,9 +2858,8 @@ int main(int argc, char** argv) {
 		        exit(1);
 	        }
         }
-        
-        
         printf("B %d\n", getpid());
+        wait(0);
         (void)argc;
         (void)argv;
         return 0;
