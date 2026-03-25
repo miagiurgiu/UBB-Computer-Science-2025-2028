@@ -860,5 +860,6 @@ ADDING A NODE TO GIVEN POSITION:
 - special case 3: position out of bounds (try to add to invalid position)
 ```
 subalg insertOnPosition(dll,e,pos):
-	
+	if pos < 1 then
+		@ throw
 ```
