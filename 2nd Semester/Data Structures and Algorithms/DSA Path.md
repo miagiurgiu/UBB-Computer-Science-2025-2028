@@ -886,6 +886,7 @@ subalg insertOnPosition(dll,e,pos):
 		[newNode].info <- e
 		[newNode].prev <- cNode
 		[newNode].next <- [cNode].next
+		if cNode = dll.tail then
 		
 		
 ```
