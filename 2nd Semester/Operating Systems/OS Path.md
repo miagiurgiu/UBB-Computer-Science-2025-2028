@@ -2825,3 +2825,24 @@ how to see environment variables:
 ```
 env
 ```
+
+code1.c:
+```
+#include <stdio.h>
+#include <unistd.h>
+int main(int argc, char** argv) {
+        printf("A %d\n", getpid());
+        execl("/bin/echo", "/bin/echo", "C", NULL);
+        printf("B %d\n", getpid());
+        (void)argc;
+        (void)argv;
+        return 0;
+}
+```
+
+result:
+```
+A 12326
+C
+
+```
