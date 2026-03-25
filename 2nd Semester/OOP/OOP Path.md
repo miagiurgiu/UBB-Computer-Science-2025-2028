@@ -2192,4 +2192,14 @@ Service::Service(Repository ....)
 ```
 
 3) initialisation lists are faster because it does not do two operatins (allocation + deallocation)
-4) 
+
+```
+Song(std::string artist)
+
+or
+
+Song(const std::string& artist)
+
+```
+
+4) implement your own resize function and
