@@ -2865,3 +2865,22 @@ int main(int argc, char** argv) {
         return 0;
 }
 ```
+
+```
+#include <stdio.h>
+#include <unistd.h>
+int main(int argc, char** argv) {
+        printf("A %d\n", getpid());
+        if (fork()==0) {
+	        if(execl("/bin/ls", "/bin/echo=", "C", NULL)<0) {
+		        perror("execl did not work");
+		        exit(1);
+	        }
+        }
+        printf("B %d\n", getpid());
+        wait(0);
+        (void)argc;
+        (void)argv;
+        return 0;
+}
+```
