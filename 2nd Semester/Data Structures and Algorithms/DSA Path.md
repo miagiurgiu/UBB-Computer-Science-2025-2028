@@ -833,8 +833,10 @@ it.currentElem = it.currentElem->next;
 	- one structure for the list (DLL)
 
 ADDING A NODE TO THE END:
--> empty list?
+-> empty list? -> treat case separately
 ```
-
+subalg insertEnd(dll,e):
+if dll.head!=NIL then
+	[newNode].prev <- dll.tail
 
 ```
