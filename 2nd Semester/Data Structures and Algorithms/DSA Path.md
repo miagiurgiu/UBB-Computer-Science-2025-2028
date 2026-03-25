@@ -893,3 +893,7 @@ subalg insertOnPosition(dll,e,pos):
 			[[cNode].next].prev <- newNode
 			[cNode].next <- newNode
 ```
+
+3) tips:
+- add extra variables
+- make drawings
