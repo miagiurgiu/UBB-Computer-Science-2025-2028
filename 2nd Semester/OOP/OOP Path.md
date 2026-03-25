@@ -2190,3 +2190,6 @@ serv.add("song1", "artist1"); -> 4 4
 
 Service::Service(Repository ....)
 ```
+
+3) initialisation lists are faster because it does not do two operatins (allocation + deallocation)
+4) 
