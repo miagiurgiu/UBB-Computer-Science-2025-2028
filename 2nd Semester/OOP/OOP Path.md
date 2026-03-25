@@ -2184,9 +2184,9 @@ class Service
 
 
 main:
+Repository repo {}; () -> 3
+Service serv{repo};
+serv.add("song1", "artist1"); -> 4 4
 
-
-Repository repo {}; ()
-serv
-
+Service::Service(Repository ....)
 ```
