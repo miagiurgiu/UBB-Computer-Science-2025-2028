@@ -957,5 +957,12 @@ cNode instead of head
 	- insert node at the beginning -> not a theta(1) operation  -> until next of the current node is head -> theta(n)
 	- for inserting at the end -> same thing, but don't change the head -> head stays at 1 (see drawing)
 
-
+```
 while[[prevNode].next].next
+```
+- iterator
+	- INIT: current = 1
+	- NEXT: current++
+	- GETCURRENT: can be implemented, but not efficient
+	- VALID: IS DIFFERENT
+		- iterator is invalid when
