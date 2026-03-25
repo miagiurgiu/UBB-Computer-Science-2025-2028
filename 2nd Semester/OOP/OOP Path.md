@@ -2150,6 +2150,7 @@ DynamicArray.h, DynamicArray.cpp, main.cpp
 - implementation of the assignment operator
 - could return void, could return DynamicArray& (reference ) -> use reference!
 - that if protects self-assignment
+- dynamic allocation -> our own destructor 0
 ```
 DynamicArray& DynamicArray::operator=(const DynamicArray) {
 	if(this==&arr)
@@ -2163,7 +2164,6 @@ DynamicArray& DynamicArray::operator=(const DynamicArray) {
 	this->elems = aux;
 	
 	//return *this -> dereference
-
 }
 
 ```
