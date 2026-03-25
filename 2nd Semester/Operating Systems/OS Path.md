@@ -2901,8 +2901,18 @@ int main(int argc, char** argv) {
         pipe(a2b);
         pipe(b2p);
         
-        // A
-        if(fork()==0)
+        // A child -> closes the borders it does not need asap
+        if(fork()==0){
+	        exit(0);
+        }
+        
+        // B child
+        if (fork() ==0) {
+	        exit(0);
+	    }
+	    
+	    wait(0);
+	    wait(0);
         (void)argc;
         (void)argv;
         return 0;
