@@ -2846,3 +2846,20 @@ A 12326
 C
 
 ```
+
+```
+#include <stdio.h>
+#include <unistd.h>
+int main(int argc, char** argv) {
+        printf("A %d\n", getpid());
+        if(fork()==0) {
+	        execl("/bin/echo", "/bin/echo", "C", NULL);
+	        exit(1);
+        }
+        
+        printf("B %d\n", getpid());
+        (void)argc;
+        (void)argv;
+        return 0;
+}
+```
