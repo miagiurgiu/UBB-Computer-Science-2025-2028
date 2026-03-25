@@ -2203,3 +2203,6 @@ Song(const std::string& artist)
 ```
 
 4) implement your own resize and add function
+5) vector_3d.cpp
+6) static data members
+7) 
