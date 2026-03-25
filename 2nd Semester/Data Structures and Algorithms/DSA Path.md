@@ -876,6 +876,8 @@ subalg insertOnPosition(dll,e,pos):
 	else 
 		cNode <- dll.head
 		cPos <- 1
-		while cNode !=NIL and cPos < pos-1
+		while cNode !=NIL and cPos < pos-1 ex
+			cPos <- cPos + 1
+			cNode <- [cNode].next
 		
 ```
