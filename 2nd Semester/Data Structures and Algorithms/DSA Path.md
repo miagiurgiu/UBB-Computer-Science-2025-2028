@@ -881,8 +881,11 @@ subalg insertOnPosition(dll,e,pos):
 			cNode <- [cNode].next
 		if cNode = NIL then
 			@ throw an exception
+		// insert new node after current node
 		newNode <- allocate()
 		[newNode].info <- e
+		[newNode].prev <- cNode
+		[newNode].next <- [cNode].next
 		
 		
 ```
