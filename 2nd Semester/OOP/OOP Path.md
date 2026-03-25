@@ -2145,5 +2145,11 @@ xcrun llvm-cov show ./app -instr-profile=app.profdata -format=html > coverage_re
 
 
 ## Lecture 5 - 25 mar 2026
-DynamicArray.h
+DynamicArray.h, DynamicArray.cpp, main.cpp
 
+- implementation of the assignment operator
+```
+this-> capacity = arr.capacity
+this
+
+```
