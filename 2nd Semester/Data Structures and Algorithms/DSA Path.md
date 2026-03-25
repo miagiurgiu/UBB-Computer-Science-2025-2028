@@ -812,3 +812,8 @@ destructor is never explicitly called - it is called automatically at the end of
 
 - SLL vs DLL
 1) iterator for SLL:
+ope
+- INIT
+- NEXT
+- GETCURRENT
+- VALID
