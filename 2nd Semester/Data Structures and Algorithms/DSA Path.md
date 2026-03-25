@@ -818,4 +818,5 @@ destructor is never explicitly called - it is called automatically at the end of
 	- GETCURRENT: 
 	- VALID
 - what is current? current = 1
-- what is the next current element? 
+- what is the next current element? current++
+- how to implement getCurrent? using a loop starting from head until the value of current element
