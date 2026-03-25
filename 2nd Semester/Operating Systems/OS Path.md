@@ -2812,3 +2812,6 @@ ps -u mia-giurgiu
 - SIGKILL
 - value 9???
 - kill -9 that_number
+
+## Lecture 5 - 25 mar 2026
+
