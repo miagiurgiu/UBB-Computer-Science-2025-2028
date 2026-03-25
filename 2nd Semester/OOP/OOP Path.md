@@ -2149,7 +2149,9 @@ DynamicArray.h, DynamicArray.cpp, main.cpp
 
 - implementation of the assignment operator
 ```
-this-> capacity = arr.capacity
-this
+this->capacity = arr.capacity
+this->size = arr.size
+delete[] this->elems;
+
 
 ```
