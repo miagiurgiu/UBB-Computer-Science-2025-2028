@@ -2852,8 +2852,7 @@ C
 #include <unistd.h>
 int main(int argc, char** argv) {
         printf("A %d\n", getpid());
-        if(fork()==0) {
-	        execl("/bin/echo", "/bin/echo", "C", NULL);
+        if(execl("/bin/echo", "/bin/echo", "C", NULL)<0) {
 	        exit(1);
         }
         
