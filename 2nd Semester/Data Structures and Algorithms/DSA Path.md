@@ -940,6 +940,10 @@ https://www.interviewcake.com -> practice problems
 - INSERT
 	- we need the node after
 ```
-ssll.rel(e,[ssll.head].info)==true) -> special case in our implementation because we are looking for the node after which we 
+ssll.rel(e,[ssll.head].info)==true) -> special case in our implementation because we are looking for the node after which we are inserting)
+
+if this relation returns false, e should be somethere after the head (not necessarily immediately after)
+
+ssll.rel(e,[[ssll.head].info)==true)
 
 ```
