@@ -2815,3 +2815,8 @@ ps -u mia-giurgiu
 
 ## Lecture 5 - 25 mar 2026
 
+- system calls (apeluri de system)
+
+```
+
+```
