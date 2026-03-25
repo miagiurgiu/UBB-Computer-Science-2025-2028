@@ -897,3 +897,11 @@ subalg insertOnPosition(dll,e,pos):
 3) tips:
 - add extra variables
 - make drawings
+
+3) delete given element
+```
+subalgorithm deleteElem(dll, e) is:
+	// search part
+	cNode <- dll.head
+	while cNode!
+```
