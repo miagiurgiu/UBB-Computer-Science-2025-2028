@@ -925,4 +925,5 @@ function deleteElem(dll, e) is:
 	deleteElem <- True
 ```
 
-6) 
+6) Algorithmic problems
+- Find the nth node from the end of a SLL
