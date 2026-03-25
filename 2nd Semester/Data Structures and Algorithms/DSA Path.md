@@ -930,3 +930,7 @@ function deleteElem(dll, e) is:
 -> the method of the stick
 https://www.interviewcake.com -> practice problems
 
+- Rotate singly linked list
+-> don't forget to put NIL and HEAD
+
+- 
