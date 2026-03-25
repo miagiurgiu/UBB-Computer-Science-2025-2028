@@ -811,7 +811,10 @@ destructor is never explicitly called - it is called automatically at the end of
 ## Lecture 5 - 25 mar 2026
 
 - SLL vs DLL
-1) iterator for SLL:
+1) for SSL we need two structures:
+	- one structure for the node (SLLNode)
+	- one structure for the list (SLL)
+2) iterator for SLL:
 - operations:
 	- INIT: current = 1
 	- NEXT: current++
