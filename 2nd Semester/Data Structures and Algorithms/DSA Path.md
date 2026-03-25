@@ -934,4 +934,4 @@ https://www.interviewcake.com -> practice problems
 -> don't forget to put NIL and HEAD
 
 - SLL ends with NIL or cycle?
--> 
+-> 2 pointers -> slow pointer, quick pointer -> they will eventually meet
