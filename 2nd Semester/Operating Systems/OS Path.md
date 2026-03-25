@@ -2821,6 +2821,7 @@ ps -u mia-giurgiu
 - 3. execv -> array -> call that function
 - 4. execl -> array -> call that function
 PATH -> environment variable telling the shell where to look for commands
+how to see environment variables:
 ```
-
+env
 ```
