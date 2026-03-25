@@ -851,7 +851,7 @@ subalg insertEnd(dll,e):
 
 ```
 
-ADDING A NODE TO GIVEN POSITION:
+ADDING A NODE TO GIVEN POSITION: -> O(n)
 - insert after (pos-1)
 - special case 1: inserting on position one -> issues:
 	- (there is no previous there is not a node "after which")
@@ -898,7 +898,7 @@ subalg insertOnPosition(dll,e,pos):
 - add extra variables
 - make drawings
 
-3) delete given element
+3) delete given element -> 
 ```
 function deleteElem(dll, e) is:
 	// search part
@@ -921,6 +921,7 @@ function deleteElem(dll, e) is:
 		after <-[cNode].next
 		[before].next <-after
 		[after].prev <- before
-	
+	@ deallocate cNode
+	deleteElem <- True
 
 ```
