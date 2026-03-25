@@ -2852,9 +2852,13 @@ C
 #include <unistd.h>
 int main(int argc, char** argv) {
         printf("A %d\n", getpid());
-        if(execl("/bin/echo", "/bin/echo", "C", NULL)<0) {
-	        exit(1);
+        if (fork()==0) {
+	        if(execl("/bin/echo", "/bin/echo", "C", NULL)<0) {
+		        perror("execl did not work");
+		        exit(1);
+	        }
         }
+        
         
         printf("B %d\n", getpid());
         (void)argc;
