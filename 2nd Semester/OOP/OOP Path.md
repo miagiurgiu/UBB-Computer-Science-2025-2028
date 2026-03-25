@@ -2142,3 +2142,8 @@ xcrun llvm-cov show ./app -instr-profile=app.profdata -format=html > coverage_re
 - **Shallow Copy (Bad):** Two different array objects would point to the _same_ memory address on the heap. When the first one is destroyed, it deletes the memory. When the second one is destroyed, it tries to delete that same memory again (causing a **Double Free** crash).
     
 - **Deep Copy (Your Code):** Your Copy Constructor and Assignment Operator solve this by using `new` to allocate a _separate_ block of memory for the new object and manually copying the elements over.
+
+
+## Lecture 5 - 25 mar 2026
+DynamicArray.h
+
