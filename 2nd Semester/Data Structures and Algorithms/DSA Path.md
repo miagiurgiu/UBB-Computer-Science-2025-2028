@@ -939,3 +939,7 @@ https://www.interviewcake.com -> practice problems
 7) Sorted SLL
 - INSERT
 	- we need the node after
+```
+ssll.rel(e,[ssll.head].info)==true) -> special case in our implementation because we are looking for the node after which we 
+
+```
