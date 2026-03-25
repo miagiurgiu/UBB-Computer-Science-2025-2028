@@ -2148,8 +2148,9 @@ xcrun llvm-cov show ./app -instr-profile=app.profdata -format=html > coverage_re
 DynamicArray.h, DynamicArray.cpp, main.cpp
 
 - implementation of the assignment operator
+- could return void, could return DynamicArray
 ```
-DynamicArray& DynamicArray::operator=()
+DynamicArray& DynamicArray::operator=(const DynamicArray)
 this->capacity = arr.capacity
 this->size = arr.size
 delete[] this->elems;
@@ -2158,5 +2159,5 @@ for(int i=0; i<this->size; i++)
 	aux[i]=arr.elems[i];
 this->elems = aux;
 
-return *this
+//return *this -> dereference
 ```
