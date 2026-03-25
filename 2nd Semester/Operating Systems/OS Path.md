@@ -2930,13 +2930,26 @@ int main(int argc, char** argv) {
 		        if(n<=0) break;
 		        printf("A: %d\n",n);
 		        n--;
-		        write(b2b[1],&n, sizeof(int));
+		        write(b2p[1],&n, sizeof(int));
 	        }
-	        close(p2a[0]);
-	        close(a2b[1]);
+	        close(a2b[0]);
+	        close(b2p[1]);
 	        exit(0);
 	    }
 	    
+	    close(p2a[0]);
+	    close(p2a[1]);
+	        close(a2b[1]);
+	        close(b2p[0]);
+	        while(1) {
+		        if(read(a2b[0],&n,sizeof(int))<=0) break;
+		        if(n<=0) break;
+		        printf("A: %d\n",n);
+		        n--;
+		        write(b2p[1],&n, sizeof(int));
+	        }
+	        close(a2b[0]);
+	        close(b2p[1]);
 	    wait(0);
 	    wait(0);
         (void)argc;
