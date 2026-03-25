@@ -2170,4 +2170,23 @@ DynamicArray& DynamicArray::operator=(const DynamicArray) {
 
 ```
 
-2) difference between the repo in the service vs the one.
+2) difference between the repo in the service vs the one...
+```
+class Service
+{
+	private: 
+		Repository repo;
+	public:
+		Service(const Repository & );
+	
+}
+
+
+
+main:
+
+
+Repository repo {}; ()
+serv
+
+```
