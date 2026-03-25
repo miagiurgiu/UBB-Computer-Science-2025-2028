@@ -873,5 +873,9 @@ subalg insertOnPosition(dll,e,pos):
 		else // the list is note empty
 			[dll.head].prev <- newNode
 			dll.head <- newNode
+	else 
+		cNode <- dll.head
+		cPos <- 1
+		while cNode !=NIL and cPos < pos-1
 		
 ```
