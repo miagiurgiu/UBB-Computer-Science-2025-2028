@@ -870,7 +870,8 @@ subalg insertOnPosition(dll,e,pos):
 		if dll.head=NIL then // the list is empty
 			dll.head <- newNode
 			dll.tail <- newNode
-		else
-			[dll.head] <
+		else // the list is note empty
+			[dll.head].prev <- newNode
+			dll.head <- newNode
 		
 ```
