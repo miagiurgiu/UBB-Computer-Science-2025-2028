@@ -2895,7 +2895,14 @@ int main(int argc, char** argv) {
 #include <stdio.h>
 #include <unistd.h>
 int main(int argc, char** argv) {
-        int p2a[2],a2b[2]
+        int p2a[2],a2b[2],b2p[2],n;
+        
+        pipe(p2a);
+        pipe(a2b);
+        pipe(b2p);
+        
+        // A
+        if(fork()==0)
         (void)argc;
         (void)argv;
         return 0;
