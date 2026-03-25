@@ -890,8 +890,6 @@ subalg insertOnPosition(dll,e,pos):
 			[dll.tail].next <- newNode
 			dll.tail <- newNode
 		else // i am inserting between two existing nodes
-			[cNode].next
-			
-		
-		
+			[[cNode].next].prev <- newNode
+			[cNode].next <- newNode
 ```
