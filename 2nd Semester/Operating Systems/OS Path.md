@@ -2903,6 +2903,11 @@ int main(int argc, char** argv) {
         
         // A child -> closes the borders it does not need asap
         if(fork()==0){
+	        close(p2a[1]);
+	        close(a2b[0]);
+	        close(b2p[0]);
+	        close(b2p[1]);
+	        while(1)
 	        exit(0);
         }
         
