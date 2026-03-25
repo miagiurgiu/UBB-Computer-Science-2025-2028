@@ -860,6 +860,10 @@ ADDING A NODE TO GIVEN POSITION:
 - special case 3: position out of bounds (try to add to invalid position)
 ```
 subalg insertOnPosition(dll,e,pos):
-	if pos < 1 then
-		@ throw
+	if pos < 1 then // invalid position
+		@ throw an exception
+	if pos =1 then // 
+		newNode <- allocate()
+		[newNode].info <- e
+		[newNode].
 ```
