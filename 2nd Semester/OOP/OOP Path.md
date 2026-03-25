@@ -2202,4 +2202,4 @@ Song(const std::string& artist)
 
 ```
 
-4) implement your own resize function and
+4) implement your own resize and add function
