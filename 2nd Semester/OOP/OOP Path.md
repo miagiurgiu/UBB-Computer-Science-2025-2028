@@ -2205,4 +2205,6 @@ Song(const std::string& artist)
 4) implement your own resize and add function
 5) vector_3d.cpp
 6) static data members
-7) 
+- global variables for the class
+- new instance -> that instance has access to the same static element -> same value for all instances/objects of the class??
+- 
