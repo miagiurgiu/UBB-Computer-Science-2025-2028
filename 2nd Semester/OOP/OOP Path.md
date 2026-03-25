@@ -2152,6 +2152,9 @@ DynamicArray.h, DynamicArray.cpp, main.cpp
 this->capacity = arr.capacity
 this->size = arr.size
 delete[] this->elems;
-
+TElem* aux = new TElem[this->capacity];
+for(int i=0; i<this->size; i++)
+	aux[i]=arr.elems[i];
+this->elems = aux;
 
 ```
