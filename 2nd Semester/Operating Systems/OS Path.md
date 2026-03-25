@@ -2947,7 +2947,7 @@ int main(int argc, char** argv) {
 		    if(n<=0) break;
 		    printf("A: %d\n",n);
 		    n--;
-		    write(b2p[1],&n, sizeof(int));
+		    write(p2a[1],&n, sizeof(int));
 	    }
 	    close(a2b[0]);
 	    close(b2p[1]);
