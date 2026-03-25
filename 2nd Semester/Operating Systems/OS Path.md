@@ -2910,8 +2910,12 @@ int main(int argc, char** argv) {
 	        while(1) {
 		        if(read(p2a[0],&n,sizeof(int))<=0) break;
 		        if(n<=0) break;
-		        printf("A: %d\n)
+		        printf("A: %d\n",n);
+		        n--;
+		        write(a2b[1],&n, sizeof(int));
 	        }
+	        close(p2a[0]);
+	        close(a2b[1]);
 	        exit(0);
         }
         
