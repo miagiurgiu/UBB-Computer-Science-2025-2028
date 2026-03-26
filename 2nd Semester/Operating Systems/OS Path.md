@@ -3016,3 +3016,11 @@ another method: ![[Pasted image 20260326105513.png]]
 ![[Pasted image 20260326112622.png]]
 
 ![[Pasted image 20260326113001.png]]
+
+
+watch n 05
+![[Pasted image 20260326113717.png]]
+
+
+![[Pasted image 20260326113728.png]]
+
