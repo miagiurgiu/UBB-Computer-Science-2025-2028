@@ -2996,3 +2996,5 @@ int main(int argc, char** argv) {
 
 remove coma at the end:
 ![[Pasted image 20260326105357.png]]
+
+another method: ![[Pasted image 20260326105513.png]]
