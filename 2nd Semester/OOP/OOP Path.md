@@ -2152,6 +2152,7 @@ DynamicArray.h, DynamicArray.cpp, main.cpp
 - that if protects self-assignment
 - dynamic allocation -> our own destructor -> rule of three
 - references behave like objects
+
 ```
 DynamicArray& DynamicArray::operator=(const DynamicArray& arr) {
     // 1. Check for self-assignment
@@ -2220,3 +2221,30 @@ Song(const std::string& artist)
 6) static data members
 - global variables for the class
 - new instance -> that instance has access to the same static element -> same value for all instances/objects of the class??
+
+dynamicarray.h
+```
+#pragma once
+typedef int TElem;
+class DynamicArray
+{
+private:
+
+int capacity, size;
+
+TElem* elems;
+
+  
+
+public:
+
+DynamicArray(int cap = 10);
+
+~DynamicArray();
+
+DynamicArray(const DynamicArray& arr);
+
+DynamicArray& operator=(const DynamicArray& arr);
+
+};
+```
