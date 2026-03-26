@@ -2981,3 +2981,7 @@ int main(int argc, char** argv) {
 ## Lab 5 - 26 mar 2026
 
 ![[Pasted image 20260326102915.png]]
+
+
+![[Pasted image 20260326103621.png]]
+
