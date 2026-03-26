@@ -3015,3 +3015,4 @@ another method: ![[Pasted image 20260326105513.png]]
 
 ![[Pasted image 20260326112622.png]]
 
+![[Pasted image 20260326113001.png]]
