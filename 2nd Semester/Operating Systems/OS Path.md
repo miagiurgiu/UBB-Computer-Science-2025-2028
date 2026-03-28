@@ -52,8 +52,7 @@ C:\Users\PC instead of having C, in Linux we have \ (just a bunch of folders)
 
 pwd - Print Working Directory = show your current location
 cd - Change Directory = go to home directory automatically
-cd sth = go to sth
-cd ~ = cd = go to home directory automatically
+cd sth = go to sthcd ~ = cd = go to home directory automatically
 ls = list the contents (files, directories) of the current directory
 ls -l = long format
 ls -a = show all files, including hidden (shows . and .. as well)
