@@ -1348,6 +1348,36 @@ for P in `ps -ef | grep -E -v "^root\>" | awk '{print $2}' | tail -n +2`; do
 	fi
 	echo $P $M $S $X
 done
+
+
+
+likely better?
+#!/bin/bash
+
+grep -v '^root[[:space:]]' ps.fake | awk 'NR > 1 {print $2}' | while read -r pr; do
+    t=$(ps -p "$pr" -o etime=)
+
+    [ -z "$t" ] && continue
+
+    total=0
+
+    if echo "$t" | grep -q '^[0-9]\+:[0-9]\+:[0-9]\+$'; then
+        h=$(echo "$t" | cut -d: -f1)
+        m=$(echo "$t" | cut -d: -f2)
+        s=$(echo "$t" | cut -d: -f3)
+        total=$((h * 3600 + m * 60 + s))
+    elif echo "$t" | grep -q '^[0-9]\+:[0-9]\+$'; then
+        m=$(echo "$t" | cut -d: -f1)
+        s=$(echo "$t" | cut -d: -f2)
+        total=$((m * 60 + s))
+    else
+        continue
+    fi
+
+    if [ "$total" -gt 3600 ]; then
+        echo "$pr $t $total"
+    fi
+done
 ```
 
 ```
