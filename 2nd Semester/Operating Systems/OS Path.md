@@ -2414,7 +2414,6 @@ echo "Hello World" -> receives one argument (the whole string)
 - 4) run it
 - 5) see result in terminal
 - include comments in your scripts for the exam!
-
 - variables
 - assignment:
 		- no space between identifier and "=" and before and after value
