@@ -1424,6 +1424,20 @@ better:
 
 It adds 1 **200 times** because of the loop
 
+#!/bin/bash
+
+f=$1
+n=0
+while [ $n -lt 200 ]; do
+        k=$(cat $f)
+        k=$(($k+1))
+        echo $k > $f
+        n=$(($n+1))
+done
+
+if number2.txt contains 2, it will overwrite 2+200 = 202 inside number2.txt
+
+
 
 ```
 - run multiple scripts simultaneously:
@@ -1510,7 +1524,6 @@ grep -> searches through files using regular expressions
 -i
 -c
 -o
-
 
 #### Grep/Sed/Awk practice problems
 https://www.cs.ubbcluj.ro/~rares/course/os/res/practice/gsa/index.html
