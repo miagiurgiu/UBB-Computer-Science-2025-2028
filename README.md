@@ -10,10 +10,10 @@ Semester I:
 - [DPPD1]()
 
 Semester II:
-- [DSA](https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/tree/main/2nd%20Semester/Data%20Structures%20and%20Algorithms)
-- [DS](https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/tree/main/2nd%20Semester/Dynamic%20Systems)
+- [Data Structures and Algorithms](https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/tree/main/2nd%20Semester/Data%20Structures%20and%20Algorithms)
+- [Dynamic Systems](https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/tree/main/2nd%20Semester/Dynamic%20Systems)
 - [Geometry](https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/tree/main/2nd%20Semester/Geometry)
 - [Graphs](https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/tree/main/2nd%20Semester/Graphs)
-- [OOP](https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/tree/main/2nd%20Semester/OOP)
-- [OS](https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/tree/main/2nd%20Semester/Operating%20Systems)
+- [Object Oriented Programming](https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/tree/main/2nd%20Semester/OOP)
+- [Operating Systems](https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/tree/main/2nd%20Semester/Operating%20Systems)
 - [DPPD2](https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/tree/main/2nd%20Semester/pedagogic)
