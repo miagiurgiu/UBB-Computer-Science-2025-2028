@@ -2502,7 +2502,6 @@ Process Environment:
 - standard way: ./script.sh -> shell creates a child process (a sub-shell) and the script runs there. when it's done, the child dies. if the script changed a directory (cd) or a variable, those changes disappear when you return to your main prompt
 - the source way (source script.h or . script.sh) tells the current shell: "don't start a child, read these lines and execute them in here, in this memory space"
 - if you want the changes made by the script (like cd or variable assignments) to persist in your current terminal session, then instead of ./script.sh use source or . :
-- 
 ```
 sh.             script.sh
 source.     script.
