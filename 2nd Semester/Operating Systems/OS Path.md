@@ -1331,6 +1331,7 @@ expr 3 \* 5
 
 
 a.sh: (aproximativ)
+- read process IDs from `ps.fake`, ignore processes owned by `root`, get each process’s elapsed running time, skip times already containing hours, convert `MM:SS` to seconds, and print the processes that have been running more than 3600 seconds.
 ```
 #!/bin/bash
 for P in `ps -ef | grep -E -v "^root\>" | awk '{print $2}' | tail -n +2`; do
