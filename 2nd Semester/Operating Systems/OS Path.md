@@ -1418,6 +1418,13 @@ while test $N -lt 200; do
 	echo $K > $F
 	N=`expr $N +1`
 done
+
+
+better:
+
+It adds 1 **200 times** because of the loop
+
+
 ```
 - run multiple scripts simultaneously:
 ```
