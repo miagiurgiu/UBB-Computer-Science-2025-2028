@@ -3226,5 +3226,20 @@ done
 ```
 
 7
+
 ![[Pasted image 20260330110942.png]]
 
+```
+#!/bin/bash
+email=""
+while read i; do
+        grep -q "^$i:" passwd.fake
+        if [ $? -eq 0 ]; then
+                emailAddress="$i@scs.ubbcluj.ro"
+                emails="$emails$emailAddress,"
+        fi
+done <theFisier
+echo $emails | head -c -2
+echo
+
+```
