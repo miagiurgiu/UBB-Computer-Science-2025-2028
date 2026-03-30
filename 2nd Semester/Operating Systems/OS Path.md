@@ -3081,5 +3081,16 @@ watch n 05
 ![[Pasted image 20260330102249.png]]
 
 ```
-
+#!/bin/bash
+currentlyConnected=$(cat who.fake | cut -d' ' -f1 | sort | uniq)
+#echo "$currentlyConnected"
+#echo '$currentlyConnected' 
+#echo $currentlyConnected  
+for userLI in $currentlyConnected; do
+        numeComplet=$(grep "$userLI" passwd.fake | cut -d':' -f 5)
+        numarProcese=$(grep "^$userLI" ps.fake | wc -l)
+        echo "$userLI $numeComplet $numarProcese"
+done
 ```
+
+2.
