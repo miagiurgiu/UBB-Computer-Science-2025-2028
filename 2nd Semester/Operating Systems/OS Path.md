@@ -3143,3 +3143,32 @@ echo "${files[@]}"
 ```
 
 4.
+![[Pasted image 20260330104223.png]]
+```
+#!/bin/bash
+
+if [ $# -eq 0 ]; then
+        echo "We need arguments"
+elif [ $# -eq 1 ]; then
+        if [ -d "$1" ]; then
+                directory="$1"
+        else
+                echo "We need existing directory"
+                exit 1
+        fi
+else
+        directory='./'
+fi
+paths=($(find "$directory"))
+#echo "${paths[@]}"
+for path in "${paths[@]}"; do
+        echo "Checking: $path"
+        if [ -L "$path" ]; then
+                echo " symlink"
+                if ! [ -e "$path" ]; then
+                        echo " broken -> $path"
+                fi
+        fi
+done
+
+```
