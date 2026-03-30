@@ -3113,3 +3113,7 @@ while IFS=read -r f; do
         fi
 done < <(find  "$1" -type f -name "*.c")
 ```
+
+3.
+![[Pasted image 20260330103351.png]]
+
