@@ -3270,5 +3270,36 @@ cat df.fake | awk -f solve8.awk
 ![[Pasted image 20260330112722.png]]
 
 ```
+#!/bin/bash
+# check arguments
+if [ $# -eq 0 ]; then
+        directory="." # set current working directory
+elif [ $# -eq 1 ]; then
+        if [ -d "$1" ]; then
+                directory="$1"
+        else
+                echo "We need an existing directory!"
+                exit 1
+        fi
+else
+        echo "Too many arguments!"
+        exit 1
+fi
+# find all regular files
+allFiles=$(find "$directory" -type f)
+
+# compute checksum + size + path for every file
+fileData=$(while read -r file; do
+        cksum "$file"
+done <<< "$allFiles")
+
+# take only the checksum and size pairs that appear more than once
+duplicateKeys=$(echo "$fileData" | awk '{print $1, $2}' | sort | uniq -d)
+echo "Files that have duplicates:"
+# for every duplicate checksum, display all file paths having that checksum
+while read -r sum size; do
+        echo  "---"
+        echo "$fileData" | awk -v s="$sum" -v sz="$size" '$1==s && $2==sz {prin>
+done<<<"$duplicateKeys"
 
 ```
