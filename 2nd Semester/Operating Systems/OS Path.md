@@ -3247,6 +3247,22 @@ echo
 
 ![[Pasted image 20260330112407.png]]
 
+solve8.awk
 ```
 
+        # awk automatically treats 476M as 476 and 82% as 82
+        # when used in a numeric comparison
+        size_mb=$2+0
+        use_percent=$5+0
+        # condition 1: smaller than 1gb (1024 mb)
+        # condition 2: less than 20% free space (use>80%)
+        if (size_mb < 1024 || use_percent > 80){
+                print $6
+        }
+}
 ```
+
+9.
+
+![[Pasted image 20260330112722.png]]
+
