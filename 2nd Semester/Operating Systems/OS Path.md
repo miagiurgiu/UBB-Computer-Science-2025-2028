@@ -3097,5 +3097,19 @@ done
 ![[Pasted image 20260330102353.png]]
 
 ```
-
+!/bin/bash
+if [ $# -lt 1 ]; then
+        echo "Insufficient arguments"
+        exit 1
+fi
+count=2
+while IFS=read -r f; do
+        if [ $(wc -l < "$f") -gt 500 ]; then
+                echo "$f"
+                count=$((count-1))
+                if [ $count -eq 0 ]; then
+                        break
+                fi
+        fi
+done < <(find  "$1" -type f -name "*.c")
 ```
