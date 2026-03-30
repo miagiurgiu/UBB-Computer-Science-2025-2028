@@ -3303,3 +3303,8 @@ while read -r sum size; do
 done<<<"$duplicateKeys"
 
 ```
+
+10.
+
+![[Pasted image 20260330114122.png]]
+
