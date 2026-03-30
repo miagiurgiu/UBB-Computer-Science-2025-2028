@@ -3309,5 +3309,21 @@ done<<<"$duplicateKeys"
 ![[Pasted image 20260330114122.png]]
 
 ```
+#!/bin/bash
+sessionSnapshot=$(cat last.fake)
+#echo "$sessionSnapshot" | sed -E 's/ +/ /g' | cut -d ' ' -f 4
+#echo "$sessionSnapshot" | awk '{print $4}'
+theUsers=$(while read  i; do
+        #echo "$i"
+        ziuaJoined=$(echo $i | awk '{print $4}')
+        #echo "$ziuaJoined"
+        if [ "$ziuaJoined" = "Sun" ]; then
+                echo "$i" | grep -o -E "^[^ ]+ "
+        fi
+done <<< "$sessionSnapshot" | sort | uniq)
+for userI in $theUsers; do
+        numberSessions=$(echo "$sessionSnapshot" | grep "^$userI " | wc -l)
+        theFullName=$(grep "^$userI" passwd.fake | cut -d':' -f 5)
+        echo "$numberSessions $userI $theFullName"
+done | sort -n -r -k 1
 
-```
