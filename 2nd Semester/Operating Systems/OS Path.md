@@ -3172,3 +3172,7 @@ for path in "${paths[@]}"; do
 done
 
 ```
+
+5.
+![[Pasted image 20260330105242.png]]
+
