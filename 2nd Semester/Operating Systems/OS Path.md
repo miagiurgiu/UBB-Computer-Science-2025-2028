@@ -3225,7 +3225,7 @@ for file in $(find "$1" -type f -perm -222); do
 done  
 ```
 
-7
+7.
 
 ![[Pasted image 20260330110942.png]]
 
@@ -3241,5 +3241,8 @@ while read i; do
 done <theFisier
 echo $emails | head -c -2
 echo
-
 ```
+
+8.
+
+![[Pasted image 20260330112407.png]]
