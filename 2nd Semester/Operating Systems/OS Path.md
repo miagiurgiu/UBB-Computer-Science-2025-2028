@@ -3176,3 +3176,24 @@ done
 5.
 ![[Pasted image 20260330105242.png]]
 
+```
+#!/bin/bash
+if [ $# -eq 1 ]; then
+        danger=$1
+else
+        echo 'Give the name of the dangerous program as an argument'
+        exit 1
+fi
+
+while ((1>0)); do
+        processes=($(ps -ef | grep "$danger" | awk '{print $2}' | head -n -3))
+        echo "${processes[@]}"
+        for pr in "${processes[@]}"; do
+                if [ $$ != $pr ]; then
+                        echo "$danger" was killed
+                        kill "$pr"
+                fi
+        done
+        sleep 1
+done
+```
