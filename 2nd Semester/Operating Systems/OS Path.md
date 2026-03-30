@@ -3197,3 +3197,30 @@ while ((1>0)); do
         sleep 1
 done
 ```
+
+6.
+![[Pasted image 20260330105929.png]]
+
+```
+#!/bin/bash
+
+if [ $# -ne 1 ]; then
+    echo "Give exactly one directory"
+    exit 1
+fi
+
+if [ ! -d "$1" ]; then
+    echo "The argument must be a directory"
+    exit 1
+fi
+
+for file in $(find "$1" -type f -perm -222); do
+    before=$(stat -c "%A" "$file")
+    echo "$file : before = $before"
+
+    chmod a-w "$file"
+
+    after=$(stat -c "%A" "$file")
+    echo "$file : after  = $after"
+done  
+```
