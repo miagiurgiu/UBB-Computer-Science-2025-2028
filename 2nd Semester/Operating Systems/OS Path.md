@@ -3117,3 +3117,27 @@ done < <(find  "$1" -type f -name "*.c")
 3.
 ![[Pasted image 20260330103351.png]]
 
+```
+#!/bin/bash
+if [ $# -eq 0 ]; then
+        echo "No args given"
+        exit 1
+elif [ $# -eq 1 ]; then
+        if [ -d "$1" ]; then
+                directory="$1"
+        else
+                echo "We need an existing directory"
+                exit 1
+        fi
+else
+        directory='./'
+fi
+#echo "$directory"
+files=($(find "$directory" -name "*.log"))
+echo "${files[@]}"
+for file in "${files[@]}"; do
+        sort $file -o $file
+done
+echo
+echo "${files[@]}"
+```
