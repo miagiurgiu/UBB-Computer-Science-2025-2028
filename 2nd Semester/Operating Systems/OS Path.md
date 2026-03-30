@@ -3262,7 +3262,13 @@ solve8.awk
 }
 ```
 
+USAGE IN TERMINAL:
+cat df.fake | awk -f solve8.awk
+
 9.
 
 ![[Pasted image 20260330112722.png]]
 
+```
+
+```
