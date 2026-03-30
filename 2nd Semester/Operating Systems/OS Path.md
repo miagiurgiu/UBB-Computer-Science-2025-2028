@@ -3224,3 +3224,7 @@ for file in $(find "$1" -type f -perm -222); do
     echo "$file : after  = $after"
 done  
 ```
+
+7
+![[Pasted image 20260330110942.png]]
+
