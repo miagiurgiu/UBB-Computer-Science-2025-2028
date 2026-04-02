@@ -724,6 +724,7 @@ Dynamic array
 - doubly linked list
 - used to implement containers for assignment 2
 - dereference = go to that memory address stored in the pointer and take the value in there (.info)
+- don't implement adt's using linked lists because then you will have to iterate through the whole list
 
 Search function for singly linked list:
 - boolean function
