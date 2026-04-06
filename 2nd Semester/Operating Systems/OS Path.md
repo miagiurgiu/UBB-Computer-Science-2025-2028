@@ -3889,7 +3889,13 @@ int main()
 22. Write a C program that creates 10 child processes and synchronizes their execution. Each process will sleep for 1 second and then exit. Time the execution of the processes. (If all goes well, the total time should be a little over 10 seconds).
 - create all, first process 
 - writes value from variable k into a file - similar to that problem form the lecture.
-la so
+lab solution:
+```
+
+
+```
+
+
 official solution:
 ```
 #include <stdlib.h>
