@@ -3900,6 +3900,10 @@ void signalHandlerCreated(int semnal)
 	is(semnal==SIGUSR1)
 	{
 		childCount++;
+		if(childCount==10)
+		{
+			printf("Toti copiii buni\n");
+		}
 	}
 }
 int main() 
@@ -3913,7 +3917,7 @@ int main()
 			sleep(i*2); // we are in a child
 			//signal();
 			kill(getppid(), SIGUSR1));
-			printf("Child notified parent: %ld\)
+			printf("Child notified parent: %ld\n, getpid());
 			while(flag==0)
 			{
 				sleep(1);
@@ -3923,6 +3927,10 @@ int main()
 		{
 			;// continue kidding
 		}
+	}
+	for(int i=0; i<10; i++)
+	{
+		wait(0);
 	}
 }
 
