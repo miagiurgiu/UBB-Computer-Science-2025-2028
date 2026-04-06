@@ -3415,12 +3415,21 @@ int main()
 ```
 
 pr3.c
+- both processes will run until receiving signal SIGUSR1
+- signal handler
 ```
 #include <unistd.h>
 int main() 
 {
-	pid_t
-
+	pid_t theCopil = fork();
+	if( theCopil == 0)
+	{
+	
+	}
+	else
+	{
+	
+	}
 }
 
 ```
