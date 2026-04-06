@@ -3870,17 +3870,8 @@ int main()
 	{
 		// how to keep in mind the process number
 		pid_t copil = fork();
-		if (copil==0)
-		{
-			// you are child
-			
-		}
-		else 
-		{
-			// you are parent
-			lev[ier]=getpid();
-			ier++;
-		}
+		lev[ier]=getpid();
+		ier++;
 	}
 	
 	
