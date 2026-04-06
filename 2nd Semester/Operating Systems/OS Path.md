@@ -3356,7 +3356,12 @@ int main()
 	int n=3;
 	for(int i=0; i<3; i++)
 	{
-		fork(); // 2^3 processes
+		// fork(); // 2^3 processes
+		pid_t theCopil=fork();
+		if(theCopil==0)
+		{
+			printf(")
+		}
 	}
 }
 ```
