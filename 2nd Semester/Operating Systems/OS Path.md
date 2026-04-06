@@ -3893,6 +3893,9 @@ lab solution:
 ```
 #include <unistd.h>
 #include <signal.h>
+#include <stdlib.h>
+#include <syswait>
+#incude <stdio.h>
 
 int childCount = 0;
 void signalHandlerCreated(int semnal)
@@ -3922,6 +3925,7 @@ int main()
 			{
 				sleep(1);
 			}
+			exit(0);
 		}
 		else
 		{
