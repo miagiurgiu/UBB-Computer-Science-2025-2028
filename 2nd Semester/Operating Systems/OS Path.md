@@ -3850,11 +3850,12 @@ int main(int argc, char *argv[]) {
 ```
 
 lab solution:
-- construct a binary histructure 
+- construct a binary hierarchical structure 
 ```
 #include <unistd.h>
 int main()
 {
-
+	fork();
+	for
 }
 ```
