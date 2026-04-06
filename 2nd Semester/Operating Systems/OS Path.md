@@ -3360,7 +3360,11 @@ int main()
 		pid_t theCopil=fork();
 		if(theCopil==0)
 		{
-			printf(")
+			printf("Copil: %ld %ld\n", getpid(), getppid());
+		}
+		else
+		{
+			
 		}
 	}
 }
