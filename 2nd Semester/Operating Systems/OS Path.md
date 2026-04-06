@@ -3415,4 +3415,12 @@ int main()
 ```
 
 pr3.c
+```
+#include <unistd.h>
+int main() 
+{
+	pid_t
 
+}
+
+```
