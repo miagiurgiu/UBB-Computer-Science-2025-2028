@@ -3328,17 +3328,7 @@ for userI in $theUsers; do
 done | sort -n -r -k 1
 
 ```
-
-```
-```
-
 ## Lab 6 - test
 
 ## Lab 7 - 6 apr 2026
-
-
-
-
-
-```
 
