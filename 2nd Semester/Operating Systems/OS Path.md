@@ -3856,6 +3856,7 @@ lab solution:
 int main()
 {
 	fork();
-	for
+	fork();
+	fork(); // 8 processes
 }
 ```
