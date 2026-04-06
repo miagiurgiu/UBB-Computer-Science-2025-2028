@@ -3446,7 +3446,10 @@ void branza(int semnal)
 int main() 
 {
 	signal(SIGUSR1, branza);
-	pid_t theCopil = fork();
+	theCopil = fork();
+	//getchar(); // waits tfor you to write stuff from keyboard
+	sleep(60); // you can't fall back asleep once you've been woken up
+	
 	if( theCopil != 0)
 	{
 		sleep(60);
