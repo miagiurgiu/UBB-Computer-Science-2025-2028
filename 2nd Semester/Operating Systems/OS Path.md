@@ -3911,6 +3911,7 @@ void signalHandlerCreated(int semnal)
 }
 int main() 
 {
+	signal(SIGUSR1, signalHandlerCreated);
 	for(int i=0; i<10; i++)
 	{
 		pid_t child = fork();
