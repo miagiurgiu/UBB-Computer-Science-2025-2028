@@ -3428,6 +3428,7 @@ pr3.c
 - 
 ```
 #include <unistd.h>
+
 void branza(int semnal)
 {
 	if(semnal == SIGUSR1)
@@ -3447,7 +3448,8 @@ int main()
 	}
 	else
 	{
-	
+		signal(SIGUSR1, branza);
+		wait(0);
 	}
 }
 
