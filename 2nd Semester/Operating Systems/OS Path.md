@@ -3854,6 +3854,7 @@ lab solution:
 - for each fork we need to keep in mind the parents above using an array
 - how to keep in mind the process number. can we calculate how many processes we have up till now? 
 - when creating -> 2k+1 is the child if 2k is the parent
+- how to find out they are the last nodes?
 	fork();
 	fork();
 	fork(); // 8 processes
@@ -3865,6 +3866,7 @@ int main()
 {
 	int ier = 0;
 	pid_t levelIerarhie[10]={0};
+	int lastNode=0;
 	lev[ier++]=getppid();
 	for(int i=0; i<5; i++)
 	{
@@ -3872,8 +3874,10 @@ int main()
 		pid_t copil = fork();
 		lev[ier]=getpid();
 		ier++;
+		if(i==1)
+		{
+			lastNode=1;
+		}
 	}
-	
-	
 }
 ```
