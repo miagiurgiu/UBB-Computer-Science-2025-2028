@@ -3910,7 +3910,12 @@ int main()
 		if( child == 0)
 		{
 			sleep(i*2); // we are in a child
-			
+			signal();
+			kill(getppid(), SIGUSR1));
+		}
+		else
+		{
+			;// continue kidding
 		}
 	}
 }
