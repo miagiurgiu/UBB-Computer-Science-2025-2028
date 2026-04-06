@@ -3436,11 +3436,10 @@ void branza(int semnal)
 		if(theCopil==0)
 		{
 			// setam flag de exit
-			
 		}
 		else
 		{
-			
+			kill(theCopil, semnal);
 		}
 	}
 }
