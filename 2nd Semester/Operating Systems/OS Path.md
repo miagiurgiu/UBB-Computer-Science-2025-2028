@@ -3351,11 +3351,12 @@ wait(0)
 pr1.c
 ```
 #include <unistd.h>
+#include <stdio.h>
 int main() 
 {
 	int n=3;
 	// pid urile copiilor intr ul array
-	pid_t copiiiMei[n]={0};
+	pid_t copiiiMei[3]={0};
 	for(int i=0; i<n; i++)
 	{
 		// fork(); // 2^3 processes
@@ -3372,7 +3373,8 @@ int main()
 	printf("Parinti: %ld - ", getpid());
 	for(int i=0; i<n; i++)
 	{
-		prinf("%ld, ", copiiimei[])
+		prinf("%ld, ", copiiiMei[i]);
 	}
+	printf()
 }
 ```
