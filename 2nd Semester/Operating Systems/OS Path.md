@@ -3353,6 +3353,10 @@ pr1.c
 #include <unistd.h>
 int main() 
 {
-	int n=
+	int n=3;
+	for(int i=0; i<3; i++)
+	{
+		fork(); // 2^3 processes
+	}
 }
 ```
