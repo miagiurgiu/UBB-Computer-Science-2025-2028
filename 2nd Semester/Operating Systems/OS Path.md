@@ -3420,6 +3420,8 @@ pr3.c
 - default if you don't have signal handler -> kill process
 - there is a file somewhere in linux that: linux/include/uapi/asm-generic/signal.h
 - how to instal signal handler in both processes
+- you don't know from whom you receive the signal from (THAT'S THE PROBLEM)
+- how do identify child receives signal but parent doesn't?
 ```
 #include <unistd.h>
 void branza(int semnal)
