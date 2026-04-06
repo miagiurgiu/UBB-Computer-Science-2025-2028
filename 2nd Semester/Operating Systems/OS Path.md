@@ -3445,8 +3445,8 @@ int main()
 {
 	int n = 3;
 	
-	pid_t copiiMei[3] = {0}; // array ot type pid_
-	for (int i=0; i < n;i++)
+	pid_t copiiMei[3] = {0}; // array ot type pid_t
+	for (int i=0; i < n;i++) // loops 3 times to create 3 children
 	{
 		pid_t theCopil = fork();
 		if (theCopil == 0)
@@ -3470,6 +3470,8 @@ int main()
 ```
 
 pr3.c
+3. Write a C program that creates a child process. Both the parent and the child processes will run until they receive a SIGUSR1 signal. Implement signal handling such that if the parent receives the SIGUSR1 signal first, it sends it to the child process as well. If the child process receives a SIGUSR1 signal without the parent receiving the same signal, it will terminate and then the parent should correctly call wait for the child process.  
+
 - both processes will run until receiving signal SIGUSR1
 - signal handler
 - default if you don't have signal handler -> kill process
@@ -3481,6 +3483,7 @@ pr3.c
 - their implementation might not make sense at first sight
 - maybe install signal handler after.
 - man 3p kill -> synopsis
+
 ```
 #include <unistd.h>
 #include <signal.h>
@@ -3522,3 +3525,6 @@ int main()
 }
 
 ```
+
+offis
+pb5:
