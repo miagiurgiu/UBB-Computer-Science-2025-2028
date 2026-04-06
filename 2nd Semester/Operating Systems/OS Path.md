@@ -3417,8 +3417,13 @@ int main()
 pr3.c
 - both processes will run until receiving signal SIGUSR1
 - signal handler
+- default if you don't have signal handler -> kill process
 ```
 #include <unistd.h>
+void branza(int semnal)
+{
+	if(semnal)
+}
 int main() 
 {
 	pid_t theCopil = fork();
