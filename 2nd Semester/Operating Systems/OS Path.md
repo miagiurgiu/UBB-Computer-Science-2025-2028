@@ -3418,7 +3418,8 @@ pr3.c
 - both processes will run until receiving signal SIGUSR1
 - signal handler
 - default if you don't have signal handler -> kill process
-- there is a file somewhere in linux that 
+- there is a file somewhere in linux that: linux/include/uapi/asm-generic/signal.h
+- how to instal signal handler in both processes
 ```
 #include <unistd.h>
 void branza(int semnal)
