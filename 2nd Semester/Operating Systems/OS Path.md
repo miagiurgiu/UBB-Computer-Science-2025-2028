@@ -3344,8 +3344,15 @@ wait(0)
 - execution continues after fork()
 - wait(0) default - if it is created by child, does not do anything (means child has no other children) behave differently depending on wether there are children or not -> wait dictates ho many processes, not their order
 - after two forks -> 4 processes
+- fork() needs library unistd
+- pid_t
+- fork() return type is pid_t
 
 pr1.c
 ```
-
+#include <unistd.h>
+int main() 
+{
+	int n=
+}
 ```
