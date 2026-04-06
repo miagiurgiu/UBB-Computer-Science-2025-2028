@@ -3894,17 +3894,25 @@ lab solution:
 #include <unistd.h>
 #include <signal.h>
 
-
+int childCount = 0;
 void signalHandlerCreated(int semnal)
 {
 	is(semnal==SIGUSR1)
 	{
-		
+		childCount++;
 	}
 }
 int main() 
 {
-	
+	for(int i=0; i<10; i++)
+	{
+		pid_t child = fork();
+		if( child == 0)
+		{
+			sleep(i*2); // we are in a child
+			
+		}
+	}
 }
 
 ```
