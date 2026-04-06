@@ -3891,7 +3891,21 @@ int main()
 - writes value from variable k into a file - similar to that problem form the lecture.
 lab solution:
 ```
+#include <unistd.h>
+#include <signal.h>
 
+
+void signalHandlerCreated(int semnal)
+{
+	is(semnal==SIGUSR1)
+	{
+		
+	}
+}
+int main() 
+{
+	
+}
 
 ```
 
