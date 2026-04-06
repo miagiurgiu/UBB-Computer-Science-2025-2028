@@ -3438,14 +3438,14 @@ int main()
 
 corrected:
 ```
-#include <unistd.h>
-#include <stdio.h>
-#include <stdlib.h>
+#include <unistd.h> // fork(), getpid(), getppid()
+#include <stdio.h> // printf
+#include <stdlib.h> // exit()
 int main()
 {
 	int n = 3;
 	
-	pid_t copiiMei[3] = {0};
+	pid_t copiiMei[3] = {0}; // array ot type pid_
 	for (int i=0; i < n;i++)
 	{
 		pid_t theCopil = fork();
