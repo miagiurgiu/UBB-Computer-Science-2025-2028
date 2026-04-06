@@ -3425,7 +3425,7 @@ pr3.c
 - maybe the child should receive SIGUSR2
 - their implementation might not make sense at first sight
 - maybe install signal handler after.
-- 
+- man 3p kill -> synopsis
 ```
 #include <unistd.h>
 pid_t theCopil; // global variable
@@ -3433,7 +3433,15 @@ void branza(int semnal)
 {
 	if(semnal == SIGUSR1)
 	{
-		
+		if(theCopil==0)
+		{
+			// setam flag de exit
+			
+		}
+		else
+		{
+			
+		}
 	}
 }
 int main() 
@@ -3442,11 +3450,13 @@ int main()
 	pid_t theCopil = fork();
 	if( theCopil != 0)
 	{
-		sleep()
+		sleep(60);
+		wait(0);
 		//signal(SIGUSR2, branza);
 	}
 	else
 	{
+		sleep(60);
 		signal(SIGUSR1, branza);
 		wait(0);
 	}
