@@ -3418,11 +3418,15 @@ pr3.c
 - both processes will run until receiving signal SIGUSR1
 - signal handler
 - default if you don't have signal handler -> kill process
+- there is a file somewhere in linux that 
 ```
 #include <unistd.h>
 void branza(int semnal)
 {
-	if(semnal)
+	if(semnal == SIGUSR1)
+	{
+		
+	}
 }
 int main() 
 {
