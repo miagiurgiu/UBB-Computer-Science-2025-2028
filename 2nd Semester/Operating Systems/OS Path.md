@@ -3853,7 +3853,7 @@ lab solution:
 - construct a binary hierarchical structure 
 - for each fork we need to keep in mind the parents above using an array
 - how to keep in mind the process number. can we calculate how many processes we have up till now? 
-- when creating -> 2k+1
+- when creating -> 2k+1 is the child if 2k is the parent
 	fork();
 	fork();
 	fork(); // 8 processes
