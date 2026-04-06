@@ -3877,7 +3877,8 @@ int main()
 		else 
 		{
 			// you are parent
-			lev[ier]=copil
+			lev[ier]=copil;
+			ier++;
 		}
 	}
 	
