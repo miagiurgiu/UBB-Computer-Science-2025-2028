@@ -3850,6 +3850,11 @@ int main(int argc, char *argv[]) {
 ```
 
 lab solution:
+- construct a binary histructure 
 ```
+#include <unistd.h>
+int main()
+{
 
+}
 ```
