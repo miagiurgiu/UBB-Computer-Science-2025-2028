@@ -3345,6 +3345,7 @@ wait(0)
 - wait(0) default - if it is created by child, does not do anything (means child has no other children) behave differently depending on wether there are children or not -> wait dictates ho many processes, not their order
 - after two forks -> 4 processes
 
+pr1.c
 ```
 
 ```
