@@ -3332,7 +3332,7 @@ done | sort -n -r -k 1
 
 ## Lab 7 - 6 apr 2026
 
-1) How many processes does this have? What is the flow graph for it? 8.
+1) How many processes does this have? What is the flow graph for it? Draw them. 8.
 fork()
 fork()
 wait(0)
