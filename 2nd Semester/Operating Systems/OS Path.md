@@ -3382,3 +3382,34 @@ int main()
 ```
 
 corrected:
+```
+#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+	int n = 3;
+	
+	pid_t copiiMei[3] = {0};
+	for (int i=0; i < n;i++)
+	{
+		pid_t theCopil = fork();
+		if (theCopil == 0)
+		{
+			printf("C: %ld %ld\n", getpid(), getppid());
+			exit(0);
+		}
+		else
+		{
+			copiiMei[i] = theCopil;
+		}
+	}
+
+	printf("P %ld - ",getpid());
+	for (int i=0; i < n;i++)
+	{
+		printf("%ld, ",copiiMei[i]);
+	}
+	printf("\n");
+}
+```
