@@ -3377,5 +3377,8 @@ int main()
 		prinf("%ld, ", copiiiMei[i]);
 	}
 	printf("\n");
+	// exit la copil
 }
 ```
+
+corrected:
