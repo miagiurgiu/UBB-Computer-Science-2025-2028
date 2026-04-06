@@ -3413,3 +3413,6 @@ int main()
 	printf("\n");
 }
 ```
+
+pr3.c
+
