@@ -3853,7 +3853,7 @@ lab solution:
 - construct a binary hierarchical structure 
 - for each fork we need to keep in mind the parents above using an array
 - how to keep in mind the process number. can we calculate how many processes we have up till now? 
-- when creating ->
+- when creating -> 2k+1
 	fork();
 	fork();
 	fork(); // 8 processes
@@ -3867,7 +3867,11 @@ int main()
 	for(int i=0; i<5; i++)
 	{
 		// how to keep in mind the process number
-		fork();
+		pid_t copil = fork();
+		if (copil==0)
+		{
+			printf("%d\n",2*)
+		}
 	}
 	
 	
