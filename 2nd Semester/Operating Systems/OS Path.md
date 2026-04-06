@@ -3422,6 +3422,10 @@ pr3.c
 - how to instal signal handler in both processes
 - you don't know from whom you receive the signal from (THAT'S THE PROBLEM)
 - how do identify child receives signal but parent doesn't?
+- maybe the child should receive SIGUSR2
+- their implementation might not make sense at first sight
+- maybe install signal handler after.
+- 
 ```
 #include <unistd.h>
 void branza(int semnal)
