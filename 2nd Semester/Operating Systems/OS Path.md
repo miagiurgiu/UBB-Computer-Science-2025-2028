@@ -3852,17 +3852,22 @@ int main(int argc, char *argv[]) {
 lab solution:
 - construct a binary hierarchical structure 
 - for each fork we need to keep in mind the parents above using an array
-```
-#include <unistd.h>
-int main()
-{
-	pid_t levelIerarhie[10]={0};
-	for(int i=0)
 	fork();
 	fork();
 	fork(); // 8 processes
 	fork();
 	fork(); // 32 processes (2^5 forks)
+```
+#include <unistd.h>
+int main()
+{
+	pid_t levelIerarhie[10]={0};
+	for(int i=0; i<5; i++)
+	{
+		// how to keep in mind the process number in
+		fork();
+	}
+	
 	
 }
 ```
