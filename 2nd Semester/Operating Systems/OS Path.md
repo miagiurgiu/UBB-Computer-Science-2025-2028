@@ -3428,7 +3428,7 @@ pr3.c
 - 
 ```
 #include <unistd.h>
-
+pid_t theCopil; // global variable
 void branza(int semnal)
 {
 	if(semnal == SIGUSR1)
@@ -3440,8 +3440,9 @@ int main()
 {
 	signal(SIGUSR1, branza);
 	pid_t theCopil = fork();
-	if( theCopil == 0)
+	if( theCopil != 0)
 	{
+		sleep()
 		//signal(SIGUSR2, branza);
 	}
 	else
