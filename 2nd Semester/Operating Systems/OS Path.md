@@ -3437,13 +3437,13 @@ void branza(int semnal)
 }
 int main() 
 {
-	signal(SIGUSR1, branza);
-	signal(SIGUSR2, branza);
+	
 	
 	pid_t theCopil = fork();
 	if( theCopil == 0)
 	{
-	
+		signal(SIGUSR1, branza);
+		signal(SIGUSR2, branza);
 	}
 	else
 	{
