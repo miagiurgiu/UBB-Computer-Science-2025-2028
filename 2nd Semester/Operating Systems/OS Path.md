@@ -3403,7 +3403,7 @@ int main(int argc, char *argv[]) {
 ```
 
 
-pr1.c
+pr1.c (lab solution)
 ```
 #include <unistd.h>
 #include <stdio.h>
@@ -3436,7 +3436,7 @@ int main()
 }
 ```
 
-corrected:
+corrected (lab solution):
 ```
 #include <unistd.h> // fork(), getpid(), getppid()
 #include <stdio.h> // printf
@@ -3484,6 +3484,7 @@ pr3.c
 - maybe install signal handler after.
 - man 3p kill -> synopsis
 
+lab solution
 ```
 #include <unistd.h>
 #include <signal.h>
@@ -3846,4 +3847,9 @@ int main(int argc, char *argv[]) {
         play(pipes, i, n);
     return 0;
 }
+```
+
+lab solution:
+```
+
 ```
