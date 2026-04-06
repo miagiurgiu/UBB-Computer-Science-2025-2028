@@ -3429,7 +3429,7 @@ pr3.c
 ```
 #include <unistd.h>
 #include <signal.h>
-#include <syswait
+#include <syswait>
 pid_t theCopil; // global variable
 void branza(int semnal)
 {
