@@ -3356,7 +3356,7 @@ int main()
 	int n=3;
 	// pid urile copiilor intr ul array
 	pid_t copiiiMei[n]={0};
-	for(int i=0; i<3; i++)
+	for(int i=0; i<n; i++)
 	{
 		// fork(); // 2^3 processes
 		pid_t theCopil=fork();
@@ -3368,6 +3368,10 @@ int main()
 		{
 			copiiiMei[i]=theCopil;
 		}
+	}
+	printf()
+	for(int i=0; i<n; i++)
+	{
 	}
 }
 ```
