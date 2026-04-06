@@ -3341,4 +3341,4 @@ wait(0)
 
 - fork() duplicates a new process (new identic copy)
 - execution continues after fork()
-- 
+- wait(0) default - if it is created by child, does not do anything (means child has no other children)
