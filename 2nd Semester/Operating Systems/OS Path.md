@@ -3369,9 +3369,10 @@ int main()
 			copiiiMei[i]=theCopil;
 		}
 	}
-	printf()
+	printf("Parinti: %ld - ", getpid());
 	for(int i=0; i<n; i++)
 	{
+		prinf("%ld, ", copiiimei[])
 	}
 }
 ```
