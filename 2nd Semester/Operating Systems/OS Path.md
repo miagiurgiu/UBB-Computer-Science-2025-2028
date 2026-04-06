@@ -3333,7 +3333,7 @@ done | sort -n -r -k 1
 ## Lab 7 - 6 apr 2026
 
 1) How many processes does this have? What is the flow graph for it? Draw them. 8.
-stackoverflow alex kiraly: does wait do anything when called from both processes careated from fork?>
+stackoverflow alex kiraly: does wait do anything when called from both processes careated from fork?
 fork()
 fork()
 wait(0)
