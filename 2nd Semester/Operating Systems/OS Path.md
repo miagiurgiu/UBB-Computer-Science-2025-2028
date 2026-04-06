@@ -3332,9 +3332,13 @@ done | sort -n -r -k 1
 
 ## Lab 7 - 6 apr 2026
 
-1) How many processes does this have? 8.
+1) How many processes does this have? What is the flow graph for it? 8.
 fork()
 fork()
 wait(0)
 fork()
 wait(0)
+
+- fork() duplicates a new process (new identic copy)
+- execution continues after fork()
+- 
