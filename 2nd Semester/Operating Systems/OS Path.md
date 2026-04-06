@@ -3352,6 +3352,7 @@ pr1.c
 ```
 #include <unistd.h>
 #include <stdio.h>
+#include <stdlib.h>
 int main() 
 {
 	int n=3;
@@ -3375,6 +3376,6 @@ int main()
 	{
 		prinf("%ld, ", copiiiMei[i]);
 	}
-	printf()
+	printf("\n");
 }
 ```
