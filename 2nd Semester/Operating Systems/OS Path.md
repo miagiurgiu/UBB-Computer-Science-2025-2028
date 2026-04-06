@@ -3863,6 +3863,7 @@ lab solution:
 #include <unistd.h>
 int main()
 {
+	int ier = 0;
 	pid_t levelIerarhie[10]={0};
 	for(int i=0; i<5; i++)
 	{
@@ -3871,6 +3872,10 @@ int main()
 		if (copil==0)
 		{
 			printf("%d\n",2*)
+		}
+		else 
+		{
+			// you are parent
 		}
 	}
 	
