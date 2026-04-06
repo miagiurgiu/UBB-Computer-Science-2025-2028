@@ -3428,6 +3428,8 @@ pr3.c
 - man 3p kill -> synopsis
 ```
 #include <unistd.h>
+#include <signal.h>
+#include <syswait
 pid_t theCopil; // global variable
 void branza(int semnal)
 {
