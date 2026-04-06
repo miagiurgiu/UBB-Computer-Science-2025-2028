@@ -3878,5 +3878,10 @@ int main()
 		lev[ier]=getpid();
 		ier++;
 	}
+	for(int i=1; i>=0; i--)
+	{
+		printf("%d ", lev[i]):
+	}
+	printf()
 }
 ```
