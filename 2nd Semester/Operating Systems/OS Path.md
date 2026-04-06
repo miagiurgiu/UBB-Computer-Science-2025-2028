@@ -3865,17 +3865,19 @@ int main()
 {
 	int ier = 0;
 	pid_t levelIerarhie[10]={0};
+	lev[ier++]=getpid();
 	for(int i=0; i<5; i++)
 	{
 		// how to keep in mind the process number
 		pid_t copil = fork();
 		if (copil==0)
 		{
-			printf("%d\n",2*)
+			// you are child
 		}
 		else 
 		{
 			// you are parent
+			lev[ier]=copil
 		}
 	}
 	
