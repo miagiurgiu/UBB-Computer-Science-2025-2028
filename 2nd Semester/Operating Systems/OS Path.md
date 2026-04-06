@@ -3354,6 +3354,8 @@ pr1.c
 int main() 
 {
 	int n=3;
+	// pid urile copiilor intr ul array
+	pid_t copiiiMei[n]={0};
 	for(int i=0; i<3; i++)
 	{
 		// fork(); // 2^3 processes
@@ -3364,7 +3366,7 @@ int main()
 		}
 		else
 		{
-			
+			copiiiMei[i]=theCopil;
 		}
 	}
 }
