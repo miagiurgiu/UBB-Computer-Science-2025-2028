@@ -202,3 +202,11 @@ https://github.com/patriimanciu/uni-work/blob/main/sem%202/geometry/EXAMEN%20pre
 
 https://github.com/Oancea-Teodora/UBB-Computer-Science/blob/main/First%20Year/Semester%202/Geometry/Lectures/Geometry.pdf
 
+# NEVER EVER EVER FORGET THIS!!!
+(I MESSED UP IN MY PARTIAL EXAM)
+Cele Patru Centre Principale ale Triunghiului 
+
+- **Centrul circumscris (Circumcenter - O):** Intersecția **mediatoarelor** (perpendicular bisectors) laturilor. Este echidistant de vârfuri și este centrul cercului circumscris.
+- **Ortocentrul (Orthocenter - H):** Intersecția celor trei **înălțimi**(altitudes) ale triunghiului.
+- **Centrul de greutate (Centroid - G):** Intersecția **medianelor** (linii ce unesc vârful cu mijlocul laturii opuse). 
+- **Incentrul (Incenter - I):** Intersecția **bisectoarelor** unghiurilor interioare. Este echidistant de laturi și este centrul cercului înscris.
