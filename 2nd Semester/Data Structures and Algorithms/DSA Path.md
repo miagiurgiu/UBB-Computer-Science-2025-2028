@@ -1038,7 +1038,7 @@ deallocate/free - free a position form that DLLANode array
 - allocate and deallocate (free) functions
 - head and tail are -1, size = 0 at first
 3) how to initialise next and prev on arrays - drawing notebook
-4) insert position
+4) insert position in DLLA
 - size=5 -> 1,2,3,4,5 valid positions, but adding sth on position 6 is okay, only adding on position 7 would be a problem
 - we will use allocate and deallocation functions
 ```
@@ -1049,5 +1049,6 @@ subalgorithm insertPos(dlla, e,pos):
 	if occupiedPos = -1 then
 		// array is full -> resize
 		newArray <- @ a new array with dlla.cap*2 positions
-		for i <- 1 to dlla.cap execute
+		for i <- 1 to dlla.cap ex:
+			newArray <- dlla.nodes[i]
 ```
