@@ -2221,3 +2221,4 @@ Song(const std::string& artist)
 6) static data members
 - global variables for the class
 - new instance -> that instance has access to the same static element -> same value for all instances/objects of the class??
+
