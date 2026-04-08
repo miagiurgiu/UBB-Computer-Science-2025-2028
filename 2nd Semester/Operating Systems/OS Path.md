@@ -4059,6 +4059,9 @@ b.c
 - permissions, flags, size
 - the other program will keep calculating the sum and the product??
 - 1234 = identifier of the ipc
+- IPC_CREAT -> if it does not exist, create it
+- 0600 -> set permissions to it
+
 ```
 #include "a.h"
 
