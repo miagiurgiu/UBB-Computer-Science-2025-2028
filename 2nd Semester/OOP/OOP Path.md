@@ -2267,6 +2267,7 @@ upcasting - Upcasting is the process of converting a derived class pointer or re
 4) why does the destructor have to be virtual?
 - usually need to be virtual
 - main.cpp - see Animal* a, ... inside virtualDestructors()
+- we want the destructor to delete everything, not just the penguin
 
 5) constructors cannot be virtual
 - we need the exact type
