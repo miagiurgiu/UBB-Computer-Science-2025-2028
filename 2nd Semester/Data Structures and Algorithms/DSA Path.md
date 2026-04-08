@@ -978,6 +978,9 @@ while[[prevNode].next].next
 subalg deleteElem(slla, e):
 	prev <- -1
 	current <- slla.head
-	while current !=-1 and 
+	while current !=-1 and slla.elems[current]!=e execute
+		prev <- current 
+		current <- slla.next[current]
+	
 
 ```
