@@ -969,3 +969,7 @@ while[[prevNode].next].next
 		- iterator is invalid when .next = NIL
 		- boolean flag to keep track of when i get back to the head
 		- Josephus circle problem
+
+## Lecture 6 - xor 
+
+## Lecture 7 -
