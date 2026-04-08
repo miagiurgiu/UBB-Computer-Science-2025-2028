@@ -1102,9 +1102,12 @@ subalgorithm insertPos(dlla, e,pos):
 - better complexity for operations using containers with no positions
 - search in theta(1) complexity will be possible!!
 
-5) ADT STACK
+7) ADT STACK
 - where to put the top of the stack for optimal complexity?
 - STACK FOR DYNAMIC ARRAY -> TOP OF STACK TOWARDS THE END OF THE ARRAY!
 	- 1. on position 1 (wanna pop? move everything) -> push, pop will have theta(n) complexity => bad. 
 	- 2. towards the end of the array (obvs better) -> push, pop will have theta(1) complexity
 
+5) SLL, DLL
+sll -> top of the stack should be at the beginning of the list
+dll -> 
