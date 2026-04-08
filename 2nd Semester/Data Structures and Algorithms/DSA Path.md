@@ -1114,4 +1114,8 @@ dll -> does not matter
 
 9) classical INTERVIEW question. getMinimum of theta(1) 
 - extra variable that denotes minimum
-- m
+- push first element (7) -> minimum = 7
+- push element 10 -> compare 10 with minimum 
+- push element 20 -> compare 20 with minimum
+- push element 5 -> compare 5 with minimum -> minimum = 5
+- p
