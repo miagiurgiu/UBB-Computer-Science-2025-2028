@@ -1045,7 +1045,7 @@ deallocate/free - free a position form that DLLANode array
 - we will use allocate and deallocation functions
 - if i try to add sth to an empty list, that new added node will be both the tail and the head
 - special cases: add after the last node, add before the head ??
-- fi
+- find the node - insert AFTER (like in sll)
 ```
 subalgorithm insertPos(dlla, e,pos):
 	if pos < 1 or pos > dlla.size then
@@ -1079,7 +1079,10 @@ subalgorithm insertPos(dlla, e,pos):
 		dlla.nodes[dlla.tail].next <- occupiedPos
 		dlla.tail <- occupiedPos
 	else // normal case
-		
+		currentN <- dlla.head
+		currentP <- 1
+		while currentPos < pos - 1
+			currentN <- DLL
 		
 		
 ```
