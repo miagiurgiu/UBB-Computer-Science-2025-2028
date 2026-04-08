@@ -2238,4 +2238,9 @@ works with pointers, not objects
 virtual function_signature
 ```
 
+2) in Animal.h - virtual vs non virtual 
+- override specifier
+```
 
+
+```
