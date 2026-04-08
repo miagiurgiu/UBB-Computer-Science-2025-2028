@@ -2281,4 +2281,6 @@ ability to check with dynamic casting.
 - virtual table pointer is actually initialised in the constructor
 
 
-pure implement
+pure abstract - only virtual stuff
+pure implementation in the base class - in italics - pure abstract
+
