@@ -4055,12 +4055,15 @@ struct absp {
 ```
 
 b.c
-- permissions, flags, size, 
+- permissions, flags, size
 ```
 #include "a.h"
 
 int main(int argc, char** argv) {
-	int shm = shmget(1234, sizeof(struct absp), IPC_CREAT | 0600)
+	int shm = shmget(1234, sizeof(struct absp), IPC_CREAT | 0600);
+	struct absp* x = shmat(shm, 0, 0); // pointer to this area of shared memory
+	shmdt(x);
+	
 	(void)argc;
 	(void)argv;
 	return 0;
