@@ -4020,7 +4020,10 @@ Processes
 ## Lecture 7 - 8 apr 2026
 Threads
 
-1) how can we have a piece of memory mapped in a ??
+1) work with shared memory. how can we have a piece of memory mapped in a ??
+- shared memory will have a number that will be unique in the system
 ```
 ipcs
 ```
+
+2) 
