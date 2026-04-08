@@ -4024,6 +4024,9 @@ Threads
 - shared memory will have a number that will be unique in the system
 ```
 ipcs
+ipcmk
+
+ipcmk -M 10 => 10 kilobytes
 ```
 
 2) 
