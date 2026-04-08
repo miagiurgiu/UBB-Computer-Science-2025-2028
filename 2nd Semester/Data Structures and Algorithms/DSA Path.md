@@ -1036,4 +1036,4 @@ deallocate/free - free a position form that DLLANode array
 ```
 
 - allocate and deallocate (free) functions
-- 
+- head and tail are -1, size = 0 at first
