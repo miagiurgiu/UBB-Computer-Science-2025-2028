@@ -2262,9 +2262,9 @@ steps (not directly)
 - call
 
 3) upcasting, downcasting
-upcasting (up=Upcasting is the process of converting a derived class pointer or reference to a base class pointer or reference. It’s called “up” casting because we’re moving up the inheritance hierarchy, from a more specific type to a more general one.
+upcasting (up=implicit) - Upcasting is the process of converting a derived class pointer or reference to a base class pointer or reference. It’s called “up” casting because we’re moving up the inheritance hierarchy, from a more specific type to a more general one.
 
-downcasting - down the hierarchy
+downcasting - down the hierarchy - casting a base class pointer to a derived class pointer ()
 
 4) why does the destructor have to be virtual?
 - usually need to be virtual
