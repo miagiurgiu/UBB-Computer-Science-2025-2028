@@ -1020,3 +1020,6 @@ tail: Integer
 firstEmpty: Integer
 size: Integer ? - sometimes it's good to have it
 ```
+
+- having this extra DLLA structure helps us get closer to the version of SLL, not SLLA:
+
