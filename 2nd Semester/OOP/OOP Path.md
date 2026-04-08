@@ -2284,3 +2284,6 @@ ability to check with dynamic casting.
 pure abstract - only virtual stuff
 pure implementation in the base class - in italics - pure abstract
 
+6) see employee exercise 
+- empl
+
