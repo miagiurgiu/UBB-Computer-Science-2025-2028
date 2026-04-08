@@ -4121,3 +4121,4 @@ int main(int argc, char** argv) {
 - n++ might not be atomic on each processor
 
 Conclusion: syncronisation makes things correct, but slow. 
+fast result+correct: n+=(int)(long)a; and comment everything else in f except return NULL.
