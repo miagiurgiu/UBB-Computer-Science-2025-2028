@@ -1045,5 +1045,8 @@ deallocate/free - free a position form that DLLANode array
 subalgorithm insertPos(dlla, e,pos):
 	if pos < 1 or pos > dlla.size then
 		@throw an exception
-	occupiedPos 
+	occupiedPos <- allocate(dlla); // this is the position where the element will be inserted
+	if occupiedPos = -1 then
+		// array is full -> resize
+		
 ```
