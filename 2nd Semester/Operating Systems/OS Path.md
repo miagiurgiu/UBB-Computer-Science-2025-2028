@@ -4118,3 +4118,6 @@ int main(int argc, char** argv) {
 - pthread_mutex_init
 - pthread_mutex_lock(&m) and unlock
 - atomic/non-atomic
+- n++ might not be atomic on each processor
+
+Conclusion: syncronisation makes things correct, but slow. 
