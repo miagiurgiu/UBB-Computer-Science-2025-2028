@@ -1003,7 +1003,18 @@ subalg deleteElem(slla, e):
 2) linked lists with dynamic allocation - doubly linked lists on array 
 - nodes
 - instead of pointers - positions
+
+```
 DLLANode:
 info: TElem
 next: Integer
 prev: Integer
+```
+
+```
+DLLA
+nodes: DLLANode[]
+cap: Integers
+head: 
+
+```
