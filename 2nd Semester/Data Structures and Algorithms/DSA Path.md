@@ -1113,6 +1113,7 @@ sll -> top of the stack should be at the beginning of the list
 dll -> does not matter
 
 9) classical INTERVIEW question. getMinimum of theta(1) 
+- classical answer: use TWO stacks
 - extra variable that denotes minimum
 - push first element (7) -> minimum = 7
 - push element 10 -> compare 10 with minimum 
