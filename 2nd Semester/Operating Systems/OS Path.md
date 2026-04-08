@@ -4117,3 +4117,4 @@ int main(int argc, char** argv) {
 - syncronization mechanisms - mutex
 - pthread_mutex_init
 - pthread_mutex_lock(&m) and unlock
+- atomic/non-atomic
