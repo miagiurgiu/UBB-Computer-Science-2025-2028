@@ -1037,3 +1037,9 @@ deallocate/free - free a position form that DLLANode array
 
 - allocate and deallocate (free) functions
 - head and tail are -1, size = 0 at first
+3) how to initialise next and prev on arrays - drawing notebook
+4) insert position
+```
+subalgorithm insertPos(dlla, e,pos):
+	
+```
