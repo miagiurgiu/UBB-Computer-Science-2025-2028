@@ -2222,3 +2222,4 @@ Song(const std::string& artist)
 - global variables for the class
 - new instance -> that instance has access to the same static element -> same value for all instances/objects of the class??
 
+## Lecture 7 - 8 apr 202
