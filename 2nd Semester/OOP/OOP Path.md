@@ -2252,5 +2252,6 @@ vs
 virtual std::string toString() const;
 ```
 
-3) 
+3) virtual table is a data member automatically allocated when calling stuff with "virtual"
+4) 
 
