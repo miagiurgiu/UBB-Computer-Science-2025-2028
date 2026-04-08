@@ -1032,5 +1032,7 @@ current <- dlla.head
 current <- dlla.nodes[current].next
 
 allocate
-deallocate
+deallocate/free - free a position form that DLLANode array
 ```
+
+- 
