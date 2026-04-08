@@ -4114,4 +4114,5 @@ int main(int argc, char** argv) {
 - printed 989 instead of 1000 -> race condition -> n++ previous lectures
 - optimisation changes order of executions?
 - run with optimisation 
+- syncronization mechanisms - mutex
 - 
