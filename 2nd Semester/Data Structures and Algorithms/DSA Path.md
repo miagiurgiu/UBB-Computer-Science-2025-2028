@@ -1075,6 +1075,9 @@ subalgorithm insertPos(dlla, e,pos):
 			dlla.head <- occupiedPos
 	else if pos = dlla.size+1 then // wanna add sth after the last node
 		dlla.nodes[occupiedPos].prev <- dlla.tail
+		dlla.nodes[dlla.tail].next <- occupiedPos
+		dlla.tail <- occupiedPos
+	else
 		
 		
 ```
