@@ -2258,5 +2258,11 @@ virtual std::string toString() const;
 upcasting - Upcasting is the process of converting a derived class pointer or reference to a base class pointer or reference. It’s called “up” casting because we’re moving up the inheritance hierarchy, from a more specific type to a more general one.
 
 5) why does the destructor have to be virtual?
-- 
+steps (not directly)
+- crate virtual table
+- pointer to it
+- ...
+- call
+
+5) constructors cannot be virs
 
