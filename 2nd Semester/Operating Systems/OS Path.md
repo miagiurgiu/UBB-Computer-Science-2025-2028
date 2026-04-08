@@ -4041,6 +4041,7 @@ ipcrm
 3) create a structure used by both programs - header file
 - key, size, flags
 - shmget, shmat, shmdt, shmctl
+- one of the programs creates, the other uses
 a.h
 ```
 #include <stdio.h>
@@ -4052,7 +4053,6 @@ struct absp {
 	int s;
 	int p;
 }
-
 ```
 
 b.c
