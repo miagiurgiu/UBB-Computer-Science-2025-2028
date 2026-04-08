@@ -4061,7 +4061,8 @@ b.c
 - 1234 = identifier of the ipc
 - IPC_CREAT -> if it does not exist, create it
 - 0600 -> set permissions to it
-
+- not like fifo which waited for ... 
+- 
 ```
 #include "a.h"
 
