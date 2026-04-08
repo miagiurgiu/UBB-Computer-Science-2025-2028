@@ -2268,6 +2268,8 @@ downcasting - down the hierarchy - casting a base class pointer to a derived cla
 
 static cast - converts ref/pointer to specified type
 
+ability to check with dynamic casting.
+
 4) why does the destructor have to be virtual?
 - usually need to be virtual
 - main.cpp - see Animal* a, ... inside virtualDestructors()
@@ -2278,3 +2280,5 @@ static cast - converts ref/pointer to specified type
 - we need the exact type
 - virtual table pointer is actually initialised in the constructor
 
+
+pure implement
