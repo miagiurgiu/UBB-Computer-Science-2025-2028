@@ -4110,3 +4110,5 @@ int main(int argc, char** argv) {
 	return 0;
 }
 ```
+
+- printed 989 instead of 1000 -> race condition -> n++ previous lectures
