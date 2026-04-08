@@ -1039,10 +1039,11 @@ deallocate/free - free a position form that DLLANode array
 - head and tail are -1, size = 0 at first
 3) how to initialise next and prev on arrays - drawing notebook
 4) insert position
-size=5 -> 1,2,3,4,5 valid positions, but adding sth on position 6 is okay, only adding on position 7 would be a problem
+- size=5 -> 1,2,3,4,5 valid positions, but adding sth on position 6 is okay, only adding on position 7 would be a problem
+- we will use allocate and deallocation functions
 ```
 subalgorithm insertPos(dlla, e,pos):
 	if pos < 1 or pos > dlla.size then
-
-		
+		@throw an exception
+	occupiedPos 
 ```
