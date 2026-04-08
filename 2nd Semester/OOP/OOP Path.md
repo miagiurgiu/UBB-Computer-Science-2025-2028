@@ -2254,15 +2254,19 @@ virtual std::string toString() const;
 
 3) virtual table is a data member automatically allocated when calling stuff with "virtual"
 - "Altough is an animal at compile time, it will be a dog at runtime and it will act according to Dog class"
-4) upcasting, downcasting
-upcasting - Upcasting is the process of converting a derived class pointer or reference to a base class pointer or reference. It’s called “up” casting because we’re moving up the inheritance hierarchy, from a more specific type to a more general one.
 
-5) why does the destructor have to be virtual?
 steps (not directly)
 - crate virtual table
 - pointer to it
 - ...
 - call
+3) upcasting, downcasting
+upcasting - Upcasting is the process of converting a derived class pointer or reference to a base class pointer or reference. It’s called “up” casting because we’re moving up the inheritance hierarchy, from a more specific type to a more general one.
 
-5) constructors cannot be virs
+4) why does the destructor have to be virtual?
+- usually need to be virtual
+
+5) constructors cannot be virtual
+- we need the exact type
+- virtual table pointer is actually initialised in the constructor
 
