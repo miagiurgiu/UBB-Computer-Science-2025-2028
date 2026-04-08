@@ -2227,4 +2227,8 @@ Polymorphism
 - acts differently at runtime depending on object
 - behave differently according to their types
 - message is speak: each animal makes a different sound
-- static binding: the choice of which function to call is done at compile 
+
+1) static binding vs dynamic binding: 
+static - the choice of which function to call is done at compile time, depending on the object?
+dynamic - at runtime - when we know the type of the object
+
