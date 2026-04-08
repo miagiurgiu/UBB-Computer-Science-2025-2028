@@ -1048,5 +1048,6 @@ subalgorithm insertPos(dlla, e,pos):
 	occupiedPos <- allocate(dlla); // this is the position where the element will be inserted
 	if occupiedPos = -1 then
 		// array is full -> resize
-		
+		newArray <- @ a new array with dlla.cap*2 positions
+		for i <- 1 to dlla.cap execute
 ```
