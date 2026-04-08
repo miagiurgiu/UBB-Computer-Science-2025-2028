@@ -2253,5 +2253,5 @@ virtual std::string toString() const;
 ```
 
 3) virtual table is a data member automatically allocated when calling stuff with "virtual"
-4) 
+4) why does the destructor have to be virtual?
 
