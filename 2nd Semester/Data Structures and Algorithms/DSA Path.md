@@ -1059,4 +1059,5 @@ subalgorithm insertPos(dlla, e,pos):
 		dlla.firstEmpty <- dlla.cap+1
 		dlla.cap <- dlla.cap*2
 		dlla.nodes <- newArray
+		occupiedPos <- allocate(dlla)
 ```
