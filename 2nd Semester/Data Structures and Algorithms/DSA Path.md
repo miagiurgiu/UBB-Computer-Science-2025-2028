@@ -1053,5 +1053,6 @@ subalgorithm insertPos(dlla, e,pos):
 			newArray <- dlla.nodes[i]
 		for i <- dlla.cap+1 to dlla.cap*2 ex
 			newArray[i].next <- i+1
-			newArray[i].prev 
+			newArray[i].prev <- i-1
+		newArray[dlla.cap*2].next <- -1 
 ```
