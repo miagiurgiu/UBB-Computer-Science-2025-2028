@@ -4115,4 +4115,4 @@ int main(int argc, char** argv) {
 - optimisation changes order of executions?
 - run with optimisation 
 - syncronization mechanisms - mutex
-- 
+- pthread_mutex_init
