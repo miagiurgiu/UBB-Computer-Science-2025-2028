@@ -2231,5 +2231,11 @@ Polymorphism
 1) static binding vs dynamic binding (late binding): 
 static - the choice of which function to call is done at compile time, depending on the object?
 dynamic - at runtime - when we know the type of the object - so that the correct to_string function is called
-virtual function declared like this in tha
+virtual function declared like this in the base class animal (in java, they are virtual by default)
+works with pointers, not objects
+
+```
+virtual function_signature
+```
+
 
