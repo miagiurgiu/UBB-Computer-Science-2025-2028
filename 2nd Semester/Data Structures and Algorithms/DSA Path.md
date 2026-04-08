@@ -1104,5 +1104,7 @@ subalgorithm insertPos(dlla, e,pos):
 
 5) ADT STACK
 - where to put the top of the stack for optimal complexity?
-	- 1. on position 1 (wanna pop? move everything) -> push, pop witll have theta(n) complexity => bad. 
-	- 2. towards the end of the array (obvs better)
+- STACK FOR DYNAMIC ARRAY -> TOP OF STACK TOWARDS THE END OF THE ARRAY!
+	- 1. on position 1 (wanna pop? move everything) -> push, pop will have theta(n) complexity => bad. 
+	- 2. towards the end of the array (obvs better) -> push, pop will have theta(1) complexity
+
