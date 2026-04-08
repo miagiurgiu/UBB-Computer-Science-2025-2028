@@ -1014,7 +1014,10 @@ prev: Integer
 ```
 DLLA
 nodes: DLLANode[]
-cap: Integers
-head: 
+cap: Integer
+head: Integer
+tail: Integer
+firstEmpty: Integer
+size: Integer ?
 
 ```
