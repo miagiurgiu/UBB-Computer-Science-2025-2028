@@ -1041,5 +1041,5 @@ deallocate/free - free a position form that DLLANode array
 4) insert position
 ```
 subalgorithm insertPos(dlla, e,pos):
-	
+	if pos <
 ```
