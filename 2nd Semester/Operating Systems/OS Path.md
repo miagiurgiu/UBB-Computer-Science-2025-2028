@@ -4055,11 +4055,12 @@ struct absp {
 ```
 
 b.c
+- permissions, flags, size, 
 ```
 #include "a.h"
 
 int main(int argc, char** argv) {
-	int shm = shmget(1234,)
+	int shm = shmget(1234, sizeof(struct absp), IPC_CREAT | 0600)
 	(void)argc;
 	(void)argv;
 	return 0;
