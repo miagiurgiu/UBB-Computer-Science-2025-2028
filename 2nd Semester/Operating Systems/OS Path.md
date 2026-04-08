@@ -4033,4 +4033,12 @@ ipcmk
 ipcmk -M 10 => 10 kilobytes
 ```
 
-2) 
+2) how to delete a shared memory/ipc?
+```
+ipcrm
+```
+
+3) create a structure used by both programs - header file
+
+
+
