@@ -1103,3 +1103,6 @@ subalgorithm insertPos(dlla, e,pos):
 - search in theta(1) complexity will be possible!!
 
 5) ADT STACK
+- where to put the top of the stack for optimal complexity?
+	- 1. on position 1
+	- 2. towards the end of th
