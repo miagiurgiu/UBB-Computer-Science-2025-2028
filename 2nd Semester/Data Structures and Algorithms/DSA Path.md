@@ -1114,8 +1114,8 @@ dll -> does not matter
 
 9) classical INTERVIEW question. getMinimum of theta(1) 
 - classical answer: use TWO stacks
-	- use them simultaneously: theta (2*n) is still theta(n)
-	- stack of pairs (not an improvement i)
+	- use them simultaneously: theta (2*n) is still theta(n) -> pop from both, push to both?
+	- stack of pairs (not an improvement in space)
 - extra variable that denotes minimum
 - push first element (7) -> minimum = 7
 - push element 10 -> compare 10 with minimum 
