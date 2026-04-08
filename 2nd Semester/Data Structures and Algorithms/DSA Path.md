@@ -1092,3 +1092,4 @@ subalgorithm insertPos(dlla, e,pos):
 ```
 
 5) iterator
+-
