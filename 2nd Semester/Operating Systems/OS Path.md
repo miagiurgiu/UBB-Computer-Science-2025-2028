@@ -4039,7 +4039,7 @@ ipcrm
 ```
 
 3) create a structure used by both programs - header file
-
+a.h
 ```
 #include <stdio.h>
 #include <sys/shm.h>
@@ -4051,4 +4051,13 @@ struct absp {
 	int p;
 }
 
+```
+
+
+```
+#include "a.h"
+
+int main(int argc, char** argv) {
+	(void)
+}
 ```
