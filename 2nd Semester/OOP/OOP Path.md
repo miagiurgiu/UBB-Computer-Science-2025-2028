@@ -2246,5 +2246,11 @@ std::string toString() const;
 vs 
 
 std::string toString() const override;
+
+vs
+
+virtual std::string toString() const;
 ```
+
+3) 
 
