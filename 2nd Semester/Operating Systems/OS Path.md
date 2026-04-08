@@ -4070,6 +4070,7 @@ int main(int argc, char** argv) {
 	int shm = shmget(1234, sizeof(struct absp), IPC_CREAT | 0600); // like a file handler
 	struct absp* x = shmat(shm, 0, 0); // pointer to this area of shared memory
 	
+	x->s=
 	while(1) {
 		x->a = rand();
 		x->b = rand();
