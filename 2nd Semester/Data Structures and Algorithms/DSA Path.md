@@ -1023,3 +1023,14 @@ size: Integer ? - sometimes it's good to have it
 
 - having this extra DLLA structure helps us get closer to the version of SLL, not SLLA:
 
+```
+SLL:
+current <- sll.head
+current <- [current].next
+
+current <- dlla.head
+current <- dlla.nodes[current].next
+
+allocate
+deallocate
+```
