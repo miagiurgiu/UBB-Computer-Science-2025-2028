@@ -1062,4 +1062,5 @@ subalgorithm insertPos(dlla, e,pos):
 		occupiedPos <- allocate(dlla)
 	dlla.node[occupiedPos].info <- e // actual inserting
 	if pos = 1 then 
+		dlla.nodes[occupiedPos].next <- dlla.head
 ```
