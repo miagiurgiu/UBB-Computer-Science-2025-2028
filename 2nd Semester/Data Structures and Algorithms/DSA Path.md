@@ -1100,4 +1100,5 @@ subalgorithm insertPos(dlla, e,pos):
 5) a list could replace any other container, right? list instead of a set - one extra search before ... , list instead of a map
 - BUT positions = restrictions => worse complexity
 - better complexity for operations using containers with no positions
+- search in theta(1) complexity will be possible!!
 - 
