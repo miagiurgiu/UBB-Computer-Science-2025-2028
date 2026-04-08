@@ -996,3 +996,4 @@ subalg deleteElem(slla, e):
 ```
 
 2) how to define an iterator on a SSL on Array. What would be the type of current element?
+- integers
