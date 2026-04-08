@@ -2224,3 +2224,5 @@ Song(const std::string& artist)
 
 ## Lecture 7 - 8 apr 2026
 Polymorphism
+- acts differently at runtime depending on object
+- 
