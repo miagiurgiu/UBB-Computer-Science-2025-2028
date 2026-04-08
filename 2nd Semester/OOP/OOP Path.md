@@ -2285,5 +2285,7 @@ pure abstract - only virtual stuff
 pure implementation in the base class - in italics - pure abstract
 
 6) see employee exercise 
-- empl
+- employee is not an interface in this case
+- dotted line in that case
+- like in animals
 
