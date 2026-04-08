@@ -1112,4 +1112,6 @@ subalgorithm insertPos(dlla, e,pos):
 sll -> top of the stack should be at the beginning of the list
 dll -> does not matter
 
-9) classical INTERVIEW q
+9) classical INTERVIEW question. getMinimum of theta(1) 
+- extra variable that denotes minimum
+- m
