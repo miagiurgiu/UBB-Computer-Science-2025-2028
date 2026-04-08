@@ -1095,3 +1095,5 @@ subalgorithm insertPos(dlla, e,pos):
 - printContainer function is the same for all containers
 - list is the only container with positions
 - no positions => only way to see content of container is the iterator
+- in general, each operation of iterator has theta(1) complexity
+- 
