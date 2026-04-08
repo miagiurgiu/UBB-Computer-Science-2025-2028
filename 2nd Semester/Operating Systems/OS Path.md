@@ -4089,8 +4089,8 @@ int main(int argc, char** argv) {
 	struct absp* x = shmat(shm, 0, 0); // pointer to this area of shared memory
 	
 	while(1) {
-		x->a = rand();
-		x->b = rand();
+		x->s = x->a + x->b ;
+		x->p = x->a * x->b;
 		if(x->s == x->p) break;
 	}
 	
