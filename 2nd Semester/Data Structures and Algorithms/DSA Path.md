@@ -1092,4 +1092,4 @@ subalgorithm insertPos(dlla, e,pos):
 ```
 
 5) iterator
--
+- printContainer function is the same for all containers
