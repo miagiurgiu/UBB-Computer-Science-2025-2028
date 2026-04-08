@@ -4057,6 +4057,7 @@ struct absp {
 
 b.c
 - permissions, flags, size
+- the other program will keep calculating the sum and the product??
 ```
 #include "a.h"
 
@@ -4069,6 +4070,30 @@ int main(int argc, char** argv) {
 		x->b = rand();
 		if(x->s == x->p) break;
 	}
+	
+	shmdt(x);
+	shmctl(shm, IPC_RMID, NULL);
+
+	(void)argc;
+	(void)argv;
+	return 0;
+}
+```
+
+
+```
+#include "a.h"
+
+int main(int argc, char** argv) {
+	int shm = shmget(1234, 0,0);
+	struct absp* x = shmat(shm, 0, 0); // pointer to this area of shared memory
+	
+	while(1) {
+		x->a = rand();
+		x->b = rand();
+		if(x->s == x->p) break;
+	}
+	
 	shmdt(x);
 	shmctl(shm, IPC_RMID, NULL);
 
