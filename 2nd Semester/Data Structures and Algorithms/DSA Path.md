@@ -972,4 +972,10 @@ while[[prevNode].next].next
 
 ## Lecture 6 - xor 
 
-## Lecture 7 -
+## Lecture 7 - 8 apr 2026
+
+```
+subalg deleteElem(slla, e):
+	prev <- 
+
+```
