@@ -4015,7 +4015,9 @@ int main(int argc, char *argv[]) {
 
 next lab -> pipe, fifo, exec 
 
-
+## Lecture 6 - 
+Processes
 ## Lecture 7 - 8 apr 2026
+Threads
 
-1) threads
+1) 
