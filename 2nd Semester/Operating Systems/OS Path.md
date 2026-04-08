@@ -4020,4 +4020,7 @@ Processes
 ## Lecture 7 - 8 apr 2026
 Threads
 
-1) 
+1) how can we have a piece of memory mapped in a ??
+```
+ipcs
+```
