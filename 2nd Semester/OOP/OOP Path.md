@@ -2227,4 +2227,4 @@ Polymorphism
 - acts differently at runtime depending on object
 - behave differently according to their types
 - message is speak: each animal makes a different sound
-- 
+- static binding: the choice of which function to call is done at compile 
