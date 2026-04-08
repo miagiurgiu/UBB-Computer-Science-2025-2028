@@ -4017,3 +4017,5 @@ next lab -> pipe, fifo, exec
 
 
 ## Lecture 7 - 8 apr 2026
+
+1) threads
