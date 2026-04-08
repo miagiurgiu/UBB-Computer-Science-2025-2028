@@ -4116,3 +4116,4 @@ int main(int argc, char** argv) {
 - run with optimisation 
 - syncronization mechanisms - mutex
 - pthread_mutex_init
+- pthread_mutex_lock(&m) and unlock
