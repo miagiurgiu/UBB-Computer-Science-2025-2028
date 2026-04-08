@@ -1000,5 +1000,10 @@ subalg deleteElem(slla, e):
 - for dynamic array - position
 - the way in which the work with those positions is different, it is similar to the way we work with linked lists
 
-2) linked lists with dynamic allocation
+2) linked lists with dynamic allocation - doubly linked lists on array 
 - nodes
+- instead of pointers - positions
+DLLANode:
+info: TElem
+next: Integer
+prev: Integer
