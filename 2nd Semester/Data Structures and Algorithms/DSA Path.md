@@ -1118,4 +1118,5 @@ dll -> does not matter
 - push element 10 -> compare 10 with minimum 
 - push element 20 -> compare 20 with minimum
 - push element 5 -> compare 5 with minimum -> minimum = 5
-- p
+- problem: our minimum goes away (we popped)
+- getMinimum is theta(1), but pop is theta(n) 
