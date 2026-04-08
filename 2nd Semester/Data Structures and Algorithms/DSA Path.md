@@ -981,6 +981,9 @@ subalg deleteElem(slla, e):
 	while current !=-1 and slla.elems[current]!=e execute
 		prev <- current 
 		current <- slla.next[current]
-	
+	if current = -1 then
+		deleteElem <- false
+	else
+		
 
 ```
