@@ -985,5 +985,7 @@ subalg deleteElem(slla, e):
 		deleteElem <- false
 	else
 		if prev = -1 then
+			slla.head <- slla.next[slla.head]
+			
 
 ```
