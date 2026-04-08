@@ -1093,3 +1093,5 @@ subalgorithm insertPos(dlla, e,pos):
 
 5) iterator
 - printContainer function is the same for all containers
+- list is the only container with positions
+- no positions => only way to see content of container is the iterator
