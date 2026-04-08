@@ -2225,4 +2225,6 @@ Song(const std::string& artist)
 ## Lecture 7 - 8 apr 2026
 Polymorphism
 - acts differently at runtime depending on object
+- behave differently according to their types
+- message is speak: each animal makes a different sound
 - 
