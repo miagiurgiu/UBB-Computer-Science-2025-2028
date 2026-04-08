@@ -4062,8 +4062,8 @@ b.c
 - IPC_CREAT -> if it does not exist, create it
 - 0600 -> set permissions to it
 - not like fifo which waited for ... 
-- 
 ```
+#include <stdlib.h>
 #include "a.h"
 
 int main(int argc, char** argv) {
