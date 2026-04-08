@@ -4040,7 +4040,7 @@ ipcrm
 
 3) create a structure used by both programs - header file
 - key, size, flags
-- shmget,
+- shmget, shmat, shmdt, shmctl
 a.h
 ```
 #include <stdio.h>
@@ -4064,9 +4064,14 @@ int main(int argc, char** argv) {
 	int shm = shmget(1234, sizeof(struct absp), IPC_CREAT | 0600);
 	struct absp* x = shmat(shm, 0, 0); // pointer to this area of shared memory
 	
+	while(1) {
+		x->a = rand();
+		x->b = rand();
+		if(x->s == x->p) break;
+	}
 	shmdt(x);
-	shmctl(shm, iPC_RMID)
-	
+	shmctl(shm, IPC_RMID, NULL);
+
 	(void)argc;
 	(void)argv;
 	return 0;
