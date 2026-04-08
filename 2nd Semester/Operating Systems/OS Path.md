@@ -4022,6 +4022,10 @@ Threads
 
 1) work with shared memory. how can we have a piece of memory mapped in a ??
 - shared memory will have a number that will be unique in the system
+- 644 - default permissions
+- give permissions only to yourself!
+- problem: instead of creagt
+command line:
 ```
 ipcs
 ipcmk
