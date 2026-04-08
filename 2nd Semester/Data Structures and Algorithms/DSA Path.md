@@ -1056,5 +1056,7 @@ subalgorithm insertPos(dlla, e,pos):
 			newArray[i].prev <- i-1
 		newArray[dlla.cap*2].next <- -1 // last node
 		newArray[dlla.cap+1].prev <- -1 // first node
-		dlla.firstEmpty <- dlla.
+		dlla.firstEmpty <- dlla.cap+1
+		dlla.cap <- dlla.cap*2
+		dlla.nodes <- newArray
 ```
