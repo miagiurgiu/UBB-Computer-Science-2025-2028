@@ -974,7 +974,7 @@ while[[prevNode].next].next
 
 ## Lecture 7 - 8 apr 2026
 
-delete 
+1) delete 
 ```
 subalg deleteElem(slla, e):
 	prev <- -1
@@ -995,4 +995,4 @@ subalg deleteElem(slla, e):
 
 ```
 
-1) how to define
+2) how to define an iterator on a SSL on Array. What would be the type of current element?
