@@ -4024,7 +4024,7 @@ Threads
 - shared memory will have a number that will be unique in the system
 - 644 - default permissions
 - give permissions only to yourself!
-- problem: instead of creagt
+- problem: instead of creating an array of bytes, use a structure because we want to work with integers, strings etc. 
 command line:
 ```
 ipcs
