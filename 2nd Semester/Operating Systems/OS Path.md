@@ -4087,7 +4087,7 @@ int main(int argc, char** argv) {
 }
 ```
 
-
+- %1000 somewhere 
 ```
 #include "a.h"
 
@@ -4098,7 +4098,7 @@ int main(int argc, char** argv) {
 	while(1) {
 		x->s = x->a + x->b ;
 		x->p = x->a * x->b;
-		printf("%d + %d = %d.    %d * %d = %d\n", x->a, x->b, x->a + x->b, x->a, x->b, x->a)
+		printf("%d + %d = %d.    %d * %d = %d\n", x->a, x->b, x->a + x->b, x->a, x->b, x->a * x->b);
 		if(x->s == x->p) break;
 	}
 	
