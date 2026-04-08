@@ -1087,7 +1087,6 @@ subalgorithm insertPos(dlla, e,pos):
 		dlla.nodes[occupiedPos].prev <- currentN
 		dlla.nodes[occupiedPos].next <- dlla.nodes[currentN].next
 		dlla.nodes[dlla.nodes[currentN].next].prev <- occupiedPos
-		dlla.nodes[dlla.curre]
-		
-		
+		dlla.nodes[currentN].next <- occupiedPos
+	dlla.size <- dlla.size ++
 ```
