@@ -984,6 +984,6 @@ subalg deleteElem(slla, e):
 	if current = -1 then
 		deleteElem <- false
 	else
-		
+		if prev = -1 then
 
 ```
