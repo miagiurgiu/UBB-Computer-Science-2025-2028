@@ -1387,7 +1387,7 @@ ps -o etime process_id | tail -n +2
 awk - extracts
 expr - arithmetic in the command line
 
-10) Nothing happens simultaneously (processes - they are just very fast, one after the other)
+10) Nothing happens simultaneously (processes - they are just very fast, one after the other) - except on mac m4 fast 
 - n++ NOT ATOMIC: you may lose cpu during a n++ operation -> it's 3 assembly operations (load value from n to register, increment register, store value back to n) and during these operations, cpu might get lost
 
 10) Implement a script and then a c file; Reads a number from file, increments it and writes it back to file
