@@ -1108,6 +1108,8 @@ subalgorithm insertPos(dlla, e,pos):
 	- 1. on position 1 (wanna pop? move everything) -> push, pop will have theta(n) complexity => bad. 
 	- 2. towards the end of the array (obvs better) -> push, pop will have theta(1) complexity
 
-5) SLL, DLL
+8) SLL, DLL
 sll -> top of the stack should be at the beginning of the list
-dll -> 
+dll -> does not matter
+
+9) classical INTERVIEW q
