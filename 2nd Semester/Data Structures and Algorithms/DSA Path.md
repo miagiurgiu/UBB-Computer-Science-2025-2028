@@ -1018,6 +1018,5 @@ cap: Integer
 head: Integer
 tail: Integer
 firstEmpty: Integer
-size: Integer ?
-
+size: Integer ? - sometimes it's good to have it
 ```
