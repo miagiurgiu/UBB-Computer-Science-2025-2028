@@ -1041,7 +1041,7 @@ deallocate/free - free a position form that DLLANode array
 4) insert position in DLLA
 - size=5 -> 1,2,3,4,5 valid positions, but adding sth on position 6 is okay, only adding on position 7 would be a problem
 - we will use allocate and deallocation functions
-- if i try to add sth to an empty list, that new added 
+- if i try to add sth to an empty list, that new added node will be both the tail and the head
 ```
 subalgorithm insertPos(dlla, e,pos):
 	if pos < 1 or pos > dlla.size then
@@ -1067,5 +1067,6 @@ subalgorithm insertPos(dlla, e,pos):
 		if dlla.head = -1 then // case when the list is empty 
 			dlla.head <- occupiedPos
 			dlla.tail <- occupiedPos
-			
+		else // n
+			dlla.nodes[dlla.head].prev <- occupiedPos
 ```
