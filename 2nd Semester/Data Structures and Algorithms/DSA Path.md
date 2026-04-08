@@ -1097,4 +1097,6 @@ subalgorithm insertPos(dlla, e,pos):
 - no positions => only way to see content of container is the iterator
 - in general, each operation of iterator has theta(1) complexity
 
-5) a list could replace any other container, right? or a set, may
+5) a list could replace any other container, right? list instead of a set - one extra search before ... , list instead of a map
+- BUT positions = restrictions
+- 
