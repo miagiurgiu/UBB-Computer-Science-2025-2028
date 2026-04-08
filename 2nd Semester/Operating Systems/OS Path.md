@@ -4058,11 +4058,12 @@ struct absp {
 b.c
 - permissions, flags, size
 - the other program will keep calculating the sum and the product??
+- 1234 = identifier of the ipc
 ```
 #include "a.h"
 
 int main(int argc, char** argv) {
-	int shm = shmget(1234, sizeof(struct absp), IPC_CREAT | 0600);
+	int shm = shmget(1234, sizeof(struct absp), IPC_CREAT | 0600); // like a file handler
 	struct absp* x = shmat(shm, 0, 0); // pointer to this area of shared memory
 	
 	while(1) {
