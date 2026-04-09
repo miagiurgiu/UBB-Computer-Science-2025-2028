@@ -2290,4 +2290,7 @@ pure implementation in the base class - in italics - pure abstract
 - like in animals
 
 A5
-
+CHECK FOR memory leaks in CLion terminal:
+```
+MallocStackLogging=1 leaks --atExit -- ./cmake-build-debug/a45
+```
