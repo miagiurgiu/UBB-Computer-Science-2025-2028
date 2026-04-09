@@ -2303,4 +2303,8 @@ A6-7
 	- use algorithms from the stl library: copy if, find if, erase if, count if, sort 
 	- replace for with an algorithm/range-based for - for auto element 
 - read/write to file - load your data from file (data from admin mode)
-	- use the iostream li
+	- use the iostream library
+	- overload the insertion/extraction operators
+	- >> - usually used for reading/writing to a file, not only for reading/writing to console
+	- <<
+	- 
