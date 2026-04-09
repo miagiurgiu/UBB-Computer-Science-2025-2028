@@ -2299,4 +2299,5 @@ MallocStackLogging=1 leaks --atExit -- ./cmake-build-debug/a45
 
 A6-7
 - use stl library
-- 
+	- replace everywhere from vector to the vector from stl
+	- use algorithms from the stl library
