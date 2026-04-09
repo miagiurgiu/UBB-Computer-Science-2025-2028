@@ -2295,15 +2295,14 @@ CHECK FOR memory leaks in CLion terminal:
 MallocStackLogging=1 leaks --atExit -- ./cmake-build-debug/a45
 ```
 
-## Lab 7
+## Lab 7 - 9 apr 2026
 
 A6-7
-- use stl library
-	- replace everywhere from vector to the vector from stl
-	- use algorithms from the stl library: copy if, find if, erase if, count if, sort 
+- use STL library
+	- replace everywhere from vector to the vector from STL
+	- use algorithms from the STL library: copy if, find if, erase if, count if, sort 
 	- replace for with an algorithm/range-based for (for auto element ...)
-- read/write to file - load your data from file (data from admin mode)
+- read/write to file - load your data from file (only data from admin mode)
 	- use the iostream library
 	- overload the insertion/extraction operators
-	- >> - usually used for reading/writing to a file, not only for reading/writing to console
-	- <<
+	- >>, << - usually used for reading/writing to a file, not only for reading/writing to console
