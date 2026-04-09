@@ -2307,4 +2307,3 @@ A6-7
 	- overload the insertion/extraction operators
 	- >> - usually used for reading/writing to a file, not only for reading/writing to console
 	- <<
-	- 
