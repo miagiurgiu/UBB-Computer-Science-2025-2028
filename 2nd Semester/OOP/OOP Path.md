@@ -2294,3 +2294,9 @@ CHECK FOR memory leaks in CLion terminal:
 ```
 MallocStackLogging=1 leaks --atExit -- ./cmake-build-debug/a45
 ```
+
+## Lab 7
+
+A6-7
+- use stl library
+- 
