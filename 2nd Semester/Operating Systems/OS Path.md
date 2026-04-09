@@ -4119,6 +4119,7 @@ int main(int argc, char** argv) {
 - pthread_mutex_lock(&m) and unlock
 - atomic/non-atomic
 - n++ might not be atomic on each processor
+- do n++ on local, not global, turn to global only after computation at local
 
 Conclusion: syncronisation makes things correct, but slow. 
 fast result+correct: n+=(int)(long)a; and comment everything else in f except return NULL.
