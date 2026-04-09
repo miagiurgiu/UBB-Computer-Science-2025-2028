@@ -2302,3 +2302,5 @@ A6-7
 	- replace everywhere from vector to the vector from stl
 	- use algorithms from the stl library: copy if, find if, erase if, count if, sort 
 	- replace for with an algorithm/range-based for - for auto element 
+- read/write to file - load your data from file (data from admin mode)
+- 
