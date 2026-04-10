@@ -653,7 +653,7 @@ Song(const std::string& artist)
 - new instance -> that instance has access to the same static element -> same value for all instances/objects of the class??
 
 4) TEMPLATES
-
+- Template = skeleton
 - Declaration:
 ```
 template <typename T>
