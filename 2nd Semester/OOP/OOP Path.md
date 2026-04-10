@@ -300,7 +300,7 @@ Maria@Mac tests % ./tests
 
 ## Lecture 4 - 18 mar 2026
 C++
-Reference = another name for the same memory
+1) Reference = another name for the same memory
 - by copying
 - by using a reference
 - by const reference (when you want the values from original array not modified, but don't want a copy either) -> a certain object should not be changed
@@ -327,7 +327,7 @@ arrow because "this" is a pointer to the current object.
 *this -> dereference the pointer
 
 
-Copy constructors
+2) Copy constructors
 - implement your own copy constructor
 - invoked when we create memory on heap and then initialise it
 - when the copy constructor is called
@@ -344,7 +344,7 @@ x on the stack -> memory automatically managed
 
 Constructors with parameters using member initialisation?
 
-Destructors
+3) Destructors
 - called when objects should be destroyed
 ```
 Vector2D x = new Vector2D{1,2}; // data allocated on the heap
@@ -359,7 +359,7 @@ delete x; // destructor is being called => memory deallocated
  
  when i have "const" inside the header function i am not allowed to use "this"
 
-Copy constructor vs assignment operator
+4) Copy constructor vs assignment operator
 ```
 Vector2D v7=v1;  // copy constructor is called
 
@@ -367,7 +367,7 @@ Vector2D v8;
 v8=v2; // assignment operator
 ```
 
-
+5) 
 Lecture 4 wrap-up:
 - it teaches me why manual memory management is tricky
 "BIG THREE" of C++ memory management:
