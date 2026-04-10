@@ -656,6 +656,16 @@ Song(const std::string& artist)
 - Declaration:
 ```
 template <typename T>
+T add(T a, T b)
+{
+	return a+b;
+}
+
+T - template parameter
+```
+- Instantiation = the process of generating a function from a template function
+```
+int resInt
 
 ```
 ## Lecture 7 - 8 apr 2026
