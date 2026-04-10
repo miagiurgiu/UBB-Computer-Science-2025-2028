@@ -653,6 +653,7 @@ Song(const std::string& artist)
 - new instance -> that instance has access to the same static element -> same value for all instances/objects of the class??
 
 4) TEMPLATES
+
 - Declaration:
 ```
 template <typename T>
@@ -665,8 +666,8 @@ T - template parameter
 ```
 - Instantiation = the process of generating a function from a template function
 ```
-int resInt
-
+int resInt = add<int>(3,4);
+double resDouble = add<double>(-1.2,2.6);
 ```
 ## Lecture 7 - 8 apr 2026
 Polymorphism
