@@ -685,10 +685,11 @@ Animal a = Dog();
 a.speak(); // static binding
 ```
 dynamic binding
+- COMPILER LOOKS AT THE OBJECT IN MEMORY AT RUNTIME
 - the choice of which function to call is done at runtime
 - depends on the type of the real object
 - the correct function is called (ex: to_string, speak)
-- ONLY when we have pointer ... ??
+- TO BE USED whenever you want subclasses to provide their own logic (speak())
 ```
 Animal* a = new Dog();
 a->speak(); // dynamic binding
