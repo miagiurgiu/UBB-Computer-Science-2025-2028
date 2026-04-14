@@ -993,4 +993,38 @@ int main()
     filterEmployees();
     return 0;
 }
+
+
+// exercise 3
+void printEmployees(const std::vector<Employee*>& employees)
+{
+    for (const auto e : employees)
+    {
+        std::cout << e->toString() << " | ";
+        std::cout << e->computeSalary() << "\n";
+    }
+}
+
+void testEmployees()
+{
+    std::vector<Employee*> employees;
+
+    employees.push_back(new Employee{"Ana", 4000});
+    employees.push_back(new Employee{"Vlad", 3500});
+    employees.push_back(new Manager{"Ion", 5000, 1500});
+    employees.push_back(new Manager{"Maria", 6000, 2000});
+
+    printEmployees(employees);
+
+    // cleanup
+    for (auto e : employees)
+        delete e;
+}
+
+int main()
+{
+    testEmployees();
+    return 0;
+}
+
 ```
