@@ -740,7 +740,7 @@ When virtual functions are used, compiler manages polymorphism through these ste
 3) initialise vptr
 	- when creating an object, vptr is set to point to the virtual table of that object's address
 4) indirect call
-	- 
+	- when calling via a pointer, the program dereferences the vptr to find the table 
 
 5) upcasting, downcasting, static casting
 upcasting (up=implicit) - Upcasting is the process of converting a derived class pointer or reference to a base class pointer or reference. It’s called “up” casting because we’re moving up the inheritance hierarchy, from a more specific type to a more general one.
