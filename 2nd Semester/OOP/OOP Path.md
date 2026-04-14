@@ -748,13 +748,16 @@ upcasting (up=implicit)
 - Upcasting is the process of converting a derived class pointer or reference to a base class pointer or reference. 
 - It’s called “up” casting because we’re moving up the inheritance hierarchy, from a more specific type to a more general one.
 - a Dog is always an Animal, so no special cast is needed
-- always allowe
+- always allowed implicitly for public inheritance
 
 downcasting 
 - moving DOWN the hierarchy to a more specific type
 - casting a base class pointer to a derived class pointer ()
+- an Animal might not be a Dog, so the users must take responsibility
+- not allowed without an explicit cast
 
 static cast 
+- TO BE USED at compile time
 - converts ref/pointer to specified type
 
 ability to check with dynamic casting.
