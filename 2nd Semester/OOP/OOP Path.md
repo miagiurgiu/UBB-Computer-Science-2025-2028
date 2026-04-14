@@ -1049,4 +1049,9 @@ ex: file streams = c++ objects used to interact with files
 - insertion operator:
 ![[Pasted image 20260414161936.png]]
 - extraction operator:
-- 
+![[Pasted image 20260414162116.png]]
+- inside Coat.h
+```
+std::ostream& operator<<(std::ostream& os, const Coat& c);  
+std::istream& operator>>(std::istream& is, Coat& c);
+```
