@@ -762,3 +762,6 @@ std::vector
 std::deque
 ![[Pasted image 20260414131326.png]]
 
+std::list
+![[Pasted image 20260414131404.png]]
+
