@@ -681,13 +681,13 @@ static binding
 - depends on the declared type of the variable (not the type of the real object)
 ```
 Animal a = Dog();
-a.speak()
-
+a.speak(); // static binding
 ```
 dynamic binding
 - the choice of which function to call is done at runtime
 - depends on the type of the real object
 - the correct function is called (ex: to_string, speak)
+- ONLY when we have pointer ... ??
 ```
 Animal* a = new Dog();
 a->speak(); // dynamic binding
