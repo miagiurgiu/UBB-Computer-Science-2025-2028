@@ -1075,4 +1075,4 @@ std::istream& operator>>(std::istream& is, Coat& c);
 ![[Pasted image 20260414163151.png]]
 
 4) EOF
-- it is a flag that gets set only after 
+- it is a flag that gets set only after a failed attempt to read past the end of the file
