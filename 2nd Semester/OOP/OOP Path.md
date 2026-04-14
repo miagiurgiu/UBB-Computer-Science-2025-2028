@@ -1056,4 +1056,6 @@ std::ostream& operator<<(std::ostream& os, const Coat& c);
 std::istream& operator>>(std::istream& is, Coat& c);
 ```
 
-3) MANIPULATORS = functions used along insertion and extraction operators on stream objects
+3) MANIPULATORS = functions used along insertion and extraction operators on stream objects (ex: endl)
+4) FILES = data structures stored on a disk device
+- in order to wo
