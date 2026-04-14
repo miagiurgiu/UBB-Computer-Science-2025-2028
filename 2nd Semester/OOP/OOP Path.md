@@ -1060,3 +1060,6 @@ std::istream& operator>>(std::istream& is, Coat& c);
 4) FILES = data structures stored on a disk device
 - in order to work with a file, we must connect a stream to that file
 - any input/output operation performed on the stream will be applies to the file associated with that stream
+	- fstream class
+		- ifstream (class derived from istream) -> input file stream
+		- ofstream (class derived from ostream) -> output file stream
