@@ -764,13 +764,15 @@ static cast
 
 ability to check with dynamic casting
 - to be used ar RUN time
-- 
+- Verifies if the object can actually be converted.
+- Returns `nullptr` if the cast fails (safe way to check type)
+- Only works with **pointers or references**
 
 4) why does the destructor have to be virtual?
 - usually need to be virtual
 - main.cpp - see Animal* a, ... inside virtualDestructors()
 - we want the destructor to delete everything, not just the animal, i want the penguin to be correctly destroyed
-- 
+- If the base destructor isn't `virtual`, deleting a `Dog` through an `Animal*` only calls `~Animal()`. This leaves the `Dog` parts in memory, causing **leaks**. A `virtual` destructor ensures the program looks at the **actual object type** and calls both destructors in the correct order
 
 5) constructors cannot be virtual
 - we need the exact type
