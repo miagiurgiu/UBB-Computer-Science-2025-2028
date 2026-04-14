@@ -1034,3 +1034,5 @@ int main()
 
 1) STREAM = abstraction for receiving/sending data in input/output
 ex: receive data from keyboard/memory/file -> send it to destination display/memory/file
+![[Pasted image 20260414160719.png]]
+
