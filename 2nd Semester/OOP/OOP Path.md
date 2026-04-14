@@ -1083,4 +1083,5 @@ std::istream& operator>>(std::istream& is, Coat& c);
 - try -> dangerous code
 - catch -> what to do in case of dangerous code (holds the code that deals with the problem)
 - throw -> the problematic code notifies the calling code
+![[Pasted image 20260414163843.png]]
 
