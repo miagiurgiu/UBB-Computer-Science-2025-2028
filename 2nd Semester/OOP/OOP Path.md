@@ -817,8 +817,12 @@ the call goes to the function from Penguin (dynamic binding)
 
 ```
 // this shows ARCHITECTURE
-IRepository = interface
-	contains CSVRepo, MemoryRepo, DBRepo, XMLRepo, 
+IRepository = interface -> ADD, REMOVE, UPDATE, GET
+	contains CSVRepo, MemoryRepo, DBRepo, XMLRepo 
+
+Service {
+	IRepository* repo;
+}
 
 ```
 
