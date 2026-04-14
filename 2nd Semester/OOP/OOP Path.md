@@ -736,8 +736,9 @@ When virtual functions are used, compiler manages polymorphism through these ste
 	- each element of the array points to the most derived function 
 2) add pointer to it (vptr)
 	- add to the base class a hidden pointer to the virtual table
-	- vpt
-- ...
+	- vptr is inherited by all derived classes
+3) initialise vptr
+	- when creating an object, vptr
 - call
 
 3) upcasting, downcasting, static casting
