@@ -796,9 +796,9 @@ PURE ABSTRACT CLASSES
 - describes capabilities without committing to a specific implementation.
 
 6) see employee exercise 
-- employee is not an interface in this case (it is a normal, base class)
-- because we have dotted line, and dotted line appears only when 
-- like in animals
+- employee is not an interface in this case (it is a normal, base class) -> normal inhe
+- because we have dotted line, and dotted line appears only when there is an interface (abstract stuff)
+- like in animals (abstract class, resembles to interface)
 
 A5
 CHECK FOR memory leaks in CLion terminal:
