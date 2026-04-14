@@ -710,7 +710,11 @@ virtual function_signature
 ```
 
 2) in Animal.h - virtual vs non virtual 
-- override specifier - helps us in case we forget to say virtual in the base class
+- override specifier
+	- helps us in case we forget to say virtual in the base class
+	- it catches your mistakes
+	- the code won't compile if you forgot to put virtual in the base class
+	- this prevents "shadowing" (creating a new function instead of overriding the old one)
 ```
 std::string toString() const; // the standard -> derived class -> if the base is virtual
 
