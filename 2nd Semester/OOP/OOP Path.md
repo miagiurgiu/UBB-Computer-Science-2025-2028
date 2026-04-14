@@ -681,8 +681,8 @@ static binding
 - depends on the declared type of the variable (not the type of the real object)
 dynamic binding
 - the choice of which function to call is done at runtime
-- depends on the actual type of the real object
-- when we know the type of the object - so that the correct to_string function is called
+- depends on the type of the real object
+- the correct function is called (ex: to_string, speak)
 virtual function declared like this in the base class animal (in java, they are virtual by default)
 works with pointers, not objects
 
