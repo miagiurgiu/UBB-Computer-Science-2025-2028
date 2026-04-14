@@ -792,7 +792,8 @@ ABSTRACT CLASSES
 
 PURE ABSTRACT CLASSES
 - pure abstract - only virtual stuff (only PURE VIRTUAL functions)
-- UML: Bbstract entities (classes or functions) are represented using **italic font**
+- UML: abstract entities (classes or functions) are represented using **italic font**
+- describes capabilities without committing to a specific implementation.
 
 6) see employee exercise 
 - employee is not an interface in this case
