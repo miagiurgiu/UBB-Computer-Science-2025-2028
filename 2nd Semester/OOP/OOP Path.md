@@ -800,6 +800,10 @@ PURE ABSTRACT CLASSES
 - if we had dotted line it would have been an interface because dotted line appears only when there is an interface (abstract stuff)
 - like in animals (abstract class, resembles to interface)
 
+![[Pasted image 20260414180854.png]]
+
+
+
 A5
 CHECK FOR memory leaks in CLion terminal:
 ```
