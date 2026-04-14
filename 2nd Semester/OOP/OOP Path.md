@@ -1081,5 +1081,6 @@ std::istream& operator>>(std::istream& is, Coat& c);
 - in C: error flags, return codes (without exceptions)
 - = an organised way of managing exceptional situations occuring during execution
 - try -> dangerous code
-- catch -> what to do in case the dangerous
+- catch -> what to do in case of dangerous code (holds the code that deals with the problem)
+- throw -> the problematic code notifies the calling code
 
