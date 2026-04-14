@@ -712,15 +712,15 @@ virtual function_signature
 2) in Animal.h - virtual vs non virtual 
 - override specifier - helps us in case we forget to say virtual in the base class
 ```
-std::string toString() const;
+std::string toString() const; 
 
 vs 
 
-std::string toString() const override;
+std::string toString() const override; // the standard -> deriv
 
 vs
 
-virtual std::string toString() const;
+virtual std::string toString() const; // the trigger -> base class -> opens the door for dynamic binding
 ```
 
 3) virtual table is a data member automatically allocated when calling stuff with "virtual"
