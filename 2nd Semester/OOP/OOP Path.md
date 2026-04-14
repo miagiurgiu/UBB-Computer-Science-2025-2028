@@ -823,3 +823,70 @@ public:
 { return a.getColour() == this->colour; }  
 };
 ```
+usage:
+```
+void filterAnimals()  
+{  
+    vector<Animal*> animals = createAnimals();  
+  
+    FilterWeightLessThan filterW{ 30 };  
+    FilterColour filterC{ "black" };  
+  
+    cout << "Animals having weight less than 30: ";  
+    filterByCriterion(animals, &filterW);  
+  
+    cout << "Black animals: ";  
+    filterByCriterion(animals, &filterC);  
+  
+    destroyAnimals(animals);  
+}
+```
+
+![[Pasted image 20260414155733.png]]
+```
+#pragma once
+#include <string>
+
+class Employee
+{
+protected:
+    std::string name;
+    double baseSalary;
+
+public:
+    Employee(const std::string& name, double baseSalary)
+        : name{name}, baseSalary{baseSalary} {}
+
+    virtual ~Employee() = default;
+
+    virtual std::string toString() const
+    {
+        return this->name;
+    }
+
+    virtual double computeSalary() const
+    {
+        return this->baseSalary;
+    }
+};
+
+class Manager : public Employee
+{
+private:
+    double bonus;
+
+public:
+    Manager(const std::string& name, double baseSalary, double bonus)
+        : Employee{name, baseSalary}, bonus{bonus} {}
+
+    std::string toString() const override
+    {
+        return "Manager " + this->name;
+    }
+
+    double computeSalary() const override
+    {
+        return this->baseSalary + this->bonus;
+    }
+};
+```
