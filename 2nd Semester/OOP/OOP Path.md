@@ -780,10 +780,13 @@ ability to check with dynamic casting
 
 PURE VIRTUAL FUNCTIONS
 - functions with no body in the base class
-- the compiler reserves a slot in the vt
+- the compiler reserves a slot in the vtable leaving the address empty
 ```
 virtual function_signature = 0;
 ```
+
+ABSTRACT CLASSES
+- any class containing
 pure abstract - only virtual stuff
 pure implementation in the base class - in italics - pure abstract
 
