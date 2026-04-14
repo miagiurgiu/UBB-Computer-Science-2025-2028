@@ -674,6 +674,7 @@ Polymorphism
 - acts differently at runtime depending on object type
 - objects behave differently according to their types
 - ex: message is "speak": each animal makes a different sound
+- works with DYNAMIC BINDING (Animal* a = new Dog();, )
 
 1) static binding vs dynamic binding (late binding): 
 static binding 
@@ -681,6 +682,7 @@ static binding
 - the choice of which function to call is done at COMPILE time
 - depends on the declared type of the variable (not the type of the real object)
 - TO BE USED when behaviour should not change 
+- SLICING because without a pointer/reference. the Dog part of the object is cut off to fit into an Animal variable, destroying polymorphism
 ```
 Animal a = Dog();
 a.speak(); // static binding
