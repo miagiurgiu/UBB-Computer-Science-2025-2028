@@ -1082,7 +1082,8 @@ std::istream& operator>>(std::istream& is, Coat& c);
 - = an organised way of managing exceptional situations occuring during execution
 - try -> dangerous code
 - catch -> what to do in case of dangerous code (holds the code that deals with the problem)
+	- catch (...) means it will catch any type of exception
 - throw -> the problematic code notifies the calling code
 - THROW BY VALUE AND CATCH BY REFERENCE (to avoid copying the object and to preserve polymorphism)
 ![[Pasted image 20260414163843.png]]
-
+- what() -> used when we want to create a class that inherits from std::exception
