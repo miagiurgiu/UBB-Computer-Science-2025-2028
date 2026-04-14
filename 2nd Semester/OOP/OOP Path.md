@@ -1067,3 +1067,6 @@ std::istream& operator>>(std::istream& is, Coat& c);
 ![[Pasted image 20260414162803.png|685]]
 - open a file using the fstream member function open:
 ![[Pasted image 20260414162833.png]]
+- flags:
+- these flags can be combined using | (OR)
+![[Pasted image 20260414163033.png]]
