@@ -1044,7 +1044,7 @@ ex: file streams = c++ objects used to interact with files
 - input stream => when the buffer is flushed, data contained in it is flushed.
  = SYNCRONIZATION 
  
-2) IOSTREAM library
+3) IOSTREAM library
 - provides input/output functionality using streams
 - insertion operator:
 ![[Pasted image 20260414161936.png]]
@@ -1056,8 +1056,8 @@ std::ostream& operator<<(std::ostream& os, const Coat& c);
 std::istream& operator>>(std::istream& is, Coat& c);
 ```
 
-3) MANIPULATORS = functions used along insertion and extraction operators on stream objects (ex: endl)
-4) FILES = data structures stored on a disk device
+4) MANIPULATORS = functions used along insertion and extraction operators on stream objects (ex: endl)
+5) FILES = data structures stored on a disk device
 - in order to work with a file, we must connect a stream to that file
 - any input/output operation performed on the stream will be applies to the file associated with that stream
 	- fstream class
@@ -1071,8 +1071,11 @@ std::istream& operator>>(std::istream& is, Coat& c);
 - these flags can be combined using | (OR)
 ![[Pasted image 20260414163033.png]]
 
-3) How to check if a file stream was successfully opened for a file:
+6) How to check if a file stream was successfully opened for a file:
 ![[Pasted image 20260414163151.png]]
 
-4) EOF
+7) EOF
 - it is a flag that gets set only after a failed attempt to read past the end of the file
+
+88) HANDLING EXCEPTIONS
+8
