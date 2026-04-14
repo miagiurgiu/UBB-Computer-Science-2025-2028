@@ -674,7 +674,7 @@ Polymorphism
 - acts differently at runtime depending on object type
 - objects behave differently according to their types
 - ex: message is "speak": each animal makes a different sound
-- works with DYNAMIC BINDING (Animal* a = new Dog();, )
+- works with DYNAMIC BINDING (Animal* a = new Dog(); NOT Animal a = Dog();)
 
 1) static binding vs dynamic binding (late binding): 
 static binding 
