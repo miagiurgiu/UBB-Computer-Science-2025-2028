@@ -1073,3 +1073,6 @@ std::istream& operator>>(std::istream& is, Coat& c);
 
 3) How to check if a file stream was successfully opened for a file:
 ![[Pasted image 20260414163151.png]]
+
+4) EOF
+- it is a flag that gets set only after 
