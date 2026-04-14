@@ -1058,4 +1058,5 @@ std::istream& operator>>(std::istream& is, Coat& c);
 
 3) MANIPULATORS = functions used along insertion and extraction operators on stream objects (ex: endl)
 4) FILES = data structures stored on a disk device
-- in order to wo
+- in order to work with a file, we must connect a stream to that file
+- any input/output operation performed on the stream will be applies to the file associated with that stream
