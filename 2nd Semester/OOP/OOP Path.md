@@ -671,12 +671,13 @@ double resDouble = add<double>(-1.2,2.6);
 ```
 ## Lecture 7 - 8 apr 2026
 Polymorphism
-- acts differently at runtime depending on object
-- behave differently according to their types
-- message is speak: each animal makes a different sound
+- acts differently at runtime depending on object type
+- objects behave differently according to their types
+- ex: message is "speak": each animal makes a different sound
 
 1) static binding vs dynamic binding (late binding): 
-static - the choice of which function to call is done at compile time, depending on the object?
+static binding 
+- the choice of which function to call is done at compile time, depending on the object?
 dynamic - at runtime - when we know the type of the object - so that the correct to_string function is called
 virtual function declared like this in the base class animal (in java, they are virtual by default)
 works with pointers, not objects
