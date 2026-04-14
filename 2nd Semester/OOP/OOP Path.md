@@ -765,3 +765,6 @@ std::deque
 std::list
 ![[Pasted image 20260414131404.png]]
 
+lambda expressions:
+![[Pasted image 20260414131752.png]]
+
