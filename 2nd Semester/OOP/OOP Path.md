@@ -844,29 +844,36 @@ void filterAnimals()
 
 ![[Pasted image 20260414155733.png]]
 ```
-#pragma once
+#include <iostream>
+#include <vector>
 #include <string>
+
+using namespace std;
+
+// =======================
+// Domain
+// =======================
 
 class Employee
 {
 protected:
-    std::string name;
+    string name;
     double baseSalary;
 
 public:
-    Employee(const std::string& name, double baseSalary)
+    Employee(const string& name, double baseSalary)
         : name{name}, baseSalary{baseSalary} {}
 
     virtual ~Employee() = default;
 
-    virtual std::string toString() const
+    virtual string toString() const
     {
-        return this->name;
+        return name;
     }
 
     virtual double computeSalary() const
     {
-        return this->baseSalary;
+        return baseSalary;
     }
 };
 
@@ -876,17 +883,114 @@ private:
     double bonus;
 
 public:
-    Manager(const std::string& name, double baseSalary, double bonus)
+    Manager(const string& name, double baseSalary, double bonus)
         : Employee{name, baseSalary}, bonus{bonus} {}
 
-    std::string toString() const override
+    string toString() const override
     {
-        return "Manager " + this->name;
+        return "Manager " + name;
     }
 
     double computeSalary() const override
     {
-        return this->baseSalary + this->bonus;
+        return baseSalary + bonus;
     }
 };
+
+// =======================
+// Filters
+// =======================
+
+class Filter
+{
+public:
+    virtual bool include(const Employee& e) const = 0;
+    virtual ~Filter() = default;
+};
+
+class FilterSalaryGreaterThan : public Filter
+{
+private:
+    double value;
+
+public:
+    FilterSalaryGreaterThan(double value) : value{value} {}
+
+    bool include(const Employee& e) const override
+    {
+        return e.computeSalary() > value;
+    }
+};
+
+class FilterName : public Filter
+{
+private:
+    string text;
+
+public:
+    FilterName(const string& text) : text{text} {}
+
+    bool include(const Employee& e) const override
+    {
+        return e.toString().find(text) != string::npos;
+    }
+};
+
+// =======================
+// Helper functions
+// =======================
+
+vector<Employee*> createEmployees()
+{
+    vector<Employee*> employees;
+
+    employees.push_back(new Employee{"Ana", 4000});
+    employees.push_back(new Employee{"Vlad", 3500});
+    employees.push_back(new Manager{"Ion", 5000, 1500});
+    employees.push_back(new Manager{"Maria", 6000, 2000});
+
+    return employees;
+}
+
+void destroyEmployees(vector<Employee*>& employees)
+{
+    for (Employee* e : employees)
+        delete e;
+    employees.clear();
+}
+
+void filterByCriterion(const vector<Employee*>& employees, const Filter* filter)
+{
+    for (Employee* e : employees)
+    {
+        if (filter->include(*e))
+            cout << e->toString() << " | salary = " << e->computeSalary() << '\n';
+    }
+}
+
+void filterEmployees()
+{
+    vector<Employee*> employees = createEmployees();
+
+    FilterSalaryGreaterThan filterS{5000};
+    FilterName filterN{"Manager"};
+
+    cout << "Employees having salary greater than 5000:\n";
+    filterByCriterion(employees, &filterS);
+
+    cout << "\nEmployees whose name/title contains 'Manager':\n";
+    filterByCriterion(employees, &filterN);
+
+    destroyEmployees(employees);
+}
+
+// =======================
+// Main
+// =======================
+
+int main()
+{
+    filterEmployees();
+    return 0;
+}
 ```
