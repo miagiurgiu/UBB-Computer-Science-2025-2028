@@ -1089,3 +1089,6 @@ std::istream& operator>>(std::istream& is, Coat& c);
 - what() -> used when we want to create (override) a class that inherits from std::exception, but std::exception does not allow a string in the constructor, so we need std::runtime_error as well, which receives a string as a parameter in the constructor, and std::runtime_error is a sub-class of std::exception.
 - noexcept -> indicates whether a function will throw exceptions or not
 ![[Pasted image 20260414164440.png]]
+
+wrap-up:
+![[Pasted image 20260414164708.png]]
