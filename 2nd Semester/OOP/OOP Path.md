@@ -680,6 +680,7 @@ static binding
 - COMPILER LOOKS AT TYPE (left side of = ) => sees Animal => faster => less flexible
 - the choice of which function to call is done at COMPILE time
 - depends on the declared type of the variable (not the type of the real object)
+- TO BE USED when behaviour should not change 
 ```
 Animal a = Dog();
 a.speak(); // static binding
@@ -689,7 +690,8 @@ dynamic binding
 - the choice of which function to call is done at runtime
 - depends on the type of the real object
 - the correct function is called (ex: to_string, speak)
-- TO BE USED whenever you want subclasses to provide their own logic (speak())
+- TO BE USED whenever you want subclasses to provide their own logic (speak() is different for each animal)
+- ONLY WHEN we have pointers of references to a base class pointing to a derived object
 ```
 Animal* a = new Dog();
 a->speak(); // dynamic binding
