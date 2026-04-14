@@ -1079,5 +1079,7 @@ std::istream& operator>>(std::istream& is, Coat& c);
 
 8) HANDLING EXCEPTIONS
 - in C: error flags, return codes (without exceptions)
-- = an organis
+- = an organised way of managing exceptional situations occuring during execution
+- try -> dangerous code
+- catch -> what to do in case the dangerous
 
