@@ -800,8 +800,14 @@ PURE ABSTRACT CLASSES
 - if we had dotted line it would have been an interface because dotted line appears only when there is an interface (abstract stuff)
 - like in animals (abstract class, resembles to interface)
 
+This scheme shows polymorphism (Animal -> Penguin) and architecture (Service -> Repo)
 ![[Pasted image 20260414180854.png]]
+```
+Animal* a = new Penguin();
+a->speak();
+a->walkLikePenguin();
 
+```
 
 
 A5
