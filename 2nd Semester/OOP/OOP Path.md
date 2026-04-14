@@ -767,4 +767,18 @@ std::list
 
 lambda expressions:
 ![[Pasted image 20260414131752.png]]
-
+ex: 
+```
+void Repository::delete_coat(const std::string& size, const std::string& colour) {  
+    auto it = std::find_if(this->coats.begin(), this->coats.end(),  
+        [&](const Coat& c) {  
+            return c.get_size() == size && c.get_colour() == colour;  
+        });  
+    if (it==this->coats.end()) { // did not find the desired coat  
+        throw RepositoryException("Coat does not exist");  
+    }  
+    this->coats.erase(it);  
+    this->load_to_file();  
+    //return true;  
+}
+```
