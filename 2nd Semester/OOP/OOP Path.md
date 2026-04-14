@@ -803,16 +803,22 @@ PURE ABSTRACT CLASSES
 This scheme shows polymorphism (Animal -> Penguin) and architecture (Service -> Repo)
 ![[Pasted image 20260414180854.png]]
 ```
+// this shows POLYMORPHISM
+
 Animal* a = new Penguin();
 a->speak();
 a->walkLikePenguin();
 
-this shows POLYMORPHISM
+
 pointer to base is Animal*
 real object is Penguin
 the call goes to the function from Penguin (dynamic binding)
 ```
 
+```
+
+
+```
 
 A5
 CHECK FOR memory leaks in CLion terminal:
