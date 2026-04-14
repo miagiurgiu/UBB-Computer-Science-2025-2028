@@ -1033,6 +1033,7 @@ int main()
 ## Streams, files, exceptions
 
 1) STREAM = abstraction for receiving/sending data in input/output
+- they are SERIAL (data sent one at a time, in a SERIAL manner)
 ex: receive data from keyboard/memory/file -> send it to destination display/memory/file
-ex: file strs
+ex: file streams = c++ objects used to interact with files
 ![[Pasted image 20260414160719.png]]
