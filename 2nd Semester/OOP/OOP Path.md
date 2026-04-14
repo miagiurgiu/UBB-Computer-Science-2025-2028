@@ -753,3 +753,8 @@ A6-7
 	- use the iostream library
 	- overload the insertion/extraction operators
 	- >>, << - usually used for reading/writing to a file, not only for reading/writing to console
+
+## THEORY
+
+std::vec
+![[Pasted image 20260414131235.png]]
