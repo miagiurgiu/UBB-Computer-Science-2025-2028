@@ -756,5 +756,9 @@ A6-7
 
 ## THEORY
 
-std::vec
+std::vector
 ![[Pasted image 20260414131235.png]]
+
+std::deque
+![[Pasted image 20260414131326.png]]
+
