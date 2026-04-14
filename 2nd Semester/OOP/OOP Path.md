@@ -1086,4 +1086,4 @@ std::istream& operator>>(std::istream& is, Coat& c);
 - throw -> the problematic code notifies the calling code
 - THROW BY VALUE AND CATCH BY REFERENCE (to avoid copying the object and to preserve polymorphism)
 ![[Pasted image 20260414163843.png]]
-- what() -> used when we want to create a class that inherits from std::exception
+- what() -> used when we want to create (override) a class that inherits from std::exception, but std::exception does not allow a string in the constructor, so we need std::runtime_error as well, whi
