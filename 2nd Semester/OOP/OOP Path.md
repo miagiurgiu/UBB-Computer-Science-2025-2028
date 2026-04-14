@@ -1045,3 +1045,5 @@ ex: file streams = c++ objects used to interact with files
  = SYNCRONIZATION 
  
 2) IOSTREAM library
+- provides input/output functionality using streams
+- 
