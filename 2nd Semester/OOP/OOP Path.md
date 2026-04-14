@@ -681,7 +681,7 @@ static binding
 - COMPILER LOOKS AT TYPE (left side of = ) => sees Animal => faster => less flexible
 - the choice of which function to call is done at COMPILE time
 - depends on the declared type of the variable (not the type of the real object)
-- TO BE USED when behaviour should not change 
+- TO BE USED when behaviour should not change -> for shared, fixed logic
 - SLICING because without a pointer/reference. the Dog part of the object is cut off to fit into an Animal variable, destroying polymorphism
 ```
 Animal a = Dog();
@@ -692,7 +692,7 @@ dynamic binding
 - the choice of which function to call is done at runtime
 - depends on the type of the real object
 - the correct function is called (ex: to_string, speak)
-- TO BE USED whenever you want subclasses to provide their own logic (speak() is different for each animal)
+- TO BE USED whenever you want subclasses to provide their own logic (speak() is different for each animal) -> for behaviour that changes per subclass
 - ONLY WHEN we have pointers of references to a base class pointing to a derived object
 - VIRTUAL (tells the compiler to look at the vtable at runtime to find the correct function)
 ```
