@@ -746,6 +746,7 @@ When virtual functions are used, compiler manages polymorphism through these ste
 upcasting (up=implicit) 
 - Upcasting is the process of converting a derived class pointer or reference to a base class pointer or reference. 
 - It’s called “up” casting because we’re moving up the inheritance hierarchy, from a more specific type to a more general one.
+- a Dog is always an Animal, so no speci
 
 downcasting 
 - down the hierarchy 
