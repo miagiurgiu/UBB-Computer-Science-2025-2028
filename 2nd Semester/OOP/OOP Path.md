@@ -1070,3 +1070,6 @@ std::istream& operator>>(std::istream& is, Coat& c);
 - flags:
 - these flags can be combined using | (OR)
 ![[Pasted image 20260414163033.png]]
+
+3) How to check if a file stream was successfully opened for a file:
+![[Pasted image 20260414163151.png]]
