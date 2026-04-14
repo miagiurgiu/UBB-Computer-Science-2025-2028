@@ -1032,4 +1032,5 @@ int main()
 
 ## Streams, files, exceptions
 
-1) STRE
+1) STREAM = abstraction for receiving/sending data in input/output
+ex: receive data from keyboard/memory/file -> send it to destination display/memory/file
