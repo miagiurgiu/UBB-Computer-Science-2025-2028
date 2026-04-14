@@ -712,11 +712,11 @@ virtual function_signature
 2) in Animal.h - virtual vs non virtual 
 - override specifier - helps us in case we forget to say virtual in the base class
 ```
-std::string toString() const; // the standard -> derived class -> 
+std::string toString() const; // the standard -> derived class -> if the base is virtual
 
 vs 
 
-std::string toString() const override; 
+std::string toString() const override; // the trigger -> b
 
 vs
 
