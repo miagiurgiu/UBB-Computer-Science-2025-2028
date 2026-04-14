@@ -731,7 +731,9 @@ virtual std::string toString() const; // the trigger -> base class -> opens the 
 - "Although is an animal at compile time, it will be a dog at runtime and it will act according to Dog class"
 
 When virtual functions are used, compiler manages polymorphism through these steps:
-1) crate virtual table
+1) create virtual table (vtable)
+	- create static array of function addresses for every class using virtual functions
+	- each cell points to the most 
 - pointer to it
 - ...
 - call
