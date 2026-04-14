@@ -1046,4 +1046,5 @@ ex: file streams = c++ objects used to interact with files
  
 2) IOSTREAM library
 - provides input/output functionality using streams
-- 
+
+![[Pasted image 20260414161936.png]]
