@@ -733,8 +733,10 @@ virtual std::string toString() const; // the trigger -> base class -> opens the 
 When virtual functions are used, compiler manages polymorphism through these steps:
 1) create virtual table (vtable)
 	- create static array of function addresses for every class using virtual functions
-	- each cell points to the most 
-- pointer to it
+	- each element of the array points to the most derived function 
+2) add pointer to it (vptr)
+	- add to the base class a hidden pointer to the virtual table
+	- vpt
 - ...
 - call
 
