@@ -1040,4 +1040,6 @@ ex: file streams = c++ objects used to interact with files
 
 1) BUFFER = memory block acting as an intermediary between the STREAM and the DESTINATION
 - useful because writing large chunks at once is more efficient than doing it byte-by-byte (because there are fewer read/write calls needed)
-- output stream => when the buffer is flushed, data contained
+- output stream => when the buffer is flushed, data contained in the buffer is written to the physical medium
+- input stream => when the buffer is flushed, data contained in it is flushed.
+- 
