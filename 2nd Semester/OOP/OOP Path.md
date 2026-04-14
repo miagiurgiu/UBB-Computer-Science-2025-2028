@@ -730,8 +730,8 @@ virtual std::string toString() const; // the trigger -> base class -> opens the 
 3) virtual table is a data member automatically allocated when calling stuff with "virtual"
 - "Although is an animal at compile time, it will be a dog at runtime and it will act according to Dog class"
 
-steps (not directly)
-- crate virtual table
+When virtual functions are used, compiler manages polymorphism through these steps:
+1) crate virtual table
 - pointer to it
 - ...
 - call
