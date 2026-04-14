@@ -786,8 +786,12 @@ virtual function_signature = 0;
 ```
 
 ABSTRACT CLASSES
-- any class containing
-pure abstract - only virtual stuff
+- any class containing at least one PURE VIRTUAL function
+- you cannot create objects of an abstract class (can't instantiate)
+- it serves as a blueprint for derived classes
+
+PURE ABSTRACT CLASSES
+	- pure abstract - only virtual stuff
 pure implementation in the base class - in italics - pure abstract
 
 6) see employee exercise 
