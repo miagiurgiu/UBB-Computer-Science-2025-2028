@@ -776,9 +776,12 @@ ability to check with dynamic casting
 
 5) constructors cannot be virtual
 - because we need the exact type of the object at the moment of creation
-- virtual table pointer is actually initialised in the constructor
+- virtual table pointer (vptr) is actually initialised during the constructor's execution
 
-
+PURE VIRTUAL FUNCTIONS
+```
+`virtual function_signature = 0;`
+```
 pure abstract - only virtual stuff
 pure implementation in the base class - in italics - pure abstract
 
