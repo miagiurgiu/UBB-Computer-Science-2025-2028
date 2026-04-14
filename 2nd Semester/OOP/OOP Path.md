@@ -1077,5 +1077,7 @@ std::istream& operator>>(std::istream& is, Coat& c);
 7) EOF
 - it is a flag that gets set only after a failed attempt to read past the end of the file
 
-88) HANDLING EXCEPTIONS
-8
+8) HANDLING EXCEPTIONS
+- in C: error flags, return codes (without exceptions)
+- = an organis
+
