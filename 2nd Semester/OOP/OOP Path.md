@@ -807,6 +807,10 @@ Animal* a = new Penguin();
 a->speak();
 a->walkLikePenguin();
 
+this shows POLYMORPHISM
+pointer to base is Animal*
+real object is Penguin
+the call goes to the function from Penguin (dynamic binding)
 ```
 
 
