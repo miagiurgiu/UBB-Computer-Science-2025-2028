@@ -670,7 +670,7 @@ int resInt = add<int>(3,4);
 double resDouble = add<double>(-1.2,2.6);
 ```
 ## Lecture 7 - 8 apr 2026
-Polymorphism
+Polymorphism (NEEDS POINTERS, not PLAIN OBJECTS because of SLICING)
 - acts differently at runtime depending on object type
 - objects behave differently according to their types
 - ex: message is "speak": each animal makes a different sound
