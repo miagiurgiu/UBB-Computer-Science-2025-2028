@@ -716,7 +716,7 @@ std::string toString() const; // the standard -> derived class -> if the base is
 
 vs 
 
-std::string toString() const override; // the trigger -> b
+std::string toString() const override; // the safeguard -> derived class -> forces compiler to check if a matching virtual function exists in the base class
 
 vs
 
