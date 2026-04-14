@@ -1028,3 +1028,8 @@ int main()
 }
 
 ```
+
+
+## Streams, files, exceptions
+
+1) STRE
