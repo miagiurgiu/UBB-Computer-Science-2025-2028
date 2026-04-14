@@ -775,7 +775,7 @@ ability to check with dynamic casting
 - If the base destructor isn't `virtual`, deleting a `Dog` through an `Animal*` only calls `~Animal()`. This leaves the `Dog` parts in memory, causing **leaks**. A `virtual` destructor ensures the program looks at the **actual object type** and calls both destructors in the correct order
 
 5) constructors cannot be virtual
-- we need the exact type
+- because we need the exact type of the object at the moment of creation
 - virtual table pointer is actually initialised in the constructor
 
 
