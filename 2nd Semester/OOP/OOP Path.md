@@ -796,7 +796,7 @@ PURE ABSTRACT CLASSES
 - describes capabilities without committing to a specific implementation.
 
 6) see employee exercise 
-- employee is not an interface in this case
+- employee is not an interface in this case (it is a normal, base class)
 - dotted line in that case
 - like in animals
 
