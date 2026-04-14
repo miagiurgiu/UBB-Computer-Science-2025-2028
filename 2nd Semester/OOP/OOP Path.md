@@ -757,10 +757,14 @@ downcasting
 - not allowed without an explicit cast
 
 static cast 
-- TO BE USED at compile time
+- TO BE USED at COMPILE time
 - converts ref/pointer to specified type
+- only checks if types are in the same hierarchy
+- does not check the real object at runtime -> bad casts cause errors
 
-ability to check with dynamic casting.
+ability to check with dynamic casting
+- to be used ar RUN time
+- 
 
 4) why does the destructor have to be virtual?
 - usually need to be virtual
