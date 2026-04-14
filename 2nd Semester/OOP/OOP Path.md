@@ -694,10 +694,12 @@ dynamic binding
 - the correct function is called (ex: to_string, speak)
 - TO BE USED whenever you want subclasses to provide their own logic (speak() is different for each animal)
 - ONLY WHEN we have pointers of references to a base class pointing to a derived object
+- VIRTUAL (tells the compiler to look at the vtable at runtime to find the correct function)
 ```
 Animal* a = new Dog();
 a->speak(); // dynamic binding
 ```
+
 virtual function
 - declared in base class (animal) with VIRTUAL
 - in java, all methods are virtual by default
