@@ -677,6 +677,7 @@ Polymorphism
 
 1) static binding vs dynamic binding (late binding): 
 static binding 
+- COMPILER LOOKS AT TYPE (left side of = ) => sees Animal => faster => less flexible
 - the choice of which function to call is done at COMPILE time
 - depends on the declared type of the variable (not the type of the real object)
 ```
