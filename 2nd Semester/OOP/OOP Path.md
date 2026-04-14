@@ -797,7 +797,7 @@ PURE ABSTRACT CLASSES
 
 6) see employee exercise 
 - employee is not an interface in this case (it is a normal, base class)
-- dotted line in that case
+- because we have dotted line, and dotted line appears only when 
 - like in animals
 
 A5
