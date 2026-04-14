@@ -791,8 +791,8 @@ ABSTRACT CLASSES
 - it serves as a blueprint for derived classes
 
 PURE ABSTRACT CLASSES
-	- pure abstract - only virtual stuff
-pure implementation in the base class - in italics - pure abstract
+- pure abstract - only virtual stuff (only PURE VIRTUAL functions)
+- UML: Bbstract entities (classes or functions) are represented using **italic font**
 
 6) see employee exercise 
 - employee is not an interface in this case
