@@ -1063,5 +1063,6 @@ std::istream& operator>>(std::istream& is, Coat& c);
 	- fstream class
 		- ifstream (class derived from istream) -> input file stream
 		- ofstream (class derived from ostream) -> output file stream
-- open a file:
-![[Pasted image 20260414162803.png]]
+- open a file using the constructor of the classes ifstream and ofstream:
+![[Pasted image 20260414162803.png|685]]
+![[Pasted image 20260414162833.png]]
