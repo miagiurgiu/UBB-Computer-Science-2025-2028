@@ -821,7 +821,7 @@ IRepository = interface -> ADD, REMOVE, UPDATE, GET
 	contains CSVRepo, MemoryRepo, DBRepo, XMLRepo 
 
 Service {
-	IRepository* repo;
+	IRepository* repo; // service does not know what exact repo does it have, but it calls repo.add(), repo.remove() etc and functions correctly no matter the repo type
 }
 
 ```
