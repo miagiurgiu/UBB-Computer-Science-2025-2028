@@ -4418,5 +4418,41 @@ int main(int argc, char** argv) {
 10) CORRECT SYNCHRONIZATION VERSION:
 - f
 ```
+#include <stdio.h>
+#include <pthread.h>
+
+int n = 0; // shared couter, all threads touch the same n
+pthread_mutex_t m; // declaration of a mutex (mutex = one-key lock for shared data)
+
+void* f(void* a) { // each thread starts here
+    for(int i=0; i<(int)(long)a; i++) { // repeat a times (dirty trick)
+        pthread_mutex_lock(&m); // take the lock (nobody else may touch protected code>
+        n++; // increment shared counter (now it's protected because only one thread d>
+        pthread_mutex_unlock(&m); // release the lock (thank you, next)
+    }
+    return NULL;
+}
+
+int main(int argc, char** argv) {
+    pthread_t t[10];
+    int k = 1;// how many increments each thread does
+
+    if(argc > 1) {// if user gave command-line argument, read that into k
+        sscanf(argv[1], "%d", &k); // k = how many times to increment
+    }
+
+    pthread_mutex_init(&m, NULL);// initialisation of the mutex m (default settings)
+
+    for(int i=0; i<10; i++) {
+        pthread_create(&t[i], NULL, f, (void*)(long)k); // create thread i that runs f>
+    } // 10 threads, each thread loops k times, each increment protected by mutex
+
+    for(int i=0; i<10; i++) { // wait for thread i to finish (main prints only after a>
+        pthread_join(t[i], NULL);
+    }
+	pthread_mutex_destroy(&m); // destroy mutex when no longer needed
+    printf("%d\n", n); // print final value of shared counter
+}
+
 
 ```
