@@ -3975,21 +3975,23 @@ int main(int argc, char *argv[]) {
             sleep(1); // child sleeps 1 sec while holding semaphore
             // and unlocks it once it is done
             sem_post(sem); // release semaphore
-            exit(0); // childe
+            exit(0); // child exits
         }
     }
 
-    for (i = 0; i < 10; i++) {
+    for (i = 0; i < 10; i++) { // parent waits
         wait(0);
     }
-    // destroy the semaphore
-    sem_destroy(sem);
-    // remove the link between the semaphore pointer and the shared memory space
-    shmdt(sem);
-    // delete the shared memory segment, so that memory can be used by other processes freely
-    shmctl(shmid, IPC_RMID, 0);
-    gettimeofday(&tv2, NULL);
-    printf("Total time = %f seconds\n", (double)(tv2.tv_usec - tv1.tv_usec) / 1000000 + (double) (tv2.tv_sec - tv1.tv_sec));
+    
+    sem_destroy(sem); // destroy the semaphore
+    
+    shmdt(sem); // remove the link between the semaphore pointer and the shared memory space
+    
+    shmctl(shmid, IPC_RMID, 0); // delete the shared memory segment, so that memory can be used by other processes freely
+    
+    gettimeofday(&tv2, NULL); // save finish time
+    
+    printf("Total time = %f seconds\n", (double)(tv2.tv_usec - tv1.tv_usec) / 1000000 + (double) (tv2.tv_sec - tv1.tv_sec)); // print elapsed seconds
 
     return 0;
 }
