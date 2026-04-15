@@ -3893,7 +3893,7 @@ int main()
 			sleep(i*2); // we are in a child - waits some time depending on loop index
 			//signal();
 			kill(getppid(), SIGUSR1); // child sends signal SIGUSR1 to its parent
-			printf("Child notified parent: %ld\n", (long)getpid()); // print
+			printf("Child notified parent: %ld\n", (long)getpid()); // child prints that it notified parent
 			while(flag==0)
 			{
 				sleep(1);
