@@ -3352,6 +3352,7 @@ wait(0)
 Problem 1:
 ![[Pasted image 20260415153349.png]]
 Problem 1 official solution:
+- crea
 ```
 #include <stdio.h> // printf, perror
 #include <stdlib.h> // atoi, exit
@@ -3379,7 +3380,7 @@ int main(int argc, char *argv[]) {
         }
     }
     for(int i = 0; i < n; i++) {
-        wait(NULL);
+        wait(NULL); // wait for each child to finish
     }
     return 0;
 }
