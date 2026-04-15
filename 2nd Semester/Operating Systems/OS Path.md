@@ -4127,3 +4127,9 @@ fast result+correct: n+=(int)(long)a; and comment everything else in f except re
 ### Individual work after Lecture 7
 Process = separate memory
 Thread = same process, same memory, multiple execution paths
+
+1) Threads
+- cheaper to create
+- easier to communicate with
+- easier to break because they share variables
+- shared memory between processes s
