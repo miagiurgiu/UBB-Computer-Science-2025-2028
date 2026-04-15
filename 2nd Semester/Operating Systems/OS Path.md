@@ -4128,6 +4128,8 @@ fast result+correct: n+=(int)(long)a; and comment everything else in f except re
 Process = separate memory
 Thread = same process, same memory, multiple execution paths
 
+0) Shared memory (IPC)
+
 1) Threads
 - cheaper to create
 - easier to communicate with
@@ -4136,4 +4138,5 @@ Thread = same process, same memory, multiple execution paths
 - threads are created with **pthread_create**
 - threads are waited with **pthread_join**
 - shared memory between processes is powerful but dangerous without synchronization
-- race conditions appear when multiple threads touch the same data without protection -> fi
+- race conditions appear when multiple threads touch the same data without protection -> fix with **mutex**
+1) Shared memory
