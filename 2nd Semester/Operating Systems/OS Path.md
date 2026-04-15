@@ -4372,6 +4372,7 @@ int main(int argc, char** argv) {
 - what's going on with that 910?
 	- n++ is NOT ATOMIC (not one step)
 	- alternating table (image)
+	- unsynchronized access = race condition
 ```
 #include <stdio.h>
 #include <pthread.h>
