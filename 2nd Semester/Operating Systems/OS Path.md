@@ -4061,8 +4061,12 @@ else {
 }
 ```
 
+signals:
+- install reaction
+```
 
 
+```
 ## Lecture 6 - 
 Processes
 ## Lecture 7 - 8 apr 2026
