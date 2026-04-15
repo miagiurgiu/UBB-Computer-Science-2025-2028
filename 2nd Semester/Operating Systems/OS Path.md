@@ -3835,9 +3835,15 @@ lab solution:
 	- after each fork, store own PID
 	- each child inherits previous path
 	- child appends itself
-
 So each process can know:  
 **who is above me in the chain**
+- example: n=3 levels
+	- parent PID: 100
+	- child1 PID: 200
+	- child 2 PID: 300
+	- child 3 PID: 400
+	- ARRAY: [100, 200, 300, 400]
+	- REVERSE (p)
 ```
 #include <unistd.h>
 #include <stdio.h>
@@ -3872,6 +3878,7 @@ int main()
 	return 0;
 }
 ```
+
 
 Problem 22
 ![[Pasted image 20260415163008.png]]
