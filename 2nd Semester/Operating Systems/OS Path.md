@@ -4023,7 +4023,13 @@ Communication/sync -> pipe, shared memory, semaphores
 
 fork()
 - after fork(), parent and child continue from the same next line 
-- safe pattern: fork -> 
+- safe pattern: fork -> child exit -> parent wait
+
+signal()
+- signal does not signal
+- signal() installs a handler
+- kill() is the one that sends the signal
+- SIGCHILD 
 ## Lecture 6 - 
 Processes
 ## Lecture 7 - 8 apr 2026
