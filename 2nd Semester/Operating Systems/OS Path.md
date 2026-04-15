@@ -4231,7 +4231,9 @@ int main(int argc, char** argv) {
 - try to run it with ./a 100
 
 5) The famous &i bug
-- 
+- bug in argument passing
+- terminal shows weird outputs like repeating numbers, missing digits, duplicates
+- all threads receive the s
 ```
 #include <stdio.h>
 #include <pthread.h>
@@ -4255,3 +4257,6 @@ int main() {
     }
 }
 ```
+
+![[Pasted image 20260415122351.png]]
+
