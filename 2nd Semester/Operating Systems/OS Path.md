@@ -4156,7 +4156,10 @@ Thread = same process, same memory, multiple execution paths
 - the OS scheduler decides who runs when
 - output order is not fixed
 
-2) Thread function Syntax
+2) Thread function syntax:
 ```
-void* f(void* a);
+void* f(void* a); // this is a thread function
 ```
+- return type void*
+- generic pointer void* (so you can pass anything as parameter)
+- 
