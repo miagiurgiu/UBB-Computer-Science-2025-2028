@@ -3843,7 +3843,8 @@ So each process can know:
 	- child 2 PID: 300
 	- child 3 PID: 400
 	- ARRAY: [100, 200, 300, 400]
-	- REVERSE (p)
+	- REVERSE (printed): [400, 300, 200, 100]
+
 ```
 #include <unistd.h>
 #include <stdio.h>
