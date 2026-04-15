@@ -3419,9 +3419,10 @@ int main()
 }
 ```
 
+Problem 3
+![[Pasted image 20260415154930.png]]
 pr3.c
-3. Write a C program that creates a child process. Both the parent and the child processes will run until they receive a SIGUSR1 signal. Implement signal handling such that if the parent receives the SIGUSR1 signal first, it sends it to the child process as well. If the child process receives a SIGUSR1 signal without the parent receiving the same signal, it will terminate and then the parent should correctly call wait for the child process.  
-
+ 
 - both processes will run until receiving signal SIGUSR1
 - signal handler
 - default if you don't have signal handler -> kill process
@@ -3491,6 +3492,7 @@ official solution:
 #include <stdio.h>
 #include <unistd.h>
 int f;
+
 void child_handler(int sig) {
   printf("Child process terminating...\n");
   exit(0);
