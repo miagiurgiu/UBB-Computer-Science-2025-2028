@@ -3883,13 +3883,13 @@ void signalHandlerCreated(int semnal) // function that runs when process receive
 }
 int main() 
 {
-	signal(SIGUSR1, signalHandlerCreated); // install handler for SIGUSR1 (when parent receives SIGUSR1, run function signalHandlerCreated) -> children inherit 
+	signal(SIGUSR1, signalHandlerCreated); // install handler for SIGUSR1 (when parent receives SIGUSR1, run function signalHandlerCreated) -> children inherit signal dispositions after fork, so children also inherit this handler unless changed
 	for(int i=0; i<10; i++)
 	{
-		pid_t child = fork();
-		if( child == 0)
+		pid_t child = fork(); 
+		if( child == 0) // child
 		{
-			printf("Child created %ld\n", (long)getpid());
+			printf("Child created %ld\n", (long)getpid()); // child prints its own id
 			sleep(i*2); // we are in a child
 			//signal();
 			kill(getppid(), SIGUSR1);
