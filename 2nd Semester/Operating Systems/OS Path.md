@@ -3334,6 +3334,7 @@ done | sort -n -r -k 1
 
 1) How many processes does this have? What is the flow graph for it? Draw them. 8.
 stackoverflow alex kiraly: does wait do anything when called from both processes careated from fork?
+https://stackoverflow.com/questions/44496362/does-wait0-do-anything-when-called-from-both-processes-created-from-fork
 fork()
 fork()
 wait(0)
