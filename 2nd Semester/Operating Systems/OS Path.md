@@ -3899,13 +3899,14 @@ int main()
 				// children should pause here
 				// maybe parent later changes sth
 				// then children can continue
-				sleep(1);
+				// but flag does not exist, and even if declare globally, after fork each child would have its own copy
+				sleep(1); // child keeps waiting in loop
 			}
-			exit(0);
+			exit(0); // child ends
 		}
-		else
+		else // parent
 		{
-			;// continue kidding
+			;// continue kidding (keep creating more children)
 		}
 	}
 	for(int i=0; i<10; i++)
