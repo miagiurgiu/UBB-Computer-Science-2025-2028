@@ -3493,7 +3493,8 @@ official solution:
 - signal - only registers a handler
 - kill - sends a signal
 - SIGCHILD - for child termination cleanup
-- 
+- signals are interruptions with handlers
+- child death must be waited for
 ```
 /*
  * Create a child process.
@@ -3549,7 +3550,6 @@ int main(int argc, char **argv) {
   }
   return 0; // normal end if reached
 }
-
 ```
 
 pb5:
