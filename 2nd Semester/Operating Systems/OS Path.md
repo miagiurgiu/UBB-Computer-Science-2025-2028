@@ -4135,7 +4135,10 @@ Thread = same process, same memory, multiple execution paths
 	- shmdt = detach shared memory from my process
 	- shmctl = control/delete shared memory
 - shared memory objects live in the OS until deleted:
-	- ipcs = shows all the share
+	- ipcs = shows all the shared memory objects
+	- ipcrm = deletes all the shared memory objects
+		- if you forget to ipcrm, the OS can refuse to create new IPCs later
+- shared memory gives common data, not coordination => two pr
 
 1) Threads
 - cheaper to create
