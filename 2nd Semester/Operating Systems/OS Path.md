@@ -4296,6 +4296,7 @@ int main() {
 - main allocates
 - thread reads
 - thread frees
+- ma
 ```
 #include <stdio.h> // for printf
 #include <stddef.h>
