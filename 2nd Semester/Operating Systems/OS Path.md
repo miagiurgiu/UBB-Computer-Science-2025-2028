@@ -4151,5 +4151,8 @@ Thread = same process, same memory, multiple execution paths
 - shared memory between processes is powerful but dangerous without synchronization
 - race conditions appear when multiple threads touch the same data without protection -> fix with **mutex**
 - main() is one execution path
-- pthread_create() starts another execution path -> a routine -> a function given as parameter
+- pthread_create(function_given_as_parameter) starts another execution path -> routine -> a function given as parameter
+- main() and pthread_create() run at the same time
+- the OS scheduler decides who runs when
+- output order is not fixed
 
