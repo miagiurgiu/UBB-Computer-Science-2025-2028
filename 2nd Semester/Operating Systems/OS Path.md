@@ -3366,7 +3366,7 @@ int main(int argc, char *argv[]) {
     }
     int n = atoi(argv[1]); // convert argument to integer
     for(int i = 0; i < n; i++) { // create n child processes
-        int f = fork(); // split current process into 
+        int f = fork(); // split current process into parent and child -> there are two processes running from now on the next lines
         if(-1 == f) {
             perror("Error on fork");
         } else if(0 == f) {
