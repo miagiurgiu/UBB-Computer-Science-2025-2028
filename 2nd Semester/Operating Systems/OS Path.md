@@ -3538,7 +3538,7 @@ int main(int argc, char **argv) {
     }
     exit(0); // technically unreachable unless loop somehow ends
   } else { // parent
-    signal(SIGUSR1, parent_handler); // if parent gets SIGUSR1. cal
+    signal(SIGUSR1, parent_handler); // if parent gets SIGUSR1, call function parent_handler
     signal(SIGCHLD, zombie_handler);
     printf("P - Child PID: %d Parent PID: %d\n", f, getpid());
     while(1) {
