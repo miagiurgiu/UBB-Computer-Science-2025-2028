@@ -3517,19 +3517,19 @@ void parent_handler(int sig) { // function called when parent receives SIGUSR1
   printf("Parent process terminating...\n"); // parent announces exit
   kill(f, SIGUSR1); // send SIGUSR1 to child; f = child PID (in parent)
   wait(0); // collect child, avoid zombie
-  exit(0);
+  exit(0); // parent exits
 }
 
-void zombie_handler(int sig) {
-    printf("Parent waiting for child process to terminate\n");
-    wait(0);
+void zombie_handler(int sig) { // function called when child dies and parent gets SIGCHILD
+    printf("Parent waiting for child process to terminate\n"); // debug message
+    wait(0); // reap child (anti-zombie move)
 }
 
 int main(int argc, char **argv) {
-  f = fork();
-  if (-1 == f) {
-    perror("Error on fork");
-  } else if (0 == f) {
+  f = fork(); // create child
+  if (-1 == f) { // fork failed
+    perror("Error on fork"); // why failed
+  } else if (0 == f) { // c
     signal(SIGUSR1, child_handler);
     printf("C - Child PID: %d Parent PID: %d\n", getpid(),getppid());
     while(1) {
