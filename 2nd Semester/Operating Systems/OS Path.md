@@ -4189,6 +4189,9 @@ gcc -Wall -Wextra -Werror -g -o a a.c -pthread
 - main prints "main"
 - intention: shows that threads run in unpredictable order
 ```
+#include <stdio.h>
+#include <stddef.h>
+#include <
 int n = 1;
 
 void* f(void* a) {
@@ -4216,3 +4219,5 @@ int main(int argc, char** argv) {
     pthread_join(tb, NULL);
 }
 ```
+- result: 
+	- sometimes is main
