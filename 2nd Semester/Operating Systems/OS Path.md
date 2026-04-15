@@ -3874,8 +3874,8 @@ void signalHandlerCreated(int semnal) // function that runs when process receive
 {
 	if(semnal==SIGUSR1) // check if received signal is SIGUSR1
 	{
-		childCount++; // increase count of childre
-		if(childCount==10)
+		childCount++; // increase count of children that notified parent
+		if(childCount==10) // parent has heard from all 10 children
 		{
 			printf("Toti copiii buni\n");
 		}
@@ -3883,7 +3883,7 @@ void signalHandlerCreated(int semnal) // function that runs when process receive
 }
 int main() 
 {
-	signal(SIGUSR1, signalHandlerCreated);
+	signal(SIGUSR1, signalHandlerCreated); // install handler for SIGUSR1 (when parent receives SIGUSR1, run function signalHandlerCreated) -> children inherit 
 	for(int i=0; i<10; i++)
 	{
 		pid_t child = fork();
