@@ -3490,6 +3490,9 @@ official solution:
 	- child exits
 	- parent later gets SIGCHILD
 	- parent's zombie handler calls wait
+- signal - only registers a handler
+- kill - sends a signal
+- SIGCHILD - for child termination cleanup
 ```
 /*
  * Create a child process.
@@ -3497,11 +3500,11 @@ official solution:
  * Implement a mechanism such that when the parent terminates, the child process also terminates without creating zombie processes.
  */
 
-#include <stdlib.h>
-#include <sys/types.h>
-#include <sys/wait.h>
-#include <stdio.h>
-#include <unistd.h>
+#include <stdlib.h> // exit
+#include <sys/types.h> // process-related types
+#include <sys/wait.h> // wait
+#include <stdio.h> // printf, perror
+#include <unistd.h> // fork, getpid, getppid, sl
 int f;
 
 void child_handler(int sig) {
