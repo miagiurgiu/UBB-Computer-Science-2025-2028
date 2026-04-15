@@ -4365,5 +4365,35 @@ int main(int argc, char** argv) {
     return 0;
 }
 
+```
 
+9) Race condition on global n
+```
+int n = 0;
+
+void* f(void* a) {
+    for(int i=0; i<(int)(long)a; i++) {
+        n++;
+    }
+    return NULL;
+}
+
+int main(int argc, char** argv) {
+    pthread_t t[10];
+    int k = 1;
+
+    if(argc > 1) {
+        sscanf(argv[1], "%d", &k);
+    }
+
+    for(int i=0; i<10; i++) {
+        pthread_create(&t[i], NULL, f, (void*)(long)k);
+    }
+
+    for(int i=0; i<10; i++) {
+        pthread_join(t[i], NULL);
+    }
+
+    printf("%d\n", n);
+}
 ```
