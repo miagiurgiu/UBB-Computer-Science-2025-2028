@@ -3889,11 +3889,11 @@ int main()
 		pid_t child = fork();
 		if( child == 0)
 		{
-			printf("Child created %ld\n", getpid());
+			printf("Child created %ld\n", (long)getpid());
 			sleep(i*2); // we are in a child
 			//signal();
 			kill(getppid(), SIGUSR1));
-			printf("Child notified parent: %ld\n, getpid());
+			printf("Child notified parent: %ld\n, (long)getpid());
 			while(flag==0)
 			{
 				sleep(1);
