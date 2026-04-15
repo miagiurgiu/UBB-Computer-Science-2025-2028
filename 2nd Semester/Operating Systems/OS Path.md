@@ -3508,14 +3508,14 @@ official solution:
 int f; // global variable storing result for fork() 
 // global because it helps handlers know who they are
 
-void child_handler(int sig) {
-  printf("Child process terminating...\n");
-  exit(0);
+void child_handler(int sig) { // function called when child receives SIGUSR1
+  printf("Child process terminating...\n"); // child announces exit
+  exit(0); // child exits
 }
 
-void parent_handler(int sig) {
-  printf("Parent process terminating...\n");
-  kill(f, SIGUSR1);
+void parent_handler(int sig) { // function called when parent receives SIGUSR1
+  printf("Parent process terminating...\n"); // parent announces exit
+  kill(f, SIGUSR1); // send
   wait(0);
   exit(0);
 }
