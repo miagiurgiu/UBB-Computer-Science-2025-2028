@@ -4263,7 +4263,7 @@ int main() {
 ![[Pasted image 20260415122351.png]]
 
 6) Fix with an array
-- still unordered, but at leall numbers 0...9 appear once
+- still unordered, but at least all numbers 0...9 appear once
 ```
 #include <stdio.h>
 #include <stddef.h>
@@ -4288,4 +4288,11 @@ int main() {
         pthread_join(t[i], NULL);// wait for thread i (t[i]) to finish
     }
 }
+```
+
+![[Pasted image 20260415125302.png]]
+
+7) Fix with malloc
+```
+
 ```
