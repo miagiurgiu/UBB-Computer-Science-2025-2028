@@ -4024,6 +4024,9 @@ Communication/sync -> pipe, shared memory, semaphores
 fork()
 - after fork(), parent and child continue from the same next line 
 - safe pattern: fork -> child exit -> parent wait
+- child returns 0
+- parent returns child PID
+- both child and parent continue
 
 signal()
 - signal does not signal
@@ -4040,7 +4043,9 @@ shared memory
 - gives one common region to multiple processes
 
 semaphores
-- synchronisation mechamisms
+- synchronisation mechanisms
+
+
 ## Lecture 6 - 
 Processes
 ## Lecture 7 - 8 apr 2026
