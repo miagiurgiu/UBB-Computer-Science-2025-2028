@@ -3481,7 +3481,15 @@ int main()
 official solution:
 - only 2 processes: parent and child -> both keep looping
 - if parent gets SIGUSR1:
-	- 
+	- parent handler runs
+	- parent sends SIGUSR1 to child with kill
+	- parent waits child
+	- parent exits
+- if child gets SIGUSR1:
+	- child handler runs
+	- child exits
+	- parent later gets SIGCHILD
+	- parent's zombie handler calls wait
 ```
 /*
  * Create a child process.
