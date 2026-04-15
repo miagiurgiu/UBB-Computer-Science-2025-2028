@@ -3955,10 +3955,13 @@ int main(int argc, char *argv[]) {
     int shmid = shmget(shmkey, sizeof(sem_t), 0644|IPC_CREAT); // large enough for one semaphore
     
     // we now link the shared memory segment to the previously declared pointer
-    sem = (sem_t*) shmat(shmid, NULL, 0); // attach shared memory to this process
+    sem = (sem_t*) shmat(shmid, NULL, 0); // attach shared memory to this process (sem now points to shared ared)
     
-    // from here on, we treat this semaphore pointer as we would treat a regular semaphore pointer that is declared on the heap
-    sem_init(sem, 1, 1);
+    // from here on, we treat this semaphore pointer as we would treat a regular semaphore pointer that is declared on the heap -> parent and children can refer to the same semaphore, not copies
+    
+    sem_init(sem, 1, 1); // initialize semaphore
+    // sem - which semaphore
+    
 
     // we create processes
     for (i = 0; i < 10; i++) {
