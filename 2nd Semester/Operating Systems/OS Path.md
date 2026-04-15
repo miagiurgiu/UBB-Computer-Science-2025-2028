@@ -4076,7 +4076,7 @@ pipes:
 - one end writes
 - close what you don't use
 
-
+![[Pasted image 20260415153237.png]]
 ## Lecture 6 - 
 Processes
 ## Lecture 7 - 8 apr 2026
