@@ -4191,7 +4191,8 @@ gcc -Wall -Wextra -Werror -g -o a a.c -pthread
 ```
 #include <stdio.h>
 #include <stddef.h>
-#include <
+#include <pthread.h>
+
 int n = 1;
 
 void* f(void* a) {
@@ -4220,4 +4221,6 @@ int main(int argc, char** argv) {
 }
 ```
 - result: 
-	- sometimes is main
+	- sometimes is main b aa
+	- sometimes is aa b main
+	- sometimes is main main main b b b aa aa aa
