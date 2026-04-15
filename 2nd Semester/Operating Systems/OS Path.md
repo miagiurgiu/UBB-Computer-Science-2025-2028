@@ -4164,4 +4164,6 @@ void* f(void* a); // this is a thread function
 - generic pointer void* (so you can pass anything as parameter)
 - inside the function you cast it to the real type you meant
 
-3) main operations
+3) main operations:
+- pthread_t t -> variable that stores thread
+- pthread_create(&t, NULL, f, arg) -> start thread
