@@ -4064,9 +4064,19 @@ else {
 signals:
 - install reaction
 ```
-
-
+signal(SIGX, handler)
 ```
+- send signal
+```
+kill(pid, SIGX)
+```
+
+pipes:
+- one end reads
+- one end writes
+- close what you don't use
+
+
 ## Lecture 6 - 
 Processes
 ## Lecture 7 - 8 apr 2026
