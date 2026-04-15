@@ -4134,5 +4134,6 @@ Thread = same process, same memory, multiple execution paths
 - easier to break because they share variables
 - threads share memory naturally 
 - threads are created with **pthread_create**
-- threads are waited with 
+- threads are waited with **pthread_join**
 - shared memory between processes is powerful but dangerous without synchronization
+- race conditions appear when multiple threads touch the same data without protection -> fi
