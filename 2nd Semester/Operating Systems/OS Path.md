@@ -4138,7 +4138,7 @@ Thread = same process, same memory, multiple execution paths
 	- ipcs = shows all the shared memory objects
 	- ipcrm = deletes all the shared memory objects
 		- if you forget to ipcrm, the OS can refuse to create new IPCs later
-- shared memory gives common data, not coordination => two pr
+- shared memory gives common data, not coordination => two processes may read/write at the wrong moment => shared memory without sync is guaranteed to cause trouble
 
 1) Threads
 - cheaper to create
@@ -4149,4 +4149,4 @@ Thread = same process, same memory, multiple execution paths
 - threads are waited with **pthread_join**
 - shared memory between processes is powerful but dangerous without synchronization
 - race conditions appear when multiple threads touch the same data without protection -> fix with **mutex**
-1) Shared memory
+
