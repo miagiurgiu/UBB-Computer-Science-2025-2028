@@ -4334,7 +4334,36 @@ int main(int argc, char** argv) {
 ```
 
 8) The Dirty Trick
-- 
+- still not ordered
 ```
+#include <stdio.h> // for printf
+#include <stddef.h>
+#include <pthread.h> // for threads
+#include <stdlib.h> // for malloc and free
+
+void* f(void* a) { // the function each thread will execute
+    printf("%d\n", *(int*)a); // treat param a as int* -> dereference (*(int*)) -> pri>
+    free(a);// release that allocated memory
+        // memory must stay alive until the thread uses it
+    return NULL; // nothing to return, thread ends
+}
+
+int main(int argc, char** argv) {
+    pthread_t t[10];// array of 10 thread handles (id s)
+    int i;
+    for(i=0; i<10; i++) { // create threads loop, we want 10
+        int* x = (int*)malloc(sizeof(int)); // allocate memory for one integer
+        *x = i; // write value i into that newly allocated integer
+        pthread_create(&t[i], NULL, f, x);// create thread i that runs f with x as arg
+    }// each thread gets its own separate memory
+
+    for(i=0; i<10; i++) { // wait threads loop, go through all threads
+        pthread_join(t[i], NULL);// wait for thread i (t[i]) to finish
+    }
+    (void)argc;
+    (void)argv;
+    return 0;
+}
+
 
 ```
