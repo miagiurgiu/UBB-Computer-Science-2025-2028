@@ -4029,7 +4029,10 @@ signal()
 - signal does not signal
 - signal() installs a handler
 - kill() is the one that sends the signal
-- SIGCHILD 
+- SIGCHILD - the parent reaps dead children and avoids zombies
+
+pipes
+
 ## Lecture 6 - 
 Processes
 ## Lecture 7 - 8 apr 2026
