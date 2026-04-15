@@ -3890,10 +3890,10 @@ int main()
 		if( child == 0) // child
 		{
 			printf("Child created %ld\n", (long)getpid()); // child prints its own id
-			sleep(i*2); // we are in a child
+			sleep(i*2); // we are in a child - waits some time depending on loop index
 			//signal();
-			kill(getppid(), SIGUSR1);
-			printf("Child notified parent: %ld\n", (long)getpid());
+			kill(getppid(), SIGUSR1); // child sends signal SIGUSR1 to its parent
+			printf("Child notified parent: %ld\n", (long)getpid()); // print
 			while(flag==0)
 			{
 				sleep(1);
