@@ -3866,13 +3866,13 @@ lab solution without semafoare:
 #include <unistd.h>
 #include <signal.h>
 #include <stdlib.h>
-#include <syswait>
-#incude <stdio.h>
+#include <sys/wait.h>
+#include <stdio.h>
 
 int childCount = 0;
 void signalHandlerCreated(int semnal)
 {
-	is(semnal==SIGUSR1)
+	if(semnal==SIGUSR1)
 	{
 		childCount++;
 		if(childCount==10)
@@ -3892,7 +3892,7 @@ int main()
 			printf("Child created %ld\n", (long)getpid());
 			sleep(i*2); // we are in a child
 			//signal();
-			kill(getppid(), SIGUSR1));
+			kill(getppid(), SIGUSR1);
 			printf("Child notified parent: %ld\n, (long)getpid());
 			while(flag==0)
 			{
