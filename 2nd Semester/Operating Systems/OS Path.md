@@ -4132,4 +4132,7 @@ Thread = same process, same memory, multiple execution paths
 - cheaper to create
 - easier to communicate with
 - easier to break because they share variables
-- shared memory between processes s
+- threads share memory naturally 
+- threads are created with **pthread_create**
+- threads are waited with 
+- shared memory between processes is powerful but dangerous without synchronization
