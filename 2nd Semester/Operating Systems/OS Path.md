@@ -3915,6 +3915,11 @@ int main()
 
 
 official solution:
+- // the semaphore can be used to synchronize processes, not just threads
+- // the condition is that the same semaphore can be accessed by all the processes
+- // since after fork, the child process has copies of everything the parent had until the fork, we can't simply create a semaphore and use it
+- // we will instead create a shared memory segment in the parent and place the semaphore there
+- // the child processes will inherit copies of the shared memory ID, but the shared memory space will remain the same
 - 
 ```
 #include <stdlib.h>
@@ -3933,11 +3938,11 @@ int main(int argc, char *argv[]) {
     struct timeval tv1, tv2;
     gettimeofday(&tv1, NULL);
     int i;
-    // the semaphore can be used to synchronized processes, not just threads
-    // the condition is that the same semaphore can be accessed by all the processes
-    // since after fork, the child process has copies of everything the parent had until the fork, we can't simply create a semaphore and use it
-    // we will instead create a shared memory segment in the parent and place the semaphore there
-    // the child processes will inherit copies of the shared memory ID, but the shared memory space will remain the same
+    
+    
+    
+    
+    
     // se we can safely say that the semaphore placed inside the shared memory segment is the same for all processes
     sem_t *sem;
     // generate a key first so we can create a shared memory segment
