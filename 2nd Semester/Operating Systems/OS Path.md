@@ -4224,3 +4224,7 @@ int main(int argc, char** argv) {
 	- sometimes is main b aa
 	- sometimes is aa b main
 	- sometimes is main main main b b b aa aa aa
+- try to run it with ./a 
+- try to run it with ./a 10
+- try to run it with ./a 100
+![[Pasted image 20260415121826.png]]
