@@ -4015,7 +4015,10 @@ int main(int argc, char *argv[]) {
 
 
 next lab -> pipe, fifo, exec 
+### Individual work after Lab 7
 
+Process creation -> fork, exit, wait
+Signals -> signal, kill, SIGUSR1, SIGCHILD
 ## Lecture 6 - 
 Processes
 ## Lecture 7 - 8 apr 2026
