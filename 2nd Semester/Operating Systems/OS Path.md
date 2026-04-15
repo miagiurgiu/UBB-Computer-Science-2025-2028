@@ -4141,6 +4141,7 @@ Thread = same process, same memory, multiple execution paths
 - shared memory gives common data, not coordination => two processes may read/write at the wrong moment => shared memory without sync is guaranteed to cause trouble
 
 1) Threads
+- roommates in the same apartment: same house, different actions, shared fridge, possible chaos
 - cheaper to create
 - easier to communicate with
 - easier to break because they share variables
@@ -4149,4 +4150,6 @@ Thread = same process, same memory, multiple execution paths
 - threads are waited with **pthread_join**
 - shared memory between processes is powerful but dangerous without synchronization
 - race conditions appear when multiple threads touch the same data without protection -> fix with **mutex**
+- main() is one execution path
+- pthread_create() starts another execution path
 
