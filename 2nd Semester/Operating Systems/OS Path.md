@@ -4032,7 +4032,12 @@ signal()
 - SIGCHILD - the parent reaps dead children and avoids zombies
 
 pipes
+- for parent/child-style communication
+- interprocess communication
+- closing unused pipe ends early is essential to avoid stuck programs
 
+shared memory
+- 
 ## Lecture 6 - 
 Processes
 ## Lecture 7 - 8 apr 2026
