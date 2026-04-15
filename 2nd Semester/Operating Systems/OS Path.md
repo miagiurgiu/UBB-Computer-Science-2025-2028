@@ -4521,3 +4521,15 @@ pthread_mutex_lock(&m);
 n++;
 pthread_mutex_unlock(&m);
 ```
+
+**Threads exist**  
+→ scheduler changes order  
+→ order becomes unpredictable
+
+**Threads share memory**  
+→ passing wrong addresses breaks arguments  
+→ touching same variable breaks correctness
+
+**So:**
+- for arguments: give each thread its own value/address
+- for shared writes: protect with mutex
