@@ -3844,7 +3844,8 @@ int main()
 	for(int i=0; i<5; i++)
 	{
 		// how to keep in mind the process number
-		pid_t copil = fork();
+		pid_t copil = fork(); // parent, child continue bc there is no if (copil==0), no break, no exit
+		// process co
 		lev[ier]=getpid();
 		ier++;
 	}
