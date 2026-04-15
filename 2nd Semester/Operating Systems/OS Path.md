@@ -3531,10 +3531,10 @@ int main(int argc, char **argv) {
     perror("Error on fork"); // why failed
   } else if (0 == f) { // child
     signal(SIGUSR1, child_handler); // if child gets SIGUSR1, call function child_handler(sig - who is sig the parameter/??)
-    printf("C - Child PID: %d Parent PID: %d\n", getpid(),getppid());
-    while(1) {
-      printf("Child working...\n");
-      sleep(3);
+    printf("C - Child PID: %d Parent PID: %d\n", getpid(),getppid()); // child prints identity
+    while(1) { // child works forever
+      printf("Child working...\n"); // debug message
+      sleep(3); // pause 3 seconds
     }
     exit(0);
   } else {
