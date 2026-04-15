@@ -4181,3 +4181,5 @@ pthread_join(t, NULL) -> wait until thread ends
 ```
 gcc -Wall -Wextra -Werror -g -o a a.c -pthread
 ```
+
+4) First simple thread demo: order is non-deterministic
