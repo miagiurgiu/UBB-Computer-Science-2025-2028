@@ -3532,13 +3532,13 @@ int main(int argc, char **argv) {
   } else if (0 == f) { // child
     signal(SIGUSR1, child_handler); // if child gets SIGUSR1, call function child_handler(sig - who is sig the parameter/??)
     printf("C - Child PID: %d Parent PID: %d\n", getpid(),getppid()); // child prints identity
-    while(1) { // child works forever
+    while(1) { // child works forever until signal arrives
       printf("Child working...\n"); // debug message
       sleep(3); // pause 3 seconds
     }
-    exit(0);
-  } else {
-    signal(SIGUSR1, parent_handler);
+    exit(0); // technically unreachable unless loop somehow ends
+  } else { // parent
+    signal(SIGUSR1, parent_handler); // if parent gets SIGUSR1. cal
     signal(SIGCHLD, zombie_handler);
     printf("P - Child PID: %d Parent PID: %d\n", f, getpid());
     while(1) {
