@@ -3529,8 +3529,8 @@ int main(int argc, char **argv) {
   f = fork(); // create child
   if (-1 == f) { // fork failed
     perror("Error on fork"); // why failed
-  } else if (0 == f) { // c
-    signal(SIGUSR1, child_handler);
+  } else if (0 == f) { // child
+    signal(SIGUSR1, child_handler); // if child gets SIGUSR1, call function child_handler(sig - who is sig the parameter/??)
     printf("C - Child PID: %d Parent PID: %d\n", getpid(),getppid());
     while(1) {
       printf("Child working...\n");
