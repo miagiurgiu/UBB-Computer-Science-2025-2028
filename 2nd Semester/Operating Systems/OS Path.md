@@ -4420,7 +4420,17 @@ int main(int argc, char** argv) {
 	- n++ might break because it touches shared data and it breaks if two threads try to do it together
 	- mutex wraps that dangerous part
 	- MUTEX = KEY for one-person-only access
-	-
+- i want exclusive access:
+```
+pthread_mutex_lock(&m);
+```
+- thank you, next:
+```
+pthread_mutex_unlock(&m);
+
+```
+
+- f
 ```
 #include <stdio.h>
 #include <pthread.h>
