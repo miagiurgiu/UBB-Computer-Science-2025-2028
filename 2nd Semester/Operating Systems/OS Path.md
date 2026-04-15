@@ -4220,6 +4220,8 @@ int main(int argc, char** argv) {
     pthread_join(tb, NULL);
 }
 ```
+
+![[Pasted image 20260415121826.png]]
 - result: 
 	- sometimes is main b aa
 	- sometimes is aa b main
@@ -4227,4 +4229,5 @@ int main(int argc, char** argv) {
 - try to run it with ./a 
 - try to run it with ./a 10
 - try to run it with ./a 100
-![[Pasted image 20260415121826.png]]
+
+5) The famo
