@@ -4039,7 +4039,7 @@ pipes
 shared memory
 	- 
 	  
-	-gives one common region to multiple processes § AS
+	gives one common region to multiple processes § AS
 	- 
 ## Lecture 6 - 
 Processes
