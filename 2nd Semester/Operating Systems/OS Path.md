@@ -4368,32 +4368,41 @@ int main(int argc, char** argv) {
 ```
 
 9) Race condition on global n
+- 
 ```
-int n = 0;
+#include <stdio.h>
+#include <pthread.h>
 
-void* f(void* a) {
-    for(int i=0; i<(int)(long)a; i++) {
-        n++;
+int n = 0;//shared counter, all threads see and modify the same n (danger)
+
+void* f(void* a) { // each thread runs this function
+    int i;// loop variable for the thread
+    for(i=0; i<(int)(long)a; i++) { // loop a times (dirty trick: void* -> long -> int>
+        n++;// increase shared counter -> NOT ATOMIC (read n, add 1, write n)
     }
     return NULL;
 }
 
 int main(int argc, char** argv) {
     pthread_t t[10];
-    int k = 1;
+    int i; // loop index
+    int k = 1; // how many times each thread increments
 
-    if(argc > 1) {
-        sscanf(argv[1], "%d", &k);
+    if(argc > 1) {// check if user gave argument
+        sscanf(argv[1], "%d", &k);// read int from command line (ex: ./a 10 -> k=10)
     }
 
-    for(int i=0; i<10; i++) {
-        pthread_create(&t[i], NULL, f, (void*)(long)k);
-    }
+    for(i=0; i<10; i++) {// create 10 threads
+        pthread_create(&t[i], NULL, f, (void*)(long)k); // each thread runs f with sam>
+    }// 10 threads, each thread increments n k times => expected: n=10*k
 
     for(int i=0; i<10; i++) {
         pthread_join(t[i], NULL);
     }
 
-    printf("%d\n", n);
+    printf("%d\n", n);// print n
+    return 0;
 }
 ```
+
+![[Pasted image 20260415135103.png]]
