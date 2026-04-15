@@ -3493,6 +3493,7 @@ official solution:
 - signal - only registers a handler
 - kill - sends a signal
 - SIGCHILD - for child termination cleanup
+- 
 ```
 /*
  * Create a child process.
@@ -3539,14 +3540,14 @@ int main(int argc, char **argv) {
     exit(0); // technically unreachable unless loop somehow ends
   } else { // parent
     signal(SIGUSR1, parent_handler); // if parent gets SIGUSR1, call function parent_handler
-    signal(SIGCHLD, zombie_handler);
-    printf("P - Child PID: %d Parent PID: %d\n", f, getpid());
-    while(1) {
-      printf("Parent working...\n");
-      sleep(2);
+    signal(SIGCHLD, zombie_handler); // when child dies, parent reaps it
+    printf("P - Child PID: %d Parent PID: %d\n", f, getpid()); // parent prints identity (child PID and parent PID)
+    while(1) { // parent works forever
+      printf("Parent working...\n"); // debug message
+      sleep(2); // pause 2 seconds
     }
   }
-  return 0;
+  return 0; // normal end if reached
 }
 
 ```
