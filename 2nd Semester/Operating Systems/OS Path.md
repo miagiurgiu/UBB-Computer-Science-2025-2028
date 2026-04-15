@@ -3961,16 +3961,17 @@ int main(int argc, char *argv[]) {
     
     sem_init(sem, 1, 1); // initialize semaphore
     // sem - which semaphore
-    
+    // 1 - shared between processes
+    // 1 - initial value 1 (only one child allowed inside at a time)
 
     // we create processes
-    for (i = 0; i < 10; i++) {
-        int f = fork();
-        if (f < 0) {
+    for (i = 0; i < 10; i++) { // create 10 child processes
+        int f = fork(); // split
+        if (f < 0) { // fork failed
             perror("Oh no! Anyway...");
-        } else if (f == 0) {    
+        } else if (f == 0) {    // child
             // each child locks the semaphore before sleeping
-            sem_wait(sem);
+            sem_wait(sem); // take semaphore
             sleep(1);
             // and unlocks it once it is done
             sem_post(sem);
