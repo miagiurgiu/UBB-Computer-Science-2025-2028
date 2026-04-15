@@ -4023,7 +4023,7 @@ Communication/sync -> pipe, shared memory, semaphores
 
 fork()
 - after fork(), parent and child continue from the same next line 
-- safe pattern: fork -> child exit -> parent wait
+- safe pattern: fork -> child exit(0) -> parent wait(0)
 - child returns 0
 - parent returns child PID
 - both child and parent continue
@@ -4046,6 +4046,22 @@ semaphores
 - synchronisation mechanisms
 
 child code:
+```
+if (f == 0) {
+    // child work
+    exit(0);
+}
+```
+
+parent code:
+```
+else {
+    // parent work
+    wait(0);
+}
+```
+
+
 
 ## Lecture 6 - 
 Processes
