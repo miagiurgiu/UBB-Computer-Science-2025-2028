@@ -4132,7 +4132,10 @@ Thread = same process, same memory, multiple execution paths
 - two different programs can access the same region of memory using:
 	- shmget = create/get shared memory
 	- shmat = attach shared memory to my process
-	- 
+	- shmdt = detach shared memory from my process
+	- shmctl = control/delete shared memory
+- shared memory objects live in the OS until deleted:
+	- ipcs = shows all the share
 
 1) Threads
 - cheaper to create
