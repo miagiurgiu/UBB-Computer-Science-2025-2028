@@ -3830,6 +3830,14 @@ lab solution:
 	fork(); // 32 processes (2^5 forks)
 - pid_t -> proper type for process IDs
 - array of size 10 because it is enough to store several levels
+- The array idea itself is actually nice:
+	- store ancestor PID
+	- after each fork, store own PID
+	- each child inherits previous path
+	- child appends itself
+
+So each process can know:  
+**who is above me in the chain**
 ```
 #include <unistd.h>
 #include <stdio.h>
@@ -3838,13 +3846,14 @@ int main()
 	int ier = 0; // hierarchy index
 	pid_t levelIerarhie[10]={0}; // empty array meant to store PIDs from hierarchy
 	
-	int lastNode=0;
+	// int lastNode=0;
 	
 	levelIerarhie[ier++]=getppid(); // store parent id, when increase index (write then move pointer)
 	for(int i=0; i<5; i++)
 	{
 		// how to keep in mind the process number
 		pid_t copil = fork(); // parent, child continue bc there is no if (copil==0), no break, no exit
+		
 		if(copil>0) {
 			break;
 		}
