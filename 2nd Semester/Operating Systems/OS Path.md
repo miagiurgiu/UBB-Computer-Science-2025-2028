@@ -3504,8 +3504,9 @@ official solution:
 #include <sys/types.h> // process-related types
 #include <sys/wait.h> // wait
 #include <stdio.h> // printf, perror
-#include <unistd.h> // fork, getpid, getppid, sl
-int f;
+#include <unistd.h> // fork, getpid, getppid, sleep, kill
+int f; // global variable storing result for fork() 
+// global because it helps handlers know who they are
 
 void child_handler(int sig) {
   printf("Child process terminating...\n");
