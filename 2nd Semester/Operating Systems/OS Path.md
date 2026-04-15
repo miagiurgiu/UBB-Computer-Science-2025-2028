@@ -4226,6 +4226,10 @@ int main(int argc, char** argv) {
 - try to run it with ./a 100
 
 5) The famous &i bug
+- every time you see... be suspicious.
+```
+pthread_create(&t[i], NULL, f, &i) 
+```
 - bug in argument passing
 - terminal shows weird outputs like repeating numbers, missing digits, duplicates
 - all threads receive the same address &i -> WRONG
@@ -4411,3 +4415,5 @@ int main(int argc, char** argv) {
 
 ![[Pasted image 20260415135103.png]]
 
+10) CORRECT SYNCHRONIZATION VERSION:
+1
