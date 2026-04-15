@@ -3921,6 +3921,9 @@ official solution:
 - // we will instead create a shared memory segment in the parent and place the semaphore there
 - // the child processes will inherit copies of the shared memory ID, but the shared memory space will remain the same
 - // so we can safely say that the semaphore placed inside the shared memory segment is the same for all processes
+- // generate a key first so we can create a shared memory segment
+- // ftok creates a key based on a file path and a number
+- // the file has to exist on the system where the program is run, and the same combination of filepath + number must be provided by all the processes that want to access the same shared memory segment
 ```
 #include <stdlib.h>
 #include <stdio.h>
@@ -3939,11 +3942,10 @@ int main(int argc, char *argv[]) {
     gettimeofday(&tv1, NULL);
     int i;
 
-    sem_t *sem;
-    // generate a key first so we can create a shared memory segment
-    // ftok creates a key based on a file path and a number
-    // the file has to exist on the system where the program is run, and the same combination of filepath + number must be provided by all the processes that want to access the same shared memory segment
-    key_t shmkey = ftok("/dev/null", 24);
+    sem_t *sem; // semaphore
+    
+    
+    key_t shmkey = ftok("/dev/null", 24); // generate key
     // using the generated key, we create a shared memory segment big enough to contain one semaphore
     // we also grant read permissions to everyone
     // the IPC_CREAT flag indicates that the shared memory segment must be created if it does not exist
