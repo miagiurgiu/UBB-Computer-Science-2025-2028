@@ -4045,6 +4045,7 @@ shared memory
 semaphores
 - synchronisation mechanisms
 
+child code:
 
 ## Lecture 6 - 
 Processes
