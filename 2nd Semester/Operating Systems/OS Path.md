@@ -4123,3 +4123,7 @@ int main(int argc, char** argv) {
 
 Conclusion: syncronisation makes things correct, but slow. 
 fast result+correct: n+=(int)(long)a; and comment everything else in f except return NULL.
+
+### Individual work after Lecture 7
+Process = separate memory
+Thread = same process, same memory, multiple execution paths
