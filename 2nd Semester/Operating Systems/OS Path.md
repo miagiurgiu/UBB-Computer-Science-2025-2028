@@ -3857,8 +3857,10 @@ int main()
 Problem 22
 ![[Pasted image 20260415163008.png]]
 - create all, first process 
-- writes value from variable k into a file - similar to that problem form the lecture.
+- writes value from variable k into a file - similar to that problem from the lecture.
 - page 28 ex 3 -> teaching notes
+- without sync, all children sleep at same time
+- with shared semaphore, 
 lab solution without semafoare:
 ```
 #include <unistd.h>
