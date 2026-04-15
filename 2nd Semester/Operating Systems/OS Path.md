@@ -3971,11 +3971,11 @@ int main(int argc, char *argv[]) {
             perror("Oh no! Anyway...");
         } else if (f == 0) {    // child
             // each child locks the semaphore before sleeping
-            sem_wait(sem); // take semaphore
-            sleep(1);
+            sem_wait(sem); // take semaphore - wait if another child already has the semaphore
+            sleep(1); // child sleeps 1 sec while holding semaphore
             // and unlocks it once it is done
-            sem_post(sem);
-            exit(0);
+            sem_post(sem); // release semaphore
+            exit(0); // childe
         }
     }
 
