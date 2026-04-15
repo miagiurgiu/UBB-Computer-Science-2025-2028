@@ -4478,6 +4478,18 @@ int main(int argc, char** argv) {
 11) WRAP-UP:
 - thread creation:
 ```
-
+pthread_t t;
+pthread_create(&t, NULL, f, arg);
+pthread_join(t, NULL);
+```
+- thread function:
+```
+void* f(void* a) { 
+	... 
+	return NULL; 
+}
+```
+- argument passing to thread function:
+```
 
 ```
