@@ -4231,7 +4231,12 @@ int main(int argc, char** argv) {
 - try to run it with ./a 100
 
 5) The famous &i bug
+- 
 ```
+#include <stdio.h>
+#include <pthread.h>
+#include <stddef.h>
+
 void* f(void* a) {
     printf("%d\n", *(int*)a);
     return NULL;
