@@ -3860,7 +3860,7 @@ Problem 22
 - writes value from variable k into a file - similar to that problem from the lecture.
 - page 28 ex 3 -> teaching notes
 - without sync, all children sleep at same time
-- with shared semaphore, 
+- with shared semaphore, one child at a time, total time ~10 seconds
 lab solution without semafoare:
 ```
 #include <unistd.h>
@@ -3915,6 +3915,7 @@ int main()
 
 
 official solution:
+- 
 ```
 #include <stdlib.h>
 #include <stdio.h>
