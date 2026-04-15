@@ -4156,3 +4156,7 @@ Thread = same process, same memory, multiple execution paths
 - the OS scheduler decides who runs when
 - output order is not fixed
 
+2) Thread function Syntax
+```
+void* f(void* a);
+```
