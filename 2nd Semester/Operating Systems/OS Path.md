@@ -4230,4 +4230,23 @@ int main(int argc, char** argv) {
 - try to run it with ./a 10
 - try to run it with ./a 100
 
-5) The famo
+5) The famous &i bug
+```
+void* f(void* a) {
+    printf("%d\n", *(int*)a);
+    return NULL;
+}
+
+int main() {
+    int i;
+    pthread_t t[10];
+
+    for(i=0; i<10; i++) {
+        pthread_create(&t[i], NULL, f, &i);
+    }
+
+    for(i=0; i<10; i++) {
+        pthread_join(t[i], NULL);
+    }
+}
+```
