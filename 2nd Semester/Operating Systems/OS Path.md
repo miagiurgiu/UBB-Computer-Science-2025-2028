@@ -4422,15 +4422,20 @@ int main(int argc, char** argv) {
 	- MUTEX = KEY for one-person-only access
 - i want exclusive access:
 ```
+pthread_mutex_t m;
+...
 pthread_mutex_lock(&m);
 ```
 - thank you, next:
 ```
+pthread_mutex_t m;
+...
+pthread_mutex_lock(&m);
+...
 pthread_mutex_unlock(&m);
-
 ```
-
-- f
+- only one thread can complete the lock at a time, others must wait until unlock
+- lock/unlock inside the loop because n++ is dangerous
 ```
 #include <stdio.h>
 #include <pthread.h>
