@@ -4417,7 +4417,10 @@ int main(int argc, char** argv) {
 
 10) CORRECT SYNCHRONIZATION VERSION:
 - MUTEX puts a tiny fence around n++. one thread enters, the others wait at the gate
-	- n++ might break because it touches sha
+	- n++ might break because it touches shared data and it breaks if two threads try to do it together
+	- mutex wraps that dangerous part
+	- MUTEX = KEY for one-person-only access
+	-
 ```
 #include <stdio.h>
 #include <pthread.h>
