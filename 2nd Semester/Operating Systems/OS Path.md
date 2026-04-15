@@ -3833,8 +3833,8 @@ lab solution:
 #include <stdio.h>
 int main()
 {
-	int ier = 0;
-	pid_t levelIerarhie[10]={0};
+	int ier = 0; // hierarchy index
+	pid_t levelIerarhie[10]={0}; // empty arra
 	
 	int lastNode=0;
 	
