@@ -4235,7 +4235,10 @@ int main(int argc, char** argv) {
 - terminal shows weird outputs like repeating numbers, missing digits, duplicates
 - all threads receive the same address &i -> WRONG
 	- all threads look at the same memory cell
-- meanwhile main keeps changing i
+- meanwhile main() keeps changing i
+	- changes i during creation loop
+	- changes i during join loop (waiting)
+- threads print
 ```
 #include <stdio.h>
 #include <pthread.h>
