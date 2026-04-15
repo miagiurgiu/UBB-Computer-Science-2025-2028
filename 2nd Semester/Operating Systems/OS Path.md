@@ -4368,7 +4368,10 @@ int main(int argc, char** argv) {
 ```
 
 9) Race condition on global n
-- 
+- you run multiple times -> 1000, 1000, 1000, 910, 1000
+- what's going on with that 910?
+	- n++ is NOT ATOMIC (not one step)
+	- alternating table (image)
 ```
 #include <stdio.h>
 #include <pthread.h>
