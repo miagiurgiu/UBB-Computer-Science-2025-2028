@@ -4416,7 +4416,8 @@ int main(int argc, char** argv) {
 ![[Pasted image 20260415135103.png]]
 
 10) CORRECT SYNCHRONIZATION VERSION:
-- f
+- MUTEX puts a tiny fence around n++. one thread enters, the others wait at the gate
+	- n++ might break because it touches sha
 ```
 #include <stdio.h>
 #include <pthread.h>
@@ -4453,6 +4454,4 @@ int main(int argc, char** argv) {
 	pthread_mutex_destroy(&m); // destroy mutex when no longer needed
     printf("%d\n", n); // print final value of shared counter
 }
-
-
 ```
