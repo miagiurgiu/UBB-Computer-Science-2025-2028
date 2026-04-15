@@ -4233,7 +4233,9 @@ int main(int argc, char** argv) {
 5) The famous &i bug
 - bug in argument passing
 - terminal shows weird outputs like repeating numbers, missing digits, duplicates
-- all threads receive the s
+- all threads receive the same address &i -> WRONG
+	- all threads look at the same memory cell
+- meanwhile main keeps changing i
 ```
 #include <stdio.h>
 #include <pthread.h>
