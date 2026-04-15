@@ -4021,7 +4021,9 @@ Process creation -> fork, exit, wait
 Signals -> signal, kill, SIGUSR1, SIGCHILD
 Communication/sync -> pipe, shared memory, semaphores
 
-fork
+fork()
+- after fork(), parent and child continue from the same next line 
+- safe pattern: fork -> 
 ## Lecture 6 - 
 Processes
 ## Lecture 7 - 8 apr 2026
