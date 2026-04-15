@@ -4183,3 +4183,34 @@ gcc -Wall -Wextra -Werror -g -o a a.c -pthread
 ```
 
 4) First simple thread demo: order is non-deterministic
+- global variable n = 1
+- thread function f
+- two threads created with "aa" and "b"
+```
+int n = 1;
+
+void* f(void* a) {
+    for(int i=0; i<n; i++) {
+        printf("%s\n", (char*)a);
+    }
+    return NULL;
+}
+
+int main(int argc, char** argv) {
+    pthread_t ta, tb;
+
+    if(argc > 1) {
+        sscanf(argv[1], "%d", &n);
+    }
+
+    pthread_create(&ta, NULL, f, "aa"); // thread aa
+    pthread_create(&tb, NULL, f, "b"); // thread b
+
+    for(int i=0; i<n; i++) {
+        printf("main\n");
+    }
+
+    pthread_join(ta, NULL);
+    pthread_join(tb, NULL);
+}
+```
