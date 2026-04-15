@@ -3894,8 +3894,11 @@ int main()
 			//signal();
 			kill(getppid(), SIGUSR1); // child sends signal SIGUSR1 to its parent
 			printf("Child notified parent: %ld\n", (long)getpid()); // child prints that it notified parent
-			while(flag==0)
+			while(flag==0) // child waits until some flag changes
 			{
+				// children should pause here
+				// maybe parent later changes sth
+				// then children can continue
 				sleep(1);
 			}
 			exit(0);
