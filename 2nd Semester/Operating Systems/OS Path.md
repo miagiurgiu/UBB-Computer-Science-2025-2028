@@ -4128,7 +4128,11 @@ fast result+correct: n+=(int)(long)a; and comment everything else in f except re
 Process = separate memory
 Thread = same process, same memory, multiple execution paths
 
-0) Shared memory (IPC)
+0) Shared memory (IPC shared memory)
+- two different programs can access the same region of memory using:
+	- shmget = create/get shared memory
+	- shmat = attach shared memory to my process
+	- 
 
 1) Threads
 - cheaper to create
