@@ -3828,13 +3828,15 @@ lab solution:
 	fork(); // 8 processes
 	fork();
 	fork(); // 32 processes (2^5 forks)
+- pid_t -> proper type for process IDs
+- array of size 10 because it is enough to store
 ```
 #include <unistd.h>
 #include <stdio.h>
 int main()
 {
 	int ier = 0; // hierarchy index
-	pid_t levelIerarhie[10]={0}; // empty arra
+	pid_t levelIerarhie[10]={0}; // empty array meant to store PIDs from hierarchy
 	
 	int lastNode=0;
 	
