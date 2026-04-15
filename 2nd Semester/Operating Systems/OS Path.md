@@ -3371,8 +3371,8 @@ int main(int argc, char *argv[]) {
             perror("Error on fork"); // print why
         } else if(0 == f) { // child
             printf("Child process %d - PID: %d - PPID: %d\n", i, getpid(), getppid());
-            // child prints its loop number i, its PID, its paren
-            exit(0);
+            // child prints its loop number i, its PID (getpid()), its parent PID (getppid())
+            exit(0); // child stops immediately (without this, the child would continue the loop and start making its own children)
         } else {
             printf("Parent %d - Child: %d\n", getpid(), f);
         }
