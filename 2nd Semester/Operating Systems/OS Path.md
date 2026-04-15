@@ -4192,33 +4192,28 @@ gcc -Wall -Wextra -Werror -g -o a a.c -pthread
 #include <stdio.h>
 #include <stddef.h>
 #include <pthread.h>
-
-int n = 1;
-
-void* f(void* a) {
-    for(int i=0; i<n; i++) {
-        printf("%s\n", (char*)a);
-    }
-    return NULL;
+int n=1; // global variable, all threads can read it bc threads share memory
+void* f(void* a) { // the function each thread will execute
+        for(int i=0; i<n; i++) { // EACH THREAD prints n times
+                printf("%s\n", (char*)a); // interpret parameter a as a char*
+        }
+        return NULL;// thread ends
 }
 
 int main(int argc, char** argv) {
-    pthread_t ta, tb;
-
-    if(argc > 1) {
-        sscanf(argv[1], "%d", &n);
-    }
-
-    pthread_create(&ta, NULL, f, "aa"); // thread aa
-    pthread_create(&tb, NULL, f, "b"); // thread b
-
-    for(int i=0; i<n; i++) {
-        printf("main\n");
-    }
-
-    pthread_join(ta, NULL);
-    pthread_join(tb, NULL);
+        pthread_t ta,tb; // handlers for the two threads ta and tb
+        if(argc>1) { // optional command-line argument
+                sscanf(argv[1], "%d", &n); // change how many times everything prints
+        }
+        pthread_create(&ta, NULL, f, "aa"); // create thread A that runs f with "aa" as arg
+        pthread_create(&tb, NULL, f, "b"); // create thread B that runs f with "b" as arg
+        for(int i=0; i<n; i++) {
+                printf("main\n"); // main thread
+        }
+        pthread_join(ta,NULL);// wait for thread A to finish
+        pthread_join(tb,NULL); // waint for thread B to finish
 }
+
 ```
 
 ![[Pasted image 20260415121826.png]]
@@ -4242,27 +4237,7 @@ int main(int argc, char** argv) {
 - the bug is caused by passing &i to all threads, so all threads use the same address
 - you did not send 10 numbers. you sent 10 threads to the same mailbox.
 ```
-#include <stdio.h>
-#include <pthread.h>
-#include <stddef.h>
 
-void* f(void* a) { // thread
-    printf("%d\n", *(int*)a);
-    return NULL;
-}
-
-int main() {
-    int i;
-    pthread_t t[10];
-
-    for(i=0; i<10; i++) {
-        pthread_create(&t[i], NULL, f, &i);
-    }
-
-    for(i=0; i<10; i++) {
-        pthread_join(t[i], NULL);
-    }
-}
 ```
 
 ![[Pasted image 20260415122351.png]]
