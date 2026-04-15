@@ -3365,8 +3365,8 @@ int main(int argc, char *argv[]) {
         exit(1); // stop program with error code
     }
     int n = atoi(argv[1]); // convert argument to integer
-    for(int i = 0; i < n; i++) {
-        int f = fork();
+    for(int i = 0; i < n; i++) { // create n child processes
+        int f = fork(); // split current process into 
         if(-1 == f) {
             perror("Error on fork");
         } else if(0 == f) {
