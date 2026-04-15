@@ -3479,6 +3479,9 @@ int main()
 ```
 
 official solution:
+- only 2 processes: parent and child -> both keep looping
+- if parent gets SIGUSR1:
+	- 
 ```
 /*
  * Create a child process.
