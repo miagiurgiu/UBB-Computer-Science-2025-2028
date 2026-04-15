@@ -3870,11 +3870,11 @@ lab solution without semafoare:
 #include <stdio.h>
 
 int childCount = 0; // global counter in the parent (counts how many SIGUSR1 the parent received)
-void signalHandlerCreated(int semnal)
+void signalHandlerCreated(int semnal) // function that runs when process receives a signal
 {
-	if(semnal==SIGUSR1)
+	if(semnal==SIGUSR1) // check if received signal is SIGUSR1
 	{
-		childCount++;
+		childCount++; // increase count of childre
 		if(childCount==10)
 		{
 			printf("Toti copiii buni\n");
