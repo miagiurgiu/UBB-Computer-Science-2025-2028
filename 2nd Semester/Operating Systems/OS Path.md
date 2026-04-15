@@ -3853,19 +3853,23 @@ int main()
 	{
 		// how to keep in mind the process number
 		pid_t copil = fork(); // parent, child continue bc there is no if (copil==0), no break, no exit
-		
+		if(copil<0) {
+			perror("fork");
+			exit(1);
+		}
 		if(copil>0) {
 			break;
 		}
 		// process count doubles every round
-		levelIerarhie[ier]=getpid(); // store current process PID in array
-		ier++; // move to next free array position
+		levelIerarhie[ier++]=getpid(); // store current process PID in array
+		//ier++; // move to next free array position
 	}
 	for(int i=ier-1; i>=0; i--) // the whole stored hierarchy backwards
 	{
 		printf("%ld ", (long)levelIerarhie[i]);
 	}
 	printf("\n");
+	return 0;
 }
 ```
 
