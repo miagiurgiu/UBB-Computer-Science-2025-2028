@@ -3927,6 +3927,9 @@ official solution:
 - // using the generated key, we create a shared memory segment big enough to contain one semaphore
 - // we also grant read permissions to everyone
 - // the IPC_CREAT flag indicates that the shared memory segment must be created if it does not exist
+- `sizeof(sem_t)` → just enough space
+- `0644` → permissions
+- `IPC_CREAT` → create if missing
 ```
 #include <stdlib.h>
 #include <stdio.h>
@@ -3949,9 +3952,11 @@ int main(int argc, char *argv[]) {
     
     key_t shmkey = ftok("/dev/null", 24); // generate key for shared memory segment
     
-    int shmid = shmget(shmkey, sizeof(sem_t), 0644|IPC_CREAT); // large enough for one se
+    int shmid = shmget(shmkey, sizeof(sem_t), 0644|IPC_CREAT); // large enough for one semaphore
+    
     // we now link the shared memory segment to the previously declared pointer
-    sem = (sem_t*) shmat(shmid, NULL, 0);
+    sem = (sem_t*) shmat(shmid, NULL, 0); // attach shared memory to this process
+    
     // from here on, we treat this semaphore pointer as we would treat a regular semaphore pointer that is declared on the heap
     sem_init(sem, 1, 1);
 
