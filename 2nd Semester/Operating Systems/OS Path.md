@@ -4240,12 +4240,13 @@ int main(int argc, char** argv) {
 	- changes i during join loop (waiting)
 - threads print whatever value happens to be in that shared location
 - the bug is caused by passing &i to all threads, so all threads use the same address
+- you did not send 10 numbers. you sent 10 threads to the same mailbox.
 ```
 #include <stdio.h>
 #include <pthread.h>
 #include <stddef.h>
 
-void* f(void* a) {
+void* f(void* a) { // thread
     printf("%d\n", *(int*)a);
     return NULL;
 }
