@@ -4037,7 +4037,10 @@ pipes
 - closing unused pipe ends early is essential to avoid stuck programs
 
 shared memory
-- gives one common region to multiple processes
+	- 
+	  
+	-gives one common region to multiple processes § AS
+	- 
 ## Lecture 6 - 
 Processes
 ## Lecture 7 - 8 apr 2026
