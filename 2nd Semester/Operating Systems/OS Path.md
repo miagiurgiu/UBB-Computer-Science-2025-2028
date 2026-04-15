@@ -3349,6 +3349,8 @@ wait(0)
 - pid_t
 - fork() return type is pid_t
 
+Problem 1:
+![[Pasted image 20260415153349.png]]
 official solving:
 ```
 #include <stdio.h>
@@ -4076,7 +4078,11 @@ pipes:
 - one end writes
 - close what you don't use
 
-![[Pasted image 20260415153237.png]]
+
+
+
+
+
 ## Lecture 6 - 
 Processes
 ## Lecture 7 - 8 apr 2026
