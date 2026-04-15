@@ -3945,11 +3945,11 @@ int main(int argc, char *argv[]) {
     gettimeofday(&tv1, NULL);
     int i;
 
-    sem_t *sem; // semaphore
+    sem_t *sem; // pointer to semaphore (it will live in shared memory)
     
-    key_t shmkey = ftok("/dev/null", 24); // generate key
+    key_t shmkey = ftok("/dev/null", 24); // generate key for shared memory segment
     
-    int shmid = shmget(shmkey, sizeof(sem_t), 0644|IPC_CREAT);
+    int shmid = shmget(shmkey, sizeof(sem_t), 0644|IPC_CREAT); // large enough for one se
     // we now link the shared memory segment to the previously declared pointer
     sem = (sem_t*) shmat(shmid, NULL, 0);
     // from here on, we treat this semaphore pointer as we would treat a regular semaphore pointer that is declared on the heap
