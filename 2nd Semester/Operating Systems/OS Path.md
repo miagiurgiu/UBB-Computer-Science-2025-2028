@@ -4507,3 +4507,17 @@ p = malloc(sizeof(int));
 ...
 pthread_create(..., p);
 ```
+- HACK:
+```
+pthread_create(..., (void*)(long)i);
+```
+- BAD (race condition)
+```
+n++;
+```
+- FIXED (race condition) -> mutex
+```
+pthread_mutex_lock(&m);
+n++;
+pthread_mutex_unlock(&m);
+```
