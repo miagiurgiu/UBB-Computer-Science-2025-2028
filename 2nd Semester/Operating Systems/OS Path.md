@@ -3515,7 +3515,7 @@ void child_handler(int sig) { // function called when child receives SIGUSR1
 
 void parent_handler(int sig) { // function called when parent receives SIGUSR1
   printf("Parent process terminating...\n"); // parent announces exit
-  kill(f, SIGUSR1); // send
+  kill(f, SIGUSR1); // send SIGUSR1 to child
   wait(0);
   exit(0);
 }
