@@ -3829,7 +3829,7 @@ lab solution:
 	fork();
 	fork(); // 32 processes (2^5 forks)
 - pid_t -> proper type for process IDs
-- array of size 10 because it is enough to store
+- array of size 10 because it is enough to store several levels
 ```
 #include <unistd.h>
 #include <stdio.h>
@@ -3840,7 +3840,7 @@ int main()
 	
 	int lastNode=0;
 	
-	lev[ier++]=getppid();
+	levelIerarhie[ier++]=getppid(); // store parent id, when increase index (write then move pointer)
 	for(int i=0; i<5; i++)
 	{
 		// how to keep in mind the process number
