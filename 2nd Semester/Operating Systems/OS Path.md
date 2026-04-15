@@ -4299,6 +4299,8 @@ int main() {
 - main waits until thread i is finished
 - each thread has its own memory and value
 - no interference from loop variable i
+- free(a) inside f because the thread is the one that uses the allocated memory and after it prints that value, the memory is no longer needed
+- don't free(a) after p
 ```
 #include <stdio.h> // for printf
 #include <stddef.h>
