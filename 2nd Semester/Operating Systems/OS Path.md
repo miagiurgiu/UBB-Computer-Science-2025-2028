@@ -4296,7 +4296,9 @@ int main() {
 - main allocates
 - thread reads
 - thread frees
-- ma
+- main waits until thread i is finished
+- each thread has its own memory and value
+- no interference from loop variable i
 ```
 #include <stdio.h> // for printf
 #include <stddef.h>
@@ -4326,6 +4328,4 @@ int main(int argc, char** argv) {
     (void)argv;
     return 0;
 }
-
-
 ```
