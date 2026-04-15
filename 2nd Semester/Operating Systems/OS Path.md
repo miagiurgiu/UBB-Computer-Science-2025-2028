@@ -3355,16 +3355,16 @@ Problem 1 official solution:
 ```
 #include <stdio.h> // printf, perror
 #include <stdlib.h> // atoi, exit
-#include <unistd.h> // fork,
-#include <sys/types.h>
-#include <sys/wait.h>
+#include <unistd.h> // fork, getpid, getppid
+#include <sys/types.h> // pid_t
+#include <sys/wait.h> // wait
 
 int main(int argc, char *argv[]) {
-    if(argc != 2) {
+    if(argc != 2) { 
         perror("Please provide exactly one argument");
-        exit(1);
+        exit(1); // stop program with error code
     }
-    int n = atoi(argv[1]);
+    int n = atoi(argv[1]); // convert argument to integer
     for(int i = 0; i < n; i++) {
         int f = fork();
         if(-1 == f) {
