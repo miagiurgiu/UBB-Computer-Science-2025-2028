@@ -3352,7 +3352,7 @@ wait(0)
 Problem 1:
 ![[Pasted image 20260415153349.png]]
 Problem 1 official solution:
-- crea
+- creates exactly n children because every child exits right away
 ```
 #include <stdio.h> // printf, perror
 #include <stdlib.h> // atoi, exit
@@ -3383,40 +3383,6 @@ int main(int argc, char *argv[]) {
         wait(NULL); // wait for each child to finish
     }
     return 0;
-}
-```
-
-
-pr1.c (lab solution)
-```
-#include <unistd.h>
-#include <stdio.h>
-#include <stdlib.h>
-int main() 
-{
-	int n=3;
-	// pid urile copiilor intr ul array
-	pid_t copiiiMei[3]={0};
-	for(int i=0; i<n; i++)
-	{
-		// fork(); // 2^3 processes
-		pid_t theCopil=fork();
-		if(theCopil==0)
-		{
-			printf("Copil: %ld %ld\n", getpid(), getppid());
-		}
-		else
-		{
-			copiiiMei[i]=theCopil;
-		}
-	}
-	printf("Parinti: %ld - ", getpid());
-	for(int i=0; i<n; i++)
-	{
-		prinf("%ld, ", copiiiMei[i]);
-	}
-	printf("\n");
-	// exit la copil
 }
 ```
 
