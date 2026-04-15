@@ -3373,8 +3373,9 @@ int main(int argc, char *argv[]) {
             printf("Child process %d - PID: %d - PPID: %d\n", i, getpid(), getppid());
             // child prints its loop number i, its PID (getpid()), its parent PID (getppid())
             exit(0); // child stops immediately (without this, the child would continue the loop and start making its own children)
-        } else {
+        } else { // parent -> fork() returns child PID
             printf("Parent %d - Child: %d\n", getpid(), f);
+            // parent prints its own PID and its newly created child PID
         }
     }
     for(int i = 0; i < n; i++) {
