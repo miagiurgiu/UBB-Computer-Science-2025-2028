@@ -3367,10 +3367,11 @@ int main(int argc, char *argv[]) {
     int n = atoi(argv[1]); // convert argument to integer
     for(int i = 0; i < n; i++) { // create n child processes
         int f = fork(); // split current process into parent and child -> there are two processes running from now on the next lines
-        if(-1 == f) {
-            perror("Error on fork");
-        } else if(0 == f) {
+        if(-1 == f) { // fork failed
+            perror("Error on fork"); // print why
+        } else if(0 == f) { // child
             printf("Child process %d - PID: %d - PPID: %d\n", i, getpid(), getppid());
+            // child prints its loop number i, its PID, its paren
             exit(0);
         } else {
             printf("Parent %d - Child: %d\n", getpid(), f);
