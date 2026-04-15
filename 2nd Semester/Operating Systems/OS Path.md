@@ -4238,7 +4238,8 @@ int main(int argc, char** argv) {
 - meanwhile main() keeps changing i
 	- changes i during creation loop
 	- changes i during join loop (waiting)
-- threads print
+- threads print whatever value happens to be in that shared location
+- the bug is caused by passing &i to all threads, so all threads use the same address
 ```
 #include <stdio.h>
 #include <pthread.h>
