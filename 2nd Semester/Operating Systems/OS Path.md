@@ -3849,11 +3849,11 @@ int main()
 		levelIerarhie[ier]=getpid(); // store current process PID in array
 		ier++; // move to next free array position
 	}
-	for(int i=1; i>=0; i--)
+	for(int i=ier-1; i>=0; i--) // the whole stored hierarchy backwards
 	{
-		printf("%d ", lev[i]):
+		printf("%ld ", (long)levelIerarhie[i]):
 	}
-	printf()
+	printf("\n");
 }
 ```
 
