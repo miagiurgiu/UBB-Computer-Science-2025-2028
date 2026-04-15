@@ -4165,7 +4165,7 @@ void* f(void* a); // this is a thread function
 - inside the function you cast it to the real type you meant
 
 3) main operations:
-- variable that stores thread:
+- variable that stores thread
 ```
 pthread_t t -> variable that stores thread
 ```
@@ -4173,4 +4173,11 @@ pthread_t t -> variable that stores thread
 ```
 pthread_create(&t, NULL, f, arg) -> start thread
 ```
-- 
+- wait until thread ends
+```
+pthread_join(t, NULL) -> wait until thread ends
+```
+- compile
+```
+gcc -Wall -Wextra -Werror -g -o a a.c -pthread
+```
