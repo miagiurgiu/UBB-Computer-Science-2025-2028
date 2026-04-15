@@ -4236,8 +4236,28 @@ int main(int argc, char** argv) {
 - threads print whatever value happens to be in that shared location
 - the bug is caused by passing &i to all threads, so all threads use the same address
 - you did not send 10 numbers. you sent 10 threads to the same mailbox.
-```
+```                                    
+#include <stdio.h>
+#include <stddef.h>
+#include <pthread.h>
 
+void* f(void* a) { // the function each thread will execute
+    printf("%d\n", *(int*)a); // treat param a as int* -> dereference (*(int*)) -> print value
+    return NULL; // nothing to return
+}
+
+int main() {
+    int i;
+    pthread_t t[10];// 10 thread handles (id s)
+
+    for(i=0; i<10; i++) { // create threads loop, we want 10
+        pthread_create(&t[i], NULL, f, &i); // create thread i that runs f with &i as arg
+    }// all threads get the same address &i, only the value at that address changes (i), but addre>
+
+    for(i=0; i<10; i++) { // wait threads loop, go through all threads
+        pthread_join(t[i], NULL);// wait for thread i (t[i]) to finish
+    }
+}
 ```
 
 ![[Pasted image 20260415122351.png]]
