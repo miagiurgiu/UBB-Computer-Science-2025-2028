@@ -4186,6 +4186,8 @@ gcc -Wall -Wextra -Werror -g -o a a.c -pthread
 - global variable n = 1
 - thread function f
 - two threads created with "aa" and "b"
+- main prints "main"
+- intention: shows that threads run in unpredictable order
 ```
 int n = 1;
 
