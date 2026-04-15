@@ -4489,7 +4489,21 @@ void* f(void* a) {
 	return NULL; 
 }
 ```
-- argument passing to thread function:
+- BAD argument passing to thread function:
 ```
-
+pthread_create(..., &i);
+```
+- CORRECT argument passing way to thread function:
+```
+a[i] = i; 
+...
+pthread_create(..., &a[i]);
+```
+- ANOTHER CORRECT argument passing way to thread function:
+```
+p = malloc(sizeof(int)); 
+...
+*p = i; 
+...
+pthread_create(..., p);
 ```
