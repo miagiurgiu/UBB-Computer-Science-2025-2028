@@ -3351,58 +3351,36 @@ wait(0)
 
 Problem 1:
 ![[Pasted image 20260415153349.png]]
-official solving:
+Problem 1 official solution:
 ```
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
+#include <stdio.h> // printf, perror
+#include <stdlib.h> // atoi, exit
+#include <unistd.h> // fork,
 #include <sys/types.h>
 #include <sys/wait.h>
 
 int main(int argc, char *argv[]) {
-
     if(argc != 2) {
-
         perror("Please provide exactly one argument");
-
         exit(1);
-
     }
-
     int n = atoi(argv[1]);
-
     for(int i = 0; i < n; i++) {
-
         int f = fork();
-
         if(-1 == f) {
-
             perror("Error on fork");
-
         } else if(0 == f) {
-
             printf("Child process %d - PID: %d - PPID: %d\n", i, getpid(), getppid());
-
             exit(0);
-
         } else {
-
             printf("Parent %d - Child: %d\n", getpid(), f);
-
         }
-
     }
-
     for(int i = 0; i < n; i++) {
-
         wait(NULL);
-
     }
-
     return 0;
-
 }
-
 ```
 
 
