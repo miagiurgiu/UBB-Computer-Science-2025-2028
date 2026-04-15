@@ -4436,6 +4436,7 @@ pthread_mutex_unlock(&m);
 ```
 - only one thread can complete the lock at a time, others must wait until unlock
 - lock/unlock inside the loop because n++ is dangerous
+- "CRITICAL SECTION" = the dangerous part (n++)
 ```
 #include <stdio.h>
 #include <pthread.h>
@@ -4472,4 +4473,11 @@ int main(int argc, char** argv) {
 	pthread_mutex_destroy(&m); // destroy mutex when no longer needed
     printf("%d\n", n); // print final value of shared counter
 }
+```
+
+11) WRAP-UP:
+- thread creation:
+```
+
+
 ```
