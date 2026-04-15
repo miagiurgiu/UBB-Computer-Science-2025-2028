@@ -4162,4 +4162,6 @@ void* f(void* a); // this is a thread function
 ```
 - return type void*
 - generic pointer void* (so you can pass anything as parameter)
-- 
+- inside the function you cast it to the real type you meant
+
+3) main operations
