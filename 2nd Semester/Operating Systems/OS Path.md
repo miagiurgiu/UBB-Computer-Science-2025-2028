@@ -4165,5 +4165,12 @@ void* f(void* a); // this is a thread function
 - inside the function you cast it to the real type you meant
 
 3) main operations:
-- pthread_t t -> variable that stores thread
-- pthread_create(&t, NULL, f, arg) -> start thread
+- variable that stores thread:
+```
+pthread_t t -> variable that stores thread
+```
+- start thread
+```
+pthread_create(&t, NULL, f, arg) -> start thread
+```
+- 
