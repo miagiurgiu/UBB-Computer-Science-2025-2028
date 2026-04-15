@@ -4300,7 +4300,8 @@ int main() {
 - each thread has its own memory and value
 - no interference from loop variable i
 - free(a) inside f because the thread is the one that uses the allocated memory and after it prints that value, the memory is no longer needed
-- don't free(a) after p
+- don't free(a) after pthread_create because the thread did not use it yet
+- allocate before launching. free after using. never free before thread actually reads it.
 ```
 #include <stdio.h> // for printf
 #include <stddef.h>
@@ -4331,3 +4332,5 @@ int main(int argc, char** argv) {
     return 0;
 }
 ```
+
+8) The Dirty 
