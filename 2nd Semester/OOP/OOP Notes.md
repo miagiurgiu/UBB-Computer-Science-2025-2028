@@ -1190,4 +1190,5 @@ A6:
 A7:
 - "A pure abstract class is also called an interface" - Lecture 6
 - "Defining an interface would allow us to use any class that implements it." - Lecture 6
+- Inheritance can be used if there is a kind of or is a relationship between the objects. - Lecture 5
 - => I don't link the service with a list, but with an interface
