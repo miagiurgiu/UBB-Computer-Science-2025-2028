@@ -1193,4 +1193,5 @@ A7:
 - Inheritance can be used if there is a kind of or is a relationship between the objects. - Lecture 5
 - Inheritance requires at least two classes: a base class and a derived class
 - An abstract class serves as a base class for a collection of related derived classes and it provides: a common public interface...
+- The existing class is not modified. The new class can use all the features of the old one and add new features of its own.
 - => I don't link the service with a list, but with an interface
