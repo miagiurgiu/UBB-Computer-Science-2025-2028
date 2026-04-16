@@ -1195,3 +1195,6 @@ A7:
 - An abstract class serves as a base class for a collection of related derived classes and it provides: a common public interface...
 - The existing class is not modified. The new class can use all the features of the old one and add new features of its own.
 - => I don't link the service with a list, but with an interface
+FOR FUNCTIONALITY 4:
+1) create new folder shopping_basket -> abstract_shopping_basket.cpp, .h
+2) 
