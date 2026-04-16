@@ -1182,3 +1182,11 @@ std::istream& operator>>(std::istream& is, Coat& c);
 
 wrap-up:
 ![[Pasted image 20260414164708.png]]
+
+## A6-7
+A6:
+- ERG
+
+A7:
+- "A pure abstract class is also called an interface" - Lecture 6
+- "Defining an interface would allow us to use any class that implements it."
