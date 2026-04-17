@@ -62,5 +62,3 @@ Then, processing vertices in topological order:
 At the end, `nr[t]` is the number of distinct walks from `s` to `t`.
 Why topological order matters
 Because if `(x,y)` is an edge, then `x` appears before `y` in the topological sorting, so when updating `nr[y]`, the value `nr[x]`is already final.
-
-That is a very teacher-style explanation.
