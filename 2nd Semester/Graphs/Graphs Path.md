@@ -46,3 +46,21 @@ how to run c++ code in vs code:
 g++ -std=c++17 main.cpp graph.cpp -o graph_manager
 ```
 
+Assignment 3:
+
+BONUSES:
+2B: Write a program that, given a graph that has no cycles (a directed acyclic graph, DAG) and a pair of vertices, finds the number of distinct walks between the given vertices.
+
+For a DAG, we first compute a topological ordering `sorted`. Then we define:
+- `nr[x]` = number of distinct walks from `s` to `x`
+Initialization:
+- `nr[s] = 1`
+- `nr[x] = 0` for all `x ≠ s`
+Then, processing vertices in topological order:
+- for every edge `(x,y)`, we update  
+    `nr[y] = nr[y] + nr[x]`
+At the end, `nr[t]` is the number of distinct walks from `s` to `t`.
+Why topological order matters
+Because if `(x,y)` is an edge, then `x` appears before `y` in the topological sorting, so when updating `nr[y]`, the value `nr[x]`is already final.
+
+That is a very teacher-style explanation.
