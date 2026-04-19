@@ -1066,7 +1066,7 @@ subalgorithm insertPos(dlla, e,pos):
 		dlla.nodes <- newArray
 		occupiedPos <- allocate(dlla)
 	dlla.nodes[occupiedPos].info <- e // actual inserting
-	if pos = 1 then 
+	if pos = 1 then // case 1: insertion at the beginning
 		dlla.nodes[occupiedPos].next <- dlla.head // its head to be -1 
 		if dlla.head = -1 then // case when the list is empty 
 			dlla.head <- occupiedPos
