@@ -1071,14 +1071,14 @@ subalgorithm insertPos(dlla, e,pos):
 		if dlla.head = -1 then // case 1.1: when the list is empty 
 			dlla.head <- occupiedPos
 			dlla.tail <- occupiedPos
-		else // case 1.2: when list is not empt
+		else // case 1.2: when list is not empty
 			dlla.nodes[dlla.head].prev <- occupiedPos
 			dlla.head <- occupiedPos
-	else if pos = dlla.size+1 then // wanna add sth after the last node
+	else if pos = dlla.size+1 then // case 2: wanna add sth after the last node
 		dlla.nodes[occupiedPos].prev <- dlla.tail
 		dlla.nodes[dlla.tail].next <- occupiedPos
 		dlla.tail <- occupiedPos
-	else // normal case
+	else // case 3: normal case
 		currentN <- dlla.head
 		currentP <- 1
 		while currentPos < pos - 1
