@@ -998,7 +998,7 @@ subalg deleteElem(slla, e):
 2) how to define an iterator on a SSL on Array. What would be the type of current element?
 - integers
 - for dynamic array - position
-- the way in which the work with those positions is different, it is similar to the way we work with linked lists
+- the way in which we work with those positions is different, it is similar to the way we work with linked lists
 
 2) linked lists with dynamic allocation - doubly linked lists on array 
 - nodes
