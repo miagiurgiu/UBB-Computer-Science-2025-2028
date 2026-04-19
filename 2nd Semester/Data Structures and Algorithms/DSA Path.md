@@ -1081,7 +1081,7 @@ subalgorithm insertPos(dlla, e,pos):
 	else // case 3: normal case
 		currentN <- dlla.head
 		currentP <- 1
-		while currentPos < pos - 1
+		while currentP < pos - 1
 			currentN <- dlla.nodes[currentN].next
 			currentP <- curentP + 1
 		dlla.nodes[occupiedPos].prev <- currentN
