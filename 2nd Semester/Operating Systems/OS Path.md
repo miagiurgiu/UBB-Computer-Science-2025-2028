@@ -4623,11 +4623,13 @@ Thread = same process, same memory, multiple execution paths
 - has TWO MAIN OPERATIONS: lock, unlock
 	- only ONE thread can complete lock
 	- the others WAIT until unlock
+- race conditions are solved using synchronization mechanisms
 - see tic-tac-toe example
 
 ```
-// count -> critical resource
-// count ++ -> cr
+// count -> "critical resource"
+// count ++ -> "critical section"
+
 pthread_mutex_lock(&m);
 count++;
 pthread_mutex_unlock(&m);
