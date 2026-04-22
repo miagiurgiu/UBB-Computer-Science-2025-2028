@@ -4644,3 +4644,5 @@ pthread_rwlock_ t, init, destroy, rdlock, wrlock, unlock
 - broadcast - all of them
 - signal - only once
 - wait of semaphore (reserve a seat), post = unlock
+
+kids = threads, mutex = toilet
