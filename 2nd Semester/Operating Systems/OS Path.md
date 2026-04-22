@@ -4692,7 +4692,7 @@ void* fx(void* a) { // thread function
 			turn=0; // switch turn
 		}
 		pthread_mutex_unlock(&m); // called by thread A
-		// thread can now enter
+		// thread B can now enter -> check (if) -> false (set by thread A) -> DOES NOT PLAY
 	}
 	return NULL;
 }
