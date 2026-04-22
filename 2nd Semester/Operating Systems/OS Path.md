@@ -4622,4 +4622,6 @@ mutex = mutual exclusion (only one at the time)
 
 1) use semaphores to reduce the traffic (students exam submissions)
 - semaphores - return a number, limit to one => mutex, if more => semaphore?
-1) going on a trip with a bus
+2) going on a trip with a bus
+- 
+1) 
