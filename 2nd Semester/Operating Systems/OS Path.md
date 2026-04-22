@@ -4616,3 +4616,4 @@ pthread_mutex_unlock(&m);
 - for shared writes: protect with mutex
 
 ## Lecture 8 - 22 apr 2026
+
