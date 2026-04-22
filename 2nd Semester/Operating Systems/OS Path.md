@@ -4631,7 +4631,7 @@ mutex = mutual exclusion (only one at the time)
 
 The 5 synchronisation mechanisms:
 ```
-pthread_mutex_ t, init, destroy, lock, unlock
+pthread_mutex_ t, init, destroy, lock, unlock, trylock
 pthread_cond_ t, init, destroy, wait, signal, broadcast
 pthread_barrier_ t, init, destroy, wait
 sem_ t, init, destroy, wait, post
@@ -4648,4 +4648,6 @@ pthread_rwlock_ t, init, destroy, rdlock, wrlock, unlock
 kids, toilet
 kids = threads, mutex = toilet
 semaphores - no more than 3?
+not okay when we force to go through the last 2 when they are finished with 0 => trylock? 
+
 
