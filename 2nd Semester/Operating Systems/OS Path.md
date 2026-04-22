@@ -4696,7 +4696,6 @@ sem_post(&sem); // position
 	- wait
 	- lock
 
-
 ```
 pthread_cond_t c;
 
