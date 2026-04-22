@@ -4656,9 +4656,20 @@ they all wait for the first one?
 ! ALWAYS lock resources in the same order. 
 
 how does a semaphore work:
-
+```
 sem_t sem;
 pthread_mutex_t mtx[3];
 
-main
+main {
+	sem_init(&sem, null, 3);
+	pthread_mutex_init(&m[i], NULL);
+	pthread_create ...
+	pthread_join
+	sem_destroy
+	pthread_mutex_destroy
+}
+
+```
+
+
 
