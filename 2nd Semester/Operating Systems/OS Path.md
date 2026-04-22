@@ -4621,7 +4621,18 @@ pthread_mutex_unlock(&m);
 - only one thread will go through the mutex, the others will wait
 - see tic-tac-toe example
 ```
-int board
+int board[3][3];
+int turn = 1;
+pthread_mutex_t m;
+
+void* fx(void* a) {
+	while(not-over) {
+		pthread_mutex_lock(&m);
+		if(turn==1) {
+		
+		}
+	}
+}
 
 ```
 
