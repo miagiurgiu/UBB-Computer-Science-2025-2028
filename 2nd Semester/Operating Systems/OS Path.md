@@ -4623,7 +4623,7 @@ mutex = mutual exclusion (only one at the time)
 1) use semaphores to reduce the traffic (students exam submissions)
 - semaphores - return a number, limit to one => mutex, if more => semaphore?
 - semaphore = generalisation of mutex
-1) going on a trip with a bus
+2) going on a trip with a bus
 - read write lock = optimisation of mutex
 	- as many reads as you want, write lock only once
 	- mutex with 2 types of locking
@@ -4677,9 +4677,12 @@ void* kid(void* a) {
 		pthread_mutex_unlick(mtx[i]);
 		break;
 }
-sem_post(&sem);
+sem_post(&sem); // position
 }
 ```
+
+3) tic-tac-toe
+- 
 
 
 
