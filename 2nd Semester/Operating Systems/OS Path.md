@@ -4618,13 +4618,15 @@ pthread_mutex_unlock(&m);
 ## Lecture 8 - 22 apr 2026
 Thread = same process, same memory, multiple execution paths
 
+pthrea
 1) mutex = mutual exclusion (only one THREAD at the time)
 - only one thread will go through the mutex, the others will wait
 - has TWO MAIN OPERATIONS: lock, unlock
 	- only ONE thread can complete lock
 	- the others WAIT until unlock
 - race conditions are solved using synchronisation mechanisms
-	- critical resource = shared thing ()
+	- critical resource = shared thing (count)
+	- critical section = the code that touches it (count++)
 - see tic-tac-toe example
 
 ```
@@ -4632,7 +4634,7 @@ Thread = same process, same memory, multiple execution paths
 // count ++ -> "critical section"
 // we want to wrap the critical section between mutex lock/unlock
 
-pthread_mutex_lock(&m);
+pthread_mutex_lock(&m); // declare the mutex
 count++;
 pthread_mutex_unlock(&m);
 ```
