@@ -4655,11 +4655,14 @@ pthread_mutex_t m; // one mutex protecting shared data
 void* fx(void* a) { // thread function
 	while(not-over) { // repeat forever
 		if(turn==1) { // check if it's thread's turn
+			// i am outside the mutex
 			pthread_mutex_lock(&m); 
-			// i am inside the mute
+			// i am inside the mutex
 			play-board; // make the move on the shared board
 			turn=0; // switch turn
+			// i am inside the mutex
 			pthread_mutex_unlock(&m);
+			// i am outside the mutex
 		}
 	}
 	return NULL;
