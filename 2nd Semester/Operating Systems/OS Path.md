@@ -4650,12 +4650,12 @@ WRONG:
 ```
 int board[3][3]; // shared board
 int turn = 1; // shared turn variable
-pthread_mutex_t m; // one mutex prit
+pthread_mutex_t m; // one mutex protecting shared data
 
-void* fx(void* a) {
-	while(not-over) {
+void* fx(void* a) { // thread function
+	while(not-over) { // repeat forever
 		pthread_mutex_lock(&m);
-		if(turn==1) {
+		if(turn==1) { // thr
 			play-board;
 			turn=0;
 		}
