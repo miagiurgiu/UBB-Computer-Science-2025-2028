@@ -4689,7 +4689,10 @@ sem_post(&sem); // position
 - mutex allows only one thread to come out of the function? when that one calls unlock, the other comes out? "stuck waiting for itself", but the other ?? is releasing it
 
 3) conditional variables
-- you wait 
+- you wait until notified
 
 
+```
 
+
+```
