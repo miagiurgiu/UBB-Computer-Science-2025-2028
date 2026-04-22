@@ -4648,9 +4648,9 @@ pthread_mutex_unlock(&m);
 
 WRONG:
 ```
-int board[3][3];
-int turn = 1;
-pthread_mutex_t m;
+int board[3][3]; // shared board
+int turn = 1; // shared turn variable
+pthread_mutex_t m; // one mutex prit
 
 void* fx(void* a) {
 	while(not-over) {
