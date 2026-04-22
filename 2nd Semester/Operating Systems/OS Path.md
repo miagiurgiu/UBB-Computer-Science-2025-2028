@@ -4701,7 +4701,7 @@ void* fx(void* a) { // thread function
 	- we have two threads, A and B
 	- thread A enters ... does stuff
 	- thread A gives access to thread B to enter
-	- thread B enters ... cannot do stuff bc ???
+	- thread B enters ... cannot do stuff bc the SHARED VARIABLE "turn" was already updated by thread A inside the mutex
 
 2) use semaphores to reduce the traffic (students exam submissions)
 - semaphores - return a number, limit to one => mutex, if more => semaphore?
