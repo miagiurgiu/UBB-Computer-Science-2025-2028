@@ -4619,6 +4619,9 @@ pthread_mutex_unlock(&m);
 
 1) mutex = mutual exclusion (only one THREAD at the time)
 - only one thread will go through the mutex, the others will wait
+- has TWO MAIN OPERATIONS: lock, unlock
+	- only ONE thread can complete lock
+	- the oth
 - see tic-tac-toe example
 
 WRONG:
