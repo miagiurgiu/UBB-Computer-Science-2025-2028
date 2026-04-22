@@ -4649,5 +4649,8 @@ kids, toilet
 kids = threads, mutex = toilet
 semaphores - no more than 3?
 not okay when we force to go through the last 2 when they are finished with 0 => trylock? 
+they all wait for the first one?
+- trylock - 
 
+! ALWAYS lock resources in the same order. 
 
