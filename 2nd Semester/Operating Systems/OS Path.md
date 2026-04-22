@@ -4657,7 +4657,26 @@ void* fx(void* a) { // thread function
 		pthread_mutex_lock(&m);
 		if(turn==1) { // check if it's thread's turn
 			play-board; // make the move on the shared board
-			turn=0;
+			turn=0; // switch turn
+		}
+		pthread_mutex_unlock(&m);
+	}
+	return NULL;
+}
+```
+
+RIGHT:
+```
+int board[3][3]; // shared board
+int turn = 1; // shared turn variable
+pthread_mutex_t m; // one mutex protecting shared data
+
+void* fx(void* a) { // thread function
+	while(not-over) { // repeat forever
+		pthread_mutex_lock(&m);
+		if(turn==1) { // check if it's thread's turn
+			play-board; // make the move on the shared board
+			turn=0; // switch turn
 		}
 		pthread_mutex_unlock(&m);
 	}
