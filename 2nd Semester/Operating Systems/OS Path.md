@@ -4686,6 +4686,7 @@ sem_post(&sem); // position
 - simple mutex not helpful - does not guarantee that after unlock the other will put
 - enforce this: my round, your round (turn) - 2 semaphores
 - volatile
+- mutex allows only one thread to come out of the function? when that one calls unlock, the other comes out?
 
 
 
