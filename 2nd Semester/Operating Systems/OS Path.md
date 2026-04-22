@@ -4619,14 +4619,12 @@ pthread_mutex_unlock(&m);
 Thread = same process, same memory, multiple execution paths
 
 ```
-
-
-```
 pthread_mutex_t 
 
 pthread_ -> POSIX threads library
 mutex -> mutual exclusion
 _t -> type
+```
 
 1) mutex = mutual exclusion (only one THREAD at the time)
 - only one thread will go through the mutex, the others will wait
@@ -4643,8 +4641,8 @@ _t -> type
 // count ++ -> "critical section"
 // we want to wrap the critical section between mutex lock/unlock
 
-pthread_mutex_lock(&m); // declare the mutex
-count++;
+pthread_mutex_lock(&m); // declare the mutex (m=variable name) => "make one mutex named m"
+count++; 
 pthread_mutex_unlock(&m);
 ```
 
