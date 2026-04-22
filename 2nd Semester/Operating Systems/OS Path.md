@@ -4682,7 +4682,8 @@ sem_post(&sem); // position
 ```
 
 3) tic-tac-toe
-- 
+- read write lock - asymetrical 
+- simple mutex not helpfu
 
 
 
