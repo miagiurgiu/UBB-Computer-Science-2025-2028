@@ -4684,7 +4684,8 @@ sem_post(&sem); // position
 3) tic-tac-toe
 - read write lock - asymetrical 
 - simple mutex not helpful - does not guarantee that after unlock the other will put
-- enforce this: 
+- enforce this: my round, your round (turn) - 2 semaphores
+- 
 
 
 
