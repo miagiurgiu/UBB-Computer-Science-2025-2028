@@ -4614,3 +4614,5 @@ pthread_mutex_unlock(&m);
 **So:**
 - for arguments: give each thread its own value/address
 - for shared writes: protect with mutex
+
+## Lecture 8 - 22 apr 2026
