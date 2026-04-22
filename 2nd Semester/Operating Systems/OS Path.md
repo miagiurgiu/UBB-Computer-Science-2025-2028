@@ -4674,6 +4674,7 @@ void* fx(void* a) { // thread function
 	- thread A and B both pass the check
 	- now they both try to pthread_mutex_lock(&m)
 	- now they both say "it's my turn" => not okay.
+	- ! checking shared variables outside mutex is unsafe!
 
 RIGHT:
 ```
