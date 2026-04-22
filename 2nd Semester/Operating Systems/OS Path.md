@@ -4669,8 +4669,9 @@ void* fx(void* a) { // thread function
 }
 ```
 - why it's wrong: 
-	- we have two threads, a and b
-	- thread a runs
+	- we have two threads, A and B
+	- thread A runs that check (if), thread B runs at the same time
+	- thread A and B 
 
 RIGHT:
 ```
