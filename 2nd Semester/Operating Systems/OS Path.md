@@ -4634,8 +4634,8 @@ The 5 synchronisation mechanisms:
 pthread_mutex_ t, init, destroy, lock, unlock
 pthread_cond_ t, init, destroy, wait, signal, broadcast
 pthread_barrier_ t, init, destroy, wait
-sem_ t, init, destroy
-pthread_rwlock_ t, init, destroy
+sem_ t, init, destroy, wait, post
+pthread_rwlock_ t, init, destroy, rdlock, wrlock, unlock
 
 ```
 - barrier - wait until everyone is here (who is everyone? define w number - wait until 15 are here, and then move on)
@@ -4643,4 +4643,4 @@ pthread_rwlock_ t, init, destroy
 - semaphore controls crowds - how many to let through (init of semaphore takes a nr)
 - broadcast - all of them
 - signal - only once
-- 
+- wait of semaphore (reserve a seat), post = unlock
