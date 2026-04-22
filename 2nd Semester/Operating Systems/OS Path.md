@@ -4621,4 +4621,5 @@ only one thread will go through the mutex, the others will wait
 mutex = mutual exclusion (only one at the time)
 
 1) use semaphores to reduce the traffic (students exam submissions)
-- semaphores - return a number, 
+- semaphores - return a number, limit to one => mutex, if more => semaphore?
+- 
