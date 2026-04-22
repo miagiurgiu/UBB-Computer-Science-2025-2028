@@ -4617,3 +4617,6 @@ pthread_mutex_unlock(&m);
 
 ## Lecture 8 - 22 apr 2026
 
+only one thread will go through the mutex, the others will wait
+
+1) 
