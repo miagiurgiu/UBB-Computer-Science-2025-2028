@@ -4623,5 +4623,5 @@ mutex = mutual exclusion (only one at the time)
 1) use semaphores to reduce the traffic (students exam submissions)
 - semaphores - return a number, limit to one => mutex, if more => semaphore?
 2) going on a trip with a bus
-- 
-1) 
+pthread_mutex_ t,
+pthread_cond, 
