@@ -4671,7 +4671,9 @@ void* fx(void* a) { // thread function
 - why it's wrong: 
 	- we have two threads, A and B
 	- thread A runs that check (if), thread B runs at the same time
-	- thread A and B 
+	- thread A and B both pass the check
+	- now they both try to pthread_mutex_lock(&m)
+	- now they both say "it's my turn" => not okay.
 
 RIGHT:
 ```
