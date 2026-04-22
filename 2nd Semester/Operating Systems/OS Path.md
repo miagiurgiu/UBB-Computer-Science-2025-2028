@@ -4616,12 +4616,13 @@ pthread_mutex_unlock(&m);
 - for shared writes: protect with mutex
 
 ## Lecture 8 - 22 apr 2026
+Thread = same process, same memory, multiple execution paths
 
 1) mutex = mutual exclusion (only one THREAD at the time)
 - only one thread will go through the mutex, the others will wait
 - has TWO MAIN OPERATIONS: lock, unlock
 	- only ONE thread can complete lock
-	- the oth
+	- the others WAIT until unlock
 - see tic-tac-toe example
 
 WRONG:
