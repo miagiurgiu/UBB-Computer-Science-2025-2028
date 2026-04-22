@@ -4625,6 +4625,14 @@ Thread = same process, same memory, multiple execution paths
 	- the others WAIT until unlock
 - see tic-tac-toe example
 
+```
+// count -> critical resource
+// count ++ -> cr
+pthread_mutex_lock(&m);
+count++;
+pthread_mutex_unlock(&m);
+```
+
 WRONG:
 ```
 int board[3][3];
