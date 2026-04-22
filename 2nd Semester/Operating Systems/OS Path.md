@@ -4662,13 +4662,19 @@ pthread_mutex_t mtx[3];
 
 main {
 	sem_init(&sem, null, 3);
-	pthread_mutex_init(&m[i], NULL);
+	pthread_mutex_init(&mtx[i], NULL);
 	pthread_create ...
 	pthread_join
 	sem_destroy
 	pthread_mutex_destroy
 }
 
+void* kid(void* a) {
+sem_wait(&sem);
+for(int i=0; i<3; i++) {
+if(pthread_mutex_trylock(&mtx[i])<0) con
+}
+}
 ```
 
 
