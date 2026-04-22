@@ -4690,9 +4690,20 @@ sem_post(&sem); // position
 
 3) conditional variables
 - you wait until notified
+- a thread is signaling the conditional variable, not another thread
+- 
 
 
 ```
-pthread_con
+pthread_cond_t c;
+
+Waiter
+pthread_cond_wait(&c, ...);
+
+
+
+
+Waker
+pthread_cond_signal(&c);
 
 ```
