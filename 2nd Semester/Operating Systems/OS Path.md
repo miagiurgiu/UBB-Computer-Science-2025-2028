@@ -4620,4 +4620,5 @@ pthread_mutex_unlock(&m);
 only one thread will go through the mutex, the others will wait
 mutex = mutual exclusion (only one at the time)
 
-1) 
+1) use semaphores to reduce the traffic (students exam submissions)
+- semaphores - return a number, 
