@@ -4668,6 +4668,9 @@ void* fx(void* a) { // thread function
 	return NULL;
 }
 ```
+- why it's wrong: 
+	- we have two threads, a and b
+	- thread a runs
 
 RIGHT:
 ```
