@@ -4684,7 +4684,9 @@ pthread_mutex_t m; // one mutex protecting shared data
 
 void* fx(void* a) { // thread function
 	while(not-over) { // repeat forever
-		pthread_mutex_lock(&m); // thread A and thread B want to enter, but only one can lock at once
+		pthread_mutex_lock(&m); // thread A and thread B want to enter, but only one can lock
+		// thread A enters, thread B waits 
+		// thread A is now inside the mutex
 		if(turn==1) { // check if it's thread's turn
 			play-board; // make the move on the shared board
 			turn=0; // switch turn
