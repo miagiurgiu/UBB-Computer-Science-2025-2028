@@ -4617,10 +4617,11 @@ pthread_mutex_unlock(&m);
 
 ## Lecture 8 - 22 apr 2026
 
-only one thread will go through the mutex, the others will wait
-mutex = mutual exclusion (only one at the time)
+1) mutex = mutual exclusion (only one THREAD at the time)
+- only one thread will go through the mutex, the others will wait
+- see tic-tac-toe example
 
-1) use semaphores to reduce the traffic (students exam submissions)
+2) use semaphores to reduce the traffic (students exam submissions)
 - semaphores - return a number, limit to one => mutex, if more => semaphore?
 - semaphore = generalisation of mutex
 2) going on a trip with a bus
