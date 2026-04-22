@@ -4670,7 +4670,7 @@ main {
 }
 
 void* kid(void* a) {
-	sem_wait(&sem);
+	sem_wait(&sem); // i reserve the position
 	for(int i=0; i<3; i++) {
 		if(pthread_mutex_trylock(&mtx[i])<0) continue
 		// access critical resource
