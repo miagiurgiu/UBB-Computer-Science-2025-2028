@@ -4685,7 +4685,7 @@ sem_post(&sem); // position
 - read write lock - asymetrical 
 - simple mutex not helpful - does not guarantee that after unlock the other will put
 - enforce this: my round, your round (turn) - 2 semaphores
-- 
+- volatile
 
 
 
