@@ -4629,8 +4629,9 @@ mutex = mutual exclusion (only one at the time)
 	- mutex with 2 types of locking
 - website: more people look than buy (while i'm looking, nobody should modify it) - sounds like a mutex (soome look, some change) - only one who changes
 
+The 5 synchronisation mechanisms:
 ```
-pthread_mutex_ t,
+pthread_mutex_ t, init, des
 pthread_cond_ t,
 pthread_barrier_ t,
 sem_ t,
