@@ -4631,10 +4631,11 @@ mutex = mutual exclusion (only one at the time)
 
 The 5 synchronisation mechanisms:
 ```
-pthread_mutex_ t, init, des
-pthread_cond_ t,
-pthread_barrier_ t,
-sem_ t,
-pthread_rwlock_ t,
+pthread_mutex_ t, init, destroy
+pthread_cond_ t, init, destroy
+pthread_barrier_ t, init, destroy
+sem_ t, init, destroy
+pthread_rwlock_ t, init, destroy
 
 ```
+- barrier - wait until everyone is here (who is everyone? define w number - wait until 15 are here, and then move on)
