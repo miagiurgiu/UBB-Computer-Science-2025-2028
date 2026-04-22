@@ -4691,7 +4691,8 @@ void* fx(void* a) { // thread function
 			play-board; // make the move on the shared board
 			turn=0; // switch turn
 		}
-		pthread_mutex_unlock(&m);
+		pthread_mutex_unlock(&m); // called by thread A
+		// thread can now enter
 	}
 	return NULL;
 }
