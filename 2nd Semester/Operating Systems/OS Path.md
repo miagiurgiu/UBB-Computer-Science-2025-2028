@@ -4625,7 +4625,7 @@ mutex = mutual exclusion (only one at the time)
 - semaphore = generalisation of mutex
 1) going on a trip with a bus
 - read write lock = optimisation of mutex
-- website: more people look than buy (while i'm looking, nobody should modify it) - sounds like a mutex (soome look, some c)
+- website: more people look than buy (while i'm looking, nobody should modify it) - sounds like a mutex (soome look, some change) - only one who changes
 
 ```
 pthread_mutex_ t,
