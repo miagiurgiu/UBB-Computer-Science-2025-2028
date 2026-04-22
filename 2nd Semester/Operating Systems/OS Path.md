@@ -4670,10 +4670,14 @@ main {
 }
 
 void* kid(void* a) {
-sem_wait(&sem);
-for(int i=0; i<3; i++) {
-if(pthread_mutex_trylock(&mtx[i])<0) con
+	sem_wait(&sem);
+	for(int i=0; i<3; i++) {
+		if(pthread_mutex_trylock(&mtx[i])<0) continue
+		// access critical resource
+		pthread_mutex_unlick(mtx[i]);
+		break;
 }
+sem_post(&sem);
 }
 ```
 
