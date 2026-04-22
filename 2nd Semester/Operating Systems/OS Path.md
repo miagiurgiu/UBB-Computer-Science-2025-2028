@@ -4632,8 +4632,8 @@ mutex = mutual exclusion (only one at the time)
 The 5 synchronisation mechanisms:
 ```
 pthread_mutex_ t, init, destroy, lock, unlock
-pthread_cond_ t, init, destroy
-pthread_barrier_ t, init, destroy
+pthread_cond_ t, init, destroy, wait, signal, broadcast
+pthread_barrier_ t, init, destroy, wait
 sem_ t, init, destroy
 pthread_rwlock_ t, init, destroy
 
@@ -4641,3 +4641,6 @@ pthread_rwlock_ t, init, destroy
 - barrier - wait until everyone is here (who is everyone? define w number - wait until 15 are here, and then move on)
 - init function of barrier takes this nr
 - semaphore controls crowds - how many to let through (init of semaphore takes a nr)
+- broadcast - all of them
+- signal - only once
+- 
