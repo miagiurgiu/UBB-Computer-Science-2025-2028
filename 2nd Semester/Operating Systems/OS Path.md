@@ -4620,6 +4620,10 @@ pthread_mutex_unlock(&m);
 1) mutex = mutual exclusion (only one THREAD at the time)
 - only one thread will go through the mutex, the others will wait
 - see tic-tac-toe example
+```
+int board
+
+```
 
 2) use semaphores to reduce the traffic (students exam submissions)
 - semaphores - return a number, limit to one => mutex, if more => semaphore?
