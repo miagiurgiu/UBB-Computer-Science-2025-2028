@@ -4651,6 +4651,14 @@ semaphores - no more than 3?
 not okay when we force to go through the last 2 when they are finished with 0 => trylock? 
 they all wait for the first one?
 - trylock - for specific situations - what situations?
+- if (trylock(&m[i])<0)
 
 ! ALWAYS lock resources in the same order. 
+
+how does a semaphore work:
+
+sem_t sem;
+pthread_mutex_t mtx[3];
+
+main
 
