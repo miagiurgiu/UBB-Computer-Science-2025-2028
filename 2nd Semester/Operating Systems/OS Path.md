@@ -4645,4 +4645,7 @@ pthread_rwlock_ t, init, destroy, rdlock, wrlock, unlock
 - signal - only once
 - wait of semaphore (reserve a seat), post = unlock
 
+kids, toilet
 kids = threads, mutex = toilet
+semaphores - no more than 3?
+
