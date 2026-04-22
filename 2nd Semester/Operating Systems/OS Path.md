@@ -4683,7 +4683,8 @@ sem_post(&sem); // position
 
 3) tic-tac-toe
 - read write lock - asymetrical 
-- simple mutex not helpfu
+- simple mutex not helpful - does not guarantee that after unlock the other will put
+- enforce this: 
 
 
 
