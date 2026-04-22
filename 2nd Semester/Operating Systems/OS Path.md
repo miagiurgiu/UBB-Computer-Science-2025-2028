@@ -4699,7 +4699,9 @@ void* fx(void* a) { // thread function
 ```
 - why it's right:
 	- we have two threads, A and B
-	- thread A enters 
+	- thread A enters ... does stuff
+	- thread A gives access to thread B to enter
+	- thread B enters ... cannot do stuff bc ???
 
 2) use semaphores to reduce the traffic (students exam submissions)
 - semaphores - return a number, limit to one => mutex, if more => semaphore?
