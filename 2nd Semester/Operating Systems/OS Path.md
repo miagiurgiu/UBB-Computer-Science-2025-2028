@@ -4620,6 +4620,8 @@ pthread_mutex_unlock(&m);
 1) mutex = mutual exclusion (only one THREAD at the time)
 - only one thread will go through the mutex, the others will wait
 - see tic-tac-toe example
+
+WRONG:
 ```
 int board[3][3];
 int turn = 1;
@@ -4629,11 +4631,13 @@ void* fx(void* a) {
 	while(not-over) {
 		pthread_mutex_lock(&m);
 		if(turn==1) {
-		
+			play-board;
+			turn=0;
 		}
+		pthread_mutex_unlock(&m);
 	}
+	return NULL;
 }
-
 ```
 
 2) use semaphores to reduce the traffic (students exam submissions)
