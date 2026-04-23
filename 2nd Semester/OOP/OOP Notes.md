@@ -1201,3 +1201,6 @@ FOR FUNCTIONALITY 4:
 
 ## Seminar 4 - 23 apr 2026
 
+- linked list implementation
+- have just one function called testList - call this function in main
+- 
