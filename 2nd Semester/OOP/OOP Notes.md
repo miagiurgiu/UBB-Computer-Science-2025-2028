@@ -1279,4 +1279,4 @@ int main() {
 }
 ```
 
-- whe
+- when at least one function is virtual -> a new field created (not seen, but it's there) - that is the virtual table, will be inside the derived classes as well, will appear the address of the object? inside the virtual table of those class
