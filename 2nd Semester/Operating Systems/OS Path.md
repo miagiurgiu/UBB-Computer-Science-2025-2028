@@ -4726,8 +4726,8 @@ main {
 }
 
 void* kid(void* a) { // one thread = one kid
-	sem_wait(&sem); // i reserve the position
-	for(int i=0; i<3; i++) {
+	sem_wait(&sem); // i reserve the position (if 3 threads exist already, wait)
+	for(int i=0; i<3; i++) { // try all 3 resources
 		if(pthread_mutex_trylock(&mtx[i])<0) continue
 		// access critical resource
 		pthread_mutex_unlick(mtx[i]);
