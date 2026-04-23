@@ -1408,3 +1408,8 @@ void JSONPlayLit::writeToFile() const {
 ```
 std::string Song::toJSON() const
 ```
+
+1) write
+2) display
+
+ShellExecuteA -> 
