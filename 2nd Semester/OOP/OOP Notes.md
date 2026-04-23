@@ -1247,3 +1247,12 @@ LinkedList
 + getSize
 + op ...
 ```
+
+Animal.cpp (combined, no .h)
+```
+using namespace std; // i am in a cpp file
+class Animal {
+protected:
+	string colour;
+}
+```
