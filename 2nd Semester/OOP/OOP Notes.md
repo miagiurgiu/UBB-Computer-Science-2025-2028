@@ -1274,6 +1274,7 @@ public:
 int main() {
 	Animal * a = new Animal { "red" };
 	cout<< a->toString();
-	Animal * d = new 
+	Animal * d = new Dog{"brown", "labrador"};
+	cout<<d->toString();
 }
 ```
