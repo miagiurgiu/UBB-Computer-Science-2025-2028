@@ -1291,7 +1291,7 @@ int main() {
 - abstract class = at least one virtual function
 ```
 you can't do: 
-List<int> l;
+List<int> l; // you cannot create an object of an abstract class
 ```
 	
 
