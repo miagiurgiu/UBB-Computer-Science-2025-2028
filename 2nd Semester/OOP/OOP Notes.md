@@ -1296,7 +1296,6 @@ int main() {
 you can't do: 
 List<int> l; // you cannot create an object of an abstract class
 ```
-	
 
 List.h
 ```
