@@ -4836,14 +4836,18 @@ if(pthread_mutex_trylock(&m[i]) < 0) continue;
 - you wait until notified
 - one thread signals, others wait
 - a thread is signaling the conditional variable, not another thread
-- pthread_cond_wait
-	- unlock
-	- wait
-	- lock
+- STRUCTURE:
 ```
 pthread_cond_t c;
 ```
-
+- WAITER:
+	- pthread_cond_wait
+		- unlock
+		- wait
+		- lock
+```
+pthread_cond_wait(&c, ...);
+```
 
 ```
 pthread_cond_t c;
