@@ -1323,6 +1323,7 @@ Tests.h
 #include "List.h"
 
 int main() {
-	
+	DynamicVector<int> v{};
+	Test::testList(ll);
 }
 ```
