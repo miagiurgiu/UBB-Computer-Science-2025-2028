@@ -1285,3 +1285,5 @@ int main() {
 
 - when at least one function is virtual -> a new field created (not seen, but it's there) - that is the virtual table, will be inside the derived classes as well, will appear the address of the object? inside the virtual table of those classes that inherit
 - virtual destructor in the base class => delete d => destructor of derived class calls the destructor of base class
+- virtual table contains address of function -> call
+- 
