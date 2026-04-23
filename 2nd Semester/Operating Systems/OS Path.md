@@ -4738,7 +4738,6 @@ sem_post(&sem); // position => free one slot (another waiting thread can enter)
 }
 ```
 
-
 2) going on a trip with a bus
 - read write lock = optimisation of mutex
 	- as many reads as you want, write lock only once
