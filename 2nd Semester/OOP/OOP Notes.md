@@ -1201,15 +1201,19 @@ FOR FUNCTIONALITY 4:
 
 ## Seminar 4 - 23 apr 2026
 
-Polymorphism does not work with objects, but with pointers
+Polymorphism does not work with objects, but with pointers/references
+
 - linked list implementation
 - have just one function called testList - call this function in main
 - make DynamicVector and LinkedList inherit from List
 ```
 static void testList(List& l)
 
+better:  static void testList(List<int>& l)
+
 if i am providing a linked list -> add from linked list
-if i am providing a vector -> add from vector
+if i am providing a vector -> add from vector -> getSize() will be taken from dynamic vector
+
 ```
 - operations for the List (template class)
 ```
@@ -1242,5 +1246,4 @@ LinkedList
 + add
 + getSize
 + op ...
-		
 ```
