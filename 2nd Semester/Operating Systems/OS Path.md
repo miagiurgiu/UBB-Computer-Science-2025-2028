@@ -4830,22 +4830,20 @@ pthread_rwlock_ t, init, destroy, rdlock, wrlock, unlock
 if(pthread_mutex_trylock(&m[i]) < 0) continue;
 ```
 
-10) 
-- broadcast - all of them
-- signal - only once
-- wait of semaphore (reserve a seat), post = unlock
+10) ! ALWAYS lock resources in the same order. 
 
-
-! ALWAYS lock resources in the same order. 
-
-
-3) conditional variables
+11) conditional variables
 - you wait until notified
+- one thread signals, others wait
 - a thread is signaling the conditional variable, not another thread
 - pthread_cond_wait
 	- unlock
 	- wait
 	- lock
+```
+pthread_cond_t c;
+```
+
 
 ```
 pthread_cond_t c;
