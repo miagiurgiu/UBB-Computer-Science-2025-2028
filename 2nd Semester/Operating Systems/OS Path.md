@@ -4823,18 +4823,18 @@ pthread_rwlock_ t, init, destroy, rdlock, wrlock, unlock
 
 9) trylock
 - trylock = try to lock without waiting
-- if budy
+- if busy => fail => continue
+- used when you don't want blocking
+- used when you try multiple resources
+```
+if(pthread_mutex_trylock(&m[i]) < 0) continue;
+```
+
+10) 
 - broadcast - all of them
 - signal - only once
 - wait of semaphore (reserve a seat), post = unlock
 
-kids, toilet
-kids = threads, mutex = toilet
-semaphores - no more than 3?
-not okay when we force to go through the last 2 when they are finished with 0 => trylock? 
-they all wait for the first one?
-- trylock - for specific situations - what situations?
-- if (trylock(&m[i])<0)
 
 ! ALWAYS lock resources in the same order. 
 
