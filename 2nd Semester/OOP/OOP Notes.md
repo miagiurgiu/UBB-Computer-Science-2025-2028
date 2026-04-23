@@ -1309,7 +1309,6 @@ class List {
 		virtual T& operator[](int pos) = 0; // ref because we will modify that element
 		virtual ~List();
 }
-
 ```
 
 DynamicVector.h
