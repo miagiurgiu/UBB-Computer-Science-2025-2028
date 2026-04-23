@@ -1211,8 +1211,14 @@ if i am providing a linked list -> add from linked list
 if i am providing a vector -> add from vector
 ```
 - operations for the List (template class)
+```
+List
+--------------------------------
++ add(T e) - element of type T
++ getSize(): int
++ operator[](pos:int): T
+```
+- ALL virtual function =>abstract class
 
 
-		add(T e) - element of type T
-		getSize(): int
-		operator[](pos:int): T
+		
