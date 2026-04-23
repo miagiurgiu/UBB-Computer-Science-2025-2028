@@ -1259,7 +1259,8 @@ public:
 	virtual string toString() { // MAKE IT VIRTUAL!
 		return "Animal: " + this->colour;
 	}
-	~Animal();
+	~Animal() {
+	};
 };
 
 class Dog: public Animal {
@@ -1270,7 +1271,8 @@ public:
 	string toString() {
 		return "Dog: " + this->colour + " " + this->breed + "\n";
 	}
-	~Dog()
+	~Dog() {
+	};
 };
 
 int main() {
@@ -1289,6 +1291,7 @@ int main() {
 - =0 means no implementation
 - destructor should be either default or empty implementation
 - abstract class = at least one virtual function
+
 ```
 you can't do: 
 List<int> l; // you cannot create an object of an abstract class
