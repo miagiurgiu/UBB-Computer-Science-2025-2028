@@ -4855,18 +4855,4 @@ pthread_cond_signal(&c);
 ```
 
 12) SIGNAL - wakes one
-      BROADCAST - wakes all
-
-```
-pthread_cond_t c;
-
-Waiter
-pthread_cond_wait(&c, ...);
-
-
-
-
-Waker
-pthread_cond_signal(&c);
-
-```
+    BROADCAST - wakes all
