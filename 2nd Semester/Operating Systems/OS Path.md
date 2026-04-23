@@ -4725,7 +4725,7 @@ main {
 	pthread_mutex_destroy // cleanup
 }
 
-void* kid(void* a) {
+void* kid(void* a) { // one thread = one kid
 	sem_wait(&sem); // i reserve the position
 	for(int i=0; i<3; i++) {
 		if(pthread_mutex_trylock(&mtx[i])<0) continue
