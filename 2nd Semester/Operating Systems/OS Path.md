@@ -4728,13 +4728,13 @@ main {
 void* kid(void* a) { // one thread = one kid
 	sem_wait(&sem); // i reserve the position (if 3 threads exist already, wait)
 	for(int i=0; i<3; i++) { // try all 3 resources
-		// try to lock without waiting => if busy => skip (continue)
+		// try to lock without waiting => if busy => skip (continue) => try next resource
 		if(pthread_mutex_trylock(&mtx[i])<0) continue
 		// access critical resource
-		pthread_mutex_unlick(mtx[i]);
-		break;
+		pthread_mutex_unlock(mtx[i]); // release resource
+		break; // stop searching (we found one)
 }
-sem_post(&sem); // position
+sem_post(&sem); // position => free one slot (another waiting thread can enter)
 }
 ```
 
