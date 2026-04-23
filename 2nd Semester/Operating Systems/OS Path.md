@@ -4746,7 +4746,37 @@ sem_post(&sem); // position => free one slot (another waiting thread can enter)
 	- solution 2: 2 mutexes (strict alternation)
 - volatile
 - mutex allows only one thread to come out of the function? when that one calls unlock, the other comes out? "stuck waiting for itself", but the other ?? is releasing it
-- 
+
+```
+pthread_mutex_t mx, m0;
+
+void* fx(void* a) {
+    while(not-over) {
+        pthread_mutex_lock(&mx);
+        play-X;
+        pthread_mutex_unlock(&m0);
+    }
+    return NULL;
+}
+
+void* f0(void* a) {
+    while(not-over) {
+        pthread_mutex_lock(&m0);
+        play-0;
+        pthread_mutex_unlock(&mx);
+    }
+    return NULL;
+}
+
+```
+why this works:
+- thread X waits on `mx`
+- thread 0 waits on `m0`
+- X plays, then unlocks `m0`
+- 0 plays, then unlocks `mx`
+- result: strict alternation
+- X → 0 → X → 0
+
 
 3) going on a trip with a bus
 - read write lock = optimisation of mutex
