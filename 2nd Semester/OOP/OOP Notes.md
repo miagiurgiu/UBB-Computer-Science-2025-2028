@@ -1203,4 +1203,4 @@ FOR FUNCTIONALITY 4:
 
 - linked list implementation
 - have just one function called testList - call this function in main
-- 
+- make DynamicVector and LinkedList inherit from List
