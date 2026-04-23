@@ -1287,5 +1287,11 @@ int main() {
 - virtual destructor in the base class => delete d => destructor of derived class calls the destructor of base class
 - virtual table contains address of function -> call
 
-template 
+```
+template <typename T> 
+class List {}
+
+```
+
+
 virtual void add()
