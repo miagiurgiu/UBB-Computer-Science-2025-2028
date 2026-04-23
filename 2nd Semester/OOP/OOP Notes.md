@@ -1259,7 +1259,7 @@ public:
 	string toString() {
 		return "Animal: " + this->colour;
 	}
-}
+};
 
 class Dog: public Animal {
 private:
@@ -1267,7 +1267,13 @@ private:
 public:
 	Dog(const string& col, const srtring& breed): animal{col}, breed{}
 	string toString() {
-		return "Animal: " + this->colour;
+		return "Dog: " + this->colour + " " + this->breed + "\n";
 	}
+};
+
+int main() {
+	Animal * a = new Animal { "red" };
+	cout<< a->toString();
+	Animal * d = new 
 }
 ```
