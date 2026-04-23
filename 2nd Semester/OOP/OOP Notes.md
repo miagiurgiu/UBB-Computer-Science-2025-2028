@@ -1352,7 +1352,9 @@ LinkedList.h
 
 I want a filePlaylist
 - write to file
-- display playlist
-- 
+- display playlist = launch an external application that shows my playlist
+- see JSON 
+
+
 
 
