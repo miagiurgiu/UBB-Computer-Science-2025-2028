@@ -1304,7 +1304,7 @@ class List {
 ```
 
 DynamicVector.h
-- override isuse
+- override is useful because sometimes we might forget to say virtual in the base class
 ```
 #pragma once
 #include <iterator>
@@ -1313,5 +1313,16 @@ DynamicVector.h
 class DynamicVector: public List<T> {
 	...
 	void add(const T& e) override; 
+	T& operator[](int pos) override;
 };
+```
+
+Tests.h
+```
+#pragma once
+#include "List.h"
+
+int main() {
+	
+}
 ```
