@@ -1355,6 +1355,9 @@ I want a filePlaylist
 - display playlist = launch an external application that shows my playlist
 - see JSON 
 
+main.cpp:
+```
+if playlist type == csv , playlist = new csvplaylist{"playlist.csv"}
+else if playlist type = json
 
-
-
+```
