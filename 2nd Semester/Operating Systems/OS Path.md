@@ -4854,5 +4854,9 @@ pthread_cond_wait(&c, ...);
 pthread_cond_signal(&c);
 ```
 
+JUICY EXAM TOPIC
+```
+p
+```
 12) SIGNAL - wakes one
     BROADCAST - wakes all
