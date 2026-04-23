@@ -4882,11 +4882,13 @@ void* waker(void* a) {
 ```
 what happens:
 _______________________________________________________________________
-mutex m exists, condition c exists, ok=0 - nobody holds the mutex yet
+mutex m exists, condition c exists, ok=0 => nobody holds the mutex yet
 ___________________________________________________________________
-pthread_mutex_lock(&m) - waiter locks, so it holds mutex m
-						- waker can't lock yet because the mutex is "taken"
+pthread_mutex_lock(&m) => waiter locks, so it holds mutex m
+						=> waker can't lock yet because the mutex is "taken"
 ________________________________
+while => waiter enters
+________________
 
 
 
