@@ -1289,9 +1289,12 @@ int main() {
 
 ```
 template <typename T> 
-class List {}
+class List {
+	private:
+	public:
+		virtual void add();
+		virtual getSize();
+		virtual operator[](pos:int)
+}
 
 ```
-
-
-virtual void add()
