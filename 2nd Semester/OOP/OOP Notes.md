@@ -1391,6 +1391,10 @@ public:
 
 JSONPlayList.cpp
 ```
-
+#include "JSONPlayList.h"
+#include <fstream>
+void JSONPlayLit::writeToFile() const {
+	if (!fout.is_open())
+}
 
 ```
