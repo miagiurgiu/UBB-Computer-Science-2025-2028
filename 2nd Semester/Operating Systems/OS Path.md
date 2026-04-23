@@ -4738,7 +4738,17 @@ sem_post(&sem); // position => free one slot (another waiting thread can enter)
 }
 ```
 
-2) going on a trip with a bus
+3) tic-tac-toe
+- read write lock - asymetrical 
+- simple mutex not helpful - does not guarantee that after unlock the other will put
+- enforce this: my round, your round (turn) - 2 semaphores
+	- solution 1: turn variable + mutex
+	- solution 2: 2 mutexes (strict alternation)
+- volatile
+- mutex allows only one thread to come out of the function? when that one calls unlock, the other comes out? "stuck waiting for itself", but the other ?? is releasing it
+- 
+
+3) going on a trip with a bus
 - read write lock = optimisation of mutex
 	- as many reads as you want, write lock only once
 	- mutex with 2 types of locking
@@ -4770,13 +4780,6 @@ they all wait for the first one?
 
 ! ALWAYS lock resources in the same order. 
 
-
-3) tic-tac-toe
-- read write lock - asymetrical 
-- simple mutex not helpful - does not guarantee that after unlock the other will put
-- enforce this: my round, your round (turn) - 2 semaphores
-- volatile
-- mutex allows only one thread to come out of the function? when that one calls unlock, the other comes out? "stuck waiting for itself", but the other ?? is releasing it
 
 3) conditional variables
 - you wait until notified
