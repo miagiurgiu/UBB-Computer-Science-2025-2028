@@ -4742,7 +4742,7 @@ sem_post(&sem); // position => free one slot (another waiting thread can enter)
 - read write lock = optimisation of mutex
 	- as many reads as you want, write lock only once
 	- mutex with 2 types of locking
-- website: more people look than buy (while i'm looking, nobody should modify it) - sounds like a mutex (soome look, some change) - only one who changes
+- website: more people look than buy (while i'm looking, nobody should modify it) - sounds like a mutex (some look, some change) - only one who changes
 
 The 5 synchronisation mechanisms:
 ```
