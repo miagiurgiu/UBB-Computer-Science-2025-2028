@@ -1363,7 +1363,7 @@ else if playlist type = json
 	playlist = new jsonplaylist{"platlist.json}
 ```
 
-Implement filePlaylist inheriting from playlist, json playlist
+Implement filePlaylist inheriting from playlist, json playlist, csv playlist
 
 filePlayList.h
 ```
@@ -1413,3 +1413,5 @@ std::string Song::toJSON() const
 2) display
 
 ShellExecuteA -> 
+
+
