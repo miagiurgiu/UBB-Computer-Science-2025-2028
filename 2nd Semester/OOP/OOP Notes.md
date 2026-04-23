@@ -1291,9 +1291,10 @@ int main() {
 template <typename T> 
 class List {
 	public:
-		virtual void add(const T& e) = 0; // e can be skipped
-		virtual getSize();
-		virtual operator[](pos:int)
+		// PURE virtual function:
+		virtual void add(const T& e) = 0; // e can be skipped, PUT = 0 !
+		virtual int getSize() = 0;
+		virtual T operator[](pos:int)
 }
 
 ```
