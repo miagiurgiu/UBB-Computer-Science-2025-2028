@@ -4856,7 +4856,17 @@ pthread_cond_signal(&c);
 
 JUICY EXAM TOPIC
 ```
-p
+pthread_mutex_t m;
+pthread_cond_t c;
+int ok = 0;
+
+void* waiter(void* a) {
+	pthread_mutex_lock(&m);
+	while(ok==0) {
+		pthread_cond_wait(&c, &m);
+	}
+	pthread_mutex_unl
+}
 ```
 12) SIGNAL - wakes one
     BROADCAST - wakes all
