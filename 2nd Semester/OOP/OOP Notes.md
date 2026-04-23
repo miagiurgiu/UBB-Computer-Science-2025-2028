@@ -1357,7 +1357,8 @@ I want a filePlaylist
 
 main.cpp:
 ```
-if playlist type == csv , playlist = new csvplaylist{"playlist.csv"}
+if (playlist type == csv)
+	playlist = new csvplaylist{"playlist.csv"}l
 else if playlist type = json, playlist = new jsonplaylist{"platlist.json}
 ```
 
