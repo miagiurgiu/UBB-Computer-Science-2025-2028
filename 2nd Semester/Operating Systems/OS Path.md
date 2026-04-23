@@ -4709,6 +4709,7 @@ void* fx(void* a) { // thread function
 ```
 sem_t sem; // declare a semaphore
 pthread_mutex_t mtx[3]; // control how many threads can enter => 3 separate critical resources
+
 ```
 
 2) going on a trip with a bus
