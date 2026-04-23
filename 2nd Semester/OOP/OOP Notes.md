@@ -1294,7 +1294,8 @@ class List {
 		// PURE virtual function:
 		virtual void add(const T& e) = 0; // e can be skipped, PUT = 0 !
 		virtual int getSize() = 0;
-		virtual T operator[](pos:int)
+		virtual T& operator[](int pos) = 0; // ref because we will modify that element
+		virtual ~List();
 }
 
 ```
