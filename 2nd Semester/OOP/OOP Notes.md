@@ -1197,4 +1197,7 @@ A7:
 - => I don't link the service with a list, but with an interface
 FOR FUNCTIONALITY 4:
 1) create new folder shopping_basket -> abstract_shopping_basket.cpp, .h
-2) 
+
+
+## Seminar 4 - 23 apr 2026
+
