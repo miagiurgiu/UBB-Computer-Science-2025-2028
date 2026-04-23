@@ -1288,6 +1288,8 @@ int main() {
 - virtual table contains address of function -> call
 - =0 means no implementation
 - destructor should be either default or empty implementation
+
+List.h
 ```
 template <typename T> 
 class List {
@@ -1305,6 +1307,9 @@ DynamicVector.h
 ```
 #pragma once
 #include <iterator>
-#include "List."
+#include "List.h"
 
+class DynamicVector: public List<T> {
+
+};
 ```
