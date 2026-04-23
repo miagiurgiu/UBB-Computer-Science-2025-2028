@@ -4717,8 +4717,8 @@ sem_t sem; // semaphore variable
 pthread_mutex_t mtx[3]; // 3 mutexes (3 critical resources)
 
 main {
-	sem_init(&sem, null, 3); // init semaphore with value 3
-	pthread_mutex_init(&mtx[i], NULL);
+	sem_init(&sem, null, 3); // init semaphore with value 3 (max 3 threads allowed inside)
+	pthread_mutex_init(&mtx[i], NULL); // init each mutex
 	pthread_create ...
 	pthread_join
 	sem_destroy
