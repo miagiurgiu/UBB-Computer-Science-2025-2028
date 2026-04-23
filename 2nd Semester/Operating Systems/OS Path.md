@@ -4863,7 +4863,7 @@ int ok = 0;
 // one thread
 void* waiter(void* a) {
 	pthread_mutex_lock(&m); // waiter locks mutex
-	while(ok==0) { // if true...
+	while(ok==0) { // ALWAYS WHILE, NOT IF
 		pthread_cond_wait(&c, &m); // ...waits
 	}
 	pthread_mutex_unlock(&m);
@@ -4872,10 +4872,10 @@ void* waiter(void* a) {
 
 // another thread
 void* waker(void* a) {
-	pthread_mutex_lock(&m);
-	ok=1;
-	pthread_cond_signal(&c);
-	pthread_mutex_unlock(&m);
+	pthread_mutex_lock(&m); // waker locks mutex
+	ok=1; // sets
+	pthread_cond_signal(&c); // signals condition
+	pthread_mutex_unlock(&m); // unlocks mutex
 	return NULL;
 }
 ```
