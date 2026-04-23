@@ -1201,6 +1201,7 @@ FOR FUNCTIONALITY 4:
 
 ## Seminar 4 - 23 apr 2026
 
+Polymorphism does not work with objects, but with pointers
 - linked list implementation
 - have just one function called testList - call this function in main
 - make DynamicVector and LinkedList inherit from List
@@ -1226,13 +1227,20 @@ DynamicVector
 -cap: int
 -elems: T[0..*]
 --------------------
-
++ add
++ getSize
++ op
 
 ```
 
 ```
 LinkedList
 ----------------------
-		-firs
+- first: Node<T>
+- size: int
+----------------------
++ add
++ getSize
++ op ...
 		
 ```
