@@ -4802,7 +4802,10 @@ pthread_barrier_ t, init, destroy, wait
 sem_ t, init, destroy, wait, post
 pthread_rwlock_ t, init, destroy, rdlock, wrlock, unlock
 ```
-- barrier - wait until everyone is here (who is everyone? define w number - wait until 15 are here, and then move on)
+
+6) Barrier
+- wait until everyone is here (who is everyone? define w number - wait until 15 are here, and then move on)
+- define number (ex: 1)
 - init function of barrier takes this nr
 - semaphore controls crowds - how many to let through (init of semaphore takes a nr)
 - broadcast - all of them
