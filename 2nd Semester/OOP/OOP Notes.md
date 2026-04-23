@@ -1204,3 +1204,10 @@ FOR FUNCTIONALITY 4:
 - linked list implementation
 - have just one function called testList - call this function in main
 - make DynamicVector and LinkedList inherit from List
+```
+static void testList(List& l)
+
+if i am providing a linked list -> add from linked list
+if i am providing a vector -> add from vector
+```
+- operations for the List (template class)
