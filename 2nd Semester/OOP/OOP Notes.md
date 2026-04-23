@@ -1254,5 +1254,12 @@ using namespace std; // i am in a cpp file
 class Animal {
 protected:
 	string colour;
+public:
+	Animal(const string& col): olour {col} {}
+	string toString() {
+		return "Animal: " + this->colour;
+	}
 }
+
+class don
 ```
