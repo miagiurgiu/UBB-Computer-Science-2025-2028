@@ -1201,7 +1201,7 @@ FOR FUNCTIONALITY 4:
 
 ## Seminar 4 - 23 apr 2026
 
-Polymorphism does not work with objects, but with pointers/references
+Polymorphism does not work with objects, but with pointers/references.
 
 - linked list implementation
 - have just one function called testList - call this function in main
