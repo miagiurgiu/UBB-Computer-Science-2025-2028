@@ -4711,6 +4711,32 @@ sem_t sem; // declare a semaphore
 pthread_mutex_t mtx[3]; // control how many threads can enter => 3 separate critical resources
 ```
 
+how does a semaphore work:
+```
+sem_t sem; // semaphore variable
+pthread_mutex_t mtx[3]; // 3 mutexes (3 critical resources)
+
+main {
+	sem_init(&sem, null, 3); // init semaphore with value 3
+	pthread_mutex_init(&mtx[i], NULL);
+	pthread_create ...
+	pthread_join
+	sem_destroy
+	pthread_mutex_destroy
+}
+
+void* kid(void* a) {
+	sem_wait(&sem); // i reserve the position
+	for(int i=0; i<3; i++) {
+		if(pthread_mutex_trylock(&mtx[i])<0) continue
+		// access critical resource
+		pthread_mutex_unlick(mtx[i]);
+		break;
+}
+sem_post(&sem); // position
+}
+```
+
 
 2) going on a trip with a bus
 - read write lock = optimisation of mutex
@@ -4744,31 +4770,6 @@ they all wait for the first one?
 
 ! ALWAYS lock resources in the same order. 
 
-how does a semaphore work:
-```
-sem_t sem;
-pthread_mutex_t mtx[3];
-
-main {
-	sem_init(&sem, null, 3);
-	pthread_mutex_init(&mtx[i], NULL);
-	pthread_create ...
-	pthread_join
-	sem_destroy
-	pthread_mutex_destroy
-}
-
-void* kid(void* a) {
-	sem_wait(&sem); // i reserve the position
-	for(int i=0; i<3; i++) {
-		if(pthread_mutex_trylock(&mtx[i])<0) continue
-		// access critical resource
-		pthread_mutex_unlick(mtx[i]);
-		break;
-}
-sem_post(&sem); // position
-}
-```
 
 3) tic-tac-toe
 - read write lock - asymetrical 
