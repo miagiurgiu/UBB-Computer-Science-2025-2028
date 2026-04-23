@@ -1377,12 +1377,20 @@ class FilePlayList: public PlayList {
 
 ```
 
-JSONPlaylist.cpp
+JSONPlaylist.h
 ```
 #include "FilePlayList.h"
 
 class JSONPlaylist: public filePlaylist {
-
+public:
+	JSONPlaylist(const std::string& filename): FilePlaylist(filename);
+	void writeToFile() const override;
+	
 }
 ```
 
+JSONPlayList.cpp
+```
+
+
+```
