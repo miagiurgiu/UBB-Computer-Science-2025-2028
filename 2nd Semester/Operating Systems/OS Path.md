@@ -4884,5 +4884,6 @@ what happens:
 
 mutex m exists, condition c exists, ok=0 - nobody holds the mutex yet
 
+
 12) SIGNAL - wakes one
     BROADCAST - wakes all
