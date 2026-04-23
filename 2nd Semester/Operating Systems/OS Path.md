@@ -4862,9 +4862,9 @@ int ok = 0;
 
 // one thread
 void* waiter(void* a) {
-	pthread_mutex_lock(&m);
-	while(ok==0) {
-		pthread_cond_wait(&c, &m);
+	pthread_mutex_lock(&m); // waiter locks mutex
+	while(ok==0) { // if true...
+		pthread_cond_wait(&c, &m); // ...waits
 	}
 	pthread_mutex_unlock(&m);
 	return NULL;
