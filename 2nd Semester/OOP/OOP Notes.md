@@ -1335,6 +1335,9 @@ static void testList(List<int>& l);
 int main() {
 	DynamicVector<int> v{};
 	Test::testList(ll);
+	
+	Dynamicvector<int> 
+	Test::testList(ll);
 }
 
 void fct(Animal a); // object, not ok
