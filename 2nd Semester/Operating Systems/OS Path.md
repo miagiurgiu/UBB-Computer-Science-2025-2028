@@ -4815,7 +4815,15 @@ pthread_rwlock_ t, init, destroy, rdlock, wrlock, unlock
 - wait -> reserve a seat
 - post -> release
 
-6) Mutex intuitii
+8) Mutex intuition (kids, toilet)
+- kids = threads
+- toilet = mutex
+- only one thread inside
+- other wait
+
+9) trylock
+- trylock = try to lock without waiting
+- if budy
 - broadcast - all of them
 - signal - only once
 - wait of semaphore (reserve a seat), post = unlock
