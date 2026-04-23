@@ -1363,8 +1363,16 @@ else if playlist type = json, playlist = new jsonplaylist{"platlist.json}
 
 Implement filePlaylist inheriting from playlist, json playlist
 
+filePlaylist.h
+```
+class FilePlaylist: public PlayList {
+	protected: 
+		std::string 
+}
 
 ```
 
+filePlaylist.cpp
+```
 
 ```
