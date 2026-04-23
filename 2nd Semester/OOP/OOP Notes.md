@@ -1341,9 +1341,9 @@ void fct(Animal a); // object, not ok
 void fct(Animal& a);
 ```
 
-
+LinkedList.h
+- class linked list inherits from the List implemented earlier
 ```
-
 
 ```
 
