@@ -4778,8 +4778,11 @@ why this works:
 - X → 0 → X → 0
 
 
-3) going on a trip with a bus
+3) Read-Write Lock (going on a trip with a bus)
 - read write lock = optimisation of mutex
+- mutex with 2 types of locking:
+	- rdlock (read)
+	- wrlock (write)
 	- as many reads as you want, write lock only once
 	- mutex with 2 types of locking
 - website: more people look than buy (while i'm looking, nobody should modify it) - sounds like a mutex (some look, some change) - only one who changes
