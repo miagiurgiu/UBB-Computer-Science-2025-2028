@@ -1261,5 +1261,13 @@ public:
 	}
 }
 
-class don
+class Dog: public Animal {
+private:
+	string breed;
+public:
+	Dog(const string& col, const srtring& breed): animal{col}, breed{}
+	string toString() {
+		return "Animal: " + this->colour;
+	}
+}
 ```
