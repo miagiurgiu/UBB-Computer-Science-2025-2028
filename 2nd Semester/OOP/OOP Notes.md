@@ -1367,7 +1367,12 @@ filePlaylist.h
 ```
 class FilePlaylist: public PlayList {
 	protected: 
-		std::string 
+		std::string filename;
+	public:
+		FilePlaylist(const std::string& filename) : filename(filename) {}
+		virtual void writeToFile() const = 0;
+		virtual void display() const = 0;
+		virtual ~FilePlaylist();
 }
 
 ```
