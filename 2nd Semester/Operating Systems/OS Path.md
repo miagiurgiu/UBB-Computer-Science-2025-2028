@@ -4881,8 +4881,10 @@ void* waker(void* a) {
 }
 ```
 what happens:
-
+_______________________________________________________________________
 mutex m exists, condition c exists, ok=0 - nobody holds the mutex yet
+___________________________________________________________________
+pthread_mutex_lock(&m) - waiter holds mutex m, 
 
 
 12) SIGNAL - wakes one
