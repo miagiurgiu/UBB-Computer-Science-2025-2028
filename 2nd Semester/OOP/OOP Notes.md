@@ -1304,12 +1304,14 @@ class List {
 ```
 
 DynamicVector.h
+- override isuse
 ```
 #pragma once
 #include <iterator>
 #include "List.h"
 
 class DynamicVector: public List<T> {
-
+	...
+	void add(const T& e) override; 
 };
 ```
