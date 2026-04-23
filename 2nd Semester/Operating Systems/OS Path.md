@@ -4860,12 +4860,23 @@ pthread_mutex_t m;
 pthread_cond_t c;
 int ok = 0;
 
+// one thread
 void* waiter(void* a) {
 	pthread_mutex_lock(&m);
 	while(ok==0) {
 		pthread_cond_wait(&c, &m);
 	}
-	pthread_mutex_unl
+	pthread_mutex_unlock(&m);
+	return NULL;
+}
+
+// another thread
+void* waker(void* a) {
+	pthread_mutex_lock(&m);
+	ok=1;
+	pthread_cond_signal(&c);
+	pthread_mutex_unlock(&m);
+	return NULL;
 }
 ```
 12) SIGNAL - wakes one
