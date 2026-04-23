@@ -4805,9 +4805,17 @@ pthread_rwlock_ t, init, destroy, rdlock, wrlock, unlock
 
 6) Barrier
 - wait until everyone is here (who is everyone? define w number - wait until 15 are here, and then move on)
-- define number (ex: 1)
+- define number (ex: 15 threads)
+- all threads wait
+- when all arrive -> all continue ?
 - init function of barrier takes this nr
+
+7) Semaphore
 - semaphore controls crowds - how many to let through (init of semaphore takes a nr)
+- wait -> reserve a seat
+- post -> release
+
+6) Mutex intuitii
 - broadcast - all of them
 - signal - only once
 - wait of semaphore (reserve a seat), post = unlock
