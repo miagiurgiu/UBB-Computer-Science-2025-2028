@@ -4848,6 +4848,11 @@ pthread_cond_t c;
 ```
 pthread_cond_wait(&c, ...);
 ```
+- WAKER:
+```
+pthread_cond_signal(&c);
+```
+
 
 ```
 pthread_cond_t c;
