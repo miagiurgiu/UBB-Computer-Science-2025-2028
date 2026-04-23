@@ -1259,6 +1259,7 @@ public:
 	virtual string toString() { // MAKE IT VIRTUAL!
 		return "Animal: " + this->colour;
 	}
+	~Animal();
 };
 
 class Dog: public Animal {
@@ -1269,6 +1270,7 @@ public:
 	string toString() {
 		return "Dog: " + this->colour + " " + this->breed + "\n";
 	}
+	~Dog()
 };
 
 int main() {
@@ -1276,7 +1278,9 @@ int main() {
 	cout<< a->toString();
 	Animal * d = new Dog{"brown", "labrador"};
 	cout<<d->toString();
+	delete d; // destructor of the base class if the destructor is not virtual
+	return 0;
 }
 ```
 
-- when at least one function is virtual -> a new field created (not seen, but it's there) - that is the virtual table, will be inside the derived classes as well, will appear the address of the object? inside the virtual table of those class
+- when at least one function is virtual -> a new field created (not seen, but it's there) - that is the virtual table, will be inside the derived classes as well, will appear the address of the object? inside the virtual table of those classes that inherit
