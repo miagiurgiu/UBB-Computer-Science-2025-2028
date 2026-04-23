@@ -4856,8 +4856,8 @@ pthread_cond_signal(&c);
 
 JUICY EXAM TOPIC
 ```
-pthread_mutex_t m;
-pthread_cond_t c;
+pthread_mutex_t m; // mutex m exists
+pthread_cond_t c; // conditi
 int ok = 0;
 
 // one thread
