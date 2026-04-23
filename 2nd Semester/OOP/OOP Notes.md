@@ -1234,7 +1234,6 @@ DynamicVector
 + add
 + getSize
 + op
-
 ```
 
 ```
