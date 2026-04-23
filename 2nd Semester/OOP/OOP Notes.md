@@ -1403,3 +1403,6 @@ void JSONPlayLit::writeToFile() const {
 ```
 
 - inside Song.h -> toJson function
+```
+std::string Song::toJSON() const
+```
