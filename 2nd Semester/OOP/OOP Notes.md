@@ -1289,6 +1289,11 @@ int main() {
 - =0 means no implementation
 - destructor should be either default or empty implementation
 - abstract class = at least one virtual function
+```
+you can't do: 
+List<int> l;
+```
+	
 
 List.h
 ```
