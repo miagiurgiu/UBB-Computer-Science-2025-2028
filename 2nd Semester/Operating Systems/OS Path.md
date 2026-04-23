@@ -4859,7 +4859,7 @@ JUICY EXAM TOPIC
 pthread_mutex_t m; // mutex m exists
 pthread_cond_t c; // condition c exists
 int ok = 0;
-// nobody holds the mutex yet
+// nobody holds the mutex yet (mutex=key)
 
 // one thread
 void* waiter(void* a) {
@@ -4882,7 +4882,7 @@ void* waker(void* a) {
 ```
 what happens:
 
-mutex m exists, condition c exists, ok=0 - n
+mutex m exists, condition c exists, ok=0 - nobody holds the mutex yet
 
 12) SIGNAL - wakes one
     BROADCAST - wakes all
