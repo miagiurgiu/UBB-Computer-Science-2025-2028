@@ -1288,6 +1288,7 @@ int main() {
 - virtual table contains address of function -> call
 - =0 means no implementation
 - destructor should be either default or empty implementation
+- abstract class = at least one virtual function
 
 List.h
 ```
@@ -1322,8 +1323,13 @@ Tests.h
 #pragma once
 #include "List.h"
 
+...
+static void testList(List<int>& l);
+...
+
 int main() {
 	DynamicVector<int> v{};
 	Test::testList(ll);
 }
 ```
+
