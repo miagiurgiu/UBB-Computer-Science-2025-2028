@@ -1299,3 +1299,4 @@ class List {
 }
 
 ```
+- =0 means no implementation
