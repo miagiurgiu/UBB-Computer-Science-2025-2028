@@ -1350,6 +1350,9 @@ LinkedList.h
 
 ```
 
-
+I want a filePlaylist
+- write to file
+- display playlist
+- 
 
 
