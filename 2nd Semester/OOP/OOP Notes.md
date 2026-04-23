@@ -1219,6 +1219,20 @@ List
 + operator[](pos:int): T
 ```
 - ALL virtual function =>abstract class
+```
+DynamicVector
+--------------------
+-size: int
+-cap: int
+-elems: T[0..*]
+--------------------
 
 
+```
+
+```
+LinkedList
+----------------------
+		-firs
 		
+```
