@@ -1336,5 +1336,10 @@ int main() {
 	DynamicVector<int> v{};
 	Test::testList(ll);
 }
+
+void fct(Animal a); // object, not ok
+void fct(Animal& a);
 ```
+
+
 
