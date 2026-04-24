@@ -4896,6 +4896,9 @@ pthread_mutex_lock(&m) => waker locks, so it holds mutex m
 						=> waiter runs from the line it stopped at (pthread_cond_wait(&c, &m))  => waiter locks, so it holds mutex m => while ??
 _________________
 ok=1 => waker changes from ok=0 to ok=1
+__________
+pthread_cond_signal(&c) => waker signals condition c
+						=> waiter is notifies
 
 
 12) SIGNAL - wakes one
