@@ -4903,7 +4903,12 @@ _________
 pthread_mutex_unlock(&m) => waker unlocks mutex m
 	                       => waiter can finish pthread_cond_wait(&c, &m);
 _________
-while => waiter can't enter because ok==
+while => waiter can't enter because ok=1 => EXIT the while
+______
+pthread_mutex_unlock(&m) => waiter unlocks mutex m
+________________
+return NULL => waiter thread ends
+
 
 
 12) SIGNAL - wakes one
