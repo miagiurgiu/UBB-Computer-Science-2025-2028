@@ -1360,7 +1360,7 @@ main.cpp:
 if (playlist type == csv)
 	playlist = new csvplaylist{"playlist.csv"}
 else if playlist type = json
-	playlist = new jsonplaylist{"platlist.json}
+	playlist = new jsonplaylist{"platlist.txt"}
 ```
 
 Implement filePlaylist inheriting from playlist, json playlist, csv playlist
