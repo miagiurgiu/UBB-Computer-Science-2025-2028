@@ -1258,7 +1258,7 @@ public:
 	virtual string toString() { // MAKE IT VIRTUAL!
 		return "Animal: " + this->colour;
 	}
-	~Animal() {
+	virtual ~Animal() {
 	};
 };
 
