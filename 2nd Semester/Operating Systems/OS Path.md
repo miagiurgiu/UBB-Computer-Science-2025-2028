@@ -4893,6 +4893,7 @@ pthread_cond_wait(&c, &m) =>waiter unlocks mutex m + waiter waits (sleeps)
 						    => waker can run because the mutex is "available"
 ____________
 pthread_mutex_lock(&m) => waker locks, so it holds mutex m
+						=> waiter runs from the line it stopped at (pthread_cond_wait(&c, &m))
 
 
 12) SIGNAL - wakes one
