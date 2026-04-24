@@ -4901,9 +4901,9 @@ pthread_cond_signal(&c) => waker signals condition c
 						=> waiter is notified => waiter is ready to wake up => but waiter still holds mutex m
 _________
 pthread_mutex_unlock(&m) => waker unlocks mutex m
-	                        => waiter can finish pthread_cond_wait(&c, &m);
+	                       => waiter can finish pthread_cond_wait(&c, &m);
 _________
-
+while => waiter can't enter because ok==
 
 
 12) SIGNAL - wakes one
