@@ -1254,7 +1254,7 @@ class Animal {
 protected:
 	string colour;
 public:
-	Animal(const string& col): olour {col} {}
+	Animal(const string& col): colour {col} {}
 	virtual string toString() { // MAKE IT VIRTUAL!
 		return "Animal: " + this->colour;
 	}
