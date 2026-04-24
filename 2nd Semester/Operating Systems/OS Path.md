@@ -4890,9 +4890,9 @@ ________________________________
 while => waiter enters
 ________________
 pthread_cond_wait(&c, &m) =>waiter unlocks mutex m + waiter waits (sleeps)
-						    => waker can
+						    => waker can run because the mutex is "available"
 ____________
-
+pthread_mutex_lock(&m) => waker locks, so it holds mutex m
 
 
 12) SIGNAL - wakes one
