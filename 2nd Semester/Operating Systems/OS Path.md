@@ -4909,6 +4909,32 @@ pthread_mutex_unlock(&m) => waiter unlocks mutex m
 ________________
 return NULL => waiter thread ends
 
+- extra case: why while, not if
+```
+pthread_mutex_t m;
+pthread_cond_t c;
+int ok;
+
+// waiter
+void* waiter(void* a) {
+	pthread_mutex_lock(&m);
+	while(ok <= 0) {
+		pthread_cond_wait(&c, &m);
+	}
+	pthread_mutex_unlock(&m);
+	return NULL;
+}
+
+// waker
+void* waker(void* a) {
+	pthread_mutex_lock(&m);
+	ok = rand() % 10 - 5; // can be negative or positive
+	pthread_cond_signal(&c);
+	pthread_mutex_unlock(&m);
+	return NULL;
+}
+```
+
 
 12) SIGNAL - wakes one
     BROADCAST - wakes all
