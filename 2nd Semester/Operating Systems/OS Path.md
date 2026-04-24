@@ -4910,6 +4910,5 @@ ________________
 return NULL => waiter thread ends
 
 
-
 12) SIGNAL - wakes one
     BROADCAST - wakes all
