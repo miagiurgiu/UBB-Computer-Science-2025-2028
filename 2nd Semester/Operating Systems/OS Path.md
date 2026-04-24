@@ -4898,7 +4898,9 @@ _________________
 ok=1 => waker changes from ok=0 to ok=1
 __________
 pthread_cond_signal(&c) => waker signals condition c
-						=> waiter is notifies
+						=> waiter is notified => waiter is ready to wake up => but waiter still holds mutex m
+_________
+pthread_mutex_unlock(&m) => waker unlocks
 
 
 12) SIGNAL - wakes one
