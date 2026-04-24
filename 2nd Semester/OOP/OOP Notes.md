@@ -1209,7 +1209,7 @@ Polymorphism does not work with objects, but with pointers/references.
 ```
 static void testList(List& l)
 
-better:  static void testList(List<int>& l) -> accepts any type of list
+better:  static void testList(List<int>& l) -> accepts any type of list -> because of the reference (&), it correctly chooses the right function getSize() or add() from the specific version (Vector or Linked List)
 
 if i am providing a linked list -> add from linked list
 if i am providing a vector -> add from vector -> getSize() will be taken from dynamic vector
