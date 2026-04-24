@@ -1229,7 +1229,7 @@ DynamicVector
 --------------------
 -size: int
 -cap: int
--elems: T[0..*]
+-elems: T[0..*] - dinamic array can hold any nr of elements (->infinity)
 --------------------
 + add
 + getSize
