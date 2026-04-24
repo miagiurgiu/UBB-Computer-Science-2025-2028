@@ -4935,6 +4935,5 @@ void* waker(void* a) {
 }
 ```
 
-
 12) SIGNAL - wakes one
     BROADCAST - wakes all
