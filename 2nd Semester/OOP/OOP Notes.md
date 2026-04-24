@@ -1279,7 +1279,7 @@ int main() {
 	cout<< a->toString();
 	Animal * d = new Dog{"brown", "labrador"};
 	cout<<d->toString();
-	delete d; // destructor of the base class if the destructor is not virtual
+	delete d; // destructor of the base class (animal) instead of derived class (dog) if the destructor is not virtual
 	return 0;
 }
 ```
