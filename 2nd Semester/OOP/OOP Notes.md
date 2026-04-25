@@ -1426,3 +1426,5 @@ Composition:
 Repository -> Coat
 AbstractShoppingBasket -> Coat
 
+Aggregation:
+Service -> AbstractShoppingBasket
