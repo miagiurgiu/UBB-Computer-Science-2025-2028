@@ -1422,13 +1422,13 @@ UML Diagram:
 Inheritance:
 CSVShoppingBasket, HTMLShoppingBasket -> AbstractShoppingBasket 
 
-Composition:
-
+Composition: full diamond
 Repository -> Coat
 - Repository stores vector<Coat> => repository has control over coats lifetime => composition (has-a, strong ownership) => if the repo is destroyed, its coats get destroyed as well
 AbstractShoppingBasket -> Coat
+Service -> Repository
 
-Aggregation:
+Aggregation: empty diamond
 Service -> AbstractShoppingBasket
 
 Association:
