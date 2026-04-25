@@ -1431,6 +1431,7 @@ Service -> AbstractShoppingBasket
 
 Association:
 Service -> Repository
+UI -> Service
 
 Dependency:
 Service -> Coat
