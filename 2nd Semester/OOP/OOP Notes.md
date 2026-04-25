@@ -1428,3 +1428,6 @@ AbstractShoppingBasket -> Coat
 
 Aggregation:
 Service -> AbstractShoppingBasket
+
+Association:
+Service ->
