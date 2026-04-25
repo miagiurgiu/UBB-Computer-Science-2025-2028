@@ -1430,4 +1430,7 @@ Aggregation:
 Service -> AbstractShoppingBasket
 
 Association:
-Service ->
+Service -> Repository
+
+Dependency:
+Service -> Coat
