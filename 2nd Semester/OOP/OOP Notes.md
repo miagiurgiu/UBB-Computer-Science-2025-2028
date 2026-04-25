@@ -1425,7 +1425,7 @@ CSVShoppingBasket, HTMLShoppingBasket -> AbstractShoppingBasket
 Composition:
 
 Repository -> Coat
-- Repository stores vector<Coat> => reposit
+- Repository stores vector<Coat> => repository has control over coats lifetime => composition (has-a, strong ownership) => if the repo is destroyed, its coats get destroyed as well
 AbstractShoppingBasket -> Coat
 
 Aggregation:
