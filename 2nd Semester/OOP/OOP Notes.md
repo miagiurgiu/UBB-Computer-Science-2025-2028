@@ -1423,7 +1423,9 @@ Inheritance:
 CSVShoppingBasket, HTMLShoppingBasket -> AbstractShoppingBasket 
 
 Composition:
+
 Repository -> Coat
+- Repository stores vector<Coat> => reposit
 AbstractShoppingBasket -> Coat
 
 Aggregation:
