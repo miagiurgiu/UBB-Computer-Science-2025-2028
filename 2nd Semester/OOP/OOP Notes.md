@@ -1424,4 +1424,5 @@ CSVShoppingBasket, HTMLShoppingBasket -> AbstractShoppingBasket
 
 Composition:
 Repository -> Coat
+AbstractShoppingBasket -> Coat
 
