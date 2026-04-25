@@ -1419,5 +1419,9 @@ ShellExecuteA ->
 BASKET SHOULD BE SEEN IN THE CONSOLE AS WELL for A7!
 UML Diagram:
 
-CSVShoppingBasket, HTMLShoppingBasket - AbstractShoppingBasket -> Inheritance
+Inheritance:
+CSVShoppingBasket, HTMLShoppingBasket -> AbstractShoppingBasket 
+
+Composition:
+Repository -> Coat
 
