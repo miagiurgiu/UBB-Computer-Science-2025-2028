@@ -5072,7 +5072,7 @@ while(1) {
 ```
 
 How to debug stuff in C:
-- c
+- file a.out -> stripped/unstripped (does it )
 ```
 
 ```
