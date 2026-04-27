@@ -3444,8 +3444,9 @@ int main(int argc, char *argv[]) {
             printf("Child process %d - PID: %d - PPID: %d\n", i, getpid(), getppid());
         } else {
             printf("Parent %d - Child: %d\n", getpid(), f);
-            wait(0); // parent waits for it
-            exit(0);
+            wait(0); // parent waits for its child to finish
+            exit(0); // successfully terminate current process
+            // we put exit here, not in the child 
         }
     }
     return 0;
