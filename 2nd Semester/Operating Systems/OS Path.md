@@ -5074,17 +5074,19 @@ while(1) {
 How to debug stuff in C:
 - chashing code:
 ![[Pasted image 20260427153023.png]]
-
-
+- type bt?
+![[Pasted image 20260427153251.png]]
 
 - file a.out -> stripped/unstripped (does it have debugging symbols or not)
 - valgrind ./a.out arguments
 - gdb ./a.out arguments - attempt to execute as an actual command so don't feed arguments here
-- gdb ./a.out -> opens sth -> type backtrace in that file -> how to see backtrace to see the place where it crashed
+- gdb ./a.out -> opens sth -> type backtrace in that file -> how to see backtrace to see the place where it crashed -> type bt
 - compile with -g 
+- ctrl + c -> where the hang happened
 ```
 gcc test.c -g
 file ./a.out
+gdb a.out
 
 => "with debug info, not stripped" => everything okay
 ```
