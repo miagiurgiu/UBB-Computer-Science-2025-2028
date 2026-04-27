@@ -1450,8 +1450,14 @@ DB:
 - virtual std::vector... getall const =0;
 - virtual ~Repository = default;
 
-1) rename current repo -> filerepo: public repo
-2) 
+2) rename current repo -> filerepo: public repo
+3) database_repo -> database repo: public repo
+- add, delete, update, getall -> override
+- destructor
+- constructor
+- private fields -> to be continued
+
+4
 
 ### Test 2 OOP Prep
 
