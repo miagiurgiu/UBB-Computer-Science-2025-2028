@@ -4981,6 +4981,9 @@ Pipes
 - issues:
 	- hangs
 	- out of bounds read/writes
+- write to pipe = write to fifo (behaves the same)
+	- hangs reading end if one does not exist??
+
 
 600 - set permisssion only to yourself
 perror - reads error number (global number) and prints string interpretation of that number (tell exactly why it failed) - shortcut way of figuring out what exactly went wrong
