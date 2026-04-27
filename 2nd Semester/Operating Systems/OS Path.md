@@ -4987,7 +4987,7 @@ Problem 6
 - next year at networking you'll have such an assignment
 - run it in terminal with gcc -Wall -Wextra -Werror -g -o pb6 pb6.c
 - they make it sleep ig 
-- The parent generates N random numbers and sends both N and the array to the child via a pipe. The child reads the data, calculates the average, and pipes the result back. The parent reads this final value and prints it, demonstrating synchronized two-way inter-process communication.
+- The parent generates N random numbers and sends both N and the array (N randomly generated integers) to the child via a pipe. The child reads the data, calculates the average, and pipes the result back to parent. The parent reads this final value and prints it, demonstrating synchronized two-way inter-process communication.
 ![[Pasted image 20260427142557.png]]
 
 ```
