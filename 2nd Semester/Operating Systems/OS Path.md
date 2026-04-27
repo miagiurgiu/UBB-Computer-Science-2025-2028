@@ -5133,7 +5133,7 @@ exam question: in which scenario can it print potato?
 		- export PATH=
 		- I just broke my shell
 		- repair: PATH= ./a.out
-- sti
+- sticky bit: chmod +s ./a.out
 ```
 #include <unistd.h>
 #include <stdio.h>
