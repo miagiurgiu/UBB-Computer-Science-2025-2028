@@ -5086,7 +5086,10 @@ How to debug stuff in C:
 ```
 gcc test.c -g
 file ./a.out
-gdb a.out
+gdb ./a.out
+run
+bt
+
 
 => "with debug info, not stripped" => everything okay
 ```
