@@ -4976,3 +4976,9 @@ test 3 - fork, wait pipes, fifo
 
 - the problem with levels from last time - diy
 
+Problem 6
+![[Pasted image 20260427141824.png]]
+
+```
+
+```
