@@ -5052,6 +5052,7 @@ int main(int argc, char **argv) {
 Problem 7a
 ![[Pasted image 20260427144446.png]]
 - if you have 10 - both sides should stop (one side receives 10 -> the other side should stop)
+- mkfifo(, permission)
 ```
 while(1) {
 	int num = rand() %10 +1;
@@ -5059,6 +5060,6 @@ while(1) {
 	if(num==10)
 		break;
 	read(b2a, &nu, sizeof(int));
-	
+	printf("A: %d\n, )
 }
 ```
