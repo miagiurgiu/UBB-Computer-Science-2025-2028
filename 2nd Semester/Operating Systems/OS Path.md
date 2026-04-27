@@ -5018,8 +5018,8 @@ int main(int argc, char **argv) {
 		int sum=0; 
 		int n; // variable to hold received count
 		read(ptc[0], &n, sizeof(int)); // receive count n from parent
-		int * nums = malloc(sizeof(int)*n);
-		read(ptc[0],nums, sizeof(int)*n);
+		int * nums = malloc(sizeof(int)*n); // allocate space for received numbers
+		read(ptc[0],nums, sizeof(int)*n); // receive the actual array data
 		close(ptc[0]);
 		for(int i=0; i<n; i++) {
 			sum +=nums[i];
