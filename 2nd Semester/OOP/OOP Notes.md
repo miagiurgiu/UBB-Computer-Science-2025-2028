@@ -1470,6 +1470,8 @@ DB:
 DatabaseRepository repo{"coats.db"};
 Service service{repo};
 
+6) service: NOT CONST REPOSITORY
+
 ### Test 2 OOP Prep
 
 UI STUFF: 
