@@ -4984,6 +4984,10 @@ Pipes
 - write to pipe = write to fifo (behaves the same)
 	- hangs reading end if one does not exist??
 
+0 = stdin
+1 = stdout
+mypipe[0] = read end of mypipe
+mypipe[1] = write end of mypipe
 
 600 - set permisssion only to yourself
 perror - reads error number (global number) and prints string interpretation of that number (tell exactly why it failed) - shortcut way of figuring out what exactly went wrong
