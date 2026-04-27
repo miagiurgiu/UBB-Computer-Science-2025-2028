@@ -4983,6 +4983,8 @@ Problem 6
 - write sth  - where to write, what to write, how much to write (order)
 - ptc - parent to child
 - ctp - child to parent
+- try to provide all the information needed to the child
+- next year at networking you'll have such an assignment
 ![[Pasted image 20260427142557.png]]
 
 
@@ -5013,7 +5015,11 @@ int main(int argc, char **argv) {
 		close(ctp[0]);
 		int sum=0;
 		int n;
-		read(ptc[0])
+		read(ptc[0], &n, sizeof(int));
+		int * nums = malloc(sizeof(int)*n);
+		read(ptc[0],nums, sizeof(int)*n);
+		close(ptc[0]);
+		for(int i=0; i<n;)
 	}
 	close(ptc[0]);
 	close(ctp[1]);
