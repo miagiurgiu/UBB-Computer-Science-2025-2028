@@ -5019,10 +5019,17 @@ int main(int argc, char **argv) {
 		int * nums = malloc(sizeof(int)*n);
 		read(ptc[0],nums, sizeof(int)*n);
 		close(ptc[0]);
-		for(int i=0; i<n;)
+		for(int i=0; i<n; i++) {
+			sum +=nums[i];
+		}
+		const double average = sum/n;
+		write(ctp[1], &average, sizeof(double));
+		close(ctp[1]);
+		exit(0);
 	}
 	close(ptc[0]);
 	close(ctp[1]);
 	write(ptc[1], &N, sizeof(int));
+	write(ptc[1], nu)
 	}
 ```
