@@ -5021,13 +5021,13 @@ int main(int argc, char **argv) {
 		int * nums = malloc(sizeof(int)*n); // allocate space for received numbers
 		read(ptc[0],nums, sizeof(int)*n); // receive the actual array data (child)
 		close(ptc[0]); // close write end of the parent to child pipe 
-		for(int i=0; i<n; i++) {
-			sum +=nums[i];
+		for(int i=0; i<n; i++) { // loop through received numbers
+			sum +=nums[i]; // add each number to total sum
 		}
-		const double average = sum/n;
-		write(ctp[1], &average, sizeof(double));
-		close(ctp[1]);
-		exit(0);
+		const double average = sum/n; // calculate average
+		write(ctp[1], &average, sizeof(double)); // send average back to parent
+		close(ctp[1]); // close write end of child-to-parent pipe
+		exit(0); // terminate child process
 	}
 	close(ptc[0]);
 	close(ctp[1]);
