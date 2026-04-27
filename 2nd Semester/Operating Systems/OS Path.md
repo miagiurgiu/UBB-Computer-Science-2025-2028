@@ -5004,5 +5004,7 @@ int main(int argc, char **argv) {
 		numbers[i] = rand() % 1000;
 	}
 	int ptc[2], ctp[2];
+	pipe(ptc);
+	pipe(ctp);
 	}
 ```
