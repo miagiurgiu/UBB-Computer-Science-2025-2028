@@ -5126,7 +5126,9 @@ Problem 9
 dup2(pipe[1],1)
 ```
 
-exam question: in which c
+exam question: in which scenario can it print potato?
+- how can I cause a problem s.t potato does not get printed?
+	-  no room to make child
 ```
 #include <unistd.h>
 #include <stdio.h>
