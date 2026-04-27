@@ -5053,6 +5053,12 @@ Problem 7a
 ![[Pasted image 20260427144446.png]]
 - if you have 10 - both sides should stop (one side receives 10 -> the other side should stop)
 - mkfifo(pathname, mode)
+
+
+![[Pasted image 20260427151542.png]]
+![[Pasted image 20260427151551.png]]
+![[Pasted image 20260427151608.png]]
+
 ```
 while(1) {
 	int num = rand() %10 +1;
