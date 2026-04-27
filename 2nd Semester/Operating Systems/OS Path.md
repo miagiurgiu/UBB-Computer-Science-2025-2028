@@ -4993,5 +4993,11 @@ int main(int argc, char **argv) {
 		printf("Usage: p6 <N>\n);
 		return 1;
 	}
-}
+	const int N = atoi(argv[1]);
+	if(N==0) { // shouldn't it be <=0 ??
+		printf("invalid number\n");
+	}
+	int* numbers = (int*) malloc(N* sizeof(int));
+	srand
+	}
 ```
