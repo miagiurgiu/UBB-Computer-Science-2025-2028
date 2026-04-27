@@ -4999,12 +4999,12 @@ int main(int argc, char **argv) {
 		printf("Usage: p6 <N>\n);
 		return 1;
 	}
-	const int N = atoi(argv[1]);
+	const int N = atoi(argv[1]); // convert command-line string to integer
 	if(N==0) { // shouldn't it be <=0 ??
 		printf("invalid number\n");
 		return 2;
 	}
-	int* numbers = (int*) malloc(N* sizeof(int));
+	int* numbers = (int*) malloc(N* sizeof(int)); // allocate memory for N integers
 	srand(getpid());
 	for(int i=0; i<N; i++) {
 		numbers[i] = rand() % 1000;
