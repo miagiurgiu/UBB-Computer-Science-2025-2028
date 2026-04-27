@@ -5030,6 +5030,10 @@ int main(int argc, char **argv) {
 	close(ptc[0]);
 	close(ctp[1]);
 	write(ptc[1], &N, sizeof(int));
-	write(ptc[1], nu)
+	write(ptc[1], numbers, sizeof(int)*N);
+	double avg;
+	read(ctp[0], &avg, sizeof(double));
+	close(ctp[0]);
+	printf("Averag)
 	}
 ```
