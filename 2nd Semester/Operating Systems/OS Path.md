@@ -5039,3 +5039,8 @@ int main(int argc, char **argv) {
 	return 0;
 	}
 ```
+
+
+Problem 7a
+![[Pasted image 20260427144446.png]]
+
