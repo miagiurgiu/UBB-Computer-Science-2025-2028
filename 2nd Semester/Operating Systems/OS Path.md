@@ -5119,5 +5119,6 @@ info variables c
 Problem 9
 
 ![[Pasted image 20260427153957.png]]
-- dup - 
-- dup(2)
+- dup - copy to the first available descriptor that's not currently opened
+- dup(2) - copy old argument to new argument
+- popen - 
