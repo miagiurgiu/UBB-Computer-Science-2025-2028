@@ -5010,12 +5010,12 @@ int main(int argc, char **argv) {
 		numbers[i] = rand() % 1000; // store a random number (0-999)
 	}
 	int ptc[2], ctp[2]; // declare arrays for two pipe file descriptors
-	pipe(ptc); // 
-	pipe(ctp);
-	if(fork()==0) {
-		close(ptc[1]);
-		close(ctp[0]);
-		int sum=0;
+	pipe(ptc); // create parent-to-child pipe
+	pipe(ctp); // create child-to-parent pipe
+	if(fork()==0) { // child
+		close(ptc[1]); // close write end of input pipe
+		close(ctp[0]); // close read end of output pipe
+		int sum=0; 
 		int n;
 		read(ptc[0], &n, sizeof(int));
 		int * nums = malloc(sizeof(int)*n);
