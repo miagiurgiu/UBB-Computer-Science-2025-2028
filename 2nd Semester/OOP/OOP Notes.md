@@ -1425,9 +1425,7 @@ CSVShoppingBasket, HTMLShoppingBasket -> AbstractShoppingBasket
 Composition: full diamond
 Repository -> Coat
 - Repository stores 
-
 ```
-
 vector<Coat>
 ```
  => repository has control over coats lifetime => composition (has-a, strong ownership) => if the repo is destroyed, its coats get destroyed as well
@@ -1446,6 +1444,13 @@ Service -> Coat
 
 
 ### Test 2 OOP Prep
+
+UI STUFF: 
+- pentru `int/double` verifici cu `if (!(cin >> x))`
+- pentru `yes/no` citești ca `string`, nu ca `bool`
+- dacă inputul e greșit, faci `return`, nu continui mai departe.
+
+
 
 
 
