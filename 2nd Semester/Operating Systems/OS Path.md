@@ -4984,5 +4984,14 @@ Problem 6
 
 
 ```
+#include <stdio.h>
+#include <unistd.h>
+#include <stdlib.h>
 
+int main(int argc, char **argv) {
+	if(argc !=2) {
+		printf("Usage: p6 <N>\n);
+		return 1;
+	}
+}
 ```
