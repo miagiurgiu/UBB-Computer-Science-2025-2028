@@ -4973,3 +4973,6 @@ void* waker(void* a) {
 
 Processes
 test 3 - fork, wait pipes, fifo
+
+- the problem with levels from last time - diy
+
