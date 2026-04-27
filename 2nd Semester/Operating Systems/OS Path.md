@@ -5115,3 +5115,8 @@ info variables c
 
 => "with debug info, not stripped" => everything okay
 ```
+
+Problem 9
+
+![[Pasted image 20260427153957.png]]
+- dup(2)
