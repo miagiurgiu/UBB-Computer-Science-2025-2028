@@ -4978,6 +4978,9 @@ Pipes
 - in unix, they are unidirectional
 - data flows from write [1] -> read [0]
 - you should close unused ends immediately after forking
+- issues:
+	- hangs
+	- out of bounds read/writes
 
 600 - set permisssion only to yourself
 perror - reads error number (global number) and prints string interpretation of that number (tell exactly why it failed) - shortcut way of figuring out what exactly went wrong
@@ -5083,13 +5086,14 @@ How to debug stuff in C:
 - gdb ./a.out -> opens sth -> type backtrace in that file -> how to see backtrace to see the place where it crashed -> type bt
 - compile with -g 
 - ctrl + c -> where the hang happened
+- set breakpoints:
 ```
 gcc test.c -g
 file ./a.out
 gdb ./a.out
 run
 bt
-
+break 9 -> breakpoint to line 9
 
 => "with debug info, not stripped" => everything okay
 ```
