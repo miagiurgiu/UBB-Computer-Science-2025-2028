@@ -5122,3 +5122,6 @@ Problem 9
 - dup - copy to the first available descriptor that's not currently opened
 - dup(2) - copy old argument to new argument
 - popen = fork + dup2 + redirection
+```
+dup2(pipe[1],1)
+```
