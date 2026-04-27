@@ -4808,7 +4808,6 @@ why this works:
 - result: strict alternation
 - X → 0 → X → 0
 
-
 4) Read-Write Lock (going on a trip with a bus)
 - read write lock = optimisation of mutex
 - mutex with 2 types of locking:
