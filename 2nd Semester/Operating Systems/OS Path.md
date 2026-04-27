@@ -4979,6 +4979,9 @@ Pipes
 - data flows from write [1] -> read [0]
 - you should close unused ends immediately after forking
 
+600 - set permisssion only to yourself
+
+
 Problem 6
 ![[Pasted image 20260427141824.png]]
 - stdout is you writing to the user
