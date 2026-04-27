@@ -5126,7 +5126,7 @@ Problem 9
 dup2(pipe[1],1)
 ```
 
-exam question: in which scenario can it print potato?
+exam question: in which scenario can it print potato? how to make this break
 - how can I cause a problem s.t potato does not get printed? how to make execlp fail?
 	- no room to make child
 	- p = path => mangle the path => you can manipulate environment variables (env)
@@ -5134,6 +5134,7 @@ exam question: in which scenario can it print potato?
 		- I just broke my shell
 		- repair: PATH= ./a.out
 - sticky bit: chmod +s ./a.out
+- make this shell use a specific path
 ```
 #include <unistd.h>
 #include <stdio.h>
