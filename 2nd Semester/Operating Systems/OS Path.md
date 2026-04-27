@@ -4087,7 +4087,7 @@ signal()
 pipes
 - for parent/child-style communication
 - interprocess communication
-- closing unused pipe ends early is essential to avoid stuck programs
+- closing unused pipe_ends early is essential to avoid stuck programs
 
 shared memory
 - gives one common region to multiple processes
