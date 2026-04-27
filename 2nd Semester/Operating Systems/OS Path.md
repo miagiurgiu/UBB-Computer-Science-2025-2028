@@ -5074,6 +5074,9 @@ while(1) {
 How to debug stuff in C:
 - chashing code:
 ![[Pasted image 20260427153023.png]]
+
+
+
 - file a.out -> stripped/unstripped (does it have debugging symbols or not)
 - valgrind ./a.out arguments
 - gdb ./a.out arguments - attempt to execute as an actual command so don't feed arguments here
