@@ -4972,4 +4972,4 @@ void* waker(void* a) {
 ## Lab 8 - 27 apr 2026
 
 Processes
-
+test 3 - fork, wait pipes, fifo
