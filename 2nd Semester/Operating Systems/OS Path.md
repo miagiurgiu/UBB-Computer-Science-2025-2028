@@ -4986,6 +4986,7 @@ Problem 6
 - try to provide all the information needed to the child
 - next year at networking you'll have such an assignment
 - run it in terminal with gcc -Wall -Wextra -Werror -g -o pb6 pb6.c
+- they make it sleep ig 
 ![[Pasted image 20260427142557.png]]
 
 ```
