@@ -3446,7 +3446,7 @@ int main(int argc, char *argv[]) {
             printf("Parent %d - Child: %d\n", getpid(), f);
             wait(0); // parent waits for its child to finish
             exit(0); // successfully terminate current process
-            // we put exit here, not in the child 
+            // we put exit here, not "in the child" (in the previous else if)
         }
     }
     return 0;
