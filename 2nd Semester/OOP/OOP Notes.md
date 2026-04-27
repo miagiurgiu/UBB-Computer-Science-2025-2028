@@ -1466,7 +1466,7 @@ DB:
 - update
 - destructor
 
-1) main: 
+5) main: 
 DatabaseRepository repo{"coats.db"};
 Service service{repo};
 
