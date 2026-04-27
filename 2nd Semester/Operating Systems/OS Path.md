@@ -4999,7 +4999,7 @@ int main(int argc, char **argv) {
 		printf("Usage: p6 <N>\n);
 		return 1;
 	}
-	const int N = atoi(argv[1]); // convert command-line string to integer
+	const int N = atoi(argv[1]); // convert command-line string to integer (parent)
 	if(N==0) { // shouldn't it be <=0 ??
 		printf("invalid number\n");
 		return 2;
@@ -5019,7 +5019,7 @@ int main(int argc, char **argv) {
 		int n; // variable to hold received count
 		read(ptc[0], &n, sizeof(int)); // receive count n from parent
 		int * nums = malloc(sizeof(int)*n); // allocate space for received numbers
-		read(ptc[0],nums, sizeof(int)*n); // receive the actual array data
+		read(ptc[0],nums, sizeof(int)*n); // receive the actual array data (child)
 		close(ptc[0]);
 		for(int i=0; i<n; i++) {
 			sum +=nums[i];
