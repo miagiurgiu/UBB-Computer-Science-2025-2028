@@ -5016,8 +5016,8 @@ int main(int argc, char **argv) {
 		close(ptc[1]); // close write end of input pipe
 		close(ctp[0]); // close read end of output pipe
 		int sum=0; 
-		int n;
-		read(ptc[0], &n, sizeof(int));
+		int n; // variable to hold received count
+		read(ptc[0], &n, sizeof(int)); // receive count n from parent
 		int * nums = malloc(sizeof(int)*n);
 		read(ptc[0],nums, sizeof(int)*n);
 		close(ptc[0]);
