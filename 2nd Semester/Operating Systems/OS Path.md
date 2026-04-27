@@ -4987,7 +4987,6 @@ Problem 6
 - next year at networking you'll have such an assignment
 ![[Pasted image 20260427142557.png]]
 
-
 ```
 #include <stdio.h>
 #include <unistd.h>
@@ -5001,6 +5000,7 @@ int main(int argc, char **argv) {
 	const int N = atoi(argv[1]);
 	if(N==0) { // shouldn't it be <=0 ??
 		printf("invalid number\n");
+		return 2;
 	}
 	int* numbers = (int*) malloc(N* sizeof(int));
 	srand(getpid());
