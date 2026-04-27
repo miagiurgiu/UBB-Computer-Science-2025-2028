@@ -4980,6 +4980,7 @@ Problem 6
 ![[Pasted image 20260427141824.png]]
 - stdout is you writing to the user
 - can you use a single pipe?
+- write sth  - where to write, what to write, how much to write (order)
 ![[Pasted image 20260427142557.png]]
 
 
@@ -4998,6 +4999,10 @@ int main(int argc, char **argv) {
 		printf("invalid number\n");
 	}
 	int* numbers = (int*) malloc(N* sizeof(int));
-	srand
+	srand(getpid());
+	for(int i=0; i<N; i++) {
+		numbers[i] = rand() % 1000;
+	}
+	int ptc[2], ctp[2];
 	}
 ```
