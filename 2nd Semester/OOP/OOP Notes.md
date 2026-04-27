@@ -1414,8 +1414,8 @@ std::string Song::toJSON() const
 
 ShellExecuteA -> 
 
-
 ## A7
+
 BASKET SHOULD BE SEEN IN THE CONSOLE AS WELL for A7!
 UML Diagram:
 
@@ -1424,7 +1424,13 @@ CSVShoppingBasket, HTMLShoppingBasket -> AbstractShoppingBasket
 
 Composition: full diamond
 Repository -> Coat
-- Repository stores vector<Coat> => repository has control over coats lifetime => composition (has-a, strong ownership) => if the repo is destroyed, its coats get destroyed as well
+- Repository stores 
+
+```
+
+vector<Coat>
+```
+ => repository has control over coats lifetime => composition (has-a, strong ownership) => if the repo is destroyed, its coats get destroyed as well
 AbstractShoppingBasket -> Coat
 Service -> Repository
 
@@ -1437,3 +1443,9 @@ UI -> Service
 
 Dependency:
 Service -> Coat
+
+
+### Test 2 OOP Prep
+
+
+
