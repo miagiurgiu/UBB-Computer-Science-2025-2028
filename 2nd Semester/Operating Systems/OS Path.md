@@ -5071,4 +5071,8 @@ while(1) {
 }
 ```
 
-How to 
+How to debug stuff in C:
+- c
+```
+
+```
