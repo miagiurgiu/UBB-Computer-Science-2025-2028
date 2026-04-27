@@ -5086,7 +5086,7 @@ How to debug stuff in C:
 - gdb ./a.out -> opens sth -> type backtrace in that file -> how to see backtrace to see the place where it crashed -> type bt
 - compile with -g 
 - ctrl + c -> where the hang happened
-- set breakpoints:
+- set breakpoints in gdb
 ```
 gcc test.c -g
 file ./a.out
@@ -5094,6 +5094,12 @@ gdb ./a.out
 run
 bt
 break 9 -> breakpoint to line 9
+info locals
+r -> see the values
+step
+info locals -> see the values (updated bc it was run)
+continue
+
 
 => "with debug info, not stripped" => everything okay
 ```
