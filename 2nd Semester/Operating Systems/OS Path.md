@@ -4981,6 +4981,8 @@ Problem 6
 - stdout is you writing to the user
 - can you use a single pipe?
 - write sth  - where to write, what to write, how much to write (order)
+- ptc - parent to child
+- ctp - child to parent
 ![[Pasted image 20260427142557.png]]
 
 
@@ -5006,5 +5008,11 @@ int main(int argc, char **argv) {
 	int ptc[2], ctp[2];
 	pipe(ptc);
 	pipe(ctp);
+	if(fork()==0) {
+		close(ptc[1]);
+		close(ctp[0]);
+		int sum=0;
+		
+	}
 	}
 ```
