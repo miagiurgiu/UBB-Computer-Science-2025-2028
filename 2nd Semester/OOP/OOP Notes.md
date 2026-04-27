@@ -1442,6 +1442,10 @@ UI -> Service
 Dependency:
 Service -> Coat
 
+DB:
+1) create repo.h -> abstract repo
+- virtual void add_coat ... = 0
+- virtual void delete_cia
 
 ### Test 2 OOP Prep
 
