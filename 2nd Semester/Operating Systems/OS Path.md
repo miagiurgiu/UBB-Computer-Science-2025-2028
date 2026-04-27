@@ -5012,7 +5012,11 @@ int main(int argc, char **argv) {
 		close(ptc[1]);
 		close(ctp[0]);
 		int sum=0;
-		
+		int n;
+		read(ptc[0])
 	}
+	close(ptc[0]);
+	close(ctp[1]);
+	write(ptc[1], &N, sizeof(int));
 	}
 ```
