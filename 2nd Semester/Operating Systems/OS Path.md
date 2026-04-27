@@ -5126,5 +5126,16 @@ Problem 9
 dup2(pipe[1],1)
 ```
 
-exam question:
-execlp("ls", "ls)
+exam question: in which c
+```
+#include <unistd.h>
+#include <stdio.h>
+
+int main() {
+	execlp("ls", "ls", NULL);
+	printf("potato");
+}
+
+```
+
+
