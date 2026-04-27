@@ -4980,8 +4980,7 @@ Problem 6
 ![[Pasted image 20260427141824.png]]
 
 ![[Pasted image 20260427142557.png]]
-
-
+- s
 
 ```
 
