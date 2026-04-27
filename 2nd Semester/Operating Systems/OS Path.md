@@ -4981,8 +4981,8 @@ Problem 6
 - stdout is you writing to the user
 - can you use a single pipe?
 - write sth  - where to write, what to write, how much to write (order)
-- ptc - parent to child
-- ctp - child to parent
+- ptc - parent to child (input pipe)
+- ctp - child to parent (output pipe)
 - try to provide all the information needed to the child
 - next year at networking you'll have such an assignment
 - run it in terminal with gcc -Wall -Wextra -Werror -g -o pb6 pb6.c
@@ -5029,10 +5029,10 @@ int main(int argc, char **argv) {
 		close(ctp[1]); // close write end of child-to-parent pipe
 		exit(0); // terminate child process
 	}
-	close(ptc[0]);
-	close(ctp[1]);
-	write(ptc[1], &N, sizeof(int));
-	write(ptc[1], numbers, sizeof(int)*N);
+	close(ptc[0]); // close read end of input pipe
+	close(ctp[1]); // close write end of output pipe
+	write(ptc[1], &N, sizeof(int)); // send count N to child
+	write(ptc[1], numbers, sizeof(int)*N); // send array of numbers to child
 	double avg;
 	read(ctp[0], &avg, sizeof(double));
 	close(ctp[0]);
