@@ -5129,7 +5129,8 @@ dup2(pipe[1],1)
 exam question: in which scenario can it print potato?
 - how can I cause a problem s.t potato does not get printed? how to make execlp fail?
 	- no room to make child
-	- p = path => mangle the path
+	- p = path => mangle the path => you can manipulate environment variables (env)
+		- export PATH=
 ```
 #include <unistd.h>
 #include <stdio.h>
