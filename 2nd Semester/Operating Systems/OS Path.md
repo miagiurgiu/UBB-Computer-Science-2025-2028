@@ -5119,4 +5119,5 @@ info variables c
 Problem 9
 
 ![[Pasted image 20260427153957.png]]
+- dup - 
 - dup(2)
