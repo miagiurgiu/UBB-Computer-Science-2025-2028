@@ -5075,7 +5075,7 @@ How to debug stuff in C:
 - file a.out -> stripped/unstripped (does it have debugging symbols or not)
 - valgrind ./a.out arguments
 - gdb ./a.out arguments - attempt to execute as an actual command so don't feed arguments here
-- gdb ./a.out -> open sth ->
+- gdb ./a.out -> open sth -> how to see backtrace to see the place where it cr
 ```
 
 ```
