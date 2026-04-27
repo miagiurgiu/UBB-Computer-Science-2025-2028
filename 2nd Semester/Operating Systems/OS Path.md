@@ -5020,7 +5020,7 @@ int main(int argc, char **argv) {
 		read(ptc[0], &n, sizeof(int)); // receive count n from parent
 		int * nums = malloc(sizeof(int)*n); // allocate space for received numbers
 		read(ptc[0],nums, sizeof(int)*n); // receive the actual array data (child)
-		close(ptc[0]);
+		close(ptc[0]); // close write end of the parent to child pipe 
 		for(int i=0; i<n; i++) {
 			sum +=nums[i];
 		}
