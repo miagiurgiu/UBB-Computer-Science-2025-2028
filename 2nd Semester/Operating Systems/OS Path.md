@@ -5121,4 +5121,4 @@ Problem 9
 ![[Pasted image 20260427153957.png]]
 - dup - copy to the first available descriptor that's not currently opened
 - dup(2) - copy old argument to new argument
-- popen - 
+- popen = fork + dup2 + redirection
