@@ -1457,7 +1457,14 @@ DB:
 - constructor
 - private fields -> to be continued
 
-4
+4) special implementation for database repo.cpp
+- constructor
+- create table
+- add 
+- get all
+- delete
+- update
+- destructor
 
 ### Test 2 OOP Prep
 
