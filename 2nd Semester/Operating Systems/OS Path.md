@@ -4095,7 +4095,7 @@ shared memory
 semaphores
 - synchronisation mechanisms
 
-child code:
+child code: exit 0
 ```
 if (f == 0) {
     // child work
@@ -4103,7 +4103,7 @@ if (f == 0) {
 }
 ```
 
-parent code:
+parent code: wait 0
 ```
 else {
     // parent work
@@ -4112,7 +4112,7 @@ else {
 ```
 
 signals:
-- install reaction
+- install signal handler
 ```
 signal(SIGX, handler)
 ```
@@ -4125,10 +4125,6 @@ pipes:
 - one end reads
 - one end writes
 - close what you don't use
-
-
-
-
 
 
 ## Lecture 6 - 
