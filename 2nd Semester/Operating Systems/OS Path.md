@@ -4978,9 +4978,10 @@ test 3 - fork, wait pipes, fifo
 
 Problem 6
 ![[Pasted image 20260427141824.png]]
-
+- stdout is you writing to the user
+- can you use a single pipe?
 ![[Pasted image 20260427142557.png]]
-- s
+
 
 ```
 
