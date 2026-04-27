@@ -5033,10 +5033,10 @@ int main(int argc, char **argv) {
 	close(ctp[1]); // close write end of output pipe
 	write(ptc[1], &N, sizeof(int)); // send count N to child
 	write(ptc[1], numbers, sizeof(int)*N); // send array of numbers to child
-	double avg;
-	read(ctp[0], &avg, sizeof(double));
-	close(ctp[0]);
-	printf("Average is: %lf", avg);
+	double avg; // final result
+	read(ctp[0], &avg, sizeof(double)); // wait and read average from child
+	close(ctp[0]); // close read end of child-to-parent pipe
+	printf("Average is: %lf", avg); // print result to the screen
 	return 0;
 	}
 ```
