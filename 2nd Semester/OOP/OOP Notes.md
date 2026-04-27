@@ -1466,6 +1466,10 @@ DB:
 - update
 - destructor
 
+1) main: 
+DatabaseRepository repo{"coats.db"};
+Service service{repo};
+
 ### Test 2 OOP Prep
 
 UI STUFF: 
