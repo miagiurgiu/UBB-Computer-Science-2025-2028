@@ -5093,13 +5093,15 @@ file ./a.out
 gdb ./a.out
 run
 bt
-break 9 -> breakpoint to line 9
+break 9 -> breakpoint to line 9 (if it can't, it will break at the closest line posible)
 info locals
 r -> see the values
 step
 info locals -> see the values (updated bc it was run)
-continue
-
+continue -> hangs because it's doing the read thing
+bt
+help info
+info locals
 
 => "with debug info, not stripped" => everything okay
 ```
