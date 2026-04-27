@@ -1445,7 +1445,13 @@ Service -> Coat
 DB:
 1) create repo.h -> abstract repo
 - virtual void add_coat ... = 0
-- virtual void delete_cia
+- virtual void delete_coat... = 0
+- virtual void update_coat... = 0
+- virtual std::vector... getall const =0;
+- virtual ~Repository = default;
+
+1) rename current repo -> filerepo: public repo
+2) 
 
 ### Test 2 OOP Prep
 
