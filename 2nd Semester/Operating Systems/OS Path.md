@@ -5060,6 +5060,7 @@ Problem 7a
 ![[Pasted image 20260427151608.png]]
 
 ```
+
 while(1) {
 	int num = rand() %10 +1;
 	write(a2b, &num, sizeof(int));
