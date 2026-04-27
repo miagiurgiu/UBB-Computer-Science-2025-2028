@@ -5005,12 +5005,12 @@ int main(int argc, char **argv) {
 		return 2;
 	}
 	int* numbers = (int*) malloc(N* sizeof(int)); // allocate memory for N integers
-	srand(getpid());
-	for(int i=0; i<N; i++) {
-		numbers[i] = rand() % 1000;
+	srand(getpid()); // seed random numbers using process ID
+	for(int i=0; i<N; i++) { // loop N times to fill the array
+		numbers[i] = rand() % 1000; // store a random number (0-999)
 	}
-	int ptc[2], ctp[2];
-	pipe(ptc);
+	int ptc[2], ctp[2]; // declare arrays for two pipe file descriptors
+	pipe(ptc); // 
 	pipe(ctp);
 	if(fork()==0) {
 		close(ptc[1]);
