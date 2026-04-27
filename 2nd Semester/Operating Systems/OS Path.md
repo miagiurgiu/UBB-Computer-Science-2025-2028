@@ -5051,7 +5051,7 @@ int main(int argc, char **argv) {
 
 Problem 7a
 ![[Pasted image 20260427144446.png]]
-
+- if you have 10 - both sides should stop
 ```
 
 ```
