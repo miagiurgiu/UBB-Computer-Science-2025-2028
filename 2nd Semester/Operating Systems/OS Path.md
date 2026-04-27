@@ -4980,7 +4980,7 @@ Pipes
 - you should close unused ends immediately after forking
 
 600 - set permisssion only to yourself
-perror - reads error number (global nu)
+perror - reads error number (global number) and prints string interpretation of that number (tell exactly why it failed) - shortcut way of figuring out what exactly went wrong
 
 Problem 6
 ![[Pasted image 20260427141824.png]]
