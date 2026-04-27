@@ -5034,6 +5034,7 @@ int main(int argc, char **argv) {
 	double avg;
 	read(ctp[0], &avg, sizeof(double));
 	close(ctp[0]);
-	printf("Averag)
+	printf("Average is: %lf", avg);
+	return 0;
 	}
 ```
