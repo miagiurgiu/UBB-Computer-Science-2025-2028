@@ -4977,8 +4977,7 @@ test 3 - fork, wait pipes, fifo
 Pipes
 - in unix, they are unidirectional
 - data flows from write [1] -> read [0]
-- you should close unused 
-- the problem with levels from last time - diy
+- you should close unused ends immediately after forking
 
 Problem 6
 ![[Pasted image 20260427141824.png]]
