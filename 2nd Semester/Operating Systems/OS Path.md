@@ -3419,6 +3419,9 @@ int main()
 }
 ```
 
+Problem 2
+
+
 Problem 3
 ![[Pasted image 20260415154930.png]]
 pr3.c
