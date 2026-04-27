@@ -5102,6 +5102,9 @@ continue -> hangs because it's doing the read thing
 bt
 help info
 info locals
+print c -> print a variable
+info variables c
+
 
 => "with debug info, not stripped" => everything okay
 ```
