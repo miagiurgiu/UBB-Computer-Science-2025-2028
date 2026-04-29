@@ -1490,3 +1490,5 @@ Exceptions. RAII
 	- SOLUTION 1: make sure the variable is deallocated in the catch block
 		- this is not the best strategy because you might have multiple variables that need to be deallocated
 	- SOLUTION 2: RAII
+		- destructors are called automatically when we go out of scope
+		- 
