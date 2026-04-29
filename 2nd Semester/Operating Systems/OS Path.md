@@ -5172,4 +5172,6 @@ mechanisms of synchronisation:
 - some read, some modify => no matter how many reads/writes
 - lock for reading - any number of locks
 - lock for writing - like the mutex lock
-4) 
+4) conditional variable
+- wait until telling you to continue
+- wait if the condition is true but pay attention check again bc from telling you to do it and anctually doing it maybe the 
