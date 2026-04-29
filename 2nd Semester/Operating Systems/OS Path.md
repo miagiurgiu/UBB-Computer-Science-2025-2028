@@ -5166,4 +5166,9 @@ mechanisms of synchronisation:
 - has a field holding a number - that number tells how many threads will go through
 - wait() method
 - open() semaphores working with system processes?
-- =1 =
+- =1 => binary semaphore = mutex
+3) read-write lock
+- specialisation of mutex
+- some read, some modify => no matter how many reads/writes
+- lock for reading - any number of locks
+- 
