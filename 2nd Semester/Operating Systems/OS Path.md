@@ -5257,7 +5257,9 @@ Metaphorical problems:
 	- are voie ursul sa se planga daca nu are voie sa manance? nu. harsh.
 	- sem_post(&s);
 	- use printf, not debugger for this case (no chance with dbg)
-- no bears can eat until
+- no bears can eat until all bears have washed their hands
+	- pthread_barrier_ t b
+	- 
 
 Implementare silvică:
 
