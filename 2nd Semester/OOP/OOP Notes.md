@@ -1483,3 +1483,4 @@ UI STUFF:
 Exceptions
 
  - throw by value and catch by reference
+- catch blocks are executed in the order they were declared
