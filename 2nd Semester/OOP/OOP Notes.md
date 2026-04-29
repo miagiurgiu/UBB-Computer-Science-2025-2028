@@ -1479,7 +1479,4 @@ UI STUFF:
 - pentru `yes/no` citești ca `string`, nu ca `bool`
 - dacă inputul e greșit, faci `return`, nu continui mai departe.
 
-
-
-
-
+## Lecture 9 - 29 apr 2026
