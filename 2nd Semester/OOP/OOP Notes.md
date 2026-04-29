@@ -1537,3 +1537,9 @@ if ...
 else3
 	fp = new HTML
 ```
+
+
+Types of smart pointers:
+1) std::unique_ptr
+2) std::shared_ptr
+3) std::weak_ptr
