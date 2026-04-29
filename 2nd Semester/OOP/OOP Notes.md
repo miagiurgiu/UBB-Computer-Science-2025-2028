@@ -1480,5 +1480,6 @@ UI STUFF:
 - dacă inputul e greșit, faci `return`, nu continui mai departe.
 
 ## Lecture 9 - 29 apr 2026
+Exceptions
 
-throw by value and catch by reference
+ - throw by value and catch by reference
