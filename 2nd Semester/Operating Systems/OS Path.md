@@ -5269,7 +5269,18 @@ Implementare silvică:
 int miere=0;
 pthread_mutex_t m;
 
-void*
+void* stup(void* a) {
+	pthread_mutex_lock(&m);
+	miere++;
+	pthread_mutex_unlock(&m);
+	return NULL;
+}
+
+void* urs(void* a) {
+	pthread_mutex_lock(&m);
+	miere -=5
+}
+
 int main(int argc, char** argv) {
 	(void)argc;
 	(void)argv;
