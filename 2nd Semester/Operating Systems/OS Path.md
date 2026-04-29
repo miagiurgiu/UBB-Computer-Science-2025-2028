@@ -5214,10 +5214,10 @@ Metaphorical problems:
 	- semaphore limiting the number of children, initialised with the max children capacity (5 children max at once)
 	- semaphore limiting the number of kg
 
-1. "thread safe" = classes that can be used simultaneously ?
+3. "thread safe" = classes that can be used simultaneously ?
 - you will use libraries in life - you have to know which of those methods from those libraries are "thread-safe"
 
-1. implement a "lista simplu inlantuita" (singly linked list?) care sa fie "thread-safe"?
+4. implement a "lista simplu inlantuita" (singly linked list?) care sa fie "thread-safe"?
 - adding in list is not "thread-safe" (modifying the list structure is not thread-safe)
 - add+delete methods - WRITER?
 - add+modify methods - READER?
@@ -5226,4 +5226,5 @@ Metaphorical problems:
 - if some threads want to modify the same value at the same time? how to protect value of each node?
 	- make a mutex/node
 - how to make a dictionary "thread-safe"?
-	- 
+
+in a forest we have "stupi si ursi"
