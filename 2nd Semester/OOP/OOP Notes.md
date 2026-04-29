@@ -1553,3 +1553,5 @@ Types of smart pointers:
 ![[Pasted image 20260429152727.png]]
 
 std::shared_ptr
+- we only deallocate only after we make sure there are no pointers pointing to that memory
+- reference_count decreases
