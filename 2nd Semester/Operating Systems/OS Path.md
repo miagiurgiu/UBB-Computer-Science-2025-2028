@@ -5311,9 +5311,11 @@ void* padurar(void* a) {
 			pthread_cond_wait(&c, &m);
 			printf("^");
 		}
+		printf("@");
 		miere +=20;
 		pthead_mutex_unlock(&m);
 	}
+	(void)a;
 	return NULL;
 }
 
@@ -5353,6 +5355,8 @@ pasi:
 ![[Pasted image 20260429102317.png]]
 
 
+- run the program and look at templates
+![[Pasted image 20260429102354.png]]
 
 
 
