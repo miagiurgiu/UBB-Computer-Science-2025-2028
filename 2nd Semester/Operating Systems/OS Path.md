@@ -5255,6 +5255,9 @@ Metaphorical problems:
 	- can i protect a single line using semaphores or can i protect more?
 	- i could protect all the while
 	- are voie ursul sa se planga daca nu are voie sa manance? nu. harsh.
+	- sem_post(&s);
+	- use printf, not debugger for this case (no chance with dbg)
+	- 
 
 Implementare silvică:
 
