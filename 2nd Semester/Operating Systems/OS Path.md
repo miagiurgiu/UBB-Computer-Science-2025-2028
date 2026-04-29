@@ -5270,9 +5270,13 @@ int miere=0;
 pthread_mutex_t m;
 
 void* stup(void* a) {
-	pthread_mutex_lock(&m);
-	miere++;
-	pthread_mutex_unlock(&m);
+	while(1) {
+		pthread_mutex_lock(&m);
+		miere++;
+		printf("+");
+		pthread_mutex_unlock(&m);
+	}
+	
 	return NULL;
 }
 
@@ -5316,6 +5320,8 @@ int main(int argc, char** argv) {
 ```
 
 pasi:
+- initial state of thread functions:
+![[Pasted image 20260429101647.png]]
 - create thread functions:
 ![[Pasted image 20260429101227.png]]
 - urs and padurar threads:
