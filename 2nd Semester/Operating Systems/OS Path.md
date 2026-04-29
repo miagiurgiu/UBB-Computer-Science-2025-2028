@@ -5297,14 +5297,13 @@ void* padurar(void* a) {
 	while(1) {
 		pthread_mutex_lock(&m);
 		while(miere >=5) {
-			printf(")
+			printf("v"); // enough honey, go to sleep
 			pthread_cond_wait(&c, &m);
+			printf("^");
 		}
 		miere +=20;
 		pthead_mutex_unlock(&m);
 	}
-	pthread_mutex_lock(&m);
-	miere +=20;
 	return NULL;
 }
 
