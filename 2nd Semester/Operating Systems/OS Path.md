@@ -5278,7 +5278,15 @@ void* stup(void* a) {
 
 void* urs(void* a) {
 	pthread_mutex_lock(&m);
-	miere -=5
+	miere -=5;
+	pthread_mutex_unlock(&m);
+	return NULL;
+}
+
+void* padurar(void* a) {
+	pthread_mutex_lock(&m);
+	miere +=20;
+	return NULL;
 }
 
 int main(int argc, char** argv) {
