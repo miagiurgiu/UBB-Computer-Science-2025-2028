@@ -1472,6 +1472,11 @@ Service service{repo};
 
 6) service: NOT CONST REPOSITORY
 
+UML RELATIONS:
+ASSOCIATION = class-level reference
+COMPOSITION = lifetime owned
+AGGREGATION = contained object
+
 ### Test 2 OOP Prep
 
 UI STUFF: 
