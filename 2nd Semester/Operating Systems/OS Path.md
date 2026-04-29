@@ -5343,7 +5343,8 @@ pasi:
 
 
 - main:
-![[Pasted image 20260429102135.png]]
+- pass NULL to pthread_mutex_init and pthread_cond_init 
+![[Pasted image 20260429102528.png]]
 
 
 - sem_post(&s) is dangerous - it will block - use a "thread safe" instead ?
