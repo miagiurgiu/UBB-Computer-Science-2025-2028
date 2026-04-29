@@ -1498,6 +1498,7 @@ Exceptions. RAII
 		- do that thing right in the destructor because we know for sure the destructor will be always called when going out of scope
 		- environment is faster 
 		- when working with files, RAII is used
+			- Lex Fridman Podcast
 ```
 {
 	ofstream f{...};
