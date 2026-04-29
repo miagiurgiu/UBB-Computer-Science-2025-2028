@@ -1497,3 +1497,9 @@ Exceptions. RAII
 		- destructors are called automatically when we go out of scope
 		- do that thing right in the destructor because we know for sure the destructor will be always called when going out of scope
 		- environment is faster 
+		- when working with files, RAII is used
+```
+{
+	ofstream f{...};
+}
+```
