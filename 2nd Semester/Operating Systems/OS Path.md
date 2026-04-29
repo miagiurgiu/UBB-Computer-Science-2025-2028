@@ -5276,7 +5276,6 @@ void* stup(void* a) {
 		printf("+");
 		pthread_mutex_unlock(&m);
 	}
-	
 	return NULL;
 }
 
@@ -5326,7 +5325,7 @@ pasi:
 ![[Pasted image 20260429101227.png]]
 - urs and padurar threads:
 ![[Pasted image 20260429101306.png]]
-- 
+- sem_init library: ![[Pasted image 20260429101815.png]]
 
 
 
