@@ -5257,7 +5257,8 @@ Metaphorical problems:
 	- are voie ursul sa se planga daca nu are voie sa manance? nu. harsh.
 	- sem_post(&s);
 	- use printf, not debugger for this case (no chance with dbg)
-	- 
 
 Implementare silvică:
 
+- how could we use the semaphore between processes?
+	- 
