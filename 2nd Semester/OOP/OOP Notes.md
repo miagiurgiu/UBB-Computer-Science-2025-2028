@@ -1523,7 +1523,7 @@ SmartPointer a{new int{3}}
 ```
 - why don't we do the allocation inside the constructor?
 	- if you allocate inside constructor, you lose flexibility and genericity
-	- because 
+	- because in this case it's a class (object)
 ```
 SmartPointer(int ...) {
 	this-> ... = new int (val); // works only for int
