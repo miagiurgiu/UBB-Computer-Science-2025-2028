@@ -5344,6 +5344,17 @@ pasi:
 ![[Pasted image 20260429102135.png]]
 
 
+- sem_post(&s) is dangerous - it will block - use a "thread safe" instead ?
+![[Pasted image 20260429102219.png]]
+
+
+
+
+
+
+
+
+
 - how could we use the semaphore between processes?
 	- the semaphore lacks a ... so we can use it between processes?
 	- ce are fifo si nu are pipe? a NAME. 
