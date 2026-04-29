@@ -5174,4 +5174,5 @@ mechanisms of synchronisation:
 - lock for writing - like the mutex lock
 4) conditional variable
 - wait until telling you to continue
-- wait if the condition is true but pay attention check again bc from telling you to do it and anctually doing it maybe the 
+- wait if the condition is true but pay attention check again bc from telling you to do it and actually doing it maybe the condition changed
+- 
