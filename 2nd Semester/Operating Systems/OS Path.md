@@ -5263,7 +5263,18 @@ Metaphorical problems:
 
 Implementare silvică:
 ```
-#include <stdio.
+#include <stdio.h>
+#inckyde <pthread.h>
+
+int miere=0;
+pthread_mutex_t m;
+
+void*
+int main(int argc, char** argv) {
+	(void)argc;
+	(void)argv;
+	return 0;
+}
 
 ```
 
