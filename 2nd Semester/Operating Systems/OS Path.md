@@ -5196,4 +5196,5 @@ Metaphorical problems:
 	- mutex + conditional variable - how many kg 
 		- initialise variable with max kg
 		- this number is protected with a mutex
-		- 
+
+- what is 2 sumo men want to enter a lift if 400kg max capacit
