@@ -5181,8 +5181,7 @@ Metaphorical problems:
 
 1. lift in a building - simulate this situation
 - lift
-	- limited capacity (kg) - don't let inside the lift too much kg
-	- 
+	- limited capacity (kg) - don't let inside the lift too many kg
 - who are threads?
 	- people
 	- they are allowed to enter that zone if they have space
@@ -5206,4 +5205,9 @@ Metaphorical problems:
 	- more threads want to reserve multiple resources at the same time
 	- you have to synchronise them
 
-2. children jumping on trambuline
+1. children jumping on trambuline
+- who are threads?
+	- children
+	- we should not let too many children jump
+- what mechanisms?
+	- semaphore limiting 
