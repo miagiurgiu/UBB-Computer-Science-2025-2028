@@ -1498,7 +1498,7 @@ Exceptions. RAII
 		- do that thing right in the destructor because we know for sure the destructor will be always called when going out of scope
 		- environment is faster 
 		- when working with files, RAII is used
-			- Lex Fridman Podcast
+			- when having an object of type ifstream/ofstream, the constructor aquires the resource (file handle) and will automatically open the file
 ```
 {
 	ofstream f{...};
