@@ -5327,7 +5327,7 @@ pasi:
 ![[Pasted image 20260429101306.png]]
 - sem_init library: ![[Pasted image 20260429101815.png]]
 
-
+- now we wanna 
 
 
 - how could we use the semaphore between processes?
