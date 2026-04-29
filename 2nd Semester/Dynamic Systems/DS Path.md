@@ -64,5 +64,10 @@ pointplot(points);
 
 
 ```
-x:=0
+#Problem 3:
+restart;
+with(plots):
+x:=0.7
+for i from 1 to 200 do x:=2*x*(1-x); f[i]:=x: od:
+points:=[[n,f[n]]$n=1..2
 ```
