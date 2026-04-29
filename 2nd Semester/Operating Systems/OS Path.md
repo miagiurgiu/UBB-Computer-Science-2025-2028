@@ -5175,4 +5175,9 @@ mechanisms of synchronisation:
 4) conditional variable
 - wait until telling you to continue
 - wait if the condition is true but pay attention check again bc from telling you to do it and actually doing it maybe the condition changed
+
+
+Metaphorical problems:
+
+1. lift in a building - simulate this situation
 - 
