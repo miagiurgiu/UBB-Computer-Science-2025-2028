@@ -5227,4 +5227,4 @@ Metaphorical problems:
 	- make a mutex/node
 - how to make a dictionary "thread-safe"?
 
-in a forest we have "stupi si ursi"
+5. in a forest we have "stupi si ursi" - stupi-ursi-padurari - cand ursul se trezeste, ... aduce miere din depozit
