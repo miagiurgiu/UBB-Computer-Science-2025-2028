@@ -5343,7 +5343,7 @@ pasi:
 
 
 - main:
-- pass NULL to pthread_mutex_init and pthread_cond_init 
+- pass NULL to pthread_mutex_init and pthread_cond_init !
 ![[Pasted image 20260429102528.png]]
 
 
@@ -5366,3 +5366,5 @@ pasi:
 	- the semaphore lacks a ... so we can use it between processes?
 	- ce are fifo si nu are pipe? a NAME. 
 	- it does not have a name, it has a number. 
+- flow of solving this prolem (photos)
+	- create 3 threads
