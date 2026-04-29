@@ -1511,6 +1511,7 @@ int e(4.5); // silently casts it to an int -> 4
 ```
 
 Smart Pointers:
+- behave as pointers but they also know how to automatically destroy when we no longer work with stuff
 - smart pointer doesn’t create the resource, it **owns and manages it**
 - if i get a resource from somewhere else, it is my responsibility to deallocate it etc.
 	- `new int{3}` → creează resursa
@@ -1525,4 +1526,11 @@ SmartPointer(int ...) {
 	this-> ... = new int (val); // works only for int
 }
 ```
-- 
+- ex
+```
+FilePlaylist fp = nullptr;
+if ...
+	fp = new CSV
+else
+	fp = new HTML
+```
