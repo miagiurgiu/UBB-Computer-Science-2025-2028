@@ -5219,4 +5219,7 @@ Metaphorical problems:
 
 1. implement a "lista simplu inlantuita" (singly linked list?) care sa fie "thread-safe"?
 - adding in list is not thread-safe (modifying the list structure is not thread-safe)
-- modifying the value of a no
+- add+delete methods - 
+- add+modify methods
+- modifying the value of a node -> is it thread-safe?
+	- 
