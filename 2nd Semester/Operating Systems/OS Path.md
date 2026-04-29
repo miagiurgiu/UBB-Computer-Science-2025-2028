@@ -5217,5 +5217,6 @@ Metaphorical problems:
 3. "thread safe" = classes that can be used symultaneously 
 - you will use libraries in life - 
 
-1. implement a "lista simplu inlantuita" care sa fie "thread-safe"?
-- adding in lis
+1. implement a "lista simplu inlantuita" (singly linked list?) care sa fie "thread-safe"?
+- adding in list is not thread-safe (modifying the list structure is not thread-safe)
+- modifying the value of a no
