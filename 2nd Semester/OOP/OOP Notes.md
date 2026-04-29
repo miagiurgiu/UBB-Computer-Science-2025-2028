@@ -1512,13 +1512,14 @@ int e(4.5); // silently casts it to an int -> 4
 
 Smart Pointers:
 - if i get a resource from somewhere else, it is my responsibility to deallocate it etc.
+	- `new int{3}` → creează resursa
+	- `SmartPointer` → devine responsabil de ea
 ```
 SmartPointer a{new int{3}}
 ```
 - why don't we do the allocation inside the constructor?
-
 ```
 SmartPointer(int ...) {
-	this-> ... 
+	this-> ... = new int (val); // wors
 }
 ```
