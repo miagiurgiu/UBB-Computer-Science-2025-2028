@@ -5238,4 +5238,5 @@ Metaphorical problems:
 - cat mananca un urs?
 - how to protect the honey?
 	- using a mutex -> pthread_mutex_t m
-- who wakes the prd
+- who wakes the padurar?
+	- ursii
