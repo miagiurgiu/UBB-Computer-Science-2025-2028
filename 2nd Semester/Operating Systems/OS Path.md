@@ -5236,5 +5236,6 @@ Metaphorical problems:
 	- honey - it is a quantity, a variable (n=0 in the beginning)
 - cat produc stupii? 
 - cat mananca un urs?
-- how to protect the honey
-	- using a mutex
+- how to protect the honey?
+	- using a mutex -> pthread_mutex_t m
+- who wakes the prd
