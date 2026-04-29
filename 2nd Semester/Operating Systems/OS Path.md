@@ -5197,4 +5197,6 @@ Metaphorical problems:
 		- initialise variable with max kg
 		- this number is protected with a mutex
 
-- what is 2 sumo men want to enter a lift if 400kg max capacit
+- what is 2 sumo men (+200kg each) want to enter a lift if 400kg max capacity?
+	- should enter one men, the other should wait
+	- 
