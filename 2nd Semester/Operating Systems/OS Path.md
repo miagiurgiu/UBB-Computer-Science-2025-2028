@@ -5262,6 +5262,10 @@ Metaphorical problems:
 
 
 Implementare silvică:
+```
+#include <stdio.
+
+```
 
 
 - how could we use the semaphore between processes?
