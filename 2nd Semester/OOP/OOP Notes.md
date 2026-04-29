@@ -1474,7 +1474,9 @@ Service service{repo};
 
 UML RELATIONS:
 ASSOCIATION = class-level reference
+![[Pasted image 20260429213157.png]]
 COMPOSITION = lifetime owned
+![[Pasted image 20260429213215.png]]
 AGGREGATION = contained object
 
 ### Test 2 OOP Prep
