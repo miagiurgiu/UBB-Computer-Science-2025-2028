@@ -1527,11 +1527,11 @@ SmartPointer(int ...) {
 	this-> ... = new int (val); // works only for int
 }
 ```
-- how is this example relevant?
+- you create different objects at runtime, smart pointer doesn’t care, just deletes correctly at the end
 ```
 FilePlaylist fp = nullptr;
 if ...
 	fp = new CSV
-else
+else3
 	fp = new HTML
 ```
