@@ -1511,7 +1511,7 @@ int e(4.5); // silently casts it to an int -> 4
 ```
 
 Smart Pointers:
-- 
+- they receive some memory that has already been allocated
 - behave as pointers but they also know how to automatically destroy when we no longer work with stuff - it should be able to get destroyed automatically?
 - they are wrappers of some raw pointers?
 - smart pointer doesn’t create the resource, it **owns and manages it**
@@ -1523,6 +1523,7 @@ SmartPointer a{new int{3}}
 ```
 - why don't we do the allocation inside the constructor?
 	- if you allocate inside constructor, you lose flexibility and genericity
+	- because 
 ```
 SmartPointer(int ...) {
 	this-> ... = new int (val); // works only for int
