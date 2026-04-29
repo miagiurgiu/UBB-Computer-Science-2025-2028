@@ -12,6 +12,7 @@ HW: finish lab1 exercises
 
 restart;
 with(plots);
+
 x:=0.7
 for i from 1 to 200 do x:=2*x(1-x); f[i]:=x: od:
 
