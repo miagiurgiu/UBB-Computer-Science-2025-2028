@@ -5210,4 +5210,8 @@ Metaphorical problems:
 	- children
 	- we should not let too many children jump
 - what mechanisms?
-	- semaphore limiting 
+	- 2 semaphores:
+	- semaphore limiting the number of children, initialised with the max children capacity (5 children max at once)
+	- semaphore limiting the number of kg
+
+3. 
