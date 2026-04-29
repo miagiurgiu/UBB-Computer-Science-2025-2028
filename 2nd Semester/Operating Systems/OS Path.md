@@ -5159,4 +5159,7 @@ DUP2 and exact to the next test! (one)
 
 ## Lecture 9 - 29 apr 2026
 
-mecanis
+mechanisms of synchronisation:
+1) mutex
+2) semaphore
+- extention of mutex
