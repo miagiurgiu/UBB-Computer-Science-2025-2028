@@ -1554,4 +1554,5 @@ Types of smart pointers:
 
 std::shared_ptr
 - we only deallocate only after we make sure there are no pointers pointing to that memory
-- reference_count decreases
+- when we remove those pointers because they get out of scope, reference_count decreases
+- BUT in the case of shared pointers,
