@@ -5232,6 +5232,8 @@ Metaphorical problems:
 	- stup - one thread
 	- ursi - another thread
 	- padurar - another thread
+		- when he wakes up, prints "^"
+		- when he goes to sleep, prints "v"
 - variables:
 	- honey - it is a quantity, a variable (n=0 in the beginning)
 - cat produc stupii? 
