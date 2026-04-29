@@ -5240,3 +5240,4 @@ Metaphorical problems:
 	- using a mutex -> pthread_mutex_t m
 - who wakes the padurar?
 	- ursii
+		- if they have enough honey, they eat it, if not, they wake the padurar
