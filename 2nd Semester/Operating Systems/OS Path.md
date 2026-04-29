@@ -5253,7 +5253,8 @@ Metaphorical problems:
 	- solve this using a semaphore
 	- where should the semaphore be blocked? where to put sem_wait and sem_block?
 	- can i protect a single line using semaphores or can i protect more?
-	- 
+	- i could protect all the while
+	- are voie u
 
 Implementare silvică:
 
