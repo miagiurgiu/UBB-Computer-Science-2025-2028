@@ -1486,6 +1486,7 @@ Exceptions. RAII
 - catch blocks are executed in the order they were declared
 - garbage collector
 	- separate program that searches stuff that is no longer used and deletes those
+	- java, python there is no need for deallocation because they use garbage collector
 
 ![[Pasted image 20260429143025.png]]
 - the "delete a" block might never be reached because throw goes to catch
@@ -1494,4 +1495,4 @@ Exceptions. RAII
 	- SOLUTION 2: RAII
 		- destructors are called automatically when we go out of scope
 		- do that thing right in the destructor because we know for sure the destructor will be always called when going out of scope
-		- 
+		- environment is faster 
