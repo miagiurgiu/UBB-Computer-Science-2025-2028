@@ -1485,10 +1485,11 @@ INHERITANCE="is-a"
 ![[Pasted image 20260429213739.png]]
 
 For Coats app:
-- composition
+- composition:
 ![[Pasted image 20260429222158.png]]
-
-
+- aggregation:
+![[Pasted image 20260429222236.png]]
+- 
 
 ### Test 2 OOP Prep
 
