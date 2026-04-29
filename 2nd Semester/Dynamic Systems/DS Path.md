@@ -79,5 +79,8 @@ with(plots):
 lambda:=4;
 solve(lambda*x*(1-x)=x,x); evalf(2/3);
 x:=0.7
-for i from 1 to 1200 do x:=lambda*x*(1-x); 
+for i from 1 to 1200 do x:=lambda*x*(1-x); f[i]:=x: od:
+points:=[[n,f[n]]$n=1..1200]:
+pointplot(points,symbol=circle);
+
 ```
