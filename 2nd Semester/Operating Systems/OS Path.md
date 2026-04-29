@@ -5181,8 +5181,8 @@ Metaphorical problems:
 
 1. lift in a building - simulate this situation
 - lift
-	- limited capacity (kg)
+	- limited capacity (kg) - don't let inside the lift too much kg
 	- 
 - who are threads?
-	- 
+	- people
 - what are the mechanisms?
