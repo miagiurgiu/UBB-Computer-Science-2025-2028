@@ -1477,7 +1477,10 @@ ASSOCIATION = class-level reference
 ![[Pasted image 20260429213157.png]]
 COMPOSITION = lifetime owned
 ![[Pasted image 20260429213215.png]]
-AGGREGATION = contained object
+AGGREGATION = contained object can exist independently
+![[Pasted image 20260429213538.png]]
+DEPENDENCY = used only in a method/parameter/local variable
+
 
 ### Test 2 OOP Prep
 
