@@ -5201,4 +5201,7 @@ Metaphorical problems:
 	- should enter one men, the other should wait
 	- how to prevent threads from blocking while reserving their kg?
 		- using mutexes
-		- reserving kg for thread is not atomic
+		- reserving kg for threads is not atomic (there are more threads reserving at the same time)
+- wrap-up: 
+	- more threads want to reserve multiple resources at the same time
+	- 
