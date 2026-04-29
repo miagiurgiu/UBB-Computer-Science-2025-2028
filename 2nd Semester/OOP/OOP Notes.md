@@ -1544,13 +1544,12 @@ Types of smart pointers:
 2) std::shared_ptr
 3) std::weak_ptr
 
-4) std::unique_ptr
+ std::unique_ptr
 - owns its object uniquely
 - if i want another pointer to point to that object i have to "move"
 - you can't pass them by value because this means a copy will be made
 - as any other smart pointer, when we go out of scope, newly allocated memory will be destroyed
 - no constructor is called because make_unique is a function
 ![[Pasted image 20260429152727.png]]
-```
 
-```
+std::shared_ptr
