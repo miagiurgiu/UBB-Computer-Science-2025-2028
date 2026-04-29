@@ -5205,7 +5205,7 @@ Metaphorical problems:
 	- more threads want to reserve multiple resources at the same time
 	- you have to synchronise them
 
-1. children jumping on trambuline
+2. children jumping on trambuline
 - who are threads?
 	- children
 	- we should not let too many children jump
@@ -5214,4 +5214,5 @@ Metaphorical problems:
 	- semaphore limiting the number of children, initialised with the max children capacity (5 children max at once)
 	- semaphore limiting the number of kg
 
-3. 
+1. "thread safe" = classes that can be used symultaneously 
+- you s
