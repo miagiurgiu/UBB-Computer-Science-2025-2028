@@ -5308,7 +5308,14 @@ int main(int argc, char** argv) {
 ```
 
 pasi:
+- create thread functions:
+![[Pasted image 20260429101227.png]]
+- urs and padurar threads:
+![[Pasted image 20260429101306.png]]
 - 
+
+
+
 
 - how could we use the semaphore between processes?
 	- the semaphore lacks a ... so we can use it between processes?
