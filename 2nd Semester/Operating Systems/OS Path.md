@@ -5247,3 +5247,5 @@ Metaphorical problems:
 => de la semnalare pana la trezire trece totusi un pic de vreme
 => see paterns in that file (perioada de foamete - a lot of !, padurar wakes up and goes to sleep ^v)
 
+Implementare silvica:
+
