@@ -1489,7 +1489,9 @@ For Coats app:
 ![[Pasted image 20260429222158.png]]
 - aggregation:
 ![[Pasted image 20260429222236.png]]
-- 
+![[Pasted image 20260429222401.png]]
+![[Pasted image 20260429222425.png]]
+
 
 ### Test 2 OOP Prep
 
