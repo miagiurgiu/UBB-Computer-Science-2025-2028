@@ -5259,7 +5259,7 @@ Metaphorical problems:
 	- use printf, not debugger for this case (no chance with dbg)
 - no bears can eat until all bears have washed their hands
 	- pthread_barrier_ t b
-	- 
+
 
 Implementare silvică:
 
