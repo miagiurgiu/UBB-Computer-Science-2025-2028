@@ -5188,7 +5188,9 @@ Metaphorical problems:
 	- they are allowed to enter that zone if they have space
 - what are the mechanisms?
 	- semaphore - you have to know with what value to initialise it
-	- conditional variable - how many kg 
+		- initialize semaphore with max kg
+		- 
+	- mutex + conditional variable - how many kg 
 		- initialise variable with max kg
 		- this number is protected with a mutex
 		- 
