@@ -5262,3 +5262,6 @@ Implementare silvică:
 
 - how could we use the semaphore between processes?
 	- the semaphore lacks a ... so we can use it between processes?
+	- ce are fifo si nu are pipe? a NAME. 
+	- it does not have a name, it has a number. 
+	- 
