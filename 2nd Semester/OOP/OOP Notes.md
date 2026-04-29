@@ -1473,9 +1473,9 @@ Service service{repo};
 6) service: NOT CONST REPOSITORY
 
 UML RELATIONS:
-ASSOCIATION = class-level reference
+ASSOCIATION = class-level reference -> in code: & or *
 ![[Pasted image 20260429213157.png]]
-COMPOSITION = lifetime owned
+COMPOSITION = lifetime owned -> in code: new/
 ![[Pasted image 20260429213215.png]]
 AGGREGATION = contained object can exist independently
 ![[Pasted image 20260429213538.png]]
