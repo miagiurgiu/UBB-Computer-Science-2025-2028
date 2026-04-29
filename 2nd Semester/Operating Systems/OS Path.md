@@ -5185,4 +5185,5 @@ Metaphorical problems:
 	- 
 - who are threads?
 	- people
+	- they are allowed to enter that zone if they have space
 - what are the mechanisms?
