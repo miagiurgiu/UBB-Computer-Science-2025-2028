@@ -1511,7 +1511,8 @@ int e(4.5); // silently casts it to an int -> 4
 ```
 
 Smart Pointers:
-- behave as pointers but they also know how to automatically destroy when we no longer work with stuff
+- behave as pointers but they also know how to automatically destroy when we no longer work with stuff - it should be able to get destroyed automatically?
+- they are wrappers of some raw pointers?
 - smart pointer doesn’t create the resource, it **owns and manages it**
 - if i get a resource from somewhere else, it is my responsibility to deallocate it etc.
 	- `new int{3}` → creează resursa
