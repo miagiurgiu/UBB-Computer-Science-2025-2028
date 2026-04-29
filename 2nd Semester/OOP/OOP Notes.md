@@ -1566,3 +1566,4 @@ std::shared_ptr
 - THIRD IMPLEMENTATION:
 ![[Pasted image 20260429153515.png]]
 
+std::weak_ptr
