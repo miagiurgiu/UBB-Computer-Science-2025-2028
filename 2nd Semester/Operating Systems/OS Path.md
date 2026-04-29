@@ -5243,3 +5243,4 @@ Metaphorical problems:
 - who wakes the padurar?
 	- ursii
 		- if they have enough honey, they eat it, if not, they wake the padurar
+=> it writes a bunch of characters in a file
