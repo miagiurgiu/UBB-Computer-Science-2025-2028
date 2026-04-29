@@ -1511,6 +1511,7 @@ int e(4.5); // silently casts it to an int -> 4
 ```
 
 Smart Pointers:
+- shared
 - they receive some memory that has already been allocated
 - behave as pointers but they also know how to automatically destroy when we no longer work with stuff - it should be able to get destroyed automatically? destroy WHAT? the resource (=the newly allocated memory)
 - they are wrappers of some raw pointers?
@@ -1569,4 +1570,4 @@ std::shared_ptr
 std::weak_ptr
 - circular reference (between member and team - team contains a vector of members)
 - the problem: the team does not get destroyed because the reference_count is 3 and it destroys only when reference_count is 0/1
-- solution: instead of using shared_pt
+- solution: instead of using shared_ptr, used a weak_ptr because they don't increase the reference count for the team
