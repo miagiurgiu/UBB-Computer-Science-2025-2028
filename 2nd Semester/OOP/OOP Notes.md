@@ -1487,5 +1487,6 @@ Exceptions. RAII
 
 ![[Pasted image 20260429143025.png]]
 - the "delete a" block might never be reached because throw goes to catch
-- make sure the variable is deallocated in the catch block
-	- this is not the best strategy because 
+	- SOLUTION 1: make sure the variable is deallocated in the catch block
+		- this is not the best strategy because you might have multiple variables that need to be deallocated
+	- SOLUTION 2: RAII
