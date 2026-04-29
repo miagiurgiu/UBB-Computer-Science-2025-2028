@@ -5277,9 +5277,16 @@ void* stup(void* a) {
 }
 
 void* urs(void* a) {
-	pthread_mutex_lock(&m);
-	miere -=5;
-	pthread_mutex_unlock(&m);
+	while(1) {
+		pthread_mutex_lock(&m);
+		if(miere <5) {
+			pthread_cond_signal(&c);
+			printf("!")
+		}
+		pthread_mutex_unlock(&m);
+	
+	}
+	
 	return NULL;
 }
 
