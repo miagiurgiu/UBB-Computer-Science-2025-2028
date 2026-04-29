@@ -38,7 +38,6 @@ points:=[[n,f[n]]$n=1..1200]:
 pointplot(points,symbol=circle);
 # this is chaos...
 
-
 restart:  
   
 lambda := 3.8:  
