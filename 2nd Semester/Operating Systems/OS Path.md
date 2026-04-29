@@ -5297,10 +5297,11 @@ void* padurar(void* a) {
 	while(1) {
 		pthread_mutex_lock(&m);
 		while(miere >=5) {
+			printf(")
 			pthread_cond_wait(&c, &m);
 		}
 		miere +=20;
-		pthead_mutex_unlock*
+		pthead_mutex_unlock(&m);
 	}
 	pthread_mutex_lock(&m);
 	miere +=20;
