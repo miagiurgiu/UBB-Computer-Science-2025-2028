@@ -5227,8 +5227,8 @@ Metaphorical problems:
 	- make a mutex/node
 - how to make a dictionary "thread-safe"?
 
-5. in a forest we have "stupi si ursi" - stupi-ursi-padurari - cand ursul se trezeste, ... aduce miere din depozit, padurarul doarme si se trezeste cand nu mai este miere
-- 3 types of threads: -> void* stup, void* urs, voi
+5. in a forest we have "stupi si ursi" - stupi-ursi-padurari - cand ursul se trezeste, ... aduce miere din depozit, padurarul doarme si se trezeste cand nu mai este miere -> protectia mierii, trezitul padurarului
+- 3 types of threads: -> void* stup, void* urs, void* padurar
 	- stup - one thread
 	- ursi - another thread
 	- padurar - another thread
@@ -5236,3 +5236,5 @@ Metaphorical problems:
 	- honey - it is a quantity, a variable (n=0 in the beginning)
 - cat produc stupii? 
 - cat mananca un urs?
+- how to protect the honey
+	- using a mutex
