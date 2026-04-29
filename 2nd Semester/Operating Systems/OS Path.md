@@ -5186,10 +5186,12 @@ Metaphorical problems:
 - who are threads?
 	- people
 	- they are allowed to enter that zone if they have space
+	- a variable saying how many kg the thread has
 - what are the mechanisms?
 	- semaphore - you have to know with what value to initialise it
 		- initialize semaphore with max kg
-		- 
+		- semaphore reserves an empty position
+		- a thread has empty positions
 	- mutex + conditional variable - how many kg 
 		- initialise variable with max kg
 		- this number is protected with a mutex
