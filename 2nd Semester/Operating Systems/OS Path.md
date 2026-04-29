@@ -5171,4 +5171,5 @@ mechanisms of synchronisation:
 - specialisation of mutex
 - some read, some modify => no matter how many reads/writes
 - lock for reading - any number of locks
+- lock for writing - like the mutex lock
 - 
