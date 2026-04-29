@@ -61,3 +61,8 @@ with(plots):
 pointplot(points);
 
 ```
+
+
+```
+x:=0
+```
