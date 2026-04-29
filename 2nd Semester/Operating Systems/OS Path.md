@@ -5215,13 +5215,14 @@ Metaphorical problems:
 	- semaphore limiting the number of kg
 
 3. "thread safe" = classes that can be used symultaneously 
-- you will use libraries in life - 
+- you will use libraries in life - you have to know which of those methods from those libraries are "thread-safe"
 
 1. implement a "lista simplu inlantuita" (singly linked list?) care sa fie "thread-safe"?
-- adding in list is not thread-safe (modifying the list structure is not thread-safe)
+- adding in list is not "thread-safe" (modifying the list structure is not thread-safe)
 - add+delete methods - WRITER?
 - add+modify methods - READER?
 - modifying the value of a node -> is it thread-safe?
 	- from the perspective of the structure of the list, that is just READING
 - if some threads want to modify the same value at the same time? how to protect value of each node?
+	- make a mutex/node
 	- 
