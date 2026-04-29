@@ -5180,4 +5180,7 @@ mechanisms of synchronisation:
 Metaphorical problems:
 
 1. lift in a building - simulate this situation
-- 
+-
+- who are threads?
+	- 
+- what are the mechanisms?
