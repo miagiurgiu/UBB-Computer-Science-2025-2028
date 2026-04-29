@@ -5261,7 +5261,7 @@ Metaphorical problems:
 	- pthread_barrier_ t b
 
 
-Implementare silvică:
+Implementare silvică (final):
 ```
 #include <stdio.h>
 #inckyde <pthread.h>
@@ -5281,12 +5281,15 @@ void* urs(void* a) {
 		pthread_mutex_lock(&m);
 		if(miere <5) {
 			pthread_cond_signal(&c);
-			printf("!")
+			printf("!");
+			pthread_mutex_unlock(&m);
+			continue;
 		}
+		miere -=5;
+		printf("-");
 		pthread_mutex_unlock(&m);
 	
 	}
-	
 	return NULL;
 }
 
@@ -5304,6 +5307,8 @@ int main(int argc, char** argv) {
 
 ```
 
+pasi:
+- 
 
 - how could we use the semaphore between processes?
 	- the semaphore lacks a ... so we can use it between processes?
