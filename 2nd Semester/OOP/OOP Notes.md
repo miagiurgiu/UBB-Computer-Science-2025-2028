@@ -1527,7 +1527,7 @@ SmartPointer(int ...) {
 	this-> ... = new int (val); // works only for int
 }
 ```
-- ex
+- how is this example relevant?
 ```
 FilePlaylist fp = nullptr;
 if ...
