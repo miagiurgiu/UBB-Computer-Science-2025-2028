@@ -5265,6 +5265,7 @@ Implementare silvică (final):
 ```
 #include <stdio.h>
 #inckyde <pthread.h>
+#include 
 
 int miere=0;
 pthread_mutex_t m;
@@ -5311,6 +5312,7 @@ void* padurar(void* a) {
 }
 
 int main(int argc, char** argv) {
+	pthread_t stupi[S], ursi[U], padu;
 	(void)argc;
 	(void)argv;
 	return 0;
@@ -5327,7 +5329,8 @@ pasi:
 ![[Pasted image 20260429101306.png]]
 - sem_init library: ![[Pasted image 20260429101815.png]]
 
-- now we wanna 
+- now we wanna use semaphores - how many lines can the semaphore protect?
+![[Pasted image 20260429101950.png]]
 
 
 - how could we use the semaphore between processes?
