@@ -1511,6 +1511,7 @@ int e(4.5); // silently casts it to an int -> 4
 ```
 
 Smart Pointers:
+- smart pointer doesn’t create the resource, it **owns and manages it**
 - if i get a resource from somewhere else, it is my responsibility to deallocate it etc.
 	- `new int{3}` → creează resursa
 	- `SmartPointer` → devine responsabil de ea
@@ -1518,8 +1519,10 @@ Smart Pointers:
 SmartPointer a{new int{3}}
 ```
 - why don't we do the allocation inside the constructor?
+	- if you allocate inside constructor, you lose flexibility and genericity
 ```
 SmartPointer(int ...) {
-	this-> ... = new int (val); // wors
+	this-> ... = new int (val); // works only for int
 }
 ```
+- 
