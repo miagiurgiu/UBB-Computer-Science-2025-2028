@@ -1487,6 +1487,7 @@ Exceptions. RAII
 - garbage collector
 	- separate program that searches stuff that is no longer used and deletes those
 	- java, python there is no need for deallocation because they use garbage collector
+- Lex Fridman Podcast
 
 ![[Pasted image 20260429143025.png]]
 - the "delete a" block might never be reached because throw goes to catch
