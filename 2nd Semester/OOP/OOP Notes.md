@@ -1511,8 +1511,14 @@ int e(4.5); // silently casts it to an int -> 4
 ```
 
 Smart Pointers:
-- if i get a resource from somewhere else, it is my responsibility to deallocate it etc. 
-- why don't we do 
+- if i get a resource from somewhere else, it is my responsibility to deallocate it etc.
 ```
 SmartPointer a{new int{3}}
+```
+- why don't we do the allocation inside the constructor?
+
+```
+SmartPointer(int ...) {
+	this-> ... 
+}
 ```
