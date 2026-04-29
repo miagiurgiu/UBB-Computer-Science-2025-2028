@@ -5190,8 +5190,9 @@ Metaphorical problems:
 - what are the mechanisms?
 	- semaphore - you have to know with what value to initialise it
 		- initialize semaphore with max kg
-		- semaphore reserves an empty position
-		- a thread has empty positions
+		- a semaphore reserves an empty position
+		- a thread has (kg_of_thread) empty positions
+			- if i have 50 kg, semaphore will have 50 empty positions
 	- mutex + conditional variable - how many kg 
 		- initialise variable with max kg
 		- this number is protected with a mutex
