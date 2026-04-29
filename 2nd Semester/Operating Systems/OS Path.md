@@ -5214,5 +5214,8 @@ Metaphorical problems:
 	- semaphore limiting the number of children, initialised with the max children capacity (5 children max at once)
 	- semaphore limiting the number of kg
 
-1. "thread safe" = classes that can be used symultaneously 
-- you s
+3. "thread safe" = classes that can be used symultaneously 
+- you will use libraries in life - 
+
+1. implement a "lista simplu inlantuita" care sa fie "thread-safe"?
+- adding in lis
