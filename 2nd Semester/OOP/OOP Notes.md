@@ -1475,9 +1475,9 @@ Service service{repo};
 UML RELATIONS:
 ASSOCIATION = class-level reference -> in code: & or *
 ![[Pasted image 20260429213157.png]]
-COMPOSITION = lifetime owned -> in code: new/
+COMPOSITION = lifetime owned -> in code: new or delete
 ![[Pasted image 20260429213215.png]]
-AGGREGATION = contained object can exist independently
+AGGREGATION = contained object can exist independently -> in code: &
 ![[Pasted image 20260429213538.png]]
 DEPENDENCY = used only in a method/parameter/local variable
 ![[Pasted image 20260429213700.png]]
