@@ -1568,4 +1568,4 @@ std::shared_ptr
 
 std::weak_ptr
 - circular reference (between member and team - team contains a vector of members)
-- 
+- the problem: the team does not get destroyed because the reference_count is 3 and it destroys only when reference_coun
