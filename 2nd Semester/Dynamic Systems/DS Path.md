@@ -38,4 +38,26 @@ points:=[[n,f[n]]$n=1..1200]:
 pointplot(points,symbol=circle);
 # this is chaos...
 
+
+restart:  
+  
+lambda := 3.8:  
+  
+# find fixed points (symbolic)  
+solve(lambda*x*(1-x)=x, x);  
+  
+# iteration  
+x := 0.7:  
+  
+for i from 1 to 200 do  
+x := lambda*x*(1-x);  
+f[i] := x;  
+od:  
+  
+# build points  
+points := [seq([n, f[n]], n=1..200)]:  
+  
+with(plots):  
+pointplot(points);
+
 ```
