@@ -1510,7 +1510,9 @@ int d{4.5}; // error because it can't initialise an int with 4.5
 int e(4.5); // silently casts it to an int -> 4
 ```
 
-if i get a resource from somewhere else, it i
+Smart Pointers:
+- if i get a resource from somewhere else, it is my responsibility to deallocate it etc. 
+- why don't we do 
 ```
 SmartPointer a{new int{3}}
 ```
