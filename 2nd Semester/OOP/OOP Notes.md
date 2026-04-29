@@ -1484,3 +1484,7 @@ Exceptions. RAII
 
  - throw by value and catch by reference
 - catch blocks are executed in the order they were declared
+
+![[Pasted image 20260429143025.png]]
+- the "delete a" block might never be reached because throw goes to catch
+- 
