@@ -5261,4 +5261,4 @@ Metaphorical problems:
 Implementare silvică:
 
 - how could we use the semaphore between processes?
-	- 
+	- the semaphore lacks a ... so we can use it between processes?
