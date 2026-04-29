@@ -5245,3 +5245,4 @@ Metaphorical problems:
 		- if they have enough honey, they eat it, if not, they wake the padurar
 => it writes a bunch of characters in a file
 => de la semnalare pana la trezire trece totusi un pic de vreme
+=> see paterns in that file (perioada de foamete - a lot of !)
