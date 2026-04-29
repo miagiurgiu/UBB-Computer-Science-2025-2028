@@ -1543,3 +1543,10 @@ Types of smart pointers:
 1) std::unique_ptr
 2) std::shared_ptr
 3) std::weak_ptr
+
+4) std::unique_ptr
+- owns its object uniquely
+- if i want anot
+```
+
+```
