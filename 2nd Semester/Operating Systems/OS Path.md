@@ -5227,4 +5227,9 @@ Metaphorical problems:
 	- make a mutex/node
 - how to make a dictionary "thread-safe"?
 
-5. in a forest we have "stupi si ursi" - stupi-ursi-padurari - cand ursul se trezeste, ... aduce miere din depozit
+5. in a forest we have "stupi si ursi" - stupi-ursi-padurari - cand ursul se trezeste, ... aduce miere din depozit, padurarul doarme si se trezeste cand nu mai este miere
+- 3 types of threads:
+	- stup - one thread
+	- ursi - another thread
+	- padurar - another thread
+
