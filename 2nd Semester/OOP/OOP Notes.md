@@ -1480,7 +1480,7 @@ UI STUFF:
 - dacă inputul e greșit, faci `return`, nu continui mai departe.
 
 ## Lecture 9 - 29 apr 2026
-Exceptions
+Exceptions. RAII
 
  - throw by value and catch by reference
 - catch blocks are executed in the order they were declared
