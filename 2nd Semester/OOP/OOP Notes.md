@@ -1491,6 +1491,10 @@ For Coats app:
 ![[Pasted image 20260429222236.png]]
 ![[Pasted image 20260429222401.png]]
 ![[Pasted image 20260429222425.png]]
+- dependency:
+![[Pasted image 20260429222456.png]]
+
+
 
 
 ### Test 2 OOP Prep
