@@ -1512,7 +1512,7 @@ int e(4.5); // silently casts it to an int -> 4
 
 Smart Pointers:
 - they receive some memory that has already been allocated
-- behave as pointers but they also know how to automatically destroy when we no longer work with stuff - it should be able to get destroyed automatically?
+- behave as pointers but they also know how to automatically destroy when we no longer work with stuff - it should be able to get destroyed automatically? destroy WHAT? the resource (=the newly allocated memory)
 - they are wrappers of some raw pointers?
 - smart pointer doesn’t create the resource, it **owns and manages it**
 - if i get a resource from somewhere else, it is my responsibility to deallocate it etc.
@@ -1548,7 +1548,8 @@ Types of smart pointers:
 - owns its object uniquely
 - if i want another pointer to point to that object i have to "move"
 - you can't pass them by value because this means a copy will be made
-- as any other smart pointer, when we go out of scope, it will
+- as any other smart pointer, when we go out of scope, newly allocated memory will be destroyed
+- no constructor is called because make_
 ![[Pasted image 20260429152727.png]]
 ```
 
