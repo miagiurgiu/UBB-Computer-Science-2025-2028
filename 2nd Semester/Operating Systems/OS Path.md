@@ -5161,5 +5161,9 @@ DUP2 and exact to the next test! (one)
 
 mechanisms of synchronisation:
 1) mutex
-2) semaphore
+2) semaphore - dijkstra
 - extention of mutex
+- has a field holding a number - that number tells how many threads will go through
+- wait() method
+- open() semaphores working with system processes?
+- =1 =
