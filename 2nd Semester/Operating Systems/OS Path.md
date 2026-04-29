@@ -5165,7 +5165,7 @@ mechanisms of synchronisation:
 - extention of mutex
 - has a field holding a number - that number tells how many threads will go through
 - wait() method
-- open() semaphores working with system processes?
+- open() system semaphores
 - =1 => binary semaphore = mutex
 3) read-write lock
 - specialisation of mutex
@@ -5204,4 +5204,6 @@ Metaphorical problems:
 		- reserving kg for threads is not atomic (there are more threads reserving at the same time)
 - wrap-up: 
 	- more threads want to reserve multiple resources at the same time
-	- 
+	- you have to synchronise them
+
+2. children jumping on trambuline
