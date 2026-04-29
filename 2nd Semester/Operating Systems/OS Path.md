@@ -5348,7 +5348,9 @@ pasi:
 ![[Pasted image 20260429102219.png]]
 
 
-
+- main that solves the problem with "3 bears can't eat at the same time"
+- sem_init(&s, 0,3);
+![[Pasted image 20260429102317.png]]
 
 
 
