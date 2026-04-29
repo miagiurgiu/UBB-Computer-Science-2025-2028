@@ -16,6 +16,13 @@ x:=0.7
 for i from 1 to 200 do x:=2*x(1-x); f[i]:=x: od:
 
 
-#Pro
+#Problem 4 and 5
+restart;
+with(plots):
+lambda:=4
+solve(lambda*x(1-x)=x,x); evalf(2/3);
+x:=0.7
+for i from 1 to 200 do x:=lambda*x*(1-x); f[i]:=x: od:
+points
 
 ```
