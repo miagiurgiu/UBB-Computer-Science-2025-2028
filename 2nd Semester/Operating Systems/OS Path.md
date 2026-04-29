@@ -5243,9 +5243,12 @@ Metaphorical problems:
 - who wakes the padurar?
 	- ursii
 		- if they have enough honey, they eat it, if not, they wake the padurar
+- albinele (stup)
+	- produc miere
+	- lock/unlock
 => it writes a bunch of characters in a file
 => de la semnalare pana la trezire trece totusi un pic de vreme
 => see paterns in that file (perioada de foamete - a lot of !, padurar wakes up and goes to sleep ^v)
 
-Implementare silvica:
+Implementare silvică:
 
