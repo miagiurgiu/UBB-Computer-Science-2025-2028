@@ -1481,7 +1481,9 @@ AGGREGATION = contained object can exist independently
 ![[Pasted image 20260429213538.png]]
 DEPENDENCY = used only in a method/parameter/local variable
 ![[Pasted image 20260429213700.png]]
-INHERITANCE="is
+INHERITANCE="is-a"
+![[Pasted image 20260429213739.png]]
+
 
 ### Test 2 OOP Prep
 
