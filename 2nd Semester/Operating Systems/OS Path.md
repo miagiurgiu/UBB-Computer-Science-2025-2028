@@ -5251,7 +5251,9 @@ Metaphorical problems:
 => see paterns in that file (perioada de foamete - a lot of !, padurar wakes up and goes to sleep ^v)
 - more than 3 bears can't eat at the same time
 	- solve this using a semaphore
-	- where should the semaphore be 
+	- where should the semaphore be blocked? where to put sem_wait and sem_block?
+	- can i protect a single line using semaphores or can i protect more?
+	- 
 
 Implementare silvică:
 
