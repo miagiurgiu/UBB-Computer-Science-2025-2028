@@ -5264,11 +5264,16 @@ Metaphorical problems:
 Implementare silvică (final):
 ```
 #include <stdio.h>
-#inckyde <pthread.h>
-#include 
+#inckude <pthread.h>
+#include <semaphore.h>
+
+#define S 10
+#define U 7
 
 int miere=0;
 pthread_mutex_t m;
+pthread_cond_t c;
+sem_t s;
 
 void* stup(void* a) {
 	while(1) {
@@ -5277,6 +5282,7 @@ void* stup(void* a) {
 		printf("+");
 		pthread_mutex_unlock(&m);
 	}
+	(void)a;
 	return NULL;
 }
 
@@ -5331,6 +5337,11 @@ pasi:
 
 - now we wanna use semaphores - how many lines can the semaphore protect?
 ![[Pasted image 20260429101950.png]]
+
+
+
+- main:
+![[Pasted image 20260429102135.png]]
 
 
 - how could we use the semaphore between processes?
