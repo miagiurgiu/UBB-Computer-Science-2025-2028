@@ -5294,6 +5294,14 @@ void* urs(void* a) {
 }
 
 void* padurar(void* a) {
+	while(1) {
+		pthread_mutex_lock(&m);
+		while(miere >=5) {
+			pthread_cond_wait(&c, &m);
+		}
+		miere +=20;
+		pthead_mutex_unlock*
+	}
 	pthread_mutex_lock(&m);
 	miere +=20;
 	return NULL;
