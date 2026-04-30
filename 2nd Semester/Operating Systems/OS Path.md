@@ -5372,7 +5372,12 @@ pasi:
 
 ### Test 3 prep - processes
 
-Problem 1:
+###### Problem 1:
 Write multiple C programs that can be labeled as A,B,C
-Process A: will read from keyboard lowercase strings (that ca
+Process A: 
+- will read from keyboard lowercase strings
+- that can contain alphanumerical characters
+- until X is written
+- will send them to process B using FIFOs
+Process B:
 ![[Pasted image 20260430194129.png]]
