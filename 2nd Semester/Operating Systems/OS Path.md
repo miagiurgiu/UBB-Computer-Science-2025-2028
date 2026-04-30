@@ -5449,8 +5449,11 @@ int main() {
 	
 	char s[100]; // input
 	int n, v[11]; // vector
-	int sum; // "process A will print on the screen"
+	int sum; // "process A will print it on the screen"
 	
+	while(1) {
+		printf("I)
+	}
 	return 0;
 }
 ```
