@@ -5373,7 +5373,7 @@ pasi:
 ### Test 3 prep - processes
 
 ##### Theory:
-FIFO = NAMED PIPE
+1) FIFO = NAMED PIPE
 - special file on the disk
 - used for communication between unrelated processes
 - pipes don't persist after processes exit
@@ -5400,6 +5400,7 @@ with file descriptor - how?
 ```
 close()
 ```
+
 
 ##### Problem 1:
 Write multiple C programs that can be labeled as A,B,C
