@@ -5440,6 +5440,9 @@ int main() {
 	
 	int a2b=open("a2b", O_WRONLY);
 	int b2a=open("b2a", O_RDONLY);
+	int c2a=open("c2a", O_RDONLY);
+	
+	
 	return 0;
 }
 ```
