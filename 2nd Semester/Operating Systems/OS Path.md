@@ -5384,4 +5384,7 @@ Process B:
 - will initiate a vector V with 11 zeroes
 - it will iterate over it character by character checking if the character is a digit or not
 - it will increment an index of the vector 
+- this frequency vector for the digits + non-digits found in the string will be send to process A and process C
+Process C:
+- will re
 ![[Pasted image 20260430194129.png]]
