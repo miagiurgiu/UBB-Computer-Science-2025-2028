@@ -1213,7 +1213,6 @@ better:  static void testList(List<int>& l) -> accepts any type of list -> becau
 
 if i am providing a linked list -> add from linked list
 if i am providing a vector -> add from vector -> getSize() will be taken from dynamic vector
-
 ```
 - operations for the List (template class)
 ```
@@ -1494,8 +1493,6 @@ For Coats app:
 - dependency:
 ![[Pasted image 20260429222456.png]]
 ![[Pasted image 20260429222542.png]]
-
-
 
 
 
