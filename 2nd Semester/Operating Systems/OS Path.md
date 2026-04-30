@@ -5434,7 +5434,8 @@ A.c:
 #include <sys/stat.h> // mkfifo
 
 int main() {
-
-
+	mkfifo("a2b", 0600); // fifo A->B, permission only to myself
+	mkfiso("b2a", 0600);
+	return 0;
 }
 ```
