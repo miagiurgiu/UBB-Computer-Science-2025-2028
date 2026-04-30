@@ -5435,7 +5435,10 @@ A.c:
 
 int main() {
 	mkfifo("a2b", 0600); // fifo A->B, permission only to myself
-	mkfiso("b2a", 0600); // fifo B->A
+	mkfifo("b2a", 0600); // fifo B->A (send vector to A)
+	mkfifo("c2a", 0600); // fifo C->A (send sum to A)
+	
+	INT 
 	return 0;
 }
 ```
