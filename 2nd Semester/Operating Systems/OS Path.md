@@ -5453,7 +5453,14 @@ int main() {
 	
 	while(1) {
 		printf("Give from keyboard lowercase strings (type X to exit):" );
-		scanf("%s", s); // re
+		scanf("%s", s); // read string with no spaces
+		
+		n = strlen(s); // compute its length
+		
+		if(strcmp(s, "x")==0)
+			break;
+		
+		
 	}
 	return 0;
 }
