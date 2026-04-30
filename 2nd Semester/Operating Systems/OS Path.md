@@ -5386,5 +5386,10 @@ Process B:
 - it will increment an index of the vector 
 - this frequency vector for the digits + non-digits found in the string will be send to process A and process C
 Process C:
-- will re
+- will receive the frequency vector from the process B
+- will sum up all the values 
+- will send back to process A 
+- process A will print it on the screen
+Implement the processes communication schema
+Programs ar
 ![[Pasted image 20260430194129.png]]
