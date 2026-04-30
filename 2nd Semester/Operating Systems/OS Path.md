@@ -5373,7 +5373,11 @@ pasi:
 ### Test 3 prep - processes
 
 ##### Theory:
-FIFO = NAMED
+FIFO = NAMED PIPE
+- special file on the disk
+- used for communication between unrelated processes
+- pipes don't persist after processes exit
+- Fs persist after processes exit
 
 ##### Problem 1:
 Write multiple C programs that can be labeled as A,B,C
