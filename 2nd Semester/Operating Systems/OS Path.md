@@ -5442,12 +5442,14 @@ int main() {
 	int b2a=open("b2a", O_RDONLY);
 	int c2a=open("c2a", O_RDONLY);
 	
-	if(a2b<0 || b2a < 0 || c2a < 0) {
+	if(a2b<0 || b2a < 0 || c2a < 0) { // open failed
 		perror("open");
 		exit(1);
 	}
 	
-	char s[100];
+	char s[100]; // input
+	int n, v[11]; // vector
+	int sum; // result from C
 	return 0;
 }
 ```
