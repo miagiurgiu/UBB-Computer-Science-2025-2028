@@ -5382,10 +5382,17 @@ FIFO = NAMED PIPE
 ```
 mkfifo("my_fifo", 0600)
 ```
-- OPEN FIFO:
+- OPEN FIFO for reading:
 ```
 open("my_fifo", O_RDONLY)
-
+```
+- OPEN FIFO for writing:
+```
+open("my_fifo", O_WRONLY);
+```
+- TRANSFER:
+```
+rea
 ```
 ##### Problem 1:
 Write multiple C programs that can be labeled as A,B,C
