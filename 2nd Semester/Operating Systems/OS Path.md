@@ -5377,8 +5377,16 @@ FIFO = NAMED PIPE
 - special file on the disk
 - used for communication between unrelated processes
 - pipes don't persist after processes exit
-- Fs persist after processes exit
+- FIFOs persist after processes exit
+- CREATE FIFO:
+```
+mkfifo("my_fifo", 0600)
+```
+- OPEN FIFO:
+```
+open("my_fifo", O_RDONLY)
 
+```
 ##### Problem 1:
 Write multiple C programs that can be labeled as A,B,C
 Process A: 
