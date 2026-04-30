@@ -1601,7 +1601,9 @@ std::weak_ptr
 
 ![[Pasted image 20260430094041.png]]
 
-- when you have multiple things for 
+
+Comments after presenting the code:
+- when you have multiple things for stuff -> like repository-coat for exmaple, it is safer to use aggregation, not composition - the fact that it is value/reference does not really matter
 ## A8-9
 
 - no QT creator
