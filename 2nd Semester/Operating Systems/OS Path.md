@@ -5405,10 +5405,10 @@ close()
 ##### Problem 1:
 Write multiple C programs that can be labeled as A,B,C
 Process A: 
-- will read from keyboard lowercase strings
+- will read from keyboard lowercase strings (scanf)
 - that can contain alphanumerical characters
-- until X is written
-- will send them to process B using FIFOs
+- until X is written (strcmp)
+- will send them to process B using FIFOs (write a2b)
 Process B:
 - will receive the string from process A
 - will initiate a vector V with 11 zeroes
@@ -5460,7 +5460,8 @@ int main() {
 		if(strcmp(s, "X")==0)
 			break;
 		
-		write(a2b, &n, sizeof(int))
+		write(a2b, &n, sizeof(int)); // send length to B
+		write(a2b, s, n); // send string to B
 		
 	}
 	return 0;
