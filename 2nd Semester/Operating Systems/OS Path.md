@@ -5476,7 +5476,12 @@ int main() {
 	}
 	close(a2b);
 	close(b2a);
-	
+	close(c2a);
 	return 0;
 }
+```
+
+B.c:
+```
+
 ```
