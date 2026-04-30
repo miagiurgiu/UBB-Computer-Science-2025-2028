@@ -5474,6 +5474,9 @@ int main() {
 		prinf("Sum received is: %d\n, sum);
 		
 	}
+	close(a2b);
+	close(b2a);
+	
 	return 0;
 }
 ```
