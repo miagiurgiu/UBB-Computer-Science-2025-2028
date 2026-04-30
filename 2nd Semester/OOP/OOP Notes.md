@@ -1605,5 +1605,5 @@ std::weak_ptr
 
 - no QT creator
 - use layouts
-- create UI ofr admin + user
-- 
+- create UI for admin + user
+- only thing that should work: display elements - a window with the elements - for admin
