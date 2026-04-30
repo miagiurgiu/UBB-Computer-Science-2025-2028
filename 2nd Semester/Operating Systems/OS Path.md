@@ -5371,4 +5371,8 @@ pasi:
 
 
 ### Test 3 prep - processes
+
+Problem 1:
+Write multiple C programs that can be labeled as A,B,C
+Process A: will read from keyboard lowercase strings (that ca
 ![[Pasted image 20260430194129.png]]
