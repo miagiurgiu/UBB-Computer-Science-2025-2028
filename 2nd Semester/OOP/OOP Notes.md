@@ -1603,7 +1603,7 @@ std::weak_ptr
 
 
 Comments after presenting the code:
-- when you have multiple things for stuff -> like repository-coat for exmaple, it is safer to use aggregation, not composition - the fact that it is value/reference does not really matter
+- when you have multiple things for stuff -> like repository-coat for example, it is safer to say aggregation on the UML (empty diamond), not composition - the fact that it is value/reference does not really matter
 ## A8-9
 
 - no QT creator
