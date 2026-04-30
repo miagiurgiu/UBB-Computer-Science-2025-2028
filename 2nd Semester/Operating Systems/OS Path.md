@@ -5383,4 +5383,5 @@ Process B:
 - will receive the string from process A
 - will initiate a vector V with 11 zeroes
 - it will iterate over it character by character checking if the character is a digit or not
+- it will increment an index of the vector 
 ![[Pasted image 20260430194129.png]]
