@@ -1601,6 +1601,7 @@ std::weak_ptr
 
 ![[Pasted image 20260430094041.png]]
 
+- when you have multiple things for 
 ## A8-9
 
 - no QT creator
