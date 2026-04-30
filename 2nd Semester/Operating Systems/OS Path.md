@@ -5449,7 +5449,8 @@ int main() {
 	
 	char s[100]; // input
 	int n, v[11]; // vector
-	int sum; // result from C
+	int sum; // "process A will print on the screen"
+	
 	return 0;
 }
 ```
