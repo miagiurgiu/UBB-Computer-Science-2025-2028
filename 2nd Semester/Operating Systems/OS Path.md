@@ -5452,7 +5452,8 @@ int main() {
 	int sum; // "process A will print it on the screen"
 	
 	while(1) {
-		printf("I)
+		printf("Give from keyboard lowercase strings (type X to exit):" );
+		scanf("%s", s); // re
 	}
 	return 0;
 }
