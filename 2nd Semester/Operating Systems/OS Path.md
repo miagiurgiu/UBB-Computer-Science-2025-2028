@@ -5438,11 +5438,16 @@ int main() {
 	mkfifo("b2a", 0600); // fifo B->A (send vector to A)
 	mkfifo("c2a", 0600); // fifo C->A (send sum to A)
 	
-	int a2b=open("a2b", O_WRONLY);
+	int a2b=open("a2b", O_WRONLY); // 
 	int b2a=open("b2a", O_RDONLY);
 	int c2a=open("c2a", O_RDONLY);
 	
+	if(a2b<0 || b2a < 0 || c2a < 0) {
+		perror("open");
+		exit(1);
+	}
 	
+	char s[100];
 	return 0;
 }
 ```
