@@ -5466,10 +5466,12 @@ int main() {
 		read(b2a, v, 11*sizeof(int)); // receive vector from B
 		read(c2a, &sum, sizeof(int)); // receive sum from C
 		
-		// vector after summing up in C all the values from
+		// vector after summing up in C all the values from the vector from B
 		printf("Vector: ");
-		for
-		
+		for(int i=0; i<11; i++) 
+			printf("%d", v[i]);
+		printf("\n");
+		prinf("Sum received is: %d\n, sum);
 		
 	}
 	return 0;
