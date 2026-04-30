@@ -5392,8 +5392,15 @@ open("my_fifo", O_WRONLY);
 ```
 - TRANSFER:
 ```
-rea
+read()
+write()
+with file descriptor - how?
 ```
+- CLOSE:
+```
+close()
+```
+
 ##### Problem 1:
 Write multiple C programs that can be labeled as A,B,C
 Process A: 
