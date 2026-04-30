@@ -5426,6 +5426,15 @@ Programs are responsible to check if the fifo exists and create it if it is not 
 Solution:
 A.c:
 ```
-#include <stdio.h>
-#include <
+#include <stdio.h> // printf, scanf
+#include <stdlib.h> // exit
+#include <string.h> // strlen, strcmp
+#include <unistd.h> // read, write, close
+#include <fcntl.h> // open
+#include <sys/stat.h> // mkfifo
+
+int main() {
+
+
+}
 ```
