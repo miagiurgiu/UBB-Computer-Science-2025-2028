@@ -5435,7 +5435,7 @@ A.c:
 
 int main() {
 	mkfifo("a2b", 0600); // fifo A->B, permission only to myself
-	mkfiso("b2a", 0600);
+	mkfiso("b2a", 0600); // fifo B->A
 	return 0;
 }
 ```
