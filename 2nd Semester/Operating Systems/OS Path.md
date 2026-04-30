@@ -5426,5 +5426,6 @@ Programs are responsible to check if the fifo exists and create it if it is not 
 Solution:
 A.c:
 ```
-
+#include <stdio.h>
+#include <
 ```
