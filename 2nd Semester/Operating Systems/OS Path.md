@@ -5391,5 +5391,5 @@ Process C:
 - will send back to process A 
 - process A will print it on the screen
 Implement the processes communication schema
-Programs ar
+Programs are responsible to check if the fifo exists and create it if it is not already.
 ![[Pasted image 20260430194129.png]]
