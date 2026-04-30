@@ -5384,11 +5384,11 @@ mkfifo("my_fifo", 0600)
 ```
 - OPEN FIFO for reading:
 ```
-open("my_fifo", O_RDONLY)
+open("my_fifo", O_RDONLY) // waits for a reader
 ```
 - OPEN FIFO for writing:
 ```
-open("my_fifo", O_WRONLY);
+open("my_fifo", O_WRONLY); // waits for a writer
 ```
 - TRANSFER:
 ```
