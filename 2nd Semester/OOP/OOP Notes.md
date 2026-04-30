@@ -1600,3 +1600,10 @@ std::weak_ptr
 - solution: instead of using shared_ptr, used a weak_ptr because they don't increase the reference_count for the team
 
 ![[Pasted image 20260430094041.png]]
+
+## A8-9
+
+- no QT creator
+- use layouts
+- create UI ofr admin + user
+- 
