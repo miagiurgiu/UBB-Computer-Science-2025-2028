@@ -5457,9 +5457,10 @@ int main() {
 		
 		n = strlen(s); // compute its length
 		
-		if(strcmp(s, "x")==0)
+		if(strcmp(s, "X")==0)
 			break;
 		
+		write(a2b, &n, sizeof(int))
 		
 	}
 	return 0;
