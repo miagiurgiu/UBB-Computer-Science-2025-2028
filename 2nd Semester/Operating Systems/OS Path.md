@@ -5463,6 +5463,11 @@ int main() {
 		write(a2b, &n, sizeof(int)); // send length to B
 		write(a2b, s, n); // send string to B
 		
+		read(b2a, v, 11*sizeof(int)); // receive vector from B
+		read(c2a, &sum, sizeof(int)); // receive sum from C
+		
+		
+		
 	}
 	return 0;
 }
