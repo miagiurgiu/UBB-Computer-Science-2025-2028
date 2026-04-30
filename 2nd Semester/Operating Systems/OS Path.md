@@ -5368,3 +5368,7 @@ pasi:
 	- it does not have a name, it has a number. 
 - flow of solving this prolem (photos)
 	- create 3 threads
+
+
+### Test 3 prep - processes
+![[Pasted image 20260430194129.png]]
