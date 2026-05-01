@@ -5114,7 +5114,7 @@ int main(int argc, char **argv) {
 	
 	for(int i=0; i<N; i++) {
 		numbers[i]=rand() %1000;
-		
+		printf("%d", numbers[i]);
 	}
 }
 
