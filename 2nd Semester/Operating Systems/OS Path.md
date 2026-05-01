@@ -5686,5 +5686,8 @@ Child Process A:
 - each child process will receive the string and it will iterate over it character by character checking if the character is an uppercase/lowercase letter
 	- if uppercase letter -> add letter in vector U
 	- if lowercase letter -> add letter in vector L
-	- if not letter ->
+	- if not letter -> increment shared variable S
+- send S to the parent using pipes, parent will print it on the screen
+- send L, U to Process B
+Child Process B
 ![[Pasted image 20260501125147.png]]
