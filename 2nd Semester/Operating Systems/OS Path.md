@@ -5883,6 +5883,22 @@ int main() {
 	}
 	close(c2a);
 	close(a2b);
-	cl
+	close(a2c);
+	
+	return 0;
+}
+```
+
+b.c:
+```
+#include ...
+
+int main() {
+	int a2b;
+	a2b=open("a2b", O_RDONLY);
+	if(a2b<0) {
+		perror("op)
+	}
+
 }
 ```
