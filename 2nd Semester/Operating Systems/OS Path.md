@@ -5603,7 +5603,8 @@ int main() {
 	}
 	
 	if(fork()==0) { // child process B
-		close(a2b[1]); // 
+		close(a2b[1]);
+		close(b2a[0]); // b does not read form b2a
 	}
 	return 0;
 }
