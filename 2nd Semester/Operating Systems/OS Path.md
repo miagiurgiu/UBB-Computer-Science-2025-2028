@@ -5592,7 +5592,8 @@ int main() {
 			if(read(b2c[0], v, 11*sizeof(int))<=0)
 				break;
 			int sum=0;
-			
+			for(int i=0; i<11; i++)
+				sum +=v[i];
 			
 		}
 		
