@@ -6226,7 +6226,11 @@ int main() {
 		n=rand()%150+50;
 		printf("Generated number: %d\n, n);
 		
-		n=rand()%150+50; // random number in [50]
+		if(n%2==1)
+			n++;
+			
+		write(a2b[1], &n, )
+		
 	
 	}
 
