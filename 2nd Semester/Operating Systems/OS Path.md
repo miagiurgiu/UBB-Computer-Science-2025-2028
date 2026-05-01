@@ -6096,3 +6096,8 @@ Process B:
 - reads the two numbers sent by A
 - computes their GCD
 - prints the GCD
+
+FIFO Solution:
+```
+
+```
