@@ -5436,8 +5436,17 @@ int main() {
 		if(strcmp(cmd, "stop")==0)
 			break;
 		
-		FILE *p = popen(cmd, "r");
+		FILE *p = popen(cmd, "r"); // execute command and read its input ??!
 		
+		if(p==NULL) {
+			perror("popen");
+			continue;
+		}
+		
+		while(fgets(buffer, 256, p)!=NULL) { // read command output line by 
+			int n = strlen(buffer);
+			write(fd_write, buffer, n*sizeof(char));
+		}
 		
 	}
 
