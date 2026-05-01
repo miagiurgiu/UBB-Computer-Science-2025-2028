@@ -5683,5 +5683,8 @@ Write a C program that will read from keyboard some strings (until X is written)
 The main process will start two types of child processes: A and B started every time a string is read from keyboard
 Child Process A:
 - parent will send the string to the created child process using pipes
-- each child process will receive the string and it will iterate over it character by character checking if the character is an 
+- each child process will receive the string and it will iterate over it character by character checking if the character is an uppercase/lowercase letter
+	- if uppercase letter -> add letter in vector U
+	- if lowercase letter -> add letter in vector L
+	- if not letter ->
 ![[Pasted image 20260501125147.png]]
