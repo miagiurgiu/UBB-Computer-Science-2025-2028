@@ -6126,6 +6126,16 @@ int main(int argc, char **argv) {
 		exit(0);
 	}
 	
-	if()
+	if(fork()==0) {
+		int prod = nr1*nr2;
+		write(fifo, &prod, sizeof(int));
+		close(fifo);
+		exit(0);
+	}
+	
+	wait(0);
+	wait(0);
+	close(fifo);
+	return 0;
 }
 ```
