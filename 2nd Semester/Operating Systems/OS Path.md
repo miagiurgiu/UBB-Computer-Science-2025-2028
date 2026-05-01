@@ -5672,8 +5672,11 @@ int main() {
 	close(b2a[0]);
 	close(c2a[0]);
 	
-	wait(0); // wait for c
-	wait(0); // wait for b
+	wait(0);
+	wait(0);
 	return 0;
 }
 ```
+
+##### Problem 2:
+
