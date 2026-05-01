@@ -6106,9 +6106,10 @@ int main(int argc, char **argv) {
 		printf("Please give 2 numbers\n");
 		exit(1);
 	}
-	mkfifo("fifo", 0600);
 	
-	int nr1 = atoi(argv[1]);
+	mkfifo("fifo", 0600); // create fifo if it does not exist
+	
+	int nr1 = atoi(argv[1]); // first numbe
 	int nr2 = atoi(argv[2]);
 	
 	int fifo = open("fifo", O_WRONLY);
@@ -6116,6 +6117,10 @@ int main(int argc, char **argv) {
 	if(fifo<0) {
 		perror("open");
 		exit(1);
+	}
+	
+	if(fork()==0) {
+		int sum = nr1+nr2;
 	}
 }
 ```
