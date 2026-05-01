@@ -5059,6 +5059,7 @@ int main(int argc, char **argv) {
 ```
 
 my way:
+- we use malloc because N is only known at runtime
 ```
 #include ...
 
