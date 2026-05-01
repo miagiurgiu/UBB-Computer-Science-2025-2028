@@ -5483,5 +5483,10 @@ int main() {
 
 B.c:
 ```
+#include ...
 
+int main() {
+
+
+}
 ```
