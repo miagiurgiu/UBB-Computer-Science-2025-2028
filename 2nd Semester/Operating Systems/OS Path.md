@@ -5955,6 +5955,9 @@ int main() {
 		for(int i=0; i<26; i++)
 			printf("%c -> %d\n", 'a'+i, v[i]);
 	}
-	close()
+	close(c2a);
+	close(a2c);
+	
+	return 0;
 }
 ```
