@@ -5680,5 +5680,8 @@ int main() {
 
 ##### Problem 2:
 Write a C program that will read from keyboard some strings (until X is written).
-The main process will start two types of ch
+The main process will start two types of child processes: A and B started every time a string is read from keyboard
+Child Process A:
+- parent will send the string to the created child process using pipes
+- each child process 
 ![[Pasted image 20260501125147.png]]
