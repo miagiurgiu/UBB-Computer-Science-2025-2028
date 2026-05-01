@@ -5842,4 +5842,6 @@ Process A:
 - sends this vector to B
 - sends the same vector back to C
 Process B:
-- 
+- receives vector from A
+- computes the total number of lowercase letters
+- prints this sum
