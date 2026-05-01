@@ -6000,8 +6000,14 @@ int main() {
 			
 			int sum = 0;
 			for(int i=0; i<26; i++)
-				
+				sum +=v[i];
+			printf("Sum is: %d\n", sum);
 		}
+		close(a2b[0]);
+		exit(0); // bc it's a child
+	}
+	if(fork()==0) {
+		close(c2a[1])
 	}
 
 }
