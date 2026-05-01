@@ -5658,8 +5658,12 @@ int main() {
 		write(a2b[1], &n, sizeof(int)); // send string length to b
 		write(a2b[1], s, n*sizeof(char)); // send string to b
 		
-		read(b2a[0], v, 11*sizeof(int));
-		read()
+		read(b2a[0], v, 11*sizeof(int)); // receive vector f
+		read(c2a[0], &sum, sizeof(int));
+		
+		printf("Vector: ");
+		for(int i=0; i<11; i++) 
+			printf("%d", v[i]);
 	}
 	return 0;
 }
