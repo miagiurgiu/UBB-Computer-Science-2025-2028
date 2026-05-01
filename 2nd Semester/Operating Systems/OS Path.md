@@ -5979,7 +5979,7 @@ Pipes Solution:
 int main() {
 	int c2a[2];
 	int a2c[2];
-	int a2c[2];
+	int a2b[2];
 	
 	pipe(c2a);
 	pipe(a2c);
@@ -5992,6 +5992,16 @@ int main() {
 		close(a2c[0]);
 		close(a2c[1]);
 		
+		int v[26];
+		
+		while(1) {
+			if(read(a2b[0], v, 26*sizeof(int))<=0)
+				break;
+			
+			int sum = 0;
+			for(int i=0; i<26; i++)
+				
+		}
 	}
 
 }
