@@ -5256,6 +5256,14 @@ int main() {
 	
 	int num;
 	
+	while(1) {
+		if(read(a2b, &num, sizeof(int))<=0)
+			break;
+		printf("B received: %d\n, num);
+		
+		if(num==10)
+	}
+	
 	return 0;
 }
 
