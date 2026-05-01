@@ -6192,4 +6192,11 @@ int main(int argc, char **argv) {
 ##### Problem 4:
 Write a C program that creates two processes, A and B, using pipes
 Process A:
-- generates a random num
+- generates a random number between 50 and 199
+- if number is odd, make it even
+- send the number to B
+- receive numbers back from B
+- while the received number is greater than 5
+	- print it
+	- if odd, make it even
+	- send it again to B
