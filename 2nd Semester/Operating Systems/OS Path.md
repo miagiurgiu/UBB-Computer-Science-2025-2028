@@ -5510,6 +5510,13 @@ int main() {
 		
 		int v[11]={0}; // reset for each iteration (we are in a while)
 		
+		for(int i=0; i<n; i++) {
+			if(s[i]>='0' && s[i]<='9')
+				v[s[i]-'0']++;
+			else
+				v[10]++;
+		}
+		write(b)
 	}
 	return 0;
 }
