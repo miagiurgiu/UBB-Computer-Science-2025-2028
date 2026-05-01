@@ -6113,7 +6113,7 @@ int main(int argc, char **argv) {
 	int nr1 = atoi(argv[1]); // first number
 	int nr2 = atoi(argv[2]); // second number
 	
-	int fd_write = open("fifo", O_WRONLY); // open fifo for writing
+	int fd_write = open(argv[3], O_WRONLY); // open fifo for writing
 	
 	if(fd_write<0) {
 		perror("open");
