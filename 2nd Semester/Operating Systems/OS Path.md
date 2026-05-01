@@ -5759,7 +5759,12 @@ int main() {
 	if(fork()==0) { // child B
 		close(p2a[0]);
 		close(p2a[1]);
+		close(a2p[0]);
+		close(a2p[1]);
+		close(a2b[1]);
 		
+		char l[256]; // lowercase received from a
+		char u[256]; // uppercase received from
 	}
 }
 
