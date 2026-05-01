@@ -5742,7 +5742,7 @@ int main() {
 					S++;
 			}
 			write(a2p[1], &S, sizeof(int)); // send S to parent
-			write(a2b[1], &j, sizeof(int))
+			write(a2b[1], &j, sizeof(int)); // send 
 		} 
 	}
 }
