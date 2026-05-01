@@ -5626,9 +5626,14 @@ int main() {
 				else
 					v[10]++;
 			}
-			write(b2a[1], v, 11*sizeof(int));
-			write(b2c[1], v, 11)
+			write(b2a[1], v, 11*sizeof(int)); // send to a
+			write(b2c[1], v, 11*sizeof(int)); // send to c
 		} 
+		// what we actually used
+		close(a2b[0]);
+		close(b2a[1]);
+		close(b2c[1]);
+		exit(0);
 	}
 	return 0;
 }
