@@ -6223,13 +6223,13 @@ int main() {
 		
 		srand(time(NULL)^getpid());
 		
-		n=rand()%150+50;
+		n=rand()%150+50; // 0-149 -> 50-199
 		printf("Generated number: %d\n, n);
 		
 		if(n%2==1)
 			n++;
 			
-		write(a2b[1], &n, sizeof(int));
+		write(a2b[1], &n, sizeof(int)); // send first nu
 		
 		while(1) {
 			if(read(b2a[0], &n, sizeof(int))<=0)
