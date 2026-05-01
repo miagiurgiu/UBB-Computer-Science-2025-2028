@@ -5961,3 +5961,8 @@ int main() {
 	return 0;
 }
 ```
+
+Pipes Solution:
+```
+
+```
