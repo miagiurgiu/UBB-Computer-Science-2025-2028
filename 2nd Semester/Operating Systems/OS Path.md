@@ -5430,7 +5430,15 @@ int main() {
 	while(1) {
 		printf("Command: ");
 		fgets(cmd, 256, stdin); // read full command line
-		cmd[strlen(cmd)-1]='\0'; // remove '\n'
+		
+		cmd[strlen(cmd)-1]='\0'; // remove '\n' from fgets
+		
+		if(strcmp(cmd, "stop")==0)
+			break;
+		
+		FILE *p = popen(cmd, "r");
+		
+		
 	}
 
 }
