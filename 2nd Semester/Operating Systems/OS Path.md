@@ -5640,13 +5640,16 @@ int main() {
 	close(c2a[1]);
 	close(b2c[1]);
 	close(b2c[0]);
+	 
+	char s[100]; // keyboard input
+	int n; // string length
+	int v[11]; // vector received from b
+	int sum; // sum received from c
 	
-	char s[100];
-	int n;
-	int v[11];
-	int sum;
-	
-	
+	while(1) {
+		printf("Insert string or X to exit: ");
+		scanf("%s", s);
+	}
 	return 0;
 }
 ```
