@@ -5581,7 +5581,16 @@ int main() {
 	if(fork()==0) { // child process C
 		close(b2c[1]); // c never writes to b
 		close(c2a[0]); // c never reads from a
-		close(a2b[0]); // 
+		close(a2b[0]); // c never uses a->b
+		close(a2b[1]);
+		close(b2a[0]); // c never uses b->a
+		close(b2a[1]);
+		
+		int v[11]; // vector received from b
+		
+		while(1) {
+		
+		}
 		
 		
 	}
