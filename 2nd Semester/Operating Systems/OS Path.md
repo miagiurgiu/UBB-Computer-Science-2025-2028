@@ -5721,7 +5721,11 @@ int main() {
 		char u[256]; // uppercase
 		int n; // keyboard string length
 		
-		
+		while(1) {
+			if(read(p2a[0], &n, sizeof(int))<=0)
+				break;
+			if()
+		} 
 	}
 }
 
