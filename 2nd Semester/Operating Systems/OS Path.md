@@ -5537,7 +5537,17 @@ int main() {
 	int b2c=open("b2c", O_RDONLY);
 	int c2a=open("c2a", O_WRONLY);
 	
-	if(b2c<0 || c2a<0) {}
+	if(b2c<0 || c2a<0) {
+		perror("open");
+		exit(1);
+	}
+	
+	int v[11];
+	
+	while(1) {
+		if(read(b2c, v, 11*sizeof(int))<=0)
+			break;
+	}
 
 }
 ```
