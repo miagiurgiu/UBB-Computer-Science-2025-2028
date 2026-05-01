@@ -5828,5 +5828,10 @@ int main() {
 ##### Problem 3:
 Write 3 C programs, A,B,C using FIFOs
 Process C:
-- reads strings from keyboard until x is written
+- reads strings from keyboard until X is written
 - sends each string to process A
+- receives from A a vector with 26 positions
+- prints the frequency of each lowercase letter a to z
+Process A:
+- received a string from process C
+- 
