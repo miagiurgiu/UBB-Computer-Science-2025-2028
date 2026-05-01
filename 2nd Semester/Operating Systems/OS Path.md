@@ -5424,8 +5424,14 @@ int main() {
 		exit(1);
 	}
 	
-	char cmd[256];
-	char buffer[25]
+	char cmd[256]; // command read from keyboard
+	char buffer[256]; // output chunks from command
+	
+	while(1) {
+		printf("Command: ");
+		fgets(cmd, 256, stdin); // read full command line
+		cmd[strlen(cmd)-1]='\0'; // remove '\n'
+	}
 
 }
 ```
