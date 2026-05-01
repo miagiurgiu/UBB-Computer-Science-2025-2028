@@ -5856,7 +5856,15 @@ int main() {
 	
 	c2a=open("c2a", O_RDONLY);
 	a2b=open("a2b", O_WRONLY);
-	a2c=open("a2c", )
+	a2c=open("a2c", O_WRONLY);
+	
+	if(c2a<0 || a2b<0 || a2c<0) {
+		perror("open");
+		exit(1);
+	}
+	
+	int n;
+	char s[100];
 
 }
 ```
