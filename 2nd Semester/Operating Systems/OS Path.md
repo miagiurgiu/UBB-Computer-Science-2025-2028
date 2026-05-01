@@ -6229,7 +6229,12 @@ int main() {
 		if(n%2==1)
 			n++;
 			
-		write(a2b[1], &n, )
+		write(a2b[1], &n, sizeof(int));
+		
+		while(1) {
+			if(read(b2a[0], &n, sizeof(int))<=0)
+				break;
+		}
 		
 	
 	}
