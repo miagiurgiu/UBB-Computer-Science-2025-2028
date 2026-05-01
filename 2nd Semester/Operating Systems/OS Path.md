@@ -6049,7 +6049,17 @@ int main() {
 	
 	while(1) {
 		printf("Insert string or x to exit: ");
-		scanf("%s",)
+		scanf("%s", s);
+		
+		if(strcmp(s, "x")==0)
+			break;
+		
+		n=strlen(s);
+		
+		write(c2a[1], &n, sizeof(int)); // send length to a
+		write(c2a[1], s, n*sizeof(char)); // send string to
+		
+		
 	}
 
 }
