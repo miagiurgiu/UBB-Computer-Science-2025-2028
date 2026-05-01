@@ -5532,7 +5532,12 @@ C.c:
 
 int main() {
 	mkfifo("b2c", 0600);
-	mkfifo("c2a")
+	mkfifo("c2a", 0600);
+	
+	int b2c=open("b2c", O_RDONLY);
+	int c2a=open("c2a", O_WRONLY);
+	
+	if(b2c<0 || c2a<0) {}
 
 }
 ```
