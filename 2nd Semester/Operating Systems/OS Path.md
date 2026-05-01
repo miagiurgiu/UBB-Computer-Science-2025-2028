@@ -5986,6 +5986,11 @@ int main() {
 	pipe(a2b);
 	
 	if(fork()==0) { // child b
+		close(a2b[1]);
+		close(c2a[0]);
+		close(c2a[1]);
+		close(a2c[0]);
+		close(a2c[1]);
 		
 	}
 
