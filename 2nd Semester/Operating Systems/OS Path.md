@@ -5550,8 +5550,10 @@ int main() {
 		int sum = 0;
 		for(int i=0; i<11; i++)
 			sum +=v[i];
-		write(c2a, &sum, sizeof(int));
+		write(c2a, &sum, sizeof(int)); // send result to a
 	}
-
+	close(b2c);
+	close(c2a);
+	return 0;
 }
 ```
