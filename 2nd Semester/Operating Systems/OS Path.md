@@ -6003,6 +6003,7 @@ int main() {
 				sum +=v[i];
 			printf("Sum is: %d\n", sum);
 		}
+		// what we actually used in b
 		close(a2b[0]);
 		exit(0); // bc it's a child
 	}
@@ -6028,9 +6029,15 @@ int main() {
 			}
 			
 			write(a2c[1], v, 26*sizeof(int));
-			write(a2b)
+			write(a2b[1], v, 26*sizeof(int));
 		}
+		
+		close(c2a[0]);
+		close(a2c[1]);
+		close(a2b[1]);
+		exit(0);
 	}
+	//
 
 }
 ```
