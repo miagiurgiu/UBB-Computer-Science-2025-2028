@@ -5733,12 +5733,16 @@ int main() {
 			int j=0; // size of L
 			int k=0; // size of U
 			
-			for(int i=0; i<n; i++) {
-				if(s[i]>='a' && s[i]<='z') 
+			for(int i=0; i<n; i++) { 
+				if(s[i]>='a' && s[i]<='z')  // lowercase
 					l[j++]=s[i];
-				else if(s[i]>='A' && s[i]<='Z')
-					u[]
+				else if(s[i]>='A' && s[i]<='Z') // uppercase
+					u[k++]=s[i];
+				else
+					S++;
 			}
+			write(a2p[1], &S, sizeof(int)); // send S to parent
+			write(a2b[1], &j, sizeof(int))
 		} 
 	}
 }
