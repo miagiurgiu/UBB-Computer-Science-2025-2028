@@ -5590,6 +5590,9 @@ int main() {
 		
 		while(1) {
 			if(read(b2c[0], v, 11*sizeof(int))<=0)
+				break;
+			int sum=0;
+			
 			
 		}
 		
