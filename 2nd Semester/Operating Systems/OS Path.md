@@ -5764,7 +5764,16 @@ int main() {
 		close(a2b[1]);
 		
 		char l[256]; // lowercase received from a
-		char u[256]; // uppercase received from
+		char u[256]; // uppercase received from a
+		int j,k;
+		
+		while(1) {
+			if(read(a2b[0], &j, sizeof(int))<=0)
+				break;
+			
+			if(j>0)
+				if(read())
+		}
 	}
 }
 
