@@ -5742,10 +5742,12 @@ int main() {
 					S++;
 			}
 			write(a2p[1], &S, sizeof(int)); // send S to p
-			write(a2b[1], &j, sizeof(int)); // send size of L to b
 			
+			write(a2b[1], &j, sizeof(int)); // send size of L to b
 			if(j>0) 
-				write(a2b[])
+				write(a2b[1], l, j*sizeof(char)); // send lowercase vector
+			
+			write(a2b[1], )
 			
 		} 
 	}
