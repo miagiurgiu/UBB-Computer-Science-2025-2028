@@ -5847,11 +5847,15 @@ Process B:
 - prints this sum
 
 FIFO Solution:
+a.c:
 ```
 #include ...
 
 int main() {
+	int c2a, a2b, a2c;
 	
+	c2a=open("c2a", O_RDONLY);
+	a2b=open("a2b", )
 
 }
 ```
