@@ -5095,12 +5095,14 @@ int main(int argc, char **argv) {
 		for(int i=0; i<n; i++)
 			sum +=v[i];
 		
-		double avg = (double)sum/n;
+		double avg = (double)sum/n; // compute average
 		
-		write(c2p[1], &avg, sizeof(double));
+		write(c2p[1], &avg, sizeof(double)); // send average to parent
 		
 		free(v);
-		
+		close(p2c[0]);
+		close(c2p[1]);
+		exit(0);
 	}
 }
 
