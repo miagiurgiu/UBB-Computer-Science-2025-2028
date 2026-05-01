@@ -5741,8 +5741,12 @@ int main() {
 				else
 					S++;
 			}
-			write(a2p[1], &S, sizeof(int)); // send S to parent
-			write(a2b[1], &j, sizeof(int)); // send 
+			write(a2p[1], &S, sizeof(int)); // send S to p
+			write(a2b[1], &j, sizeof(int)); // send size of L to b
+			
+			if(j>0) 
+				write(a2b[])
+			
 		} 
 	}
 }
