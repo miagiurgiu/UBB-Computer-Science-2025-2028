@@ -5871,6 +5871,12 @@ int main() {
 			break;
 		if(read(c2a, s, n*sizeof(char))<=0)
 			break;
+			
+		int v[26]={0};
+		
+		for(int i=0; i<n; i++) {
+			if(s[i]>='a' && s[i]<='z')
+		}
 		
 	}
 
