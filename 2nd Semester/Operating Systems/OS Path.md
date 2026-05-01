@@ -5925,8 +5925,19 @@ c.c:
 int main() {
 	int c2a, a2c;
 	
-	c2a=open("c2a", O_WRONLY);
-	a2c=open("a2c", O_RDONLY);
-
+	c2a=open("c2a", O_WRONLY); // writes to a
+	a2c=open("a2c", O_RDONLY); // reads from a
+	
+	if(c2a<0 || a2c<0) {
+		perror("open");
+		exit(1);
+	}
+	
+	char s[100];
+	int n;
+	int v[26];
+	
+	while(1) {
+	}
 }
 ```
