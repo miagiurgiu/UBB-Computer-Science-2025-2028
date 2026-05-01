@@ -5763,16 +5763,20 @@ int main() {
 		close(a2p[1]);
 		close(a2b[1]);
 		
-		char l[256]; // lowercase vector received from a
-		char u[256]; // uppercase vector received from a
-		int j,k;
+		char l[256]; // lowercase vector L received from a
+		char u[256]; // uppercase vector U received from a
+		int j; // size of L
+		int k; // size of U
 		
 		while(1) {
-			if(read(a2b[0], &j, sizeof(int))<=0) // read size of lowercase vector
+			if(read(a2b[0], &j, sizeof(int))<=0) // read size of lowercase vector L
 				break;
 			
 			if(j>0)
-				if(read(a2b[0]), l, j*sizeof(char))<=0) 
+				if(read(a2b[0]), l, j*sizeof(char))<=0) // read vector L
+					break;
+			
+			if()
 		}
 	}
 }
