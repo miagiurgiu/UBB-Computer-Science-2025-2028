@@ -5512,7 +5512,7 @@ int main() {
 		
 		for(int i=0; i<n; i++) {
 			if(s[i]>='0' && s[i]<='9')
-				v[s[i]-'0']++;
+				v[s[i]-'0']++; // convert character to integer and 
 			else
 				v[10]++;
 		}
