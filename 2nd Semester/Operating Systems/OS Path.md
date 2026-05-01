@@ -6109,18 +6109,19 @@ int main(int argc, char **argv) {
 	
 	mkfifo("fifo", 0600); // create fifo if it does not exist
 	
-	int nr1 = atoi(argv[1]); // first numbe
-	int nr2 = atoi(argv[2]);
+	int nr1 = atoi(argv[1]); // first number
+	int nr2 = atoi(argv[2]); // second number
 	
-	int fifo = open("fifo", O_WRONLY);
+	int fifo = open("fifo", O_WRONLY); // open fifo for writing
 	
 	if(fifo<0) {
 		perror("open");
 		exit(1);
 	}
 	
-	if(fork()==0) {
+	if(fork()==0) { // first child
 		int sum = nr1+nr2;
+		write(fifo, &sum, sizeof(int)); // sen
 	}
 }
 ```
