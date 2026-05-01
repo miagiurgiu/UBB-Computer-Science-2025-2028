@@ -5649,6 +5649,16 @@ int main() {
 	while(1) {
 		printf("Insert string or X to exit: ");
 		scanf("%s", s);
+		
+		n=strlen(s);
+		
+		if(strcmp(s, "X")==0)
+			break;
+		
+		write(a2b[1], &n, sizeof(int));
+		write(a2b[1], s, n*sizeof(char));
+		
+		read()
 	}
 	return 0;
 }
