@@ -6089,4 +6089,8 @@ Process A:
 - creates two child processes
 	- first child computes the sum
 	- second child computes the product
-- both chi
+- both children send their result to process B through the FIFO
+
+Process B:
+- receives the FIFO name as command-line argument
+- 
