@@ -5931,6 +5931,9 @@ c.c:
 int main() {
 	int c2a, a2c;
 	
+	mkfifo("c2a", 0600);
+	mkfifo("a2c", 0600);
+
 	c2a=open("c2a", O_WRONLY); // writes to a
 	a2c=open("a2c", O_RDONLY); // reads from a
 	
@@ -5970,5 +5973,13 @@ int main() {
 
 Pipes Solution:
 ```
+#include ...
 
+
+int main() {
+	int p2a[2];
+	int a2p[2];
+	int a2b[2];
+
+}
 ```
