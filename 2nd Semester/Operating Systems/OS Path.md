@@ -5085,7 +5085,11 @@ int main(int argc, char **argv) {
 		close(p2c[1]);
 		close(c2p[0]);
 		
-		int
+		int n;
+		read(p2c[0], &n, sizeof(int));
+		
+		int *v=malloc(n*sizeof(int));
+		
 	}
 }
 
