@@ -5209,7 +5209,12 @@ int main() {
 		exit(1);
 	}
 	
+	srand(getpid()); // different random numbers for a
 	
+	while(1) {
+		int num = rand()%10 +1; // 0-9 + 1 -> 1-10
+		printf("A sends: %d\)
+	}
 
 }
 
