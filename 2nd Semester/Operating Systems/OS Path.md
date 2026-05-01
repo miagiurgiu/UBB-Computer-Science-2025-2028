@@ -5397,7 +5397,7 @@ read() -> means "blocking" -> if one process hasn't sent the data yet, the curre
 	 =0 => EOF => NO MORE DATA 
 	 <0 => ERROR => PERROR
 write()
-with file descriptor - how?
+
 ```
 - CLOSE:
 ```
