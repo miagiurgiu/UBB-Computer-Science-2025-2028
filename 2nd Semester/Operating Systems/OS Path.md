@@ -6015,7 +6015,13 @@ int main() {
 		char s[100];
 		
 		while(1) {
-			if(read(c2a[0], &n, sizeof()))
+			if(read(c2a[0], &n, sizeof(int))<=0)
+				break;
+			if(read(c2a[0], s, n*sizeof(char))<=0)
+				break;
+			
+			int v[26]={0};
+			
 		}
 	}
 
