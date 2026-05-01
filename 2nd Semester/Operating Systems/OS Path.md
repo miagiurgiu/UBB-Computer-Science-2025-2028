@@ -5905,6 +5905,12 @@ int main() {
 	
 	int v[26];
 	
+	while(1) {
+		if(read(a2b, v, 26*sizeof(int))<=0)
+			break;
+		int sum=0;
+		
+	}
 
 }
 ```
