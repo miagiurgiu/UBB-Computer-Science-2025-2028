@@ -5228,8 +5228,20 @@ int main() {
 		if(num==10)
 			break;
 	}
-
+	// what we actually used 
+	close(a2b);
+	close(b2a);
+	
+	unlink("a2b"); // delete fifo file
+	unlink("b2a"); // delete fifo file
+	
+	return 0;
 }
+```
+
+b.c
+```
+
 
 ```
 
