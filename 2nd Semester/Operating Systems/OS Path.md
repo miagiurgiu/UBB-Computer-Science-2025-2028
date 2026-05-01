@@ -6200,3 +6200,9 @@ Process A:
 	- print it
 	- if odd, make it even
 	- send it again to B
+Process B:
+- receives number from A
+- divides it by 2
+- sends the result back to A
+- repeats until pipe closes
+
