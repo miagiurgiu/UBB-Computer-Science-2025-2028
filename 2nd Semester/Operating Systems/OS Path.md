@@ -5937,7 +5937,7 @@ int main() {
 	c2a=open("c2a", O_WRONLY); // writes to a
 	a2c=open("a2c", O_RDONLY); // reads from a
 	
-	if(c2a<0 || a2c<0) {
+	if(c2a<0 || a2c<0) { // <0 => erro
 		perror("open");
 		exit(1);
 	}
@@ -6059,13 +6059,18 @@ int main() {
 		write(c2a[1], &n, sizeof(int)); // send length to a
 		write(c2a[1], s, n*sizeof(char)); // send string to a
 		
-		if(read(a2c[0], v, 26*sizeof(int))<=0)
+		if(read(a2c[0], v, 26*sizeof(int))<=0) // no data was read successfully
 			break;
 		
 		for(int i=0; i<26; i++)
 			printf("%c -> %d\n", 'a'+i, v[i]);
 	}
 	// what we actually used in c
-	clos
+	close(c2a[1]);
+	close(a2c[0]);
+	
+	wait(0);
+	wait(0);
+	return 0;
 }
 ```
