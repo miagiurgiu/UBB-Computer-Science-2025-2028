@@ -5560,3 +5560,7 @@ int main() {
 ```
 
 Pipes solution:
+```
+#include <stdio.h>
+#include <stdlib.h
+```
