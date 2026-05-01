@@ -5938,6 +5938,18 @@ int main() {
 	int v[26];
 	
 	while(1) {
+		printf("Insert a string or x to exit: ");
+		scanf("%s", s);
+		
+		if(strcmp(s, "x")==0)
+			break;
+			
+		n=strlen(s);
+		
+		write(c2a, &n, sizeof(int));
+		write(c2a, s, n*sizeof(char));
+		
+		if(read(a2c, v, 26*sizeof(int)))
 	}
 }
 ```
