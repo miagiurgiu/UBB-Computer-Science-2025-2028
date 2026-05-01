@@ -5615,7 +5615,8 @@ int main() {
 		while(1) {
 			if(read(a2b[0], &n, sizeof(int))<=0)
 				break;
-			if()
+			if(read(a2b[0], s, n*sizeof(char))<=0)
+				break;
 		} 
 	}
 	return 0;
