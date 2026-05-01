@@ -5849,10 +5849,14 @@ Process B:
 FIFO Solution:
 a.c:
 ```
-#include ...
+#include <sys/stat.h>
 
 int main() {
 	int c2a, a2b, a2c;
+	
+	mkfifo("c2a", 0600);
+	mkfifo("a2b", 0600);
+	mkfifo("a2c", 0600);
 	
 	c2a=open("c2a", O_RDONLY);
 	a2b=open("a2b", O_WRONLY);
@@ -5895,6 +5899,8 @@ b.c:
 
 int main() {
 	int a2b;
+	
+	mkfifo("a2b", 0600);
 	
 	a2b=open("a2b", O_RDONLY);
 	
