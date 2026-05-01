@@ -5458,7 +5458,27 @@ unlink("fifo");
 return 0;
 }
 ```
+b.c:
+```
+#include ...
 
+int main() {
+	int fd_read=open("fifo", O_RDONLY);
+	
+	if(fd_read<0) {
+		perror("open");
+		exit(1);
+	}
+
+	char buffer[256];
+	int n;
+	
+	while(1) {
+		n=read(fd_)
+	}
+}
+
+```
 
 exam question: in which scenario can it print potato? how to make this break
 - how can I cause a problem s.t potato does not get printed? how to make execlp fail?
