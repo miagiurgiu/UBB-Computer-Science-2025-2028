@@ -5597,9 +5597,13 @@ int main() {
 			write(c2a[1], &sum, sizeof(int)); // send to a
 		}
 		
-		close(b2c[0]); // close read end f
-		close(c2a[1]);
-		exit(0);
+		close(b2c[0]); // close read end from b
+		close(c2a[1]); // close write end to a
+		exit(0); // child (c) finishes
+	}
+	
+	if(fork()==0) { // child process B
+		close(a2b[1]);
 	}
 	return 0;
 }
