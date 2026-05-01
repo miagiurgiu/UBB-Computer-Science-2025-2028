@@ -5711,7 +5711,11 @@ int main() {
 	pipe(a2p);
 	pipe(a2b);
 	
-	if(fork())
+	if(fork()==0) { // child A
+		close(p2a[1]);
+		close(a2p[0]);
+		
+	}
 }
 
 ```
