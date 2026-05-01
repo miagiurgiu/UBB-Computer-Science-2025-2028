@@ -5608,6 +5608,15 @@ int main() {
 		close(b2c[0]);
 		close(c2a[0]);
 		close(c2a[1]);
+		
+		char s[100]; // string received from a
+		int n;
+		
+		while(1) {
+			if(read(a2b[0], &n, sizeof(int))<=0)
+				break;
+			if()
+		} 
 	}
 	return 0;
 }
