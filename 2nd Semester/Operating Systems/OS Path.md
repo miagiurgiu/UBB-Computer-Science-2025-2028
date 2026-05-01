@@ -6031,13 +6031,19 @@ int main() {
 			write(a2c[1], v, 26*sizeof(int));
 			write(a2b[1], v, 26*sizeof(int));
 		}
-		
+		// what we actualy used in a
 		close(c2a[0]);
 		close(a2c[1]);
 		close(a2b[1]);
 		exit(0);
 	}
-	//
+	// process c (parent)
+	close(c2a[0]);
+	close(a2c[1]);
+	close(a2b[0]);
+	close(a2b[1]);
+	
+	char s[100];
 
 }
 ```
