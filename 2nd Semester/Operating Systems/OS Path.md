@@ -6162,7 +6162,11 @@ int main(int argc, char **argv) {
 	
 	int x,y;
 	
-	if(read(fifo, &x, sizeo))
+	if(read(fifo, &x, sizeof(int))<=0) {
+		perror("read");
+		close(fifo);
+		exit(1);
+	}
 }
 
 ```
