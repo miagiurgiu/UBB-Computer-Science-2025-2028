@@ -5492,7 +5492,14 @@ int main() {
 	
 	int a2b=open("a2b", O_RDONLY);
 	int b2a=open("b2a", O_WRONLY);
+	int b2c=open("b2c", O_WRONLY);
 	
+	if(a2b<0 || b2a<0 || b2c<0) {
+		perror("open");
+		exit(1);
+	}
+	
+	char s[100]
 	return 0;
 }
 ```
