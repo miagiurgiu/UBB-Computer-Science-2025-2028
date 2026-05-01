@@ -5393,11 +5393,13 @@ open("my_fifo", O_WRONLY); // waits for a writer
 - TRANSFER:
 ```
 read() -> means "blocking" -> if one process hasn't sent the data yet, the current process pauses at that line
-	 > 0 => SUCCESSFULL READING
+	 > 0 => SUCCESSFUL READING
 	 =0 => EOF => NO MORE DATA 
 	 <0 => ERROR => PERROR
 write() -> means "blocking" -> if buffer is full or no reader ready, process pauses at that line
-
+	 > 0 => SUCCESSFUL WRITE (bytes written)
+	 =0 => NOTHING WRITTEN (rare)
+	 <0 => ERROR => PERROR (no reader -> sigpipe/epipe)
 ```
 - CLOSE:
 ```
