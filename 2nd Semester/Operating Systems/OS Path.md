@@ -6153,24 +6153,24 @@ int main(int argc, char **argv) {
 	
 	mkfifo(argv[1], 0600);
 	
-	int file_descriptor = open(argv[1], O_RDONLY);
+	int fd_read = open(argv[1], O_RDONLY);
 	
-	if(fifo<0) {
+	if(fd_read<0) {
 		perror("open");
 		exit(1);
 	}
 	
 	int x,y;
 	
-	if(read(fifo, &x, sizeof(int))<=0) { // read first value (nr1)
+	if(read(fd_read, &x, sizeof(int))<=0) { // read first value (nr1)
 		perror("read");
-		close(fifo);
+		close(fd_read);
 		exit(1);
 	}
 	
-	if(read(fifo, &y, sizeof(int))<=0) { // read second value (nr2)
+	if(read(fd_read, &y, sizeof(int))<=0) { // read second value (nr2)
 		perror("read");
-		close(fifo);
+		close(fd_read);
 		exit(1);
 	}
 	
@@ -6184,7 +6184,7 @@ int main(int argc, char **argv) {
 	}
 	
 	printf("GCD of %d and %d is: %d\n", x,y,a);
-	close(fifo);
+	close(fd_read);
 	return 0;
 }
 ```
