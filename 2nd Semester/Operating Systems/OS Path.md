@@ -5751,6 +5751,7 @@ int main() {
 			if(k>0)
 				write(a2b[1], u, k*sizeof(char)); // send uppercase vector
 		} 
+		// what we actually used in child A
 		close(p2a[0]);
 		close(a2p[1]);
 		close(a2b[1]);
@@ -5785,10 +5786,17 @@ int main() {
 			
 			printf("The sizes are: %d\n", j+k); // total letters
 		}
+		// what we actually used in child B
 		close(a2b[0]);
 		exit(0);
 	}
+	// parent process
+	close(p2a[0]);
+	close(a2p[1]);
+	close(a2b[0]);
+	close(a2b[1]);
 	
+	char s[256];
 }
 
 ```
