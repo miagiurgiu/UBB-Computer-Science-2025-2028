@@ -6189,7 +6189,7 @@ int main(int argc, char **argv) {
 }
 ```
 
-##### Problem 4:
+##### Problem 5:
 Write a C program that creates two processes, A and B, using pipes
 Process A:
 - generates a random number between 50 and 199
@@ -6261,6 +6261,8 @@ int main() {
 	close(a2b[0]);
 	close(b2a[1]);
 	wait(0);
-	return0;
+	return 0;
 }
 ```
+
+##### Problem 5
