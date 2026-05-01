@@ -5062,7 +5062,13 @@ my way:
 ```
 #include ...
 
-int main(int argc, 
+int main(int argc, char **argv) {
+	if(argc !=2) {
+		printf("Usage: ./p6 <N>\n");
+		return 1;
+	}
+	int N=atoi(argv[1]); // convert argument to integer
+}
 
 ```
 
