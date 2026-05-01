@@ -5058,6 +5058,13 @@ int main(int argc, char **argv) {
 	}
 ```
 
+my way:
+```
+#include ...
+
+int main(int argc, 
+
+```
 
 Problem 7a
 ![[Pasted image 20260427144446.png]]
