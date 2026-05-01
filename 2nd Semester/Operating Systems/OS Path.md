@@ -5682,12 +5682,14 @@ int main() {
 Write a C program that will read from keyboard some strings (until X is written).
 The main process will start two types of child processes: A and B started every time a string is read from keyboard
 Child Process A:
-- parent will send the string to the created child process using pipes
+- parent will send the string to the created child A process using pipes
 - each child process will receive the string and it will iterate over it character by character checking if the character is an uppercase/lowercase letter
 	- if uppercase letter -> add letter in vector U
 	- if lowercase letter -> add letter in vector L
 	- if not letter -> increment shared variable S
 - send S to the parent using pipes, parent will print it on the screen
 - send L, U to Process B
-Child Process B
+Child Process B:
+- will receive L, U from Child Process A with a pipe
+- will sum up their sizes and print the result on the screen
 ![[Pasted image 20260501125147.png]]
