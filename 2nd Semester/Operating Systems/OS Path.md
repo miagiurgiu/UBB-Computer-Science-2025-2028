@@ -6106,6 +6106,9 @@ int main(int argc, char **argv) {
 		printf("Please give 2 numbers\n");
 		exit(1);
 	}
+	mkfifo("fifo", 0600);
 	
+	int nr1 = atoi(argv[1]);
+	int nr2 =
 }
 ```
