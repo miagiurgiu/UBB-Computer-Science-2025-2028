@@ -5920,5 +5920,13 @@ int main() {
 
 c.c:
 ```
+#include ...
 
+int main() {
+	int c2a, a2c;
+	
+	c2a=open("c2a", O_WRONLY);
+	a2c=open("a2c", O_RDONLY);
+
+}
 ```
