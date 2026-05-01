@@ -5130,8 +5130,8 @@ int main(int argc, char **argv) {
 	close(p2c[1]);
 	close(c2p[0]);
 	wait(0);
+	return 0;
 }
-
 ```
 
 Problem 7a
