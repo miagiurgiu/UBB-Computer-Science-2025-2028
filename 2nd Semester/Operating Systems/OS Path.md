@@ -5392,7 +5392,7 @@ open("my_fifo", O_WRONLY); // waits for a writer
 ```
 - TRANSFER:
 ```
-read()
+read() -> means "blocking" -> if one process hasn't sent the data yet, the current process pauses
 write()
 with file descriptor - how?
 ```
