@@ -6099,5 +6099,13 @@ Process B:
 
 FIFO Solution:
 ```
+#include ...
 
+int main(int argc, char **argv) {
+	if(argc!=3) {
+		printf("Please give 2 numbers\n");
+		exit(1);
+	}
+	
+}
 ```
