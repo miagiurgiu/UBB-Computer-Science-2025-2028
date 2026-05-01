@@ -5977,9 +5977,17 @@ Pipes Solution:
 
 
 int main() {
-	int p2a[2];
-	int a2p[2];
-	int a2b[2];
+	int c2a[2];
+	int a2c[2];
+	int a2c[2];
+	
+	pipe(c2a);
+	pipe(a2c);
+	pipe(a2b);
+	
+	if(fork()==0) { // child b
+		
+	}
 
 }
 ```
