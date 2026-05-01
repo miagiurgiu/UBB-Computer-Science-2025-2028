@@ -5722,9 +5722,12 @@ int main() {
 		int n; // keyboard string length
 		
 		while(1) {
-			if(read(p2a[0], &n, sizeof(int))<=0)
+			if(read(p2a[0], &n, sizeof(int))<=0) // read length from p
 				break;
-			if()
+			if(read(p2a[0], s, sizeof(char))<=0) // read string from p
+				break;
+			
+			
 		} 
 	}
 }
