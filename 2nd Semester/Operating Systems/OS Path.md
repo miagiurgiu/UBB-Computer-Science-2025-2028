@@ -5508,7 +5508,8 @@ int main() {
 		if(read(a2b, s, n)<=0)
 			break;
 		
-		int v[11]={0};
+		int v[11]={0}; // reset for each iteration (we are in a while)
+		
 	}
 	return 0;
 }
