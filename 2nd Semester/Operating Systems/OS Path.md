@@ -5756,6 +5756,11 @@ int main() {
 		close(a2b[1]);
 		exit(0);
 	}
+	if(fork()==0) { // child B
+		close(p2a[0]);
+		close(p2a[1]);
+		
+	}
 }
 
 ```
