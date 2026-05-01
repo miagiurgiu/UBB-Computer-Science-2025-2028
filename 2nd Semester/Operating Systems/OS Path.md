@@ -5116,6 +5116,13 @@ int main(int argc, char **argv) {
 		numbers[i]=rand() %1000;
 		printf("%d", numbers[i]);
 	}
+	printf("\n");
+	
+	write(p2c[1], &N, sizeof(int));
+	write(p2c[1], numbers, N*sizeof(int));
+	
+	double avg;
+	read(c2p[])
 }
 
 ```
