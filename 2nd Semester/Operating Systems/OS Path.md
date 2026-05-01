@@ -5228,7 +5228,7 @@ int main() {
 		if(num==10)
 			break;
 	}
-	// what we actually used 
+	// what we actually used in a
 	close(a2b);
 	close(b2a);
 	
@@ -5262,8 +5262,17 @@ int main() {
 		printf("B received: %d\n, num);
 		
 		if(num==10)
+			break;
+		
+		num = rand()%10+1;
+		
+		printf("B sends: %d\n", num);
+		write(b2a, &num, sizeof(int));
+		
+		if(num==10)
+			break;
 	}
-	
+	// what we actually used in
 	return 0;
 }
 
