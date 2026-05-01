@@ -5525,3 +5525,14 @@ int main() {
 	return 0;
 }
 ```
+
+C.c:
+```
+#include ...
+
+int main() {
+	mkfifo("b2c", 0600);
+	mkfifo("c2a")
+
+}
+```
