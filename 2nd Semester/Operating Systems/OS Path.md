@@ -5272,10 +5272,11 @@ int main() {
 		if(num==10)
 			break;
 	}
-	// what we actually used in
+	// what we actually used in b
+	close(a2b);
+	close(b2a);
 	return 0;
 }
-
 ```
 
 How to debug stuff in C:
