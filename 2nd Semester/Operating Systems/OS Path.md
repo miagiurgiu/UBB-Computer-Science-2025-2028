@@ -6062,8 +6062,10 @@ int main() {
 		if(read(a2c[0], v, 26*sizeof(int))<=0)
 			break;
 		
-		for(int i=0; i<2)
+		for(int i=0; i<26; i++)
+			printf("%c -> %d\n", 'a'+i, v[i]);
 	}
-
+	// what we actually used in c
+	clos
 }
 ```
