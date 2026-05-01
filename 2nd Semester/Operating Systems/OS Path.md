@@ -5589,15 +5589,17 @@ int main() {
 		int v[11]; // vector received from b
 		
 		while(1) {
-			if(read(b2c[0], v, 11*sizeof(int))<=0)
+			if(read(b2c[0], v, 11*sizeof(int))<=0) // read from b 
 				break;
 			int sum=0;
 			for(int i=0; i<11; i++)
 				sum +=v[i];
-			
+			write(c2a[1], &sum, sizeof(int)); // send to a
 		}
 		
-		
+		close(b2c[0]); // close read end f
+		close(c2a[1]);
+		exit(0);
 	}
 	return 0;
 }
