@@ -5416,7 +5416,16 @@ Process B:
 #include ...
 
 int main() {
-
+	mkfifo("fifo", 0600);
+	int fd_write=open("fifo", O_WRONLY);
+	
+	int(fd_write <0) {
+		perror("open");
+		exit(1);
+	}
+	
+	char cmd[256];
+	char buffer[25]
 
 }
 ```
