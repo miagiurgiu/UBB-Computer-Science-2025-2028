@@ -5241,7 +5241,18 @@ int main() {
 
 b.c
 ```
+#include ...
 
+int main() {
+	int a2b = open("a2b", O_RDONLY);
+	int b2a=open("b2a", O_WRONLY);
+	
+	if(a2b<0 || b2a<0) {
+		perror("open");
+		exit(1
+	}
+	return 0;
+}
 
 ```
 
