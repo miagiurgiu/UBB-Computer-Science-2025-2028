@@ -5081,7 +5081,12 @@ int main(int argc, char **argv) {
 	pipe(p2c);
 	pipe(c2p);
 	
-	
+	if(fork()==0) { // child
+		close(p2c[1]);
+		close(c2p[0]);
+		
+		int
+	}
 }
 
 ```
