@@ -5693,7 +5693,7 @@ Child Process B:
 - will receive L, U from Child Process A with a pipe
 - will sum up their sizes and print the result on the screen
 
-! S is not a global variable altough it says "shared variable" because pipes are themselves the sharing mechanism
+! S is not a global variable although it says "shared variable" because pipes are themselves the sharing mechanism
 ![[Pasted image 20260501125147.png]]
 
 Pipes Solution:
@@ -5729,7 +5729,7 @@ int main() {
 			if(read(p2a[0], s, sizeof(char))<=0) // read string from p
 				break;
 			
-			int S=0; // shared variable S
+			int S=0; // shared variable S (nr)
 		} 
 	}
 }
