@@ -5104,6 +5104,13 @@ int main(int argc, char **argv) {
 		close(c2p[1]);
 		exit(0);
 	}
+	// parent
+	close(p2c[0]);
+	close(c2p[1]);
+	
+	int *numbers = malloc(N*sizeof(int));
+	
+	srand(getpid())
 }
 
 ```
