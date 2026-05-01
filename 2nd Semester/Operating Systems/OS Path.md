@@ -6057,9 +6057,12 @@ int main() {
 		n=strlen(s);
 		
 		write(c2a[1], &n, sizeof(int)); // send length to a
-		write(c2a[1], s, n*sizeof(char)); // send string to
+		write(c2a[1], s, n*sizeof(char)); // send string to a
 		
+		if(read(a2c[0], v, 26*sizeof(int))<=0)
+			break;
 		
+		for(int i=0; i<2)
 	}
 
 }
