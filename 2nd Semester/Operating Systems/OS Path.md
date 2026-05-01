@@ -5460,7 +5460,7 @@ int main() {
 		if(strcmp(s, "X")==0)
 			break;
 		
-		write(a2b, &n, sizeof(int)); // send length to B
+		==write(a2b, &n, sizeof(int)); // send length to B==
 		write(a2b, s, n); // send string to B
 		
 		read(b2a, v, 11*sizeof(int)); // receive vector from B
