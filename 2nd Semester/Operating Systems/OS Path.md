@@ -6093,4 +6093,6 @@ Process A:
 
 Process B:
 - receives the FIFO name as command-line argument
-- 
+- reads the two numbers sent by A
+- computes their GCD
+- prints the GCD
