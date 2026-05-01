@@ -5508,7 +5508,7 @@ int main() {
 		if(read(a2b, s, n)<=0)
 			break;
 		
-		inf v
+		int v[11]={0};
 	}
 	return 0;
 }
