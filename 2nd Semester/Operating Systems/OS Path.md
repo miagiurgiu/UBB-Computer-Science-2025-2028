@@ -5393,6 +5393,9 @@ open("my_fifo", O_WRONLY); // waits for a writer
 - TRANSFER:
 ```
 read() -> means "blocking" -> if one process hasn't sent the data yet, the current process pauses at that line
+	 > 0 => SUCCESSFULL READING
+	 =0 => EOF => NO MORE DATA 
+	 <0 => ERROR => PERROR
 write()
 with file descriptor - how?
 ```
@@ -5937,7 +5940,7 @@ int main() {
 	c2a=open("c2a", O_WRONLY); // writes to a
 	a2c=open("a2c", O_RDONLY); // reads from a
 	
-	if(c2a<0 || a2c<0) { // <0 => erro
+	if(c2a<0 || a2c<0) { // <0 => ERROR AT FIFO
 		perror("open");
 		exit(1);
 	}
