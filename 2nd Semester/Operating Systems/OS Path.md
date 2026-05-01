@@ -5122,7 +5122,14 @@ int main(int argc, char **argv) {
 	write(p2c[1], numbers, N*sizeof(int));
 	
 	double avg;
-	read(c2p[])
+	read(c2p[0], &avg, sizeof(double));
+	
+	printf("Average is: %lf\n", avg);
+	
+	free(numbers);
+	close(p2c[1]);
+	close(c2p[0]);
+	wait(0);
 }
 
 ```
