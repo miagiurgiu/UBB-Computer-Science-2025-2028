@@ -5392,7 +5392,7 @@ open("my_fifo", O_WRONLY); // waits for a writer
 ```
 - TRANSFER:
 ```
-read() -> means "blocking" -> if one process hasn't sent the data yet, the current process pauses
+read() -> means "blocking" -> if one process hasn't sent the data yet, the current process pauses at that line
 write()
 with file descriptor - how?
 ```
@@ -5545,8 +5545,12 @@ int main() {
 	int v[11];
 	
 	while(1) {
-		if(read(b2c, v, 11*sizeof(int))<=0)
+		if(read(b2c, v, 11*sizeof(int))<=0) // program stope and waits for exactly 11 integers
 			break;
+		int sum = 0;
+		for(int i=0; i<11; i++)
+			sum +=v[i];
+		write(c2a, &sum, sizeof(int));
 	}
 
 }
