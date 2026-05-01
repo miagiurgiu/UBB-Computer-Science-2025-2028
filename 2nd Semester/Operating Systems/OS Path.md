@@ -5797,6 +5797,16 @@ int main() {
 	close(a2b[1]);
 	
 	char s[256];
+	
+	while(1) {
+		printf("Insert string of X to exit: ");
+		scanf("%s", s);
+		
+		if(strcmp(s, "X")==0)
+			break;
+		
+		
+	}
 }
 
 ```
