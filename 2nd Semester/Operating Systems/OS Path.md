@@ -5824,3 +5824,9 @@ int main() {
 }
 
 ```
+
+##### Problem 3:
+Write 3 C programs, A,B,C using FIFOs
+Process C:
+- reads strings from keyboard until x is written
+- sends each string to process A
