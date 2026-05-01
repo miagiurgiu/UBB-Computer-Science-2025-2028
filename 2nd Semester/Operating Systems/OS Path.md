@@ -6226,7 +6226,7 @@ int main() {
 		n=rand()%150+50;
 		printf("Generated number: %d\n, n);
 		
-		n=rand()%15
+		n=rand()%150+50; // random number in [50]
 	
 	}
 
