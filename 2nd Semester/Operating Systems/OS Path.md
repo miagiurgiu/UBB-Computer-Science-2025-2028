@@ -5811,9 +5811,16 @@ int main() {
 		write(p2a[1], s, n*sizeof(char)); // send string to a
 		
 		int S; // result from A
-		read(a2p[0], &S, sizeof(int));
-		printf("S is: %d\n, S); 
+		read(a2p[0], &S, sizeof(int)); // read count from a
+		printf("S is: %d\n, S);  // parent prints S
 	}
+	// what we actually used in parent P:
+	close(p2a[1]);
+	close(a2p[0]);
+	
+	wait(0);
+	wait(0)
+	close
 }
 
 ```
