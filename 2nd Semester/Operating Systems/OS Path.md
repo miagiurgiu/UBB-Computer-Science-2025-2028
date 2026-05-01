@@ -5401,6 +5401,16 @@ Problem 9
 dup2(pipe[1],1)
 ```
 
+Process A:
+- creates fifo
+- reads commands from keyboard
+- stops when
+```
+
+
+```
+
+
 exam question: in which scenario can it print potato? how to make this break
 - how can I cause a problem s.t potato does not get printed? how to make execlp fail?
 	- no room to make child
