@@ -5747,9 +5747,14 @@ int main() {
 			if(j>0) 
 				write(a2b[1], l, j*sizeof(char)); // send lowercase vector
 			
-			write(a2b[1], )
-			
+			write(a2b[1], &k, sizeof(int));
+			if(k>0)
+				write(a2b[1], u, k*sizeof(char)); // send uppercase vector
 		} 
+		close(p2a[0]);
+		close(a2p[1]);
+		close(a2b[1]);
+		exit(0);
 	}
 }
 
