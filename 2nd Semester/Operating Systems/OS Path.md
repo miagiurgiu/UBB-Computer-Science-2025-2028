@@ -5876,9 +5876,13 @@ int main() {
 		
 		for(int i=0; i<n; i++) {
 			if(s[i]>='a' && s[i]<='z')
+				v[s[i]-'a']++;
 		}
-		
+		write(a2b, v, 26*sizeof(int));
+		write(a2c, v, 26*sizeof(int));
 	}
-
+	close(c2a);
+	close(a2b);
+	cl
 }
 ```
