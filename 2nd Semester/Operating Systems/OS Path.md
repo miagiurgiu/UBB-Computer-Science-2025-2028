@@ -5635,6 +5635,9 @@ int main() {
 		close(b2c[1]);
 		exit(0);
 	}
+	close(a2b[0]);
+	close(b2a[1]);
+	close()
 	return 0;
 }
 ```
