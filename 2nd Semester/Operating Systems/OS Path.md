@@ -5516,8 +5516,12 @@ int main() {
 			else
 				v[10]++;
 		}
-		write(b)
+		write(b2a, v, 11*sizeof(int));
+		write(b2c, v, 11*sizeof(int));
 	}
+	close(a2b);
+	close(b2a);
+	close(b2c);
 	return 0;
 }
 ```
