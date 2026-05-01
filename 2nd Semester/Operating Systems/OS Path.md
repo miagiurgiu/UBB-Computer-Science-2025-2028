@@ -5679,4 +5679,6 @@ int main() {
 ```
 
 ##### Problem 2:
-
+Write a C program that will read from keyboard some strings (until X is written).
+The main process will start two types of ch
+![[Pasted image 20260501125147.png]]
