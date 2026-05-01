@@ -5629,7 +5629,7 @@ int main() {
 			write(b2a[1], v, 11*sizeof(int)); // send to a
 			write(b2c[1], v, 11*sizeof(int)); // send to c
 		} 
-		// what we actually used
+		// what we actually used for b
 		close(a2b[0]);
 		close(b2a[1]);
 		close(b2c[1]);
@@ -5658,13 +5658,17 @@ int main() {
 		write(a2b[1], &n, sizeof(int)); // send string length to b
 		write(a2b[1], s, n*sizeof(char)); // send string to b
 		
-		read(b2a[0], v, 11*sizeof(int)); // receive vector f
-		read(c2a[0], &sum, sizeof(int));
+		read(b2a[0], v, 11*sizeof(int)); // receive vector from b
+		read(c2a[0], &sum, sizeof(int)); // receive sum from c
 		
 		printf("Vector: ");
 		for(int i=0; i<11; i++) 
 			printf("%d", v[i]);
+		printf("\n");
+		printf("Sum received is: %d\n", sum);
 	}
+	// what we actually used for A
+	close
 	return 0;
 }
 ```
