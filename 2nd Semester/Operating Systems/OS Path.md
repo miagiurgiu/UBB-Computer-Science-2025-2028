@@ -6229,11 +6229,14 @@ int main() {
 		if(n%2==1)
 			n++;
 			
-		write(a2b[1], &n, sizeof(int)); // send first nu
+		write(a2b[1], &n, sizeof(int)); // send first number to b
 		
-		while(1) {
-			if(read(b2a[0], &n, sizeof(int))<=0)
+		while(1) { 
+			if(read(b2a[0], &n, sizeof(int))<=0) // receive from b
 				break;
+			if(n<=5)
+				break;
+			printf("N is %d\n",  n);
 		}
 		
 	
