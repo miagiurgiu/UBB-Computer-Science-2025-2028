@@ -5729,7 +5729,14 @@ int main() {
 			if(read(p2a[0], s, sizeof(char))<=0) // read string from p
 				break;
 			
-			int S=0; // shared variable S (nr)
+			int S=0; // shared variable S (nr of non-letters)
+			int j=0; // size of L
+			int k=0; // size of U
+			
+			for(int i=0; i<n; i++) {
+				if(s[i]>='a' && s[i]<='z') 
+					l[j++]=s[i];
+			}
 		} 
 	}
 }
