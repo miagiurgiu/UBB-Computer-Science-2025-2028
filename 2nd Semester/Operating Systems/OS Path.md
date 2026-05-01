@@ -5629,7 +5629,7 @@ int main() {
 			write(b2a[1], v, 11*sizeof(int)); // send to a
 			write(b2c[1], v, 11*sizeof(int)); // send to c
 		} 
-		// what we actually used for b
+		// what we actually used for B
 		close(a2b[0]);
 		close(b2a[1]);
 		close(b2c[1]);
@@ -5668,7 +5668,12 @@ int main() {
 		printf("Sum received is: %d\n", sum);
 	}
 	// what we actually used for A
-	close
+	close(a2b[1]);
+	close(b2a[0]);
+	close(c2a[0]);
+	
+	wait(0); // wait for c
+	wait(0); // wait for b
 	return 0;
 }
 ```
