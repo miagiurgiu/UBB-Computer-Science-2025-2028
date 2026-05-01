@@ -5215,12 +5215,12 @@ int main() {
 		int num = rand()%10 +1; // 0-9 + 1 -> 1-10
 		
 		printf("A sends: %d\n", num);
-		write(a2b, &num, sizeof(int));
+		write(a2b, &num, sizeof(int)); // send random number to b
 		
 		if(num==10)
 			break;
 		
-		if(read(b2a, &num. sizeof(int))<=0)
+		if(read(b2a, &num, sizeof(int))<=0) // receive random number from b
 			break;
 		
 		printf("A received: %d\n", num);
