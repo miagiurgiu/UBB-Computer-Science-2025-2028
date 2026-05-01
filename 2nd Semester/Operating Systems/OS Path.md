@@ -5474,8 +5474,17 @@ int main() {
 	int n;
 	
 	while(1) {
-		n=read(fd_)
+		n=read(fd_read, buffer, 255*sizeof(char)); // read from fifo
+		
+		if(n<=0) 
+			break;
+		
+		buffer[n]='\0';
+		
+		printf("%s", buffer);
 	}
+	close(fd_read);
+	return 0;
 }
 
 ```
