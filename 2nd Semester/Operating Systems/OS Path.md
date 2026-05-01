@@ -5693,3 +5693,10 @@ Child Process B:
 - will receive L, U from Child Process A with a pipe
 - will sum up their sizes and print the result on the screen
 ![[Pasted image 20260501125147.png]]
+
+Pipes Solution:
+```
+#include <stdio.h>
+#include <stdli
+
+```
