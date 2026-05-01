@@ -6006,7 +6006,7 @@ int main() {
 		close(a2b[0]);
 		exit(0); // bc it's a child
 	}
-	if(fork()==0) {
+	if(fork()==0) { // child a
 		close(c2a[1]);
 		close(a2c[0]);
 		close(a2b[0]);
@@ -6026,6 +6026,9 @@ int main() {
 				if(s[i]>='a' && s[i]<='z')
 					v[s[i]-'a']++;
 			}
+			
+			write(a2c[1], v, 26*sizeof(int));
+			write(a2b)
 		}
 	}
 
