@@ -5727,7 +5727,7 @@ int main() {
 			if(read(p2a[0], s, sizeof(char))<=0) // read string from p
 				break;
 			
-			
+			int S=0; // shared variable S
 		} 
 	}
 }
