@@ -6237,9 +6237,14 @@ int main() {
 			if(n<=5)
 				break;
 			printf("N is %d\n",  n);
-			
+			if(n%2==1)
+				n++;
+			write(a2b[1], &n, sizeof(int));
 		}
-		
+		// what is actually used in child a
+		close(a2b[1]);
+		close(b2a[0]);
+		exit(0);
 	
 	}
 
