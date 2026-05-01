@@ -5064,7 +5064,6 @@ Problem 7a
 - if you have 10 - both sides should stop (one side receives 10 -> the other side should stop)
 - mkfifo(pathname, mode)
 
-
 ![[Pasted image 20260427151542.png]]
 ![[Pasted image 20260427151551.png]]
 ![[Pasted image 20260427151608.png]]
@@ -5075,17 +5074,6 @@ Problem 7a
 
 ```
 
-```
-
-while(1) {
-	int num = rand() %10 +1;
-	write(a2b, &num, sizeof(int));
-	if(num==10)
-		break;
-	read(b2a, &num, sizeof(int));
-	printf("A: %d\n, )
-}
-```
 
 How to debug stuff in C:
 - chashing code:
