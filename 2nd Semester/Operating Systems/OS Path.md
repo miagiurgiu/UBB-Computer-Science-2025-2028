@@ -6147,8 +6147,14 @@ b.c:
 
 int main(int argc, char **argv) {
 	if(argc!=2) {
-		printf(")
+		printf("Please give FIFO name\n");
+		exit(1);
 	}
+	
+	mkfifo(argv[1], 0600);
+	
+	int fifo = open(argv[1], O_RDONLY);
+	
 }
 
 ```
