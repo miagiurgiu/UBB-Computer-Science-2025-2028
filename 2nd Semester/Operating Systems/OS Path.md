@@ -5692,6 +5692,8 @@ Child Process A:
 Child Process B:
 - will receive L, U from Child Process A with a pipe
 - will sum up their sizes and print the result on the screen
+
+! S is not a global variable altough it says "shared variable" because pipes are themselves the sharing mechanism
 ![[Pasted image 20260501125147.png]]
 
 Pipes Solution:
