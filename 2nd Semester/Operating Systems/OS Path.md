@@ -5637,7 +5637,16 @@ int main() {
 	}
 	close(a2b[0]);
 	close(b2a[1]);
-	close()
+	close(c2a[1]);
+	close(b2c[1]);
+	close(b2c[0]);
+	
+	char s[100];
+	int n;
+	int v[11];
+	int sum;
+	
+	
 	return 0;
 }
 ```
