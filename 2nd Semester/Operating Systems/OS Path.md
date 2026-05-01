@@ -5110,7 +5110,12 @@ int main(int argc, char **argv) {
 	
 	int *numbers = malloc(N*sizeof(int));
 	
-	srand(getpid())
+	srand(getpid());
+	
+	for(int i=0; i<N; i++) {
+		numbers[i]=rand() %1000;
+		
+	}
 }
 
 ```
