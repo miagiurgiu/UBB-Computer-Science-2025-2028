@@ -5809,6 +5809,10 @@ int main() {
 		
 		write(p2a[1], &n, sizeof(int)); // send length to a
 		write(p2a[1], s, n*sizeof(char)); // send string to a
+		
+		int S; // result from A
+		read(a2p[0], &S, sizeof(int));
+		printf("S is: %d\n, S); 
 	}
 }
 
