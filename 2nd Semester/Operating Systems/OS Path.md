@@ -5499,7 +5499,12 @@ int main() {
 		exit(1);
 	}
 	
-	char s[100]
+	char s[100];
+	int n;
+	
+	while(1) {
+		if(read(a2b, &n,))
+	}
 	return 0;
 }
 ```
