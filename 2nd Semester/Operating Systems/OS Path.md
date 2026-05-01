@@ -5213,8 +5213,18 @@ int main() {
 	
 	while(1) {
 		int num = rand()%10 +1; // 0-9 + 1 -> 1-10
+		
 		printf("A sends: %d\n", num);
 		write(a2b, &num, sizeof(int));
+		
+		if(num==10)
+			break;
+		
+		if(read(b2a, &num. sizeof(int))<=0)
+			break;
+		
+		printf("A received: %d\n", num);
+		
 		if(num==10)
 			break;
 	}
