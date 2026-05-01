@@ -5412,6 +5412,8 @@ Process B:
 - opens fifo for reading
 - keeps reading text from fifo
 - prints everything it receives
+
+a.c:
 ```
 #include ...
 
@@ -5443,13 +5445,17 @@ int main() {
 			continue;
 		}
 		
-		while(fgets(buffer, 256, p)!=NULL) { // read command output line by 
-			int n = strlen(buffer);
-			write(fd_write, buffer, n*sizeof(char));
+		while(fgets(buffer, 256, p)!=NULL) { // read command output line by line??
+			int n = strlen(buffer); // output length
+			write(fd_write, buffer, n*sizeof(char)); // send output to b
 		}
 		
+		pclose(p);
 	}
 
+close(fd_write);
+unlink("fifo");
+return 0;
 }
 ```
 
