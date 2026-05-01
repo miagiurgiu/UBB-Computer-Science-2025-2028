@@ -6155,6 +6155,14 @@ int main(int argc, char **argv) {
 	
 	int fifo = open(argv[1], O_RDONLY);
 	
+	if(fifo<0) {
+		perror("open");
+		exit(1);
+	}
+	
+	int x,y;
+	
+	if(read(fifo, &x, sizeo))
 }
 
 ```
