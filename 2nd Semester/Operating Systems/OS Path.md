@@ -6098,6 +6098,7 @@ Process B:
 - prints the GCD
 
 FIFO Solution:
+a.c:
 ```
 #include ...
 
@@ -6139,3 +6140,5 @@ int main(int argc, char **argv) {
 	return 0;
 }
 ```
+
+b.c:
