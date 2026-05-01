@@ -5562,5 +5562,16 @@ int main() {
 Pipes solution:
 ```
 #include <stdio.h>
-#include <stdlib.h
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include <sys/wait.h>
+
+int main() {
+	int a2b[2];
+	int b2a[2];
+	int b2c[2];
+	int c2a[2];
+	return 0;
+}
 ```
