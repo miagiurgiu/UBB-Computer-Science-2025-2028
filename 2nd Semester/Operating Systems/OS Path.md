@@ -6252,11 +6252,15 @@ int main() {
 	close(b2a[0]);
 	
 	while(1) {
-		if(read(a2b[0], &n, sizeof(int))<=0)
+		if(read(a2b[0], &n, sizeof(int))<=0) // receive from a
 			break;
 		n=n/2;
-		write(b2a[1], &n, sizeof(int));
+		write(b2a[1], &n, sizeof(int)); // send to a
 	}
-
+	// what is actually used in process b
+	close(a2b[0]);
+	close(b2a[1]);
+	wait(0);
+	return0;
 }
 ```
