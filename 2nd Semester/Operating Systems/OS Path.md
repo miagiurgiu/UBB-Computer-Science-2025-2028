@@ -5736,6 +5736,8 @@ int main() {
 			for(int i=0; i<n; i++) {
 				if(s[i]>='a' && s[i]<='z') 
 					l[j++]=s[i];
+				else if(s[i]>='A' && s[i]<='Z')
+					u[]
 			}
 		} 
 	}
