@@ -6177,14 +6177,14 @@ int main(int argc, char **argv) {
 	int a=x; // copy first received value
 	int b=y; // copy second received value
 	
-	while(b!=0) {
+	while(b!=0) { // euclid algorithm for GCD
 		int r = a%b;
 		a=b;
 		b=r;
 	}
 	
-	printf("GCD of %d and %d is)
-	
+	printf("GCD of %d and %d is: %d\n", x,y,a);
+	close(fifo);
+	return 0;
 }
-
 ```
