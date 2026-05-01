@@ -5949,7 +5949,12 @@ int main() {
 		write(c2a, &n, sizeof(int));
 		write(c2a, s, n*sizeof(char));
 		
-		if(read(a2c, v, 26*sizeof(int)))
+		if(read(a2c, v, 26*sizeof(int))<=0)
+			break;
+		
+		for(int i=0; i<26; i++)
+			printf("%c -> %d\n", 'a'+i, v[i]);
 	}
+	close()
 }
 ```
