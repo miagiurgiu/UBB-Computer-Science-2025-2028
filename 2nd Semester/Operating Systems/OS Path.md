@@ -6082,4 +6082,11 @@ int main() {
 }
 ```
 
-##
+##### Problem 4:
+Write 2 C programs, A, B using one FIFO
+Process A:
+- receives two numbers as command-line arguments
+- creates two child processes
+	- first child computes the sum
+	- second child computes the product
+- both chi
