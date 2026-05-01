@@ -5198,7 +5198,18 @@ a.c
 ```
 #include ...
 int main() {
-
+	mkfifo("a2b", 0600);
+	mkfifo("b2a", 0600);
+	
+	int a2b=open("a2b", O_WRONLY);
+	int b2a=open("b2a", O_RDONLY);
+	
+	if(a2b<0 || b2a <0) {
+		perror("open");
+		exit(1);
+	}
+	
+	
 
 }
 
