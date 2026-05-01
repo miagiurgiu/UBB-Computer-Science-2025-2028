@@ -5805,7 +5805,10 @@ int main() {
 		if(strcmp(s, "X")==0)
 			break;
 		
+		int n=strlen(s);
 		
+		write(p2a[1], &n, sizeof(int)); // send length to a
+		write(p2a[1], s, n*sizeof(char)); // send string to a
 	}
 }
 
