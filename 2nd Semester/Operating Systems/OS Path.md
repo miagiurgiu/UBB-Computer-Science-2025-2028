@@ -5776,7 +5776,13 @@ int main() {
 				if(read(a2b[0]), l, j*sizeof(char))<=0) // read vector L
 					break;
 			
-			if()
+			if(read(a2b[0], &k, sizeof(int))<=0) // read size of uppercase vector U
+				break;
+			
+			if(k>0)
+				if(read(a2b[0]), u, k*sizeof(char))<=0) // read vector U
+					break;
+			
 		}
 	}
 }
