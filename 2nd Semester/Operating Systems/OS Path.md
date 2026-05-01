@@ -5092,6 +5092,15 @@ int main(int argc, char **argv) {
 		read(p2c[0], v, n*sizeof(int)); // read vector
 		
 		int sum=0;
+		for(int i=0; i<n; i++)
+			sum +=v[i];
+		
+		double avg = (double)sum/n;
+		
+		write(c2p[1], &avg, sizeof(double));
+		
+		free(v);
+		
 	}
 }
 
