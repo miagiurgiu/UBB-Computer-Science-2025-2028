@@ -5067,7 +5067,21 @@ int main(int argc, char **argv) {
 		printf("Usage: ./p6 <N>\n");
 		return 1;
 	}
+	
 	int N=atoi(argv[1]); // convert argument to integer
+	
+	if(N<=0) {
+		printf("Invalid number\n");
+		return 2;
+	}
+	
+	int p2c[2];
+	int c2p[2];
+	
+	pipe(p2c);
+	pipe(c2p);
+	
+	
 }
 
 ```
