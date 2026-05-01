@@ -5619,6 +5619,15 @@ int main() {
 				break;
 				
 			int v[11] = {0};
+			
+			for(int i=0; i<n; i++) {
+				if(s[i]>='0' && s[i]<='9')
+					v[s[i]-'0']++;
+				else
+					v[10]++;
+			}
+			write(b2a[1], v, 11*sizeof(int));
+			write(b2c[1], v, 11)
 		} 
 	}
 	return 0;
