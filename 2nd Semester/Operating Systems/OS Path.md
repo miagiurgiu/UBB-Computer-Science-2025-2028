@@ -6245,8 +6245,11 @@ int main() {
 		close(a2b[1]);
 		close(b2a[0]);
 		exit(0);
-	
 	}
+	
+	// process B = parent
+	close(a2b[1]);
+	close(b2a[0]);
 
 }
 ```
