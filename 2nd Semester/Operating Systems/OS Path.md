@@ -5423,7 +5423,8 @@ Process C:
 Implement the processes communication schema
 Programs are responsible to check if the fifo exists and create it if it is not already.
 ![[Pasted image 20260430194129.png]]
-Solution:
+
+FIFO Solution:
 A.c:
 ```
 #include <stdio.h> // printf, scanf
@@ -5557,3 +5558,5 @@ int main() {
 	return 0;
 }
 ```
+
+Pipes solution:
