@@ -5069,14 +5069,13 @@ Problem 7a
 ![[Pasted image 20260427151608.png]]
 
 ```
-- #include <stdio.h> #include <stdlib.h> #include <unistd.h> #include <sys/types.h> #include <sys/stat.h> #include <fcntl.h> int main() { //Process A //FIFO creation if(mkfifo("a2b", 0600) < 0) { perror("Failed to create a2b fifo\n"); exit(1); } if(mkfifo("b2a", 0600) < 0) { perror("Failed to create a2b fifo\n"); unlink("a2b"); exit(1); } int a2b, b2a; a2b = open("a2b", O_WRONLY); if(a2b == -1) { perror("Failed to open a2b\n"); unlink("a2b"); unlink("b2a"); exit(2); } b2a = open("b2a", O_RDONLY); if(b2a == -1) { perror("Failed to open b2a\n"); unlink("a2b"); unlink("b2a"); exit(2); } srand(getpid()); while(1) { int num = rand() % 10 + 1; write(a2b, &num, sizeof(int)); if(num == 10) { break; } read(b2a, &num, sizeof(int)); printf("A: %d\n", num); if(num == 10) { break; } } unlink("a2b"); unlink("b2a"); return 0; }
-- edited 15:21#include <stdio.h> #include <stdlib.h> #include <unistd.h> #include <sys/types.h> #include <sys/stat.h> #include <fcntl.h> int main() { //Process B int a2b, b2a; a2b = open("a2b", O_RDONLY); if(a2b == -1) { perror("Failed to open a2b\n"); close(a2b); exit(2); } b2a = open("b2a", O_WRONLY); if(b2a == -1) { perror("Failed to open b2a\n"); close(a2b); exit(2); } srand(getpid()); while(1) { int num = rand() % 10 + 1; write(b2a, &num, sizeof(int)); if(num == 10) { break; } read(a2b, &num, sizeof(int)); printf("B: %d\n", num); if(num == 10) { break; } } close(a2b); close(b2a); return 0; }
+
 
 ```
 
 
 How to debug stuff in C:
-- chashing code:
+- crashing code:
 ![[Pasted image 20260427153023.png]]
 - type bt?
 ![[Pasted image 20260427153251.png]]
