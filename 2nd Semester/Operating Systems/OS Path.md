@@ -5404,10 +5404,21 @@ dup2(pipe[1],1)
 Process A:
 - creates fifo
 - reads commands from keyboard
-- stops when
+- stops when "stop"
+- executes each command
+- sends command output to b
+- deletes fifo at the end
+Process B:
+- opens fifo for reading
+- keeps reading text from fifo
+- prints everything it receives
 ```
+#include ...
+
+int main() {
 
 
+}
 ```
 
 
