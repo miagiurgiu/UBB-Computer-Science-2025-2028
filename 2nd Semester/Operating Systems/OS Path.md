@@ -6250,6 +6250,13 @@ int main() {
 	// process B = parent
 	close(a2b[1]);
 	close(b2a[0]);
+	
+	while(1) {
+		if(read(a2b[0], &n, sizeof(int))<=0)
+			break;
+		n=n/2;
+		write(b2a[1], &n, sizeof(int));
+	}
 
 }
 ```
