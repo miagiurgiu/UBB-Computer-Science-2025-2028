@@ -5460,7 +5460,7 @@ int main() {
 		if(strcmp(s, "X")==0)
 			break;
 		
-		==write(a2b, &n, sizeof(int)); // send length to B==
+		write(a2b, &n, sizeof(int)); // send length to B
 		write(a2b, s, n); // send string to B
 		
 		read(b2a, v, 11*sizeof(int)); // receive vector from B
@@ -5503,7 +5503,12 @@ int main() {
 	int n;
 	
 	while(1) {
-		if(read(a2b, &n,))
+		if(read(a2b, &n, sizeof(int))<=0)
+			break;
+		if(read(a2b, s, n)<=0)
+			break;
+		
+		inf v
 	}
 	return 0;
 }
