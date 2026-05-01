@@ -6206,3 +6206,12 @@ Process B:
 - sends the result back to A
 - repeats until pipe closes
 
+```
+#include ...
+
+int main() {
+	int a2b[2];
+	int b
+
+}
+```
