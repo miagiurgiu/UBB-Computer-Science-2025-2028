@@ -6190,3 +6190,6 @@ int main(int argc, char **argv) {
 ```
 
 ##### Problem 4:
+Write a C program that creates two processes, A and B, using pipes
+Process A:
+- generates a random num
