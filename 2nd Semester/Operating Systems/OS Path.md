@@ -5909,8 +5909,16 @@ int main() {
 		if(read(a2b, v, 26*sizeof(int))<=0)
 			break;
 		int sum=0;
-		
+		for(int i=0; i<26; i++)
+			sum +=v[i];
+		printf("Sum is: %d\n", sum);
 	}
-
+	close(a2b);
+	return 0;
 }
+```
+
+c.c:
+```
+
 ```
