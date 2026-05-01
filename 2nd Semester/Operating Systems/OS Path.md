@@ -5572,6 +5572,13 @@ int main() {
 	int b2a[2];
 	int b2c[2];
 	int c2a[2];
+	
+	pipe(a2b);
+	pipe(b2a);
+	pipe(b2c);
+	pipe(c2a);
+	
+	if(fork()==0)
 	return 0;
 }
 ```
