@@ -5249,8 +5249,13 @@ int main() {
 	
 	if(a2b<0 || b2a<0) {
 		perror("open");
-		exit(1
+		exit(1);
 	}
+	
+	srand(getpid()); // different random numbers for b
+	
+	int num;
+	
 	return 0;
 }
 
