@@ -6153,7 +6153,7 @@ int main(int argc, char **argv) {
 	
 	mkfifo(argv[1], 0600);
 	
-	int fifo = open(argv[1], O_RDONLY);
+	int file = open(argv[1], O_RDONLY);
 	
 	if(fifo<0) {
 		perror("open");
