@@ -5819,8 +5819,8 @@ int main() {
 	close(a2p[0]);
 	
 	wait(0);
-	wait(0)
-	close
+	wait(0);
+	return 0;
 }
 
 ```
