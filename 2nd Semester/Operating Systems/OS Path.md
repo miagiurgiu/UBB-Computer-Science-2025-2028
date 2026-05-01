@@ -6122,21 +6122,21 @@ int main(int argc, char **argv) {
 	
 	if(fork()==0) { // first child
 		int sum = nr1+nr2;
-		write(fifo, &sum, sizeof(int)); // send to b
-		close(fifo);
+		write(fd_write, &sum, sizeof(int)); // send to b
+		close(fd_write);
 		exit(0);
 	}
 	
 	if(fork()==0) {
 		int prod = nr1*nr2;
-		write(fifo, &prod, sizeof(int));
-		close(fifo);
+		write(fd_write, &prod, sizeof(int));
+		close(fd_write);
 		exit(0);
 	}
 	
 	wait(0);
 	wait(0);
-	close(fifo);
+	close(fd_write);
 	return 0;
 }
 ```
