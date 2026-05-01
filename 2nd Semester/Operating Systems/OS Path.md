@@ -5655,9 +5655,10 @@ int main() {
 		if(strcmp(s, "X")==0)
 			break;
 		
-		write(a2b[1], &n, sizeof(int));
-		write(a2b[1], s, n*sizeof(char));
+		write(a2b[1], &n, sizeof(int)); // send string length to b
+		write(a2b[1], s, n*sizeof(char)); // send string to b
 		
+		read(b2a[0], v, 11*sizeof(int));
 		read()
 	}
 	return 0;
