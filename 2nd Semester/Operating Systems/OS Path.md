@@ -5502,7 +5502,7 @@ int main() {
 	char s[100];
 	int n;
 	
-	while(1) {
+	while(1) { // process A sends multiple strings until X is typed
 		if(read(a2b, &n, sizeof(int))<=0)
 			break;
 		if(read(a2b, s, n)<=0)
