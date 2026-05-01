@@ -5580,7 +5580,8 @@ int main() {
 	
 	if(fork()==0) { // child process C
 		close(b2c[1]); // c never writes to b
-		close(c2a[0]); // 
+		close(c2a[0]); // c never reads from a
+		close(a2b[0]); // 
 		
 		
 	}
