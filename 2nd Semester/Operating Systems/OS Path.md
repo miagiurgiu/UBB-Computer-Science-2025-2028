@@ -6109,6 +6109,13 @@ int main(int argc, char **argv) {
 	mkfifo("fifo", 0600);
 	
 	int nr1 = atoi(argv[1]);
-	int nr2 =
+	int nr2 = atoi(argv[2]);
+	
+	int fifo = open("fifo", O_WRONLY);
+	
+	if(fifo<0) {
+		perror("open");
+		exit(1);
+	}
 }
 ```
