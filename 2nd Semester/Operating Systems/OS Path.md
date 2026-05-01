@@ -6121,7 +6121,11 @@ int main(int argc, char **argv) {
 	
 	if(fork()==0) { // first child
 		int sum = nr1+nr2;
-		write(fifo, &sum, sizeof(int)); // sen
+		write(fifo, &sum, sizeof(int)); // send to b
+		close(fifo);
+		exit(0);
 	}
+	
+	if()
 }
 ```
