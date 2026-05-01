@@ -5704,7 +5704,14 @@ Pipes Solution:
 
 int main() {
 	int p2a[2];
+	int a2p[2];
+	int a2b[2];
 	
+	pipe(p2a);
+	pipe(a2p);
+	pipe(a2b);
+	
+	if(fork())
 }
 
 ```
