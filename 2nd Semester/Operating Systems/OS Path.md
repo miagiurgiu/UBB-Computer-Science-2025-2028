@@ -5403,9 +5403,9 @@ write() -> means "blocking" -> if buffer is full or no reader ready, process pau
 ```
 - CLOSE:
 ```
-close() -> closes file descriptor -> releases FIFO endpoint
+close() -> closes file descriptor -> releases FIFO endpoint -> frees resources and allows other processes to detect termination
 	reader closes -> writers may get SIGPIPE/EPIPE on write()
-	writer
+	writer closes -> readers get 0 (EOF) on read()
 ```
 2) 
 
