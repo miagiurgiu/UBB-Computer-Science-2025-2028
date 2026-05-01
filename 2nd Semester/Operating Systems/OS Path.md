@@ -6167,6 +6167,17 @@ int main(int argc, char **argv) {
 		close(fifo);
 		exit(1);
 	}
+	
+	if(read(fifo, &y, sizeof(int))<=0) {
+		perror("read");
+		close(fifo);
+		exit(1);
+	}
+	
+	int a=x;
+	int b=y;
+	
+	
 }
 
 ```
