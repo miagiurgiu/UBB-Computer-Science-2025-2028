@@ -5613,10 +5613,12 @@ int main() {
 		int n;
 		
 		while(1) {
-			if(read(a2b[0], &n, sizeof(int))<=0)
+			if(read(a2b[0], &n, sizeof(int))<=0) // read string length
 				break;
-			if(read(a2b[0], s, n*sizeof(char))<=0)
+			if(read(a2b[0], s, n*sizeof(char))<=0) // read string chars
 				break;
+				
+			int v[11] = {0};
 		} 
 	}
 	return 0;
