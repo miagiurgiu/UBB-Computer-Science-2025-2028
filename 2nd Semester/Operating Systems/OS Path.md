@@ -6162,21 +6162,28 @@ int main(int argc, char **argv) {
 	
 	int x,y;
 	
-	if(read(fifo, &x, sizeof(int))<=0) {
+	if(read(fifo, &x, sizeof(int))<=0) { // read first value (nr1)
 		perror("read");
 		close(fifo);
 		exit(1);
 	}
 	
-	if(read(fifo, &y, sizeof(int))<=0) {
+	if(read(fifo, &y, sizeof(int))<=0) { // read second value (nr2)
 		perror("read");
 		close(fifo);
 		exit(1);
 	}
 	
-	int a=x;
-	int b=y;
+	int a=x; // copy first received value
+	int b=y; // copy second received value
 	
+	while(b!=0) {
+		int r = a%b;
+		a=b;
+		b=r;
+	}
+	
+	printf("GCD of %d and %d is)
 	
 }
 
