@@ -5833,5 +5833,13 @@ Process C:
 - receives from A a vector with 26 positions
 - prints the frequency of each lowercase letter a to z
 Process A:
-- received a string from process C
+- receives a string from process C
+- computes vector v[26], where
+	- v[0] = number of a
+	- v[1] = number of b
+	- ...
+	- v[25] = number of z
+- sends this vector to B
+- sends the same vector back to C
+Process B:
 - 
