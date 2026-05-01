@@ -6044,6 +6044,13 @@ int main() {
 	close(a2b[1]);
 	
 	char s[100];
+	int n;
+	int v[26];
+	
+	while(1) {
+		printf("Insert string or x to exit: ");
+		scanf("%s",)
+	}
 
 }
 ```
