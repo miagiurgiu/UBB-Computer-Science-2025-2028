@@ -5865,6 +5865,14 @@ int main() {
 	
 	int n;
 	char s[100];
+	
+	while(1) {
+		if(read(c2a, &n, sizeof(int))<=0)
+			break;
+		if(read(c2a, s, n*sizeof(char))<=0)
+			break;
+		
+	}
 
 }
 ```
