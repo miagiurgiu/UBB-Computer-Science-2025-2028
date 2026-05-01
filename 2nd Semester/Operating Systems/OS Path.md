@@ -5193,7 +5193,16 @@ int main() {
 }
 ```
 
+my way:
+a.c
+```
+#include ...
+int main() {
 
+
+}
+
+```
 
 How to debug stuff in C:
 - crashing code:
