@@ -6221,7 +6221,12 @@ int main() {
 		close(a2b[0]);
 		close(b2a[1]);
 		
-		srand
+		srand(time(NULL)^getpid());
+		
+		n=rand()%150+50;
+		printf("Generated number: %d\n, n);
+		
+		n=rand()%15
 	
 	}
 
