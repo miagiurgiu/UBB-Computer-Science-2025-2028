@@ -5396,7 +5396,7 @@ read() -> means "blocking" -> if one process hasn't sent the data yet, the curre
 	 > 0 => SUCCESSFULL READING
 	 =0 => EOF => NO MORE DATA 
 	 <0 => ERROR => PERROR
-write()
+write() -> means "blocking" -> if buffer is full or no reader ready, process pauses at that line
 
 ```
 - CLOSE:
