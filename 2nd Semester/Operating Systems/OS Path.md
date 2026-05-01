@@ -5895,10 +5895,16 @@ b.c:
 
 int main() {
 	int a2b;
+	
 	a2b=open("a2b", O_RDONLY);
+	
 	if(a2b<0) {
-		perror("op)
+		perror("open");
+		exit(1);
 	}
+	
+	int v[26];
+	
 
 }
 ```
