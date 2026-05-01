@@ -6085,10 +6085,10 @@ int main() {
 ##### Problem 4:
 Write 2 C programs, A, B using one FIFO
 Process A:
-- receives two numbers as command-line arguments
+- receives two numbers as command-line arguments (nr1, nr2)
 - creates two child processes
-	- first child computes the sum
-	- second child computes the product
+	- first child computes the sum (nr1 + nr2)
+	- second child computes the product (nr1 * nr2)
 - both children send their result to process B through the FIFO
 
 Process B:
