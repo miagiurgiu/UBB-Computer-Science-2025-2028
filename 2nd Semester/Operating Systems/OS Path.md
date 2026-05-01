@@ -5783,8 +5783,12 @@ int main() {
 				if(read(a2b[0]), u, k*sizeof(char))<=0) // read vector U
 					break;
 			
+			printf("The sizes are: %d\n", j+k); // total letters
 		}
+		close(a2b[0]);
+		exit(0);
 	}
+	
 }
 
 ```
