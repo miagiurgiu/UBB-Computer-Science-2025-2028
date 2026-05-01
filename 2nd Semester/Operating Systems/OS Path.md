@@ -6113,7 +6113,7 @@ int main(int argc, char **argv) {
 	int nr1 = atoi(argv[1]); // first number
 	int nr2 = atoi(argv[2]); // second number
 	
-	int fifo = open("fifo", O_WRONLY); // open fifo for writing
+	int file_descriptor = open("fifo", O_WRONLY); // open fifo for writing
 	
 	if(fifo<0) {
 		perror("open");
@@ -6153,7 +6153,7 @@ int main(int argc, char **argv) {
 	
 	mkfifo(argv[1], 0600);
 	
-	int file = open(argv[1], O_RDONLY);
+	int file_descriptor = open(argv[1], O_RDONLY);
 	
 	if(fifo<0) {
 		perror("open");
