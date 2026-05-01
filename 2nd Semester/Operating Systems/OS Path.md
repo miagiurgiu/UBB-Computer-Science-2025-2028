@@ -6211,7 +6211,19 @@ Process B:
 
 int main() {
 	int a2b[2];
-	int b
+	int b2a[2];
+	int n;
+	
+	pipe(a2b);
+	pipe(b2a);
+	
+	if(fork()==0) { // process A
+		close(a2b[0]);
+		close(b2a[1]);
+		
+		srand
+	
+	}
 
 }
 ```
