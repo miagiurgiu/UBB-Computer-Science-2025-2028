@@ -5845,3 +5845,13 @@ Process B:
 - receives vector from A
 - computes the total number of lowercase letters
 - prints this sum
+
+FIFO Solution:
+```
+#include ...
+
+int main() {
+	
+
+}
+```
