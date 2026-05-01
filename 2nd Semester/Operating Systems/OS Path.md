@@ -6007,7 +6007,16 @@ int main() {
 		exit(0); // bc it's a child
 	}
 	if(fork()==0) {
-		close(c2a[1])
+		close(c2a[1]);
+		close(a2c[0]);
+		close(a2b[0]);
+		
+		int n;
+		char s[100];
+		
+		while(1) {
+			if(read(c2a[0], &n, sizeof()))
+		}
 	}
 
 }
