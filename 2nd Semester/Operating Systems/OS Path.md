@@ -5088,8 +5088,8 @@ int main(int argc, char **argv) {
 		int n;
 		read(p2c[0], &n, sizeof(int));
 		
-		int *v=malloc(n*sizeof(int));
-		read(p2c[0], v, n*sizeof(int));
+		int *v=malloc(n*sizeof(int)); // allocate vector
+		read(p2c[0], v, n*sizeof(int)); // read vector
 		
 		int sum=0;
 	}
