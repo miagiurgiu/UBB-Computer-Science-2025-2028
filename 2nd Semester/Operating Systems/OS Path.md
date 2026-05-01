@@ -6022,6 +6022,10 @@ int main() {
 			
 			int v[26]={0};
 			
+			for(int i=0; i<n; i++) {
+				if(s[i]>='a' && s[i]<='z')
+					v[s[i]-'a']++;
+			}
 		}
 	}
 
