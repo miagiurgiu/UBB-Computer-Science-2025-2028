@@ -5603,7 +5603,7 @@ int main() {
 	}
 	
 	if(fork()==0) { // child process B
-		close(a2b[1]);
+		close(a2b[1]); // 
 	}
 	return 0;
 }
