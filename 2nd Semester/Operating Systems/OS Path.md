@@ -5855,7 +5855,8 @@ int main() {
 	int c2a, a2b, a2c;
 	
 	c2a=open("c2a", O_RDONLY);
-	a2b=open("a2b", )
+	a2b=open("a2b", O_WRONLY);
+	a2c=open("a2c", )
 
 }
 ```
