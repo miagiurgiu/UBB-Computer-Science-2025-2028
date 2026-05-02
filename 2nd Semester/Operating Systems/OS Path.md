@@ -5836,7 +5836,7 @@ int main() {
 		for(int i=0; i<11; i++) 
 			printf("%d", v[i]);
 		printf("\n");
-		prinf("Sum received is: %d\n, sum);
+		prinf("Sum received is: %d\n", sum);
 		
 	}
 	close(a2b);
