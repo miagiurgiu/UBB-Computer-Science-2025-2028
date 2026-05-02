@@ -5910,7 +5910,7 @@ int main() {
 	int v[11];
 	
 	while(1) {
-		if(read(b2c, v, 11*sizeof(int))<=0) // program stope and waits for exactly 11 integers
+		if(read(b2c, v, 11*sizeof(int))<=0) // program stops and waits for exactly 11 integers
 			break;
 		int sum = 0;
 		for(int i=0; i<11; i++)
