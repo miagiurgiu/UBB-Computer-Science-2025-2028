@@ -6747,7 +6747,139 @@ int main(int argc, char **argv) {
 ##### Problem 33/UNIX processes
 ![[Pasted image 20260502233428.png]]
 ```
+// create 2 child processes
+// parent reads one string from keyboard (no whitespaces)
+// parent sends to both children that string
+// child a extracts all vowels from received string -> send to parent
+// child b extracta all the digits from received string -> send to parent
+// parent prints the strings received from children
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <sys/wait.h>
+#include <sys/stat.h>
+#include <string.h>
+#include <ctype.h>
 
+int main() {
+	int p2a[2];
+	int a2p[2];
+	int p2b[2];
+	int b2p[2];
+	pipe(p2a);
+	pipe(a2p);
+	pipe(p2b);
+	pipe(b2p);
+	char s[256];
+	scanf("%s",s);
+	int n=strlen(s);
+	pid_t f=fork();
+	if(f<0) {
+		perror("fork");
+		exit(1);
+	}
+	if(f==0) { // child a
+		close(p2a[1]);
+		close(a2p[0]);
+		close(p2b[0]);
+		close(p2b[1]);
+		close(b2p[0]);
+		close(b2p[1]);
+
+		read(p2a[0],&n,sizeof(int));
+		read(p2a[0],s,n*sizeof(char));
+
+		char *vowels=malloc((n+1)*sizeof(char));
+		int k=0;
+
+		for(int i=0; i<n; i++) {
+			char ch=tolower(s[i]);
+			if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u')
+				vowels[k++]=s[i];
+		}
+		vowels[k]='\0';
+
+		write(a2p[1],&k,sizeof(int));
+		write(a2p[1],vowels,k*sizeof(char));
+
+		free(vowels);
+		close(a2p[1]);
+		close(p2a[0]);
+		exit(0);
+	}
+	pid_t g=fork();
+	if(g<0) {
+		perror("fork");
+		exit(1);
+	}
+	if(g==0) { // child b
+		close(p2b[1]);
+		close(b2p[0]);
+		close(p2a[0]);
+		close(p2a[1]);
+		close(a2p[0]);
+		close(a2p[1]);
+
+		read(p2b[0],&n,sizeof(int));
+                read(p2b[0],s,n*sizeof(char));
+
+		char *digits=malloc((n+1)*sizeof(char));
+		int j=0;
+
+		for(int i=0; i<n; i++) {
+			if(s[i]>='0' && s[i]<='9')
+				digits[j++]=s[i];
+		}
+		digits[j]='\0';
+
+		write(b2p[1],&j,sizeof(int));
+		write(b2p[1],digits,j*sizeof(char));
+
+		free(digits);
+		close(b2p[1]);
+		close(p2b[0]);
+		exit(0);
+	}
+	//parent
+	close(p2a[0]);
+	close(p2b[0]);
+	close(a2p[1]);
+	close(b2p[1]);
+
+	write(p2a[1], &n, sizeof(int));
+	write(p2a[1], s, n*sizeof(char));
+
+	write(p2b[1], &n, sizeof(int));
+        write(p2b[1], s, n*sizeof(char));
+
+	close(p2a[1]);
+	close(p2b[1]);
+
+	int k;
+	char vowels[256];
+
+	read(a2p[0],&k,sizeof(int));
+	read(a2p[0],vowels,k*sizeof(char));
+	vowels[k]='\0'; // in parent as well!
+
+	printf("Vowels: %s\n",vowels);
+
+	int j;
+	char digits[256];
+
+	read(b2p[0],&j,sizeof(int));
+	read(b2p[0],digits,j*sizeof(char));
+	digits[j]='\0';
+
+	printf("Digits: %s\n",digits);
+
+	close(a2p[0]);
+	close(b2p[0]);
+
+	wait(0);
+	wait(0);
+	return 0;
+}
 ```
 
 
