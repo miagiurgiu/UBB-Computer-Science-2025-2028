@@ -6646,7 +6646,9 @@ int main(int argc, char **argv) {
 			perror("fork");
 			exit(1);
 		}
-		if
+		if(f==0) {
+			printf("C %d | PID=%ld PPID=%ld\n, i,)
+		}
 	}
 }
 
