@@ -6427,6 +6427,9 @@ int main() {
 		
 		for(int i=0; i<26; i++)
 			printf("%c -> %d\n", 'a'+i, v[i]);
+		
+		fflush(stdout);
+		usleep(1000);
 	}
 	// what we actually used in c
 	close(c2a[1]);
