@@ -6074,7 +6074,7 @@ int main() {
 	
 	pipe(p2a);
 	pipe(a2p);
-	pipe(a2p);
+	pipe(a2b);
 	
 	if(fork()==0) { // child A
 		close(p2a[1]);
