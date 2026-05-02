@@ -6630,6 +6630,14 @@ int main() {
 ![[Pasted image 20260502214239.png]]
 ```
 #include <unistd.h> // fork, getpid, getppid
-#include <stdio.h> // printf, 
+#include <stdio.h> // printf, perror
+#include <stdlib.h> // atoi, exit
+#include <sys/wait.h> // wait
+
+int main(int argc, char **argv) {
+	if(argc!=2) {
+		perror("Usage:  ./p1 <n>);
+	}
+}
 
 ```
