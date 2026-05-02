@@ -6335,6 +6335,7 @@ int main() {
 ```
 
 Pipes Solution:
+- PRINTS SUM WEIRDLY
 ```
 #include ...
 
