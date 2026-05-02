@@ -6667,6 +6667,80 @@ int main(int argc, char **argv) {
 ##### Problem 6/UNIX processes
 ![[Pasted image 20260502220556.png]]
 ```
+// generate n random integers
+// create a child
+// send numbers via pipe
+// child calculates the average and sends the result back to parent
+
+#include <unistd.h>
+#include <sys/wait.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <fcntl.h>
+
+int main(int argc, char **argv) {
+	if(argc!=2) {
+		printf("Usage: ./p6 <n> ");
+		exit(1);
+	}
+	int n=atoi(argv[1]);
+	int p2c[2];
+	int c2p[2];
+	pipe(p2c);
+	pipe(c2p);
+	
+	int *v= malloc(n*sizeof(int));
+	srand(getpid());// different each run
+	for(int i=0; i<n; i++) {
+		v[i]=rand()%1000; // 0-999
+	}
+
+	printf("\n");
+
+	pid_t f=fork();
+
+	if(f<0) {
+		perror("fork");
+		exit(1);
+	}
+	// child
+	if(f==0) { // child
+		close(p2c[1]);
+		close(c2p[0]);
+		read(p2c[0],&n,sizeof(int));
+		int *child_v=malloc(n*sizeof(int));
+		read(p2c[0],child_v,n*sizeof(int));
+
+		double avg;
+		int sum=0;
+	
+		for(int i=0; i<n; i++){
+			sum +=child_v[i];
+		}
+		avg=(double)sum/n;
+
+		write(c2p[1], &avg, sizeof(double));
+		free(child_v);
+		close(p2c[0]);
+		close(c2p[1]);
+		exit(0);
+	}
+	// parent
+	close(c2p[1]);
+	close(p2c[0]);
+
+	write(p2c[1], &n, sizeof(int));
+        write(p2c[1], v, n*sizeof(int));
+
+	double avg;
+	read(c2p[0],&avg,sizeof(double));
+	printf("average: %f\n",avg);
+	free(v);
+	close(c2p[0]);
+	close(p2c[1]);
+	wait(0); 
+	return 0;
+}
 
 ```
 
