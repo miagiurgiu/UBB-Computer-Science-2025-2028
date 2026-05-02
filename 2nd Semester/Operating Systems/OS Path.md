@@ -6081,6 +6081,7 @@ int main() {
 		close(p2a[1]);
 		close(a2p[0]);
 		close(p2a[1]);
+		close(a2b[1]);
 		
 		char s[256]; // keyboard string
 		char l[256]; // lowercase
