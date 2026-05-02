@@ -6089,7 +6089,7 @@ int main() {
 		while(1) {
 			if(read(p2a[0], &n, sizeof(int))<=0) // read length from p
 				break;
-			if(read(p2a[0], s, sizeof(char))<=0) // read string from p
+			if(read(p2a[0], s, n)<=0) // read string from p
 				break;
 			
 			int S=0; // shared variable S (nr of non-letters)
