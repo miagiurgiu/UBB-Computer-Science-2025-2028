@@ -6744,9 +6744,11 @@ int main(int argc, char **argv) {
 
 ```
 
-##
+##### Problem 33/UNIX processes
+![[Pasted image 20260502233428.png]]
+```
 
-
+```
 
 
 
