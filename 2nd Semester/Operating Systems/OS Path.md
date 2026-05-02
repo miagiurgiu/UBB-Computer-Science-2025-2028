@@ -6647,7 +6647,8 @@ int main(int argc, char **argv) {
 			exit(1);
 		}
 		if(f==0) {
-			printf("C %d | PID=%ld PPID=%ld\n, i,)
+			printf("C %d | PID=%ld PPID=%ld\n, i, (long)getpid(), (long)getppid());
+			exit(0);
 		}
 	}
 }
