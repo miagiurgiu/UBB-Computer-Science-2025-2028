@@ -6629,5 +6629,7 @@ int main() {
 ##### Problem 1/UNIX processes
 ![[Pasted image 20260502214239.png]]
 ```
+#include <unistd.h> // fork, getpid, getppid
+#include <stdio.h> // printf, 
 
 ```
