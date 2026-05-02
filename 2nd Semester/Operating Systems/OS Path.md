@@ -6637,6 +6637,16 @@ int main() {
 int main(int argc, char **argv) {
 	if(argc!=2) {
 		perror("Usage:  ./p1 <n>);
+		exit(1);
+	}
+	int n=atoi(argv[1]);
+	for(int i=0; i<n; i++) {
+		pid_t f=fork();
+		if(f<0) {
+			perror("fork");
+			exit(1);
+		}
+		if
 	}
 }
 
