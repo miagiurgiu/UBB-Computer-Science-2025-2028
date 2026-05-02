@@ -6629,28 +6629,37 @@ int main() {
 ##### Problem 1/UNIX processes
 ![[Pasted image 20260502214239.png]]
 ```
+// write a program that creates n child processes
+// each child process will print its PID and its parent PID
+// parent process will print its PID and the PID of each of the child processes
 #include <unistd.h> // fork, getpid, getppid
 #include <stdio.h> // printf, perror
 #include <stdlib.h> // atoi, exit
 #include <sys/wait.h> // wait
 
 int main(int argc, char **argv) {
-	if(argc!=2) {
-		perror("Usage:  ./p1 <n>);
+	if(argc !=2) {
+		perror("Usage: ./p1 <n> ");
 		exit(1);
 	}
 	int n=atoi(argv[1]);
 	for(int i=0; i<n; i++) {
 		pid_t f=fork();
-		if(f<0) {
+		if(f<0){
 			perror("fork");
 			exit(1);
 		}
 		if(f==0) {
-			printf("C %d | PID=%ld PPID=%ld\n, i, (long)getpid(), (long)getppid());
+			printf("child %d: PID=%ld, PPID=%ld\n", i, (long)getpid(), (long)getppid());
 			exit(0);
 		}
+		else {
+			printf("parent %ld: created child %ld\n", (long)getpid(), (long)f);
+		}
 	}
+	for(int i=0; i<n; i++) {
+		wait(0);
+	}
+	return 0;
 }
-
 ```
