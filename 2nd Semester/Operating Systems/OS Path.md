@@ -6663,3 +6663,9 @@ int main(int argc, char **argv) {
 	return 0;
 }
 ```
+
+##### Problem 6/UNIX processes
+![[Pasted image 20260502220556.png]]
+```
+
+```
