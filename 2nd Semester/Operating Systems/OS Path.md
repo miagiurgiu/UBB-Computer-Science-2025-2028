@@ -6137,14 +6137,14 @@ int main() {
 				break;
 			
 			if(j>0)
-				if(read(a2b[0]), l, j*sizeof(char))<=0) // read vector L
+				if(read(a2b[0], l, j*sizeof(char))<=0) // read vector L
 					break;
 			
 			if(read(a2b[0], &k, sizeof(int))<=0) // read size of uppercase vector U
 				break;
 			
 			if(k>0)
-				if(read(a2b[0]), u, k*sizeof(char))<=0) // read vector U
+				if(read(a2b[0], u, k*sizeof(char))<=0) // read vector U
 					break;
 			
 			printf("The sizes are: %d\n", j+k); // total letters
@@ -6175,7 +6175,7 @@ int main() {
 		
 		int S; // result from A
 		read(a2p[0], &S, sizeof(int)); // read count from a
-		printf("S is: %d\n, S);  // parent prints S
+		printf("S is: %d\n", S);  // parent prints S
 	}
 	// what we actually used in parent P:
 	close(p2a[1]);
