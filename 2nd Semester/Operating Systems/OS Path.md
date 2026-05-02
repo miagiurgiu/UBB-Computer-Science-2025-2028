@@ -6074,12 +6074,12 @@ int main() {
 	
 	pipe(p2a);
 	pipe(a2p);
-	pipe(a2b);
+	pipe(a2p);
 	
 	if(fork()==0) { // child A
 		close(p2a[1]);
 		close(a2p[0]);
-		close(b2a[1]);
+		close(p2a[1]);
 		
 		char s[256]; // keyboard string
 		char l[256]; // lowercase
