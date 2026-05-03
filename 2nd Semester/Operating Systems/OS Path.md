@@ -7279,7 +7279,7 @@ int main() {
 }
 ```
 
-###### solution with fork + pipes + dup2 + execlp
+###### solution with fork + pipes + dup2 + execlp !!!
 p9b1.c
 ```
 #include <stdio.h>
@@ -7339,6 +7339,26 @@ int main() {
 
 p9b2.c:
 ```
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <fcntl.h>
+
+int main() {
+	int a2b=open("a2b",O_RDONLY);
+	if(a2b<0) {
+		perror("open");
+		exit(1);
+	}
+	char buffer[256];
+	int n;
+	while((n=read(a2b,buffer,255))>0) {
+		buffer[n]='\0';
+		printf("%s",buffer);
+	}
+	close(a2b);
+	return 0;
+}
 
 
 ```
