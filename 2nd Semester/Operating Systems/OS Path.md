@@ -7280,11 +7280,68 @@ int main() {
 ```
 
 ###### solution with fork + pipes + dup2 + execlp
+p9b1.c
+```
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <sys/stat.h>
+#include <sys/wait.h>
+#include <string.h>
+
+int main() {
+	mkfifo("a2b", 0600);
+	int a2b=open("a2b", O_WRONLY);
+	if(a2b<0) {
+		perror("open");
+		exit(1);
+	}
+	char cmd[256];
+	char buffer[256];
+	while(1) {
+		printf("Command: ");
+		fgets(cmd,256,stdin);
+		cmd[strlen(cmd)-1]='\0';
+		if(strcmp(cmd,"stop")==0)
+			break;
+		int p[2];
+		pipe(p);
+		pid_t f=fork();
+		if(f<0) {
+			perror("fork");
+			exit(1);
+		}
+		if(f==0) {
+			close(p[0]);
+			dup2(p[1],1); // stdout goes into pipe
+			close(p[1]);
+			execlp("sh","sh","-c",cmd,NULL);
+			perror("execlp");
+			exit(1);
+		}
+		close(p[1]);
+		int n;
+		while((n=read(p[0],buffer,255))>0) {
+			write(a2b,buffer,n);
+		}
+		close(p[0]);
+		wait(0);
+
+	}
+	close(a2b);
+	unlink("a2b");
+	return 0;
+}
+
+
+```
+
+p9b2.c:
 ```
 
 
 ```
-
 
 
 
