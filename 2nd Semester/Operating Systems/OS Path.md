@@ -7463,6 +7463,7 @@ int main(int argc, char **argv) {
 ```
 
 ##### Problem 25/UNIX processes
+![[Pasted image 20260503215439.png]]
 ```
 #include <stdio.h>
 #include <stdlib.h>
