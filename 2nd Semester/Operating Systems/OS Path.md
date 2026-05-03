@@ -6993,9 +6993,41 @@ int main() {
 
 p7b.c:
 ```
+#include <stdio.h>
+#include <stdlib.h>
+#include <fcntl.h>
+#include <sys/wait.h>
+#include <sys/stat.h>
+#include <unistd.h>
 
-
+int main() {
+	int a2b=open("a2b",O_RDONLY);
+	int b2a=open("b2a",O_WRONLY);
+	if(a2b<0 || b2a<0) {
+		perror("open");
+		exit(1);
+	}
+	srand(getpid());
+	while(1) {
+		int n;
+		if(read(a2b,&n,sizeof(int))<=0)
+			break;
+		printf("B received: %d\n",n);
+		if(n==10)
+			break;
+		n=rand()%10+1;
+		printf("B sends: %d\n",n);
+		write(b2a,&n,sizeof(int));
+		if(n==10)
+			break;
+	}
+	close(a2b);
+	close(b2a);
+	return 0;
+}
 ```
+
+
 
 
 
