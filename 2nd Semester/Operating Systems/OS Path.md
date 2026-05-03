@@ -7213,6 +7213,7 @@ int main() {
 
 ##### Problem 9/UNIX processes !!!!
 ![[Pasted image 20260503155912.png]]
+###### solution with fifos, popen
 p9a.c:
 ```
 #include <fcntl.h>
@@ -7278,9 +7279,11 @@ int main() {
 }
 ```
 
+###### solution with pipes, dup2, execlp
+```
 
 
-
+```
 
 
 
