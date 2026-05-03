@@ -7212,7 +7212,7 @@ int main() {
 ```
 
 ##### Problem 9/UNIX processees
-
+![[Pasted image 20260503155912.png]]
 ```
 
 
