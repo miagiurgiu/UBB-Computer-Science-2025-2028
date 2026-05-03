@@ -7364,6 +7364,7 @@ int main() {
 ```
 
 ##### Problem 4/UNIX processes
+![[Pasted image 20260503165833.png]]
 ```
 
 
