@@ -7399,7 +7399,7 @@ int main(int argc, char **argv) {
 
 ```
 
-##### Problem 26/UNIX processes
+##### Problem 26/UNIX processes - FROM FIL
 ![[Pasted image 20260503172242.png]]
 ```
 
