@@ -7399,9 +7399,65 @@ int main(int argc, char **argv) {
 
 ```
 
-##### Problem 26/UNIX processes - FROM FIL
+##### Problem 26/UNIX processes - FROM FILE
 ![[Pasted image 20260503172242.png]]
 ```
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <sys/wait.h>
+#include <ctype.h>
+
+int main(int argc, char **argv) {
+	if(argc!=2) {
+		printf("Usage: ./p26 <file>\n");
+		exit(1);
+	}
+	int p[2];
+	pipe(p);
+	pid_t f=fork();
+	if(f<0) {
+		perror("fork");
+		exit(1);
+	}
+	if(f==0) {
+		close(p[0]);
+		int fd=open(argv[1],O_RDONLY);
+		if(fd<0){
+			perror("open");
+			exit(1);
+		}
+		char c;
+		int transform=0;
+		while(read(fd,&c,1)>0) {
+			if(c=='.') {
+				transform=1;
+			}
+			else if(transform) {
+				if(islower(c)){
+					c=toupper(c);
+					transform=0;
+				}
+				else if(!isspace(c)){
+					transform=0;
+				}
+			}
+			write(p[1],&c,1);
+		}
+		close(fd);
+		close(p[1]);
+		exit(0);
+	}
+	close(p[1]);
+	char c;
+	while(read(p[0],&c,1)>0) {
+		printf("%c",c);
+	}
+	close(p[0]);
+	wait(0);
+	return 0;
+}
 
 
 ```
