@@ -7027,8 +7027,11 @@ int main() {
 }
 ```
 
+##### Problem 13/UNIX processes
+![[Pasted image 20260503133442.png]]
+```
 
-
+```
 
 
 
