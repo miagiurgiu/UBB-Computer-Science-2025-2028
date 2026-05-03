@@ -7464,6 +7464,116 @@ int main(int argc, char **argv) {
 
 ##### Problem 25/UNIX processes
 ```
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <sys/wait.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+
+int main() {
+	int a2d[2];
+	//int b2a[2];
+	//int c2a[2];
+	int b2d[2];
+	int c2d[2];
+	pipe(a2d);
+	//pipe(b2a);
+	//pipe(c2a);
+	pipe(b2d);
+	pipe(c2d);
+
+	pid_t f=fork();
+	if(f<0) {
+		perror("fork");
+		exit(1);
+	}
+	if(f==0) { // child b
+		close(b2d[0]);
+		//close(b2a[0]);
+		close(c2d[0]);
+		//close(c2a[1]);
+		close(c2d[1]);
+		//close(c2a[1]);
+		close(a2d[0]);
+		close(a2d[1]);
+		srand(getpid());
+		while(1) {
+			int nrb=rand()%200+1;
+			printf("B sends: %d\n",nrb);
+			write(b2d[1],&nrb,sizeof(int));
+			sleep(1);
+		}
+		close(b2d[1]);
+		exit(0);
+	}
+	pid_t g=fork();
+	if(g<0) {
+		perror("fork");
+		exit(1);
+	}
+	if(g==0){ // child c
+		close(c2d[0]);
+                //close(c2a[0]);
+                close(b2d[0]);
+                close(b2d[1]);
+                //close(b2a[0]);
+                //close(b2a[1]);
+		close(a2d[0]);
+		close(a2d[1]);
+                srand(getpid());
+		while(1) {
+                	int nrc=rand()%200+1;
+			printf("C sends: %d\n",nrc);
+                	write(c2d[1],&nrc,sizeof(int));
+			sleep(1);
+		}
+                close(c2d[1]);
+		exit(0);
+	}
+	pid_t t=fork();
+	if(t<0) {
+		perror("fork");
+		exit(1);
+	}
+	if(t==0) {//child d
+		close(a2d[1]);
+		close(b2d[1]);
+		close(c2d[1]);
+		int rnr;
+		read(a2d[0],&rnr,sizeof(int));
+		printf("D received random number from A: %d\n", rnr);
+		while(1) {
+			int nrb,nrc;
+			read(b2d[0],&nrb,sizeof(int));
+			read(c2d[0],&nrc,sizeof(int));
+			int dif=abs(nrb-nrc);
+			printf("D received B=%d C=%d diff=%d\n",nrb,nrc,dif);
+			if(dif<=rnr) {
+				printf("Condition met: %d <=%d\n",dif,rnr);
+				break;
+			}
+		}
+		close(b2d[0]);
+		close(c2d[0]);
+		close(a2d[0]);
+		exit(0);
+	}
+	close(a2d[0]);
+	close(b2d[0]);close(b2d[1]);
+	close(c2d[0]);close(c2d[1]);
+	srand(getpid());
+        int rnra=rand()%11+10;
+	printf("A sends limit: %d\n", rnra);
+	write(a2d[1],&rnra,sizeof(int));
+	close(a2d[1]);
+        waitpid(t,NULL,0);
+	kill(f,SIGTERM);
+	kill(g,SIGTERM);
+	waitpid(f,NULL,0);
+	waitpid(g,NULL,0);
+	return 0;
+}
 
 
 ```
