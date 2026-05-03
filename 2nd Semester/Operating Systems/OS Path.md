@@ -7279,7 +7279,7 @@ int main() {
 }
 ```
 
-###### solution with pipes, dup2, execlp
+###### solution with fork + pipes + dup2 + execlp
 ```
 
 
