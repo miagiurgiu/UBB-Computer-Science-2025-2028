@@ -7363,12 +7363,43 @@ int main() {
 
 ```
 
-##### Problem 4/UNIX processes
+##### Problem 4/UNIX processes !!!
 ![[Pasted image 20260503165833.png]]
 ```
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <sys/wait.h>
+#include <time.h>
+
+int main(int argc, char **argv) {
+	if(argc<2) {
+		printf("Usage: ./p4 <command>\n");
+		exit(1);
+	}
+	struct timespec start,end;
+	clock_gettime(CLOCK_MONOTONIC,&start);
+	pid_t f=fork();
+	if(f<0) {
+		perror("fork");
+		exit(1);
+	}
+	if(f==0) {
+		execlp("sh", "sh", "-c", argv[1],NULL);
+		perror("execlp");
+		exit(1);
+	}
+	wait(0);
+	clock_gettime(CLOCK_MONOTONIC,&end);
+	double time=(end.tv_sec - start.tv_sec) + (end.tv_nsec - start.tv_nsec)/1e9;
+	printf("Execution time: %f seconds\n",time);
+	return 0;
+}
 
 
 ```
+
+##### P
 
 
 
