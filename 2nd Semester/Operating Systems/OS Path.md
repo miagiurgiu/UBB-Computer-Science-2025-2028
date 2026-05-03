@@ -6948,11 +6948,54 @@ int main() {
 
 ##### Problem 7/UNIX processes
 ![[Pasted image 20260503090443.png]]
+
+p7a.c
+```
+#include <stdlib.h>
+#include <unistd.h>
+#include <stdio.h>
+#include <string.h>
+#include <sys/wait.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+
+int main() {
+	mkfifo("a2b",0600);
+	mkfifo("b2a",0600);
+	int a2b=open("a2b", O_WRONLY);
+	int b2a=open("b2a", O_RDONLY);
+	if(a2b<0 || b2a<0) {
+		perror("open");
+		exit(1);
+	}
+	srand(getpid());
+	int n;
+	while(1){
+		n=rand()%10+1;
+		printf("A sends: %d\n", n);
+		write(a2b,&n,sizeof(int));
+		if(n==10)
+			break;
+		if(read(b2a,&n,sizeof(int))<=0)
+			break;
+		printf("A received: %d\n",n);
+		if(n==10)
+			break;
+	}
+	close(a2b);
+	close(b2a);
+	unlink("a2b");
+	unlink("b2a");
+	return 0;
+}
+
+```
+
+p7b.c:
 ```
 
 
 ```
-
 
 
 
