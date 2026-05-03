@@ -7030,7 +7030,113 @@ int main() {
 ##### Problem 13/UNIX processes
 ![[Pasted image 20260503133442.png]]
 ```
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <sys/wait.h>
+#include <sys/stat.h>
 
+int main(int argc, char	**argv) {
+	int a2b[2];
+	int b2c[2];
+	int c2a[2];
+	pipe(a2b);
+	pipe(b2c);
+	pipe(c2a);
+	//process A
+        if(argc!=2) {
+        	printf("Usage: ./p13 <n>");
+                exit(1);
+       	}
+        int n=atoi(argv[1]);
+        int *v=malloc(n*sizeof(int));
+       	for(int i=0; i<n; i++) {
+        	scanf("%d",&v[i]);
+        }
+	printf("Process A sends these numbers: ");
+        for(int i=0; i<n; i++)
+		printf("%d ",v[i]);
+	printf("\n");
+	pid_t f=fork();
+	if(f<0) {
+		perror("fork");
+		exit(1);
+	}
+	if(f==0) { // process b
+		close(a2b[1]);
+		close(b2c[0]);
+		close(c2a[0]);
+		close(c2a[1]);
+		int n;
+		read(a2b[0],&n,sizeof(int));
+		int *v=malloc(n*sizeof(int));
+		read(a2b[0],v,n*sizeof(int));
+		printf("Process B receives these numbers: ");
+		for(int i=0; i<n; i++)
+			printf("%d ",v[i]);
+		printf("\n");
+		srand(getpid());
+		for(int i=0;i<n;i++) {
+			int rnr=rand()%4+2;
+			v[i]=v[i]+rnr;
+		}
+		printf("Process B sends these numbers: ");
+		for(int i=0; i<n; i++)
+			printf("%d ",v[i]);
+		printf("\n");
+		write(b2c[1],&n,sizeof(int));
+		write(b2c[1],v,n*sizeof(int));
+		free(v);
+		close(a2b[0]);
+		close(b2c[1]);
+		exit(0);
+	}
+	pid_t g=fork();
+	if(g<0) {
+		perror("fork");
+		exit(1);
+	}
+	if(g==0) { // process c
+		close(a2b[1]);
+		close(a2b[0]);
+		close(b2c[1]);
+		close(c2a[0]);
+		int n;
+		read(b2c[0],&n,sizeof(int));
+		int *v=malloc(n*sizeof(int));
+		read(b2c[0],v,n*sizeof(int));
+		printf("Process C receives these numbers: ");
+		for(int i=0; i<n; i++)
+			printf("%d ",v[i]);
+		printf("\n");
+		int sum=0;
+		for(int i=0; i<n; i++)
+			sum +=v[i];
+		printf("Process C sends this sum: %d\n",sum);
+		write(c2a[1],&sum,sizeof(int));
+		free(v);
+		close(b2c[1]);
+		close(c2a[1]);
+		exit(0);
+	}
+	// back to process a
+	close(c2a[1]);
+	close(a2b[0]);
+	close(b2c[0]);
+	close(b2c[1]);
+	write(a2b[1],&n,sizeof(int));
+	write(a2b[1],v,n*sizeof(int));
+	close(a2b[1]);
+	int sum=0;
+	read(c2a[0],&sum,sizeof(int));
+	printf("Process A received sum: %d",sum);
+	free(v);
+	close(c2a[0]);
+	wait(0);
+	wait(0);
+	return 0;
+}
 ```
 
 
