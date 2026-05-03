@@ -6946,7 +6946,7 @@ int main() {
 }
 ```
 
-##### Problem 7/UNIX processes
+##### Problem 7a/UNIX processes
 ![[Pasted image 20260503090443.png]]
 
 p7a.c
