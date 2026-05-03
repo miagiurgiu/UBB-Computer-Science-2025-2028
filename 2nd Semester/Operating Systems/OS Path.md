@@ -6885,10 +6885,68 @@ int main() {
 ##### Problem 10/UNIX processes
 ![[Pasted image 20260503083346.png]]
 ```
+#include <stdio.h>
+#include <stdlib.h>
+#include <sys/wait.h>
+#include <sys/stat.h>
+#include <unistd.h>
 
+int main() {
+	int a2b[2];
+	int b2a[2];
+	pipe(a2b);
+	pipe(b2a);
+	pid_t f=fork();
+	if(f<0) {
+		perror("fork");
+		exit(1);
+	}
+	if(f==0) { // process A
+		close(a2b[0]);
+		close(b2a[1]);
+		int n;
+       		srand(getpid());
+        	n=rand()%151+50;
+		if(n%2==1){
+			n=n+1;
+		}
+		printf("A sends: %d\n",n);
+		write(a2b[1],&n,sizeof(int));
+		while(1) {
+			if(read(b2a[0],&n,sizeof(int))<=0)
+				break;
+			printf("A received: %d\n", n);
+			if(n<5)
+				break;
+			if(n%2==1)
+				n++;
+			write(a2b[1],&n,sizeof(int));
+		}
+		close(b2a[0]);
+		close(a2b[1]);
+		exit(0);
+	}
+	// process B
+	close(a2b[1]);
+	close(b2a[0]);
+	int n;
+	while(1) {
+		if(read(a2b[0],&n,sizeof(int))<=0)
+			break;
+		printf("B received: %d\n",n);
+        	n=n/2;
+		printf("B sends: %d\n",n);
+        	write(b2a[1],&n,sizeof(int));
 
+	}
+	close(a2b[0]);
+	close(b2a[1]);
+	wait(0);
+	return 0;
+}
 ```
 
+##### Problem 7/UNIX proc
 
 
 
