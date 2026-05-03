@@ -7142,11 +7142,74 @@ int main(int argc, char	**argv) {
 
 ##### Problem8/UNIX processes
 ![[Pasted image 20260503145238.png]]
+
+p8a.c:
+```
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <sys/wait.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <string.h>
+
+int main(int argc,char **argv) {
+	mkfifo("a2b",0600);
+	mkfifo("b2a",0600);
+	int a2b=open("a2b",O_WRONLY);
+	int b2a=open("b2a",O_RDONLY);
+	for(int i=1;i<argc;i++){
+		int len=strlen(argv[i]);
+		write(a2b,&len,sizeof(int));
+		write(a2b,argv[i],len);
+	}
+	close(a2b); // done sending
+
+	char result[256]="";
+	int len;
+	while(read(b2a,&len,sizeof(int))>0) {
+		char s[256]={0};
+		read(b2a,s,len);
+		strcat(result,s);
+		strcat(result," ");
+	}
+	printf("Result: %s\n",result);
+	close(b2a);
+	unlink("a2b");
+	unlink("b2a");
+	return 0;
+}
+
 ```
 
-
+p8b.c:
 ```
-
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <string.h>
+#include <ctype.h>
+int main() {
+	int a2b=open("a2b",O_RDONLY);
+	int b2a=open("b2a",O_WRONLY);
+	int len;
+	while(read(a2b,&len,sizeof(int))>0) {
+		char *s=malloc(len+1);
+		read(a2b,s,len);
+		s[len]='\0';
+		for(int i=0;i<len;i++) {
+			s[i]=toupper(s[i]);
+		}
+		write(b2a,&len,sizeof(int));
+		write(b2a,s,len);
+		free(s);
+	}
+	close(a2b);
+	close(b2a);
+	return 0;
+}
+```
 
 
 
