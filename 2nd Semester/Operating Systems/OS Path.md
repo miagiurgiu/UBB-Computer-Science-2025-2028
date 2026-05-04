@@ -5802,7 +5802,7 @@ int main() {
 	mkfifo("b2a", 0600); // fifo B->A (send vector to A)
 	mkfifo("c2a", 0600); // fifo C->A (send sum to A)
 	
-	// ORDER OR RUNNING IN TERMINAL: b->c->a
+	// ORDER OF RUNNING IN TERMINAL: b->c->a
 	int a2b=open("a2b", O_WRONLY); // i wanna send data from a to b
 	int b2a=open("b2a", O_RDONLY);
 	int c2a=open("c2a", O_RDONLY);
