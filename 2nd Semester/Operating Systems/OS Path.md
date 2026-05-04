@@ -7575,8 +7575,6 @@ int main() {
 	waitpid(g,NULL,0);
 	return 0;
 }
-
-
 ```
 
 
