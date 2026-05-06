@@ -1618,4 +1618,4 @@ QCoreApplication -> non-GUI QT applications
 1) WIDGETS
 - any window is a widget
 - button/window/list
-- 
+- parent-child
