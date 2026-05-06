@@ -1633,8 +1633,9 @@ Layout -> resizes automatically
 ```
 class GUI: public QWidget {
 	private:
-		Service& ser
+		Service& serv;
 	public:
 		GUI(Service& serv);
+		void buildGUI();
 }
 ```
