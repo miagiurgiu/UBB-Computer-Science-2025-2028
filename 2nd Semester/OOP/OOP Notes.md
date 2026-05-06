@@ -1622,4 +1622,6 @@ QCoreApplication -> non-GUI QT applications
 
 QLabel
 - display text/image
-- 
+QLineEdit
+QTextEdit
+QPushButton
