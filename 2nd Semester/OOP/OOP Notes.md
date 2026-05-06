@@ -1631,7 +1631,7 @@ Absolute positioning: setGeometry() -> give exact position
 Layout -> resizes automatically
 
 GUI.h
-- labels, layouts don't 
+- labels, layouts don't have to be modified - only create them locally in the function, not needed to add them as data members
 ```
 class GUI: public QWidget {
 	private:
@@ -1639,5 +1639,14 @@ class GUI: public QWidget {
 	public:
 		GUI(Service& serv);
 		void buildGUI();
+}
+```
+
+```
+
+GUI::GUI(Service& serv): serv{serv}
+
+void GUI::buildGUI() {
+
 }
 ```
