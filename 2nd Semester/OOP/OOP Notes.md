@@ -1614,3 +1614,7 @@ QT
 exec() -> generates an event
 
 QCoreApplication -> non-GUI QT applications
+
+1) WIDGETS
+- any window is a widget
+- 
