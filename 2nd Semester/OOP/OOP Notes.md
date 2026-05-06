@@ -1615,7 +1615,7 @@ exec() -> generates an event
 
 QCoreApplication -> non-GUI QT applications
 
-1) WIDGETS
+WIDGETS
 - any window is a widget
 - button/window/list
 - parent-child widgets: a button is a child of the main window (parentt)
@@ -1625,3 +1625,5 @@ QLabel
 QLineEdit
 QTextEdit
 QPushButton
+
+Absolute positioning vs Layout
