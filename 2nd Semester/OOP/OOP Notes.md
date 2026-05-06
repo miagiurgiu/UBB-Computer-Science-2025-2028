@@ -1610,3 +1610,5 @@ Comments after presenting the code:
 
 ## Lecture 10 - 6 may 2026
 QT
+
+exec() -> generates an event
