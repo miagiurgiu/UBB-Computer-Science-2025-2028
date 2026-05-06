@@ -1609,3 +1609,4 @@ Comments after presenting the code:
 - only thing that should work: display elements - a window with the elements - for admin
 
 ## Lecture 10 - 6 may 2026
+QT
