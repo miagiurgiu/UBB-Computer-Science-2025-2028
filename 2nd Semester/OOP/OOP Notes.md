@@ -1647,6 +1647,7 @@ class GUI: public QWidget {
 GUI::GUI(Service& serv): serv{serv}
 
 void GUI::buildGUI() {
-
+	QHBoxLayout* mainLayout=new QHBoxLayout{this};
+	
 }
 ```
