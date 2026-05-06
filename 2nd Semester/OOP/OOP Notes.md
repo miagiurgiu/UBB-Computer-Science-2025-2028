@@ -1612,3 +1612,5 @@ Comments after presenting the code:
 QT
 
 exec() -> generates an event
+
+QCoreApplication -> non-GUI QT applications
