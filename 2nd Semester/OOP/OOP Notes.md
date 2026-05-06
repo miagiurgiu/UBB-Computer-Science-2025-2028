@@ -1630,10 +1630,12 @@ Absolute positioning vs Layout
 Absolute positioning: setGeometry() -> give exact position
 Layout -> resizes automatically
 
+GUI.h
+- labels, layouts don't 
 ```
 class GUI: public QWidget {
 	private:
-		Service& serv;
+		Service& serv; // data members of the class
 	public:
 		GUI(Service& serv);
 		void buildGUI();
