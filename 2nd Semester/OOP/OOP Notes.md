@@ -1627,3 +1627,5 @@ QTextEdit
 QPushButton
 
 Absolute positioning vs Layout
+Absolute positioning: setGeometry() -> give exact position
+Layout -> resizes automatically
