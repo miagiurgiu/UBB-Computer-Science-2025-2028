@@ -1607,3 +1607,5 @@ Comments after presenting the code:
 - use layouts
 - create UI for admin + user
 - only thing that should work: display elements - a window with the elements - for admin
+
+## Lecture 
