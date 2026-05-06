@@ -1618,5 +1618,8 @@ QCoreApplication -> non-GUI QT applications
 1) WIDGETS
 - any window is a widget
 - button/window/list
-- parent-child widgets: a button is a child of the main window (parent)
+- parent-child widgets: a button is a child of the main window (parentt)
+
+QLabel
+- display text/image
 - 
