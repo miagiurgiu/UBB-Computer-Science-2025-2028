@@ -1629,3 +1629,12 @@ QPushButton
 Absolute positioning vs Layout
 Absolute positioning: setGeometry() -> give exact position
 Layout -> resizes automatically
+
+```
+class GUI: public QWidget {
+	private:
+		Service& ser
+	public:
+		GUI(Service& serv);
+}
+```
