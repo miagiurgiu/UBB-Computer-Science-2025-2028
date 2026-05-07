@@ -1658,3 +1658,6 @@ Edit VM ->
 -Dide.mac.file.chooser.native=false  
 -Dsun.java2d.metal=false  
 -Dsun.java2d.opengl=false
+
+
+## Seminar 5 - 7 may 2026
