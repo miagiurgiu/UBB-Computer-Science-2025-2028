@@ -1673,6 +1673,7 @@ public:
     void run();
 ```
 
+When const - field must be value
 ```
 class UI  
 {  
@@ -1692,7 +1693,7 @@ private:
     Service serv; // VALUE
   
 public:  
-    UI(Service s) : serv(s) {}   // VALUYE
+    UI(Service s) : serv(s) {}   // VALUE ??
   
     void run();
 ```
