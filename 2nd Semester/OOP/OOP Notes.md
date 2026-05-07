@@ -1661,3 +1661,38 @@ Edit VM ->
 
 
 ## Seminar 5 - 7 may 2026
+```
+class UI  
+{  
+private:  
+    Service& serv; // reference to the Service (Service cannot be copied!)  
+  
+public:  
+    UI(Service& s) : serv(s) {}  
+  
+    void run();
+```
+
+```
+class UI  
+{  
+private:  
+    Service serv; // VALUE
+  
+public:  
+    UI(const Service& s) : serv(s) {}   // CONST
+  
+    void run();
+```
+
+```
+class UI  
+{  
+private:  
+    Service serv; // VALUE
+  
+public:  
+    UI(Service s) : serv(s) {}   // VALUYE
+  
+    void run();
+```
