@@ -1651,3 +1651,10 @@ void GUI::buildGUI() {
 	
 }
 ```
+
+In case CLion crashed (segmentation fault):
+Edit VM -> 
+-Dide.browser.jcef.enabled=false  
+-Dide.mac.file.chooser.native=false  
+-Dsun.java2d.metal=false  
+-Dsun.java2d.opengl=false
