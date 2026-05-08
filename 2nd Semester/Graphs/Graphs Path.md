@@ -96,7 +96,7 @@ def toposort(g):
 		 in_deg[x]=len(list(g.parse_in(x))) #  how many inbound neighbours / inbound edges vertex `x` has.
 		 if in_deg[x]==0: 
 			 zero_in_deg.append(x) # add them into list
-	sorted=[]
+	sorted=[] # topological order
 	while len(zero_in_deg)>0:
 		x=zero_in_deg.append(x)
 		sorted.append(x)
