@@ -68,6 +68,6 @@ Because if `(x,y)` is an edge, then `x` appears before `y` in the topologi
 
 1) find longest path in that graph (DAG)
 - does the problem always have a solution?
-- is the path unique?
+- is the path unique? no, there are more - one of them is fine
 - length = nr of edges along that walk
 - 
