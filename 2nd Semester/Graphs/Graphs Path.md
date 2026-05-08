@@ -78,6 +78,7 @@ Because if `(x,y)` is an edge, then `x` appears before `y` in the topologi
 - w[x] = length of the longest path ending in x
 - solution for DAG
 	- topological sorting 
+		- only for DAG: If the graph has a cycle, topological sorting cannot include all vertices.
 		- input: graph
 		- output:
 		- how many inbound neighbours for each vertex + decrement those when processing vertices + if counter =0 => put them on a list with 0 inbound neighbours
