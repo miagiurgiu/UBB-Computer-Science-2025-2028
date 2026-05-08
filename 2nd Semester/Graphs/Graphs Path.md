@@ -77,3 +77,9 @@ Because if `(x,y)` is an edge, then `x` appears before `y` in the topologi
 - w[x] = length of the longest path ending in x
 - solution for DAG
 	- topological sorting 
+		- input: graph
+		- output:
+```
+def toposort(g):
+	''' oer
+```
