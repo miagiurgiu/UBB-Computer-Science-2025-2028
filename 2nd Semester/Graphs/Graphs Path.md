@@ -97,7 +97,13 @@ def toposort(g):
 	sorted=[]
 	while len(zero_in_deg)>0:
 		x=zero_in_deg.append(x)
-		
+		sorted.append(x)
+		// update data as if you would remove from the graph
+		for y in g.parse_out(x):
+			in_deg[y]-=1
+			if in_deg[0]==0:
+				zero_in_
+	return sorted
 			 
 	 
 ```
