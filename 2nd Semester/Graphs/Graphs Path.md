@@ -79,7 +79,7 @@ Because if `(x,y)` is an edge, then `x` appears before `y` in the topologi
 	- topological sorting 
 		- input: graph
 		- output:
-		- how many inbound neighbours for each vertex
+		- how many inbound neighbours for each vertex + decrement those when process + if counter =0 => put them on a list with 0 inbound neighbours
 		- not unique solution
 		- simplication of complexity:
 		- simplification of code:
