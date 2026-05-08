@@ -108,8 +108,11 @@ def toposort(g):
 ```
 
 ```
-
-
+def longest_path(g):
+	''' 
+	returns a list of vertices representing a longest path in geaph g
+	'''
+	sorted=toposort(g)
 ```
 
 3,4,0,2,1,3
