@@ -68,8 +68,9 @@ Because if `(x,y)` is an edge, then `x` appears before `y` in the topologi
 
 1) find longest path in that graph (DAG)
 - does the problem always have a solution?
+	- For a **finite DAG**, yes. There is always at least one path: a single vertex, length `0`.
 - is the path unique? no, there are more - one of them is fine
-- length = nr of edges along that walk
+- length = nr of edges along that walk. Here, length = number of edges, not sum of costs.
 - single vertex => path of length 0
 - finite nr of paths, finite nr of walks
 - 2^n paths for len=2*n
