@@ -71,4 +71,5 @@ Because if `(x,y)` is an edge, then `x` appears before `y` in the topologi
 - is the path unique? no, there are more - one of them is fine
 - length = nr of edges along that walk
 - single vertex => path of length 0
+- finite nr of paths, finite nr of walks
 - 
