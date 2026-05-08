@@ -74,4 +74,5 @@ Because if `(x,y)` is an edge, then `x` appears before `y` in the topologi
 - finite nr of paths, finite nr of walks
 - 2^n paths for len=2*n
 - dynamic programming approach
+- w[x] = length of the longest path ending in x
 - 
