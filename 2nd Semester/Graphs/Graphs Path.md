@@ -89,10 +89,15 @@ def toposort(g):
 	 returns the list of al vertices of g in a topological order
 	 '''
 	 in_deg={}
+	 zero_in_deg=[]
 	 for x in g.parse_vertices():
 		 in_deg(x)=len(list(g.parse_in(x)))
 		 if in_deg[x]==0: // add them into list
-			 
+			 zero_in_deg_append()
+	sorted=[]
+	while len(zero_in_deg)>0:
+		x=zero_in_deg.append(x)
+		
 			 
 	 
 ```
