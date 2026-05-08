@@ -79,7 +79,11 @@ Because if `(x,y)` is an edge, then `x` appears before `y` in the topologi
 	- topological sorting 
 		- input: graph
 		- output:
+		- not unique solution
 ```
 def toposort(g):
-	''' oer
+	''' performs the topological sorting of graph g,
+	 returns the list of al vertices of g in a topological order
+	 '''
+	 
 ```
