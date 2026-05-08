@@ -91,9 +91,9 @@ def toposort(g):
 	 returns the list of al vertices of g in a topological order
 	 '''
 	 in_deg={} # dictionary
-	 zero_in_deg=[] # list
+	 zero_in_deg=[] # list of vertices that currently have no incoming edges.
 	 for x in g.parse_vertices(): # traverse inbound neighbours
-		 in_deg(x)=len(list(g.parse_in(x))) # ? 
+		 in_deg(x)=len(list(g.parse_in(x))) #  how many inbound neighbours / inbound edges vertex `x` has.
 		 if in_deg[x]==0: 
 			 zero_in_deg.append() # add them into list
 	sorted=[]
