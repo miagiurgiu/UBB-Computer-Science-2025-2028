@@ -88,7 +88,12 @@ def toposort(g):
 	''' performs the topological sorting of graph g,
 	 returns the list of al vertices of g in a topological order
 	 '''
-	 
+	 in_deg={}
+	 for x in g.parse_vertices():
+		 in_deg(x)=len(list(g.parse_in(x)))
+		 if in_deg[x]==0: // add them into list
+			 
+			 
 	 
 ```
 3,4,0,2,1,3
