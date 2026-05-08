@@ -119,6 +119,9 @@ def longest_path(g):
 	result=[]
 	for x in sorted:
 		inbound=[w[y] for y in g.parse_in(x)]
+		w[x]=0 if len(inbound)==0 else max(inbound)+1
+	print(w)
+	
 ```
 
 3,4,0,2,1,3
