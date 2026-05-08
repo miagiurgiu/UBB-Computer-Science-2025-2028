@@ -91,14 +91,14 @@ def toposort(g):
 	 in_deg={} # dictionary
 	 zero_in_deg=[] # list
 	 for x in g.parse_vertices(): # traverse inbound neighbours
-		 in_deg(x)=len(list(g.parse_in(x))) // ? 
+		 in_deg(x)=len(list(g.parse_in(x))) # ? 
 		 if in_deg[x]==0: 
-			 zero_in_deg.append() // add them into list
+			 zero_in_deg.append() # add them into list
 	sorted=[]
 	while len(zero_in_deg)>0:
 		x=zero_in_deg.append(x)
 		sorted.append(x)
-		// update data as if you would remove from the graph
+		# update data as if you would remove from the graph
 		for y in g.parse_out(x):
 			in_deg[y]-=1
 			if in_deg[0]==0:
@@ -106,6 +106,12 @@ def toposort(g):
 	return sorted
 	 
 ```
+
+```
+
+
+```
+
 3,4,0,2,1,3
 4,0,3,2,1,5
 4,3,2,1,0,5
