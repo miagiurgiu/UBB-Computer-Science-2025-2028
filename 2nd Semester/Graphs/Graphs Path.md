@@ -79,7 +79,7 @@ Because if `(x,y)` is an edge, then `x` appears before `y` in the topologi
 	- topological sorting 
 		- input: graph
 		- output:
-		- how many inbound neighbours for each vertex + decrement those when process + if counter =0 => put them on a list with 0 inbound neighbours
+		- how many inbound neighbours for each vertex + decrement those when processing vertices + if counter =0 => put them on a list with 0 inbound neighbours
 		- not unique solution
 		- simplication of complexity:
 		- simplification of code:
@@ -88,6 +88,7 @@ def toposort(g):
 	''' performs the topological sorting of graph g,
 	 returns the list of al vertices of g in a topological order
 	 '''
+	 
 	 
 ```
 3,4,0,2,1,3
