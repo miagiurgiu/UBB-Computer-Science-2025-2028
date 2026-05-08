@@ -99,7 +99,7 @@ def toposort(g):
 	sorted=[] # topological order
 	while len(zero_in_deg)>0:
 		x=zero_in_deg.pop()
-		x=zero_in_deg.append(x)
+		# x=zero_in_deg.append(x)
 		sorted.append(x)
 		# update data as if you would remove from the graph
 		for y in g.parse_out(x):
