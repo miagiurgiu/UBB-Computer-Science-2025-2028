@@ -66,3 +66,5 @@ Because if `(x,y)` is an edge, then `x` appears before `y` in the topologi
 
 ## Seminar 5 - 8 may 2026
 
+1) find longest path in that graph (DAG)
+- does the problem always have a solution>
