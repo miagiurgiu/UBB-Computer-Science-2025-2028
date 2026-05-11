@@ -7602,9 +7602,9 @@ void* potato(void* args, int x)
 - 
 ```
 #include <stdio.h> // printf
-#include <pthread.h>
-#include <stdlib.h>
-#include <unistd>
+#include <pthread.h> // pthread_create, pthread_join, mutexes
+#include <stdlib.h> // rand, srand, atoi
+#include <unistd> // pipe, fork, read, write, close
 
 int pip[2];
 int n=1;  // int n=8; 
