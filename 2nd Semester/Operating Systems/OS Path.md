@@ -7600,9 +7600,14 @@ void* potato(void* args, int x)
 #include <unistd>
 
 int pip[2];
+int n=1; 
 
 void copil(int pip[2]) { // send pipe as parameter (does not make sense if it is declared globally, but yeah)
 	close pip[1];
+	for(int i=0; i<n; i++){
+		int rec[3];
+		read(pip[0],rec,sizeof(int*3));
+	}
 }
 
 // thread
