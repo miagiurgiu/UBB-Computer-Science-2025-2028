@@ -8159,9 +8159,20 @@ void* worker(void* arg){
 		pthread_barrier_wait(&b1);
 		if(id==0)
 		{
-			
+			sorted=is_sorted();
 		}
+		pthread_barrier_wait(&b2);
+		if(sorted)
+			break;
 	}
+	return NULL;
+}
+void* printer (void* arg){
+	while(!sorted){
+		pthread_barrier_wait(&b1);
+		pthread_barrier_wait(&b2);
+	}
+	printf(")
 }
 
 ```
