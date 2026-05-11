@@ -7609,13 +7609,13 @@ void* thread(void* args){
 	// receives a unique id from the parent
 	// geto method
 	// cast it to long because it's 8 bytes
-	
+	// close(pip[0]);  // should not be here because if it was here it would be called as many times as threads are.
 	long theID=(long)args; // this is casting
 	int a,b;
 	a=(rand()%100)+1;
 	b=(rand()%100)+1;
 	
-	// printf("%d %d %ld\n",a,b,theID);
+	printf("%d %d %ld\n",a,b,theID);
 	
 	// send via pipe
 	
