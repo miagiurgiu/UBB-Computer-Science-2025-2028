@@ -7671,7 +7671,7 @@ Problem 24.
 void* potato(void* args, int x)
 ```
 
-- each thread generates: a,b,thread_id and sends them as an array 
+- each thread generates: a,b,thread_id and sends them to child as an array 
 ```
 #include <stdio.h> // printf
 #include <pthread.h> // pthread_create, pthread_join, mutexes
@@ -7757,10 +7757,10 @@ pthread_mutex_t y = PTHREAD_MUTEX_INITIALIZER; // mutex y initialised directly a
 
 // function executed by the child
 void copil(int pip[2]) { // send pipe as parameter (does not make sense if it is declared globally, but yeah)
-	close pip[1]; // 
-	for(int i=0; i<n; i++){
-		int rec[3];
-		read(pip[0],rec,sizeof(int)*3);
+	close pip[1]; // child does not write
+	for(int i=0; i<n; i++){ // child reads one message/thread
+		int rec[3]; // store received data
+		read(pip[0],rec,sizeof(int)*3); // read 3 integers
 		printf("%d %d %d\n", rec[0],rec[1],rec[2]);
 	}
 }
