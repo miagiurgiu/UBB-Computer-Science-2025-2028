@@ -7581,9 +7581,10 @@ int main() {
 ### Lab - 11 may 2026
 
 pb24.
-metoda geto - arg=value?
-
+- metoda geto - arg=value?
 - how to deduce the function format (tha line, from manual)
+- different id for each thread (not getpid() - that returns the same thing, 5)
+- race condition if two threads want to send numbers through pipe
 ```
 void* potato(void* args, int x)
 ```
