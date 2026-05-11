@@ -7821,12 +7821,14 @@ int main(int argc, char** argv) {
 
 final version:
 ```
+problema 24
+
 #include <stdio.h>
 #include <pthread.h>
 #include <stdlib.h>
 #include <unistd.h>
 
-int pip[2]; // 
+int pip[2];
 int n = 8;
 pthread_mutex_t y = PTHREAD_MUTEX_INITIALIZER;
 
@@ -7848,6 +7850,51 @@ void* thread(void* args)
     int a,b;
     a = (rand() % 100) + 1;
     b = (rand() % 100) + 1;
+
+    //printf("%d %d %ld\n",a,b,theID);
+
+    int toSend[3];
+    toSend[0] = a;
+    toSend[1] = b;
+    toSend[2] = theID;
+
+    pthread_mutex_lock(&y);
+    write(pip[1], toSend, sizeof(int) * 3);
+    pthread_mutex_unlock(&y);
+    //write(pip[1], toSend, sizeof(toSend));
+
+}
+
+int main()
+{
+    srand(time(NULL));
+
+    pipe(pip);
+    int theChopil = fork();
+
+    if (theChopil != 0)
+    {
+        close(pip[0]);
+
+        pthread_t arrayThreads[n];
+        for (long i=0; i<n;i++)
+        {
+            //pthread_create( &(arrayThreads[i]) );
+            pthread_create( arrayThreads + i, NULL, thread, (void*) i);
+        }
+
+        for (long i=0; i<n;i++)
+        {
+            //pthread_join( *(arrayThreads + i));
+            pthread_join( arrayThreads[i], NULL);
+        }
+    }
+    else
+    {
+        copil(pip);
+    }
+}
+
 ```
 
 pb19
