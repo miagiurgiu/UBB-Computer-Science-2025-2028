@@ -7928,3 +7928,4 @@ conditional variables:
 - signal
 - broadcast
 - pthread cond wait
+- = wait until signal
