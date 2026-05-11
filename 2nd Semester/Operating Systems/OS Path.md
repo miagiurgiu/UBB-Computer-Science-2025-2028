@@ -8078,13 +8078,19 @@ int main(int argc, char **argv) {
 }
 ```
 
-method 2: recursive tree creation
+method 2: join
+recursive tree creation
 -> read n
 -> compute m=next power of 2
 -> pad array with 0
 -> main creates thread 1
 -> T1 creates T2,T3
--> T2 c
+-> T2 creates T4,T5
+-> T3 creates T6,T7
+-> leaf threads calculate pair sums
+-> parent threads join their children
+-> T1 computes final sum
+-> main joins T1
 
 pb28:
 ![[Pasted image 20260511154130.png]]
