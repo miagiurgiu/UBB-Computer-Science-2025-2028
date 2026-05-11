@@ -7938,7 +7938,13 @@ Order:
 method 1:
 -> read n
 -> compute m=next power of 2
--> pad array with zeroes until
+-> pad array with zeroes until reaching size m
+-> main creates threads 1->m-1
+-> all threads wait at barrier
+-> leaf threads calculate pair sums
+-> parent threads join children
+-> thread 1 computes final sum
+-> main joins thread 1
 ```
 #include <pthread.h>
 #include <unistd.h>
