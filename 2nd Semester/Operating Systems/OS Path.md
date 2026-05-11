@@ -8196,7 +8196,12 @@ int main() {
 	for(int i=0; i<n; i++){
 		pthread_mutex_init(&mutexes[i],NULL);
 	}
-
+	pthread_barrier_init(&b1,NULL,n+1);
+	pthread_barrier_init(&b2,NULL,n+1);
+	for(long i=0; i<n; i++){
+		pthread_create(&threads[i],NULL,worker,(void*)i);
+	}
+	pthread_create(&threads[n],NULL,printer,NULL);
 }
 
 ```
