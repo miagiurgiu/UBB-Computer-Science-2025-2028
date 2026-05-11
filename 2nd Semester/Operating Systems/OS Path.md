@@ -7600,7 +7600,7 @@ void* potato(void* args, int x)
 #include <unistd>
 
 int pip[2];
-int n=1; 
+int n=1;  // int n=8; 
 
 void copil(int pip[2]) { // send pipe as parameter (does not make sense if it is declared globally, but yeah)
 	close pip[1];
