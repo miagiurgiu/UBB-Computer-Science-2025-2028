@@ -7791,7 +7791,7 @@ void* thread(void* args){
 	//write(pip[1],toSend,sizeof(toSend));
 }
 
-int main() {
+int main(int argc, char** argv) {
 	int n=1; // read from keyboard
 	
 	//int pip[2];
