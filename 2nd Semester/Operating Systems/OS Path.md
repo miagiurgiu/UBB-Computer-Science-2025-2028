@@ -7804,10 +7804,11 @@ int main(int argc, char** argv) {
 		pthread_t arrayThreads[n]; // define the array of threads statically/dinamically
 		for(long i=0; i<n; i++){ // long, not int
 			// pthread_create(&(arrayThreads[i]))
-			pthread_create(arrayThreads+i, NULL, thread, (void*)i);
+			pthread_create(arrayThreads+i, NULL, thread, (void*)i); // create thread with id i
 		}
 		for(long i=0; i<n; i++){ // long, not int
-			pthread_join(arrayThreads[i],NULL); // if it was not null - pointer to another pointer=what the function that gives the thread returns?
+			pthread_join(arrayThreads[i],NULL); // wait for thread to finish
+			// if it was not null - pointer to another pointer=what the function that gives the thread returns?
 			//pthread_join(*(arrayThreads+i));
 		}
 	}
