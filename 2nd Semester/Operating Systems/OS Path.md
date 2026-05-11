@@ -7779,5 +7779,6 @@ void* thread(void* args)
 pb19
 ![[Pasted image 20260511152213.png]]
  - find smallest power of 2 bigger than n
- - 
+ - create all threads at once -> their behaviour is defined by id
+ - create
  
