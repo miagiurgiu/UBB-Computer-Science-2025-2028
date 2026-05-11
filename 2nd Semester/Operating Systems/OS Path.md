@@ -7611,8 +7611,11 @@ void* thread(void* args){
 	int a,b;
 	a=(rand()%100)+1;
 	b=(rand()%100)+1;
-	// send via pipe
+	
 	// printf("%d %d\n",a,b);
+	
+	// send via pipe
+	
 }
 
 int main() {
