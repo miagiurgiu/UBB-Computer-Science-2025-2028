@@ -7592,9 +7592,12 @@ arrayThreads+i ---- the same as ---- &arrayThreads[i] = address of thread slot i
 
 ```
 - wait for thread: pthread_join(...)
-- thread function:
+- thread function: pthread expects this kind of format, with only one argument:
+	- if more arguments are needed to be passed to pthread, put them inside struct
 ```
 void* function(void* args)
+
+void* -
 ```
 
 
