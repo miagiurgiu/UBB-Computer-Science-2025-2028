@@ -7601,7 +7601,7 @@ void* potato(void* args, int x)
 int pip[2];
 
 void copil(int pip[2]) { // send pipe as parameter (does not make sense if it is declared globally, but yeah)
-	
+	close pip[1];
 }
 
 // thread
@@ -7609,12 +7609,13 @@ void* thread(void* args){
 	// receives a unique id from the parent
 	// geto method
 	// cast it to long because it's 8 bytes
+	
 	long theID=(long)args; // this is casting
 	int a,b;
 	a=(rand()%100)+1;
 	b=(rand()%100)+1;
 	
-	// printf("%d %d\n",a,b,theID);
+	// printf("%d %d %ld\n",a,b,theID);
 	
 	// send via pipe
 	
