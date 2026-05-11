@@ -7579,7 +7579,7 @@ int main() {
 
 
 ### Lab 11 - 11 may 2026
-ba
+thread,
 
 pb24.
 ![[Pasted image 20260511142722.png]]
