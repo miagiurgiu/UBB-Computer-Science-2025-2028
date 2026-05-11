@@ -7598,7 +7598,7 @@ void* potato(void* args, int x)
 #include <pthread.h>
 #include <stdlib.h>
 
-void copil() {
+void copil(int pip[2]) { // send pipe as parameter
 	
 }
 
@@ -7620,6 +7620,9 @@ void* thread(void* args){
 
 int main() {
 	int n=4; // read from keyboard
+	
+	int pip[2];
+	int theCopil=fork()
 	// define the array of threads statically/dinamically
 	pthread_t arrayThreads[n];
 	for(long i=0; i<n; i++){ // long, not int
