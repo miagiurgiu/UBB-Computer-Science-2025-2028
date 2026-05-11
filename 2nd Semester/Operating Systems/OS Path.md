@@ -7604,5 +7604,8 @@ void* thread(void* args){
 	// receives a unique id from the parent
 	// geto method
 	// cast it to long because it's 8 bytes
+	long theID=(long)args; // this is casting
+	int a,b;
+	a=rand()%100+1;
 }
 ```
