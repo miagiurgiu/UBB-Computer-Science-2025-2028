@@ -7737,3 +7737,34 @@ int main() {
 }
 ```
 - print average - do it yourself!
+
+final version:
+```
+#include <stdio.h>
+#include <pthread.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+int pip[2];
+int n = 8;
+pthread_mutex_t y = PTHREAD_MUTEX_INITIALIZER;
+
+void copil(int pip[2])
+{
+    close(pip[1]);
+    for (int i=0; i<n;i++)
+    {
+        int rec[3];
+        read(pip[0], rec, sizeof(int) * 3);
+        printf("%d %d %d\n",rec[0],rec[1],rec[2]);
+    }
+}
+
+void* thread(void* args)
+{
+
+    long theID = (long)args;
+    int a,b;
+    a = (rand() % 100) + 1;
+    b = (rand() % 100) + 1;
+```
