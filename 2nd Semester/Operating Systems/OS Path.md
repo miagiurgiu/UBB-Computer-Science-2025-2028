@@ -7919,11 +7919,16 @@ Order:
 - create T1, T2, T3... , T7 -> reach barrier | -> after all arrived, they continue -> new joins are safe
 
 method 2: recursive thread creation
-- ?
+->  each thread creates its own children
 - barrier - lets n threads
 - mutex - lets 1 thread
 - instead of a barrier - flag that is 0/1
 - lets threads start, but when someone is needed to be waited for, it happens.
+Order:
+- main creates T1
+- T1 creates T2,T3
+- T2 creates T4,T5
+- T3 creates T6,T7
 
 
 ```
