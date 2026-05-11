@@ -7751,12 +7751,13 @@ official method (with sync):
 #include <stdlib.h>
 #include <unistd>
 
-int pip[2];
-int n=8; 
-pthread_mutex_t y = PTHREAD_MUTEX_INITIALIZER; // mutex initialised directly at compile time
+int pip[2]; // pipe array
+int n=8;  // number of threads
+pthread_mutex_t y = PTHREAD_MUTEX_INITIALIZER; // mutex y initialised directly at compile time
 
+// function executed by the child
 void copil(int pip[2]) { // send pipe as parameter (does not make sense if it is declared globally, but yeah)
-	close pip[1];
+	close pip[1]; // 
 	for(int i=0; i<n; i++){
 		int rec[3];
 		read(pip[0],rec,sizeof(int)*3);
