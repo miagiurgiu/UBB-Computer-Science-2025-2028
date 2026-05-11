@@ -7623,11 +7623,12 @@ void* thread(void* args){
 	toSend[0]=a;
 	toSend[1]=b;
 	toSend[2]=theID;
-	write(pip[1],toSend,sizeof(int))
+	write(pip[1],toSend,sizeof(int)*3);
+	//write(pip[1],toSend,sizeof(toSend));
 }
 
 int main() {
-	int n=4; // read from keyboard
+	int n=1; // read from keyboard
 	
 	int pip[2];
 	pipe(pip);
