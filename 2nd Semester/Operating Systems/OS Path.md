@@ -7659,3 +7659,6 @@ int main() {
 	
 }
 ```
+- after running this version, it works without synchronisation. why? 
+	- only one call in pipe -> atomic
+	- read, write -> might return an integer who says how much they managed to re
