@@ -7938,4 +7938,4 @@ pb28:
 - exchange them if they're not okay
 - *sorted flag, one mutex, one barrier
 - their method is good, but could have been a mutex or a while true instead of a wait
-- implement this problem with 2 barriers, without data corruption - you should have 2 barriers,
+- implement this problem with 2 barriers, without data corruption - you should have 2 barriers, as many mutexes as many items are in the array, bc each thread using (i,j) could block strictly those ones, which means that others... - performance comparison
