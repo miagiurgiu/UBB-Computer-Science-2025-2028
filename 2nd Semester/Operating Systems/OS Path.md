@@ -7775,3 +7775,6 @@ void* thread(void* args)
     a = (rand() % 100) + 1;
     b = (rand() % 100) + 1;
 ```
+
+pb19
+![[Pasted image 20260511152213.png]]
