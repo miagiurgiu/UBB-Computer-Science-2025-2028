@@ -7653,6 +7653,7 @@ pthread_cond_broadcast(...) -> wake all waiting threads
 
 Problem 24.
 ![[Pasted image 20260511142722.png]]
+- Create n threads and one child process
 - one child process using fork()
 - n threads in the parent process
 - pipe so threads can send data to child
