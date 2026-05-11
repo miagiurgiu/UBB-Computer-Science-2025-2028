@@ -8213,6 +8213,7 @@ int main() {
 	free(s);
 	free(threads);
 	free(mutexes);
+	return 0;
 }
 
 ```
