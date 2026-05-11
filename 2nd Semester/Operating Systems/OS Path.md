@@ -8172,7 +8172,20 @@ void* printer (void* arg){
 		pthread_barrier_wait(&b1);
 		pthread_barrier_wait(&b2);
 	}
-	printf(")
+	printf("Sorted array:\n");
+	for(int i=0; i<n; i++)
+	{
+		printf("%d ", s[i]);
+	}
+	printf("\n");
+	return NULL;
+}
+
+int main() {
+	printf("Give n: ");
+	scanf("%d", &n);
+	s=malloc(n*sizeof(int))
+
 }
 
 ```
