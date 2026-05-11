@@ -8186,12 +8186,16 @@ int main() {
     scanf("%d",&n);
     s=malloc(n*sizeof(int));
     printf("%d\n",n);
-        srand(time(NULL));
-        for(int i=0;i<n;i++) {
-                s[i]=rand()%1000;
-                printf("Element %d: %d\n",i,s[i]);
-        }
-
+    srand(time(NULL));
+    for(int i=0;i<n;i++) {
+        s[i]=rand()%1000;
+        printf("Element %d: %d\n",i,s[i]);
+    }
+	threads=malloc((n+1)*sizeof(pthread_t));
+	mutexes=malloc(n*sizeof(pthread_mutex_t));
+	for(int i=0; i<n; i++){
+		pthread_mutex_init(&mutexes[i],NULL);
+	}
 
 }
 
