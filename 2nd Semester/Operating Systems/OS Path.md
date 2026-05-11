@@ -7736,3 +7736,4 @@ int main() {
 	
 }
 ```
+- print average - do it yourself!
