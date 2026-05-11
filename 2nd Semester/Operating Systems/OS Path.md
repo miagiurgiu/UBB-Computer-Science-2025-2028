@@ -7581,6 +7581,7 @@ int main() {
 ### Lab - 11 may 2026
 
 pb24.
+![[Pasted image 20260511142722.png]]
 - metoda geto - arg=value?
 - how to deduce the function format (tha line, from manual)
 - different id for each thread (not getpid() - that returns the same thing, 5)
@@ -7597,4 +7598,6 @@ void* potato(void* args, int x)
 void copil() {
 	
 }
+
+// thread in whic
 ```
