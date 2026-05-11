@@ -7907,9 +7907,9 @@ pb19
  - binary-tree sum using threads
 ![[Pasted image 20260511182918.png|263]]
 
- method 1: create all thre
- - find smallest power of 2 bigger than n
- - create all threads at once -> their behaviour is defined by id
+ method 1: create all threads at once
+-> find smallest power of 2 bigger than n (binary trees work nicely with powers of 2)
+-> create all threads at once -> their behaviour is defined by id
  - create 2 threads -> each thread creates more -> etc (depth)
  - wait done through join
  - create all and all wait at the barrier?
