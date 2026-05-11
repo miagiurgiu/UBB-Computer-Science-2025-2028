@@ -7618,7 +7618,10 @@ void* thread(void* args){
 	printf("%d %d %ld\n",a,b,theID);
 	
 	// send via pipe
-	
+	int toSend[3];
+	toSend[0]=a;
+	toSend[1]=b;
+	toSend[2[=]
 }
 
 int main() {
