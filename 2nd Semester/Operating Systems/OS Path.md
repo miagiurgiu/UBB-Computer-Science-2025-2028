@@ -7579,10 +7579,14 @@ int main() {
 
 
 ### Lab 11 - 11 may 2026
-thread,
+thread
 
 pb24.
 ![[Pasted image 20260511142722.png]]
+- one child process using fork()
+- n threads in the parent process
+- pipe so threads can send data to child
+- 
 - metoda geto - arg=value?
 - how to deduce the function format (tha line, from manual)
 - different id for each thread (not getpid() - that returns the same thing, 5)
