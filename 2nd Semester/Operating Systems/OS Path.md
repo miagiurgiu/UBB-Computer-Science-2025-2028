@@ -7642,6 +7642,10 @@ pthread_barrier_init(&barrier, NULL,max-1);
 ```
 
 - conditional variable -> lets one thread sleep until another thread wakes it
+	- signal: pthread_cond_signal
+	- broadcast: pthread_cond_broadcast
+	- wait: pthread_cond_wait
+	- = wait until signal
 ```
 pthread_cond_wait(...) -> wait
 
@@ -8046,12 +8050,6 @@ int main(int argc, char **argv) {
     return 0;
 }
 ```
-
-conditional variables: 
-- signal: pthread_cond_signal
-- broadcast: pthread_cond_broadcast
-- wait: pthread_cond_wait
-- = wait until signal
 
 
 pb28:
