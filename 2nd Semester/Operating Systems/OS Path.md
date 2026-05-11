@@ -7590,3 +7590,11 @@ pb24.
 void* potato(void* args, int x)
 ```
 
+```
+#include <stdio.h>
+#include <pthread.h>
+
+void copil() {
+	
+}
+```
