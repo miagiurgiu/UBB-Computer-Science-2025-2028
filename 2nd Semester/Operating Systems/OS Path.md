@@ -7909,7 +7909,7 @@ pb19
 
  method 1: create all threads at once
 -> find smallest power of 2 bigger than n (binary trees work nicely with powers of 2)
--> create all threads at once -> their behaviour is defined by id
+-> create all (m-1) threads at once -> their behaviour is defined by id (each one has its own id)
  - create 2 threads -> each thread creates more -> etc (depth)
  - wait done through join
  - create all and all wait at the barrier?
