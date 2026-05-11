@@ -8127,6 +8127,20 @@ int is_sorted() {
 }
 
 void swap(int i,int j) {
-	
+	int aux=s[i];
+	s[i]=s[j];
+	s[j]=aux;
 }
+
+void* worker(void* arg){
+	long id=(long)arg;
+	while(1){
+		int i=rand()%n;
+		int j=rand()%n;
+		if(i!=j){
+			
+		}
+	}
+}
+
 ```
