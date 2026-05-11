@@ -7789,6 +7789,7 @@ method 2:
 - barrier - lets n threads
 - mutex - lets 1 thread
 - instead of a barrier - flag that is 0/1
+- lets threads start, but when someone is needed tp be wa
 
 
 ```
