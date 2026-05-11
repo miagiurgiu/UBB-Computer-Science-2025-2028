@@ -7598,7 +7598,9 @@ void* potato(void* args, int x)
 #include <pthread.h>
 #include <stdlib.h>
 
-void copil(int pip[2]) { // send pipe as parameter
+int pip[2];
+
+void copil(int pip[2]) { // send pipe as parameter (does not make sense if it is declared globally, but yeah)
 	
 }
 
@@ -7612,7 +7614,7 @@ void* thread(void* args){
 	a=(rand()%100)+1;
 	b=(rand()%100)+1;
 	
-	// printf("%d %d\n",a,b);
+	// printf("%d %d\n",a,b,theID);
 	
 	// send via pipe
 	
