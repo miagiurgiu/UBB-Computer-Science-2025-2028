@@ -7636,7 +7636,8 @@ void* thread(void* args){
 int main() {
 	int n=1; // read from keyboard
 	
-	int pip[2];
+	//int pip[2];
+	srand(time(NULL));
 	pipe(pip);
 	
 	int theCopil=fork();
