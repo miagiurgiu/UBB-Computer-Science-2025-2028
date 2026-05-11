@@ -7778,7 +7778,13 @@ void* thread(void* args)
 
 pb19
 ![[Pasted image 20260511152213.png]]
+ method 1:
  - find smallest power of 2 bigger than n
  - create all threads at once -> their behaviour is defined by id
- - create
+ - create 2 threads -> each thread creates more -> etc (depth)
+ - wait done through join
+method 2:
+- barrier - lets n threads
+- mutex - le
+
  
