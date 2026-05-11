@@ -7665,7 +7665,7 @@ int main() {
 	- child only reads from pipe, it does not know there might be more threads
 	- if more reading -> mutex
 
-official method:
+official method (with sync):
 ```
 #include <stdio.h>
 #include <pthread.h>
@@ -7673,7 +7673,8 @@ official method:
 #include <unistd>
 
 int pip[2];
-int n=1;  // int n=8; 
+int n=8; 
+pthread_mutex_t y = PTHREAD_MUTEX_INITIALIZER;
 
 void copil(int pip[2]) { // send pipe as parameter (does not make sense if it is declared globally, but yeah)
 	close pip[1];
