@@ -8183,8 +8183,15 @@ void* printer (void* arg){
 
 int main() {
 	printf("Give n: ");
-	scanf("%d", &n);
-	s=malloc(n*sizeof(int))
+    scanf("%d",&n);
+    s=malloc(n*sizeof(int));
+    printf("%d\n",n);
+        srand(time(NULL));
+        for(int i=0;i<n;i++) {
+                s[i]=rand()%1000;
+                printf("Element %d: %d\n",i,s[i]);
+        }
+
 
 }
 
