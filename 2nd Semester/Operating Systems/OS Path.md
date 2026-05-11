@@ -7622,16 +7622,24 @@ int main() {
 	int n=4; // read from keyboard
 	
 	int pip[2];
-	int theCopil=fork()
-	// define the array of threads statically/dinamically
-	pthread_t arrayThreads[n];
-	for(long i=0; i<n; i++){ // long, not int
-		// pthread_create(&(arrayThreads[i]))
-		pthread_create(arrayThreads+i, NULL, thread, (void*)i);
+	pipe(pip);
+	
+	int theCopil=fork();
+	if(theCopil!=0){ // parent
+			// define the array of threads statically/dinamically
+		pthread_t arrayThreads[n];
+		for(long i=0; i<n; i++){ // long, not int
+			// pthread_create(&(arrayThreads[i]))
+			pthread_create(arrayThreads+i, NULL, thread, (void*)i);
+		}
+		for(long i=0; i<n; i++){ // long, not int
+			pthread_join(arrayThreads[i],NULL); // if it was not null - pointer to another pointer=what the function that gives the thread returns?
+			//pthread_join(*(arrayThreads+i));
+		}
 	}
-	for(long i=0; i<n; i++){ // long, not int
-		pthread_join(arrayThreads[i],NULL); // if it was not null - pointer to another pointer=what the function that gives the thread returns?
-		//pthread_join(*(arrayThreads+i));
+	else {
+		copil(pip);
 	}
+	
 }
 ```
