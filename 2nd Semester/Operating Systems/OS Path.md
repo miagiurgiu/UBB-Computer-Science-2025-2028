@@ -7612,5 +7612,12 @@ void* thread(void* args){
 	
 }
 
-int m
+int main() {
+	int n=4; // read from keyboard
+	// define the array of threads statically/dinamically
+	pthread_t arrayThreads[n];
+	for(int i=0; i<n; i++){
+	
+	}
+}
 ```
