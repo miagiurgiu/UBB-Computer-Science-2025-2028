@@ -7588,7 +7588,7 @@ pb24.
 - race condition if two threads want to send numbers through pipe => sync with mutex
 - methods of giving pointer:
 	- 1. &(arrayThreads[i])
-	- 2. arrayThreads+1
+	- 2. (arrayThreads+1)
 ```
 void* potato(void* args, int x)
 ```
@@ -7619,7 +7619,8 @@ int main() {
 	// define the array of threads statically/dinamically
 	pthread_t arrayThreads[n];
 	for(int i=0; i<n; i++){
-		pthread_create()
+		// pthread_create(&(arrayThreads[i]))
+		pthread_create(arrayThreads+i, NULL, thread, );
 	}
 }
 ```
