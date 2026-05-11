@@ -7583,7 +7583,11 @@ thread
 
 Process = a running program
 Thread = execution unit inside a process
-- all threads in
+- all threads in the same process share global variables, memory, file descriptors
+- create thread: pthread_create(...)
+- wait for thread: pthread_join(...)
+- 
+
 pb24.
 ![[Pasted image 20260511142722.png]]
 - one child process using fork()
