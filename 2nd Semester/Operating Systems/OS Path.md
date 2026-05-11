@@ -7800,8 +7800,8 @@ int main(int argc, char** argv) {
 	
 	int theCopil=fork();
 	if(theCopil!=0){ // parent
-			// define the array of threads statically/dinamically
-		pthread_t arrayThreads[n];
+		close(pip[0]);
+		pthread_t arrayThreads[n]; // define the array of threads statically/dinamically
 		for(long i=0; i<n; i++){ // long, not int
 			// pthread_create(&(arrayThreads[i]))
 			pthread_create(arrayThreads+i, NULL, thread, (void*)i);
