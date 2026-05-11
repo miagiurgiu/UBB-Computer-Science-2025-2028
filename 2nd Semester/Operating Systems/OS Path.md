@@ -7587,6 +7587,9 @@ Thread = execution unit inside a process
 - create thread: pthread_create(&thread_id, NULL, function, arg)
 ```
 pthread_create(arrayThreads+i, NULL, thread, (void*)i)
+
+arrayThreads+i ---- the same as ---- &arrayThreads[i]
+
 ```
 - wait for thread: pthread_join(...)
 - 
