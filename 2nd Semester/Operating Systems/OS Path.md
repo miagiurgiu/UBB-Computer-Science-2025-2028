@@ -7937,4 +7937,4 @@ pb28:
 - generate random numbers
 - exchange them if they're not okay
 - *sorted flag, one mutex, one barrier
-- 
+- their method is good
