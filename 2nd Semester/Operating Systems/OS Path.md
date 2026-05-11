@@ -7586,7 +7586,7 @@ pb24.
 - one child process using fork()
 - n threads in the parent process
 - pipe so threads can send data to child
-- 
+- mutex so only one thread writes to the pipe at a time
 - metoda geto - arg=value?
 - how to deduce the function format (tha line, from manual)
 - different id for each thread (not getpid() - that returns the same thing, 5)
@@ -7598,6 +7598,7 @@ pb24.
 void* potato(void* args, int x)
 ```
 
+- each thread generates 
 ```
 #include <stdio.h>
 #include <pthread.h>
