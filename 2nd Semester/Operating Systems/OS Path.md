@@ -8110,4 +8110,23 @@ pb28:
 int n;
 int *s;
 int sorted=0; // flag
+
+pthread_t *threads;
+pthread_mutex_t *mutexes;
+
+pthread_barrier_t b1;
+pthread_barrier_t b2;
+
+int is_sorted() {
+	for(int i=0; i<n-1; i++)
+	{
+		if(s[i]>s[i+1])
+			return 0;
+	}
+	return 1;
+}
+
+void swap(int i,int j) {
+	
+}
 ```
