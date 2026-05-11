@@ -7915,9 +7915,10 @@ pb19
 -> create 2 threads -> each thread creates more -> etc (depth)
 -> wait done through join (a parent thread waits for its two children using pthread_join)
 -> create all and all wait at the barrier (nobody starts joining until all threads exist)
-	Order:
-		- 
-method 2:
+Order:
+- create T1, T2, T3... , T7 -> reach barrier | -> after all arrived, they continue -> new joins are safe
+
+method 2: recursive thread creation
 - ?
 - barrier - lets n threads
 - mutex - lets 1 thread
