@@ -7594,7 +7594,7 @@ arrayThreads+i ---- the same as ---- &arrayThreads[i] = address of thread slot i
 - wait for thread: pthread_join(...)
 - thread function:
 ```
-void* thread(void* args)
+void* function(void* args)
 ```
 
 
