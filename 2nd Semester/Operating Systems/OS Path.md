@@ -7625,7 +7625,7 @@ int id=*(int*)arg;
 ```
 pthread_mutex_t y = PTHREAD_MUTEX_INITIALIZER
 ```
-
+		- USI
 
 
 pb24.
