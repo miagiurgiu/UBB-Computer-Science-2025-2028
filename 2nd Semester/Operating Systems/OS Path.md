@@ -7789,7 +7789,7 @@ method 2:
 - barrier - lets n threads
 - mutex - lets 1 thread
 - instead of a barrier - flag that is 0/1
-- lets threads start, but when someone is needed tp be wa
+- lets threads start, but when someone is needed to be waited for, it happens.
 
 
 ```
@@ -7930,3 +7930,7 @@ conditional variables:
 - broadcast: pthread_cond_broadcast
 - wait: pthread_cond_wait
 - = wait until signal
+
+
+pb28:
+![[Pasted image 20260511154130.png]]- 
