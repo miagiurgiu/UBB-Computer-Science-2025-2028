@@ -8078,6 +8078,13 @@ int main(int argc, char **argv) {
 }
 ```
 
+method 2: recursive tree creation
+-> read n
+-> compute m=next power of 2
+-> pad array with 0
+-> main creates thread 1
+-> T1 creates T2,T3
+-> T2 c
 
 pb28:
 ![[Pasted image 20260511154130.png]]
