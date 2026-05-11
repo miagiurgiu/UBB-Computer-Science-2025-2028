@@ -7920,9 +7920,11 @@ Order:
 
 method 2: recursive thread creation
 -> each thread creates its own children
--> if leaf thread =
-- barrier - lets n threads
-- mutex - lets 1 thread
+-> if leaf thread => adds 2 array elements
+-> if internal thread:
+	=> creates 2 child threads
+	=> waits for them
+	=> adds their partial sums
 - instead of a barrier - flag that is 0/1
 - lets threads start, but when someone is needed to be waited for, it happens.
 Order:
