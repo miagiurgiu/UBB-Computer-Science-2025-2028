@@ -7598,7 +7598,8 @@ pb24.
 void* potato(void* args, int x)
 ```
 
-- each thread generates 
+- each thread generates: a,b,thread_id
+- 
 ```
 #include <stdio.h>
 #include <pthread.h>
