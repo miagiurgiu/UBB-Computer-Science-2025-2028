@@ -7641,11 +7641,17 @@ pthread_barrier_wait(&barrier);
 pthread_barrier_init(&barrier, NULL,max-1);
 ```
 
-- conditional variable -> lets one thread sleep until another th
+- conditional variable -> lets one thread sleep until another thread wakes it
+```
+pthread_cond_wait(...) -> wait
+
+pthread_cond_signal(...) -> wake one waiting thread
+
+pthread_cond_broadcast(...) -> wake all waiting threads
+```
 
 
-
-pb24.
+Problem 24.
 ![[Pasted image 20260511142722.png]]
 - one child process using fork()
 - n threads in the parent process
