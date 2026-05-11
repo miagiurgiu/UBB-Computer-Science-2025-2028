@@ -7583,3 +7583,8 @@ int main() {
 pb24.
 metoda geto - arg=value?
 
+- how to deduce the function format (tha line, from manual)
+```
+void* potato(void* args, int x)
+```
+
