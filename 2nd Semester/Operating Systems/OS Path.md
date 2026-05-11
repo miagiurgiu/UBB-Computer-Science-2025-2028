@@ -7925,7 +7925,7 @@ int main(int argc, char **argv) {
 ```
 
 conditional variables: 
-- signal
-- broadcast
+- signal: pthread_cond_signal
+- broadcast: p
 - pthread cond wait
 - = wait until signal
