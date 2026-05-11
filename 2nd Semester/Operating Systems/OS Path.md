@@ -7624,8 +7624,8 @@ int main() {
 		pthread_create(arrayThreads+i, NULL, thread, (void*)i);
 	}
 	for(long i=0; i<n; i++){ // long, not int
-		// pthread_create(&(arrayThreads[i]))
-		pthread_create(*(arrayThreads+i));
+		pthread_join(arrayThreads[i],NULL); // if it was not null - pointer to another pointer=what each
+		pthread_join(*(arrayThreads+i));
 	}
 }
 ```
