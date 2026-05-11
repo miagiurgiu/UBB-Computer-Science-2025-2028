@@ -7597,6 +7597,7 @@ void* potato(void* args, int x)
 #include <stdio.h>
 #include <pthread.h>
 #include <stdlib.h>
+#include <unistd>
 
 int pip[2];
 
@@ -7621,7 +7622,8 @@ void* thread(void* args){
 	int toSend[3];
 	toSend[0]=a;
 	toSend[1]=b;
-	toSend[2[=]
+	toSend[2]=theID;
+	write(pip[1],toSend,sizeof(int))
 }
 
 int main() {
