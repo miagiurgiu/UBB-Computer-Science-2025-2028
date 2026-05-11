@@ -7783,7 +7783,9 @@ pb19
  - create all threads at once -> their behaviour is defined by id
  - create 2 threads -> each thread creates more -> etc (depth)
  - wait done through join
+ - create all and all wait at the barrier?
 method 2:
+- ?
 - barrier - lets n threads
 - mutex - lets 1 thread
 
