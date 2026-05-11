@@ -7746,7 +7746,7 @@ final version:
 #include <stdlib.h>
 #include <unistd.h>
 
-int pip[2];
+int pip[2]; // 
 int n = 8;
 pthread_mutex_t y = PTHREAD_MUTEX_INITIALIZER;
 
