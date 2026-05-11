@@ -7637,10 +7637,11 @@ pthread_mutex_unlock(&y);
 pthread_barrier_wait(&barrier);
 
 // barrier initialisation
+// all max-1 threads must arrive before any of them continue
 pthread_barrier_init(&barrier, NULL,max-1);
 ```
 
-
+- conditional variable -> lets one thread sleep until another th
 
 
 
