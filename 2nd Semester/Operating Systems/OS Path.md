@@ -7936,4 +7936,5 @@ pb28:
 ![[Pasted image 20260511154130.png]]
 - generate random numbers
 - exchange them if they're not okay
-- * sorted flag
+- *sorted flag, one mutex, one barrier
+- 
