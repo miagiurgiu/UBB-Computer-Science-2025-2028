@@ -7780,14 +7780,14 @@ void* thread(void* args){
 	//printf("%d %d %ld\n",a,b,theID);
 	
 	// send via pipe
-	int toSend[3]; // array sent to child
+	int toSend[3]; // array to be sent to child
 	toSend[0]=a;
 	toSend[1]=b;
 	toSend[2]=theID;
 	
-	pthread_mutex_lock(&y);
-	write(pip[1],toSend,sizeof(int)*3);
-	pthread_mutex_unlock(&y);
+	pthread_mutex_lock(&y); // only one thread may write
+	write(pip[1],toSend,sizeof(int)*3); // WRITE data through pipe to child
+	pthread_mutex_unlock(&y); // other threads may now WRITE
 	//write(pip[1],toSend,sizeof(toSend));
 }
 
