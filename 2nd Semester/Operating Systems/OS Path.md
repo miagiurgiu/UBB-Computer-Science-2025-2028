@@ -7788,6 +7788,7 @@ method 2:
 - ?
 - barrier - lets n threads
 - mutex - lets 1 thread
+- instead of a barrier - flag that is 0/1
 
 
 ```
