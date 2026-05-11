@@ -7672,7 +7672,6 @@ void* potato(void* args, int x)
 ```
 
 - each thread generates: a,b,thread_id and sends them as an array 
-- 
 ```
 #include <stdio.h> // printf
 #include <pthread.h> // pthread_create, pthread_join, mutexes
