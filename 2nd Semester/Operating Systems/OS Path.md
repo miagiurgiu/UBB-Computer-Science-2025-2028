@@ -7621,7 +7621,11 @@ int main() {
 	pthread_t arrayThreads[n];
 	for(long i=0; i<n; i++){ // long, not int
 		// pthread_create(&(arrayThreads[i]))
-		pthread_create(arrayThreads+i, NULL, thread, );
+		pthread_create(arrayThreads+i, NULL, thread, (void*)i);
+	}
+	for(long i=0; i<n; i++){ // long, not int
+		// pthread_create(&(arrayThreads[i]))
+		pthread_create(*(arrayThreads+i));
 	}
 }
 ```
