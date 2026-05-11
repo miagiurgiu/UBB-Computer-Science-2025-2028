@@ -7606,6 +7606,11 @@ void* thread(void* args){
 	// cast it to long because it's 8 bytes
 	long theID=(long)args; // this is casting
 	int a,b;
-	a=rand()%100+1;
+	a=(rand()%100)+1;
+	b=(rand()%100)+1;
+	// send via pipe
+	
 }
+
+int m
 ```
