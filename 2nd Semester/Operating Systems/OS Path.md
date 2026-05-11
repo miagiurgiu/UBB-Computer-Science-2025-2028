@@ -7631,7 +7631,11 @@ pthread_mutex_lock(&y);
 write(...);
 pthread_mutex_unlock(&y);
 ```
-- 
+- race condition -> when multiple threads access shared data at the same time and the result depends on timing (ex: two threads write to the same pipe at the same time) -> solution: mutex
+- barrier -> makes threads wait until a fixed number of threads reach the same point
+
+
+
 
 
 pb24.
