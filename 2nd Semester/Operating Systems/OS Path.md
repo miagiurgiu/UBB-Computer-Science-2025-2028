@@ -7604,11 +7604,16 @@ void* -> generic pointer (any kind of data can be passed to the thread)
 (void*)i -> convert number i into a generic pointer
 long theID=(long)args -> convert it back
 ```
-- best way to pass IDs:
+- not so good way to pass IDs:
 ```
 pthread_create(..., (void*)i);
 ```
-
+- best way to pass IDs:
+```
+ids[i]=i;
+pthread_create(..., &ids[i]);
+```
+- 
 
 
 pb24.
