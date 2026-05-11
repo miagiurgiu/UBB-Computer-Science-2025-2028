@@ -7619,7 +7619,14 @@ int id=*(int*)arg;
 	- all threads inside the same process have the same process id
 	- so getpid() cannot be used as a unique thread id
 	- this is why the parent gives its thread its own id
-- pipe ->
+- pipe -> connects two processes
+- mutex -> allows one thread at a time into a critical section
+	- declaring a mutex:
+```
+pthread_mutex_t y = PTHREAD_MUTEX_INITIALIZER
+```
+
+
 
 pb24.
 ![[Pasted image 20260511142722.png]]
