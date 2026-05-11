@@ -8102,5 +8102,12 @@ pb28:
 
 
 ```
-#include <std
+#include <stdlib.h>
+#include <stdio.h>
+#include <time.h>
+#include <pthread.h>
+
+int n;
+int *s;
+int sorted=0; // flag
 ```
