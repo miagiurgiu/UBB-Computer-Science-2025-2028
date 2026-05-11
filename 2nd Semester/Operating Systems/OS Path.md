@@ -7923,3 +7923,8 @@ int main(int argc, char **argv) {
     return 0;
 }
 ```
+
+conditional variables: 
+- signal
+- broadcast
+- pthread cond wait
