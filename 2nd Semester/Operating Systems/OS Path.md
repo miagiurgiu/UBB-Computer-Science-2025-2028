@@ -7937,4 +7937,5 @@ pb28:
 - generate random numbers
 - exchange them if they're not okay
 - *sorted flag, one mutex, one barrier
-- their method is good
+- their method is good, but could have been a mutex or a while true instead of a wait
+- implement this problem with 2 barriers, without data corruption - you should have 2 barriers,
