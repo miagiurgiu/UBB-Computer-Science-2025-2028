@@ -7674,7 +7674,7 @@ official method (with sync):
 
 int pip[2];
 int n=8; 
-pthread_mutex_t y = PTHREAD_MUTEX_INITIALIZER;
+pthread_mutex_t y = PTHREAD_MUTEX_INITIALIZER; // mutex initialised directly at compile time
 
 void copil(int pip[2]) { // send pipe as parameter (does not make sense if it is declared globally, but yeah)
 	close pip[1];
@@ -7703,7 +7703,10 @@ void* thread(void* args){
 	toSend[0]=a;
 	toSend[1]=b;
 	toSend[2]=theID;
+	
+	pthread_mutex_lock(&y);
 	write(pip[1],toSend,sizeof(int)*3);
+	pthread_mutex_unlock(&y);
 	//write(pip[1],toSend,sizeof(toSend));
 }
 
