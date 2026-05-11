@@ -7761,7 +7761,8 @@ void copil(int pip[2]) { // send pipe as parameter (does not make sense if it is
 	for(int i=0; i<n; i++){ // child reads one message/thread
 		int rec[3]; // store received data
 		read(pip[0],rec,sizeof(int)*3); // read 3 integers
-		printf("%d %d %d\n", rec[0],rec[1],rec[2]);
+		double avg=(rec[0]+rec[1])/2.0; // compute average
+		printf("%d %d %d\n", rec[0],rec[1],rec[2]); // debug
 	}
 }
 
