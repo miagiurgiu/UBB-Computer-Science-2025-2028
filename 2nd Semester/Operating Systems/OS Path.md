@@ -7919,7 +7919,8 @@ Order:
 - create T1, T2, T3... , T7 -> reach barrier | -> after all arrived, they continue -> new joins are safe
 
 method 2: recursive thread creation
-->  each thread creates its own children
+-> each thread creates its own children
+-> if leaf thread =
 - barrier - lets n threads
 - mutex - lets 1 thread
 - instead of a barrier - flag that is 0/1
