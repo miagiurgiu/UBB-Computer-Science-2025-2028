@@ -7606,7 +7606,7 @@ void* potato(void* args, int x)
 #include <stdlib.h> // rand, srand, atoi
 #include <unistd> // pipe, fork, read, write, close
 
-int pip[2];
+int pip[2]; // the pipe
 int n=1;  // int n=8; 
 
 void copil(int pip[2]) { // send pipe as parameter (does not make sense if it is declared globally, but yeah)
