@@ -7906,14 +7906,14 @@ pb19
 ![[Pasted image 20260511152213.png]]
  - binary-tree sum using threads
 	 - T2 waits for T4 and T5 => add results
-	 - T3 waits form T6 and T7 => add results
+	 - T3 waits for T6 and T7 => add results
 ![[Pasted image 20260511182918.png|263]]
 
  method 1: create all threads at once
 -> find smallest power of 2 bigger than n (binary trees work nicely with powers of 2)
 -> create all (m-1) threads at once -> their behaviour is defined by id (each one has its own id)
- - create 2 threads -> each thread creates more -> etc (depth)
- - wait done through join
+-> create 2 threads -> each thread creates more -> etc (depth)
+-> wait done through join (a )
  - create all and all wait at the barrier?
 method 2:
 - ?
