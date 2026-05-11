@@ -7621,11 +7621,17 @@ int id=*(int*)arg;
 	- this is why the parent gives its thread its own id
 - pipe -> connects two processes
 - mutex -> allows one thread at a time into a critical section
-	- declaring a mutex:
+- declaring a mutex:
 ```
 pthread_mutex_t y = PTHREAD_MUTEX_INITIALIZER
 ```
-		- USI
+- using a mutex:
+```
+pthread_mutex_lock(&y);
+write(...);
+pthread_mutex_unlock(&y);
+```
+- 
 
 
 pb24.
