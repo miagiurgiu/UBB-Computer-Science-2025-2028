@@ -7581,4 +7581,5 @@ int main() {
 ### Lab - 11 may 2026
 
 pb24.
+metoda geto - arg=value?
 
