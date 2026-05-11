@@ -7581,6 +7581,9 @@ int main() {
 ### Lab 11 - 11 may 2026
 thread
 
+Process = a running program
+Thread = execution unit inside a process
+- all threads in
 pb24.
 ![[Pasted image 20260511142722.png]]
 - one child process using fork()
