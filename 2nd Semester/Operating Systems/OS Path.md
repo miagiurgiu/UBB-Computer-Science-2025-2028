@@ -7661,4 +7661,74 @@ int main() {
 ```
 - after running this version, it works without synchronisation. why? 
 	- only one call in pipe -> atomic
-	- read, write -> might return an integer who says how much they managed to re
+	- read, write -> might return an integer who says how much they managed to read/write
+	- child only reads from pipe, it does not know there might be more threads
+	- if more reading -> mutex
+
+official method:
+```
+#include <stdio.h>
+#include <pthread.h>
+#include <stdlib.h>
+#include <unistd>
+
+int pip[2];
+int n=1;  // int n=8; 
+
+void copil(int pip[2]) { // send pipe as parameter (does not make sense if it is declared globally, but yeah)
+	close pip[1];
+	for(int i=0; i<n; i++){
+		int rec[3];
+		read(pip[0],rec,sizeof(int)*3);
+		printf("%d %d %d\n", rec[0],rec[1],rec[2]);
+	}
+}
+
+// thread
+void* thread(void* args){
+	// receives a unique id from the parent
+	// geto method
+	// cast it to long because it's 8 bytes
+	// close(pip[0]);  // should not be here because if it was here it would be called as many times as threads are.
+	long theID=(long)args; // this is casting
+	int a,b;
+	a=(rand()%100)+1;
+	b=(rand()%100)+1;
+	
+	//printf("%d %d %ld\n",a,b,theID);
+	
+	// send via pipe
+	int toSend[3];
+	toSend[0]=a;
+	toSend[1]=b;
+	toSend[2]=theID;
+	write(pip[1],toSend,sizeof(int)*3);
+	//write(pip[1],toSend,sizeof(toSend));
+}
+
+int main() {
+	int n=1; // read from keyboard
+	
+	//int pip[2];
+	srand(time(NULL));
+	pipe(pip);
+	
+	int theCopil=fork();
+	if(theCopil!=0){ // parent
+			// define the array of threads statically/dinamically
+		pthread_t arrayThreads[n];
+		for(long i=0; i<n; i++){ // long, not int
+			// pthread_create(&(arrayThreads[i]))
+			pthread_create(arrayThreads+i, NULL, thread, (void*)i);
+		}
+		for(long i=0; i<n; i++){ // long, not int
+			pthread_join(arrayThreads[i],NULL); // if it was not null - pointer to another pointer=what the function that gives the thread returns?
+			//pthread_join(*(arrayThreads+i));
+		}
+	}
+	else {
+		copil(pip);
+	}
+	
+}
+```
