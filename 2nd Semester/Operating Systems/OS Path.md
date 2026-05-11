@@ -7596,6 +7596,7 @@ void* potato(void* args, int x)
 ```
 #include <stdio.h>
 #include <pthread.h>
+#include <stdlib.h>
 
 void copil() {
 	
@@ -7618,7 +7619,7 @@ int main() {
 	int n=4; // read from keyboard
 	// define the array of threads statically/dinamically
 	pthread_t arrayThreads[n];
-	for(int i=0; i<n; i++){
+	for(long i=0; i<n; i++){ // long, not int
 		// pthread_create(&(arrayThreads[i]))
 		pthread_create(arrayThreads+i, NULL, thread, );
 	}
