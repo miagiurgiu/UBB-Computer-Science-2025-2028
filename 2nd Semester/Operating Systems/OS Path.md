@@ -7597,7 +7597,8 @@ arrayThreads+i ---- the same as ---- &arrayThreads[i] = address of thread slot i
 ```
 void* function(void* args)
 
-void* -
+void* -> generic pointer (any kind of data can be passed to the thread)
+(void*)i -> convert number i into a generic pointer
 ```
 
 
