@@ -7635,6 +7635,9 @@ pthread_mutex_unlock(&y);
 - barrier -> makes threads wait until a fixed number of threads reach the same point
 ```
 pthread_barrier_wait(&barrier);
+
+// barrier initialisation
+pthread_barrier_init(&barrier, NULL,max-1);
 ```
 
 
