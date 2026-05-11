@@ -8141,8 +8141,16 @@ void* worker(void* arg){
 			int first=i;
 			int second=j;
 			if(first>second){
-				
+				int aux=first;
+				first=second;
+				second=aux;
 			}
+			pthread_mutex_lock(&mutexes[first]);
+			pthread_mutex_lock(&mutexes[second]);
+			if(i<j && s[i]>s[j]){
+				swap(i,j);
+			}
+			
 		}
 	}
 }
