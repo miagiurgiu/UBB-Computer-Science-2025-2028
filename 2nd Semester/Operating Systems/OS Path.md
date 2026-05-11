@@ -7905,7 +7905,9 @@ int main()
 pb19
 ![[Pasted image 20260511152213.png]]
  - binary-tree sum using threads
- method 1:
+![[Pasted image 20260511182918.png|263]]
+
+ method 1: create all thre
  - find smallest power of 2 bigger than n
  - create all threads at once -> their behaviour is defined by id
  - create 2 threads -> each thread creates more -> etc (depth)
