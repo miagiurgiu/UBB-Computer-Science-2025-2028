@@ -7612,7 +7612,7 @@ void* thread(void* args){
 	a=(rand()%100)+1;
 	b=(rand()%100)+1;
 	// send via pipe
-	
+	// printf("%d %d\n",a,b);
 }
 
 int main() {
@@ -7625,7 +7625,7 @@ int main() {
 	}
 	for(long i=0; i<n; i++){ // long, not int
 		pthread_join(arrayThreads[i],NULL); // if it was not null - pointer to another pointer=what the function that gives the thread returns?
-		pthread_join(*(arrayThreads+i));
+		//pthread_join(*(arrayThreads+i));
 	}
 }
 ```
