@@ -7935,7 +7935,7 @@ Order:
 - T2 creates T4,T5
 - T3 creates T6,T7...
 
-method 1:
+method 1: barrier + join
 -> read n
 -> compute m=next power of 2
 -> pad array with zeroes until reaching size m
