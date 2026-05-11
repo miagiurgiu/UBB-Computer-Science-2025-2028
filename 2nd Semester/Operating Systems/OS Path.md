@@ -8150,6 +8150,15 @@ void* worker(void* arg){
 			if(i<j && s[i]>s[j]){
 				swap(i,j);
 			}
+			if(i>j && s[i]<s[j]){
+				swap(i,j);
+			}
+			pthread_mutex_unlock(&mutexes[second]);
+			pthread_mutex_unlock(&mutexes[first]);
+		}
+		pthread_barrier_wait(&b1);
+		if(id==0)
+		{
 			
 		}
 	}
