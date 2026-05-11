@@ -7588,11 +7588,15 @@ Thread = execution unit inside a process
 ```
 pthread_create(arrayThreads+i, NULL, thread, (void*)i)
 
-arrayThreads+i ---- the same as ---- &arrayThreads[i]
+arrayThreads+i ---- the same as ---- &arrayThreads[i] = address of thread slot i
 
 ```
 - wait for thread: pthread_join(...)
-- 
+- thread function:
+```
+void* thread(void* args)
+```
+
 
 pb24.
 ![[Pasted image 20260511142722.png]]
