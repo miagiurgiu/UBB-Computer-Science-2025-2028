@@ -7599,5 +7599,10 @@ void copil() {
 	
 }
 
-// thread in whic
+// thread
+void* thread(void* args){
+	// receives a unique id from the parent
+	// geto method
+	// cast it to long because it's 8 bytes
+}
 ```
