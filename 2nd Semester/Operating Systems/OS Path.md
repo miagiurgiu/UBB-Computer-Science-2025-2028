@@ -7584,7 +7584,10 @@ thread
 Process = a running program
 Thread = execution unit inside a process
 - all threads in the same process share global variables, memory, file descriptors
-- create thread: pthread_create(...)
+- create thread: pthread_create(&thread_id, NULL, function, arg)
+```
+pthread_create(arrayThreads+i, NULL, thread, (void*)i)
+```
 - wait for thread: pthread_join(...)
 - 
 
