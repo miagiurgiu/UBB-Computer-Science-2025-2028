@@ -8202,6 +8202,17 @@ int main() {
 		pthread_create(&threads[i],NULL,worker,(void*)i);
 	}
 	pthread_create(&threads[n],NULL,printer,NULL);
+	for(int i=0; i<n+1; i++){
+		pthread_join(threads[i],NULL);
+	}
+	for(int i=0; i<n; i++){
+		pthread_mutex_destroy(&mutexes[i]);
+	}
+	pthread_barrier_destroy(&b1);
+	pthread_barrier_destroy(&b2);
+	free(s);
+	free(threads);
+	free(mutexes);
 }
 
 ```
