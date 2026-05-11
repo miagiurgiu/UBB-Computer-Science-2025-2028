@@ -7933,9 +7933,12 @@ Order:
 - main creates T1
 - T1 creates T2,T3
 - T2 creates T4,T5
-- T3 creates T6,T7
+- T3 creates T6,T7...
 
-
+method 1:
+-> read n
+-> compute m=next power of 2
+-> pad array with zeroes until
 ```
 #include <pthread.h>
 #include <unistd.h>
