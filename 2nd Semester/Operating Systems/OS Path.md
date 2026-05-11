@@ -8138,7 +8138,11 @@ void* worker(void* arg){
 		int i=rand()%n;
 		int j=rand()%n;
 		if(i!=j){
-			int first=i
+			int first=i;
+			int second=j;
+			if(first>second){
+				
+			}
 		}
 	}
 }
