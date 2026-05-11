@@ -7654,17 +7654,19 @@ pthread_cond_broadcast(...) -> wake all waiting threads
 Problem 24.
 ![[Pasted image 20260511142722.png]]
 - Create n threads and one child process
-- one child process using fork()
-- n threads in the parent process
-- pipe so threads can send data to child
-- mutex so only one thread writes to the pipe at a time
-- metoda geto - arg=value?
-- how to deduce the function format (tha line, from manual)
-- different id for each thread (not getpid() - that returns the same thing, 5)
-- race condition if two threads want to send numbers through pipe => sync with mutex
-- methods of giving pointer:
-	- 1. &(arrayThreads[i])
-	- 2. (arrayThreads+1)
+- each thread generates 2 numbers and sends them to the child via pipe
+- child prints the average
+	- one child process using fork()
+	- n threads in the parent process
+	- pipe so threads can send data to child
+	- mutex so only one thread writes to the pipe at a time
+	- metoda ghetto - arg=value?
+	- how to deduce the function format (the line, from manual)
+	- different id for each thread (not getpid() - that returns the same thing, 5)
+	- race condition if two threads want to send numbers through pipe => sync with mutex
+	- methods of giving pointer:
+		- 1. &(arrayThreads[i])
+		- 2. (arrayThreads+1)
 ```
 void* potato(void* args, int x)
 ```
