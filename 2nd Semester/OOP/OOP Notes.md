@@ -1711,7 +1711,8 @@ EVENT HANDLING IN GUI FRAMEWORKS
 - disadvantage: processing function has to know about callback function
 ![[Pasted image 20260513141315.png|412]]
 
-1) Slots and Signals = alternatives to the callback mechanism
+2) Slots and Signals = alternatives to the callback mechanism
 - communication between objects
 -  slots = functions (function called in response to a particular signal)
- - signals = events (ex: signal emmited when a button is clicked)
+ - signals = events (ex: signal emitted when a button is clicked)
+ - 
