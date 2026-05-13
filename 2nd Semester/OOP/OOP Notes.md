@@ -1722,5 +1722,8 @@ EVENT HANDLING IN GUI FRAMEWORKS
  ![[Pasted image 20260513142134.png|405]]
  - starting with QT5, you don't have to write "slots: " inside the myGUI class, only "signal:" if you want to define your own signals
  - how to connect a signal and a slot (ex: synchronise spinner and slidebox)
- 3) introspection = at runtime you can inspect your objects: what are its superclasses, see their methods, see all (private+public) attributes
- 4) 
+
+META-OBJECT SYSTEM
+- allows us to have extra information about classes
+ 1) introspection = at runtime you can inspect your objects: what are its superclasses, see their methods, see all (private+public) attributes
+ 2) signals and slots
