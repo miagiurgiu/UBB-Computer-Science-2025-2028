@@ -1700,3 +1700,5 @@ public:
 
 ## Lecture 11 - 13 may 2026
 QT signals and slots
+
+1) callback = function called by another function
