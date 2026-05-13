@@ -1150,5 +1150,6 @@ dll -> does not matter
 - this allows me to iterate in the exact order of the added elements
 - for searching we use the hash table part (for performance)
 - ADD:
-	- add to hash table as usual (compute value of hash func)
-	- 
+	- add to hash table as usual (compute value of hash function, create node, add at beginning at the position given by hash function)
+	- at the end of the linked list - complexity: SLL -> theta(n)
+		
