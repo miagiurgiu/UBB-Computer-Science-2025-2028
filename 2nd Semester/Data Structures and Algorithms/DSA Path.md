@@ -1134,6 +1134,7 @@ dll -> does not matter
 - if both slots are full, x kicks out the current resident, forcing it to its alternative table
 
 2) Perfect hashing
+- hash table of hash tables
 - ensures O(1) WC lookup time with no collisions
-- uses a two-level hiera
+- uses a two-level hierarchy: a main hash table where each bucket points to a secondary small hash table using a different hash function chosen to be collision-free for that data set
 1) Linked hash table
