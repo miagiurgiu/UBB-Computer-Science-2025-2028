@@ -1697,3 +1697,6 @@ public:
   
     void run();
 ```
+
+## Lecture 11 - 13 may 2026
+QT signals and slots
