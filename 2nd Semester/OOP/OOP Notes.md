@@ -1720,4 +1720,5 @@ EVENT HANDLING IN GUI FRAMEWORKS
  - more signals -> same slot
  - ! SIGNATURE OF SIGNAL MUST MATCH THE SIGNATURE OF RECEIVING SLOT! (the signals and slots mechanism is type safe)
  ![[Pasted image 20260513142134.png|405]]
- - how to connect a signal and a 
+ - starting with QT5, you don't have to write "slots: " inside the myG
+ - how to connect a signal and a slot:
