@@ -1751,3 +1751,6 @@ Inside GUIClass -> all the elements
 - layouts
 - labels...
 ![[Pasted image 20260513152800.png|495]]
+- for(auto& s: elems) -> reference, avoid copies for each element
+- for(auto s: elems) -> copies data, wasting memory
+- for(const auto& s: elems) -> for reading data only (because it prevents modification)
