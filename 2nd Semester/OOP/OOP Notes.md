@@ -1732,5 +1732,7 @@ META-OBJECT SYSTEM
 If you connect like this, you don't need the additional macro Q_OBJECT
  ![[Pasted image 20260513144508.png|588]]
 
-- create your own signals:
-- 
+- create your own signals: using "signals" macro
+	- they must be of type void
+![[Pasted image 20260513144630.png|600]]
+- emit your own si
