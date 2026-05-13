@@ -1130,7 +1130,10 @@ dll -> does not matter
 
 1) Cuckoo hashing
 - 2 hash tables, each table has 2 hash functions
-- an item x is stored in either T1
+- an item x is stored in either T1 or T2
+- if both slots are full, x kicks out the current resident, forcing it to its alternative table
 
 2) Perfect hashing
-3) Linked hash table
+- ensures O(1) WC lookup time with no collisions
+- uses a two-level hiera
+1) Linked hash table
