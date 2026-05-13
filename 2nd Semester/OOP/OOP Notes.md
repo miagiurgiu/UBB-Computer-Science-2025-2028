@@ -1747,4 +1747,7 @@ GUI.h -> class GUI -> has inside private: Ui::GUIClass ui;
 GUI.cpp
 
 inside GUIClass -> all the elements
-- spaceships lis
+- spaceshipsListWidget;
+- layouts
+- labels
+- 
