@@ -1743,5 +1743,8 @@ UIC = user interface compiler, code generator, it generates additional c++ file 
 
 files:
 GUI.ui -> xml files that gets modified from the QTDesigner
-GUI.h -> class GUI
+GUI.h -> class GUI -> has inside private: Ui::GUIClass ui;
 GUI.cpp
+
+inside GUIClass -> all the elements
+- spaceships lis
