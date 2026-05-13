@@ -1739,3 +1739,4 @@ If you connect like this, you don't need the additional macro Q_OBJECT
 ![[Pasted image 20260513144734.png|599]]
 
 QT DESIGNER
+uic - user interface compiler
