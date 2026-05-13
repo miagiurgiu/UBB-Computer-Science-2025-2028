@@ -1130,6 +1130,7 @@ dll -> does not matter
 
 1) Cuckoo hashing
 - 2 hash tables, each table has 2 hash functions
+- an item x is stored in either T1
 
 2) Perfect hashing
 3) Linked hash table
