@@ -1142,11 +1142,13 @@ dll -> does not matter
 - hybrid between separate chaining + linked list
 - standard hash table that mantains a doubly-linked list running through all entries
 - preserves the insertion order of elements
-- ensures O(1) AC for search, insertion, deletion
+- ensures O(1) AC for search, insertion, deletion -> better than O(n) for linked list
 - the red arrows represent a doubly-linked list superimposed over the hash buckets -> these mantain the temporal order
 - head: points to 12 (first element)
 - links: each node has a next pointer (red arrow) to the next element inserted
 - tail: points to the most recent insertion
 - this allows me to iterate in the exact order of the added elements
 - for searching we use the hash table part (for performance)
-- 
+- ADD:
+	- add to hash table as usual (compute value of hash func)
+	- 
