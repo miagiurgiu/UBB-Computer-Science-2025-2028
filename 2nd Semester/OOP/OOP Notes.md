@@ -1702,7 +1702,7 @@ public:
 QT signals and slots
 
 EVENT HANDLING IN GUI FRAMEWORKS
-1) callback = function (=prcalled by another function
+1) callback = function (=callback function) called by another function (=processing function)
 - that function is executed at the time of clicking that button
 - ex: sorting algorithm - comparison function passed to a sorting algorithm (dsa, fp)
 - that smaller function - measures the progress
@@ -1710,3 +1710,7 @@ EVENT HANDLING IN GUI FRAMEWORKS
 - function pointer (in C/C++) / std::function (in C++)
 - disadvantage: processing function has to know about callback function
 ![[Pasted image 20260513141315.png|412]]
+
+1) Slots and Signals
+-  slots = functions
+ - signals = events
