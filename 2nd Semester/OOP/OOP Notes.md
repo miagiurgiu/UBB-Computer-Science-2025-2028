@@ -1714,5 +1714,5 @@ EVENT HANDLING IN GUI FRAMEWORKS
 2) Slots and Signals = alternatives to the callback mechanism
 - communication between objects
 -  slots = functions (function called in response to a particular signal)
- - signals = events (ex: signal emitted when a button is clicked)
+ - signals = events (ex: signal emitted when a button is clicked, as a result of user)
  - 
