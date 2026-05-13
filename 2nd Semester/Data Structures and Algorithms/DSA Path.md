@@ -1139,7 +1139,7 @@ dll -> does not matter
 - uses a two-level hierarchy: a main hash table where each bucket points to a secondary small hash table using a different hash function chosen to be collision-free for that data set
 
 3) Linked hash table
-- separate chaining + linked list
+- hybrid between separate chaining + linked list
 - standard hash table that mantains a doubly-linked list running through all entries
 - preserves the insertion order of elements
 - ensures O(1) AC for search, insertion, deletion
@@ -1148,3 +1148,5 @@ dll -> does not matter
 - links: each node has a next pointer (red arrow) to the next element inserted
 - tail: points to the most recent insertion
 - this allows me to iterate in the exact order of the added elements
+- for searching we use the hash table part (for performance)
+- 
