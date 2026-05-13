@@ -1715,4 +1715,7 @@ EVENT HANDLING IN GUI FRAMEWORKS
 - communication between objects
 -  slots = functions (function called in response to a particular signal)
  - signals = events (ex: signal emitted when a button is clicked, as a result of user)
+ - they can be independent and then be interchanged ex: signals of one class can access the slots of another class
+ - one signal -> multiple slots
+ - more signals -> same slot
  - 
