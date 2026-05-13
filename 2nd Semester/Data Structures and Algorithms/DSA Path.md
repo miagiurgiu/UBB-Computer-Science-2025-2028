@@ -1140,7 +1140,7 @@ dll -> does not matter
 
 3) Linked hash table
 - hybrid between separate chaining + linked list
-- standard hash table that mantains a doubly-linked list running through all entries
+- standard hash table that mantains a doubly-linked list running through all entries (because of the REMOVE)
 - preserves the insertion order of elements
 - ensures O(1) AC for search, insertion, deletion -> better than O(n) for linked list
 - the red arrows represent a doubly-linked list superimposed over the hash buckets -> these mantain the temporal order
@@ -1159,3 +1159,4 @@ dll -> does not matter
 	- compute value of hash function -> position -> 
 	- DLL -> you need the node before that
 	- finding previous node -> theta(n)
+
