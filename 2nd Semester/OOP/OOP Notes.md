@@ -1739,14 +1739,15 @@ If you connect like this, you don't need the additional macro Q_OBJECT
 ![[Pasted image 20260513144734.png|599]]
 
 QT DESIGNER
-UIC = user interface compiler, code generator, it generates additional c++ file that is compiled with the rest of the program 
+- UIC = user interface compiler, code generator, it generates additional c++ file that is compiled with the rest of the program 
 
-files:
+- files:
 GUI.ui -> xml files that gets modified from the QTDesigner
 GUI.h -> class GUI -> has inside private: Ui::GUIClass ui;
 GUI.cpp -> 
 
-inside GUIClass -> all the elements
+Inside GUIClass -> all the elements
 - spaceshipsListWidget;
 - layouts
 - labels...
+![[Pasted image 20260513152800.png|495]]
