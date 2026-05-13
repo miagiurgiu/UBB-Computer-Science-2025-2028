@@ -1127,3 +1127,7 @@ dll -> does not matter
 
 
 ## Lecture 11 -  may 2026
+
+1) Cuckoo hashing
+- 2 hash tables, each table has 2 hash functions
+- 
