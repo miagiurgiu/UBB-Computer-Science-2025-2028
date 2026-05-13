@@ -1726,5 +1726,5 @@ EVENT HANDLING IN GUI FRAMEWORKS
 META-OBJECT SYSTEM
 - allows us to have extra information about classes
  1) introspection = at runtime you can inspect your objects: what are its superclasses, see their methods, see all (private+public) attributes -> provided by MOC (meta-object-compiler, this is the tool that provides introspection support)
- - MOC = code generator, it parses the header files and generates an additional c++ file that is compiled with the rest of the program -> this does
+ - MOC = code generator, it parses the header files and generates an additional c++ file that is compiled with the rest of the program -> this does everything related to signal and slots + allows us to do introspection on that class
  1) signals and slots
