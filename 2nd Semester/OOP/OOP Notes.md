@@ -1705,4 +1705,4 @@ QT signals and slots
 - that function is executed at the time of clicking that button
 - ex: sorting algorithm - comparison function passed to a sorting algorithm (dsa, fp)
 - that smaller function - measures the progress
-- 
+- pass function as parameter
