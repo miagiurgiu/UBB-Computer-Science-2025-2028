@@ -1158,3 +1158,4 @@ dll -> does not matter
 	- for finding -> use the hash table
 	- compute value of hash function -> position -> 
 	- DLL -> you need the node before that
+	- finding previous node -> theta(n)
