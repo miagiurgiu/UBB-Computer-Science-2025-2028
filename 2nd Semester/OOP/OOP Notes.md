@@ -1739,4 +1739,9 @@ If you connect like this, you don't need the additional macro Q_OBJECT
 ![[Pasted image 20260513144734.png|599]]
 
 QT DESIGNER
-uic - user interface compiler
+UIC = user interface compiler, code generator, it generates additional c++ file that is compiled with the rest of the program 
+
+files:
+GUI.ui -> xml files that gets modified from the QTDesigner
+GUI.h -> class GUI
+GUI.cpp
