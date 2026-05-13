@@ -1725,5 +1725,6 @@ EVENT HANDLING IN GUI FRAMEWORKS
 
 META-OBJECT SYSTEM
 - allows us to have extra information about classes
- 1) introspection = at runtime you can inspect your objects: what are its superclasses, see their methods, see all (private+public) attributes
- 2) signals and slots
+ 1) introspection = at runtime you can inspect your objects: what are its superclasses, see their methods, see all (private+public) attributes -> provided by MOC (meta-object-compiler, this is the tool that provides introspection support)
+ - 
+ 1) signals and slots
