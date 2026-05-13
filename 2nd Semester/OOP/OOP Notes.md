@@ -1722,3 +1722,5 @@ EVENT HANDLING IN GUI FRAMEWORKS
  ![[Pasted image 20260513142134.png|405]]
  - starting with QT5, you don't have to write "slots: " inside the myGUI class, only "signal:" if you want to define your own signals
  - how to connect a signal and a slot (ex: synchronise spinner and slidebox)
+ 2) introspection
+ 3)
