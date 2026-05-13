@@ -1701,10 +1701,12 @@ public:
 ## Lecture 11 - 13 may 2026
 QT signals and slots
 
-1) callback = function called by another function
+EVENT HANDLING IN GUI FRAMEWORKS
+1) callback = function (=prcalled by another function
 - that function is executed at the time of clicking that button
 - ex: sorting algorithm - comparison function passed to a sorting algorithm (dsa, fp)
 - that smaller function - measures the progress
 - pass function as parameter
 - function pointer (in C/C++) / std::function (in C++)
+- disadvantage: processing function has to know about callback function
 ![[Pasted image 20260513141315.png|412]]
