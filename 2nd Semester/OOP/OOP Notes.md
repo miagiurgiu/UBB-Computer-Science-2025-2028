@@ -1754,3 +1754,9 @@ Inside GUIClass -> all the elements
 - for(auto& s: elems) -> reference, avoid copies for each element
 - for(auto s: elems) -> copies data, wasting memory
 - for(const auto& s: elems) -> for reading data only (because it prevents accidental modification)
+
+QMainWindow -> a more customizable, complex window, not just a widget
+- menu bar
+- toolbars
+- central widget
+- status bar
