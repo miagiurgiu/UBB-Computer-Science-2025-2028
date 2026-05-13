@@ -1141,3 +1141,4 @@ dll -> does not matter
 - standard hash table that mantains a doubly-linked list running through all entries
 - preserves the insertion order of elements
 - ensures O(1) AC for search, insertion, deletion
+- the red arrows represent a doubly-linked list 
