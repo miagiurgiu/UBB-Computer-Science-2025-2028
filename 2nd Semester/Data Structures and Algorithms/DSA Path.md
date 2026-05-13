@@ -1138,3 +1138,6 @@ dll -> does not matter
 - ensures O(1) WC lookup time with no collisions
 - uses a two-level hierarchy: a main hash table where each bucket points to a secondary small hash table using a different hash function chosen to be collision-free for that data set
 1) Linked hash table
+- standard hash table that mantains a doubly-linked list running through all entries
+- preserves the insertion order of elements
+- ensures O(1) AC for search, insertion, 
