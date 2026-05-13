@@ -1126,3 +1126,4 @@ dll -> does not matter
 - getMinimum is theta(1), but pop is theta(n) 
 
 
+## Lecture 11 - 
