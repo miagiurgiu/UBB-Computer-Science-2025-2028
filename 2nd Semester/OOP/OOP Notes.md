@@ -1702,3 +1702,5 @@ public:
 QT signals and slots
 
 1) callback = function called by another function
+- that function is executed at the time of clicking that button
+- ex: sorting algorithm - comparon function passed to a sorting algorithm
