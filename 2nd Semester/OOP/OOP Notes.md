@@ -1706,3 +1706,5 @@ QT signals and slots
 - ex: sorting algorithm - comparison function passed to a sorting algorithm (dsa, fp)
 - that smaller function - measures the progress
 - pass function as parameter
+- function pointer (in C/C++) / std::function (in C++)
+![[Pasted image 20260513141315.png|412]]
