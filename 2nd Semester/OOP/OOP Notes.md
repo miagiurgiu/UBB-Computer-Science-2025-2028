@@ -1718,4 +1718,5 @@ EVENT HANDLING IN GUI FRAMEWORKS
  - they can be independent and then be interchanged ex: signals of one class can access the slots of another class
  - one signal -> multiple slots
  - more signals -> same slot
+ - ! SIGNATURE OF SIGNAL MUST MATCH THE SIGNATURE OF RECEIVING SLOT! (the signals and slots )
  ![[Pasted image 20260513142134.png|405]]
