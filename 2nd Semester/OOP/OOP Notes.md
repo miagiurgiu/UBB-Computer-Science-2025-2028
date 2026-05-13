@@ -1735,4 +1735,5 @@ If you connect like this, you don't need the additional macro Q_OBJECT
 - create your own signals: using "signals" macro
 	- they must be of type void
 ![[Pasted image 20260513144630.png|600]]
-- emit your own si
+- emit your own signals: using "emit" macro
+![[Pasted image 20260513144734.png|599]]
