@@ -1152,4 +1152,4 @@ dll -> does not matter
 - ADD:
 	- add to hash table as usual (compute value of hash function, create node, add at beginning at the position given by hash function)
 	- at the end of the linked list - complexity: SLL -> theta(n)
-		
+									- DLL -> TAIL is essential (I need a reference to the tail, i want to put the new element to the end)
