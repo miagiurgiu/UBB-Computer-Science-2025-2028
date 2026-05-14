@@ -1760,3 +1760,8 @@ QMainWindow -> a more customizable, complex window, not just a widget
 - toolbars
 - central widget
 - status bar
+
+
+### Lab 14 may 2026
+
+A9:
