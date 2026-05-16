@@ -1,0 +1,11 @@
+1) Node** table means “pointer to an array of Node*”
+this->table = new Node*[this->capacity];
+Breakdown:
+Node* = pointer to one linked-list node
+Node*[capacity] = array of node pointers
+new = allocate memory dynamically
+this->table = stores the array address
+Why Node*?
+Each hash-table slot stores the head pointer of a linked list (separate chaining).
+Why Node**?
+Because the whole table is an array of Node* pointers.
