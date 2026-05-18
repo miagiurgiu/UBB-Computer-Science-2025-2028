@@ -8265,6 +8265,14 @@ int main(int argc, char ** argv) {
 		pthread_create(&threads[i], NULL, worker, &data[i]);
 	}
 	
+	for(int i=0; i<n; i++){ // wait for all threads
+		pthread_join(threads[i],NULL);
+	}
+	
+	printf("\nFinal strings:\n");
+	for(int i=1; i<argc;i++){
+		
+	}
 }
 
 ```
