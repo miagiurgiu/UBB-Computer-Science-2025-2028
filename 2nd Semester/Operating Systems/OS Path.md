@@ -8259,7 +8259,7 @@ int main(int argc, char ** argv) {
 	pthread_t threads[n]; // array of n thread IDs
 	ThreadData data[n]; // array of structs (stores each thread's word and id)
 	
-	for(int i=0; i<n; i++){ // create n threads
+	for(int i=0; i<n; i++){ // create n threads, traverse the arguments
 		data[i].word=argv[i+1]; // argv[0] is program's name
 		data[i].id=i;
 		pthread_create(&threads[i], NULL, worker, &data[i]);
