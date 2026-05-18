@@ -8260,9 +8260,10 @@ int main(int argc, char ** argv) {
 	ThreadData data[n]; // array of structs (stores each thread's word and id)
 	
 	for(int i=0; i<n; i++){ // create n threads, traverse the arguments
-		// data[]
+		// data[] array gets filled manually:
 		data[i].word=argv[i+1]; // argv[0] is program's name
 		data[i].id=i;
+		// threads[] array gets filled automatically with threads IDs
 		pthread_create(&threads[i], NULL, worker, &data[i]); // start each thread and run worker()
 	}
 	
