@@ -8287,6 +8287,9 @@ Pb 12a
 - create n threads (n=nr rows)
 - each thread -> sum of numbers on that row
 - main process waits for threads to finish -> print sum
+- OBSERVATIONS:
+	- fopen vs open vs popen
+		- fopen() -> normal file read/write with FILE* 
 ```
 #include ...
 
