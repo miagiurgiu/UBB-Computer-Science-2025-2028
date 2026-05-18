@@ -8235,5 +8235,8 @@ Pb 18.
 #include <ctype.h>
 #include <string.h>
 
+typedef struct {
+	char *word;
+}
 
 ```
