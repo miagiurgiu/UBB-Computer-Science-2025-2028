@@ -8237,8 +8237,13 @@ Pb 18.
 
 // structure sent to each thread
 typedef struct {
-	char *word;
-	int id;
+	char *word; // the word handled by the thread
+	int id; // thread id
+}
+
+// thread function 
+void* worker(void* arg) {
+	
 }
 
 ```
