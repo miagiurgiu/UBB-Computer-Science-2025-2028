@@ -8348,7 +8348,7 @@ int main(int argc, char** argv){
 		data[i].id=i;
 		data[i].row=matrix[i];
 		data[i].cols=cols;
-		data[i].sum=0
+		//data[i].sum=0 // we do it in worker anyway
 		pthread_create(&threads[i],NULL,worker,&data[i]);
 	}
 	
