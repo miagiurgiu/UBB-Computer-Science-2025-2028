@@ -8290,10 +8290,12 @@ Pb 12a
 ```
 #include ...
 
-
 typedef struct {
 	int id; // thread id = row number
 	int *row; // pointer to one matrix row
 	int cols; // nr of columns
-}
+	int sum; // result computed by thread
+} ThreadData;
+
+
 ```
