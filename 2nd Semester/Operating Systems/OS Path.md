@@ -8297,6 +8297,7 @@ Pb 12a
 	- we use `int **matrix = malloc(rows * sizeof(int*))` because matrix stores many row addresses (matrix[0] points to row 0 etc.)
 		- `matrix[1][2]` -> in my problem: `data->row[2]` because data stores `matrix[i]`
 	- `pthread_join` waits for the thread to finish its work, not just to be created (without join, main process might start printing results before all threads finish calculating)
+	![[Pasted image 20260518155318.png|489]]
 ```
 #include ...
 
@@ -8333,7 +8334,7 @@ int main(int argc, char** argv){
 	fscanf(f, "%d %d", &rows, &cols); // read matrix size
 	int **matrix=malloc(rows*sizeof(int*)); // allocate matrix: rows pointers
 	// *matrix -> matrix points to an int
-	// **matrix -> 
+	// **matrix -> matrix points to pointers
 	for(int i=0; i<rows; i++){ // allocate each row
 		matrix[i]=malloc(cols*sizeof(int));
 	}
