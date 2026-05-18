@@ -8334,12 +8334,17 @@ int main(int argc, char** argv){
 	
 	pthread_t threads[rows]; // one thread per row
 	ThreadData data[rows]; // one data structure per thread
+	
 	for(int i=0; i<rows; i++) { // create as many threads as rows are
 		data[i].id=i;
 		data[i].row=matrix[i];
 		data[i].cols=cols;
 		data[i].sum=0
 		pthread_create(&threads[i],NULL,worker,&data[i]);
+	}
+	
+	for(int i=0; i<rows; i++) {
+		pthread_join(threads[i],NULL);
 	}
 }
 ```
