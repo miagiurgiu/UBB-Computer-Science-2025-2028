@@ -8256,8 +8256,12 @@ int main(int argc, char ** argv) {
 		exit(1);
 	}
 	int n=argc-1; // nr of threads needed
-	pthread_t threads[n];
+	pthread_t threads[n]; // array of n thread IDs
+	ThreadData data[n]; // array of structs
 	
+	for(int i=0; i<n; i++){
+		
+	}
 	
 }
 
