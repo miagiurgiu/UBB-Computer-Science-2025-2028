@@ -8289,7 +8289,8 @@ Pb 12a
 - main process waits for threads to finish -> print sum
 - OBSERVATIONS:
 	- fopen vs open vs popen
-		- fopen() -> normal file read/write with FILE* 
+		- fopen() -> normal file read/write with FILE* , uses fscanf, fprintf
+		- open() -> low-level
 ```
 #include ...
 
