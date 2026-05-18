@@ -3077,7 +3077,7 @@ watch n 05
 ![[Pasted image 20260326114650.png]]
 
 
-###
+### Test 2 prep - shell scripts
 ### Shell problems 
 1.
 ![[Pasted image 20260330102249.png]]
@@ -8220,4 +8220,6 @@ int main() {
 
 ```
 
-##
+### Test 4 prep - threads
+
+18. 
