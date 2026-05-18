@@ -8297,5 +8297,7 @@ typedef struct {
 	int sum; // result computed by thread
 } ThreadData;
 
-
+void* worker(void* arg) {
+	ThreadData *data=(ThreadData*)arg;
+}
 ```
