@@ -8255,7 +8255,7 @@ int main(int argc, char ** argv) {
 		printf("Usage: %s word1 word2 ... \n, argv[0]);
 		exit(1);
 	}
-	int n=argc-1; // nr of threads needed
+	int n=argc-1; // nr of threads needed (argv[0] is program's name)
 	pthread_t threads[n]; // array of n thread IDs
 	ThreadData data[n]; // array of structs (stores each thread's word and id)
 	
