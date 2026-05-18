@@ -8262,7 +8262,7 @@ int main(int argc, char ** argv) {
 	for(int i=0; i<n; i++){ // create n threads, traverse the arguments
 		data[i].word=argv[i+1]; // argv[0] is program's name
 		data[i].id=i;
-		pthread_create(&threads[i], NULL, worker, &data[i]);
+		pthread_create(&threads[i], NULL, worker, &data[i]); // start each thread and run worker()
 	}
 	
 	for(int i=0; i<n; i++){ // wait for all threads
