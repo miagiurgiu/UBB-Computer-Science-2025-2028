@@ -8332,6 +8332,8 @@ int main(int argc, char** argv){
 	}
 	fclose(f);
 	
-	pthread_t threads[rows]; 
+	pthread_t threads[rows]; // one thread per row
+	ThreadData data[rows]; // one data structure per thread
+	
 }
 ```
