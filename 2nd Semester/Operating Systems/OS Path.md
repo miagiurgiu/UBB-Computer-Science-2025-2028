@@ -8351,6 +8351,10 @@ int main(int argc, char** argv){
 		printf("Row %d sum = %d\n, data[i].id, data[i].sum);
 	}
 	
-	
+	for(int i=0; i<rows; i++){
+		free(matrix[i]);
+	}
+	free(matrix);
+	return 0;
 }
 ```
