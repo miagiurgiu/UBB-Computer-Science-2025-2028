@@ -8339,6 +8339,7 @@ int main(int argc, char** argv){
 		data[i].row=matrix[i];
 		data[i].cols=cols;
 		data[i].sum=0
+		pthread_create(&threads[i],NULL,worker,&data[i]);
 	}
 }
 ```
