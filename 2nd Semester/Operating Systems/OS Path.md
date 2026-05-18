@@ -8295,7 +8295,7 @@ Pb 12a
 	- we give each thread a pointer to its row: matrix[i]
 	- no int rows inside struct because each thread needs only its own row
 	- we use `int **matrix = malloc(rows * sizeof(int*))` because matrix stores many row addresses (matrix[0] points to row 0 etc.)
-	- `pthread_join` waits for the thread to finish its work, not just to be created
+	- `pthread_join` waits for the thread to finish its work, not just to be created (without join, main process might start printing results before all threads finish calculating)
 ```
 #include ...
 
