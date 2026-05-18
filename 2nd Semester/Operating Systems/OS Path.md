@@ -3076,6 +3076,8 @@ watch n 05
 
 ![[Pasted image 20260326114650.png]]
 
+
+###
 ### Shell problems 
 1.
 ![[Pasted image 20260330102249.png]]
