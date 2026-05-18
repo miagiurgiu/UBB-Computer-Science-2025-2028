@@ -8257,7 +8257,7 @@ int main(int argc, char ** argv) {
 	}
 	int n=argc-1; // nr of threads needed
 	pthread_t threads[n]; // array of n thread IDs
-	ThreadData data[n]; // array of structs
+	ThreadData data[n]; // array of structs (stores each thread's word and id)
 	
 	for(int i=0; i<n; i++){ // create n threads
 		data[i].word=argv[i+1]; // argv[0] is program's name
