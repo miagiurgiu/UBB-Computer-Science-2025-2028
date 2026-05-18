@@ -8308,7 +8308,14 @@ void* worker(void* arg) {
 
 int main(int argc, char** argv){
 	if(argc!=2){
-		printf("U)
+		printf("Usage: %s matrix_file\n",argv[0]);
+		exit(1);
+	}
+	
+	// open file
+	FILE *f=fopen(argv[1], "r");
+	if(f==NULL){
+		
 	}
 
 }
