@@ -8337,6 +8337,8 @@ int main(int argc, char** argv){
 	for(int i=0; i<rows; i++) { // create as many threads as rows are
 		data[i].id=i;
 		data[i].row=matrix[i];
+		data[i].cols=cols;
+		data[i].sum=0
 	}
 }
 ```
