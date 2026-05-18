@@ -8235,14 +8235,13 @@ Pb 18.
 #include <ctype.h>
 #include <string.h>
 
-// structure sent to each thread
-typedef struct {
+typedef struct { // structure sent to each thread
 	char *word; // the word handled by the thread
 	int id; // thread id
-}
+} ThreadData;
 
-// thread function 
-void* worker(void* arg) {
+void* worker(void* arg) {// thread function 
+	ThreadData *data = (ThreadData*)arg; // 
 	
 }
 
