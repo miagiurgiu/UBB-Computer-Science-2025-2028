@@ -8361,7 +8361,7 @@ int main(int argc, char** argv){
 	}
 	
 	for(int i=0; i<rows; i++){ // main process prints result
-		printf("Row %d sum = %d\n, data[i].id, data[i].sum);
+		printf("Row %d sum = %d\n", data[i].id, data[i].sum);
 	}
 	
 	for(int i=0; i<rows; i++){
