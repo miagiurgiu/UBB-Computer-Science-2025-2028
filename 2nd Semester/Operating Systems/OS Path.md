@@ -8246,7 +8246,12 @@ void* worker(void* arg) { // thread function
 	for(int i=0; i<len; i++){
 		data->word[i]=toupper(data->word[i]);
 	}
-	printf("Thread %d processed: %s\n", da)
+	printf("Thread %d processed: %s\n", data->id, data->word);
+	return NULL;
+}
+
+int main(int argc, char ** argv) {
+	
 }
 
 ```
