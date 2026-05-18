@@ -8222,4 +8222,5 @@ int main() {
 
 ### Test 4 prep - threads
 
-18. 
+Pb 18.
+![[Pasted image 20260518132025.png]]
