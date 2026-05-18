@@ -8242,8 +8242,11 @@ typedef struct { // structure sent to each thread
 
 void* worker(void* arg) { // thread function 
 	ThreadData *data = (ThreadData*)arg; // convert generic pointer back to ThreadData*
-	for(int i=0; )
-	
+	int len=strlen(data->word);
+	for(int i=0; i<len; i++){
+		data->word[i]=toupper(data->word[i]);
+	}
+	printf("Thread %d processed: %s\n", da)
 }
 
 ```
