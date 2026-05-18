@@ -8260,7 +8260,9 @@ int main(int argc, char ** argv) {
 	ThreadData data[n]; // array of structs
 	
 	for(int i=0; i<n; i++){ // create n threads
-		data[i].word=argv[i+1]; // argv[0] is program's
+		data[i].word=argv[i+1]; // argv[0] is program's name
+		data[i].id=i;
+		pthread_create(&threads[i], NULL, worker, &data[i]);
 	}
 	
 }
