@@ -8345,8 +8345,8 @@ int main(int argc, char** argv){
 	}
 	fclose(f);
 	
-	pthread_t threads[rows]; // one thread per row
-	ThreadData data[rows]; // one data structure per thread
+	pthread_t threads[rows]; // array of threads
+	ThreadData data[rows]; // array of data
 	
 	for(int i=0; i<rows; i++) { // create as many threads as rows are
 		data[i].id=i;
