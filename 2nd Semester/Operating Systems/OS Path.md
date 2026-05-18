@@ -8322,6 +8322,9 @@ int main(int argc, char** argv){
 	int rows,cols;
 	fscanf(f, "%d %d", &rows, &cols); // read matrix size
 	int **matrix=malloc(rows*sizeof(int*)); // allocate matrix: rows pointers
+	for(int i=0; i<rows; i++){ // allocate each row
+		matrix[i]=malloc(cols*sizeof(int));
+	}
 	
 
 }
