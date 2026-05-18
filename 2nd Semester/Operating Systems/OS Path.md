@@ -8224,3 +8224,4 @@ int main() {
 
 Pb 18.
 ![[Pasted image 20260518132025.png]]
+- 
