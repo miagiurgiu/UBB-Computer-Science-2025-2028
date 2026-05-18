@@ -8240,7 +8240,7 @@ typedef struct { // structure sent to each thread
 	int id; // thread id
 } ThreadData;
 
-void* worker(void* arg) {// thread function 
+void* worker(void* arg) { // thread function 
 	ThreadData *data = (ThreadData*)arg; // 
 	
 }
