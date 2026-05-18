@@ -8289,12 +8289,13 @@ Pb 12a
 - main process waits for threads to finish -> print sum
 - OBSERVATIONS:
 	- fopen vs open vs popen
-		- fopen() -> normal file read/write with FILE* , uses fscanf, fprintf
+		- fopen() -> normal file read/write with FILE* , uses fscanf, fprintf -> f is the opened file
 		- open() -> low-level file descriptor, uses read, write
 		- popen() -> runs command and reads it output
 	- we give each thread a pointer to its row: matrix[i]
 	- no int rows inside struct because each thread needs only its own row
-	- we use `int **matrix = malloc(rows * sizeof(int*))` because matrix stores many ro
+	- we use `int **matrix = malloc(rows * sizeof(int*))` because matrix stores many row addresses (matrix[0] points to row 0 etc.)
+	- 
 ```
 #include ...
 
