@@ -8300,14 +8300,16 @@ typedef struct {
 void* worker(void* arg) {
 	ThreadData *data=(ThreadData*)arg; // convert generic pointer back to ThreadData*
 	data->sum=0; // start sum from 0
-	for(int j=0; j<data->cols;j++){
+	for(int j=0; j<data->cols;j++){ // add all element from the same row
 		data->sum +=data->row[j];
 	}
 	return NULL;
 }
 
-int main(int argc, char** argv[]){
-	
+int main(int argc, char** argv){
+	if(argc!=2){
+		printf("U)
+	}
 
 }
 ```
