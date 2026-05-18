@@ -8284,7 +8284,16 @@ int main(int argc, char ** argv) {
 Pb 12a
 ![[Pasted image 20260518144133.png]]
 - read a matrix of integers from file
-- create n threads (n=nr row)
+- create n threads (n=nr rows)
+- each thread -> sum of numbers on that row
+- main process waits for threads to finish -> print sum
 ```
+#include ...
 
+
+typedef struct {
+	int id; // thread id = row number
+	int *row; // pointer to one matrix row
+	int cols; // nr of columns
+}
 ```
