@@ -8292,7 +8292,8 @@ Pb 12a
 		- fopen() -> normal file read/write with FILE* , uses fscanf, fprintf
 		- open() -> low-level file descriptor, uses read, write
 		- popen() -> runs command and reads it output
-	- we give each thread a pointer to its row: matrix
+	- we give each thread a pointer to its row: matrix[i]
+	- no int rows inside struct because 
 ```
 #include ...
 
