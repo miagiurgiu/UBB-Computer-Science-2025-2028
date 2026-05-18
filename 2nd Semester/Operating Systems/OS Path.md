@@ -8251,9 +8251,14 @@ void* worker(void* arg) { // thread function
 }
 
 int main(int argc, char ** argv) {
-	if(argc<2) {
-		printf("Usage: %s word1)
+	if(argc<2) { // no arguments given
+		printf("Usage: %s word1 word2 ... \n, argv[0]);
+		exit(1);
 	}
+	int n=argc-1; // nr of threads needed
+	pthread_t threads[n];
+	
+	
 }
 
 ```
