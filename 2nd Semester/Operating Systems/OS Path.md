@@ -8283,7 +8283,8 @@ int main(int argc, char ** argv) {
 
 Pb 12a
 ![[Pasted image 20260518144133.png]]
-
+- read a matrix of integers from file
+- create n threads (n=nr row)
 ```
 
 ```
