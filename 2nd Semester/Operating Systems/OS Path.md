@@ -8235,8 +8235,10 @@ Pb 18.
 #include <ctype.h>
 #include <string.h>
 
+// structure sent to each thread
 typedef struct {
 	char *word;
+	int id;
 }
 
 ```
