@@ -8293,7 +8293,8 @@ Pb 12a
 		- open() -> low-level file descriptor, uses read, write
 		- popen() -> runs command and reads it output
 	- we give each thread a pointer to its row: matrix[i]
-	- no int rows inside struct because 
+	- no int rows inside struct because each thread needs only its own row
+	- we use `int **matrix = malloc(rows * sizeof(int*))` because matrix stores many ro
 ```
 #include ...
 
