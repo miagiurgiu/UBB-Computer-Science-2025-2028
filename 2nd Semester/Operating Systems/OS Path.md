@@ -8224,7 +8224,7 @@ int main() {
 
 Pb 18.
 ![[Pasted image 20260518132025.png]]
-- read from command line lowercaseletters
+- read from command line lowercase letters
 - convert them to uppercase letters
 - print result (uppercase)
 - each argument=thread
@@ -8234,5 +8234,6 @@ Pb 18.
 #include <pthread.h> // pthread create, pthread_join
 #include <ctype.h>
 #include <string.h>
+
 
 ```
