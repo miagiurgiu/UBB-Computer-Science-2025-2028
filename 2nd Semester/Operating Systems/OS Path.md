@@ -8224,4 +8224,7 @@ int main() {
 
 Pb 18.
 ![[Pasted image 20260518132025.png]]
-- 
+- read from command line lowercaseletters
+- convert them to uppercase letters
+- print result (uppercase)
+- each argu
