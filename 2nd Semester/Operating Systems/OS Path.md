@@ -8290,7 +8290,9 @@ Pb 12a
 - OBSERVATIONS:
 	- fopen vs open vs popen
 		- fopen() -> normal file read/write with FILE* , uses fscanf, fprintf
-		- open() -> low-level
+		- open() -> low-level file descriptor, uses read, write
+		- popen() -> runs command and reads it output
+	- 
 ```
 #include ...
 
