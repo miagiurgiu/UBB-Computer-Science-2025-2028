@@ -8251,7 +8251,9 @@ void* worker(void* arg) { // thread function
 }
 
 int main(int argc, char ** argv) {
-	
+	if(argc<2) {
+		printf("Usage: %s word1)
+	}
 }
 
 ```
