@@ -8343,8 +8343,14 @@ int main(int argc, char** argv){
 		pthread_create(&threads[i],NULL,worker,&data[i]);
 	}
 	
-	for(int i=0; i<rows; i++) {
+	for(int i=0; i<rows; i++) { // main process waits for threads
 		pthread_join(threads[i],NULL);
 	}
+	
+	for(int i=0; i<rows; i++){ // main process prijts result
+		printf("Row %d sum = %d\n, data[i].id, data[i].sum);
+	}
+	
+	
 }
 ```
