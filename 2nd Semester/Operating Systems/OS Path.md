@@ -8319,6 +8319,9 @@ int main(int argc, char** argv){
 		exit(1);
 	}
 	
+	int rows,cols;
+	fscanf(f, "%d %d", &rows, &cols); // read matrix size
+	int **matrix=malloc(rows*sizeof(int*));
 	
 
 }
