@@ -8300,4 +8300,9 @@ typedef struct {
 void* worker(void* arg) {
 	ThreadData *data=(ThreadData*)arg;
 }
+
+int main(int argc, char** argv[]){
+	
+
+}
 ```
