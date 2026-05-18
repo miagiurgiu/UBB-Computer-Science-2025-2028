@@ -8227,4 +8227,12 @@ Pb 18.
 - read from command line lowercaseletters
 - convert them to uppercase letters
 - print result (uppercase)
-- each argu
+- each argument=thread
+```
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h> // pthread create, pthread_join
+#include <ctype.h>
+#include <string.h>
+
+```
