@@ -8360,7 +8360,7 @@ int main(int argc, char** argv){
 		pthread_join(threads[i],NULL);
 	}
 	
-	for(int i=0; i<rows; i++){ // main process prijts result
+	for(int i=0; i<rows; i++){ // main process prints result
 		printf("Row %d sum = %d\n, data[i].id, data[i].sum);
 	}
 	
