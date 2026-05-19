@@ -8380,4 +8380,4 @@ matrixfile.txt:
 
 Pb 12b
 ![[Pasted image 20260519194940.png]]
-- 
+- sum of elements of the matrix using as man
