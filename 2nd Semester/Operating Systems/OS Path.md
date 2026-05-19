@@ -8449,6 +8449,9 @@ int main(int argc, char **argv){
 	for(int i=0;i<rows;i++){ // free memory
 		free(matrix[i]);
 	}
+	free(matrix);
+	pthread_mutex_destroy(&mutex);
+	return 0;
 }
 
 ```
