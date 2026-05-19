@@ -8398,6 +8398,10 @@ typedef struct {
 	int cols; // number of columns
 }ThreadData;
 
-void* worker(void* arg) {}
+void* worker(void* arg) {
+	ThreadData *data=(ThreadData*)arg;
+	int local_sum=0;
+	
+}
 
 ```
