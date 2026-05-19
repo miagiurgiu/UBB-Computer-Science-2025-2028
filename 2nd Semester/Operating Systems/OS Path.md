@@ -8427,7 +8427,14 @@ int main(int argc, char **argv){
 	for(int i=0;i<rows;i++){ // allocate rows
 		matrix[i]=malloc(cols*sizeof(int));
 	}
-	
+	for(int i=0; i<rows;i++){
+		for(int j=0; j<cols; j++){
+			fscanf(f, "%d", &matrix[i][j]);
+		}
+	}
+	fclose(f);
+	pthread_t threads[rows]; // thread array
+	T
 	
 }
 
