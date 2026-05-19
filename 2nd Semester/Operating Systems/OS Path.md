@@ -8390,5 +8390,14 @@ Pb 12b
 #include <pthread.h>
 
 int total=0;
-pthread_mutex_t mutex=
+pthread_mutex_t mutex=PTHREAD_MUTEX_INITIALIZER;
+
+typedef struct {
+	int id; // thread id
+	int *row; // pointer to one row
+	int cols; // number of columns
+}ThreadData;
+
+void* worker(void* arg) {}
+
 ```
