@@ -8442,7 +8442,13 @@ int main(int argc, char **argv){
 		data[i].cols=cols;
 		pthread_create(&threads[i],NULL,worker,&data[i]);
 	}
-	for(int i=0; i<rows;i)
+	for(int i=0; i<rows;i++){ // wait for all threads
+		pthread_join(threads[i],NULL);
+	}
+	printf("\nTotal matrix sum=%d\n",total);
+	for(int i=0;i<rows;i++){ // free memory
+		free(matrix[i]);
+	}
 }
 
 ```
