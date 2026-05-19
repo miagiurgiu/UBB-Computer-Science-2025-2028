@@ -8401,9 +8401,12 @@ typedef struct {
 void* worker(void* arg) {
 	ThreadData *data=(ThreadData*)arg; // convert generic pointer back to ThreadData*
 	int local_sum=0;
-	for(int j=0;j<data->cols;j++){
-		local_
+	for(int j=0;j<data->cols;j++){ // compute row sum locally
+		local_sum +=data->row[j];
 	}
+	tpthread_mutex_lock(&mutex);
+	total += local_sum;
+	printf("Thread %d)
 	
 }
 
