@@ -8406,9 +8406,16 @@ void* worker(void* arg) {
 	}
 	pthread_mutex_lock(&mutex);
 	total += local_sum;
+	pthread_mutex_unlock(&mutex);
 	printf("Thread %d added %d\n", data->id, local_sum);
 	return NULL;
 }
 
+int main(int argc, char **argv){
+	if(argc!=2){
+		printf("Usafe: %s filename\n", argv[0]);
+		exit(1);
+	}
+}
 
 ```
