@@ -8417,7 +8417,14 @@ int main(int argc, char **argv){
 		exit(1);
 	}
 	FILE *f=fopen(argv[1],"r");
-	if(f==NULL)
+	if(f==NULL){
+		perror("fopen");
+		exit(1);
+	}
+	int rows,cols;
+	fscanf(f, "%d %d", &rows, &cols); // read matr
+	int **matrix=malloc(rows*sizeof(int*));
+	
 }
 
 ```
