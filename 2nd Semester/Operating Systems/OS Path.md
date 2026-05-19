@@ -8385,5 +8385,10 @@ Pb 12b
 - test matrix to check the sum
 - with/without mutex
 ```
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
 
+int total=0;
+pthread_mutex_t mutex=
 ```
