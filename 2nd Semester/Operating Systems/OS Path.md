@@ -8404,10 +8404,11 @@ void* worker(void* arg) {
 	for(int j=0;j<data->cols;j++){ // compute row sum locally
 		local_sum +=data->row[j];
 	}
-	tpthread_mutex_lock(&mutex);
+	pthread_mutex_lock(&mutex);
 	total += local_sum;
-	printf("Thread %d)
-	
+	printf("Thread %d added %d\n", data->id, local_sum);
+	return NULL;
 }
+
 
 ```
