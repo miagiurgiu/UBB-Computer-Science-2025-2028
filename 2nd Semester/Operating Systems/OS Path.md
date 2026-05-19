@@ -8416,6 +8416,8 @@ int main(int argc, char **argv){
 		printf("Usafe: %s filename\n", argv[0]);
 		exit(1);
 	}
+	FILE *f=fopen(argv[1],"r");
+	
 }
 
 ```
