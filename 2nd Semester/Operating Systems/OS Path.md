@@ -8434,7 +8434,10 @@ int main(int argc, char **argv){
 	}
 	fclose(f);
 	pthread_t threads[rows]; // thread array
-	T
+	ThreadData data[rows];
+	for(int i=0; i<rows;i++){
+		data[i].id=i;
+	}
 	
 }
 
