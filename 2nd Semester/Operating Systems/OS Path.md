@@ -8440,7 +8440,7 @@ int main(int argc, char **argv){
 		data[i].id=i;
 		data[i].row=matrix[i];
 		data[i].cols=cols;
-		pthread-
+		pthread_create(&threads[i],NULL,worker,&data[i]);
 	}
 	
 }
