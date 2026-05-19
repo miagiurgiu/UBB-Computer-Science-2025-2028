@@ -8434,9 +8434,13 @@ int main(int argc, char **argv){
 	}
 	fclose(f);
 	pthread_t threads[rows]; // thread array
-	ThreadData data[rows];
-	for(int i=0; i<rows;i++){
+	ThreadData data[rows]; // struct array
+	
+	for(int i=0; i<rows;i++){ // create threads
 		data[i].id=i;
+		data[i].row=matrix[i];
+		data[i].cols=cols;
+		pthread-
 	}
 	
 }
