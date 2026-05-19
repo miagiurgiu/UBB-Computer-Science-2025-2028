@@ -8380,4 +8380,6 @@ matrixfile.txt:
 
 Pb 12b
 ![[Pasted image 20260519194940.png]]
-- sum of elements of the matrix using as man
+- sum of elements of the matrix using as many threads as there are rows
+- each thread adds to the total the numbers on a row
+- test matrix to check 
