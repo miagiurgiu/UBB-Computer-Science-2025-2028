@@ -8442,7 +8442,7 @@ int main(int argc, char **argv){
 		data[i].cols=cols;
 		pthread_create(&threads[i],NULL,worker,&data[i]);
 	}
-	
+	for(int i=0; i<rows;i)
 }
 
 ```
