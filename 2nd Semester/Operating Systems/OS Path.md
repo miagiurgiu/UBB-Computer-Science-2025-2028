@@ -8399,8 +8399,11 @@ typedef struct {
 }ThreadData;
 
 void* worker(void* arg) {
-	ThreadData *data=(ThreadData*)arg;
+	ThreadData *data=(ThreadData*)arg; // convert generic pointer back to ThreadData*
 	int local_sum=0;
+	for(int j=0;j<data->cols;j++){
+		local_
+	}
 	
 }
 
