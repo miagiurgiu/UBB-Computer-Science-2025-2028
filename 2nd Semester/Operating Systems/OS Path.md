@@ -8515,6 +8515,12 @@ int main(int argc, char **argv){
 		pthread_join(threads[i],NULL);
 	}
 	int total_letters=0;
-	int total_
+	int total_digits=0;
+	int total_special=0;
+	for(int i=0; i<n; i++){
+		total_letters +=data[i].letters;
+		total_digits +=data[i].digits;
+		total_special +=data[i].special;
+	}
 }
 ```
