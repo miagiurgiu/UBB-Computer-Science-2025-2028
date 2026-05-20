@@ -8599,4 +8599,8 @@ int main(int argc, char ** argv){
 1) FIFO - first in first out
 2) SJF - shortest job first
 3) STCF - shortest time to completion first-
-4) 
+- for interactive systems, time-to-completion is ...
+1) Round-Robin
+2) MLFQ
+3) Lottery Scheduling
+4) Stride Scheduling
