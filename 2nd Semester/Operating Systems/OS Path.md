@@ -8457,4 +8457,6 @@ int main(int argc, char **argv){
 
 Pb15
 ![[Pasted image 20260520121722.png]]
-- 
+- receive strings of characters
+- create thread which calculates nr of digits, nr letters, nr of special characters
+- main program prints results (nr digits, nr letters, nr characters)
