@@ -8460,3 +8460,22 @@ Pb15
 - receive strings of characters
 - create thread which calculates nr of digits, nr letters, nr of special characters
 - main program prints results (nr digits, nr letters, nr characters)
+- no global variables
+- efficient sync
+```
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
+#include <ctype.h>
+#include <string.h>
+
+typedef struct {
+	int id;
+	char *word;
+	int letters;
+	int digits;
+	int special;
+}ThreadData;
+
+
+```
