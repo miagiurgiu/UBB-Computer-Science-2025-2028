@@ -8592,4 +8592,11 @@ int main(int argc, char ** argv){
 
 
 ### Lecture - 20 may 2026
+**Operating Systems process management and CPU scheduling**.
+
 ![[Pasted image 20260520182622.png]]
+
+1) FIFO - first in first out
+2) SJF - shortest job first
+3) STCF - shortest time to completion first-
+4) 
