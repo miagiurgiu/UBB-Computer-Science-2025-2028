@@ -8477,5 +8477,11 @@ typedef struct {
 	int special;
 }ThreadData;
 
-
+void* worker(void* arg) {
+	ThreadData *data=(ThreadData*)arg; // convert generic pointer back to ThreadData*
+	data->letters=0;
+	data->digits=0;
+	data->special=0;
+	for(int i)
+}
 ```
