@@ -1766,3 +1766,5 @@ QMainWindow -> a more customizable, complex window, not just a widget
 
 A9:
 -  implementing GUI for A4-A7
+
+### Lecture 12 - 20 may 2026
