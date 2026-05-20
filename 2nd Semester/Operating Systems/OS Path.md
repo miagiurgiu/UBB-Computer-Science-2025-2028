@@ -8550,7 +8550,7 @@ typedef struct {
 void* worker(void* arg) {
 	ThreadData *data=(ThreadData*)arg; // convert generic pointer back to ThreadData*
 	int x=data->number;
-	if(x==0){
+	if(x==0){ // while does not take 0 into account
 		pthread_mutex_lock(&mutex);
 		freq[0]++;
 		pthread_mutex_unlock(&mutex);
