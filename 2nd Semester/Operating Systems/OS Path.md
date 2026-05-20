@@ -8548,6 +8548,12 @@ typedef struct {
 	int number;
 }ThreadData;
 void* worker(void* arg) {
-	ThreadData *data=(ThreadData*)arg; // convert generic pointer back to Thread
+	ThreadData *data=(ThreadData*)arg; // convert generic pointer back to ThreadData*
+	int x=data->number;
+	if(x==0){
+		pthread_mutex_lock(&mutex);
+		freq[0]++;
+		pthread_mutex_unlock(&mutex);
+	}
 }
 ```
