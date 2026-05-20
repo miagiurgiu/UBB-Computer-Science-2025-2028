@@ -8500,7 +8500,15 @@ void* worker(void* arg) {
 
 int main(int argc, char **argv){
 	if(argc<2){
-		printf("Wrong usage")
+		printf("Wrong usage\n",argv[0]);
+		exit(1);
 	}
+	int n=argc-1; // nr of threads
+	pthread_t threads[n]; // thread array
+	ThreadData data[n]; // struct array
+	for(int i=0; i<n; i++){
+		
+	}
+	
 }
 ```
