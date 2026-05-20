@@ -8490,6 +8490,9 @@ void* worker(void* arg) {
 		else if(isdigit(c)){
 			data->digits++;
 		}
+		else {
+			data->special++;
+		}
 	}
 }
 ```
