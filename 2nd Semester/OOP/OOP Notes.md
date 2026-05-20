@@ -1768,3 +1768,7 @@ A9:
 -  implementing GUI for A4-A7
 
 ### Lecture 12 - 20 may 2026
+1) MVC 
+- appropriate for GUIs
+- model changes => update the view
+![[Pasted image 20260520142000.png|300]]
