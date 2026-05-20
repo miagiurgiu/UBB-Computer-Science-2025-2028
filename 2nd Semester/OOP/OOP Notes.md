@@ -1778,4 +1778,6 @@ A9:
 2) Model/View Architecture in QT I
 - no controller
 - the view also allows the user to interact with the data
-- 
+- MODEL-represents the data
+- VIEW-displays the data
+- DELEGATE-
