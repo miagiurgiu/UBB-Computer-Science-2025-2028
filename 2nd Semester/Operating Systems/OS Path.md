@@ -8494,5 +8494,6 @@ void* worker(void* arg) {
 			data->special++;
 		}
 	}
+	printf("Thread %d processed \)
 }
 ```
