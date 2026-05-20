@@ -8529,3 +8529,10 @@ int main(int argc, char **argv){
 	return 0;
 }
 ```
+
+Pb16
+![[Pasted image 20260520125647.png]]
+
+```
+
+```
