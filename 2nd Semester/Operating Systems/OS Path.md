@@ -8562,7 +8562,7 @@ void* worker(void* arg) {
 		pthread_mutex_unlock(&mutex);
 		x=x/10;
 	}
-	printf("Thread %d processed number d\n",data->id,data-number);
+	printf("Thread %d processed number d\n",data->id,data->number);
 	return NULL;
 }
 int main(int argc, char ** argv){
