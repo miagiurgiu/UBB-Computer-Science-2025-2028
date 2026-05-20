@@ -1775,3 +1775,7 @@ A9:
 - VIEW=screen presentation
 - CONTROLLER=the way the user interface reacts to user input
 ![[Pasted image 20260520142000.png|300]]
+2) Model/View Architecture in QT I
+- no controller
+- the view also allows the user to interact with the data
+- 
