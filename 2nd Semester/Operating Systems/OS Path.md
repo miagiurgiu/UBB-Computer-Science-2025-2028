@@ -8579,8 +8579,13 @@ int main(int argc, char ** argv){
 		pthread_create(&thread[i],NULL,worker,&data[i]);
 	}
 	for(int i=0; i<n; i++){
-		pthread_join(threads[i])
+		pthread_join(threads[i],NULL);
 	}
-	
+	printf("\nDigit frequencies:\n");
+	for(int i=0; i<10; i++){
+		printf("%d->%d\n,i,freq[i]);
+	}
+	pthread_mutex_destroy(&mutex);
+	return 0;
 }
 ```
