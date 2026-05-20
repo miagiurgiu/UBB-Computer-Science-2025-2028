@@ -8507,7 +8507,12 @@ int main(int argc, char **argv){
 	pthread_t threads[n]; // thread array
 	ThreadData data[n]; // struct array
 	for(int i=0; i<n; i++){
-		
+		data[i].id=i;
+		data[i].word=argv[i+1]; // because argv[0] is program name
+		pthread_create(&threads[i],NULL,worker,&data[i]);
+	}
+	for(int i=0; i<n; i++){
+		pthread_join(threads[i],NULL);
 	}
 	
 }
