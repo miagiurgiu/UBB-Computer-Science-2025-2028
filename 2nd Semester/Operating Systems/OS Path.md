@@ -8533,7 +8533,7 @@ int main(int argc, char **argv){
 Pb16
 ![[Pasted image 20260520125647.png]]
 - read integer as command line args
-- frequency vector for all digits => this i
+- frequency vector for all digits => this is in the shared memory, so mutex is required
 - create thread for each argument
 - each thread counts the nr of occurences of each digit
 ```
@@ -8543,6 +8543,11 @@ Pb16
 
 int freq[10]={0};
 pthread_mutex_t mutex=PTHREAD_MUTEX_INITIALIZER;
-
-
+typedef struct {
+	int id;
+	int number;
+}ThreadData;
+void* worker(void* arg) {
+	ThreadData *data=(ThreadData*)arg; // convert generic pointer back to Thread
+}
 ```
