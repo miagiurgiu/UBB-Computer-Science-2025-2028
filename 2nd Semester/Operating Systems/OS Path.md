@@ -8562,6 +8562,16 @@ void* worker(void* arg) {
 		pthread_mutex_unlock(&mutex);
 		x=x/10;
 	}
-	printf("Thread %d processed number d\n",data->id,)
+	printf("Thread %d processed number d\n",data->id,data-number);
+	return NULL;
+}
+int main(int argc, char ** argv){
+	if(argc<2) {
+		printf("Wrong usage\n");
+		exit(1);
+	}
+	int n=argc-1; // number of threads
+	pthread_t at
+	
 }
 ```
