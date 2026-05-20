@@ -1792,4 +1792,41 @@ setModel
 
 ### Test prep (GUIs)
 
+##### Setup:
+```
+cmake_minimum_required(VERSION 4.2)  
+project(GUIExperiments)  
+  
+set(CMAKE_CXX_STANDARD 14)  
+set(CMAKE_INCLUDE_CURRENT_DIR ON)  
+  
+set(CMAKE_PREFIX_PATH "/opt/homebrew/opt/qt")  
+  
+set(CMAKE_AUTOMOC ON)  
+set(CMAKE_AUTOUIC ON)  
+set(CMAKE_AUTORCC ON)  
+  
+find_package(Qt6 COMPONENTS Widgets REQUIRED)  
+  
+add_executable(ProgramName 
+        gui.cpp  
+        gui.h  
+        gui.ui  
+        README.md  
+        main.cpp)  
+target_link_libraries(ProgramName Qt6::Widgets)
+
+```
+
 ##### General structure of the main:
+```
+#include <QApplication>  
+#include "gui.h"  
+  
+int main(int argc, char *argv[]) {  
+    QApplication app(argc,argv);  
+    GUI gui;  
+    gui.show();  
+    return app.exec();  
+}
+```
