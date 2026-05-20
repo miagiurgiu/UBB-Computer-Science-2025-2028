@@ -8532,7 +8532,10 @@ int main(int argc, char **argv){
 
 Pb16
 ![[Pasted image 20260520125647.png]]
-
+- read integer as command line args
+- frequency vector for all digits
+- create thread for each argument
+- each threcounts the nr of occurences
 ```
 
 ```
