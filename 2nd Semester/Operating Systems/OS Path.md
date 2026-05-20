@@ -8533,9 +8533,16 @@ int main(int argc, char **argv){
 Pb16
 ![[Pasted image 20260520125647.png]]
 - read integer as command line args
-- frequency vector for all digits
+- frequency vector for all digits => this i
 - create thread for each argument
-- each threcounts the nr of occurences
+- each thread counts the nr of occurences of each digit
 ```
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
+
+int freq[10]={0};
+pthread_mutex_t mutex=PTHREAD_MUTEX_INITIALIZER;
+
 
 ```
