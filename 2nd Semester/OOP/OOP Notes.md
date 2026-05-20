@@ -1785,6 +1785,6 @@ A9:
 QAbstractTableModel
 - rowCount=0 -> to know how many rows to count
 - columnCount=0 -> to know how many columns to count
-- data=0 -> what to show in each cell
+- data=0 -> what to show in each cell -> has an index -> according to that index -> view knows how to show that data
 QTableView
 setModel
