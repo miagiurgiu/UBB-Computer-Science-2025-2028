@@ -8482,6 +8482,14 @@ void* worker(void* arg) {
 	data->letters=0;
 	data->digits=0;
 	data->special=0;
-	for(int i)
+	for(int i=0; data->word[i]!='\0';i++){ // go through word character by character
+		char c=data->word[i];
+		if(isalpha(c)){
+			data->letters++;
+		}
+		else if(isdigit(c)){
+			data->digits++;
+		}
+	}
 }
 ```
