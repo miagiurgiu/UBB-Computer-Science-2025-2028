@@ -8573,9 +8573,13 @@ int main(int argc, char ** argv){
 	int n=argc-1; // number of threads
 	pthread_t threads[n]; // thread array
 	ThreadData data[n]; // struct array
-	for(int i=0; i<n; i++){
+	for(int i=0; i<n; i++){ // create threads
 		data[i].id=i;
-		data[i].number=atoi
+		data[i].number=atoi(argv[i+1]); // convert string arg to int
+		pthread_create(&thread[i],NULL,worker,&data[i]);
+	}
+	for(int i=0; i<n; i++){
+		pthread_join(threads[i])
 	}
 	
 }
