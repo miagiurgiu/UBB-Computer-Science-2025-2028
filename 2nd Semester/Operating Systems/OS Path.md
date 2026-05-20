@@ -8494,6 +8494,13 @@ void* worker(void* arg) {
 			data->special++;
 		}
 	}
-	printf("Thread %d processed \)
+	printf("Thread %d processed %s\n", data->id, data->word);
+	return NULL;
+}
+
+int main(int argc, char **argv){
+	if(argc<2){
+		printf("Wrong usage")
+	}
 }
 ```
