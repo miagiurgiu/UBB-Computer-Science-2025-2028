@@ -8522,5 +8522,8 @@ int main(int argc, char **argv){
 		total_digits +=data[i].digits;
 		total_special +=data[i].special;
 	}
+	printf("\nFinal totals:\n");
+	printf("Letters=%d\n",total_letters);
+	printf("Digits=%d\n")
 }
 ```
