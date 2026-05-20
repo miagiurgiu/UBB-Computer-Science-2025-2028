@@ -8603,3 +8603,4 @@ int main(int argc, char ** argv){
 5) MLFQ
 6) Lottery Scheduling
 7) Stride Scheduling
+![[Pasted image 20260520185130.png|511]]
