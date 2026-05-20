@@ -8511,9 +8511,10 @@ int main(int argc, char **argv){
 		data[i].word=argv[i+1]; // because argv[0] is program name
 		pthread_create(&threads[i],NULL,worker,&data[i]);
 	}
-	for(int i=0; i<n; i++){
+	for(int i=0; i<n; i++){ // wait for threads
 		pthread_join(threads[i],NULL);
 	}
-	
+	int total_letters=0;
+	int total_
 }
 ```
