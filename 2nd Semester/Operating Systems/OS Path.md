@@ -8571,7 +8571,12 @@ int main(int argc, char ** argv){
 		exit(1);
 	}
 	int n=argc-1; // number of threads
-	pthread_t at
+	pthread_t threads[n]; // thread array
+	ThreadData data[n]; // struct array
+	for(int i=0; i<n; i++){
+		data[i].id=i;
+		data[i].number=atoi
+	}
 	
 }
 ```
