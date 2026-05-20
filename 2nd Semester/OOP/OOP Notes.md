@@ -1771,4 +1771,6 @@ A9:
 1) MVC 
 - appropriate for GUIs
 - model changes => update the view
+- MODEL=application object
+- VIEW=
 ![[Pasted image 20260520142000.png|300]]
