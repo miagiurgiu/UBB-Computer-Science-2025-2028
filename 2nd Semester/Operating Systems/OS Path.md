@@ -8555,5 +8555,13 @@ void* worker(void* arg) {
 		freq[0]++;
 		pthread_mutex_unlock(&mutex);
 	}
+	while(x>0){
+		int digit=x%10;
+		pthread_mutex_lock(&mutex);
+		freq[digit]++;
+		pthread_mutex_unlock(&mutex);
+		x=x/10;
+	}
+	printf("Thread %d processed number d\n",data->id,)
 }
 ```
