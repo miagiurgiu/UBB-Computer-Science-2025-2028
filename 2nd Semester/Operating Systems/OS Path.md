@@ -8524,6 +8524,8 @@ int main(int argc, char **argv){
 	}
 	printf("\nFinal totals:\n");
 	printf("Letters=%d\n",total_letters);
-	printf("Digits=%d\n")
+	printf("Digits=%d\n",total_digits);
+	printf("Special=%d\n",total_special);
+	return 0;
 }
 ```
