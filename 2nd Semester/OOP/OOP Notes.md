@@ -1781,3 +1781,10 @@ A9:
 - MODEL-represents the data
 - VIEW-displays the data
 - DELEGATE-
+
+QAbstractTableModel
+- rowCount=0 -> to know how many rows to count
+- columnCount=0 -> to know how many columns to count
+- data=0 -> what to show in each cell
+QTableView
+setModel
