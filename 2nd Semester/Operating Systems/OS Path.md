@@ -8589,3 +8589,7 @@ int main(int argc, char ** argv){
 	return 0;
 }
 ```
+
+
+### Lecture - 20 may 2026
+![[Pasted image 20260520182622.png]]
