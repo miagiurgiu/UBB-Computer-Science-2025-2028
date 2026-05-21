@@ -1831,8 +1831,21 @@ int main(int argc, char *argv[]) {
 }
 ```
 
-##### load 
+##### load from file:
+```
+while (getline(fin, line)) {
+    stringstream ss(line);
 
+    getline(ss, field1, ';');
+    getline(ss, field2, ';');
+    getline(ss, field3, ';');
+
+    int x = stoi(field3);
+    double y = stod(field3);
+
+    vector.emplace_back(field1, field2, x);
+}
+```
 
 ### Seminar 6 - 21 may 2026
 Model/View architecture
