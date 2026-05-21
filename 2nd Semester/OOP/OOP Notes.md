@@ -1869,4 +1869,5 @@ A10:
 
 3 ways of displaying:
 - in GUI
-- in 
+- in csv/html
+- table view
