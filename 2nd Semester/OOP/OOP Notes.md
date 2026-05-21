@@ -1856,6 +1856,9 @@ https://doc.qt.io/archives/qt-5.15/qabstractitemmodel.html
 
 
 ### Lab 21 may 2026
+A10:
 1) unlimited undo/redo - add/remove/update, admin mode
 - inheritance and polymorphism
-- buttons
+- buttons: undo, redo
+- shotcuts: ctrl+z/ctrl+y
+2) 
