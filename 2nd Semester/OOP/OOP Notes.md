@@ -1834,6 +1834,7 @@ int main(int argc, char *argv[]) {
 
 ### Seminar 6 - 21 may 2026
 Model/View architecture
-- suitable for any app in wh
+- suitable for any app in which we want to work with GUI
+- 
 
 TableView
