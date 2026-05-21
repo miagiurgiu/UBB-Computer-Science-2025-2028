@@ -1837,7 +1837,8 @@ Model/View architecture
 - suitable for any app in which we want to work with GUI
 - view and model are separated
 - the view only has to know about the model
-- when you change sth in t
+- when you change sth in the model, both views (if there are 2 views) are changed
+- 
 
 TableView
 - QAbstractTableModel
