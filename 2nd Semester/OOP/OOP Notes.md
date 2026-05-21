@@ -1853,3 +1853,6 @@ TableView
 1) know how to copy-paste the correct functions from qt documentation
 https://doc.qt.io/qt-6/qabstracttablemodel.html
 https://doc.qt.io/archives/qt-5.15/qabstractitemmodel.html
+
+
+### Lab 21 may 2026
