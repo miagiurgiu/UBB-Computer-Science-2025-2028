@@ -1832,4 +1832,4 @@ int main(int argc, char *argv[]) {
 ```
 
 
-### Seminar 6 - 21 m
+### Seminar 6 - 21 may 2026
