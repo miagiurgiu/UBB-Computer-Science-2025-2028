@@ -1838,3 +1838,5 @@ Model/View architecture
 - 
 
 TableView
+- QAbstractTableModel
+- rowCount(), columnCount(), data() need to be implemented because they are abstract!
