@@ -1831,6 +1831,8 @@ int main(int argc, char *argv[]) {
 }
 ```
 
+##### load 
+
 
 ### Seminar 6 - 21 may 2026
 Model/View architecture
