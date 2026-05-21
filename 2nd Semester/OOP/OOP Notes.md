@@ -1830,3 +1830,6 @@ int main(int argc, char *argv[]) {
     return app.exec();  
 }
 ```
+
+
+### Seminar 6 - 21 m
