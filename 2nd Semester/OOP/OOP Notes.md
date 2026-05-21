@@ -1843,6 +1843,7 @@ Model/View architecture
 
 TableView
 - QAbstractTableModel documentation -> more -> subclassing -> rowcount()
+- QSourceFiterProxyModel -> receives a source and does sth with it
 - rowCount(), columnCount(), data() need to be implemented because they are abstract!
 
 1) create a window in which we add a table view
