@@ -1838,7 +1838,8 @@ Model/View architecture
 - view and model are separated
 - the view only has to know about the model
 - when you change sth in the model, both views (if there are 2 views) are changed
-- 
+- FLAGS - define behaviour
+- ROLES - ?
 
 TableView
 - QAbstractTableModel documentation -> more -> subclassing -> rowcount()
