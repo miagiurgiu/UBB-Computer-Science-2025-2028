@@ -1864,4 +1864,5 @@ A10:
 2) new way of displaying the user list
 - create new window with Table View user list
 	- triggered by the user
-	- View/Mo
+	- View/Model pattern (updates in real time, more efficient)
+	- QTableView <- model 
