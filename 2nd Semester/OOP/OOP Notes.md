@@ -1849,5 +1849,6 @@ TableView
 - one table widget - create model class - set model to this table view
 - how the table view renders itself according to what we implemented in the custom model class
 
+1) know how to copy-paste the correct functions from qt documentation
 https://doc.qt.io/qt-6/qabstracttablemodel.html
 https://doc.qt.io/archives/qt-5.15/qabstractitemmodel.html
