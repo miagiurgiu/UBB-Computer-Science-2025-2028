@@ -1847,3 +1847,6 @@ TableView
 1) create a window in which we add a table view
 - one table widget - create model class - set model to this table view
 - how the table view renders itself according to what we implemented in the custom model class
+
+https://doc.qt.io/qt-6/qabstracttablemodel.html
+
