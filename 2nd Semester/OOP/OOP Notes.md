@@ -1850,4 +1850,4 @@ TableView
 - how the table view renders itself according to what we implemented in the custom model class
 
 https://doc.qt.io/qt-6/qabstracttablemodel.html
-
+https://doc.qt.io/archives/qt-5.15/qabstractitemmodel.html
