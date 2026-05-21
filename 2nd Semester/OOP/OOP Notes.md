@@ -1841,7 +1841,7 @@ Model/View architecture
 - 
 
 TableView
-- QAbstractTableModel
+- QAbstractTableModel documentation -> more -> subclassing -> rowcount()
 - rowCount(), columnCount(), data() need to be implemented because they are abstract!
 
 1) create a window in which we add a table view
