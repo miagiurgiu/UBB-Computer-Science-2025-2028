@@ -1865,4 +1865,8 @@ A10:
 - create new window with Table View user list
 	- triggered by the user
 	- View/Model pattern (updates in real time, more efficient)
-	- QTableView <- model 
+	- QTableView <- associate a model 
+
+3 ways of displaying:
+- in GUI
+- in 
