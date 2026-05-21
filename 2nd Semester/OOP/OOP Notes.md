@@ -1860,5 +1860,6 @@ A10:
 1) unlimited undo/redo - add/remove/update, admin mode
 - inheritance and polymorphism
 - buttons: undo, redo
-- shotcuts: ctrl+z/ctrl+y
-2) 
+- shortcuts: ctrl+z/ctrl+y
+2) new way of displaying the user list
+- create new window with Table View
