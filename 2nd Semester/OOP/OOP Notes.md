@@ -1862,4 +1862,6 @@ A10:
 - buttons: undo, redo
 - shortcuts: ctrl+z/ctrl+y
 2) new way of displaying the user list
-- create new window with Table View
+- create new window with Table View user list
+	- triggered by the user
+	- View/Mo
