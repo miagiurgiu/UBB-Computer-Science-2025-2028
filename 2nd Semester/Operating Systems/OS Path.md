@@ -8623,12 +8623,12 @@ pthread_mutex_t mutex=PTHREAD_MUTEX_INITIALIZER;
 pthread_cond_t cond=PTHREAD_COND_INITIALIZER;
 
 typedef struct {
-	int id;
-	int priority;
+	int id; // thread id
+	int parity; // 0=even, 1=odd
 } ThreadData;
 
 void* worker(void* arg){
-	ThreadData *data=(ThreadData*)arg;
+	ThreadData *data=(ThreadData*)arg; // convert generic pointer back to ThreadDat
 	while(1){
 		pthread_mutex_lock(&mutex);
 		
