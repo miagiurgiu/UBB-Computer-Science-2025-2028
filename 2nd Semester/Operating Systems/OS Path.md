@@ -8640,9 +8640,13 @@ void* worker(void* arg){
 			break;
 		}
 		int value;
-		if(data->parity==0){
+		if(data->parity==0){ // generate even number
 			value=(rand()%100*2);
 		}
+		else { // generate odd number
+			value=(rand()%100)*2+1;
+		}
+		array[pos]=value; // add number to array
 	}
 }
 
