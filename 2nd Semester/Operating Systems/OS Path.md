@@ -8619,6 +8619,8 @@ int pos=0; // current position in the array
 // 1 - odd thread turn
 int turn=0;
 
+pthread_mutex_t mutex=PTHREAD_MUTEX_INITIALIZER;
+pthread_cond_t 
 
 
 ```
