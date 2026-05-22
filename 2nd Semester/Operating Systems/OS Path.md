@@ -8634,8 +8634,8 @@ void* worker(void* arg){
 		while(turn!=data->parity && pos <n){ // wait while it is not this thread's turn
 			pthread_cond_wait(&cond, &mutex);
 		}
-		if(pos>=n){
-			
+		if(pos>=n){ // if array is full
+			pthread_cond_signal(&cond); // wait other thread so it can also exit
 		}
 	}
 }
