@@ -8663,7 +8663,9 @@ int main() {
 	scanf("%d", &n);
 	array=malloc(n*sizeof(int)); // allocate array
 	pthread_t threads[2]; // thread array
-	
+	ThreadData data[2]; // struct array
+	data[0].id=0;
+	data[0].parity=0;
 
 }
 
