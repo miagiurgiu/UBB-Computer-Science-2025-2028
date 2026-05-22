@@ -8689,8 +8689,13 @@ int main() {
 	for(int i=0; i<n; i++){
 		printf("%d",array[i]);
 	}
+	
+	printf("\n");
+	free(array);
+	pthread_mutex_destroy(&mutex);
+	pthread_cond_destroy(&cond);
+	return 0;
 }
-
 ```
 
 
