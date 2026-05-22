@@ -8662,11 +8662,22 @@ int main() {
 	printf("Give max length n: ");
 	scanf("%d", &n);
 	array=malloc(n*sizeof(int)); // allocate array
+	
 	pthread_t threads[2]; // thread array
 	ThreadData data[2]; // struct array
+	
+	// even thread
 	data[0].id=0;
 	data[0].parity=0;
-
+		
+	// odd thread
+	data[1].id=1;
+	data[1].parity=1;
+	
+	// create threads
+	for(int i=0; i<2; i++){
+		pthread_crete(&threads[i],NULL,worker,&dat)
+	}
 }
 
 ```
