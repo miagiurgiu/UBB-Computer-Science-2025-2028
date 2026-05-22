@@ -8628,10 +8628,15 @@ typedef struct {
 } ThreadData;
 
 void* worker(void* arg){
-	ThreadData *data=(ThreadData*)arg; // convert generic pointer back to ThreadDat
+	ThreadData *data=(ThreadData*)arg; // convert generic pointer back to ThreadData*
 	while(1){
 		pthread_mutex_lock(&mutex);
-		
+		while(turn!=data->parity && pos <n){ // wait while it is not this thread's turn
+			pthread_cond_wait(&cond, &mutex);
+		}
+		if(pos>=n){
+			
+		}
 	}
 }
 
