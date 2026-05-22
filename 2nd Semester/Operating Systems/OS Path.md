@@ -8606,6 +8606,16 @@ Pb17
 - synchronise threads (alternate appending) until they reach max length N => conditional variables
 
 ```
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
+#include <time.h>
+
+int *array; // sh
+int n;
+int pos=0;
+int turn=0;
+
 
 ```
 
