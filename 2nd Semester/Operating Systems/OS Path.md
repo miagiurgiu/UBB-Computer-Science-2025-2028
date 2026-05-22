@@ -8636,6 +8636,12 @@ void* worker(void* arg){
 		}
 		if(pos>=n){ // if array is full
 			pthread_cond_signal(&cond); // wait other thread so it can also exit
+			pthread_mutex_unlock(&mutex);
+			break;
+		}
+		int value;
+		if(data->parity==0){
+			value=(rand()%100*2);
 		}
 	}
 }
