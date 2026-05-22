@@ -8681,7 +8681,13 @@ int main() {
 	
 	// wait for threads
 	for(int i=0; i<2; i++){
-		
+		pthread_join(threads[i],NULL);
+	}
+	
+	// print final array
+	printf("\nFinal Array:\n");
+	for(int i=0; i<n; i++){
+		printf("%d",array[i]);
 	}
 }
 
