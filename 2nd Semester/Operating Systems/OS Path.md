@@ -8595,9 +8595,12 @@ Pb17
 - 2 threads
 - one thread with an array as parameter -> generate even number -> append it to the array
 - the other thread with an array as parameter -> generate odd number -> append it to the array
-- alternate
+- synchronise threads (alternate appending) until they reach max length N
+
+```
 
 
+```
 
 
 
