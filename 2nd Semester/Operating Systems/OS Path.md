@@ -8620,7 +8620,12 @@ int pos=0; // current position in the array
 int turn=0;
 
 pthread_mutex_t mutex=PTHREAD_MUTEX_INITIALIZER;
-pthread_cond_t 
+pthread_cond_t cond=PTHREAD_COND_INITIALIZER;
+
+typedef struct {
+	int id;
+	int priority;
+} ThreadData;
 
 
 ```
