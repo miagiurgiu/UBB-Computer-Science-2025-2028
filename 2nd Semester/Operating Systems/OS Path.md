@@ -8224,7 +8224,8 @@ int main() {
 
 "REFERENCE SHEET":
 
-1
+Conditional variables -> when you see "take turns" / "wait until..." / "one thread wakes another" / "producer/consumer"
+Mutex -> key -> "one at a time", but does not control order
 
 Pb 18.
 ![[Pasted image 20260518132025.png]]
