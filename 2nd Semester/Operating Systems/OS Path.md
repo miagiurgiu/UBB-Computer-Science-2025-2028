@@ -8592,7 +8592,9 @@ int main(int argc, char ** argv){
 
 Pb17
 ![[Pasted image 20260522130803.png]]
-
+- 2 threads
+- one thread with an array as parameter -> generate even number -> append it to the array
+- the other thread -> generate odd numb e
 
 
 
