@@ -8627,6 +8627,13 @@ typedef struct {
 	int priority;
 } ThreadData;
 
+void* worker(void* arg){
+	ThreadData *data=(ThreadData*)arg;
+	while(1){
+		pthread_mutex_lock(&mutex);
+		
+	}
+}
 
 ```
 
