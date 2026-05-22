@@ -8611,10 +8611,14 @@ Pb17
 #include <pthread.h>
 #include <time.h>
 
-int *array; // sh
-int n;
-int pos=0;
+int *array; // shared array
+int n; // max length
+int pos=0; // current position in the array
+
+// 0 - even thread turn
+// 1 - odd thread turn
 int turn=0;
+
 
 
 ```
