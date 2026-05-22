@@ -8222,6 +8222,10 @@ int main() {
 
 ### Test 4 prep - threads
 
+"REFERENCE SHEET":
+
+1
+
 Pb 18.
 ![[Pasted image 20260518132025.png]]
 - read from command line lowercase letters
