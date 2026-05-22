@@ -8590,6 +8590,13 @@ int main(int argc, char ** argv){
 }
 ```
 
+Pb17
+![[Pasted image 20260522130803.png]]
+
+
+
+
+
 
 ### Lecture - 20 may 2026
 **Operating Systems process management and CPU scheduling**.
@@ -8604,4 +8611,5 @@ int main(int argc, char ** argv){
 6) Lottery Scheduling
 7) Stride Scheduling
 ![[Pasted image 20260520185130.png|511]]
-g
+
+
