@@ -8676,7 +8676,12 @@ int main() {
 	
 	// create threads
 	for(int i=0; i<2; i++){
-		pthread_crete(&threads[i],NULL,worker,&dat)
+		pthread_crete(&threads[i],NULL,worker,&data[i]);
+	}
+	
+	// wait for threads
+	for(int i=0; i<2; i++){
+		
 	}
 }
 
