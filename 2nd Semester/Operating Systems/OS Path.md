@@ -8594,7 +8594,8 @@ Pb17
 ![[Pasted image 20260522130803.png]]
 - 2 threads
 - one thread with an array as parameter -> generate even number -> append it to the array
-- the other thread -> generate odd numb e
+- the other thread with an array as parameter -> generate odd number -> append it to the array
+- alternate
 
 
 
