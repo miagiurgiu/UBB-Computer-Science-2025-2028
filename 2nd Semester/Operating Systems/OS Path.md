@@ -8224,7 +8224,10 @@ int main() {
 
 "REFERENCE SHEET":
 
-Conditional variables -> when you see "take turns" / "wait until..." / "one thread wakes another" / "producer/consumer"
+Conditional variables 
+-> when you see "take turns" / "wait until..." / "one thread wakes another" / "producer/consumer"
+-> pthread_cond_wait(...) -> sleep until another thread signals me
+-> pthread_cond_signal(...) -> wake the waiting thread
 Mutex -> key -> "one at a time", but does not control order
 
 Pb 18.
