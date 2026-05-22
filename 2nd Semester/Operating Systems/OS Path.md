@@ -8647,6 +8647,12 @@ void* worker(void* arg){
 			value=(rand()%100)*2+1;
 		}
 		array[pos]=value; // add number to array
+		printf("Thread %d added %d at position %d\n", data->id, value,pos);
+		pos++;
+		turn=1-turn; // change turn
+		pthread_cond_signal(&cond); // wake other thread
+		pthread_mutex_u
+		
 	}
 }
 
