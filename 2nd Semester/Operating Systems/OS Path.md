@@ -8651,9 +8651,18 @@ void* worker(void* arg){
 		pos++;
 		turn=1-turn; // change turn
 		pthread_cond_signal(&cond); // wake other thread
-		pthread_mutex_u
+		pthread_mutex_unlock(&mutex); // unlock mutex
 		
 	}
+	return NULL;
+}
+
+int main() {
+	srand(time(NULL));
+	printf("Give n: ");
+	scanf("%d", &n);
+	
+
 }
 
 ```
