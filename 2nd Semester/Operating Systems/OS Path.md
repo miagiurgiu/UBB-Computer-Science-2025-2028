@@ -8659,8 +8659,10 @@ void* worker(void* arg){
 
 int main() {
 	srand(time(NULL));
-	printf("Give n: ");
+	printf("Give max length n: ");
 	scanf("%d", &n);
+	array=malloc(n*sizeof(int)); // allocate array
+	pthread_t threads[2]; // thread array
 	
 
 }
