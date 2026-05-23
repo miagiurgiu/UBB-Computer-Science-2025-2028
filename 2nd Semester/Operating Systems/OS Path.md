@@ -8701,7 +8701,8 @@ int main() {
 Pb20
 ![[Pasted image 20260523113859.png]]
 - 2 arguments from cmd line: n,m
-- m checkpoints -> one thread at a time -> wait between 100 and 200 ms -> print message indicating thread number, checkpoint nr -> exit the checkpoint
+- m checkpoints -> one thread at a time -> wait between 100 and 200 ms -> print message indicating thread number, checkpoint nr -> exit the checkpoint => mutex
+- no threads goes through checkpoint until all threads are created => barrier
 ```
 #include <stdio.h>
 #include <...
@@ -8710,7 +8711,12 @@ int n; // nr of threads
 int m; // nr of checkpoints
 
 pthread_mutex_t *checkpoint_mutexes; // one mutex for each checkpoint
-pthread_barrier_t start_barrier;
+pthread_barrier_t start_barrier; // makes all threads start race together
+
+typedef struct {
+	int id;
+}
+
 
 ```
 
