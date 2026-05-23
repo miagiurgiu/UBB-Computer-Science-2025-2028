@@ -8743,17 +8743,26 @@ int main(int argc, char **argv){
 	ThreadData data[n];
 	
 	checkpoint_mutexes=malloc(m*sizeof(pthread_mutex_t)); // allocate m mutexes, one per checkpoint
+	
 	for(int i=0;i<m;i++){ // initialise mutexes
 		pthread_mutex_init(&checkpoint_mutexes[i],NULL);
 	}
 	
 	pthread_barrier_init(&start_barrier,NULL,n); // barrier waits for all n threads
 	
-	for(int i=0;i<n;i++){
+	for(int i=0;i<n;i++){ // create threads
 		data[i].id=i;
 		pthread_create(&threads[i],NULL,worker,&data[i]);
 	}
 	
+	for(int i=0;i<n;i++){ // wait for all threads to finish the race
+		pthread_join(threads[i],NULL);
+	}
+	
+	// cleanup
+	for(int i=0;i<m;i++){
+		pthread_mutex_destroy(&checkpoint_mutexes[i]);
+	}
 
 }
 
