@@ -8714,7 +8714,12 @@ pthread_mutex_t *checkpoint_mutexes; // one mutex for each checkpoint
 pthread_barrier_t start_barrier; // makes all threads start race together
 
 typedef struct {
-	int id;
+	int id; // readable thread id
+} ThreadData;
+
+void* worker(void* arg){
+	ThreadData *data=(ThreadData*)arg;
+	
 }
 
 
