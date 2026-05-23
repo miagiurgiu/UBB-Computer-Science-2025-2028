@@ -8700,7 +8700,8 @@ int main() {
 
 Pb20
 ![[Pasted image 20260523113859.png]]
-
+- 2 arguments from cmd line: n,m
+- m checkpoints -> one thread at a time -> wait between 100 and 
 
 
 
