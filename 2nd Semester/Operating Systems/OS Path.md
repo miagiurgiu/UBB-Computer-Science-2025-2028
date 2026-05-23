@@ -8742,7 +8742,11 @@ int main(int argc, char **argv){
 	pthread_t threads[n];
 	ThreadData data[n];
 	
-	checkpoint_m
+	checkpoint_mutexes=malloc(m*sizeof(pthread_mutex_t)); // allocate m mutexes
+	for(int i=0;i<m;i++){
+		pthread_mutex_init(&checkpoint_mutexes[i],NULL);
+	}
+	
 
 }
 
