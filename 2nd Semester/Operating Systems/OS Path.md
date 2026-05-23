@@ -8718,8 +8718,9 @@ typedef struct {
 } ThreadData;
 
 void* worker(void* arg){
-	ThreadData *data=(ThreadData*)arg;
-	
+	ThreadData *data=(ThreadData*)arg; // convert argument
+	pthread_barrier_wait(&start_barrier); // wait until all threads are created
+	for(int checkpoint=0;)
 }
 
 
