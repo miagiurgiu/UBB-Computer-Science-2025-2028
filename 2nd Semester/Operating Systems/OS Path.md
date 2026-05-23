@@ -8722,7 +8722,8 @@ void* worker(void* arg){
 	pthread_barrier_wait(&start_barrier); // wait until all threads are created
 	for(int checkpoint=0;checkpoint<m; checkpoint++){
 		pthread_mutex_lock(&checkpoint_mutexes[checkpoint]); // only one thread at a time
-		int wait_time=100000+rand()%100
+		int wait_time=100000+rand()%100001;
+		usleep(wait_time);
 	}
 }
 
