@@ -8698,6 +8698,10 @@ int main() {
 }
 ```
 
+Pb20
+![[Pasted image 20260523113859.png]]
+
+
 
 
 ### Lecture - 20 may 2026
