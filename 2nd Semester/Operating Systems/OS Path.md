@@ -8704,7 +8704,13 @@ Pb20
 - m checkpoints -> one thread at a time -> wait between 100 and 200 ms -> print message indicating thread number, checkpoint nr -> exit the checkpoint
 ```
 #include <stdio.h>
-#include <
+#include <...
+
+int n; // nr of threads
+int m; // nr of checkpoints
+
+pthread_mutex_t *checkpoint_mutexes; // one mutex for each checkpoint
+pthread_barrier_t start_barrier;
 
 ```
 
