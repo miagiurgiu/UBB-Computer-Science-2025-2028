@@ -8724,10 +8724,18 @@ void* worker(void* arg){
 		pthread_mutex_lock(&checkpoint_mutexes[checkpoint]); // only one thread at a time
 		int wait_time=100000+rand()%100001;
 		usleep(wait_time);
-		printf()
+		printf("Thread %d passed checkpoint %d\n",data->id,checkpoint);
+		pthread_mutex_unlock(&checkpoint_mutexes[checkpoint]);
 	}
+	return NULL;
 }
 
+int main(int argc, char **argv){
+	if(argc!=3){
+	
+	}
+
+}
 
 ```
 
