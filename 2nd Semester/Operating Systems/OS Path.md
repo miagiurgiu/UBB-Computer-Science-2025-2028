@@ -8763,6 +8763,10 @@ int main(int argc, char **argv){
 	for(int i=0;i<m;i++){
 		pthread_mutex_destroy(&checkpoint_mutexes[i]);
 	}
+	
+	pthread_barrier_destroy(&start_barrier);
+	free(checkpoint_mutexes);
+	return 0;
 
 }
 
