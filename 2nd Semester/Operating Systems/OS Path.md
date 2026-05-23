@@ -8738,9 +8738,11 @@ int main(int argc, char **argv){
 	n=atoi(argv[1]);
 	m=atoi(argv[2]);
 	srand(time(NULL));
+	
 	pthread_t threads[n];
 	ThreadData data[n];
 	
+	checkpoint_m
 
 }
 
