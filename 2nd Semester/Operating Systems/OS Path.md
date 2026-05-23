@@ -8701,8 +8701,12 @@ int main() {
 Pb20
 ![[Pasted image 20260523113859.png]]
 - 2 arguments from cmd line: n,m
-- m checkpoints -> one thread at a time -> wait between 100 and 
+- m checkpoints -> one thread at a time -> wait between 100 and 200 ms -> print message indicating thread number, checkpoint nr -> exit the checkpoint
+```
+#include <stdio.h>
+#include <
 
+```
 
 
 ### Lecture - 20 may 2026
