@@ -9202,6 +9202,15 @@ int main() {
 	fclose(f);
 	
 	pthread_t threads[THREAD_COUNT];
+	ThreadData data[THREAD_COUNT];
+	
+	int chunk=N/THREAD_COUNT;
+	
+	for(int i=0;i<THREAD_COUNT;i++){
+		data[i].id=i;
+		data[i].start=i*chunk;
+		if
+	}
 
 }
 ```
