@@ -9270,6 +9270,8 @@ int main() {
 ```
 
 
+##### Mock test "3.jpeg"
+
 ### Lecture - 20 may 2026
 **Operating Systems process management and CPU scheduling**.
 
