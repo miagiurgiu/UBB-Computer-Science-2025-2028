@@ -8271,6 +8271,7 @@ int main() {
 ```
 
 ##### Exercise 2. Protect shared variable
+We create two threads, 
 ```
 #include <stdio.h>
 #include <pthread.h>
