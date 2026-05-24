@@ -10468,7 +10468,15 @@ void* worder(void* arg){
 	printf("Thread %d generated: %d %d %d\n",data->id,data->numbers[0],data->numbers[1],data->numbers[2]);
 	pthread_barrier_wair(&barrier);
 	int local_sum=0;
-	for(int i=0)
+	for(int i=0;i<3;i++){
+		if(data->numbers[i]%2==1){
+			local_sum +=data->numbers[i];
+		}
+		else {
+			local_sum -=data->numbers[i];
+		}
+	}
+	
 }
 
 ```
