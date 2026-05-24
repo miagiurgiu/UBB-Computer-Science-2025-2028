@@ -9177,7 +9177,18 @@ void* worder(void* arg){
 		freq[i] +=local_freq[i];
 	}
 	pthread_mutex_unlock(&mutex);
-	re
+	return NULL;
+}
+
+int main() {
+	printf("Give n: ");
+	scanf("%d",&n);
+	if(n!=50000 && n!=80000 && n!=100000){
+		printf("Invalid N\n");
+		exit(1);
+	}
+	
+
 }
 ```
 
