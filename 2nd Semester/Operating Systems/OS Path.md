@@ -8242,6 +8242,15 @@ sem_post(&s) - leave/give permit back
 pthread_join() - main waits for a thread to finish
 barrier - all threads wait until everyone is ready
 
+JOIN vs BARRIER:
+pthread_join() -> main waits for a thread to finish (used at the end of main)
+pthread_barrier_wait() -> threads wait for all threads to arrive (used during execution)
+
+Exercise 1. Create one thread
+
+
+
+
 Pb 18.
 ![[Pasted image 20260518132025.png]]
 - read from command line lowercase letters
