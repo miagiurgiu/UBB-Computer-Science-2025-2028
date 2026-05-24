@@ -9136,7 +9136,8 @@ int main(int argc,char **argv) {
 ![[Pasted image 20260524180508.png]]
 - read n bytes from binary file
 - each byte is a number
-- threads count how many times each pri
+- threads count how many times each prime number between 2 and 97 appears
+- compute average frequency m 
 ```
 #include <stdio.h>
 #include <stdlib.h>
