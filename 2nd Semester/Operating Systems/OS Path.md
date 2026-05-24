@@ -8304,7 +8304,42 @@ int main() {
 Thread waits until another says "continue".
 ```
 
+#include <stdio.h>
+#include <pthread.h>
 
+pthread_mutex_t mymutex=PTHREAD_MUTEX_INITIALIZER;//mutex protects the shared variable "ready"
+pthread_cond_t cond=PTHREAD_COND_INITIALIZER; // condvar used to put one thread to sleep and wake it later
+int ready=0;//shared flag (0=not ready yet,1=waiter may continue)
+
+void* waiter(void* arg) {
+	pthread_mutex_lock(&mymutex); // lock before check
+	while(ready==0) { // not ready
+		pthread_cond_wait(&cond,&mymutex); 
+	}
+	printf("Waiter continues\n");//after ready became 1
+	pthread_mutex_unlock(&mymutex); // release mutex after finishing using shared data
+	(void)arg;
+	return NULL;
+}
+
+void* signaler(void* arg) {
+	pthread_mutex_lock(&mymutex); // lock before modifying shared variable "ready"
+	ready=1; // change condition - now waiter is allowed to continue
+	pthread_cond_signal(&cond); // wake one thread sleeping on cond
+	pthread_mutex_unlock(&mymutex);
+	(void)arg;
+	return NULL;
+}
+int main() {
+	pthread_t t1,t2;
+	pthread_create(&t1,NULL,waiter,NULL);
+	pthread_create(&t2,NULL,signaler,NULL);
+	pthread_join(t1,NULL);
+	pthread_join(t2,NULL);
+	pthread_cond_destroy(&cond);
+	pthread_mutex_destroy(&mymutex);
+	return 0;
+}
 ```
 
 
