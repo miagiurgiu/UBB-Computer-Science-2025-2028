@@ -8804,7 +8804,9 @@ typedef struct {
 }ThreadData;
 
 void* worker(void* arg){
-	ThreadData **
+	ThreadData *data=(ThreadData*)arg;
+	pthread_barrier_wait(&start_barrier);
+	for(int checkpoint=0)
 }
 
 ```
