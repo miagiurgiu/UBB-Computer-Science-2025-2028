@@ -8809,6 +8809,7 @@ void* worker(void* arg){
 	for(int cp=0;cp<n;cp++){ // each thread crosses n checkpoints
 		sem_wait(&checkpoints[cp]); // try to enter checkpoint cp
 		usleep(100000+rand()%100001); 
+		printf("Thread %d passed checkpoint %d\n",da)
 	}
 }
 
