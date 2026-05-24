@@ -9909,7 +9909,154 @@ int main() {
 
 
 
-##### Mock test 
+##### Mock test "7.jpeg"
+![[Pasted image 20260524184510.png]]
+
+```
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
+#include <math.h>
+
+#define FILE_NAME "/tmp/216-file"
+#define THREAD_COUNT 8
+
+int N;
+unsigned char *numbers;
+int freq[101];
+
+pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
+
+typedef struct {
+    int id;
+    int start;
+    int end;
+} ThreadData;
+
+int is_prime(int x) {
+    if(x < 2) return 0;
+
+    for(int d = 2; d * d <= x; d++) {
+        if(x % d == 0) return 0;
+    }
+
+    return 1;
+}
+
+void* worker(void* arg) {
+    ThreadData *data = (ThreadData*)arg;
+
+    int local_freq[101] = {0};
+
+    for(int i = data->start; i < data->end; i++) {
+        int value = numbers[i];
+
+        if(value <= 100 && is_prime(value)) {
+            local_freq[value]++;
+        }
+    }
+
+    pthread_mutex_lock(&mutex);
+
+    for(int i = 2; i <= 97; i++) {
+        if(is_prime(i)) {
+            freq[i] += local_freq[i];
+        }
+    }
+
+    pthread_mutex_unlock(&mutex);
+
+    return NULL;
+}
+
+int main() {
+    printf("Give N: ");
+    scanf("%d", &N);
+
+    if(N != 40000 && N != 70000 && N != 90000) {
+        printf("Invalid N\n");
+        exit(1);
+    }
+
+    numbers = malloc(N * sizeof(unsigned char));
+    if(numbers == NULL) {
+        perror("malloc");
+        exit(1);
+    }
+
+    FILE *f = fopen(FILE_NAME, "rb");
+    if(f == NULL) {
+        perror("fopen");
+        exit(1);
+    }
+
+    fread(numbers, sizeof(unsigned char), N, f);
+    fclose(f);
+
+    pthread_t threads[THREAD_COUNT];
+    ThreadData data[THREAD_COUNT];
+
+    int chunk = N / THREAD_COUNT;
+
+    for(int i = 0; i < THREAD_COUNT; i++) {
+        data[i].id = i;
+        data[i].start = i * chunk;
+
+        if(i == THREAD_COUNT - 1)
+            data[i].end = N;
+        else
+            data[i].end = (i + 1) * chunk;
+
+        pthread_create(&threads[i], NULL, worker, &data[i]);
+    }
+
+    for(int i = 0; i < THREAD_COUNT; i++) {
+        pthread_join(threads[i], NULL);
+    }
+
+    int total = 0;
+    int prime_count = 0;
+
+    for(int i = 2; i <= 97; i++) {
+        if(is_prime(i)) {
+            total += freq[i];
+            prime_count++;
+        }
+    }
+
+    double M = (double)total / prime_count;
+
+    printf("Average M = %.2lf\n", M);
+    printf("Prime numbers whose frequency equals M:\n");
+
+    int found = 0;
+
+    for(int i = 2; i <= 97; i++) {
+        if(is_prime(i)) {
+            if(fabs(freq[i] - M) < 0.000001) {
+                printf("%d appears %d times\n", i, freq[i]);
+                found = 1;
+            }
+        }
+    }
+
+    if(found == 0) {
+        printf("No prime has frequency exactly equal to M.\n");
+    }
+
+    free(numbers);
+    pthread_mutex_destroy(&mutex);
+
+    return 0;
+}
+
+```
+
+
+##### Mock test "8.jpeg"
+
+
+
 
 
 HOW TO RUN:
