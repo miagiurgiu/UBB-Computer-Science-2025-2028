@@ -9137,7 +9137,7 @@ int main(int argc,char **argv) {
 - read n bytes from binary file
 - each byte is a number
 - threads count how many times each prime number between 2 and 97 appears
-- compute average frequency m 
+- compute average frequency m and print prime numbers whose frequency is closest to m
 ```
 #include <stdio.h>
 #include <stdlib.h>
@@ -9146,7 +9146,15 @@ unsigned char *numbers;
 int n;
 int freq[101];
 
-pthread_mutex_t mutex=
+pthread_mutex_t mutex=PTHREAD_MUTEX_INITIALIZER'
+
+typedef struct {
+	int id;
+	int start;
+	int end;
+}ThreadData;
+
+
 
 ```
 
