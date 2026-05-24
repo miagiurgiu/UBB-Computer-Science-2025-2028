@@ -8412,7 +8412,14 @@ int main() {
 
 ```
 
-##### Exercise 6.
+##### Exercise 6. Barriers
+all threads start together after everybody arrives
+```
+
+
+```
+
+
 
 Pb 18.
 ![[Pasted image 20260518132025.png]]
