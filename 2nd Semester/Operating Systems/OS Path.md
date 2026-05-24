@@ -9126,9 +9126,10 @@ int main(int argc,char **argv) {
 		printf("%c->%d\n",'a'+i,fr[i]);
 	}
 	
-	
+	pthread_barrier_destroy(&b);
+	pthread_mutex_destroy(&m);
+	return 0;
 }
-
 ```
 
 
