@@ -11060,7 +11060,7 @@ int main() {
 
 ```
 
-
+#####
 
 ##### Wrap-up (templates):
 ##### MUTEX
@@ -11086,8 +11086,73 @@ main():
 ```
 
 ##### BARRIER
+```
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
+#include <unistd.h>
 
+pthread_barrier_t barrier;
 
+void* worker(void* arg) {
+
+    int id = *(int*)arg;
+
+    printf("Thread %d reached barrier\n", id);
+
+    // thread stops here until ALL participants arrive
+    pthread_barrier_wait(&barrier);
+
+    printf("Thread %d passed barrier\n", id);
+
+    return NULL;
+}
+
+int main() {
+
+    pthread_t threads[3];
+
+    int ids[3];
+
+    // 3 worker threads + main thread
+    pthread_barrier_init(&barrier, NULL, 4);
+
+    for(int i = 0; i < 3; i++) {
+
+        ids[i] = i;
+
+        pthread_create(
+            &threads[i],
+            NULL,
+            worker,
+            &ids[i]
+        );
+    }
+
+    // simulate work done by main
+    sleep(5);
+
+    printf("Main reached barrier\n");
+
+    // main also waits at barrier
+    pthread_barrier_wait(&barrier);
+
+    printf("All threads are ready, continue!\n");
+
+    for(int i = 0; i < 3; i++) {
+
+        pthread_join(
+            threads[i],
+            NULL
+        );
+    }
+
+    pthread_barrier_destroy(&barrier);
+
+    return 0;
+}
+
+```
 
 
 HOW TO RUN:
