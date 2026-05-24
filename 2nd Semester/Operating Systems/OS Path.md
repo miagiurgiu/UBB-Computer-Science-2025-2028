@@ -8831,8 +8831,10 @@ int main(int argc, char **argv){
 	checkpoints=malloc(N*sizeof(sem_t)); // dynamic array of semaphores
 	for(int cp=0;cp<n;cp++){
 		int capacity=total_threads/(2<<cp); // ?
-		sem_init(&checkpoints[cp],0,capacity); // 0 - sem is shared between threads of t
+		sem_init(&checkpoints[cp],0,capacity); // 0 - sem is shared between threads of the same process; capacity - how many threads can enter this checkpoint at once
 	}
+	pthread_barrier_init(&start_barrier,NULL,total_threads);
+	
 	
 }
 
