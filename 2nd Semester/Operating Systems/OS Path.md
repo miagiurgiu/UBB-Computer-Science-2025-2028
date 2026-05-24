@@ -8822,6 +8822,13 @@ int main(int argc, char **argv){
 	}
 	n=atoi(argv[1]);
 	srand(time(NULL));
+	total_threads=1;
+	for(int i=0;i<n;i++){
+		total_threads *=2;
+	}
+	pthread_t threads[total_threads]; // threads array
+	ThreadData data[total_]
+	
 }
 
 ```
