@@ -9116,6 +9116,15 @@ int main(int argc,char **argv) {
 	
 	pthread_barrier_wait(&b); // release all worker threads simultaneously
 	
+	for(int i=0;i<n; i++){ // wait for all threads to finish
+		pthread_join(threads[i],NULL);
+	}
+	
+	printf("\nFrequencies:\n");
+	
+	for(int i=0;i<26;i++){
+		
+	}
 	
 }
 
