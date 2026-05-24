@@ -9136,7 +9136,14 @@ int main(int argc,char **argv) {
 ![[Pasted image 20260524180508.png]]
 
 ```
+#include <stdio.h>
+#include <stdlib.h>
 
+unsigned char *numbers;
+int n;
+int freq[101];
+
+pthread_mutex_t mutex=
 
 ```
 
