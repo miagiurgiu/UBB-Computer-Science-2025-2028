@@ -9198,20 +9198,25 @@ int main() {
 		perror("fopen");
 		exit(1);
 	}
-	fread(numbers,sizeof(unsigned char),N,f);
+	fread(numbers,sizeof(unsigned char),n,f);
 	fclose(f);
 	
 	pthread_t threads[THREAD_COUNT];
 	ThreadData data[THREAD_COUNT];
 	
-	int chunk=N/THREAD_COUNT;
+	int chunk=n/THREAD_COUNT;
 	
 	for(int i=0;i<THREAD_COUNT;i++){
 		data[i].id=i;
 		data[i].start=i*chunk;
-		if
+		if(i==THREAD_COUNT-1)
+			data[i].end=n;
+		else 
+			data[i].end=(i+1)*chunk;
+		pthread_create(&threads[i],NULL,worker,&data[i]);
 	}
 
+	for(int i=0;i<THREAD_COUNT;i++)
 }
 ```
 
