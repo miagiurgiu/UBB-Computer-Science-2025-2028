@@ -8272,8 +8272,32 @@ int main() {
 
 ##### Exercise 2. Protect shared variable
 ```
+#include <stdio.h>
+#include <pthread.h>
 
+int x=0;
+pthread_mutex_t mymutex=PTHREAD_MUTEX_INITIALIZER;
 
+void* worker(void* arg) {
+        pthread_mutex_lock(&mymutex);
+        x++;
+        pthread_mutex_unlock(&mymutex);
+        (void)arg;
+        return NULL;
+}
+
+int main() {
+        pthread_t t1,t2,t3;
+        pthread_create(&t1,NULL,worker,NULL);
+        pthread_create(&t2,NULL,worker,NULL);
+        pthread_create(&t3,NULL,worker,NULL);
+        pthread_join(t1,NULL);
+        pthread_join(t2,NULL);
+        pthread_join(t3,NULL);
+        printf("%d\n",x);
+        pthread_mutex_destroy(&mymutex);
+        return 0;
+}
 ```
 
 
