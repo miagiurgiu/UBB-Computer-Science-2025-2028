@@ -9162,6 +9162,11 @@ int is_prime(int x){
 	return 1;
 }
 
+void* worder(void* arg){
+	ThreadData *data=(ThreadData*)arg;
+	int local_freq[101]={0};
+	for()
+}
 ```
 
 
