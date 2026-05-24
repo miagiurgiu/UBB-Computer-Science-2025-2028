@@ -10442,19 +10442,6 @@ int main(int argc, char **argv) {
 
 
 ##### Mock test "examen.c"
-Sa se scrie un program care citeste un numar N de la tastatura 
-si creeaza doua threaduri (pot fi descrise de doua functii diferite
-sau de aceeasi functie). Unul dintre ele va genera un numar par 
-aleator pe care sa il adauge intr-un sir primit ca parametru de la 
-threadul principal, iar celalalt va face acelasi lucru, generand in 
-schimb numere impare. Intre cele doua threaduri trebuie implementata 
-o sincronizare care sa asigure ca in sir se adauga alternativ cate un 
-numar par, respectiv impar, pana la lungimea maxima N.
-
-```
-
-
-```
 
 
 
