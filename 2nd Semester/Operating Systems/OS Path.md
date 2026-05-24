@@ -8804,9 +8804,11 @@ typedef struct {
 }ThreadData;
 
 void* worker(void* arg){
-	ThreadData *data=(ThreadData*)arg;
-	pthread_barrier_wait(&start_barrier);
-	for(int checkpoint=0)
+	ThreadData *data=(ThreadData*)arg; // get this thread's data
+	pthread_barrier_wait(&start_barrier); // wait until all threads exist
+	for(int cp=0;cp<n;checkpoint++){ // each thread crosses n checkpoints
+		sem_wait(&checkpoints[cp]); // try to enter checkpoint
+	}
 }
 
 ```
