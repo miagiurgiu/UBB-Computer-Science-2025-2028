@@ -11426,8 +11426,6 @@ int main() {
 
 
 
-
-
 HOW TO RUN:
 gcc -Wall -Wextra -Werror -g -o program program.c -pthread
 ### Lecture - 20 may 2026
