@@ -9142,6 +9142,9 @@ int main(int argc,char **argv) {
 #include <stdio.h>
 #include <stdlib.h>
 
+#define FILE_NAME "/tmp/212-file"
+#define THREAD_COUNT 8
+
 unsigned char *numbers; // global array with numbers read from file
 int n; // number of values read
 int freq[101]; // shared frequency vector for values 0...100
