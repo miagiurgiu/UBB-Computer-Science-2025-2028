@@ -10073,6 +10073,14 @@ cele 2 tipuri de thread-uri vor fi create în ordinea indicată, iar execuția l
 
 ```
 
+##### Mock test "partialthreads.jpg"
+![[Pasted image 20260524184731.png]]
+
+```
+
+
+```
+
 
 
 
