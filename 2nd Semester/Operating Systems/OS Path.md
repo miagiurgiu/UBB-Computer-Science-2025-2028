@@ -8809,7 +8809,16 @@ void* worker(void* arg){
 	for(int cp=0;cp<n;cp++){ // each thread crosses n checkpoints
 		sem_wait(&checkpoints[cp]); // try to enter checkpoint cp
 		usleep(100000+rand()%100001); 
-		printf("Thread %d passed checkpoint %d\n",da)
+		printf("Thread %d passed checkpoint %d\n",data->id, cp);
+		sem_post(&checkpoints[cp]); // leave checkpoint
+	}
+	return NULL;
+}
+
+int main(int argc, char **argv){
+	if(argc!=2){
+		printf("Wrong usage",argv[0]);
+		exit
 	}
 }
 
