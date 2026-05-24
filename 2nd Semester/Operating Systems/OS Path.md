@@ -11062,7 +11062,8 @@ int main() {
 
 
 
-wrap-up templates:
+##### Wrap-up (templates):
+##### MUTEX
 ```
 global variables
 mutex
@@ -11083,6 +11084,10 @@ main():
     destroy mutex
 
 ```
+
+##### BARRIER
+
+
 
 
 HOW TO RUN:
