@@ -9123,8 +9123,9 @@ int main(int argc,char **argv) {
 	printf("\nFrequencies:\n");
 	
 	for(int i=0;i<26;i++){
-		
+		printf("%c->%d\n",'a'+i,fr[i]);
 	}
+	
 	
 }
 
