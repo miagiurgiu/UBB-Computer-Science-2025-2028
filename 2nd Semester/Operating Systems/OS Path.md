@@ -10492,7 +10492,13 @@ int main(int argc, char **argv){
 		printf("n must be positive\n");
 		exit(1);
 	}
-	pthread_
+	pthread_t *threads=malloc(n*sizeof(pthread_t));
+	ThreadData *data=malloc(n*sizeof(ThreadData));
+	if(threads==NULL || data==NULL){
+		perror("malloc");
+		exit(1);
+	}
+	
 }
 
 ```
