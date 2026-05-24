@@ -9068,8 +9068,11 @@ int main(int argc, char **argv){
 #include <string.h>
 #include <stdlib.h>
 
-int fr[26];
+int fr[26]; // shared frequency vector
+pthread_mutex_t m; 
+pthread_barrier_t b;
 
+typedef
 
 ```
 
