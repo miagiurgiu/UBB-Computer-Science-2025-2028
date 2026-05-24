@@ -8797,14 +8797,14 @@ int n; // nr checkpoints
 int total_threads; // nr racers=2^n
 
 sem_t *checkpoints; // one semaphore/checkpoint
-pthread_barrier_t 
+pthread_barrier_t start_barrier; // makes all racers start together
 
 typedef struct {
 	int id;
 }ThreadData;
 
 void* worker(void* arg){
-
+	ThreadData **
 }
 
 ```
