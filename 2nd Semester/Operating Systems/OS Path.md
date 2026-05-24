@@ -8415,7 +8415,29 @@ int main() {
 ##### Exercise 6. Barriers
 all threads start together after everybody arrives
 ```
+#include <stdio.h>
+#include <pthread.h>
 
+pthread_barrier_t barrier; 
+void* worker(void* arg) {
+        printf("Reached barrier\n"); // every thread prints this as soon as it starts running
+        pthread_barrier_wait(&barrier); // if a thread hits this, it stops and waits until the tota>
+        printf("Passed barrier\n"); // this line executes only after all 3 threads are present
+        (void)arg;
+        return NULL;
+}
+int main() {
+        pthread_t t1,t2,t3; 
+        pthread_barrier_init(&barrier,NULL,3); // "3" tells the barrier to hold everyone until exac>
+        pthread_create(&t1,NULL,worker,NULL); // launch the 3 threads
+        pthread_create(&t2,NULL,worker,NULL);
+        pthread_create(&t3,NULL,worker,NULL);
+        pthread_join(t1,NULL);// wait for them to finish before cleaning up
+        pthread_join(t2,NULL);
+        pthread_join(t3,NULL);
+        pthread_barrier_destroy(&barrier);//remove barrier from memory
+        return 0;
+}
 
 ```
 
