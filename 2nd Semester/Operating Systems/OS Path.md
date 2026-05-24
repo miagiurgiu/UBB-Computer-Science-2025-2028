@@ -8833,8 +8833,14 @@ int main(int argc, char **argv){
 		int capacity=total_threads/(2<<cp); // ?
 		sem_init(&checkpoints[cp],0,capacity); // 0 - sem is shared between threads of the same process; capacity - how many threads can enter this checkpoint at once
 	}
-	pthread_barrier_init(&start_barrier,NULL,total_threads);
+	pthread_barrier_init(&start_barrier,NULL,total_threads); // all racers wait here until every thread has been created
+	for(int i=0;i<total_threads;i++){
+		data[i].id=i;
+		pthread_create(&threads[i],NULL,worker,&data[i]);
+	}
+	for(int i=0;i<total_threads;i+_){
 	
+	}
 	
 }
 
