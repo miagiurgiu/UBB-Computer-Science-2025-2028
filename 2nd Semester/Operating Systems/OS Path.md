@@ -9216,7 +9216,21 @@ int main() {
 		pthread_create(&threads[i],NULL,worker,&data[i]);
 	}
 
-	for(int i=0;i<THREAD_COUNT;i++)
+	for(int i=0;i<THREAD_COUNT;i++){
+		pthread_join(threads[i],NULL);
+	}
+	
+	int prime_count=0;
+	int total_appearances=0;
+	
+	for(int i=2;i<=97;i++){
+		if(is_prime(i)){
+			total_appearances +=freq[i];
+			prime_count++;
+		}
+	}
+	
+	
 }
 ```
 
