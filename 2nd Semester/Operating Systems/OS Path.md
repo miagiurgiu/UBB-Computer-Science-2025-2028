@@ -10054,7 +10054,24 @@ int main() {
 
 
 ##### Mock test "8.jpeg"
+Enunțul problemei
+să se scrie un program C care:
+1. Va citi de la tastatură:
+- ﻿﻿un număr natural K = (5, 7, 11, 13, 19);
+- ﻿﻿un număr natural N = (40000, 60000, 80000}•
+1. ﻿﻿﻿Va crea UN SINGUR thread care va citi N numere întregi (pe 1 OCTET) din fişierul binar "/tmp/212-file" și le va stoca într-o variabilă globală.
+2. ﻿﻿﻿Va crea, apoi, un număr potrivit de thread-uri care vor procesa numerele intregi citite anterior din fișier în primul thread creat și care:
+- vor determina și vor afișa câte numere întregi DIVIZIBILE cu K există
+în fiecare interval de 2000 numere întregi;
+- vor determina, la final, și vor stoca intr-o variabilă globală comună,
+câte numere intregi DIVIZIBILE cu K există îN TOTAL.
+Rezultatul final va fi afişat DOAR in programul principal.
+cele 2 tipuri de thread-uri vor fi create în ordinea indicată, iar execuția lor va fi sincronizată folosind cele mai potrivite mecanisme studiate.
 
+```
+
+
+```
 
 
 
