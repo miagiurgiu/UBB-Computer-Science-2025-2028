@@ -9059,7 +9059,8 @@ int main(int argc, char **argv){
 - read n words from keyword
 - create n threads, one for each word
 - all threads wait at a barrier before starting
-- each thread counts lowercase letters 'a' to 'z' 
+- each thread counts lowercase letters 'a' to 'z' from its word into a shared frequency vector
+- use a mutex when updating the shared vector
 
 ### Lecture - 20 may 2026
 **Operating Systems process management and CPU scheduling**.
