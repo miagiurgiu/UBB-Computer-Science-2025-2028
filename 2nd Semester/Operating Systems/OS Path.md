@@ -11352,6 +11352,81 @@ int main() {
 
 ```
 
+##### SEMAPHORE
+Create 3 threads that enter a critical section controlled by a semaphore initialized with value `2`. Since the semaphore has 2 permits, at most 2 threads may be simultaneously inside the critical section.
+```
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
+#include <semaphore.h>
+#include <unistd.h>
+
+sem_t sem;
+
+typedef struct {
+    int id;
+} ThreadData;
+
+void* worker(void* arg) {
+    ThreadData *data = (ThreadData*)arg;
+
+    printf("Thread %d wants to enter\n", data->id);
+
+    // take one permit
+    sem_wait(&sem);
+
+    printf("Thread %d entered critical section\n",
+           data->id);
+
+    sleep(4);
+
+    printf("Thread %d leaving critical section\n",
+           data->id);
+
+    // return permit
+    sem_post(&sem);
+
+    return NULL;
+}
+
+int main() {
+    pthread_t threads[3];
+
+    ThreadData data[3];
+
+    // semaphore initialized with 2 permits
+    sem_init(&sem, 0, 2);
+
+    for(int i = 0; i < 3; i++) {
+        data[i].id = i;
+
+        pthread_create(
+            &threads[i],
+            NULL,
+            worker,
+            &data[i]
+        );
+
+        sleep(1);
+    }
+
+    for(int i = 0; i < 3; i++) {
+        pthread_join(
+            threads[i],
+            NULL
+        );
+    }
+
+    sem_destroy(&sem);
+
+    return 0;
+}
+
+```
+
+
+
+
 
 HOW TO RUN:
 gcc -Wall -Wextra -Werror -g -o program program.c -pthread
