@@ -10320,12 +10320,128 @@ int main() {
 ```
 
 ##### Mock test "exam1.c"
+Receive command line arguments as pairs:
+```
+./p value1 next1 value2 next2 ...
+```
+Create one thread per pair. Each thread has:
+- its own `id`
+- a `value` to add to global `sum`
+- a `next` thread index
+Rule:
+- if after adding, `sum` is even → only thread `next` may continue
+- if `sum` is odd → any thread may continue
+- stop when `sum >= TARGET`
+Use:
+- **mutex** for shared `sum` and `turn`
+- **condition variable** because some threads must sleep until it is their turn
+- **broadcast** because when `turn` changes, several threads may need to re-check
 
+
+```
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
+
+#define TARGET 50
+
+typedef struct {
+    int id;     // thread index
+    int value;  // value added to global sum
+    int next;   // forced next thread if sum becomes even
+} ThreadData;
+
+int sum = 0;     // shared sum
+int turn = -1;   // -1 means any thread may run; otherwise only thread "turn"
+
+pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
+pthread_cond_t cond = PTHREAD_COND_INITIALIZER;
+
+void* worker(void* arg) {
+    ThreadData *data = (ThreadData*)arg;
+
+    while(1) {
+        pthread_mutex_lock(&mutex);
+
+        while(sum < TARGET && turn != -1 && turn != data->id) {
+            pthread_cond_wait(&cond, &mutex);
+        }
+
+        if(sum >= TARGET) {
+            pthread_cond_broadcast(&cond);
+            pthread_mutex_unlock(&mutex);
+            break;
+        }
+
+        sum += data->value;
+
+        printf("Thread %d added %d, sum = %d\n",
+               data->id,
+               data->value,
+               sum);
+
+        if(sum % 2 == 0) {
+            turn = data->next;
+        } else {
+            turn = -1;
+        }
+
+        pthread_cond_broadcast(&cond);
+
+        pthread_mutex_unlock(&mutex);
+    }
+
+    return NULL;
+}
+
+int main(int argc, char **argv) {
+    if(argc < 3 || (argc - 1) % 2 != 0) {
+        printf("Usage: %s value1 next1 value2 next2 ...\n", argv[0]);
+        exit(1);
+    }
+
+    int thread_count = (argc - 1) / 2;
+
+    pthread_t *threads = malloc(thread_count * sizeof(pthread_t));
+    ThreadData *data = malloc(thread_count * sizeof(ThreadData));
+
+    if(threads == NULL || data == NULL) {
+        perror("malloc");
+        exit(1);
+    }
+
+    for(int i = 0; i < thread_count; i++) {
+        data[i].id = i;
+        data[i].value = atoi(argv[1 + 2 * i]);
+        data[i].next = atoi(argv[2 + 2 * i]);
+
+        if(data[i].next < 0 || data[i].next >= thread_count) {
+            printf("Invalid next index for thread %d\n", i);
+            exit(1);
+        }
+
+        pthread_create(&threads[i], NULL, worker, &data[i]);
+    }
+
+    for(int i = 0; i < thread_count; i++) {
+        pthread_join(threads[i], NULL);
+    }
+
+    printf("Final sum = %d\n", sum);
+
+    pthread_cond_destroy(&cond);
+    pthread_mutex_destroy(&mutex);
+
+    free(data);
+    free(threads);
+
+    return 0;
+}
 
 ```
 
 
-```
+
 
 HOW TO RUN:
 gcc -Wall -Wextra -Werror -g -o program program.c -pthread
