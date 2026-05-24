@@ -8820,6 +8820,8 @@ int main(int argc, char **argv){
 		printf("Wrong usage");
 		exit(1);
 	}
+	n=atoi(argv[1]);
+	srand(time(NULL));
 }
 
 ```
