@@ -10619,9 +10619,155 @@ int main(int argc, char **argv) {
 ```
 
 ##### Mock test "probl4.txt"
+Run like:
+```
+./p n1 next1 prev1 n2 next2 prev2 ...
+```
+Each triplet creates one thread.  
+Each thread adds its `n` to global `sum`.  
+After adding:
+- if `sum` is even → next thread must be `next`
+- if `sum` is odd → next thread must be `prev`
+Use:
+- **mutex** for `sum` and `turn`
+- **condition variable** because threads wait for their turn
+```
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
 
+#define TARGET 100
 
+typedef struct {
+    int id;
+    int n;
+    int next;
+    int prev;
+} ThreadData;
 
+int sum = 0;
+int turn = -1; // -1 means any thread may start
+
+pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
+pthread_cond_t cond = PTHREAD_COND_INITIALIZER;
+
+int to_int(char *s) {
+    char *end;
+    int x = strtol(s, &end, 10);
+
+    if(*end != '\0') {
+        printf("Invalid number: %s\n", s);
+        exit(1);
+    }
+
+    return x;
+}
+
+void* worker(void* arg) {
+    ThreadData *data = (ThreadData*)arg;
+
+    while(1) {
+        pthread_mutex_lock(&mutex);
+
+        while(sum <= TARGET && turn != -1 && turn != data->id) {
+            pthread_cond_wait(&cond, &mutex);
+        }
+
+        if(sum > TARGET) {
+            pthread_cond_broadcast(&cond);
+            pthread_mutex_unlock(&mutex);
+            break;
+        }
+
+        sum += data->n;
+
+        printf("Thread %d added %d, sum = %d\n",
+               data->id,
+               data->n,
+               sum);
+
+        if(sum % 2 == 0) {
+            turn = data->next;
+            printf("Sum is even, next thread is %d\n", turn);
+        } else {
+            turn = data->prev;
+            printf("Sum is odd, next thread is %d\n", turn);
+        }
+
+        pthread_cond_broadcast(&cond);
+
+        pthread_mutex_unlock(&mutex);
+    }
+
+    return NULL;
+}
+
+int main(int argc, char **argv) {
+    if(argc < 4 || (argc - 1) % 3 != 0) {
+        printf("Usage: %s n1 next1 prev1 n2 next2 prev2 ...\n", argv[0]);
+        exit(1);
+    }
+
+    int thread_count = (argc - 1) / 3;
+
+    pthread_t *threads = malloc(thread_count * sizeof(pthread_t));
+    ThreadData *data = malloc(thread_count * sizeof(ThreadData));
+    int *used_next = calloc(thread_count, sizeof(int));
+    int *used_prev = calloc(thread_count, sizeof(int));
+
+    if(threads == NULL || data == NULL || used_next == NULL || used_prev == NULL) {
+        perror("malloc/calloc");
+        exit(1);
+    }
+
+    for(int i = 0; i < thread_count; i++) {
+        data[i].id = i;
+        data[i].n = to_int(argv[1 + 3 * i]);
+        data[i].next = to_int(argv[2 + 3 * i]);
+        data[i].prev = to_int(argv[3 + 3 * i]);
+
+        if(data[i].next < 0 || data[i].next >= thread_count ||
+           data[i].prev < 0 || data[i].prev >= thread_count) {
+            printf("Invalid next/prev index at thread %d\n", i);
+            exit(1);
+        }
+
+        if(used_next[data[i].next]) {
+            printf("Duplicate next value: %d\n", data[i].next);
+            exit(1);
+        }
+
+        if(used_prev[data[i].prev]) {
+            printf("Duplicate prev value: %d\n", data[i].prev);
+            exit(1);
+        }
+
+        used_next[data[i].next] = 1;
+        used_prev[data[i].prev] = 1;
+    }
+
+    for(int i = 0; i < thread_count; i++) {
+        pthread_create(&threads[i], NULL, worker, &data[i]);
+    }
+
+    for(int i = 0; i < thread_count; i++) {
+        pthread_join(threads[i], NULL);
+    }
+
+    printf("Final sum = %d\n", sum);
+
+    free(used_next);
+    free(used_prev);
+    free(data);
+    free(threads);
+
+    pthread_cond_destroy(&cond);
+    pthread_mutex_destroy(&mutex);
+
+    return 0;
+}
+
+```
 
 
 
