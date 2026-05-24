@@ -8270,8 +8270,7 @@ int main() {
 
 ```
 
-##### Exercise 2. Protect shared variable
-We create two threads, 
+##### Exercise 2. Mutex
 ```
 #include <stdio.h>
 #include <pthread.h>
@@ -8301,6 +8300,8 @@ int main() {
 }
 ```
 
+##### Exercise 3. Conditional variable
+Thread waits until another says "continue"
 
 Pb 18.
 ![[Pasted image 20260518132025.png]]
@@ -8930,6 +8931,4 @@ int main(int argc, char **argv){
 5) MLFQ
 6) Lottery Scheduling
 7) Stride Scheduling
-![[Pasted image 20260520185130.png|511]]
-
-
+![[Pasted image 20260520185130.png
