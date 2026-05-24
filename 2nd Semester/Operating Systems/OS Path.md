@@ -9086,11 +9086,21 @@ void* worker(void* arg){
 			int pos=c-'a';
 			pthread_mutex_lock(&m);
 			if(fr[pos]==0){
-				
+				printf("First time of %c\n",c);
 			}
+			fr[pos]++;
+			pthread_mutex_unlock(&m);
 		}
 	}
-	
+	return NULL;
+}
+
+int main() {
+	int n;
+	printf("Give n: ");
+	scanf("%d",&n);
+	char words[n][256];
+
 }
 
 ```
