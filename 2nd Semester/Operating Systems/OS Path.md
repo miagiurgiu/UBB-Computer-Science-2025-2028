@@ -9265,15 +9265,6 @@ int main() {
 ![[Pasted image 20260524183302.png]]
 
 ```
-
-
-```
-
-
-##### Mock test "3.jpeg"
-![[Pasted image 20260524183432.png]]
-
-```
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>
@@ -9394,8 +9385,18 @@ int main() {
 ```
 
 
+##### Mock test "3.jpeg"
+![[Pasted image 20260524183432.png]]
+
+```
 
 
+```
+
+
+
+HOW TO RUN:
+gcc -Wall -Wextra -Werror -g -o program program.c -pthread
 ### Lecture - 20 may 2026
 **Operating Systems process management and CPU scheduling**.
 
