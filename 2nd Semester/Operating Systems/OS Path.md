@@ -8838,10 +8838,13 @@ int main(int argc, char **argv){
 		data[i].id=i;
 		pthread_create(&threads[i],NULL,worker,&data[i]);
 	}
-	for(int i=0;i<total_threads;i+_){
-	
+	for(int i=0;i<total_threads;i+_){ // wait for each racer to finish
+		pthread_join(threads[i],NULL);
 	}
-	
+	for(int cp=0;cp<n;cp++){ // cleanup each semaphore
+		sem_destroy(&checkpoints[cp]);
+	}
+	pthread_barrier_destroy(&start_)	
 }
 
 ```
