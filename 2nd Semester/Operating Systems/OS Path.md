@@ -8374,6 +8374,7 @@ int main() {
 
 
 ##### Exercise 5. RWLock
+many reads, only one write
 ```
 
 
