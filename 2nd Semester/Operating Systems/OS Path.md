@@ -9142,9 +9142,9 @@ int main(int argc,char **argv) {
 #include <stdio.h>
 #include <stdlib.h>
 
-unsigned char *numbers;
-int n;
-int freq[101];
+unsigned char *numbers; // global array with numbers read from file
+int n; // number of values read
+int freq[101]; // shared frequency vector 
 
 pthread_mutex_t mutex=PTHREAD_MUTEX_INITIALIZER'
 
