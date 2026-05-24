@@ -8817,8 +8817,8 @@ void* worker(void* arg){
 
 int main(int argc, char **argv){
 	if(argc!=2){
-		printf("Wrong usage",argv[0]);
-		exit
+		printf("Wrong usage");
+		exit(1);
 	}
 }
 
