@@ -10483,7 +10483,16 @@ void* worder(void* arg){
 }
 
 int main(int argc, char **argv){
-	if(argc!=2)
+	if(argc!=2){
+		printf("Wrong usage\n");
+		exit(1);
+	}
+	int n=atoi(argv[1]);
+	if(n<=0){
+		printf("n must be positive\n");
+		exit(1);
+	}
+	pthread_
 }
 
 ```
