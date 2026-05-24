@@ -10450,7 +10450,14 @@ Receive `N` as command line argument. Create `N` threads. Each thread genera
 #include <pthread.h>
 #include <time.h>
 
-int 
+int global_sum=0;
+pthread_mutex_t mutex=PTHREAD_MUTEX_INITIALIZER;
+pthread_barrier_t barrier;
+
+typedef struct {
+	int id;
+	int numbers[3];
+}ThreadData;
 
 ```
 
