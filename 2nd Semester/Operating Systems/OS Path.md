@@ -8230,6 +8230,11 @@ Conditional variables
 -> pthread_cond_signal(...) -> wake the waiting thread
 Mutex -> key -> "one at a time", but does not control order
 
+MUTEX - allows 1 thread inside
+SEMAPHORE - allows k threads inside
+sem_wait(&s) - enter/take one permit, if no permits, wait
+
+
 Pb 18.
 ![[Pasted image 20260518132025.png]]
 - read from command line lowercase letters
