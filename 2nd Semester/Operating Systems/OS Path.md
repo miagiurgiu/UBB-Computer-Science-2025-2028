@@ -10069,7 +10069,122 @@ Rezultatul final va fi afişat DOAR in programul principal.
 cele 2 tipuri de thread-uri vor fi create în ordinea indicată, iar execuția lor va fi sincronizată folosind cele mai potrivite mecanisme studiate.
 
 ```
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
 
+#define FILE_NAME "/tmp/212-file"
+#define INTERVAL_SIZE 2000
+
+int K;
+int N;
+
+unsigned char *numbers;   // global array filled by reader thread
+int total_count = 0;      // shared final result
+
+pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
+
+typedef struct {
+    int id;
+    int start;
+    int end;
+} ThreadData;
+
+void* reader(void* arg) {
+    (void)arg;
+
+    FILE *f = fopen(FILE_NAME, "rb");
+    if(f == NULL) {
+        perror("fopen");
+        exit(1);
+    }
+
+    fread(numbers, sizeof(unsigned char), N, f);
+
+    fclose(f);
+
+    return NULL;
+}
+
+void* worker(void* arg) {
+    ThreadData *data = (ThreadData*)arg;
+
+    int local_count = 0;
+
+    for(int i = data->start; i < data->end; i++) {
+        if(numbers[i] % K == 0) {
+            local_count++;
+        }
+    }
+
+    printf("Thread %d interval [%d, %d): %d numbers divisible by %d\n",
+           data->id,
+           data->start,
+           data->end,
+           local_count,
+           K);
+
+    pthread_mutex_lock(&mutex);
+
+    total_count += local_count;
+
+    pthread_mutex_unlock(&mutex);
+
+    return NULL;
+}
+
+int main() {
+    printf("Give K: ");
+    scanf("%d", &K);
+
+    if(K != 5 && K != 7 && K != 11 && K != 13 && K != 19) {
+        printf("Invalid K\n");
+        exit(1);
+    }
+
+    printf("Give N: ");
+    scanf("%d", &N);
+
+    if(N != 40000 && N != 60000 && N != 80000) {
+        printf("Invalid N\n");
+        exit(1);
+    }
+
+    numbers = malloc(N * sizeof(unsigned char));
+    if(numbers == NULL) {
+        perror("malloc");
+        exit(1);
+    }
+
+    pthread_t read_thread;
+
+    pthread_create(&read_thread, NULL, reader, NULL);
+    pthread_join(read_thread, NULL);
+
+    int thread_count = N / INTERVAL_SIZE;
+
+    pthread_t threads[thread_count];
+    ThreadData data[thread_count];
+
+    for(int i = 0; i < thread_count; i++) {
+        data[i].id = i;
+        data[i].start = i * INTERVAL_SIZE;
+        data[i].end = (i + 1) * INTERVAL_SIZE;
+
+        pthread_create(&threads[i], NULL, worker, &data[i]);
+    }
+
+    for(int i = 0; i < thread_count; i++) {
+        pthread_join(threads[i], NULL);
+    }
+
+    printf("Total numbers divisible by %d = %d\n", K, total_count);
+
+    free(numbers);
+    pthread_mutex_destroy(&mutex);
+
+    return 0;
+}
 
 ```
 
