@@ -8827,7 +8827,11 @@ int main(int argc, char **argv){
 		total_threads *=2;
 	}
 	pthread_t threads[total_threads]; // threads array
-	ThreadData data[total_]
+	ThreadData data[total_threads]; // one struct per thread
+	checkpoints=malloc(N*sizeof(sem_t)); // dynamic array of semaphores
+	for(int cp=0;cp<n;cp++){
+		int capacity=total_threads/(2<<cp);
+	}
 	
 }
 
