@@ -9069,10 +9069,18 @@ int main(int argc, char **argv){
 #include <stdlib.h>
 
 int fr[26]; // shared frequency vector
-pthread_mutex_t m; 
-pthread_barrier_t b;
+pthread_mutex_t m; // mutex variable
+pthread_barrier_t b; // barrier variable
 
-typedef
+typedef struct {
+	int id;
+	char *word;
+}ThreadData;
+
+void* worker(void* arg){
+	ThreadData *data=(ThreadData*)arg;
+	
+}
 
 ```
 
