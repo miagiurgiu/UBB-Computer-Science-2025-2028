@@ -10441,7 +10441,7 @@ int main(int argc, char **argv) {
 ```
 
 
-##### Mock test "examen.c"
+##### Mock test "examen.c" - GOOD PROBLEM
 Receive `N` as command line argument. Create `N` threads. Each thread generates 3 numbers between `1` and `10`, prints them with its id, then waits until all threads finish generation. After that, each thread updates a global sum: odd numbers are added, even numbers are subtracted. Main prints the final sum.
 
 ```
@@ -10504,8 +10504,14 @@ int main(int argc, char **argv){
 		pthread_create(&threads[i],NULL,worker,&data[i]);
 	}
 	for(int i=0;i<n;i++){
-		pthread_join(threads[i])
+		pthread_join(threads[i],NULL);
 	}
+	printf("Final sum=%d\n",global_sum);
+	pthread_barrier_destroy(&barrier);
+	pthread_mutex_destroy(&mutex);
+	free(data);
+	free(threads);
+	return 0;
 }
 
 ```
