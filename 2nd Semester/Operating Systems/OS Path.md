@@ -10968,9 +10968,97 @@ int main(int argc, char **argv) {
 ```
 
 ##### Mock test "ticle.txt"
+Write a C program that reads from keyboard a sentence containing at least 6 words. The program creates one thread for each word in the sentence. Each thread receives the sentence data and moves one word to its reversed position so that after all threads finish, the sentence becomes completely reversed.
+The main thread waits for all worker threads to finish and then prints the reversed sentence.
+```
+#include <pthread.h>
+#include <string.h>
+#include <stdlib.h>
+#include <stdio.h>
 
+#define MAX_LENGTH 1024
+#define MAX_WORDS 100
 
+char sentence[MAX_LENGTH];
+char *words[MAX_WORDS];
+char *reversed_words[MAX_WORDS];
 
+int word_count = 0;
+
+typedef struct {
+    int index;
+} ThreadData;
+
+void* worker(void *arg) {
+    ThreadData *data = (ThreadData*)arg;
+
+    int i = data->index;
+
+    reversed_words[word_count - i - 1] = words[i];
+
+    return NULL;
+}
+
+int main() {
+    printf("Enter sentence with at least 6 words:\n");
+
+    fgets(sentence, MAX_LENGTH, stdin);
+
+    int len = strlen(sentence);
+    if(len > 0 && sentence[len - 1] == '\n') {
+        sentence[len - 1] = '\0';
+    }
+
+    char *token = strtok(sentence, " ");
+
+    while(token != NULL) {
+        words[word_count] = token;
+        word_count++;
+        token = strtok(NULL, " ");
+    }
+
+    if(word_count < 6) {
+        printf("Sentence must contain at least 6 words.\n");
+        exit(1);
+    }
+
+    pthread_t *threads = malloc(word_count * sizeof(pthread_t));
+    ThreadData *data = malloc(word_count * sizeof(ThreadData));
+
+    if(threads == NULL || data == NULL) {
+        perror("malloc");
+        exit(1);
+    }
+
+    for(int i = 0; i < word_count; i++) {
+        data[i].index = i;
+
+        pthread_create(&threads[i], NULL, worker, &data[i]);
+    }
+
+    for(int i = 0; i < word_count; i++) {
+        pthread_join(threads[i], NULL);
+    }
+
+    printf("Reversed sentence:\n");
+
+    for(int i = 0; i < word_count; i++) {
+        printf("%s", reversed_words[i]);
+
+        if(i < word_count - 1) {
+            printf(" ");
+        }
+    }
+
+    printf("\n");
+
+    free(data);
+    free(threads);
+
+    return 0;
+}
+
+```
 
 
 
