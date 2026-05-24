@@ -9079,7 +9079,10 @@ typedef struct {
 
 void* worker(void* arg){
 	ThreadData *data=(ThreadData*)arg; // convert generic pointer back to ThreadData
-	pthread_barrier_wait(&b);
+	pthread_barrier_wait(&b); // all threads wait here until main also says "start"
+	for(int i=0;data->word[i]!='\0';i++){
+		char c=
+	}
 	
 }
 
