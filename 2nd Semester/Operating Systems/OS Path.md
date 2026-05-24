@@ -9134,7 +9134,9 @@ int main(int argc,char **argv) {
 
 ##### Mock test "1.jpg"
 ![[Pasted image 20260524180508.png]]
-
+- read n bytes from binary file
+- each byte is a number
+- threads count how many times each pri
 ```
 #include <stdio.h>
 #include <stdlib.h>
