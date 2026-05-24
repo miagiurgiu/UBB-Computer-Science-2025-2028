@@ -8376,10 +8376,43 @@ int main() {
 ##### Exercise 5. RWLock
 many reads, only one write
 ```
+#include <stdio.h>
+#include <pthread.h>
 
+int x=0;
+pthread_rwlock_t rw;
+void* reader(void* arg) {
+	pthread_rwlock_rdlock(&rw); // shared access
+	// if no one is writing, many readers can enter here simultaneously
+	printf("Read x=%d\n",x);
+	pthread_rwlock_unlock(&rw); // release the shared lock
+	(void)arg;
+	return NULL;
+}
+void* writer(void* arg) {
+	pthread_rwlock_wrlock(&rw); // exclusive access
+	// blocks until all readers and other writers are finished
+	// while threads is here, no one else can read/write
+	x++; // safely modify the variable
+	pthread_rwlock_unlock(&rw); // release the exclusive lock
+	(void)arg;
+	return NULL;
+}
+
+int main() {
+	pthread_t r,w;
+	pthread_rwlock_init(&rw,NULL);//initialize the lock
+	pthread_create(&r,NULL,reader,NULL);//start the reader
+	pthread_create(&w,NULL,writer,NULL);//start the writer
+	pthread_join(r,NULL);// wait for reader to finish
+	pthread_join(w,NULL);// wait for writer to finish
+	pthread_rwlock_destroy(&rw);
+	return 0;
+}
 
 ```
 
+##### Exercise 6.
 
 Pb 18.
 ![[Pasted image 20260518132025.png]]
