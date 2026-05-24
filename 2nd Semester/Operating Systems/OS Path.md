@@ -8233,7 +8233,9 @@ Mutex -> key -> "one at a time", but does not control order
 MUTEX - allows 1 thread inside
 SEMAPHORE - allows k threads inside
 sem_wait(&s) - enter/take one permit, if no permits, wait
-
+sem_post(&s) - leave/give permit back
+pthread_join() - main waits for a thread to finish
+barrier - all threads wait until everyone is ready
 
 Pb 18.
 ![[Pasted image 20260518132025.png]]
@@ -8782,7 +8784,14 @@ Pb21
 - 
 ```
 #include <stdio.h>
-#include 
+#include <stdlib.h>
+#include <pthread.h>
+#include <semaphore.h>
+#include <unistd.h>
+#include <time.h>
+
+int n;
+
 
 typedef struct {
 	int id;
