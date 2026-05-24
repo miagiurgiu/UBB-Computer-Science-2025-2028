@@ -9184,10 +9184,11 @@ int main() {
 	printf("Give n: ");
 	scanf("%d",&n);
 	if(n!=50000 && n!=80000 && n!=100000){
-		printf("Invalid N\n");
+		printf("Invalid n\n");
 		exit(1);
 	}
-	
+	numbers=malloc(n*sizeof(unsigned char));
+	FILE *f=fop
 
 }
 ```
