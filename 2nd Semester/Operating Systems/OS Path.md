@@ -9095,11 +9095,12 @@ void* worker(void* arg){
 	return NULL;
 }
 
-int main() {
-	int n;
-	printf("Give n: ");
-	scanf("%d",&n);
-	char words[n][256];
+int main(int argc,char **argv) {
+	if(argc<2){
+		printf("Usage: %s word1 word2 ... \n",argv[0]);
+		exit(1);
+	}
+	int n=argc-1;
 	pthread_t threads[n];
 	ThreadData data[n];
 	
