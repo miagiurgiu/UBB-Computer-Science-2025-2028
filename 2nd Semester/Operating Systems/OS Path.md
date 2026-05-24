@@ -11158,8 +11158,107 @@ int main() {
 
 ```
 
-##### Mock test 
+##### Mock test "mut2"
+Receive any number of file names as command line arguments. Create one dynamically allocated thread per file. Each thread counts letters and digits **locally**, then adds those two local results once to global totals using mutexes. This is efficient because we do not lock/unlock for every character.
 
+```
+#include <stdlib.h>
+#include <stdio.h>
+#include <pthread.h>
+
+typedef struct {
+    char *file;
+} ThreadData;
+
+int global_letters = 0;
+int global_digits = 0;
+
+pthread_mutex_t mutex_letters = PTHREAD_MUTEX_INITIALIZER;
+pthread_mutex_t mutex_digits = PTHREAD_MUTEX_INITIALIZER;
+
+void* worker(void* arg) {
+    ThreadData *data = (ThreadData*)arg;
+
+    FILE *f = fopen(data->file, "r");
+    if(f == NULL) {
+        perror("fopen");
+        free(data);
+        return NULL;
+    }
+
+    int local_letters = 0;
+    int local_digits = 0;
+
+    char c;
+
+    while(fscanf(f, "%c", &c) == 1) {
+        if(c >= '0' && c <= '9') {
+            local_digits++;
+        }
+
+        if((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')) {
+            local_letters++;
+        }
+    }
+
+    fclose(f);
+
+    pthread_mutex_lock(&mutex_letters);
+    global_letters += local_letters;
+    pthread_mutex_unlock(&mutex_letters);
+
+    pthread_mutex_lock(&mutex_digits);
+    global_digits += local_digits;
+    pthread_mutex_unlock(&mutex_digits);
+
+    free(data);
+
+    return NULL;
+}
+
+int main(int argc, char **argv) {
+    if(argc < 2) {
+        printf("Usage: %s file1 file2 ...\n", argv[0]);
+        exit(1);
+    }
+
+    int thread_count = argc - 1;
+
+    pthread_t *threads = malloc(thread_count * sizeof(pthread_t));
+    if(threads == NULL) {
+        perror("malloc");
+        exit(1);
+    }
+
+    for(int i = 0; i < thread_count; i++) {
+        ThreadData *data = malloc(sizeof(ThreadData));
+        if(data == NULL) {
+            perror("malloc");
+            free(threads);
+            exit(1);
+        }
+
+        data->file = argv[i + 1];
+
+        pthread_create(&threads[i], NULL, worker, data);
+    }
+
+    for(int i = 0; i < thread_count; i++) {
+        pthread_join(threads[i], NULL);
+    }
+
+    printf("letters = %d\n", global_letters);
+    printf("digits = %d\n", global_digits);
+
+    pthread_mutex_destroy(&mutex_letters);
+    pthread_mutex_destroy(&mutex_digits);
+
+    free(threads);
+
+    return 0;
+}
+
+```
 
 ##### Wrap-up (templates):
 ##### MUTEX
