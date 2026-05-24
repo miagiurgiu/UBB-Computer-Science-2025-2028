@@ -9100,9 +9100,9 @@ int main(int argc,char **argv) {
 		printf("Usage: %s word1 word2 ... \n",argv[0]);
 		exit(1);
 	}
-	int n=argc-1; // 
-	pthread_t threads[n];
-	ThreadData data[n];
+	int n=argc-1; // nr of threads=nr of words
+	pthread_t threads[n]; // threads array
+	ThreadData data[n]; // 
 	
 }
 
