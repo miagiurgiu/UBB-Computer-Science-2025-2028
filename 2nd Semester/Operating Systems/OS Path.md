@@ -8224,14 +8224,16 @@ int main() {
 
 "REFERENCE SHEET":
 
+THREAD - concurrent execution
+MUTEX - allows 1 thread inside
+SEMAPHORE - allows k threads inside
 Conditional variables 
 -> when you see "take turns" / "wait until..." / "one thread wakes another" / "producer/consumer"
 -> pthread_cond_wait(...) -> sleep until another thread signals me
 -> pthread_cond_signal(...) -> wake the waiting thread
 Mutex -> key -> "one at a time", but does not control order
 
-MUTEX - allows 1 thread inside
-SEMAPHORE - allows k threads inside
+
 sem_wait(&s) - enter/take one permit, if no permits, wait
 sem_post(&s) - leave/give permit back
 pthread_join() - main waits for a thread to finish
@@ -8844,9 +8846,10 @@ int main(int argc, char **argv){
 	for(int cp=0;cp<n;cp++){ // cleanup each semaphore
 		sem_destroy(&checkpoints[cp]);
 	}
-	pthread_barrier_destroy(&start_)	
+	pthread_barrier_destroy(&start_barrier);
+	free(checkpoints);
+	return 0;	
 }
-
 ```
 
 
