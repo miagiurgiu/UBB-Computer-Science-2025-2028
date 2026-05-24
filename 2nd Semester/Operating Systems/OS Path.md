@@ -8776,7 +8776,16 @@ Pb21
 ![[Pasted image 20260524145418.png]]
 - 
 ```
+#include <stdio.h>
+#include 
 
+typedef struct {
+	int id;
+}ThreadData;
+
+void* worker(void* arg){
+
+}
 
 ```
 
