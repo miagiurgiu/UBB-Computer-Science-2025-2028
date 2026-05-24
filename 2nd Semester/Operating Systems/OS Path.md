@@ -9078,7 +9078,8 @@ typedef struct {
 }ThreadData;
 
 void* worker(void* arg){
-	ThreadData *data=(ThreadData*)arg;
+	ThreadData *data=(ThreadData*)arg; // convert generic pointer back to ThreadData
+	pthread_barrier_wait(&b);
 	
 }
 
