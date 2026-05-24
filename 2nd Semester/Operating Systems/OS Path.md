@@ -10897,7 +10897,28 @@ int main(int argc, char **argv) {
 valgrind --leak-check=full --track-origins=yes ./p a.txt 3 x b.txt 5 q
 
 
+##### Mock test 
+wrap-up templates:
+```
+global variables
+mutex
 
+ThreadData struct
+
+worker():
+    local computation
+    lock mutex
+    update shared variable
+    unlock mutex
+
+main():
+    read args
+    allocate threads
+    create threads
+    join threads
+    destroy mutex
+
+```
 
 
 HOW TO RUN:
