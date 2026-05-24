@@ -10516,6 +10516,25 @@ int main(int argc, char **argv){
 
 ```
 
+compile: gcc -Wall -Wextra -Werror -g -o a a.c -pthread
+valgrind: valgrind --leak-check=full --track-origins=yes ./a 3
+
+##### Mock test "probl3.txt"
+Write a c program that recives as command line arguments as many pairs formed
+ by a file (f) containing only numbers (as may as you like) and a number (n).
+ For each such pair the program will create a thread. 
+Each thread will receive a pair and will add the first n even numbers from
+ f to a global variable. The threads must be dynamically allocated in memory.
+ The access to the global variable must be efficiently synchronized using 
+mutex variables (putting a mutex_lock at the begnnig of the thread and 
+mutex_unlock at the end of the thread IS NOT EFFICIENT SYNCHRONIZATION) 
+NOTE: When you compile use the -pthread obtion. The source file must be 
+compiled using gcc with -Wall -g options WITHOUT WARNINGS OR SYNTAX ERRORS!!!
+
+```
+
+
+```
 
 
 HOW TO RUN:
