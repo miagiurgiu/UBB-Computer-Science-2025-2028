@@ -9102,7 +9102,10 @@ int main(int argc,char **argv) {
 	}
 	int n=argc-1; // nr of threads=nr of words
 	pthread_t threads[n]; // threads array
-	ThreadData data[n]; // 
+	ThreadData data[n]; // array of structs
+	pthread_mutex_init(&m,NULL);
+	pthread_barrier_init(&b,NULL,n+1);
+	
 	
 }
 
