@@ -9389,11 +9389,140 @@ int main() {
 ![[Pasted image 20260524183432.png]]
 
 ```
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
+#include <math.h>
+
+#define FILE_NAME "/tmp/212-file"
+#define THREAD_COUNT 8
+
+unsigned char *numbers;   // global array with values read from file
+int N;                    // number of values to read
+int freq[101];            // freq[x] = appearances of number x
+
+pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
+
+typedef struct {
+    int id;       // thread id
+    int start;    // first index processed by this thread
+    int end;      // one past last index processed
+} ThreadData;
+
+void* worker(void* arg) {
+    ThreadData *data = (ThreadData*)arg;
+
+    int local_freq[101] = {0};
+    // private frequency vector, so no mutex needed while counting
+
+    for(int i = data->start; i < data->end; i++) {
+        int value = numbers[i];
+
+        if(value >= 2 && value <= 100 && value % 2 == 0) {
+            local_freq[value]++;
+        }
+    }
+
+    pthread_mutex_lock(&mutex);
+    // protect global freq while merging local results
+
+    for(int i = 2; i <= 100; i += 2) {
+        freq[i] += local_freq[i];
+    }
+
+    pthread_mutex_unlock(&mutex);
+
+    return NULL;
+}
+
+int main() {
+    printf("Give N: ");
+    scanf("%d", &N);
+
+    if(N != 50000 && N != 60000 && N != 80000) {
+        printf("Invalid N\n");
+        exit(1);
+    }
+
+    numbers = malloc(N * sizeof(unsigned char));
+
+    FILE *f = fopen(FILE_NAME, "rb");
+    if(f == NULL) {
+        perror("fopen");
+        exit(1);
+    }
+
+    fread(numbers, sizeof(unsigned char), N, f);
+    fclose(f);
+
+    pthread_t threads[THREAD_COUNT];
+    ThreadData data[THREAD_COUNT];
+
+    int chunk = N / THREAD_COUNT;
+
+    for(int i = 0; i < THREAD_COUNT; i++) {
+        data[i].id = i;
+        data[i].start = i * chunk;
+
+        if(i == THREAD_COUNT - 1)
+            data[i].end = N;
+        else
+            data[i].end = (i + 1) * chunk;
+
+        pthread_create(&threads[i], NULL, worker, &data[i]);
+    }
+
+    for(int i = 0; i < THREAD_COUNT; i++) {
+        pthread_join(threads[i], NULL);
+    }
+
+    int total = 0;
+    int count_even = 0;
+
+    for(int i = 2; i <= 100; i += 2) {
+        total += freq[i];
+        count_even++;
+    }
+
+    double M = (double)total / count_even;
+
+    double best_diff = fabs(freq[2] - M);
+
+    for(int i = 4; i <= 100; i += 2) {
+        double diff = fabs(freq[i] - M);
+
+        if(diff < best_diff) {
+            best_diff = diff;
+        }
+    }
+
+    printf("Average M = %.2lf\n", M);
+    printf("Even numbers closest to M:\n");
+
+    for(int i = 2; i <= 100; i += 2) {
+        double diff = fabs(freq[i] - M);
+
+        if(diff == best_diff) {
+            printf("%d appears %d times\n", i, freq[i]);
+        }
+    }
+
+    free(numbers);
+    pthread_mutex_destroy(&mutex);
+
+    return 0;
+}
+
+```
+
+##### Mock test "4.jpeg"
+![[Pasted image 20260524183842.png]]
+
+```
 
 
 ```
 
-##### Mock test "4."
 
 
 
