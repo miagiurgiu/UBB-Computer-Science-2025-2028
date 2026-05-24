@@ -10463,8 +10463,9 @@ void* worder(void* arg){
 	ThreadData *data=(ThreadData*)arg;
 	srand(time(NULL));
 	for(int i=0;i<3;i++){
-		data->numbers[i]=
+		data->numbers[i]=rand()%10+1;
 	}
+	printf(")
 }
 
 ```
