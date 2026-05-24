@@ -8343,8 +8343,41 @@ int main() {
 ```
 
 ##### Exercise 4. Semaphores
+```
+#include <stdio.h>
+#include <pthread.h>
+#include <semaphore.h>
+#include <unistd.h>
+
+sem_t s;
+void* worker(void* arg) {
+        sem_wait(&s);
+        printf("Inside critical zone\n");
+        sleep(1);
+        sem_post(&s);
+        return NULL;
+}
+int main() {
+        pthread_t t[5];
+        sem_init(&s,0,2);
+        for(int i=0;i<5;i++) {
+                pthread_create(&t[i],NULL,worker,NULL);
+        }
+        for(int i=0;i<5;i++) {
+                pthread_join(t[i],NULL);
+        }
+        sem_destroy(&s);
+        return 0;
+}
+
+```
 
 
+##### Exercise 5. RWLock
+```
+
+
+```
 
 
 Pb 18.
