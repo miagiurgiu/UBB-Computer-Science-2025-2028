@@ -9246,10 +9246,19 @@ int main() {
 	printf("Average M = %.2lf\n", M);  
 	printf("Prime numbers closest to M:\n");
 	
-	
-	
-	
-	
+	for(int i = 2; i <= 97; i++) {  
+		if(is_prime(i)) {  
+			double diff = fabs(freq[i] - M);  
+			if(diff == best_diff) {  
+				printf("%d appears %d times\n", i, freq[i]);  
+			}  
+		}  
+	}  
+  
+	free(numbers);  
+	pthread_mutex_destroy(&mutex);  
+	return 0;
+}
 ```
 
 
