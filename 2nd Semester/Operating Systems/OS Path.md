@@ -8793,8 +8793,11 @@ Pb21
 #include <unistd.h>
 #include <time.h>
 
-int n;
-int total_threads; 
+int n; // nr checkpoints
+int total_threads; // nr racers=2^n
+
+sem_t *checkpoints; // one semaphore/checkpoint
+pthread_barrier_t 
 
 typedef struct {
 	int id;
