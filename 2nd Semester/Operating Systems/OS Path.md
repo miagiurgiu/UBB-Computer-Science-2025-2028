@@ -10905,9 +10905,73 @@ number of vowels: 4
 number of digits: 5*/
 
 ```
+#include <stdlib.h>
+#include <stdio.h>
+#include <pthread.h>
+#include <string.h>
 
+int vowels = 0;
+int digits = 0;
+
+pthread_mutex_t mtx = PTHREAD_MUTEX_INITIALIZER;
+
+void* worker(void *arg) {
+    char *s = (char*)arg;
+
+    int local_vowels = 0;
+    int local_digits = 0;
+
+    for(int i = 0; s[i] != '\0'; i++) {
+        if(strchr("0123456789", s[i]) != NULL) {
+            local_digits++;
+        }
+
+        if(strchr("aeiouAEIOU", s[i]) != NULL) {
+            local_vowels++;
+        }
+    }
+
+    pthread_mutex_lock(&mtx);
+    vowels += local_vowels;
+    digits += local_digits;
+    pthread_mutex_unlock(&mtx);
+
+    return NULL;
+}
+
+int main(int argc, char **argv) {
+    if(argc < 2) {
+        printf("Usage: %s string1 string2 ...\n", argv[0]);
+        exit(1);
+    }
+
+    int n = argc - 1;
+
+    pthread_t threads[n];
+
+    for(int i = 0; i < n; i++) {
+        pthread_create(&threads[i], NULL, worker, argv[i + 1]);
+    }
+
+    for(int i = 0; i < n; i++) {
+        pthread_join(threads[i], NULL);
+    }
+
+    printf("number of vowels: %d\n", vowels);
+    printf("number of digits: %d\n", digits);
+
+    pthread_mutex_destroy(&mtx);
+
+    return 0;
+}
 
 ```
+
+##### Mock test "ticle.txt"
+
+
+
+
 
 
 wrap-up templates:
