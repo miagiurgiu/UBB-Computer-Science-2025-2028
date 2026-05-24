@@ -9132,6 +9132,14 @@ int main(int argc,char **argv) {
 }
 ```
 
+##### Mock test "1.jpg"
+![[Pasted image 20260524180508.png]]
+
+```
+
+
+```
+
 
 
 ### Lecture - 20 may 2026
