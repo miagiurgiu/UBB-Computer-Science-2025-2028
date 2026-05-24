@@ -9110,9 +9110,11 @@ int main(int argc,char **argv) {
 	
 	for(int i=0;i<n;i++){ // create threads
 		data[i].id=i;
-		data[i].word
+		data[i].word=argv[i+1]; // because argv[0] is program's name
+		pthread_create(&threads[i],NULL,worker,&data[i]);
 	}
 	
+	pthread_
 	
 }
 
