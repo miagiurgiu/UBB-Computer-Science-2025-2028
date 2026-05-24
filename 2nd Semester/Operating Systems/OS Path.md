@@ -9262,7 +9262,6 @@ int main() {
 ```
 
 
-
 ### Lecture - 20 may 2026
 **Operating Systems process management and CPU scheduling**.
 
