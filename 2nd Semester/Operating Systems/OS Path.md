@@ -9144,7 +9144,7 @@ int main(int argc,char **argv) {
 
 unsigned char *numbers; // global array with numbers read from file
 int n; // number of values read
-int freq[101]; // shared frequency vector 
+int freq[101]; // shared frequency vector for values 0...100
 
 pthread_mutex_t mutex=PTHREAD_MUTEX_INITIALIZER'
 
@@ -9154,7 +9154,13 @@ typedef struct {
 	int end;
 }ThreadData;
 
-
+int is_prime(int x){
+	if(x<2) return 0;
+	for(int d=2;d*d<=x;d++){
+		if(x%d==0) return 0;
+	}
+	return 1;
+}
 
 ```
 
