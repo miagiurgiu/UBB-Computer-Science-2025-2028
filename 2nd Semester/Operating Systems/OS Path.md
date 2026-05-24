@@ -9187,13 +9187,18 @@ int main() {
 		printf("Invalid n\n");
 		exit(1);
 	}
+	
 	numbers=malloc(n*sizeof(unsigned char));
+	
 	FILE *f=fopen(FILE_NAME, "rb");
 	if(f==NULL){
 		perror("fopen");
 		exit(1);
 	}
+	fread(numbers,sizeof(unsigned char),N,f);
+	fclose(f);
 	
+	pthread_t threads[THREAD_COUNT];
 
 }
 ```
