@@ -8224,15 +8224,18 @@ int main() {
 
 "REFERENCE SHEET":
 
-THREAD - concurrent execution
-MUTEX - allows 1 thread inside
-SEMAPHORE - allows k threads inside
+1. THREAD - concurrent execution
+2. MUTEX - allows 1 thread inside
+3. SEMAPHORE - allows k threads inside
+4. CONDITIONAL VARIABLE - threads wait/wake each other
+5. RWLOCK - many readers or one writer
+6. BARRIER - everybody waits for everybody
+
 Conditional variables 
 -> when you see "take turns" / "wait until..." / "one thread wakes another" / "producer/consumer"
 -> pthread_cond_wait(...) -> sleep until another thread signals me
 -> pthread_cond_signal(...) -> wake the waiting thread
 Mutex -> key -> "one at a time", but does not control order
-
 
 sem_wait(&s) - enter/take one permit, if no permits, wait
 sem_post(&s) - leave/give permit back
