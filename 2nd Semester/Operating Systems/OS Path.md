@@ -10461,7 +10461,10 @@ typedef struct {
 
 void* worder(void* arg){
 	ThreadData *data=(ThreadData*)arg;
-	srand(tim)
+	srand(time(NULL));
+	for(int i=0;i<3;i++){
+		data->numbers[i]=
+	}
 }
 
 ```
