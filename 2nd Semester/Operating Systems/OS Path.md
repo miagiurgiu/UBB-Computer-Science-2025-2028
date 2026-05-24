@@ -8442,7 +8442,6 @@ int main() {
 ```
 
 
-
 Pb 18.
 ![[Pasted image 20260518132025.png]]
 - read from command line lowercase letters
@@ -9056,6 +9055,7 @@ int main(int argc, char **argv){
 }
 ```
 
+##### m
 
 
 
