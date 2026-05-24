@@ -10532,9 +10532,93 @@ NOTE: When you compile use the -pthread obtion. The source file must be
 compiled using gcc with -Wall -g options WITHOUT WARNINGS OR SYNTAX ERRORS!!!
 
 ```
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
 
+int global_sum = 0;
+
+pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
+
+typedef struct {
+    char *filename;
+    int n;
+} ThreadData;
+
+void* worker(void* arg) {
+    ThreadData *data = (ThreadData*)arg;
+
+    FILE *f = fopen(data->filename, "r");
+    if(f == NULL) {
+        perror("fopen");
+        free(data);
+        return NULL;
+    }
+
+    int x;
+    int count_even = 0;
+    int local_sum = 0;
+
+    while(count_even < data->n && fscanf(f, "%d", &x) == 1) {
+        if(x % 2 == 0) {
+            local_sum += x;
+            count_even++;
+        }
+    }
+
+    fclose(f);
+
+    pthread_mutex_lock(&mutex);
+    global_sum += local_sum;
+    pthread_mutex_unlock(&mutex);
+
+    free(data);
+
+    return NULL;
+}
+
+int main(int argc, char **argv) {
+    if(argc < 3 || (argc - 1) % 2 != 0) {
+        printf("Usage: %s file1 n1 file2 n2 ...\n", argv[0]);
+        exit(1);
+    }
+
+    int thread_count = (argc - 1) / 2;
+
+    pthread_t *threads = malloc(thread_count * sizeof(pthread_t));
+    if(threads == NULL) {
+        perror("malloc");
+        exit(1);
+    }
+
+    for(int i = 0; i < thread_count; i++) {
+        ThreadData *data = malloc(sizeof(ThreadData));
+        if(data == NULL) {
+            perror("malloc");
+            exit(1);
+        }
+
+        data->filename = argv[1 + 2 * i];
+        data->n = atoi(argv[2 + 2 * i]);
+
+        pthread_create(&threads[i], NULL, worker, data);
+    }
+
+    for(int i = 0; i < thread_count; i++) {
+        pthread_join(threads[i], NULL);
+    }
+
+    printf("Global sum = %d\n", global_sum);
+
+    pthread_mutex_destroy(&mutex);
+    free(threads);
+
+    return 0;
+}
 
 ```
+
+
 
 
 HOW TO RUN:
