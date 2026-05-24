@@ -9100,7 +9100,7 @@ int main() {
 	printf("Give n: ");
 	scanf("%d",&n);
 	char words[n][256];
-
+	pthread_t th
 }
 
 ```
