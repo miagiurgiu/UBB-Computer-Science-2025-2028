@@ -9523,7 +9523,21 @@ int main() {
 
 ```
 
+##### Mock test "5.jpeg"
+Enuntul problemei
 
+Să se scrie un program C care:
+
+1. ﻿﻿﻿Va citi de la tastatură un număr natural N = (40000, 60000, 80000} .
+2. ﻿﻿﻿Va crea UN SINGUR thread care va citi N numere intregi (pe 1 OCTET) din fişierul binar "/tmp/212-file" și le va stoca într-o variabilă globală.
+3. ﻿﻿﻿Va crea, apoi, un număr potrivit de thread-uri care vor procesa numerele întregi citite anterior din fișier în primul thread creat și care:
+
+- ﻿﻿vor calcula și vor afișa diferența ABSOLUTĂ dintre suma numerelor PARE și suma numerelor IMPARE din fiecare interval de 2000 numere Întregi;
+- ﻿﻿vor determina, la final, și vor stoca într-o variabilă globală comună, cea mai MICĂ diferență absolută dintre cele calculate anterior.
+
+Rezultatul final va fi afișat DOAR În programul principal.
+
+Cele 2 tipuri de thread-uri vor fi create în ordinea indicată, iar execuția lor va fi sincronizată folosind cele mai potrivite mecanisme studiate.
 
 
 HOW TO RUN:
