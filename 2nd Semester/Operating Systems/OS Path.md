@@ -9114,7 +9114,8 @@ int main(int argc,char **argv) {
 		pthread_create(&threads[i],NULL,worker,&data[i]);
 	}
 	
-	pthread_
+	pthread_barrier_wait(&b); // release all worker threads simultaneously
+	
 	
 }
 
