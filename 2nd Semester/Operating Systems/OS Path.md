@@ -10319,8 +10319,13 @@ int main() {
 
 ```
 
-##### Mock test 
+##### Mock test "exam1.c"
 
+
+```
+
+
+```
 
 HOW TO RUN:
 gcc -Wall -Wextra -Werror -g -o program program.c -pthread
