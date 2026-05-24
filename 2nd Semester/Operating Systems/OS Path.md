@@ -8246,7 +8246,31 @@ JOIN vs BARRIER:
 pthread_join() -> main waits for a thread to finish (used at the end of main)
 pthread_barrier_wait() -> threads wait for all threads to arrive (used during execution)
 
-Exercise 1. Create one thread
+##### Exercise 1. Create one thread
+```                       
+#include <stdio.h>
+#include <pthread.h>
+
+void* worker(void* arg) {
+        printf("Thread running\n");
+        (void)arg;
+        return NULL;
+}
+
+int main() {
+        pthread_t id; // stores real thread id
+        pthread_create(&id,NULL,worker,NULL);
+        // id - where pthread stores id
+        // NULL - default settings
+        // worker - thread function
+        // NULL - no argument
+        pthread_join(id,NULL);
+        return 0;
+}
+
+```
+
+##### Exercise 2. Protect shared variable
 ```
 
 
