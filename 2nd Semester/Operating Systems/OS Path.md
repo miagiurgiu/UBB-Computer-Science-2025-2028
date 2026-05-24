@@ -10442,6 +10442,17 @@ int main(int argc, char **argv) {
 
 
 ##### Mock test "examen.c"
+Receive `N` as command line argument. Create `N` threads. Each thread generates 3 numbers between `1` and `10`, prints them with its id, then waits until all threads finish generation. After that, each thread updates a global sum: odd numbers are added, even numbers are subtracted. Main prints the final sum.
+
+```
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
+#include <time.h>
+
+int 
+
+```
 
 
 
