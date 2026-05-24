@@ -11060,7 +11060,106 @@ int main() {
 
 ```
 
-#####
+##### Mock test "mut1"
+Read a sentence with at least 6 words. Create **5 threads**. The threads share the list of words and together reverse the sentence by swapping words from the beginning with words from the end. Use a mutex because all threads share the current swap index.
+
+```
+#include <pthread.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define MAX_LEN 1024
+#define MAX_WORDS 100
+#define THREAD_COUNT 5
+
+char sentence[MAX_LEN];
+char *words[MAX_WORDS];
+
+int word_count = 0;
+int current_index = 0;
+
+pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
+
+void* worker(void *arg) {
+    (void)arg;
+
+    while(1) {
+        pthread_mutex_lock(&mutex);
+
+        if(current_index >= word_count / 2) {
+            pthread_mutex_unlock(&mutex);
+            break;
+        }
+
+        int left = current_index;
+        int right = word_count - current_index - 1;
+
+        current_index++;
+
+        pthread_mutex_unlock(&mutex);
+
+        char *aux = words[left];
+        words[left] = words[right];
+        words[right] = aux;
+    }
+
+    return NULL;
+}
+
+int main() {
+    printf("Enter sentence:\n");
+
+    fgets(sentence, MAX_LEN, stdin);
+
+    int len = strlen(sentence);
+    if(len > 0 && sentence[len - 1] == '\n') {
+        sentence[len - 1] = '\0';
+    }
+
+    char *token = strtok(sentence, " ");
+    while(token != NULL) {
+        words[word_count] = token;
+        word_count++;
+        token = strtok(NULL, " ");
+    }
+
+    if(word_count < 6) {
+        printf("Sentence must contain at least 6 words.\n");
+        exit(1);
+    }
+
+    pthread_t threads[THREAD_COUNT];
+
+    for(int i = 0; i < THREAD_COUNT; i++) {
+        pthread_create(&threads[i], NULL, worker, NULL);
+    }
+
+    for(int i = 0; i < THREAD_COUNT; i++) {
+        pthread_join(threads[i], NULL);
+    }
+
+    printf("Reversed sentence:\n");
+
+    for(int i = 0; i < word_count; i++) {
+        printf("%s", words[i]);
+
+        if(i < word_count - 1) {
+            printf(" ");
+        }
+    }
+
+    printf("\n");
+
+    pthread_mutex_destroy(&mutex);
+
+    return 0;
+}
+
+```
+
+##### Mock test 
+
 
 ##### Wrap-up (templates):
 ##### MUTEX
