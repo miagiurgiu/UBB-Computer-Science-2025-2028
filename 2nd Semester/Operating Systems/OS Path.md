@@ -9165,7 +9165,14 @@ int is_prime(int x){
 void* worder(void* arg){
 	ThreadData *data=(ThreadData*)arg;
 	int local_freq[101]={0};
-	for()
+	for(int i=data->start;i<data->end;i++){
+		int value=numbers[i];
+		if(value<=100 && is_prime(value)){
+			local_freq[value]++;
+		}
+	}
+	pthread_mutex_lock(&mutex);
+	
 }
 ```
 
