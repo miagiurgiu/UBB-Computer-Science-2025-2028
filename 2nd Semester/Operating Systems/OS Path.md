@@ -9101,10 +9101,17 @@ int main(int argc,char **argv) {
 		exit(1);
 	}
 	int n=argc-1; // nr of threads=nr of words
+	
 	pthread_t threads[n]; // threads array
 	ThreadData data[n]; // array of structs
+	
 	pthread_mutex_init(&m,NULL);
-	pthread_barrier_init(&b,NULL,n+1);
+	pthread_barrier_init(&b,NULL,n+1); // n threads + main thread
+	
+	for(int i=0;i<n;i++){ // create threads
+		data[i].id=i;
+		data[i].word
+	}
 	
 	
 }
