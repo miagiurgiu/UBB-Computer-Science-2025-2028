@@ -8781,7 +8781,10 @@ int main(int argc, char **argv){
 
 Pb21
 ![[Pasted image 20260524145418.png]]
-- 
+- 2^n threads
+- threads pass through n checkpoints
+- checkpoint x will allow as many threads as x-1
+- checkpoint 0 will allow 2^(n-1) threads
 ```
 #include <stdio.h>
 #include <stdlib.h>
@@ -8791,7 +8794,7 @@ Pb21
 #include <time.h>
 
 int n;
-
+int total_threads; 
 
 typedef struct {
 	int id;
