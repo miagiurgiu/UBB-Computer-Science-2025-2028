@@ -9274,7 +9274,122 @@ int main() {
 ![[Pasted image 20260524183432.png]]
 
 ```
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
+#include <math.h>
 
+#define FILE_NAME "/tmp/212-file"
+#define THREAD_COUNT 8
+
+unsigned char *numbers;        // global array: values read from binary file
+int N;                         // how many numbers we read
+int freq[10];                  // freq[d] = how many numbers end in digit d
+
+pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
+
+typedef struct {
+    int id;                    // thread id
+    int start;                 // first index processed by this thread
+    int end;                   // one past last index processed
+} ThreadData;
+
+void* worker(void* arg) {
+    ThreadData *data = (ThreadData*)arg;
+
+    int local_freq[10] = {0};  // private frequency vector, no mutex needed here
+
+    for(int i = data->start; i < data->end; i++) {
+        int value = numbers[i];
+        int last_digit = value % 10;
+        local_freq[last_digit]++;
+    }
+
+    pthread_mutex_lock(&mutex);
+
+    for(int d = 0; d < 10; d++) {
+        freq[d] += local_freq[d];
+    }
+
+    pthread_mutex_unlock(&mutex);
+
+    return NULL;
+}
+
+int main() {
+    printf("Give N: ");
+    scanf("%d", &N);
+
+    if(N != 40000 && N != 60000 && N != 70000) {
+        printf("Invalid N\n");
+        exit(1);
+    }
+
+    numbers = malloc(N * sizeof(unsigned char));
+
+    FILE *f = fopen(FILE_NAME, "rb");
+    if(f == NULL) {
+        perror("fopen");
+        exit(1);
+    }
+
+    fread(numbers, sizeof(unsigned char), N, f);
+    fclose(f);
+
+    pthread_t threads[THREAD_COUNT];
+    ThreadData data[THREAD_COUNT];
+
+    int chunk = N / THREAD_COUNT;
+
+    for(int i = 0; i < THREAD_COUNT; i++) {
+        data[i].id = i;
+        data[i].start = i * chunk;
+
+        if(i == THREAD_COUNT - 1)
+            data[i].end = N;
+        else
+            data[i].end = (i + 1) * chunk;
+
+        pthread_create(&threads[i], NULL, worker, &data[i]);
+    }
+
+    for(int i = 0; i < THREAD_COUNT; i++) {
+        pthread_join(threads[i], NULL);
+    }
+
+    int total = 0;
+    for(int d = 0; d < 10; d++) {
+        total += freq[d];
+    }
+
+    double M = total / 10.0;
+
+    double best_diff = fabs(freq[0] - M);
+
+    for(int d = 1; d < 10; d++) {
+        double diff = fabs(freq[d] - M);
+
+        if(diff < best_diff) {
+            best_diff = diff;
+        }
+    }
+
+    printf("Average M = %.2lf\n", M);
+    printf("Digits closest to M:\n");
+
+    for(int d = 0; d < 10; d++) {
+        double diff = fabs(freq[d] - M);
+
+        if(diff == best_diff) {
+            printf("Digit %d appears %d times\n", d, freq[d]);
+        }
+    }
+
+    free(numbers);
+    pthread_mutex_destroy(&mutex);
+
+    return 0;
+}
 
 ```
 
