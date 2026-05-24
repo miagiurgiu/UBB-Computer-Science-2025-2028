@@ -9061,6 +9061,19 @@ int main(int argc, char **argv){
 - all threads wait at a barrier before starting
 - each thread counts lowercase letters 'a' to 'z' from its word into a shared frequency vector
 - use a mutex when updating the shared vector
+- if a letter appears for the first time, print a message
+```
+#include <pthread.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+int fr[26];
+
+
+```
+
+
 
 ### Lecture - 20 may 2026
 **Operating Systems process management and CPU scheduling**.
