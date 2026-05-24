@@ -10498,7 +10498,14 @@ int main(int argc, char **argv){
 		perror("malloc");
 		exit(1);
 	}
-	
+	pthread_barrier_init(&barrier,NULL,n);
+	for(int i=0;i<n;i++){
+		data[i].id=i;
+		pthread_create(&threads[i],NULL,worker,&data[i]);
+	}
+	for(int i=0;i<n;i++){
+		pthread_join(threads[i])
+	}
 }
 
 ```
