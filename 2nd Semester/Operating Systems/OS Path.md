@@ -9641,10 +9641,135 @@ Rezultatul final va fi afișat DOAR În programul principal.
 Cele 2 tipuri de thread-uri vor fi create în ordinea indicată, iar execuția lor va fi sincronizată folosind cele mai potrivite mecanisme studiate.
 
 ```
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
+
+#define FILE_NAME "/tmp/212-file"
+#define INTERVAL_SIZE 2000
+
+int N;
+unsigned char *numbers;
+
+int min_diff = 1000000000;
+
+pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
+
+typedef struct {
+    int id;
+    int start;
+    int end;
+} ThreadData;
+
+void* reader(void* arg) {
+    (void)arg;
+
+    FILE *f = fopen(FILE_NAME, "rb");
+    if(f == NULL) {
+        perror("fopen");
+        exit(1);
+    }
+
+    fread(numbers, sizeof(unsigned char), N, f);
+
+    fclose(f);
+
+    return NULL;
+}
+
+void* worker(void* arg) {
+    ThreadData *data = (ThreadData*)arg;
+
+    int even_sum = 0;
+    int odd_sum = 0;
+
+    for(int i = data->start; i < data->end; i++) {
+        if(numbers[i] % 2 == 0) {
+            even_sum += numbers[i];
+        } else {
+            odd_sum += numbers[i];
+        }
+    }
+
+    int diff = even_sum - odd_sum;
+    if(diff < 0) {
+        diff = -diff;
+    }
+
+    printf("Thread %d interval [%d, %d): diff = %d\n",
+           data->id,
+           data->start,
+           data->end,
+           diff);
+
+    pthread_mutex_lock(&mutex);
+
+    if(diff < min_diff) {
+        min_diff = diff;
+    }
+
+    pthread_mutex_unlock(&mutex);
+
+    return NULL;
+}
+
+int main() {
+    printf("Give N: ");
+    scanf("%d", &N);
+
+    if(N != 40000 && N != 60000 && N != 80000) {
+        printf("Invalid N\n");
+        exit(1);
+    }
+
+    numbers = malloc(N * sizeof(unsigned char));
+    if(numbers == NULL) {
+        perror("malloc");
+        exit(1);
+    }
+
+    pthread_t read_thread;
+
+    pthread_create(&read_thread, NULL, reader, NULL);
+
+    pthread_join(read_thread, NULL);
+
+    int thread_count = N / INTERVAL_SIZE;
+
+    pthread_t threads[thread_count];
+    ThreadData data[thread_count];
+
+    for(int i = 0; i < thread_count; i++) {
+        data[i].id = i;
+        data[i].start = i * INTERVAL_SIZE;
+        data[i].end = (i + 1) * INTERVAL_SIZE;
+
+        pthread_create(&threads[i], NULL, worker, &data[i]);
+    }
+
+    for(int i = 0; i < thread_count; i++) {
+        pthread_join(threads[i], NULL);
+    }
+
+    printf("Minimum absolute difference = %d\n", min_diff);
+
+    free(numbers);
+    pthread_mutex_destroy(&mutex);
+
+    return 0;
+}
+
+```
+
+
+
+##### Mock test "6.jpeg"
 
 
 ```
 
+
+```
 
 
 
