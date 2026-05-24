@@ -9068,7 +9068,7 @@ int main(int argc, char **argv){
 #include <string.h>
 #include <stdlib.h>
 
-int fr[26]; // shared frequency vector
+int fr[26]; // shared frequency vector (26 letters in the alphabet)
 pthread_mutex_t m; // mutex variable
 pthread_barrier_t b; // barrier variable
 
@@ -9080,12 +9080,14 @@ typedef struct {
 void* worker(void* arg){
 	ThreadData *data=(ThreadData*)arg; // convert generic pointer back to ThreadData
 	pthread_barrier_wait(&b); // all threads wait here until main also says "start"
-	for(int i=0;data->word[i]!='\0';i++){
+	for(int i=0;data->word[i]!='\0';i++){ // take each word character by character
 		char c=data->word[i];
 		if(c>='a' && c<='z'){
 			int pos=c-'a';
 			pthread_mutex_lock(&m);
-			
+			if(fr[pos]==0){
+				
+			}
 		}
 	}
 	
