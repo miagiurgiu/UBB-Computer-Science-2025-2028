@@ -9519,25 +9519,133 @@ int main() {
 ![[Pasted image 20260524183842.png]]
 
 ```
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
+#include <math.h>
+#include <time.h>
 
+#define FILE_NAME "/tmp/217-file"
+#define INTERVAL_SIZE 3000
+
+int N;
+unsigned char *numbers;        // global array read from binary file
+
+double min_diff = 1000000000;  // shared global minimum difference
+
+pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
+
+typedef struct {
+    int start;
+    int end;
+    int id;
+} ThreadData;
+
+void* reader(void* arg) {
+    FILE *f = fopen(FILE_NAME, "rb");
+    if(f == NULL) {
+        perror("fopen");
+        exit(1);
+    }
+
+    fread(numbers, sizeof(unsigned char), N, f);
+
+    fclose(f);
+
+    return NULL;
+}
+
+void* worker(void* arg) {
+    ThreadData *data = (ThreadData*)arg;
+
+    int sum = 0;
+
+    for(int i = data->start; i < data->end; i++) {
+        sum += numbers[i];
+    }
+
+    double average = (double)sum / INTERVAL_SIZE;
+
+    unsigned int seed = time(NULL) ^ data->id;
+    int M = rand_r(&seed) % 255 + 1; // random number between 1 and 255
+
+    double diff = fabs(M - average);
+
+    printf("Thread %d: M=%d, average=%.2lf, diff=%.2lf\n",
+           data->id, M, average, diff);
+
+    pthread_mutex_lock(&mutex);
+
+    if(diff < min_diff) {
+        min_diff = diff;
+    }
+
+    pthread_mutex_unlock(&mutex);
+
+    return NULL;
+}
+
+int main() {
+    printf("Give N: ");
+    scanf("%d", &N);
+
+    if(N != 30000 && N != 60000 && N != 90000) {
+        printf("Invalid N\n");
+        exit(1);
+    }
+
+    numbers = malloc(N * sizeof(unsigned char));
+
+    pthread_t read_thread;
+
+    pthread_create(&read_thread, NULL, reader, NULL);
+
+    pthread_join(read_thread, NULL);
+
+    int thread_count = N / INTERVAL_SIZE;
+
+    pthread_t threads[thread_count];
+    ThreadData data[thread_count];
+
+    for(int i = 0; i < thread_count; i++) {
+        data[i].id = i;
+        data[i].start = i * INTERVAL_SIZE;
+        data[i].end = (i + 1) * INTERVAL_SIZE;
+
+        pthread_create(&threads[i], NULL, worker, &data[i]);
+    }
+
+    for(int i = 0; i < thread_count; i++) {
+        pthread_join(threads[i], NULL);
+    }
+
+    printf("Smallest absolute difference = %.2lf\n", min_diff);
+
+    free(numbers);
+    pthread_mutex_destroy(&mutex);
+
+    return 0;
+}
 
 ```
 
 ##### Mock test "5.jpeg"
 Enuntul problemei
-
 Să se scrie un program C care:
-
 1. ﻿﻿﻿Va citi de la tastatură un număr natural N = (40000, 60000, 80000} .
 2. ﻿﻿﻿Va crea UN SINGUR thread care va citi N numere intregi (pe 1 OCTET) din fişierul binar "/tmp/212-file" și le va stoca într-o variabilă globală.
 3. ﻿﻿﻿Va crea, apoi, un număr potrivit de thread-uri care vor procesa numerele întregi citite anterior din fișier în primul thread creat și care:
-
 - ﻿﻿vor calcula și vor afișa diferența ABSOLUTĂ dintre suma numerelor PARE și suma numerelor IMPARE din fiecare interval de 2000 numere Întregi;
 - ﻿﻿vor determina, la final, și vor stoca într-o variabilă globală comună, cea mai MICĂ diferență absolută dintre cele calculate anterior.
-
 Rezultatul final va fi afișat DOAR În programul principal.
-
 Cele 2 tipuri de thread-uri vor fi create în ordinea indicată, iar execuția lor va fi sincronizată folosind cele mai potrivite mecanisme studiate.
+
+```
+
+
+```
+
+
 
 
 HOW TO RUN:
