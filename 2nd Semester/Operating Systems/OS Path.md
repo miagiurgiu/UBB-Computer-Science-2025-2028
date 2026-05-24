@@ -10476,7 +10476,14 @@ void* worder(void* arg){
 			local_sum -=data->numbers[i];
 		}
 	}
-	
+	pthread_mutex_lock(&mutex);
+	global_sum +=local_sum;
+	pthread_mutex_unlock(&mutex);
+	return NULL;
+}
+
+int main(int argc, char **argv){
+	if(argc!=2)
 }
 
 ```
