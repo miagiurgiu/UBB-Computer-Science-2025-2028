@@ -9083,6 +9083,8 @@ void* worker(void* arg){
 	for(int i=0;data->word[i]!='\0';i++){
 		char c=data->word[i];
 		if(c>='a' && c<='z'){
+			int pos=c-'a';
+			pthread_mutex_lock(&m);
 			
 		}
 	}
