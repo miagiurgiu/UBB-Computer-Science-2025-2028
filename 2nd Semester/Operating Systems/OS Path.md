@@ -9763,14 +9763,153 @@ int main() {
 
 
 
-##### Mock test "6.jpeg"
+##### Mock test "6.png"
+Read `N = 30000, 60000, or 90000` from keyboard.  
+Create **one reader thread** that reads `N` one-byte integers from `/tmp/217-file` into a global array.  
+After that, create one worker thread for each interval of `3000` numbers. Each worker:
 
+- finds the **maximum 2-digit number** in its interval
+- computes the **average of 3-digit numbers** in its interval
+- computes absolute difference between them
+- updates a global maximum difference
+
+Main prints only the final maximum difference
+
+```
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
+#include <math.h>
+
+#define FILE_NAME "/tmp/217-file"
+#define INTERVAL_SIZE 3000
+
+int N;
+unsigned char *numbers;
+
+double max_diff = -1;
+
+pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
+
+typedef struct {
+    int id;
+    int start;
+    int end;
+} ThreadData;
+
+void* reader(void* arg) {
+    (void)arg;
+
+    FILE *f = fopen(FILE_NAME, "rb");
+    if(f == NULL) {
+        perror("fopen");
+        exit(1);
+    }
+
+    fread(numbers, sizeof(unsigned char), N, f);
+
+    fclose(f);
+
+    return NULL;
+}
+
+void* worker(void* arg) {
+    ThreadData *data = (ThreadData*)arg;
+
+    int max_two_digit = -1;
+    int sum_three_digit = 0;
+    int count_three_digit = 0;
+
+    for(int i = data->start; i < data->end; i++) {
+        int value = numbers[i];
+
+        if(value >= 10 && value <= 99) {
+            if(value > max_two_digit) {
+                max_two_digit = value;
+            }
+        }
+
+        if(value >= 100 && value <= 255) {
+            sum_three_digit += value;
+            count_three_digit++;
+        }
+    }
+
+    if(max_two_digit == -1 || count_three_digit == 0) {
+        return NULL;
+    }
+
+    double avg_three_digit = (double)sum_three_digit / count_three_digit;
+
+    double diff = fabs(max_two_digit - avg_three_digit);
+
+    printf("Thread %d interval [%d, %d): diff = %.2lf\n",
+           data->id,
+           data->start,
+           data->end,
+           diff);
+
+    pthread_mutex_lock(&mutex);
+
+    if(diff > max_diff) {
+        max_diff = diff;
+    }
+
+    pthread_mutex_unlock(&mutex);
+
+    return NULL;
+}
+
+int main() {
+    printf("Give N: ");
+    scanf("%d", &N);
+
+    if(N != 30000 && N != 60000 && N != 90000) {
+        printf("Invalid N\n");
+        exit(1);
+    }
+
+    numbers = malloc(N * sizeof(unsigned char));
+    if(numbers == NULL) {
+        perror("malloc");
+        exit(1);
+    }
+
+    pthread_t read_thread;
+
+    pthread_create(&read_thread, NULL, reader, NULL);
+    pthread_join(read_thread, NULL);
+
+    int thread_count = N / INTERVAL_SIZE;
+
+    pthread_t threads[thread_count];
+    ThreadData data[thread_count];
+
+    for(int i = 0; i < thread_count; i++) {
+        data[i].id = i;
+        data[i].start = i * INTERVAL_SIZE;
+        data[i].end = (i + 1) * INTERVAL_SIZE;
+
+        pthread_create(&threads[i], NULL, worker, &data[i]);
+    }
+
+    for(int i = 0; i < thread_count; i++) {
+        pthread_join(threads[i], NULL);
+    }
+
+    printf("Maximum difference = %.2lf\n", max_diff);
+
+    free(numbers);
+    pthread_mutex_destroy(&mutex);
+
+    return 0;
+}
 
 ```
 
 
-```
 
+##### Mock test 
 
 
 HOW TO RUN:
