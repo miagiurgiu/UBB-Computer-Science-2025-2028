@@ -10769,6 +10769,132 @@ int main(int argc, char **argv) {
 
 ```
 
+##### Mock test "probl5.txt"
+Write a c program that recives as command line arguments as many triplets
+ containig a file (f), a number (n), and a character (c). 
+For each such triplet the program will create a thread. 
+Each thread will check if the nth character of the file f is the same 
+as the character c, from its corespondig triplet. If n is too large or 
+f is too small the proper message will be writen in the standard output 
+(the console). NOTE: When you compile use the -pthread obtion.
+ The source file must be compiled using gcc with -Wall -g options 
+WITHOUT WARNINGSOR SYNTAX ERRORS!!! Memory leacks and zombie processes are not allowed.
+
+```
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
+
+typedef struct {
+    char *filename;
+    int n;
+    char c;
+    int id;
+} ThreadData;
+
+int to_int(char *s) {
+    char *end;
+    int x = strtol(s, &end, 10);
+
+    if(*end != '\0') {
+        printf("Invalid number: %s\n", s);
+        exit(1);
+    }
+
+    return x;
+}
+
+void* worker(void* arg) {
+    ThreadData *data = (ThreadData*)arg;
+
+    FILE *f = fopen(data->filename, "r");
+    if(f == NULL) {
+        printf("Thread %d: cannot open file %s\n",
+               data->id,
+               data->filename);
+        free(data);
+        return NULL;
+    }
+
+    int current_pos = 1;
+    int ch;
+
+    while(current_pos < data->n && (ch = fgetc(f)) != EOF) {
+        current_pos++;
+    }
+
+    if(data->n <= 0) {
+        printf("Thread %d: n must be positive\n", data->id);
+    }
+    else if((ch = fgetc(f)) == EOF) {
+        printf("Thread %d: file too small for position %d\n",
+               data->id,
+               data->n);
+    }
+    else if((char)ch == data->c) {
+        printf("Thread %d: position %d in %s is '%c' -> equal\n",
+               data->id,
+               data->n,
+               data->filename,
+               data->c);
+    }
+    else {
+        printf("Thread %d: position %d in %s is '%c', expected '%c' -> not equal\n",
+               data->id,
+               data->n,
+               data->filename,
+               (char)ch,
+               data->c);
+    }
+
+    fclose(f);
+    free(data);
+
+    return NULL;
+}
+
+int main(int argc, char **argv) {
+    if(argc < 4 || (argc - 1) % 3 != 0) {
+        printf("Usage: %s file1 n1 c1 file2 n2 c2 ...\n", argv[0]);
+        exit(1);
+    }
+
+    int thread_count = (argc - 1) / 3;
+
+    pthread_t *threads = malloc(thread_count * sizeof(pthread_t));
+    if(threads == NULL) {
+        perror("malloc");
+        exit(1);
+    }
+
+    for(int i = 0; i < thread_count; i++) {
+        ThreadData *data = malloc(sizeof(ThreadData));
+        if(data == NULL) {
+            perror("malloc");
+            free(threads);
+            exit(1);
+        }
+
+        data->id = i;
+        data->filename = argv[1 + 3 * i];
+        data->n = to_int(argv[2 + 3 * i]);
+        data->c = argv[3 + 3 * i][0];
+
+        pthread_create(&threads[i], NULL, worker, data);
+    }
+
+    for(int i = 0; i < thread_count; i++) {
+        pthread_join(threads[i], NULL);
+    }
+
+    free(threads);
+
+    return 0;
+}
+
+```
+
+
 
 
 
