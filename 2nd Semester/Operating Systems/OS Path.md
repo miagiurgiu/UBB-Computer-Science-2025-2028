@@ -9056,9 +9056,10 @@ int main(int argc, char **argv){
 ```
 
 ##### 1. Mock test Jonathan "teo915.txt"
-- Read n words from keyword
-- Create n threads, one for each word
-- 
+- read n words from keyword
+- create n threads, one for each word
+- all threads wait at a barrier before starting
+- each thread counts lowercase letters 'a' to 'z' 
 
 ### Lecture - 20 may 2026
 **Operating Systems process management and CPU scheduling**.
