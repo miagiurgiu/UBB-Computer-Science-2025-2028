@@ -10465,7 +10465,7 @@ void* worder(void* arg){
 		data->numbers[i]=rand()%10+1;
 	}
 	printf("Thread %d generated: %d %d %d\n",data->id,data->numbers[0],data->numbers[1],data->numbers[2]);
-	pthread_barrier_wair(&barrier);
+	pthread_barrier_wait(&barrier);
 	int local_sum=0;
 	for(int i=0;i<3;i++){
 		if(data->numbers[i]%2==1){
