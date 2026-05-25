@@ -11056,7 +11056,6 @@ int main() {
 
     return 0;
 }
-
 ```
 
 ##### Mock test "mut1"
