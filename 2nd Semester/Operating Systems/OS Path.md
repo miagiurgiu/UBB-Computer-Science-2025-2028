@@ -9238,8 +9238,7 @@ int main() {
 			double diff = fabs(freq[i] - M);  
 				if(diff < best_diff) {  
 					best_diff = diff;  
-				}  
-			}  
+				}   
 		}
 	}
 	
