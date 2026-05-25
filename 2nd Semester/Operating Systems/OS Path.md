@@ -10896,7 +10896,7 @@ int main(int argc, char **argv) {
 valgrind --leak-check=full --track-origins=yes ./p a.txt 3 x b.txt 5 q
 
 
-##### Mock test "test.c"
+##### Mock test "test.c" - GOOD PROBLEM
 String received as argument, it creates a thread that counts the number of vowels and the number of digits in the string. Then the thread adds the numbers to two global variables, one for vowels, one for digits. The main program waits for all the threads to be done, then prints the number of vowels and the number of digits.
 Example:
 ./prog wgsv2 ab4ee kfddi 152
