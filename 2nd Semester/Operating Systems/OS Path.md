@@ -11024,10 +11024,6 @@ int main() {
     pthread_t *threads = malloc(word_count * sizeof(pthread_t));
     ThreadData *data = malloc(word_count * sizeof(ThreadData));
 
-	for(int i = 0; i < word_count; i++) {  
-		data[i].index = i;  
-		pthread_create(&threads[i], NULL, worker, &data[i]);  
-}
     if(threads == NULL || data == NULL) {
         perror("malloc");
         exit(1);
