@@ -1795,27 +1795,30 @@ setModel
 ##### Setup:
 ```
 cmake_minimum_required(VERSION 4.2)  
-project(GUIExperiments)  
+project(SportTest3OOP)  
   
 set(CMAKE_CXX_STANDARD 14)  
-set(CMAKE_INCLUDE_CURRENT_DIR ON)  
-  
 set(CMAKE_PREFIX_PATH "/opt/homebrew/opt/qt")  
   
 set(CMAKE_AUTOMOC ON)  
 set(CMAKE_AUTOUIC ON)  
 set(CMAKE_AUTORCC ON)  
+set(CMAKE_INCLUDE_CURRENT_DIR ON) 
   
 find_package(Qt6 COMPONENTS Widgets REQUIRED)  
   
-add_executable(ProgramName 
-        gui.cpp  
-        gui.h  
-        gui.ui  
-        README.md  
+include_directories(domain)  
+  
+add_executable(SportTest3OOP  
+        domain/session.cpp  
+        domain/session.h  
+        repo/repository.cpp  
+        repo/repository.h  
+        gui/gui.cpp  
+        gui/gui.h  
+        gui/gui.ui  
         main.cpp)  
 target_link_libraries(ProgramName Qt6::Widgets)
-
 ```
 
 ##### General structure of the main:
