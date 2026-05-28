@@ -1908,12 +1908,9 @@ A10:
 
 ### TEST 3 OOP MOR DE CIUDA
 
-- NU AM AVUT SERVICE am avut doar REPO desi a zis la inceput ca aplicatia sa aiba toate layerele dar nu am fost aten
-14;18;arrival;London;0  
-16;9;arrival;Berlin;10  
-9;12;departure;Bucharest;0  
-18;21;departure;Berlin;5  
-12;14;arrival;Bucharest;0
+- NU AM AVUT SERVICE am avut doar REPO desi a zis la inceput ca aplicatia sa aiba toate layerele dar nu am fost atenta - fir'ar!
+- NU A MERS SORTAREA PT CA M-AM COMPLICAT - TREBUIA SA LAS DOAR O CONDITIE LA SORTARE (DUPA ORA, NU SI DUPA MINUTE)
+
 
 std::vector<Flight> Repository::getAllSorted() {  
     std::sort(flights.begin(),flights.end(),[](const Flight& a, const Flight& b) {  
@@ -1930,7 +1927,7 @@ TREBUIA SA LAS SORTARE DOAR DUPA HOUR CA ASA NU LE MAI SORTEAZA DECAT DACA AMBEL
 18;21;departure;Berlin;5  
 12;14;arrival;Bucharest;0
 
-DAR PE ASTA NU
+DAR PE ASTA NU:
 
 14;18;arrival;London;0  
 16;9;arrival;Berlin;10  
@@ -1938,5 +1935,5 @@ DAR PE ASTA NU
 18;21;departure;Berlin;5  
 12;14;arrival;Bucharest;0
 
-CERINTA ECHIVOCA - SAU POATE TREBUIA DOAR DACA AU ACELASI HOUR SA FACA SORT SI DUPA MINUTE?! ANYWAY, TINE MINTE PT EXAMENUL FINAL! 
+CERINTA ECHIVOCA - SAU POATE TREBUIA DOAR DACA AU ACELASI HOUR SA FACA SORT SI DUPA MINUTE?! ANYWAY, TINE MINTE PT EXAMENUL FINAL! imi e foarte ciuda. am luat 8,5 si puteam lua macar 9.
 
