@@ -1902,3 +1902,6 @@ A10:
 - in GUI
 - in csv/html
 - table view
+
+1. parsing is my problem - what if I am given a sentence and I ned to slit it in more things - like for example I wanna add an equation but I must do it in one single line edit (so I can't have one coefficient per line label, like the user should give eocefficients like 129.22,199.2, 58 - and my job is to assign to a,b,c these values without spaces - does the program automatically split spaces and stuff or what should it do otherwise? here is the code (I used more labels but I wonder what it would look like with only one label and more parsing logic).
+2 .
