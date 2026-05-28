@@ -1795,7 +1795,7 @@ setModel
 ##### Setup:
 ```
 cmake_minimum_required(VERSION 4.2)  
-project(SportTest3OOP)  
+project(TrianglesTest3Group916)  
   
 set(CMAKE_CXX_STANDARD 14)  
 set(CMAKE_PREFIX_PATH "/opt/homebrew/opt/qt")  
@@ -1803,24 +1803,23 @@ set(CMAKE_PREFIX_PATH "/opt/homebrew/opt/qt")
 set(CMAKE_AUTOMOC ON)  
 set(CMAKE_AUTOUIC ON)  
 set(CMAKE_AUTORCC ON)  
-set(CMAKE_INCLUDE_CURRENT_DIR ON) 
+set(CMAKE_INCLUDE_CURRENT_DIR ON)  
   
 find_package(Qt6 COMPONENTS Widgets REQUIRED)  
   
 include_directories(domain)  
   
-add_executable(SportTest3OOP  
-        domain/session.cpp  
-        domain/session.h  
+add_executable(TrianglesTest3Group916  
+        domain/triangle.cpp  
+        domain/triangle.h  
         repo/repository.cpp  
         repo/repository.h  
         gui/gui.cpp  
         gui/gui.h  
         gui/gui.ui  
         main.cpp)  
-target_link_libraries(ProgramName Qt6::Widgets)
-
-
+target_link_libraries(TrianglesTest3Group916 Qt6::Widgets)  
+target_include_directories(TrianglesTest3Group916 PRIVATE ${CMAKE_BINARY_DIR})
 
 
 
