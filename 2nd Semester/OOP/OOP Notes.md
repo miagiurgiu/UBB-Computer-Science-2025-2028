@@ -1819,6 +1819,19 @@ add_executable(SportTest3OOP
         gui/gui.ui  
         main.cpp)  
 target_link_libraries(ProgramName Qt6::Widgets)
+
+
+
+
+
+
+
+auto trim = [](std::string& s) { // Removes leading spaces and tabs s.erase(0, s.find_first_not_of(" \t")); // Finds the last character that isn't a space/tab size_t end = s.find_last_not_of(" \t"); // Removes everything after that character (trailing spaces) if (end != std::string::npos) s.erase(end + 1); };
+trim(startString);
+trim(endString);
+trim(exercise);
+trim(intensityString);
+trim(description);
 ```
 
 ##### General structure of the main:
