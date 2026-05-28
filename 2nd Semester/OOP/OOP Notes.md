@@ -1907,6 +1907,8 @@ A10:
 
 
 ### TEST 3 OOP MOR DE CIUDA
+
+- NU AM AVUT SERVICE am avut doar REPO desi a zis la inceput ca aplicatia sa aiba toate layerele dar nu am fost aten
 14;18;arrival;London;0  
 16;9;arrival;Berlin;10  
 9;12;departure;Bucharest;0  
@@ -1936,5 +1938,5 @@ DAR PE ASTA NU
 18;21;departure;Berlin;5  
 12;14;arrival;Bucharest;0
 
-CERINTA ECHIVOCA - SAU POATE TREBU
+CERINTA ECHIVOCA - SAU POATE TREBUIA DOAR DACA AU ACELASI HOUR SA FACA SORT SI DUPA MINUTE?! ANYWAY, TINE MINTE PT EXAMENUL FINAL! 
 
