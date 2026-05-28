@@ -1920,4 +1920,21 @@ std::vector<Flight> Repository::getAllSorted() {
     return flights;  
 }
 
-TREBUIE SA LAS SORTARE DOAR DUPA HOUR CA ASA NU LE MAI SORTEAZA SI MI-A SCAZUT!!! 
+TREBUIA SA LAS SORTARE DOAR DUPA HOUR CA ASA NU LE MAI SORTEAZA DECAT DACA AMBELE CONDITII SUNT INDEPLINITE SI MI-A SCAZUT!!! PE FISIERUL ASTA MERGEA:
+
+14;18;arrival;London;0  
+6;9;arrival;Berlin;10  
+9;12;departure;Bucharest;0  
+18;21;departure;Berlin;5  
+12;14;arrival;Bucharest;0
+
+DAR PE ASTA NU
+
+14;18;arrival;London;0  
+16;9;arrival;Berlin;10  
+9;12;departure;Bucharest;0  
+18;21;departure;Berlin;5  
+12;14;arrival;Bucharest;0
+
+CERINTA ECHIVOCA - SAU POATE TREBU
+
