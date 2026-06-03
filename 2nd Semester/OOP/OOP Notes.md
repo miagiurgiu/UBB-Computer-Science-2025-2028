@@ -1935,5 +1935,5 @@ DAR PE ASTA NU:
 18;21;departure;Berlin;5  
 12;14;arrival;Bucharest;0
 
-CERINTA ECHIVOCA - SAU POATE TREBUIA DOAR DACA AU ACELASI HOUR SA FACA SORT SI DUPA MINUTE?! ANYWAY, TINE MINTE PT EXAMENUL FINAL! imi e foarte ciuda. am luat 8,5 si puteam lua macar 9.
+CERINTA ECHIVOCA - SAU POATE TREBUIA DOAR DACA AU ACELASI HOUR SA FACA SORT SI DUPA MINUTE?! ANYWAY, TINE MINTE PT EXAMENUL FINAL! imi e foarte ciuda. am luat 8,5 si puteam lua 10 pe testul asta. ti-ai invatat lectia. tine minte pe viitor.
 
