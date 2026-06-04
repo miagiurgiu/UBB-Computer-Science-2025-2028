@@ -1905,9 +1905,6 @@ A10:
 1. parsing is my problem - what if I am given a sentence and I ned to slit it in more things - like for example I wanna add an equation but I must do it in one single line edit (so I can't have one coefficient per line label, like the user should give eocefficients like 129.22,199.2, 58 - and my job is to assign to a,b,c these values without spaces - does the program automatically split spaces and stuff or what should it do otherwise? here is the code (I used more labels but I wonder what it would look like with only one label and more parsing logic).
 2 .
 
-
-
-### Seminar 7 - 4 jun 2026
 ### TEST 3 OOP MOR DE CIUDA
 
 - NU AM AVUT SERVICE am avut doar REPO desi a zis la inceput ca aplicatia sa aiba toate layerele dar nu am fost atenta - fir'ar!
@@ -1939,6 +1936,9 @@ DAR PE ASTA NU:
 
 CERINTA ECHIVOCA - SAU POATE TREBUIA DOAR DACA AU ACELASI HOUR SA FACA SORT SI DUPA MINUTE?! ANYWAY, TINE MINTE PT EXAMENUL FINAL! imi e foarte ciuda. am luat 8,5 si puteam lua 10 pe testul asta. ti-ai invatat lectia. tine minte pe viitor.
 
+
+
+### Seminar 7 - 4 jun 2026
 
 
 design patterns - reusable solutions
