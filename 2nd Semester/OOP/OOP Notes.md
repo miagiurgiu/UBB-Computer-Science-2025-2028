@@ -1940,6 +1940,7 @@ CERINTA ECHIVOCA - SAU POATE TREBUIA DOAR DACA AU ACELASI HOUR SA FACA SORT SI D
 
 ### Seminar 7 - 4 jun 2026
 
-
 design patterns - reusable solutions
+
+
 
