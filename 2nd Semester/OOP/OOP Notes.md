@@ -1965,7 +1965,8 @@ etc.
 order of steps. 
 1) implement observer class - pure virtual function update, virtual destructor
 2) implement class subject - list of observers, add/remove observer,notify !
-3) class chatsession - concrete subject (user message with 2 strings: one user, one message), vector of user messages. with user message class (no vector<pair<string,string>>)
-4) 
+3) class chatsession - concrete subject (user message with 2 strings: one user, one message), vector of user messages. with user message class (no vector<pair<string,string>>) - subject
+4) chat window - observer - inheritance first from qwidget, then for observer, reference to the chat session,
+5) main
 
 
