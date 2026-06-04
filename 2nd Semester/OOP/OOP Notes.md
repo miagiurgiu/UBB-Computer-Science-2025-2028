@@ -1952,6 +1952,8 @@ problem: chat application, 4 users, whenever a user says sth, all users must see
 Subject, Observer - generic class 
 observer is pure abstract class
 subject class can register, unregister, notify
-chat session - 
+chat session 
+user messsage - two strings: one for the messsage, one for the user
+message is edited/deleted => 
 
 
