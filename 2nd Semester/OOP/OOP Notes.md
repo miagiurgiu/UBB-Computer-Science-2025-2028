@@ -1962,4 +1962,8 @@ session.registerobserver(...)
 user1.show()
 etc. 
 
+order of steps. 
+1) implement observer class - pure virtual function update, virtual destructor
+2) implement class subject - list of observe
+
 
