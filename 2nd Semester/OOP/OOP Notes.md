@@ -1950,7 +1950,8 @@ concrete observer class
 problem: chat application, 4 users, whenever a user says sth, all users must see the message:
 
 Subject, Observer - generic class 
-observer is pure abstract
-subject can register, unr
+observer is pure abstract class
+subject class can register, unregister, notify
+chat session - 
 
 
