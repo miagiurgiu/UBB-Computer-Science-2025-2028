@@ -1964,6 +1964,7 @@ etc.
 
 order of steps. 
 1) implement observer class - pure virtual function update, virtual destructor
-2) implement class subject - list of observe
+2) implement class subject - list of observers, add/remove observer,notify !
+3) class chatsession - concrete subject (usar )
 
 
