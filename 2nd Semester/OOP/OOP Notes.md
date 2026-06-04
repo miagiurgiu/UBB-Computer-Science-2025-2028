@@ -1906,6 +1906,8 @@ A10:
 2 .
 
 
+
+### Seminar 7 - 4 jun 2026
 ### TEST 3 OOP MOR DE CIUDA
 
 - NU AM AVUT SERVICE am avut doar REPO desi a zis la inceput ca aplicatia sa aiba toate layerele dar nu am fost atenta - fir'ar!
@@ -1936,4 +1938,8 @@ DAR PE ASTA NU:
 12;14;arrival;Bucharest;0
 
 CERINTA ECHIVOCA - SAU POATE TREBUIA DOAR DACA AU ACELASI HOUR SA FACA SORT SI DUPA MINUTE?! ANYWAY, TINE MINTE PT EXAMENUL FINAL! imi e foarte ciuda. am luat 8,5 si puteam lua 10 pe testul asta. ti-ai invatat lectia. tine minte pe viitor.
+
+
+
+design patterns - reusable solutions
 
