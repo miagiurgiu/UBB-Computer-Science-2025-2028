@@ -1954,6 +1954,8 @@ observer is pure abstract class
 subject class can register, unregister, notify
 chat session 
 user messsage - two strings: one for the messsage, one for the user
-message is edited/deleted => 
+message is edited/deleted => update => also call notify from the base class
+concrete observer: chatwindow - instantiate 4 times
+chat window - repopulate the list whenever sth change
 
 
