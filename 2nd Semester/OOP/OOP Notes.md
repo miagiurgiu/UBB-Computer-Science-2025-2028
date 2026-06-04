@@ -1947,6 +1947,10 @@ subject - class, a list of smart pointer to observers, can't have a vector of ob
 concrete subject class - 
 concrete observer class
 
-problem: chat application, 4 users, whenever a user says sth, all users must see the message, 
+problem: chat application, 4 users, whenever a user says sth, all users must see the message:
+
+Subject, Observer - generic class 
+observer is pure abstract
+subject can register, unr
 
 
