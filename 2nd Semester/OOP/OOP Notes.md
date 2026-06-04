@@ -1967,6 +1967,6 @@ order of steps.
 2) implement class subject - list of observers, add/remove observer,notify !
 3) class chatsession - concrete subject (user message with 2 strings: one user, one message), vector of user messages. with user message class (no vector<pair<string,string>>) - subject
 4) chat window - observer - inheritance first from qwidget, then for observer, reference to the chat session,
-5) main - create session, create multiple windows, register windows to the session as observers of the session, 
+5) main - create session, create multiple windows, register windows to the session as observers of the session, show the windows. 
 
 
