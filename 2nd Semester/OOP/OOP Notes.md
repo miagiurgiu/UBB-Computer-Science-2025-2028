@@ -1956,6 +1956,10 @@ chat session
 user messsage - two strings: one for the messsage, one for the user
 message is edited/deleted => update => also call notify from the base class
 concrete observer: chatwindow - instantiate 4 times
-chat window - repopulate the list whenever sth change
+chat window - repopulate the list whenever sth changes (all 4)
+main - create 4 chat windows
+session.registerobserver(...)
+user1.show()
+etc. 
 
 
