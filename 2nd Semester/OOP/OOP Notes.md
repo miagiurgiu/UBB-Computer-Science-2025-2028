@@ -1942,5 +1942,7 @@ CERINTA ECHIVOCA - SAU POATE TREBUIA DOAR DACA AU ACELASI HOUR SA FACA SORT SI D
 
 design patterns - reusable solutions
 
+observer - pure virtual function = base class
+subject - class, a list of smart pointer to observers, can't have a vector of observers, attach and detach functions - add/remove observer from/to list, notify - noify all observers when sth changes in the data 
 
 
