@@ -9,7 +9,7 @@ Semester I:
 - [Programming in C](https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/tree/main/1st%20Semester/C%20Programming)
 - [DPPD1]()
 
-Semester II:
+Semester II: *One way I would describe Semester II:* ✨POINTER✨
 - [Data Structures and Algorithms](https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/tree/main/2nd%20Semester/Data%20Structures%20and%20Algorithms)
 - [Dynamic Systems](https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/tree/main/2nd%20Semester/Dynamic%20Systems)
 - [Geometry](https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/tree/main/2nd%20Semester/Geometry)
