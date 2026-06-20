@@ -371,7 +371,7 @@ v8=v2; // assignment operator
 Lecture 4 wrap-up:
 - it teaches me why manual memory management is tricky
 
-"BIG THREE" of C++ memory management:
+"BIG THREE" of C++ memory management: RULE OF THREE
 - 1. copy constructor - to handle DynamicArray a=b (creation)
 - 2. destructor - to free memory
 - 3. copy assignment operator - to handle a=b
