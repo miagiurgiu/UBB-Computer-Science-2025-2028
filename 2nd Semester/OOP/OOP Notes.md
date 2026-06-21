@@ -1798,6 +1798,7 @@ cmake_minimum_required(VERSION 4.2)
 project(TrianglesTest3Group916)  
   
 set(CMAKE_CXX_STANDARD 14)  
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_PREFIX_PATH "/opt/homebrew/opt/qt")  
   
 set(CMAKE_AUTOMOC ON)  
