@@ -1846,7 +1846,7 @@ set(CMAKE_PREFIX_PATH "/opt/homebrew/opt/qt")
 set(CMAKE_AUTOMOC ON)  
 set(CMAKE_AUTOUIC ON)  
 set(CMAKE_AUTORCC ON)  
-  
+set(CMAKE_INCLUDE_CURRENT_DIR ON)  
   
 find_package(Qt6 COMPONENTS Widgets REQUIRED)  
 add_executable(WazeOOPExam  
