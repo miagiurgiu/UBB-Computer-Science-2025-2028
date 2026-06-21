@@ -1874,6 +1874,8 @@ target_include_directories(WazeOOPExam PRIVATE
 )
 
 ```
+
+
 ##### General structure of the main:
 ```
 #include <QApplication>  
