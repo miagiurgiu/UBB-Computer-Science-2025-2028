@@ -1834,6 +1834,46 @@ trim(intensityString);
 trim(description);
 ```
 
+### Better setup:
+```
+cmake_minimum_required(VERSION 4.2)  
+project(WazeOOPExam)  
+  
+set(CMAKE_CXX_STANDARD 14)  
+set(CMAKE_CXX_STANDARD_REQUIRED ON)  
+set(CMAKE_PREFIX_PATH "/opt/homebrew/opt/qt")  
+  
+set(CMAKE_AUTOMOC ON)  
+set(CMAKE_AUTOUIC ON)  
+set(CMAKE_AUTORCC ON)  
+  
+  
+find_package(Qt6 COMPONENTS Widgets REQUIRED)  
+add_executable(WazeOOPExam  
+        main.cpp  
+        domain/Driver.cpp  
+        domain/Driver.h  
+        domain/Report.cpp  
+        domain/Report.h  
+        domain/Observer.cpp  
+        domain/Observer.h  
+        domain/Subject.cpp  
+        domain/Subject.h  
+        repo/Repository.cpp  
+        repo/Repository.h  
+        service/Service.cpp  
+        service/Service.h  
+        gui/gui.cpp  
+        gui/gui.h  
+        gui/gui.ui)  
+target_link_libraries(WazeOOPExam Qt6::Widgets)  
+target_include_directories(WazeOOPExam PRIVATE  
+        ${CMAKE_CURRENT_BINARY_DIR}  
+        ${CMAKE_BINARY_DIR}  
+        ${CMAKE_CURRENT_BINARY_DIR}/WazeOOPExam_autogen/include  
+)
+
+```
 ##### General structure of the main:
 ```
 #include <QApplication>  
