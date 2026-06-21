@@ -1950,7 +1950,80 @@ void Statistics::paintEvent(QPaintEvent *event) {
 }
 
 
-## QTable
+## QTableView
+
+#ifndef STARMODEL_H
+#define STARMODEL_H
+
+#include <QAbstractTableModel>
+#include <vector>
+#include "domain/Star.h" // Replace with your specific domain entity header
+
+class StarModel : public QAbstractTableModel {
+    Q_OBJECT
+private:
+    std::vector<Star> stars;
+
+public:
+    explicit StarModel(const std::vector<Star>& stars, QObject *parent = nullptr);
+
+    int rowCount(const QModelIndex &parent = QModelIndex()) const override;
+    int columnCount(const QModelIndex &parent = QModelIndex()) const override;
+    QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const override;
+    QVariant headerData(int section, Qt::Orientation orientation, int role = Qt::DisplayRole) const override;
+    
+    void updateData(const std::vector<Star>& newData);
+};
+
+#endif
+--------
+#include "starmodel.h"
+
+StarModel::StarModel(const std::vector<Star>& stars, QObject *parent) 
+    : QAbstractTableModel{parent}, stars{stars} {}
+
+int StarModel::rowCount(const QModelIndex &parent) const {
+    return static_cast<int>(stars.size());
+}
+
+int StarModel::columnCount(const QModelIndex &parent) const {
+    return 5; // Total fields to show as columns
+}
+
+QVariant StarModel::data(const QModelIndex &index, int role) const {
+    if (!index.isValid() || role != Qt::DisplayRole)
+        return QVariant{};
+
+    const auto& s = stars[index.row()];
+    if (index.column() == 0) return QString::fromStdString(s.getName());
+    if (index.column() == 1) return QString::fromStdString(s.getConstellation());
+    if (index.column() == 2) return s.getRA();
+    if (index.column() == 3) return s.getDec();
+    if (index.column() == 4) return s.getDiameter();
+
+    return QVariant{};
+}
+
+QVariant StarModel::headerData(int section, Qt::Orientation orientation, int role) const {
+    if (role != Qt::DisplayRole || orientation != Qt::Horizontal)
+        return QVariant{};
+
+    if (section == 0) return "Name";
+    if (section == 1) return "Constellation";
+    if (section == 2) return "RA";
+    if (section == 3) return "Dec";
+    if (section == 4) return "Diameter";
+
+    return QVariant{};
+}
+
+void StarModel::updateData(const std::vector<Star>& newData) {
+    beginResetModel();
+    stars = newData;
+    endResetModel();
+}
+
+
 ```
 
 ##### General structure of the main:
