@@ -1,4 +1,4 @@
-## Lecture 1 - 25 feb 2026
+setu## Lecture 1 - 25 feb 2026
 introduction
 
 ## Lab 1 - 26 feb 2026
