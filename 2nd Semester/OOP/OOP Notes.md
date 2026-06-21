@@ -1873,8 +1873,85 @@ target_include_directories(WazeOOPExam PRIVATE
         ${CMAKE_CURRENT_BINARY_DIR}/WazeOOPExam_autogen/include  
 )
 
+
 ```
 
+### QPainter window
+
+```
+
+### QPainter window
+#ifndef STATISTICS_H
+#define STATISTICS_H
+
+#include <QWidget>
+#include <QPainter>
+#include <map>
+#include <string>
+#include "Observer.h" 
+#include "service/Service.h"
+
+namespace Ui { class Statistics; }
+
+class Statistics : public QWidget, public Observer {
+    Q_OBJECT
+private:
+    Ui::Statistics *ui;
+    Service& service;
+protected:
+    void paintEvent(QPaintEvent *event) override;
+public:
+    explicit Statistics(Service& service, QWidget *parent = nullptr);
+    ~Statistics() override;
+    void update() override;
+};
+
+#endif
+
+----
+
+#include "statistics.h"
+#include "ui_Statistics.h"
+
+Statistics::Statistics(Service& service, QWidget *parent) :
+    QWidget(parent), ui(new Ui::Statistics), service{service} {
+    ui->setupUi(this);
+    service.registerObserver(this);
+    this->setWindowTitle("Statistics");
+}
+
+Statistics::~Statistics() {
+    service.unregisterObserver(this);
+    delete ui;
+}
+
+void Statistics::update() {
+    this->repaint(); 
+}
+
+void Statistics::paintEvent(QPaintEvent *event) {
+    QPainter painter{this};
+    
+    std::map<std::string, int> statsMap;
+    for (const auto& item : service.getStars()) { 
+        statsMap[item.getConstellation()]++;     
+    }
+
+    int y = 40; 
+    for (const auto& pair : statsMap) {
+        painter.drawText(20, y, QString::fromStdString(pair.first));
+        
+        int barWidth = pair.second * 20; 
+        painter.drawRect(150, y - 15, barWidth, 20);
+        painter.drawText(160 + barWidth, y, QString::number(pair.second));
+        
+        y += 40; 
+    }
+}
+
+
+## QTable
+```
 
 ##### General structure of the main:
 ```
