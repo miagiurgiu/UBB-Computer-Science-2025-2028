@@ -2269,4 +2269,7 @@ other things i did not implement:
 - ComboBox
 
 
-1.window for each, show their name, label with their service area, list populated only with undelivered parcels that are in the deliverer's
+1.window for each, show their name, label with their service area, list populated only with undelivered parcels that are in the deliverer's list of streets OR in the deliverer's area
+2.
+2.combo box
+3. painter
