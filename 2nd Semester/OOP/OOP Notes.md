@@ -2277,4 +2277,4 @@ other things i did not implement:
 6.observer design pattern
 7.save modifications to file
 
-IF I DID NOT FORGET THOSE 3 THINGS, FUNCTIONALITIES 1,2,3,6,7
+IF I DID NOT FORGET THOSE 3 THINGS, FUNCTIONALITIES 1,2,3,6,7 would have been FULLY FUNCTIONAL and FULLY GRADED.
