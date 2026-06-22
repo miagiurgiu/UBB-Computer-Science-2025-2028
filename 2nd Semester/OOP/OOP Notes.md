@@ -2267,3 +2267,6 @@ other things i did not implement:
 - list populated by street OR location
 - qPainter
 - ComboBox
+
+
+1.window for each, show their name, label with their service area, list populated only with undelivered parcels that are in the deliverer's
