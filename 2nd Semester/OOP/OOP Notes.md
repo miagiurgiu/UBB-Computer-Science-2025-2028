@@ -2085,6 +2085,36 @@ void Repo::saveVolunteers() {
     fout.close();  
 }
 
+---- tests
+
+//
+// Created by Maria on 19/06/2026.
+//
+
+#include <cassert>
+#include <iostream>
+#include "../service/service.h"
+
+void testAll() {
+    Repository repo{"../test_members.txt", "../test_issues.txt"};
+    Service svc{repo};
+    Member m{"Mia", "tester"};
+
+    // 1. Test Add
+    int count = svc.getIssues().size();
+    svc.reportIssue("Bug", m);
+    assert(svc.getIssues().size() == count + 1);
+
+    // 2. Test Update/Resolve
+    svc.resolveIssue("Bug", Member{"John", "programmer"});
+    assert(svc.getIssues().back().getStatus() == "closed");
+
+    // 3. Test Remove
+    svc.removeIssue("Bug");
+    assert(svc.getIssues().size() == count);
+
+    std::cout << "All tests passed!\n";
+}
 ```
 
 ##### General structure of the main:
