@@ -2264,4 +2264,6 @@ I FAILED.
 4. virtual ~Observer()=default; NOT =0!!!
 
 other things i did not implement: 
-- 
+- list populated by street OR location
+- qPainter
+- ComboBox
