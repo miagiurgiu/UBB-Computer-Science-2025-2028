@@ -2270,7 +2270,8 @@ other things i did not implement:
 
 
 1.window for each, show their name, label with their service area, list populated only with undelivered parcels that are in the deliverer's list of streets OR in the deliverer's area
-2.window which allows to see all parcels + add parcel functionality, what is delivered is shown with green
-3. deliver button in each window of the deliverer, once pressed it dissapears from the list
-2.combo box
-4. painter
+2.window which allows to see all parcels + add parcel functionality (delivered status initially=0), what is delivered is shown with green
+3. deliver button in each window of the deliverer, once pressed it dissapears from the list (delivered status gets set to 1)
+4.combo box
+5.painter
+6.
