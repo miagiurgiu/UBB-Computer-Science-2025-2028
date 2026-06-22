@@ -2254,3 +2254,9 @@ order of steps.
 5) main - create session, create multiple windows, register windows to the session as observers of the session, show the windows. 
 
 
+##### FINAL EXAM
+
+
+I FAILED.
+1. I FORGOT TO CALL CONNECTSIGNALSANDSLOTS() INSIDE CONSTRUCTOR
+2. 
