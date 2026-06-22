@@ -2260,4 +2260,4 @@ order of steps.
 I FAILED.
 1. I FORGOT TO CALL CONNECTSIGNALSANDSLOTS() INSIDE CONSTRUCTOR
 2. passed Deliver& parcel instead of const Deliver& parcel
-3. called the wrong function inside Deliver GUI (i called getParcels)
+3. called the wrong function inside Deliver GUI (i called getParcels() instead of getParcelsForAgent())
