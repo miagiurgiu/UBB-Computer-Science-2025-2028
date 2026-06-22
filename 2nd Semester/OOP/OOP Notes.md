@@ -2259,4 +2259,4 @@ order of steps.
 
 I FAILED.
 1. I FORGOT TO CALL CONNECTSIGNALSANDSLOTS() INSIDE CONSTRUCTOR
-2. 
+2. passed Deliver& parcel instead of const Deliver& parcel
