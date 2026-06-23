@@ -11456,3 +11456,9 @@ WORST FIT:
 ![[Pasted image 20260623125524.png]]
 ![[Pasted image 20260623125542.png]]
 
+FIRST FIT:
+![[Pasted image 20260623125623.png]]
+
+NEXT FIT:
+![[Pasted image 20260623125717.png]]
+
