@@ -11441,3 +11441,7 @@ gcc -Wall -Wextra -Werror -g -o program program.c -pthread
 ![[Pasted image 20260520185130.png|511]]
 
 
+EXAM PREP
+
+INODE:
+![[Pasted image 20260623124721.png]]
