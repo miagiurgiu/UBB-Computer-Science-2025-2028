@@ -11452,3 +11452,7 @@ EXTERNAL FRAGMENTATION
 BEST FIT:
 ![[Pasted image 20260623125410.png]]
 
+WORST FIT:
+![[Pasted image 20260623125524.png]]
+![[Pasted image 20260623125542.png]]
+
