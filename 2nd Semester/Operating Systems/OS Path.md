@@ -11470,3 +11470,6 @@ NEXT FIT:
 
 ![[Pasted image 20260623130641.png]]
 
+
+os scheduling
+![[Pasted image 20260623130850.png]]
