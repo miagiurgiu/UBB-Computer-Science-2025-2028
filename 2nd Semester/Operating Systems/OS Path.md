@@ -11473,3 +11473,5 @@ NEXT FIT:
 
 os scheduling
 ![[Pasted image 20260623130850.png]]
+
+![[Pasted image 20260623131818.png]]
