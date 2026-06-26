@@ -2286,4 +2286,4 @@ mistakes while implementing:
 - button: setEnabled(), not enabled()
 - QListWidget, not QWidgetList
 - if your qt list is sorted, then use the getSorted() when taking the index!
-- set to
+- set the original object, not a copy of the object!
