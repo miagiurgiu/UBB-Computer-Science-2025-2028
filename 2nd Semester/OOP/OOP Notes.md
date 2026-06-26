@@ -2285,3 +2285,5 @@ mistakes while implementing:
 - forgot to do service.registeroObserver() in constructor
 - button: setEnabled(), not enabled()
 - QListWidget, not QWidgetList
+- if your qt list is sorted, then use the getSorted() when taking the index!
+- set to
