@@ -2284,3 +2284,4 @@ mistakes while implementing:
 - forgot to return vector in service function
 - forgot to do service.registeroObserver() in constructor
 - button: setEnabled(), not enabled()
+- QListWidget, not QWidgetList
