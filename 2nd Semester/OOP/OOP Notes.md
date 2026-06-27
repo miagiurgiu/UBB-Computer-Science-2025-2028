@@ -2288,4 +2288,4 @@ mistakes while implementing:
 - if your qt list is sorted, then use the getSorted() when taking the index!
 - set the original object, not a copy of the object!
 - forgot register/unregister observer in additional window (aside from GUI windows)
-- 
+- forgot "\n" in save file
