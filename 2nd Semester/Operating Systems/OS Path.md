@@ -11478,7 +11478,6 @@ os scheduling
 
 ![[Pasted image 20260623132937.png]]
 
-![[Pasted image 20260623170340.png]]
 
 Processes
 ![[Pasted image 20260627134823.png]]
@@ -11486,3 +11485,5 @@ Processes
 ![[Pasted image 20260627135440.png]]
 
 ![[Pasted image 20260627140925.png]]
+
+![[Pasted image 20260627193938.png]]
