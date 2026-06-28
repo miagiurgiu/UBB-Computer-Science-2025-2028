@@ -2289,3 +2289,4 @@ mistakes while implementing:
 - set the original object, not a copy of the object!
 - forgot register/unregister observer in additional window (aside from GUI windows)
 - forgot "\n" in save file
+- emplace_back, not push_back in load function
