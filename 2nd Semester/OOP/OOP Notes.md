@@ -2290,3 +2290,4 @@ mistakes while implementing:
 - forgot register/unregister observer in additional window (aside from GUI windows)
 - forgot "\n" in save file
 - emplace_back, not push_back in load function
+- acolade la if
