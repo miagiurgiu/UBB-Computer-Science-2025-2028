@@ -2291,3 +2291,4 @@ mistakes while implementing:
 - forgot "\n" in save file
 - emplace_back, not push_back in load function
 - acolade la if
+- wrong selection for tableModel (not auto selection, but QModelList selection..... selectedIndexes())
