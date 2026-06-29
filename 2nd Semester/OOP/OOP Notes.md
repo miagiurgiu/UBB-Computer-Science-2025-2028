@@ -2292,3 +2292,4 @@ mistakes while implementing:
 - emplace_back, not push_back in load function
 - acolade la if
 - wrong selection for tableModel (not auto selection, but QModelList selection..... selectedIndexes())
+- should be model->updateData(service.get...) inside GUI::update(), not just updateData(); it actually uses the updateData from the tablemodel 
