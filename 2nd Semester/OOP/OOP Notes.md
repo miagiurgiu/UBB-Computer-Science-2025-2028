@@ -2282,7 +2282,7 @@ IF I DID NOT FORGET THOSE 3 THINGS, FUNCTIONALITIES 1,2,3,6,7 would have been FU
 
 mistakes while implementing:
 - forgot to return vector in service function
-- forgot to do service.registeroObserver() in constructor
+- forgot to do service.registerObserver() in constructor
 - button: setEnabled(), not enabled()
 - QListWidget, not QWidgetList
 - if your qt list is sorted, then use the getSorted() when taking the index!
@@ -2292,4 +2292,4 @@ mistakes while implementing:
 - emplace_back, not push_back in load function
 - acolade la if
 - wrong selection for tableModel (not auto selection, but QModelList selection..... selectedIndexes())
-- should be model->updateData(service.get...) inside GUI::update(), not just updateData(); it actually uses the updateData from the tablemodel 
+- should be model->updateData(service.get...) inside GUI::update(), not just updateData(); it actually uses the updateData from the tableModel class.  
