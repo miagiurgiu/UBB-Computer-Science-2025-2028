@@ -2293,3 +2293,4 @@ mistakes while implementing:
 - acolade la if
 - wrong selection for tableModel (not auto selection, but QModelList selection..... selectedIndexes())
 - should be model->updateData(service.get...) inside GUI::update(), not just updateData(); it actually uses the updateData from the tableModel class.  
+- when i have a selection from a list and a button that needs to be updated, you need connect(ui->list...,....itemSelectionChanged,this,...updateButton);
