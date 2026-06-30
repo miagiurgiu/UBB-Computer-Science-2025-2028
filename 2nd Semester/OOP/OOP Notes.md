@@ -2294,4 +2294,4 @@ mistakes while implementing:
 - wrong selection for tableModel (not auto selection, but QModelList selection..... selectedIndexes())
 - should be model->updateData(service.get...) inside GUI::update(), not just updateData(); it actually uses the updateData from the tableModel class.  
 - when i have a selection from a list and a button that needs to be updated, you need connect(ui->list...,....itemSelectionChanged,this,...updateButton);
-- you wanna do stuff in service but service can only get a copy, it is the repo in which you should 
+- you wanna do stuff in service but service can only get a copy, it is the repo in which you should change stuff (revise etc.)
