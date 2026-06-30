@@ -2298,4 +2298,4 @@ mistakes while implementing:
 - iterate more when you change stuff - for updating labels you should retreive again all programmers and use the getters from the domain, not other improvised-phantom-like getters from elsewhere.
 - when you update info make sure other info that depends on that info is also updated even if it does not say so (ex: programmer reviews a file -> getRevised + 1)
 - when you have two equal objects (ex: programmer.getName()==p.getName()) and you wanna do stuff, use the one from the repo (programmer in this case)! it's safer, otherwise you are passing an old object that might change. REPO NEVER LIES!!!
-- statistics (ext)
+- statistics (extra window) "is abstract" -> it won't work unless it overrides the function update() from the Observer (from which it is inheriting)
