@@ -2296,4 +2296,4 @@ mistakes while implementing:
 - when i have a selection from a list and a button that needs to be updated, you need connect(ui->list...,....itemSelectionChanged,this,...updateButton);
 - you wanna do stuff in service but service can only get a copy, it is the repo in which you should change stuff (revise etc.)
 - iterate more when you change stuff - for updating labels you should retreive again all programmers and use the getters from the domain, not other improvised-phantom-like getters from elsewhere.
-- when you update info make sure other info that depends on that info is also updated even if it does not say so (ex: programmer reviews a file )
+- when you update info make sure other info that depends on that info is also updated even if it does not say so (ex: programmer reviews a file -> getRevised + 1)
