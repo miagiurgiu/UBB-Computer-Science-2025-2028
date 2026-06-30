@@ -2299,4 +2299,4 @@ mistakes while implementing:
 - when you update info make sure other info that depends on that info is also updated even if it does not say so (ex: programmer reviews a file -> getRevised + 1)
 - when you have two equal objects (ex: programmer.getName()==p.getName()) and you wanna do stuff, use the one from the repo (programmer in this case)! it's safer, otherwise you are passing an old object that might change. REPO NEVER LIES!!!
 - statistics (extra window) "is abstract" -> it won't work unless it overrides the function update() from the Observer (from which it is inheriting)
-- with weirdo/more special cla
+- with weirdo/more special classes, every function that is declared has to be implemented (have at least return inside them) in order to run
