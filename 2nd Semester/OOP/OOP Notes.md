@@ -2300,4 +2300,4 @@ mistakes while implementing:
 - when you have two equal objects (ex: programmer.getName()==p.getName()) and you wanna do stuff, use the one from the repo (programmer in this case)! it's safer, otherwise you are passing an old object that might change. REPO NEVER LIES!!!
 - statistics (extra window) "is abstract" -> it won't work unless it overrides the function update() from the Observer (from which it is inheriting)
 - with weirdo/more special classes, every function that is declared has to be implemented (have at least return inside them) in order to run
-- when you modify stuff inside repo, do 'auto&'
+- when you modify stuff inside repo, do "auto&", not "const auto&"!!!
