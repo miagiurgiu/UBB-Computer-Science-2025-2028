@@ -2301,3 +2301,4 @@ mistakes while implementing:
 - statistics (extra window) "is abstract" -> it won't work unless it overrides the function update() from the Observer (from which it is inheriting)
 - with weirdo/more special classes, every function that is declared has to be implemented (have at least return inside them) in order to run
 - when you modify stuff inside repo, do "auto&", not "const auto&"!!!
+- did not pass "this" when creating a new window from the gui
