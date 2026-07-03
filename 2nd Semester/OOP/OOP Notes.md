@@ -2303,3 +2303,4 @@ mistakes while implementing:
 - when you modify stuff inside repo, do "auto&", not "const auto&"!!!
 - did not pass "this" when creating a new window from the gui
 - do not pass "0" to a bool value, either pass 0 or false. not a string! not ""!!!
+- comboBox->addItem(...) NOT comboBox->setText()
