@@ -11509,7 +11509,7 @@ exam questions 2026 (group 914)
 ![[Pasted image 20260704154930.png]]
 
 16. (7)
-17. preve(10)
-18. -
-19. 
-20. 
+17. prevent deadlocks (10)
+18. - (10)
+19. (8)
+20. (7)
