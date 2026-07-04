@@ -11492,6 +11492,11 @@ Processes
 
 exam questions 2026 (group 914)
 1. regex
-2. at least 3
+2. at least 3 vowels, no digits between vowels
+3. sed
+4. awk
+5. -
+6. concatenate (shell) to a third file only if the third file is not one of the previous two
+7. process hierarchy 
 ![[Pasted image 20260704154930.png]]
 
