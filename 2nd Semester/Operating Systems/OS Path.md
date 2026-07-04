@@ -11497,6 +11497,15 @@ exam questions 2026 (group 914)
 4. awk
 5. -
 6. concatenate (shell) to a third file only if the third file is not one of the previous two
-7. process hierarchy 
+7. process hierarchy, wait(null), exit(0)...
+8. -
+9. -
+10. -
+11. -
+12. -
+13. -
+14. -
+15.  can sem_wait be replaced with rwlock_wrlock ?
 ![[Pasted image 20260704154930.png]]
 
+16. 
