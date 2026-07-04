@@ -2323,4 +2323,35 @@ if (it != items.end())
     throw std::runtime_error("duplicate");
 ```
 
-2. 
+2. update object in repo
+```
+auto it = std::find_if(items.begin(), items.end(), [&](const Item& i) {
+    return i.getName() == oldItem.getName();
+});
+
+if (it == items.end())
+    throw std::runtime_error("not found");
+
+it->setPrice(newPrice);
+save();
+
+```
+
+3. filter for gui
+```
+std::vector<Package> result;
+
+std::copy_if(packages.begin(), packages.end(), std::back_inserter(result),
+             [&](const Package& p) {
+                 return selected == "All" || p.getStreet() == selected;
+             });
+
+return result;
+```
+
+4. sort for list/table
+```
+std::sort(result.begin(), result.end(), [](const Package& p1, const Package& p2) {
+    return p1.getRecipient() < p2.getRecipient();
+});
+```
