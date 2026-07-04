@@ -2318,7 +2318,7 @@ mistakes while implementing:
 - caught index out of range because i did not check selection empty before doing "std::string patient=selection[0]->text().toStdString();"
 - forgot connect(....itemSelectionChanged) in connectSignalsAndSlots for when I used selections in the list
 - connected to the wrong function in connectSignalAndSlots
-- update=REPOSITORY!! you keep wanting to
+- update=REPOSITORY!! you keep wanting to update in the service and that is wrong.
 
 most used STL templates:
 1. check duplicates
