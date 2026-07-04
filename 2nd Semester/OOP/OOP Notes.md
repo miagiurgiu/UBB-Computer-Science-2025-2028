@@ -2312,7 +2312,7 @@ mistakes while implementing:
 - don't pass "this" as a parameter when constructing a new window from the GUI
 - very recurrent: Subject()=0 instead of Subject()=default !!!
 - don't continue execution after printing an error message in the gui!!! you did QMessageBox but did not return, you kept going - it did not display to the list, but it was added in the repo and that's not okay
-- yyyy-MM-dd NOT 
+- yyyy-MM-dd NOT yyyy-mm-dd -> MM means months, mm means minutes!!
 
 
 most used STL templates:
