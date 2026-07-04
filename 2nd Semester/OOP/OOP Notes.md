@@ -2305,4 +2305,4 @@ mistakes while implementing:
 - do not pass "0" to a bool value, either pass 0 or false. not a string! not ""!!!
 - comboBox->addItem(...) NOT comboBox->setText(...) !!!
 - not passing QString::fromStdString on the .drawText() function
-- did not put model-
+- did not put model->updateData(stars) after checkBox population
