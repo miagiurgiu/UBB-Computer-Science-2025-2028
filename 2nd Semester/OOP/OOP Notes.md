@@ -2312,7 +2312,7 @@ mistakes while implementing:
 - don't pass "this" as a parameter when constructing a new window from the GUI
 
 
-STL templates:
+most used STL templates:
 1. check duplicates
 ```
 auto it = std::find_if(items.begin(), items.end(), [&](const Item& i) {
@@ -2349,9 +2349,26 @@ std::copy_if(packages.begin(), packages.end(), std::back_inserter(result),
 return result;
 ```
 
-4. sort for list/table
+!!! 4. sort for list/table
 ```
 std::sort(result.begin(), result.end(), [](const Package& p1, const Package& p2) {
     return p1.getRecipient() < p2.getRecipient();
 });
+```
+
+5. count for label/statistics
+```
+int revised = std::count_if(sources.begin(), sources.end(), [&](const Source& s) {
+    return s.getReviewer() == programmer.getName() &&
+           s.getStatus() == "revised";
+});
+```
+
+6. delete
+```
+items.erase(std::remove_if(items.begin(), items.end(), [&](const Item& i) {
+    return i.getName() == name;
+}), items.end());
+
+save();
 ```
