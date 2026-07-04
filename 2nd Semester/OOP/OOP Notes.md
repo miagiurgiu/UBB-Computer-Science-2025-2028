@@ -2315,6 +2315,7 @@ mistakes while implementing:
 - yyyy-MM-dd NOT yyyy-mm-dd -> MM means months, mm means minutes!!
 - did not provide compelling file examples and fields were mismatched
 - in load function repo I put "," after reading the last field but last field does not contain ',' after it
+- caught index out of range because i did not 
 
 
 most used STL templates:
