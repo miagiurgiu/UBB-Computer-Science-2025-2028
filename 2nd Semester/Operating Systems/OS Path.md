@@ -11505,7 +11505,11 @@ exam questions 2026 (group 914)
 12. -
 13. -
 14. -
-15.  can sem_wait be replaced with rwlock_wrlock ?
+15.  can sem_wait be replaced with rwlock_wrlock ? rwlock with binary semaphore?
 ![[Pasted image 20260704154930.png]]
 
-16. 
+16. -
+17. -
+18. -
+19. prevent deadlocks
+20. 
