@@ -11502,14 +11502,14 @@ exam questions 2026 (group 914)
 9. - (1)
 10. - (9.75)
 11. - (5)
-12. sth with dup2/overwrite/ (1) 
+12. sth with dup2/overwrite/input-output redirecttion (1) 
 13. - (5)
-14. - ()
-15.  can sem_wait be replaced with rwlock_wrlock ? rwlock with binary semaphore?
+14. - (10)
+15.  can sem_wait be replaced with rwlock_wrlock ? rwlock with binary semaphore? (8)
 ![[Pasted image 20260704154930.png]]
 
-16. -
-17. -
+16. (7)
+17. preve(10)
 18. -
-19. prevent deadlocks
+19. 
 20. 
