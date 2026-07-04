@@ -11491,10 +11491,10 @@ Processes
 ![[Pasted image 20260630102316.png]]
 
 exam questions 2026 (group 914)
-1. regex
-2. at least 3 vowels, no digits between vowels
-3. sed
-4. awk
+1. regex (4)
+2. at least 3 vowels, no digits between vowels (5)
+3. sed (1)
+4. awk (4)
 5. -
 6. concatenate (shell) to a third file only if the third file is not one of the previous two
 7. process hierarchy, wait(null), exit(0)...
