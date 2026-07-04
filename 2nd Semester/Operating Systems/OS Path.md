@@ -11495,16 +11495,16 @@ exam questions 2026 (group 914)
 2. at least 3 vowels, no digits between vowels (5)
 3. sed (1)
 4. awk (4)
-5. -
-6. concatenate (shell) to a third file only if the third file is not one of the previous two
-7. process hierarchy, wait(null), exit(0)...
-8. -
-9. -
-10. -
-11. -
-12. -
-13. -
-14. -
+5. - (10)
+6. concatenate (shell) to a third file only if the third file is not one of the previous two (10)
+7. process hierarchy, wait(null), exit(0)... (1)
+8. - (5)
+9. - (1)
+10. - (9.75)
+11. - (5)
+12. sth with dup2/overwrite/ (1) 
+13. - (5)
+14. - ()
 15.  can sem_wait be replaced with rwlock_wrlock ? rwlock with binary semaphore?
 ![[Pasted image 20260704154930.png]]
 
