@@ -11489,3 +11489,9 @@ Processes
 ![[Pasted image 20260627193938.png]]
 
 ![[Pasted image 20260630102316.png]]
+
+exam questions 2026 (group 914)
+1. regex
+2. at least 3
+![[Pasted image 20260704154930.png]]
+
