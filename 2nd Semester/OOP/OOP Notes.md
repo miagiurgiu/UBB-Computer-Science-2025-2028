@@ -2313,6 +2313,8 @@ mistakes while implementing:
 - very recurrent: Subject()=0 instead of Subject()=default !!!
 - don't continue execution after printing an error message in the gui!!! you did QMessageBox but did not return, you kept going - it did not display to the list, but it was added in the repo and that's not okay
 - yyyy-MM-dd NOT yyyy-mm-dd -> MM means months, mm means minutes!!
+- did not provide compelling file examples and fields were mismatched
+- in load function repo I put "," after reading the last field but last field does not contain ',' after it
 
 
 most used STL templates:
