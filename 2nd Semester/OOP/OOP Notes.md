@@ -2315,7 +2315,7 @@ mistakes while implementing:
 - yyyy-MM-dd NOT yyyy-mm-dd -> MM means months, mm means minutes!!
 - did not provide compelling file examples and fields were mismatched
 - in load function repo I put "," after reading the last field but last field does not contain ',' after it
-- caught index out of range because i did not 
+- caught index out of range because i did not check selection empty before doing "std::string patient=selection[0]->text().toStdString();"
 
 
 most used STL templates:
