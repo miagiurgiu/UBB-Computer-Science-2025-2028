@@ -2306,3 +2306,4 @@ mistakes while implementing:
 - comboBox->addItem(...) NOT comboBox->setText(...) !!!
 - not passing QString::fromStdString on the .drawText() function
 - did not put model->updateData(stars) after checkBox population
+- don't pass "this" as a parameter when constructing a new window
