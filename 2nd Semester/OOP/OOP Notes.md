@@ -2194,13 +2194,16 @@ A10:
 - NU AM AVUT SERVICE am avut doar REPO desi a zis la inceput ca aplicatia sa aiba toate layerele dar nu am fost atenta - fir'ar!
 - NU A MERS SORTAREA PT CA M-AM COMPLICAT - TREBUIA SA LAS DOAR O CONDITIE LA SORTARE (DUPA ORA, NU SI DUPA MINUTE)
 
-
+```
 std::vector<Flight> Repository::getAllSorted() {  
     std::sort(flights.begin(),flights.end(),[](const Flight& a, const Flight& b) {  
         return a.getHour()<b.getHour() && a.getMinute()<b.getMinute();  
     });  
     return flights;  
 }
+
+```
+
 
 TREBUIA SA LAS SORTARE DOAR DUPA HOUR CA ASA NU LE MAI SORTEAZA DECAT DACA AMBELE CONDITII SUNT INDEPLINITE SI MI-A SCAZUT!!! PE FISIERUL ASTA MERGEA:
 
@@ -2297,7 +2300,7 @@ mistakes while implementing:
 - you wanna do stuff in service but service can only get a copy, it is the repo in which you should change stuff (revise etc.)
 - iterate more when you change stuff - for updating labels you should retreive again all programmers and use the getters from the domain, not other improvised-phantom-like getters from elsewhere.
 - when you update info make sure other info that depends on that info is also updated even if it does not say so (ex: programmer reviews a file -> getRevised + 1)
-- when you have two equal objects (ex: programmer.getName()==p.getName()) and you wanna do stuff, use the one from the repo (programmer in this case)! it's safer, otherwise you are passing an old object that might change. REPO NEVER LIES!!!
+- when you have two equal objects (ex: programmer.getName()=p.getName()) and you wanna do stuff, use the one from the repo (programmer in this case)! it's safer, otherwise you are passing an old object that might change. REPO NEVER LIES!!!
 - statistics (extra window) "is abstract" -> it won't work unless it overrides the function update() from the Observer (from which it is inheriting)
 - with weirdo/more special classes, every function that is declared has to be implemented (have at least return inside them) in order to run
 - when you modify stuff inside repo, do "auto&", not "const auto&"!!!
@@ -2311,5 +2314,13 @@ mistakes while implementing:
 
 STL templates:
 1. check duplicates
+```
+auto it = std::find_if(items.begin(), items.end(), [&](const Item& i) {
+    return i.getName() == name;
+});
 
+if (it != items.end())
+    throw std::runtime_error("duplicate");
+```
 
+2. 
