@@ -2316,7 +2316,7 @@ mistakes while implementing:
 - did not provide compelling file examples and fields were mismatched
 - in load function repo I put "," after reading the last field but last field does not contain ',' after it
 - caught index out of range because i did not check selection empty before doing "std::string patient=selection[0]->text().toStdString();"
-- forgot itemSelectionChanged for when I used selections in the list
+- forgot connect(....itemSelectionChanged) in connectSignalsAndSlots for when I used selections in the list
 
 
 most used STL templates:
