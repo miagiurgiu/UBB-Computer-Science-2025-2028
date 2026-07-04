@@ -2311,6 +2311,7 @@ mistakes while implementing:
 - did not put model->updateData(stars) after checkBox population
 - don't pass "this" as a parameter when constructing a new window from the GUI
 - very recurrent: Subject()=0 instead of Subject()=default !!!
+- don't continue af
 
 
 most used STL templates:
