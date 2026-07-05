@@ -11510,6 +11510,6 @@ exam questions 2026 (group 914)
 
 16. (7)
 17. prevent deadlocks (10)
-18. - (10)
+18. explain Round Robin (10)
 19. (8)
 20. (7)
