@@ -2319,6 +2319,7 @@ mistakes while implementing:
 - forgot connect(....itemSelectionChanged) in connectSignalsAndSlots for when I used selections in the list
 - connected to the wrong function in connectSignalAndSlots
 - update=REPOSITORY!! you keep wanting to update in the service and that is wrong.
+- pass an object to the repo instead of a full list of arguments
 
 most used STL templates:
 1. check duplicates
