@@ -11512,4 +11512,5 @@ exam questions 2026 (group 914)
 17. prevent deadlocks (10)
 18. explain Round Robin (10)
 19. What happens when a symbolic link points to a hard link of a file, and the original file is deleted? (8)
+the hard link and the file data remain intact because the file's underlying inode still has a valid reference count of one. Consequently, the symbolic link continues to function perfectly, as it still successfully points to the surviving hard link.
 20. (7)
