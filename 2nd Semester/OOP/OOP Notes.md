@@ -45,7 +45,14 @@ if (selectedItems.empty())
     return;  
 std::string volunteerName=selectedItems[0]->text().toStdString();
 
+----
 
+auto selection=ui->patientsListWidget->selectedItems();  
+if (selection.empty())  
+    return;  
+std::string patient=selection[0]->text().toStdString();  
+std::string diagnosis=ui->diagnosisLineEdit->text().toStdString();  
+std::string specialisation=ui->specialisationLineEdit->text().toStdString();
 
 -------
 
@@ -85,6 +92,10 @@ void Repository::removeIssue(const std::string &description) {
 
 
 -----
+
+std::string currentDate=QDate::currentDate().toString("yyyy-MM-dd").toStdString();
+
+------
 
 
 
