@@ -62,6 +62,9 @@ window->show();
 
 --------
 
+connect(ui->tableView->selectionModel(),&QItemSelectionModel::selectionChanged,this,&GUI::updateAcceptButton);
+
+
 
 
 
