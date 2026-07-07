@@ -40,6 +40,30 @@ void Repo::loadVolunteers() {
 
 --------
 
+auto selectedItems=ui->unassignedVolunteersList->selectedItems();  
+if (selectedItems.empty())  
+    return;  
+std::string volunteerName=selectedItems[0]->text().toStdString();
+
+
+
+-------
+
+QModelIndexList selection=ui->tableView->selectionModel()->selectedIndexes();  
+if (selection.empty())  
+    return;  
+int row=selection.at(0).row();  
+auto stars=getCurrentDisplayedStars();  
+Star selectedStar=stars[row];  
+//std::string constellationName=ui->tableView->model()->index(row,1).data().toString().toStdString();  
+auto window=new Constellation{service,selectedStar.getConstellation(),selectedStar};  
+window->show();
+
+
+--------
+
+
+
 
 
 ```
