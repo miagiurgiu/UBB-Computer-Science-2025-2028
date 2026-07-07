@@ -103,6 +103,16 @@ Qt::ItemFlags BacteriaTableModel::flags(const QModelIndex &index) const {
 
 ------
 
+void GUI::updateFields() {  
+    std::vector<Star> stars;  
+    if (ui->checkBox->isChecked())  
+        stars=service.getStarsInConstellation(astronomer.getConstellation());  
+    else  
+        stars=service.getStars();  
+    model->updateData(stars);  
+}
+
+------
 
 
 
@@ -2430,7 +2440,7 @@ mistakes while implementing:
 - did not provide compelling file examples and fields were mismatched
 - in load function repo I put "," after reading the last field but last field does not contain ',' after it
 - caught index out of range because i did not check selection empty before doing "std::string patient=selection[0]->text().toStdString();"
-- forgot connect(....itemSelectionChanged) in connectSignalsAndSlots for when I used selections in the list
+- forgot connect(....itemSelectionChanged) in connectSignalsAndSlots for when I used selections in the list for button updates
 - connected to the wrong function in connectSignalAndSlots
 - update=REPOSITORY!! you keep wanting to update in the service and that is wrong.
 - pass an object to the repo instead of a full list of arguments
