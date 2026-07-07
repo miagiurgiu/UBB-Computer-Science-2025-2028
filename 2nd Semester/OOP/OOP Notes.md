@@ -2413,7 +2413,7 @@ mistakes while implementing:
 - when i have a selection from a list and a button that needs to be updated, you need connect(ui->list...,....itemSelectionChanged,this,...updateButton);
 - you wanna do stuff in service but service can only get a copy, it is the repo in which you should change stuff (revise etc.)
 - iterate more when you change stuff - for updating labels you should retreive again all programmers and use the getters from the domain, not other improvised-phantom-like getters from elsewhere.
-- when you update info make sure other info that depends on that info is also updated even if it does not say so (ex: programmer reviews a file -> getRevised + 1)
+- when you update info make sure other info that depends on that info is also updated even if it does not say so (ex: programmer reviews a file -> getRevised + 1,not just status changed)
 - when you have two equal objects (ex: programmer.getName()=p.getName()) and you wanna do stuff, use the one from the repo (programmer in this case)! it's safer, otherwise you are passing an old object that might change. REPO NEVER LIES!!!
 - statistics (extra window) "is abstract" -> it won't work unless it overrides the function update() from the Observer (from which it is inheriting)
 - with weirdo/more special classes, every function that is declared has to be implemented (have at least return inside them) in order to run
