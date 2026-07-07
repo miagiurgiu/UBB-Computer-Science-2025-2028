@@ -97,6 +97,11 @@ std::string currentDate=QDate::currentDate().toString("yyyy-MM-dd").toStdString(
 
 ------
 
+Qt::ItemFlags BacteriaTableModel::flags(const QModelIndex &index) const {  
+    return Qt::ItemIsSelectable | Qt::ItemIsEnabled | Qt::ItemIsEditable;  
+}
+
+------
 
 
 
