@@ -63,7 +63,8 @@ window->show();
 --------
 
 connect(ui->tableView->selectionModel(),&QItemSelectionModel::selectionChanged,this,&GUI::updateAcceptButton);
-
+connect(ui->answerListWidget,&QListWidget::itemSelectionChanged,this,&GUI::selectAnswer);  
+connect(ui->spinBox,QOverload<int>::of(&QSpinBox::valueChanged),this,&GUI::updateVotes);
 -----
 
 
