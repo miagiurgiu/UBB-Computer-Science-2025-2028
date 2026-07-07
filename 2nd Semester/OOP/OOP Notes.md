@@ -64,6 +64,28 @@ window->show();
 
 connect(ui->tableView->selectionModel(),&QItemSelectionModel::selectionChanged,this,&GUI::updateAcceptButton);
 
+-----
+
+
+void Repository::removeIssue(const std::string &description) {  
+    for (auto it=issues.begin();it!=issues.end();++it) { /// USE ITERATOR!!!  
+        if (it->getDescription()==description) {  
+            if (it->getStatus()=="open") {  
+                throw std::runtime_error("issue cannot be removed");  
+            }  
+            issues.erase(it); // YOU CAN CALL ERASE!  
+            save();  
+            return;  
+        }  
+    }  
+    throw std::runtime_error("Issue not found!");  
+}
+
+
+
+-----
+
+
 
 
 
