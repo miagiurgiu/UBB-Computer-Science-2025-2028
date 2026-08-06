@@ -1,6 +1,6 @@
 # MY REPOSITORIES for all past FINAL exams:
 
-## 1st trial:
+## 1st trial: 
 ### Q&A: dynamic search, spinBox, observer, tests
 https://github.com/miagiurgiu/Q-AOOPExam
 
