@@ -17,3 +17,12 @@ Semester II: *One way I would describe Semester II:* ✨POINTER✨
 - [Object Oriented Programming](https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/tree/main/2nd%20Semester/OOP)
 - [Operating Systems](https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/tree/main/2nd%20Semester/Operating%20Systems)
 - [DPPD2](https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/tree/main/2nd%20Semester/pedagogic)
+
+Semester III:
+- [MAP]
+- [Computer Networks]
+- [Databases]
+- [LFP]
+- [Statistics]
+- [English]
+- [DPPD3]
