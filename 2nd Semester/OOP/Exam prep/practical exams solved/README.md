@@ -1,4 +1,4 @@
-# MY REPOSITORIES for all past FINAL exams:
+# MY REPOSITORIES for all past FINAL exams (2026):
 
 ## 1st trial: 
 ### ● Q&A: dynamic search, spinBox, observer, tests
