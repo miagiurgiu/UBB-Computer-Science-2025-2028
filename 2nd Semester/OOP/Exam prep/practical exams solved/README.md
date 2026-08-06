@@ -58,6 +58,7 @@ https://github.com/miagiurgiu/StarOOPExam
 ### ● Patients: parsing date, checkBox, QPainter, observer
 https://github.com/miagiurgiu/PatientOOPExam
 
+
 ## 2nd trial (exams redone - generally better, improved code):
 ### 🟢 DeliverNow Redone : comboBox, new window, Observer
 (this is what I received (group 914/917) in the 2026 exam but with "parcels")
