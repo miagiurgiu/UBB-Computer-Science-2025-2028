@@ -48,40 +48,40 @@ https://github.com/miagiurgiu/DeliverNowOOPExam
 ### ● CodeReview: text font, QPainter, Observer
 https://github.com/miagiurgiu/CodeReviewOOPExam
 
-### ● Waze:
+### ● Waze: distance, coloured window, QSlider, QPainter, observer
 **hard (kinda gave up here, see 2nd trial for completed version)
 https://github.com/miagiurgiu/WazeOOPExam
 
-### ● Star:
+### ● Star: dynamic search, table model, check box, painter, observer
 https://github.com/miagiurgiu/StarOOPExam
 
-### ● MedicalAnalyses:
-https://github.com/miagiurgiu/MedicalAnalyses
+### ● Patients: parsing date, checkBox, QPainter, observer
+https://github.com/miagiurgiu/PatientOOPExam
 
 ## 2nd trial (exams redone - generally better, improved code):
 ### 🟢 DeliverNow Redone : comboBox, new window, Observer
 (this is what I received (group 914/917) in the 2026 exam but with "parcels")
 https://github.com/miagiurgiu/RedoDeliverNowOOPExam
 
-### CodeReview Redone: text font, QPainter, Observer
+### 🟢 CodeReview Redone: text font, QPainter, Observer
 https://github.com/miagiurgiu/RedoCodeReviewOOPExam
 
-### Waze Redone: distance, coloured window, QSlider, QPainter, observer
+### 🟢 Waze Redone: distance, coloured window, QSlider, QPainter, observer
 **hard
 https://github.com/miagiurgiu/RedoneWazeOOPExam
 
-### Microbial Redone: parsing list, tableModel, QPainter, Observer
+### 🟢 Microbial Redone: parsing list, tableModel, QPainter, Observer
 https://github.com/miagiurgiu/RedoneMicrobialOOPExam
 
-### ScreenWriting Redone: 
+### 🟢 ScreenWriting Redone: save to a file, tableModel, observer, tests, QVBoxLayout
 https://github.com/miagiurgiu/RedoScreenWritingOOPExam
 
-### StarCatalogue Redone:
+### 🟢 StarCatalogue Redone: dynamic search, table model, check box, painter, observer
 https://github.com/miagiurgiu/RedoneStarCatalogueOOPExam
 
-### Research Redone:
+### 🟢 Research Redone: tableModel, observer
 https://github.com/miagiurgiu/RedoneResearchOOPExam
 
-### Patients Redone:
+### 🟢 Patients Redone: parsing date, checkBox, QPainter, observer
 https://github.com/miagiurgiu/RedoPatientsOOPExam
 
