@@ -19,10 +19,10 @@ Semester II: *One way I would describe Semester II:* ✨POINTER✨
 - [DPPD2](https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/tree/main/2nd%20Semester/pedagogic)
 
 Semester III:
-- [MAP]
-- [Computer Networks]
-- [Databases]
-- [LFP]
-- [Statistics]
-- [English]
-- [DPPD3]
+- [MAP](https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/tree/main/3rd%20Semester/Advanced%20programming%20methods)
+- [Computer Networks](https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/tree/main/3rd%20Semester/Computer%20networks)
+- [Databases](https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/tree/main/3rd%20Semester/Databases)
+- [LFP](https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/tree/main/3rd%20Semester/Logic%20and%20functional%20programming)
+- [Statistics](https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/tree/main/3rd%20Semester/Probability%20and%20statistics)
+- [English1](https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/tree/main/3rd%20Semester/zEnglish1)
+- [DPPD3](https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/tree/main/3rd%20Semester/zDPPD3)
