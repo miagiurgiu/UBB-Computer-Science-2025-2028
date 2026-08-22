@@ -1,6 +1,6 @@
 # UBB-Computer-Science-2025-2028
 
-Semester I:
+Semester I
 - [ASC](https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/tree/main/1st%20Semester/ASC)
 - [Linear Algebra](https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/tree/main/1st%20Semester/Algebra)
 - [Computational Logic](https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/tree/main/1st%20Semester/Computational%20Logic)
@@ -9,7 +9,7 @@ Semester I:
 - [Programming in C](https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/tree/main/1st%20Semester/C%20Programming)
 - [DPPD1]()
 
-Semester II: *One way I would describe Semester II:* ✨POINTER✨
+Semester II (*One way I would describe Semester II:* ✨POINTER✨)
 - [Data Structures and Algorithms](https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/tree/main/2nd%20Semester/Data%20Structures%20and%20Algorithms)
 - [Dynamic Systems](https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/tree/main/2nd%20Semester/Dynamic%20Systems)
 - [Geometry](https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/tree/main/2nd%20Semester/Geometry)
@@ -18,7 +18,7 @@ Semester II: *One way I would describe Semester II:* ✨POINTER✨
 - [Operating Systems](https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/tree/main/2nd%20Semester/Operating%20Systems)
 - [DPPD2](https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/tree/main/2nd%20Semester/pedagogic)
 
-Semester III:
+Semester III
 - [MAP](https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/tree/main/3rd%20Semester/Advanced%20programming%20methods)
 - [Computer Networks](https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/tree/main/3rd%20Semester/Computer%20networks)
 - [Databases](https://github.com/miagiurgiu/UBB-Computer-Science-2025-2028/tree/main/3rd%20Semester/Databases)
