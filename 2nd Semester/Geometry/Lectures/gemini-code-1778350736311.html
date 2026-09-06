@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phase Portrait: Center Equilibrium</title>
+    <style>
+        body { font-family: sans-serif; display: flex; flex-direction: column; align-items: center; background: #f0f0f0; }
+        canvas { background: white; border: 1px solid #ccc; box-shadow: 0 0 10px rgba(0,0,0,0.1); cursor: crosshair; }
+        .controls { margin: 20px; padding: 15px; background: white; border-radius: 8px; }
+    </style>
+</head>
+<body>
+    <h2>Phase Portrait: $\dot{x} = 2y, \dot{y} = -8x$</h2>
+    <canvas id="canvas" width="600" height="600"></canvas>
+    <div class="controls">
+        <p>Orbits: $4x^2 + y^2 = C$ (Clockwise)</p>
+        <p>Click anywhere to add a custom trajectory!</p>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        const width = canvas.width;
+        const height = canvas.height;
+        const scale = 50; // pixels per unit
+
+        function toScreen(x, y) {
+            return {
+                x: width / 2 + x * scale,
+                y: height / 2 - y * scale
+            };
+        }
+
+        function drawAxes() {
+            ctx.strokeStyle = '#aaa';
+            ctx.beginPath();
+            ctx.moveTo(0, height / 2); ctx.lineTo(width, height / 2);
+            ctx.moveTo(width / 2, 0); ctx.lineTo(width / 2, height);
+            ctx.stroke();
+            ctx.fillStyle = '#000';
+            ctx.fillText('x', width - 15, height / 2 - 5);
+            ctx.fillText('y', width / 2 + 5, 15);
+        }
+
+        function drawOrbit(C, color = 'rgba(0, 100, 255, 0.5)', lineWidth = 1) {
+            ctx.beginPath();
+            ctx.strokeStyle = color;
+            ctx.lineWidth = lineWidth;
+            
+            // 4x^2 + y^2 = C  => y = sqrt(C - 4x^2)
+            // Max x value is sqrt(C)/2
+            const maxX = Math.sqrt(C) / 2;
+            
+            for (let i = 0; i <= 200; i++) {
+                const t = (i / 200) * Math.PI * 2;
+                // Parametric form for 4x^2 + y^2 = C:
+                // x = (sqrt(C)/2) * cos(t)
+                // y = sqrt(C) * sin(t)
+                const x = (Math.sqrt(C) / 2) * Math.cos(t);
+                const y = Math.sqrt(C) * Math.sin(t);
+                const pos = toScreen(x, y);
+                if (i === 0) ctx.moveTo(pos.x, pos.y);
+                else ctx.lineTo(pos.x, pos.y);
+            }
+            ctx.stroke();
+
+            // Add direction arrow (at x > 0, y = 0)
+            const arrowX = maxX;
+            const arrowPos = toScreen(arrowX, 0);
+            ctx.fillStyle = color;
+            ctx.beginPath();
+            ctx.moveTo(arrowPos.x - 5, arrowPos.y);
+            ctx.lineTo(arrowPos.x + 5, arrowPos.y);
+            ctx.lineTo(arrowPos.x, arrowPos.y + 10); // Pointing down (clockwise)
+            ctx.fill();
+        }
+
+        function drawVectorField() {
+            ctx.strokeStyle = '#eee';
+            for (let x = -5; x <= 5; x += 0.8) {
+                for (let y = -5; y <= 5; y += 0.8) {
+                    const dx = 2 * y;
+                    const dy = -8 * x;
+                    const mag = Math.sqrt(dx*dx + dy*dy) || 1;
+                    const screenPos = toScreen(x, y);
+                    
+                    ctx.beginPath();
+                    ctx.moveTo(screenPos.x, screenPos.y);
+                    ctx.lineTo(screenPos.x + (dx/mag)*15, screenPos.y - (dy/mag)*15);
+                    ctx.stroke();
+                }
+            }
+        }
+
+        function init() {
+            ctx.clearRect(0, 0, width, height);
+            drawVectorField();
+            drawAxes();
+            // Draw standard orbits
+            for (let C = 2; C <= 30; C += 4) {
+                drawOrbit(C);
+            }
+            // Equilibrium point
+            ctx.fillStyle = 'red';
+            ctx.beginPath();
+            ctx.arc(width/2, height/2, 4, 0, Math.PI*2);
+            ctx.fill();
+        }
+
+        canvas.addEventListener('mousedown', (e) => {
+            const rect = canvas.getBoundingClientRect();
+            const x = (e.clientX - rect.left - width / 2) / scale;
+            const y = (height / 2 - (e.clientY - rect.top)) / scale;
+            const C = 4 * x * x + y * y;
+            drawOrbit(C, 'red', 2);
+        });
+
+        init();
+    </script>
+</body>
+</html>
