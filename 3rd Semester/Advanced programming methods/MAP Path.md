@@ -13,3 +13,8 @@ Why class when we have primitive types?
 	- we have our arguments taken as an array of strings
 
 Objects can be null, primitives cannot be null.
+
+```
+ArrayList<Int> list=
+
+```
