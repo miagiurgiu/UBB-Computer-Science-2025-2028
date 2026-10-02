@@ -11,3 +11,5 @@ Why class when we have primitive types?
 	- can create objects
 	- comes with methods
 	- we have our arguments taken as an array of strings
+
+Objects can be null, primitives cannot be null.
