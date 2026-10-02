@@ -15,6 +15,5 @@ Why class when we have primitive types?
 Objects can be null, primitives cannot be null.
 
 ```
-ArrayList<Int> list=new ArrayList<>()
-
+ArrayList<Int> list=new ArrayList<>();
 ```
