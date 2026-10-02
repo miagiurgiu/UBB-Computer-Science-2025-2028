@@ -10,4 +10,4 @@ Why class when we have primitive types?
 - a class comes with additional things:
 	- can create objects
 	- comes with methods
-	- we have our arguments
+	- we have our arguments taken as an array of strings
