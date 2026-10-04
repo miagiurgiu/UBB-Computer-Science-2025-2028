@@ -12,4 +12,6 @@ Option 2 (with visuals):
 
 How to stop the database:
 1. right click on Docker SQL Server (connection) -> deactivate 
-2. 
+2. docker stop sqledge / docker app -> containers -> stop sqledge
+3. close DataGrip
+4. close doc
