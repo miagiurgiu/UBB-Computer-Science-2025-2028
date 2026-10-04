@@ -9,3 +9,7 @@ Option 1 (with terminal):
 Option 2 (with visuals):
 1. open docker app -> containers -> run sqledge
 2. open DataGrip
+
+How to stop the database:
+1. right click on Docker SQL Server (connection) -> deactivate 
+2. 
