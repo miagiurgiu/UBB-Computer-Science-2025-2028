@@ -6,4 +6,6 @@ Option 1 (with terminal):
 2. docker ps (Look for `sqledge` in the list and check if the STATUS says "Up")
 3. open DataGrip
 
-Option 2 (with )
+Option 2 (with visuals):
+1. open docker app -> containers -> run sqledge
+2. open DataGrip
