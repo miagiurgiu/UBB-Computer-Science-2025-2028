@@ -63,3 +63,5 @@ public class MyClass {
 ### Seminar 1
 Apple, Book, Cake Java app:
 https://github.com/miagiurgiu/Seminar1MAP/tree/master
+
+### Lecture 1 - 5 oct 2026
