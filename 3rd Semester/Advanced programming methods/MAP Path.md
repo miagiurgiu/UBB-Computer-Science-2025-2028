@@ -68,3 +68,5 @@ https://github.com/miagiurgiu/Seminar1MAP/tree/master
 
 ### Lab 2 - 6 oct 2026
 - in memory-repository is allowed (not persistence yet)
+- controller does not hold the repo, it is rather a parameter in controller ?
+- 
