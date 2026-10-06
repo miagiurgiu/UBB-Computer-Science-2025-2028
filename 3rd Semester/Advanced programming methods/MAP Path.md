@@ -80,3 +80,6 @@ Sa se afiseze toti pomii frunctiferi mai batrini
 de 3 ani.
 
 ! everything is checked exception apart from runtimeException (which is unchecked)
+- checked is better - it will scream for help
+- unckecked - compiler does not say anything
+- runtime exceptions
