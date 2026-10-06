@@ -97,5 +97,7 @@ try{
 	...
 } catch (ArithmeticException e){
 	...
+} finally {
+	// gets executed no matter what
 }
 ```
