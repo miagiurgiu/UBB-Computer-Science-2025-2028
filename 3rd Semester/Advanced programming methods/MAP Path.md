@@ -94,5 +94,8 @@ Example
 try{
 	int result=10/0;
 } catch (Exception e) {
+	...
+} catch (ArithmeticException e){
+	...
 }
 ```
