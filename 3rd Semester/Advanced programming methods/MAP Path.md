@@ -70,4 +70,6 @@ https://github.com/miagiurgiu/Seminar1MAP/tree/master
 - in memory-repository is allowed (not persistence yet)
 - controller does not hold the repo, it is rather a parameter in controller ?
 - view - scanner
-- he will ask me to add 
+- he will ask me to add more stuff to repo
+- exceptions, different packages
+- on the Seminar model
