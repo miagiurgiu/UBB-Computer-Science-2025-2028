@@ -73,3 +73,5 @@ https://github.com/miagiurgiu/Seminar1MAP/tree/master
 - he will ask me to add more stuff to repo
 - exceptions, different packages
 - on the Seminar model
+- divaC mode? to see how variables get changed
+
