@@ -85,3 +85,12 @@ de 3 ani.
 - runtime exceptions - usually for situations when the app should stop
 - checked = compile-time
 - unchecked = run-time
+
+The photo of the exceptions
+
+Example
+```
+try{
+	int result=10/0;
+}
+```
