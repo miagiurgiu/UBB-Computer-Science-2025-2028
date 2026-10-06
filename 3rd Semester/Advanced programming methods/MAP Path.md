@@ -67,4 +67,4 @@ https://github.com/miagiurgiu/Seminar1MAP/tree/master
 ### Lecture 1 - 5 oct 2026
 
 ### Lab 2 - 6 oct 2026
-- in memory-repository is allowed
+- in memory-repository is allowed (not persistence yet)
