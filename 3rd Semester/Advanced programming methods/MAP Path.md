@@ -79,3 +79,4 @@ https://github.com/miagiurgiu/Seminar1MAP/tree/master
 Sa se afiseze toti pomii frunctiferi mai batrini
 de 3 ani.
 
+! everything is checked exception apart from runtimeException (which is unchecked)
