@@ -71,7 +71,7 @@ https://github.com/miagiurgiu/Seminar1MAP/tree/master
 - controller does not hold the repo, it is rather a parameter in controller ?
 - view - scanner
 - he will ask me to add more stuff to repo
-- exceptions, different packages
+- checked custom exceptions, different packages
 - on the Seminar model
 - divaC mode? to see how variables get changed
 
