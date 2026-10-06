@@ -74,6 +74,7 @@ https://github.com/miagiurgiu/Seminar1MAP/tree/master
 - checked custom exceptions, different packages
 - on the Seminar model
 - divaC mode? to see how variables get changed
+- try-catch in view -> continue to get input from user
 
 6. Intr-o livada cresc meri, peri si ciresi. 
 Sa se afiseze toti pomii frunctiferi mai batrini
