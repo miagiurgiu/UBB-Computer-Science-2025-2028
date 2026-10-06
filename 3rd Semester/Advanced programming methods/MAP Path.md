@@ -75,3 +75,7 @@ https://github.com/miagiurgiu/Seminar1MAP/tree/master
 - on the Seminar model
 - divaC mode? to see how variables get changed
 
+6. Intr-o livada cresc meri, peri si ciresi. 
+Sa se afiseze toti pomii frunctiferi mai batrini
+de 3 ani.
+
