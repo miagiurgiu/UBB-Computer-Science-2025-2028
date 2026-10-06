@@ -89,8 +89,10 @@ de 3 ani.
 The photo of the exceptions
 
 Example
+- order exceptions from most specific to most generic
 ```
 try{
 	int result=10/0;
+} catch (Exception e) {
 }
 ```
