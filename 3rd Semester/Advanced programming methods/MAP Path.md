@@ -83,4 +83,5 @@ de 3 ani.
 - checked is better - it will scream for help
 - unckecked - compiler does not say anything
 - runtime exceptions - usually for situations when the app should stop
-- 
+- checked = compile-time
+- unchecked = run-time
