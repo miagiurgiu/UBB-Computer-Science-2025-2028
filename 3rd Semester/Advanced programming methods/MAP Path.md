@@ -145,3 +145,5 @@ mvn install
 
 5) Version control
 - see git diagram
+- the build folder should not be on git
+- gradlew file should be on git
