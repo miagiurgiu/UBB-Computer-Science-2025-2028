@@ -144,3 +144,4 @@ mvn install
 - usually the bigger version unless there are breaking changes
 
 5) Version control
+- see git diagram
