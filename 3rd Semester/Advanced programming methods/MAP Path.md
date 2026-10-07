@@ -109,4 +109,5 @@ Build tools, versions
 - does not matter where i treat exceptions (controller maybe)
 
 Build tools=transform source code into a runnable, deployable artifact
-Version control systems=
+A face "deploy"
+Version control systems=track code
