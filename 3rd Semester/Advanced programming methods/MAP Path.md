@@ -115,6 +115,7 @@ piratat chestii - minecraft - that new suggested version of java is actually JRE
 eliminat reclame yt
 3) Gradle, Maven
 gradle: more flexible, configurable, we can write code in it
+- Groovy
 gradle wrapper=a filter that make sure everything works fine with gradle
 these commands with gradlew are incorporated in intelliJ:
 ```
@@ -127,6 +128,7 @@ clean->build/assemble->test->bootJar
 ```
 
 maven: more strict, for newer projects, values convention, enterprises
+- XML configuration
 ```
 mvm compile
 mvn package
