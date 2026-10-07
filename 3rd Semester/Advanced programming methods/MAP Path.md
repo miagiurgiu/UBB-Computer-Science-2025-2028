@@ -105,3 +105,5 @@ try{
 
 
 ## Seminar 2 - 7 oct 2026
+- does not matter where i treat exceptions (controller maybe)
+- 
