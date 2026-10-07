@@ -68,7 +68,7 @@ https://github.com/miagiurgiu/Seminar1MAP/tree/master
 
 ### Lab 2 - 6 oct 2026
 - in memory-repository is allowed (not persistence yet)
-- controller does not hold the repo, it is rather a parameter in controller ?
+- controller does not hold the repo, repo it is rather a parameter in controller
 - view - scanner
 - he will ask me to add more stuff to repo
 - checked custom exceptions, different packages
@@ -76,9 +76,8 @@ https://github.com/miagiurgiu/Seminar1MAP/tree/master
 - divaC mode? to see how variables get changed
 - try-catch in view -> continue to get input from user (don't put try catch pe tot switch-ul respectiv)
 
-6. Intr-o livada cresc meri, peri si ciresi. 
-Sa se afiseze toti pomii frunctiferi mai batrini
-de 3 ani.
+A1:
+6. Intr-o livada cresc meri, peri si ciresi. Sa se afiseze toti pomii frunctiferi mai batrini de 3 ani.
 
 ! everything is checked exception apart from runtimeException (which is unchecked)
 - checked is better - it will scream for help
