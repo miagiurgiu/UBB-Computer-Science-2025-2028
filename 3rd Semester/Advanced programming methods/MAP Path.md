@@ -126,3 +126,10 @@ clean->build/assemble->test->bootJar
 ```
 
 maven: more strict
+```
+mvm compile
+mvn test
+mvn package
+mvn clean
+mvn install
+```
