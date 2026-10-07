@@ -129,6 +129,7 @@ clean->build/assemble->test->bootJar
 
 maven: more strict, for newer projects, values convention, enterprises
 - XML configuration
+- build time might get longer on larger projects => you know it's the time to switch to gradle
 ```
 mvm compile
 mvn package
@@ -136,3 +137,4 @@ mvn test
 mvn clean
 mvn install
 ```
+4) Dependency
