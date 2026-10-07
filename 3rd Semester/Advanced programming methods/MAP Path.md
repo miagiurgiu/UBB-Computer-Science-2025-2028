@@ -142,3 +142,5 @@ mvn install
 - transitive dependencies = dependency depending on other libraries
 - version conflict
 - usually the bigger version unless there are breaking changes
+
+5) Version control
