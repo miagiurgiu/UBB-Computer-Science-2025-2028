@@ -128,8 +128,8 @@ clean->build/assemble->test->bootJar
 maven: more strict
 ```
 mvm compile
-mvn test
 mvn package
+mvn test
 mvn clean
 mvn install
 ```
