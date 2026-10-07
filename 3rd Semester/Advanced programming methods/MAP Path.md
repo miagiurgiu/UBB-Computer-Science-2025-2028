@@ -113,4 +113,11 @@ A face "deploy"
 Version control systems=track code
 piratat chestii - minecraft - that new suggested version of java is actually JRE
 gradle wrapper=a filter that make sure everything works fine with gradle
-those commands with gradle
+those commands with gradlew are incorporated in intelliJ
+
+```
+./gradlew build
+./gradelw assemble
+./gradlew test
+./gradlew clean
+```
