@@ -105,5 +105,6 @@ try{
 
 
 ## Seminar 2 - 7 oct 2026
+Build tools, versions
 - does not matter where i treat exceptions (controller maybe)
-- 
+
