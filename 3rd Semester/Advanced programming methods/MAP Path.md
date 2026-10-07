@@ -111,3 +111,4 @@ Build tools, versions
 Build tools=transform source code into a runnable, deployable artifact
 A face "deploy"
 Version control systems=track code
+piratat chestii - minecraft - that new suggeversion of java is actually JRE
