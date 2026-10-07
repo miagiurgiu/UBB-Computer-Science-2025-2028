@@ -102,3 +102,6 @@ try{
 	// ex: how many attempts to fill a field (elev, 2000 ori)
 }
 ```
+
+
+## Seminar 2 - 7 oct 2026
