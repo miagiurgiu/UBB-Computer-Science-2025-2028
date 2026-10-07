@@ -106,13 +106,16 @@ try{
 
 ## Seminar 2 - 7 oct 2026
 Build tools, versions
+1) exceptions
 - does not matter where i treat exceptions (controller maybe)
 
-Build tools=transform source code into a runnable, deployable artifact
+2) Build tools=transform source code into a runnable, deployable artifact
 A face "deploy"
-Version control systems=track code
+3) Version control systems=track code
 piratat chestii - minecraft - that new suggested version of java is actually JRE
 eliminat reclame yt
+4) Gradle, Maven
+5) 
 gradle wrapper=a filter that make sure everything works fine with gradle
 those commands with gradlew are incorporated in intelliJ
 
