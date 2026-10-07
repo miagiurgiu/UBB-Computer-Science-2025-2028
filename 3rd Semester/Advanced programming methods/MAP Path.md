@@ -139,3 +139,4 @@ mvn install
 ```
 
 4) Dependency = external library needed for a program to compile/run
+- transitive dependencies = dependency depending on other libraries
