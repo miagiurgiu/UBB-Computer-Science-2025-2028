@@ -137,4 +137,5 @@ mvn test
 mvn clean
 mvn install
 ```
-4) Dependency
+
+4) Dependency = external library needed for a program to compile/run
