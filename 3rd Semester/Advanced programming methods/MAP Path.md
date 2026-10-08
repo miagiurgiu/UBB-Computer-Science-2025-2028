@@ -147,3 +147,6 @@ mvn install
 - see git diagram
 - the build folder should not be on git -> gitignore
 - gradlew file should be on git
+
+### A1 - WHAT I LEARNED:
+- interface fields are 'public static final' by default, so you will never encounter 'String name' or 'int age'
