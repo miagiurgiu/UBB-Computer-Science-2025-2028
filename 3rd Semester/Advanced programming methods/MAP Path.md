@@ -150,4 +150,5 @@ mvn install
 
 ### A1 - WHAT I LEARNED:
 - interface fields are 'public static final' by default, so you will never encounter 'String name' or 'int age' inside an interface
-- getters/setters should be in the interface and the classes that implement that interface should override those getters/setters -> because you will
+- getters/setters should be in the interface and the classes that implement that interface should override those getters/setters -> because you will work with the interface Tree in Repo/Controller, not with AppleTree/PearTree etc.
+- 
