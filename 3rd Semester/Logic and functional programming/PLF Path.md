@@ -4,4 +4,6 @@
 
 problem 1
 
-R1 - 
+R1 
+- recursive math model
+- implementation (python/c++)
