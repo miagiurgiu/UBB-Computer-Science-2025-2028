@@ -209,8 +209,10 @@ Git:
 - pull:
 - checkout:
 - merge/rebase:
+	- merge - combines two branches (non-destructive)
+	- rebase - 
 	- never rebase a branch others work from
-- gitignore: build/ (gra, target/, "*.iml" (IDE-specific for intelliJ), "*.class" (compiled Java bytecode file) 
+- gitignore: build/ (gradle's generated output dir), target/ (maven's generated output dir), "*.iml" (IDE-specific for intelliJ), "*.class" (compiled Java bytecode file) 
 ![[Pasted image 20261010141650.png|609]]
 
 Git commands:
