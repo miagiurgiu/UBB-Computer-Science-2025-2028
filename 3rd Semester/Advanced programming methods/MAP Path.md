@@ -172,9 +172,10 @@ Git=
 
 Gradle vs Maven
 
-|     | Gradle | Maven |
-| --- | ------ | ----- |
-|     |        |       |
+|                    | Gradle                           | Maven         |
+| ------------------ | -------------------------------- | ------------- |
+| Configuration file | build.gradle (Groovy/Kotlin DSL) | pom.xml (XML) |
+| Model              |                                  |               |
 
 
 ### A1 - WHAT I LEARNED:
