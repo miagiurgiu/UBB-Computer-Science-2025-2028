@@ -87,6 +87,7 @@ A1:
 	- COMPILER CHECKS
 	- use try-catch or throw exception
 	- custom-exceptions
+	- crashes at compile time
 - unchecked = run-time -> compiler does not force me to handle them
 	- COMPILER DOES NOT CHECK
 	- fix the code or throw exception
