@@ -84,11 +84,14 @@ A1:
 - unckecked - compiler does not say anything
 - runtime exceptions - usually for situations when the app should stop
 - checked = compile-time -> compiler forces me to handle them
+	- COMPILER CHECKS
 	- use try-catch or throw exception
 	- custom-exceptions
 - unchecked = run-time -> compiler does not force me to handle them
+	- COMPILER DOES NOT CHECK
 	- fix the code or throw exception
 	- runtime-exceptions
+	- compiles fine, but crashes at runtime
 
 Exceptions:
 ![[Pasted image 20261010153409.png]]
