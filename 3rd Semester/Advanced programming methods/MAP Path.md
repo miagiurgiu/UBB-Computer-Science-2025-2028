@@ -83,7 +83,8 @@ A1:
 - checked is better - it will scream for help
 - unckecked - compiler does not say anything
 - runtime exceptions - usually for situations when the app should stop
-- checked = compile-time -> compiler 
+- checked = compile-time -> compiler forces me to handle them
+	- 
 - unchecked = run-time -> compiler does not force me to handle them
 
 Exceptions:
