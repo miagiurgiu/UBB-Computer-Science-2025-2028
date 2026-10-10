@@ -209,6 +209,9 @@ Git commands:
 ![[Pasted image 20261010141853.png|610]]
 
 
+![[Pasted image 20261010142013.png|607]]
+
+
 
 
 
