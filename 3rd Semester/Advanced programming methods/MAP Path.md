@@ -167,6 +167,7 @@ Version control=
 - tracks changes over time
 - collaboration
 - combine/compare/revert
+- ! never contain build/ or target/ directories
 Git=
 - free, open-source, distributed VCS
 
@@ -192,6 +193,8 @@ Gradle vs Maven
 	- you can skip steps
 	- this makes it flexible
 
+Gradle commands:
+![[Pasted image 20261010141315.png]]
 
 ### A1 - WHAT I LEARNED:
 - interface fields are 'public static final' by default, so you will never encounter 'String name' or 'int age' inside an interface
