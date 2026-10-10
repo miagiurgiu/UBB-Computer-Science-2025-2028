@@ -202,6 +202,7 @@ Maven commands:
 ![[Pasted image 20261010141521.png|612]]
 
 Git:
+- init: normal folder -
 - add: 
 - commit:
 - push:
