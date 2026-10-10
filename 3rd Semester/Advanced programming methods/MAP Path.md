@@ -195,13 +195,19 @@ Gradle vs Maven
 
 Gradle commands:
 - gradlew 
-![[Pasted image 20261010141315.png]]
+![[Pasted image 20261010141315.png|608]]
 
 Maven commands:
 - mvn
-![[Pasted image 20261010141521.png]]
+![[Pasted image 20261010141521.png|612]]
 
 Git:
+![[Pasted image 20261010141650.png|609]]
+
+
+
+
+
 ### A1 - WHAT I LEARNED:
 - interface fields are 'public static final' by default, so you will never encounter 'String name' or 'int age' inside an interface
 - getters/setters should be in the interface and the classes that implement that interface should override those getters/setters -> because you will work with the interface Tree in Repo/Controller, not with AppleTree/PearTree etc.
