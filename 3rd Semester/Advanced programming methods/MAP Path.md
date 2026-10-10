@@ -204,7 +204,11 @@ Maven commands:
 Git:
 ![[Pasted image 20261010141650.png|609]]
 
-Git commands
+Git commands:
+- git
+![[Pasted image 20261010141853.png|610]]
+
+
 
 
 
