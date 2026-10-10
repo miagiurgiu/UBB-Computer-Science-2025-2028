@@ -151,14 +151,10 @@ mvn install
 - gradlew file should be on git
 
 *After notes:*
-1) Build tool source code + dependencies => runnable, deployable artifact
-2) Ar
-3) r
-4) rr
-5) r
-6) r
-7) r
-8) 
+Build tool:
+- source code + dependencies => runnable, deployable artifact
+Artifact:
+- files created du
 
 ### A1 - WHAT I LEARNED:
 - interface fields are 'public static final' by default, so you will never encounter 'String name' or 'int age' inside an interface
