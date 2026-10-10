@@ -165,7 +165,10 @@ Build pipeline=
 - resolve dependencies = set up properly
 Version control=
 - tracks changes over time
-- collabora
+- collaboration
+- combine/compare/revert
+Git=
+- free, open-source
 
 ### A1 - WHAT I LEARNED:
 - interface fields are 'public static final' by default, so you will never encounter 'String name' or 'int age' inside an interface
