@@ -202,15 +202,20 @@ Maven commands:
 ![[Pasted image 20261010141521.png|612]]
 
 Git:
+- add: 
+- commit:
+- push:
+- fetch:
+- pull:
+- checkout:
+- merge/rebase:
 ![[Pasted image 20261010141650.png|609]]
 
 Git commands:
 - git
 ![[Pasted image 20261010141853.png|610]]
 
-
 ![[Pasted image 20261010142013.png|607]]
-
 
 
 
