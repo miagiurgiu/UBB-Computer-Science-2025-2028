@@ -210,7 +210,7 @@ Git:
 - checkout:
 - merge/rebase:
 	- never rebase a branch others work from
-- gitignore: build/, target/, "*.iml" (IDE-specific for intelliJ),  
+- gitignore: build/ (gra, target/, "*.iml" (IDE-specific for intelliJ), "*.class" (compiled Java bytecode file) 
 ![[Pasted image 20261010141650.png|609]]
 
 Git commands:
