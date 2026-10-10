@@ -105,6 +105,8 @@ try{
 
 
 ## Seminar 2 - 7 oct 2026
+*Live notes*:
+
 Build tools, versions
 1) exceptions
 - does not matter where i treat exceptions (controller maybe)
@@ -147,6 +149,7 @@ mvn install
 - see git diagram
 - the build folder should not be on git -> gitignore
 - gradlew file should be on git
+
 
 ### A1 - WHAT I LEARNED:
 - interface fields are 'public static final' by default, so you will never encounter 'String name' or 'int age' inside an interface
