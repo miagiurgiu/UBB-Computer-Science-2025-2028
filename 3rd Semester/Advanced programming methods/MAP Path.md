@@ -160,7 +160,8 @@ Deploy=
 - make the code accessible to the world
 - ex: push to GitHub (to remote)
 Build pipeline=
-- 
+- when to take someone else's code from remote and you want to run it on your own computer
+- you make a series of steps
 
 ### A1 - WHAT I LEARNED:
 - interface fields are 'public static final' by default, so you will never encounter 'String name' or 'int age' inside an interface
