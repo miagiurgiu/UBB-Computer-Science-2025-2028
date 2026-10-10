@@ -172,11 +172,14 @@ Git=
 
 Gradle vs Maven
 
-|                    | Gradle                           | Maven         |
-| ------------------ | -------------------------------- | ------------- |
-| Configuration file | build.gradle (Groovy/Kotlin DSL) | pom.xml (XML) |
-| Model              | Flexible                         |               |
-| Style              |                                  |               |
+|                    | Gradle                           | Maven                    |
+| ------------------ | -------------------------------- | ------------------------ |
+| Configuration file | build.gradle (Groovy/Kotlin DSL) | pom.xml (XML)            |
+| Model              | Flexible                         | Rigid                    |
+| Style              | Configurable                     | Convention               |
+| Speed              | Faster on large projects         | Slower on large projects |
+| Usage              |                                  |                          |
+| Output dir         | bui                              |                          |
 *MODEL means order in which the operations run: 
 - in MAVEN, the order if FIXED (linear): validate->compile->test->...->deploy
 	- ex: if you run the test phase, it will run every phase before it
