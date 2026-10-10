@@ -175,13 +175,16 @@ Gradle vs Maven
 |                    | Gradle                           | Maven         |
 | ------------------ | -------------------------------- | ------------- |
 | Configuration file | build.gradle (Groovy/Kotlin DSL) | pom.xml (XML) |
-| Model              |                                  |               |
+| Model              | Flexible                         |               |
+| Style              |                                  |               |
 *MODEL means order in which the operations run: 
 - in MAVEN, the order if FIXED (linear): validate->compile->test->...->deploy
 	- ex: if you run the test phase, it will run every phase before it
 	- this makes it rigid
 - in GRADLE, the order is FLEXIBLE (DAG)
-	- 
+	- builds a graph of the tasks
+	- you can skip steps
+	- this makes it flexible
 
 ### A1 - WHAT I LEARNED:
 - interface fields are 'public static final' by default, so you will never encounter 'String name' or 'int age' inside an interface
