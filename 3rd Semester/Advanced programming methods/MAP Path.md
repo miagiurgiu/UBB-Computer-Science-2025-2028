@@ -151,14 +151,15 @@ mvn install
 - gradlew file should be on git
 
 *After notes:*
-Build tool:
+Build tool=
 - source code + dependencies => runnable, deployable artifact
-Artifact:
+Artifact=
 - BUILD artifacts = files created during compilation/building
 - SOURCE CODE = .py, .js, .java
-Deploy:
-- make the code accessible 
+Deploy=
+- make the code accessible to the world
 - ex: push to GitHub (to remote)
+Build pipeline=
 - 
 
 ### A1 - WHAT I LEARNED:
