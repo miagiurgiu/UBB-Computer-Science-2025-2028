@@ -156,7 +156,10 @@ Build tool:
 Artifact:
 - BUILD artifacts = files created during compilation/building
 - SOURCE CODE = .py, .js, .java
-
+Deploy:
+- make the code accessible 
+- ex: push to GitHub (to remote)
+- 
 
 ### A1 - WHAT I LEARNED:
 - interface fields are 'public static final' by default, so you will never encounter 'String name' or 'int age' inside an interface
