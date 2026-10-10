@@ -154,3 +154,5 @@ mvn install
 - getAll() method from memory repository with static list returns a COPY of the original list (we manually get a copy of the original list using 'System.arraycopy())'
 - = new Scanner(System.in) for reading from keyboard
 - print instead of println if i want no endl after the printed thing
+
+Justification of my requirements:
