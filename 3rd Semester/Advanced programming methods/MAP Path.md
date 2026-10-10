@@ -179,7 +179,9 @@ Gradle vs Maven
 | Style              | Configurable                     | Convention               |
 | Speed              | Faster on large projects         | Slower on large projects |
 | Usage              |                                  |                          |
-| Output dir         | bui                              |                          |
+| Output dir         | build/                           | target/                  |
+| Extra files        | yes (settings.gradle)            | no                       |
+|                    |                                  |                          |
 *MODEL means order in which the operations run: 
 - in MAVEN, the order if FIXED (linear): validate->compile->test->...->deploy
 	- ex: if you run the test phase, it will run every phase before it
