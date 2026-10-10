@@ -153,4 +153,4 @@ mvn install
 - getters/setters should be in the interface and the classes that implement that interface should override those getters/setters -> because you will work with the interface Tree in Repo/Controller, not with AppleTree/PearTree etc.
 - getAll() method from memory repository with static list returns a COPY of the original list (we manually get a copy of the original list using 'System.arraycopy())'
 - = new Scanner(System.in) for reading from keyboard
-- 
+- print instead of println if i want no endl after the printed thing
