@@ -185,7 +185,7 @@ Gradle vs Maven
 | Code dir           | src/main/java                    |                          |
 | Non-code dir       | src/main/resources               |                          |
 *!MODEL means order in which the operations run: 
-- in MAVEN, the order if FIXED (linear): validate->compile->test->...->deploy
+- in MAVEN, the order if FIXED (linear): validate->compile->test->.->deploy
 	- ex: if you run the test phase, it will run every phase before it
 	- this makes it rigid
 - in GRADLE, the order is FLEXIBLE (DAG)
@@ -194,6 +194,7 @@ Gradle vs Maven
 	- this makes it flexible
 
 Gradle commands:
+- gradlew 
 ![[Pasted image 20261010141315.png]]
 
 ### A1 - WHAT I LEARNED:
