@@ -202,9 +202,10 @@ Maven commands:
 ![[Pasted image 20261010141521.png|612]]
 
 Git:
-- init: normal folder -
-- add: 
-- commit:
+- init: normal folder -> git project
+- status: what's going on rn
+- add: changed file -> waiting room (“I want this change in my next save.”)
+- commit: 
 - push:
 - fetch:
 - pull:
