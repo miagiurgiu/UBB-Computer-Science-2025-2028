@@ -207,9 +207,9 @@ Git:
 - add: changed file -> waiting room (“I want this change in my next save.”)
 - commit: saves everything from waiting room 
 - push: my commits -> server
-- fetch: 
-- pull:
-- checkout:
+- fetch: get what's new on the server without touching my files 
+- pull: fetch + merge = get what's new on the server + add to my current branch
+- checkout: switch to another branch
 - merge/rebase:
 	- merge - combines two branches (non-destructive)
 	- rebase - puts the commits on my branch on top of the other branch (risky)
