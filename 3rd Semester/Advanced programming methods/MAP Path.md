@@ -87,7 +87,7 @@ A1:
 - unchecked = run-time
 
 The photo of the exceptions
-
+![[IMG_2412.heic]]
 Example
 - order exceptions from most specific to most generic
 ```
