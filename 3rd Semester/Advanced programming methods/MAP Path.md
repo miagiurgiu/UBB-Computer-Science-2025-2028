@@ -209,6 +209,8 @@ Git:
 - pull:
 - checkout:
 - merge/rebase:
+	- never rebase a branch others work from
+- gitignore: build/, target/, *.im*
 ![[Pasted image 20261010141650.png|609]]
 
 Git commands:
