@@ -154,7 +154,9 @@ mvn install
 Build tool:
 - source code + dependencies => runnable, deployable artifact
 Artifact:
-- files created du
+- BUILD artifacts = files created during compilation/building
+- SOURCE CODE = .py, .js, .java
+
 
 ### A1 - WHAT I LEARNED:
 - interface fields are 'public static final' by default, so you will never encounter 'String name' or 'int age' inside an interface
