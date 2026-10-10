@@ -185,7 +185,7 @@ Gradle vs Maven
 | Code dir           | src/main/java                    |                          |
 | Non-code dir       | src/main/resources               |                          |
 *!MODEL means order in which the operations run: 
-- in MAVEN, the order if FIXED (linear): validate->compile->test->.->deploy
+- in MAVEN, the order if FIXED (linear): validate->compile->test->package->verify->install->deploy
 	- ex: if you run the test phase, it will run every phase before it
 	- this makes it rigid
 - in GRADLE, the order is FLEXIBLE (DAG)
@@ -197,6 +197,8 @@ Gradle commands:
 - gradlew 
 ![[Pasted image 20261010141315.png]]
 
+Maven commands:
+![[Pasted image 20261010141521.png]]
 ### A1 - WHAT I LEARNED:
 - interface fields are 'public static final' by default, so you will never encounter 'String name' or 'int age' inside an interface
 - getters/setters should be in the interface and the classes that implement that interface should override those getters/setters -> because you will work with the interface Tree in Repo/Controller, not with AppleTree/PearTree etc.
