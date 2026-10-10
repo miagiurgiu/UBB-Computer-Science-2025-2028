@@ -176,7 +176,7 @@ Gradle vs Maven
 | ------------------ | -------------------------------- | ------------- |
 | Configuration file | build.gradle (Groovy/Kotlin DSL) | pom.xml (XML) |
 | Model              |                                  |               |
-
+*MODEL means order in which the operations run
 
 ### A1 - WHAT I LEARNED:
 - interface fields are 'public static final' by default, so you will never encounter 'String name' or 'int age' inside an interface
