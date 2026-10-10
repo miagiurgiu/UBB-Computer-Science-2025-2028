@@ -168,7 +168,14 @@ Version control=
 - collaboration
 - combine/compare/revert
 Git=
-- free, open-source
+- free, open-source, distributed VCS
+
+Gradle vs Maven
+
+|     | Gradle | Maven |
+| --- | ------ | ----- |
+|     |        |       |
+
 
 ### A1 - WHAT I LEARNED:
 - interface fields are 'public static final' by default, so you will never encounter 'String name' or 'int age' inside an interface
