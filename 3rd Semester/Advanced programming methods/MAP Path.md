@@ -205,9 +205,9 @@ Git:
 - init: normal folder -> git project
 - status: what's going on rn
 - add: changed file -> waiting room (“I want this change in my next save.”)
-- commit: 
-- push:
-- fetch:
+- commit: saves everything from waiting room 
+- push: my commits -> server
+- fetch: 
 - pull:
 - checkout:
 - merge/rebase:
