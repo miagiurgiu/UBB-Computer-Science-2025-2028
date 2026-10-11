@@ -11,3 +11,4 @@ R1
 ![[Pasted image 20261011103305.png]]
 
 
+![[Pasted image 20261011103356.png]]
