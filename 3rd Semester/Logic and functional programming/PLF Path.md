@@ -7,3 +7,7 @@ problem 1
 R1 
 - recursive math model
 - implementation (python/c++)
+
+![[Pasted image 20261011103305.png]]
+
+
