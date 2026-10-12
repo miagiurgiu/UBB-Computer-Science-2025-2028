@@ -17,3 +17,4 @@ R1
 
 METHOD 1 
 - visual studio code -> new file (not text file!) -> save as -> .pl
+- in
