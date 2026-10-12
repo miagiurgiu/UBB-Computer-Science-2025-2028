@@ -41,4 +41,5 @@ commands:
 - variables must start with uppercase
 - '=:=' compares
 - 'is' assigns
-- if you take an auxiliary va
+- if you use an auxiliary variable in the recursive call, it should be computed before the call
+- 
