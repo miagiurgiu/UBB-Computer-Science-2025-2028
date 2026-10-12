@@ -28,8 +28,9 @@ METHOD 2 (directly in console)
 - save in a separate file ?
 - make.
 
-other commands:
+commands:
 - listing(rev).
 - halt.
 - make.
-- 
+- consult().
+- [user].
