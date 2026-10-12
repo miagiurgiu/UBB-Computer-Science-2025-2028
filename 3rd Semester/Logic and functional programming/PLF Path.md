@@ -34,3 +34,8 @@ commands:
 - make.
 - consult().
 - [user].
+
+### R1 & P1
+- in a math model, a function returns a value
+- in prolog, a predicate returns a boolean
+- variables must start with uppercase
