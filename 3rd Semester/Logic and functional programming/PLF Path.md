@@ -22,4 +22,6 @@ METHOD 1 (Visual Studio Code as text editor)
 - halt. to close the app
 
 METHOD 2 (directly in console)
-- 
+- [user].
+- write code line by line yourself
+- CTRL+D
