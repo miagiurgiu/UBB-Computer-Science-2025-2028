@@ -1,0 +1,121 @@
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.1.17)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+2 ?- consult('/Users/Maria/Desktop/my empire/uni-sem3/LFP/P1.pl').
+ERROR: /Users/Maria/Desktop/my empire/uni-sem3/LFP/P1.pl:6:21: Syntax error: Operator expected
+true.
+
+3 ?- consult('/Users/Maria/Desktop/my empire/uni-sem3/LFP/P1.pl').
+true.
+
+3 ?- gcd(12,8,R).
+R = 4 .
+
+4 ?- gcd(7,5,R).
+R = 1 .
+
+5 ?- consult('/Users/Maria/Desktop/my empire/uni-sem3/LFP/P1.pl').
+true.
+
+6 ?- lcm(4,6,R).
+R = 12 .
+
+7 ?- lcm(0,5,R).
+R = 0 .
+
+8 ?- consult('/Users/Maria/Desktop/my empire/uni-sem3/LFP/P1.pl').
+true.
+
+9 ?- consult('/Users/Maria/Desktop/my empire/uni-sem3/LFP/P1.pl').
+true.
+
+9 ?- lcm(2,1,4,3,9,8,-2).
+ERROR: Unknown procedure: lcm/7
+ERROR:     However, there are definitions for:
+ERROR:         lcm/3 [user]
+false.
+
+10 ?- lcmList(2,1,4,3,9,8,-2,R).
+ERROR: Unknown procedure: lcmList/8
+ERROR:     However, there are definitions for:
+ERROR:         lcmList/2 [user]
+false.
+
+11 ?- consult('/Users/Maria/Desktop/my empire/uni-sem3/LFP/P1.pl').
+true.
+
+12 ?- lcmList(2,1,4,3,9,8,-2,R).
+ERROR: Unknown procedure: lcmList/8
+ERROR:     However, there are definitions for:
+ERROR:         lcmList/2 [user]
+false.
+
+13 ?- lcmList([2,1,4,3,9,8,-2],R).
+ERROR: Type error: `character' expected, found `[2,1,4,3,9,8,-2]' (a list) ("x" must hold one character)
+ERROR: In:
+ERROR:   [17] [2,1|...]=:=0
+ERROR:   [16] lcm([2,1|...],1,_306) at /Users/Maria/Desktop/my empire/uni-sem3/LFP/P1.pl:14
+ERROR:   [14] toplevel_call('<garbage_collected>') at /Library/Frameworks/swipl.framework/Versions/A/Resources/swipl/boot/toplevel.pl:1678
+ERROR: 
+ERROR: Note: some frames are missing due to last-call optimization.
+ERROR: Re-run your program in debug mode (:- debug.) to get more detail.
+   Exception: (16) lcm([2, 1, 4, 3, 9, 8, -2], 1, _90) ? creep
+14 ?- lcmList([2,1,4,3,9,8,-2],R).
+ERROR: Type error: `character' expected, found `[2,1,4,3,9,8,-2]' (a list) ("x" must hold one character)
+ERROR: In:
+ERROR:   [17] [2,1|...]=:=0
+ERROR:   [16] lcm([2,1|...],1,_4522) at /Users/Maria/Desktop/my empire/uni-sem3/LFP/P1.pl:14
+ERROR:   [14] toplevel_call(user:user: ...) at /Library/Frameworks/swipl.framework/Versions/A/Resources/swipl/boot/toplevel.pl:1678
+ERROR: 
+ERROR: Note: some frames are missing due to last-call optimization.
+ERROR: Re-run your program in debug mode (:- debug.) to get more detail.
+   Exception: (16) lcm([2, 1, 4, 3, 9, 8, -2], 1, _3430) ? Unknown option (h for help)
+   Exception: (16) lcm([2, 1, 4, 3, 9, 8, -2], 1, _3430) ? Unknown option (h for help)
+   Exception: (16) lcm([2, 1, 4, 3, 9, 8, -2], 1, _3430) ? alternatives
+     [16] lcm([2, 1, 4, 3, 9, 8, -2], 1, _3430)
+   Exception: (16) lcm([2, 1, 4, 3, 9, 8, -2], 1, _3430) ? creep
+14 ?- lcmList([2,1,4,3,9,8,2],R).
+ERROR: Type error: `character' expected, found `[2,1,4,3,9,8,2]' (a list) ("x" must hold one character)
+ERROR: In:
+ERROR:   [17] [2,1|...]=:=0
+ERROR:   [16] lcm([2,1|...],1,_4522) at /Users/Maria/Desktop/my empire/uni-sem3/LFP/P1.pl:14
+ERROR:   [14] toplevel_call(user:user: ...) at /Library/Frameworks/swipl.framework/Versions/A/Resources/swipl/boot/toplevel.pl:1678
+ERROR: 
+ERROR: Note: some frames are missing due to last-call optimization.
+ERROR: Re-run your program in debug mode (:- debug.) to get more detail.
+   Exception: (16) lcm([2, 1, 4, 3, 9, 8, 2], 1, _3430) ? creep
+15 ?- consult('/Users/Maria/Desktop/my empire/uni-sem3/LFP/P1.pl').
+true.
+
+16 ?- lcmList([2,1,4,3,9,8,2],R).
+R = 72 .
+
+17 ?- consult('/Users/Maria/Desktop/my empire/uni-sem3/LFP/P1.pl').
+true.
+
+18 ?- addAfter([a,b,c,d,e,f,g,h,i],x,R).
+ERROR: Unknown procedure: insert/5
+ERROR: In:
+ERROR:   [16] insert([a,b|...],x,1,1,_22902)
+ERROR:   [15] addAfter([a,b|...],x,_22942) at /Users/Maria/Desktop/my empire/uni-sem3/LFP/P1.pl:38
+ERROR:   [14] toplevel_call(user:user: ...) at /Library/Frameworks/swipl.framework/Versions/A/Resources/swipl/boot/toplevel.pl:1678
+   Exception: (16) insert([a, b, c, d, e, f, g, h|…], x, 1, 1, _21868) ? creep
+19 ?- addAfter([a,b,c,d,e,f,g,h,i],x,R).
+ERROR: Unknown procedure: insert/5
+ERROR: In:
+ERROR:   [16] insert([a,b|...],x,1,1,_4536)
+ERROR:   [15] addAfter([a,b|...],x,_4576) at /Users/Maria/Desktop/my empire/uni-sem3/LFP/P1.pl:38
+ERROR:   [14] toplevel_call(user:user: ...) at /Library/Frameworks/swipl.framework/Versions/A/Resources/swipl/boot/toplevel.pl:1678
+   Exception: (16) insert([a, b, c, d, e, f, g, h|…], x, 1, 1, _3502) ? creep
+19 ?- consult('/Users/Maria/Desktop/my empire/uni-sem3/LFP/P1.pl').
+true.
+
+20 ?- addAfter([a,b,c,d,e,f,g,h,i],x,R).
+R = [a, x, b, x, c, d, x, e, f|…] .
+
+21 ?- addAfter([111,32,4,e,f,i],x,R).
+R = [111, x, 32, x, 4, e, x, f, i] 
