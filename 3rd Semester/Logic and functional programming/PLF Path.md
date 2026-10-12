@@ -43,3 +43,4 @@ commands:
 - 'is' assigns
 - if you use an auxiliary variable in the recursive call, it should be computed before the call
 - "in rest face altceva" does not exist in Prolog (for example, if a brach checks b=:=0, the other branch must have b=\=0)
+- the order in which you write the predicates does not matter (you can write gcd lower than the function that uses it)
