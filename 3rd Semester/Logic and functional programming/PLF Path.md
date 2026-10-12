@@ -15,8 +15,11 @@ R1
 
 ### HOW TO run SWIPL locally
 
-METHOD 1 
+METHOD 1 (Visual Studio Code as text editor)
 - visual studio code -> new file (not text file!) -> save as -> .pl
 - swipl-win -> consult('path').
 - write a query
-- hal. t
+- halt. to close the app
+
+METHOD 2 (directly in console)
+- 
