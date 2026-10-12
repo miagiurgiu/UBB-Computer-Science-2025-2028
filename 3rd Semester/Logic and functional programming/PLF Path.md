@@ -12,3 +12,8 @@ R1
 
 
 ![[Pasted image 20261011103356.png]]
+
+### HOW TO run SWIPL locally
+
+METHOD 1 
+- visual studio code -> new file 
