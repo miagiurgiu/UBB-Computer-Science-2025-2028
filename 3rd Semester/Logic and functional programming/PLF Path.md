@@ -26,4 +26,10 @@ METHOD 2 (directly in console)
 - write code line by line yourself
 - CTRL+D
 - save in a separate file ?
+- make.
+
+other commands:
+- listing(rev).
+- halt.
+- make.
 - 
