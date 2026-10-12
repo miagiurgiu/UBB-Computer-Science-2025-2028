@@ -16,4 +16,4 @@ R1
 ### HOW TO run SWIPL locally
 
 METHOD 1 
-- visual studio code -> new file 
+- visual studio code -> new file (not text file!) -> 
