@@ -25,3 +25,5 @@ METHOD 2 (directly in console)
 - [user].
 - write code line by line yourself
 - CTRL+D
+- save in a separate file ?
+- 
