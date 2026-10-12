@@ -35,11 +35,11 @@ commands:
 - consult().
 - [user].
 
-### R1 & P1
+### R1 & P1 - what I learned
 - in a math model, a function returns a value
 - in prolog, a predicate returns a boolean
 - variables must start with uppercase
 - '=:=' compares
 - 'is' assigns
 - if you use an auxiliary variable in the recursive call, it should be computed before the call
-- "in rest face altceva" does not exist in Prolog (for example if a brach checks b=:=0,)
+- "in rest face altceva" does not exist in Prolog (for example, if a brach checks b=:=0, the other branch must have b=\=0)
