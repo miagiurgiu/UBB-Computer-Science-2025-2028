@@ -244,3 +244,12 @@ Git commands:
 
 ### A2
 - to do up till 1.5 until next time
+
+### Lecture 3
+- polymorphism
+- dynamic dispatch
+- inheritance
+- switch
+### Seminar 3
+- jUnit tests
+- toy interpreter
