@@ -242,8 +242,9 @@ Git commands:
 - = new Scanner(System.in) for reading from keyboard
 - print instead of println if i want no endl after the printed thing
 
-### A2
-- to do up till 1.5 until next time
+### A2 - WHAT I LEARNED:
+-> to do up till 1.5 until next time
+- brew install gradle
 
 ### Lecture 3
 - polymorphism
